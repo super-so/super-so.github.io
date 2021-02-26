@@ -1,3 +1,10 @@
+/*
+
+Context Template
+Powered by Super.so
+
+*/
+
 /* Custom font */
 @font-face {
     font-family: 'orpheus';
@@ -131,7 +138,10 @@ h1 a { color: var(--color-primary) !important; }
 /* Code block */
 .notion-semantic-string .code {
     background: var(--color-border-default) !important;
-    font-size: 20px !important;
+    display: inline-block !important;
+    font-size: 16px !important;
+    margin: 12px 0 !important;
+    padding: 12px !important;
 }
 
 /* Mobile styles */
