@@ -138,10 +138,11 @@ h1 a { color: var(--color-primary) !important; }
 /* Code block */
 .notion-semantic-string .code {
     background: var(--color-border-default) !important;
+    color: rgba(255,255,255,0.6) !important;
     display: inline-block !important;
+    padding: 12px 20px !important;
     font-size: 16px !important;
     margin: 12px 0 !important;
-    padding: 12px !important;
 }
 
 /* Mobile styles */
