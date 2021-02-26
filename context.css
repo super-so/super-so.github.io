@@ -6,7 +6,6 @@
 }
 
 /* Variables */
-
 :root {
     --padding-right: calc(env(safe-area-inset-right) + 80px) !important;
     --padding-left: calc(env(safe-area-inset-left) + 80px) !important;
@@ -128,6 +127,12 @@ h1 a { color: var(--color-primary) !important; }
     opacity: 1 !important;
 }
 .notion-property__title .notion-semantic-string>span { border: none !important; }
+
+/* Code block */
+.notion-semantic-string .code {
+    background: var(--color-border-default) !important;
+    font-size: 20px !important;
+}
 
 /* Mobile styles */
 @media (max-width: 800px) {
