@@ -6,6 +6,7 @@
 }
 
 /* Variables */
+
 :root {
     --padding-right: calc(env(safe-area-inset-right) + 80px) !important;
     --padding-left: calc(env(safe-area-inset-left) + 80px) !important;
