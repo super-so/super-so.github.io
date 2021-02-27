@@ -1,0 +1,204 @@
+:root {
+    --transition: all .2s ease-in-out !important;
+    --color-text-gray: #808c99 !important;
+    --rounded: 8px !important;
+}
+
+/* Increase default font size */
+html {
+    font-size: 18px !important;
+}
+
+/* Hide certain elements */
+.notion-collection__header,
+.notion-property__title__icon-wrapper,
+.notion-header__cover.no-cover,
+.notion-caption {
+    display: none !important;
+}
+
+/* Decrease default bottom spacing */
+.super-content {
+    padding-bottom: 40px !important;
+}
+
+/* Move content up to hide main page title */
+.notion-root.full-width {
+    background: var(--color-bg-default) !important;
+    position: relative !important;
+    margin-top: -200px !important;
+    z-index: 2 !important;
+}
+
+/* Change default font weights for headings */
+.notion-header__title,
+.notion-heading {
+    font-weight: 500 !important;
+}
+
+/* Change default margins for headings */
+.notion-heading {
+    margin-bottom: 8px !important;
+}
+
+/* Change default font size for header titles */
+.notion-header__title {
+    font-size: 50px !important;
+}
+
+/* Center & change size for H3 elements */
+h3 {
+    text-align: center !important;
+    font-size: 30px !important;
+}
+
+/* Remove background & decrease margin for iframes */
+.notion-embed__container>iframe {
+    background: none !important;
+    margin: -20px 0 !important;
+}
+
+/* Increase top page spacing */
+.notion-header {
+    margin-top: 180px !important;
+}
+
+/* Make post images full width */
+.notion-image.page-width {
+    max-width: 100vw !important;
+    width: 100vw !important;
+}
+
+/* Remove default margins for images */
+.notion-image {
+    margin: 0 !important;
+}
+
+/* Add border radii to images */
+.notion-image img {
+    border-radius: var(--rounded) !important;
+}
+
+/* Remove border radii for full width images */
+.notion-image.page-width img {
+    border-radius: 0 !important;
+}
+
+/* Increase default line height for titles */
+.notion-header__title {
+    line-height: 1.4 !important;
+}
+
+/* Change default gallery styles */
+.notion-collection-gallery {
+    grid-template-columns: 1fr !important;
+    grid-gap: 40px !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+/* Add opacity on gallery card hover */
+.notion-collection-gallery:hover .notion-collection-card {
+    opacity: 0.6;
+}
+
+/* Change default gallery card styles */
+.notion-collection-card {
+    transition: var(--transition) !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    position: relative !important;
+    box-shadow: none !important;
+    height: 240px !important;
+    display: flex !important;
+    border: none !important;
+}
+
+/* Make gallery cards opaque on hover */
+.notion-collection-card:hover {
+    background: none !important;
+    opacity: 1 !important;
+}
+
+/* Change default height of gallery card covers */
+.notion-collection-card__cover,
+.notion-collection-card__cover div,
+.notion-collection-card__cover img {
+    max-height: 100% !important;
+    height: 100% !important;
+}
+
+/* Change default gallery card cover styles */
+.notion-collection-card__cover {
+    border-radius: var(--rounded) !important;
+    position: relative !important;
+    border: none !important;
+    flex: 2 !important;
+}
+
+/* Change default gallery card content styles */
+.notion-collection-card__content {
+    padding-left: 60px !important;
+    position: relative !important;
+    flex: 1 !important;
+}
+
+/* Prevent gallery card content from cutting off */
+.notion-collection-card__content span {
+    white-space: normal !important;
+}
+
+/* Change default gallery card text property styles */
+.notion-property__text {
+    margin: 8px 0 12px !important;
+    font-size: 24px !important;
+}
+
+/* Tighten default Notion quote border */
+.notion-quote {
+    border-left: 1px solid !important;
+}
+
+/* Make sticky sidebar. Replace with your own block ID */
+#block-50a6bc93fda24f0da238d89d8a8655eb {
+    align-self: flex-start !important;
+    position: sticky !important;
+    top: 115px !important;
+}
+
+/* Mobile styles */
+@media (max-width: 800px) {
+
+    .notion-header__title {
+        font-size: 40px !important;
+    }
+
+    .notion-collection-card {
+        display: block !important;
+        height: auto !important;
+    }
+
+    .notion-collection-card__cover,
+    .notion-collection-card__content {
+        padding: 0 !important;
+        flex: auto !important;
+    }
+
+    .notion-collection-card__cover {
+        margin-bottom: 20px !important;
+        min-height: 200px !important;
+    }
+
+    #block-50a6bc93fda24f0da238d89d8a8655eb {
+        position: relative !important;
+        align-self: auto !important;
+        top: auto !important;
+    }
+
+}
+
+.notion-toggle,
+#block-ae4e9789ebd04a64b47fd27ed7813140,
+#block-ad16c910da4647e890c29cb06a9185d5 {
+    display: none !important;
+}

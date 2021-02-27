@@ -1,0 +1,122 @@
+/* Change default Notion variables */
+:root {
+    --color-bg-navbar: rgba(25,25,25,0.9) !important;
+    --transition: all .2s ease-in-out !important;
+    --color-bg-default: #191919 !important;
+    --color-text-green: #25FFBE !important;
+    --color-text-default: #fff !important;
+    --color-bg-black: #000 !important;
+}
+
+/* Hide certain elements */
+#page-index .notion-header,
+.notion-property__title__icon-wrapper,
+.notion-page__icon {
+    display: none !important;
+}
+
+/* Change default container width */
+.max-width {
+    padding-bottom: 60px !important;
+    max-width: 1100px !important;
+}
+
+/* Navbar styles */
+.notion-navbar {
+    background: var(--color-bg-navbar) !important;
+    backdrop-filter: blur(20px) !important;
+}
+
+/* Navbar links hover effect */
+.notion-navbar>a:hover {
+    color: var(--color-text-green) !important;
+    background: none !important;
+}
+
+/* Notion divider styles */
+.notion-divider {
+    border-bottom: 1px solid var(--color-text-green) !important;
+    margin: 0 0 8px !important;
+}
+
+/* Heading 1 styles */
+h1 {
+    letter-spacing: -1px !important;
+    line-height: 1.2 !important;
+    font-weight: 700 !important;
+    font-size: 64px !important;
+    max-width: 90% !important;
+}
+
+/* Spacing between gallery items */
+.notion-collection-gallery {
+    grid-gap: 40px !important;
+}
+
+/* Transition for gallery cards */
+.notion-collection-card {
+    transition: var(--transition) !important;
+}
+
+/* Gallery cards hover effect */
+.notion-collection-card:hover {
+    transform: scale(1.02) !important;
+}
+
+/* Gallery cards click effect */
+.notion-collection-card:active {
+    transform: scale(1) !important;
+}
+
+/* Gallery cards title styles */
+.notion-collection-card .notion-property__title {
+    background: #000 !important;
+    padding: 20px !important;
+}
+
+/* Gellery card cover height */
+.notion-collection-card__cover,
+.notion-collection-card__cover div,
+.notion-collection-card__cover img {
+    max-height: 280px !important;
+    height: 280px !important;
+}
+
+/* Custom page link styles */
+.notion-page {
+    background: var(--color-bg-black) !important;
+    padding: 20px 30px !important;
+    font-size: 18px !important;
+    margin: 4px 0 !important;
+    border: none !important;
+}
+
+/* Page link type styles */
+.notion-page .notion-semantic-string {
+    transition: var(--transition) !important;
+    font-weight: 300 !important;
+    opacity: 0.7 !important;
+}
+
+/* Page link hover effect */
+.notion-page:hover .notion-semantic-string {
+    opacity: 1 !important;
+}
+
+/* Increase body copy line height */
+.notion-text__content {
+    line-height: 1.8 !important;
+}
+
+/* Decrease heading size on mobile */
+@media (max-width: 600px) {
+    h1 {
+        max-width: 100% !important;
+        font-size: 40px !important;
+    }
+}
+
+/* Hides instructions toggle */
+#block-3363a0531c3b4c69a81c485465453757 {
+    display: none !important;
+}

@@ -1,0 +1,98 @@
+:root {
+    --transition: all .2s ease-in-out !important;
+    --color-text-gray: #9fa8b3 !important;
+    --color-text-default: #000 !important;
+    --color-bg-default: #fff !important;
+}
+
+#page-index .notion-page,
+.notion-header__cover.no-cover{
+    display: none !important;
+}
+
+.super-content {
+    padding-bottom: 40px !important;
+}
+
+.notion-navbar {
+    background: none !important;
+}
+
+.notion-header__cover {
+    position: absolute !important;
+    max-height: none !important;
+    height: 600px !important;
+    width: 100% !important;
+    top: 0 !important;
+}
+
+#page-index .notion-header__title {
+    margin: 200px 0 40px -14px !important;
+    letter-spacing: -10px !important;
+    font-size: 200px !important;
+}
+
+.notion-header__title {
+    margin: 200px 0 40px 0 !important;
+    letter-spacing: -3px !important;
+    font-size: 60px !important;
+    line-height: 1 !important;
+}
+
+h2 {
+    letter-spacing: -2px !important;
+    font-size: 36px !important;
+}
+
+h3 {
+    letter-spacing: -1px !important;
+    font-size: 26px !important;
+}
+
+p {
+    line-height: 1.8 !important;
+}
+
+.link  {
+    border-bottom: 1px solid var(--color-bg-default) !important;
+    transition: var(--transition) !important;
+    color: var(--color-text-gray) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    font-size: 13px !important;
+    border: none !important;
+    opacity: 1 !important;
+}
+
+.link:hover {
+    border-bottom: 1px solid var(--color-text-default) !important;
+    color: var(--color-text-default) !important;
+}
+
+.notion-text {
+    min-height: 20px !important;
+}
+
+#block-b4bf15e6ba5042c3ac00a3d0ffb8b536 {
+    border-bottom: 4px solid var(--color-text-default) !important;
+}
+
+.notion-divider {
+    border-width: 2px !important;
+}
+
+#page-index .notion-column:first-child {
+    justify-content: center !important;
+    margin-right: auto !important;
+    max-width: 380px !important;
+}
+
+.notion-column .link {
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    border: none !important;
+}
+
+.notion-column p {
+    font-size: 18px !important;;
+}
