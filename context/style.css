@@ -62,11 +62,11 @@ body {
     -moz-animation: fadeIn 1s !important;
     animation: fadeIn 1s !important;
 }
-.super-content {
+/* .super-content {
     -webkit-animation: fadeInUp 1s !important;
     -moz-animation: fadeInUp 1s !important;
     animation: fadeInUp 1s !important;
-}
+} */
 @keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
 @-moz-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
 @-webkit-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
@@ -129,9 +129,6 @@ body {
     height: var(--navbar-height) !important;
     justify-content: flex-end !important;
     align-items: center !important;
-    -webkit-animation: none !important;
-    -moz-animation: none!important;
-    animation: none !important;
     position: fixed !important;
     z-index: 9999 !important;
     display: flex !important;
