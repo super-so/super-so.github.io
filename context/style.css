@@ -62,7 +62,7 @@ body {
     -moz-animation: fadeIn 1s !important;
     animation: fadeIn 1s !important;
 }
-h1, p, .notion-collection {
+.super-content {
     -webkit-animation: fadeInUp 1s !important;
     -moz-animation: fadeInUp 1s !important;
     animation: fadeInUp 1s !important;
@@ -103,6 +103,11 @@ h1, p, .notion-collection {
 }
 .notion-header__title { padding: 0 !important; }
 .max-width { max-width: 100% !important; }
+
+/* Misc elements */
+.notion-divider {
+    border-bottom: 1px solid var(--color-border-default) !important;
+}
 
 /* Navbar */
 .notion-navbar {
@@ -170,9 +175,9 @@ h1 a { color: var(--color-primary) !important; }
     background: var(--color-border-default) !important;
     color: rgba(255,255,255,0.6) !important;
     display: inline-block !important;
-    padding: 12px 20px !important;
+    padding: 8px 16px !important;
     font-size: 16px !important;
-    margin: 12px 0 !important;
+    margin: 8px 0 !important;
 }
 
 /* Callout block */
