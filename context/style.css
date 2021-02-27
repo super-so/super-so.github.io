@@ -129,6 +129,9 @@ body {
     height: var(--navbar-height) !important;
     justify-content: flex-end !important;
     align-items: center !important;
+    -webkit-animation: none !important;
+    -moz-animation: none!important;
+    animation: none !important;
     position: fixed !important;
     z-index: 9999 !important;
     display: flex !important;
