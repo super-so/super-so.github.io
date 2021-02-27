@@ -19,8 +19,8 @@ Powered by Super.so
     --transition: all .4s cubic-bezier(0.8,0.04,0.4,1) !important;
     --navbar-height: 100px !important;
 
-    --color-border-default: rgba(255,255,255,0.1) !important;
     --color-primary: #4d586f !important;
+    --color-border-default: rgba(255,255,255,0.2) !important;
 
     --color-text-default-light: rgba(255,255,255,0.4) !important;
     --color-text-default: #FFF !important;
@@ -111,6 +111,10 @@ h1, h2, h3,
 .notion-divider {
     border-bottom: 1px solid var(--color-border-default) !important;
 }
+.notion-pill {
+    padding-left: 4px 8px !important;
+    font-size: 16px !important;;
+}
 
 /* Navbar */
 .notion-navbar {
@@ -158,6 +162,11 @@ p, ul, ol {
     font-size: 24px !important;
 }
 
+.notion-toggle p,
+.notion-collection-table {
+    font-size: 18px !important;
+}
+
 /* Collection list */
 .notion-collection-list {
     border: none !important;
@@ -176,6 +185,23 @@ p, ul, ol {
     opacity: 1 !important;
 }
 .notion-property__title .notion-semantic-string>span { border: none !important; }
+.notion-collection-board {
+    border: none !important;
+}
+.notion-collection-table td,
+.notion-collection-table th {
+    border: 1px solid var(--color-border-default) !important;
+    vertical-align: middle !important;
+    padding: 12px !important;
+}
+.notion-collection-table td:first-of-type,
+.notion-collection-table th:first-of-type {
+    border-left: 1px solid var(--color-border-default) !important;
+}
+.notion-collection-table td:last-child,
+.notion-collection-table th:last-child {
+    border-right: 1px solid var(--color-border-default) !important;
+}
 
 /* Code block */
 .notion-semantic-string .code {
@@ -204,8 +230,8 @@ p, ul, ol {
     align-items: center !important;
 }
 .notion-to-do__icon {
-    margin: -2px 4px 0 -4px !important;
-    transform: scale(0.8) !important;
+    margin: -2px 2px 0 -6px !important;
+    transform: scale(0.7) !important;
 }
 .notion-checkbox.checked {
     background: var(--color-primary) !important;
@@ -217,11 +243,15 @@ p, ul, ol {
 .notion-numbered-list {
     padding-left: calc(1.5em + -12px) !important;
 }
-.notion-toggle p {
-    font-size: 18px !important;
+.notion-toggle__summary:before {
+    margin: 0 4px 0 -4px !important;
+    font-size: 1em !important;
 }
 .notion-toggle__summary:hover:before {
     background: none !important;
+}
+.notion-toggle__content {
+    padding-left: calc(1.5em) !important;
 }
 
 /* Mobile styles */
