@@ -23,12 +23,19 @@ Powered by Super.so
     --color-primary: #4d586f !important;
 
     --color-text-default-light: rgba(255,255,255,0.4) !important;
-    --color-text-gray: rgba(255,255,255,0.4) !important;
-    --color-text-default: #fff !important;
+    --color-text-default: #FFF !important;
+    --color-text-gray: #C4C6D0 !important;
+    --color-text-brown: #938687 !important;
+    --color-text-orange: #D9B9A0 !important;
+    --color-text-yellow: #E8D0A6 !important;
+    --color-text-green: #7D958D !important;
+    --color-text-blue: #646B81 !important;
+    --color-text-purple: #736D88 !important;
+    --color-text-pink: #A68EA7 !important;
+    --color-text-red: #AE7B82 !important;
 
     --color-bg-default: #9ba0b0 !important;
-    --color-bg-gray-light: rgba(235,255,255,0.1);
-
+    --color-bg-gray-light: #B4B6C3 !important;
     --color-bg-brown-light: #938687 !important;
     --color-bg-orange-light: #D9B9A0 !important;
     --color-bg-yellow-light: #E8D0A6 !important;
