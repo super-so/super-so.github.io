@@ -25,25 +25,35 @@ Powered by Super.so
     --color-text-default-light: rgba(255,255,255,0.4) !important;
     --color-text-default: #FFF !important;
     --color-text-gray: #C4C6D0 !important;
-    --color-text-brown: #938687 !important;
-    --color-text-orange: #D9B9A0 !important;
+    --color-text-brown: #986C67 !important;
+    --color-text-orange: #EDBD82 !important;
     --color-text-yellow: #E8D0A6 !important;
-    --color-text-green: #7D958D !important;
-    --color-text-blue: #646B81 !important;
-    --color-text-purple: #736D88 !important;
-    --color-text-pink: #A68EA7 !important;
-    --color-text-red: #AE7B82 !important;
+    --color-text-green: #527A6F !important;
+    --color-text-blue: #485789 !important;
+    --color-text-purple: #594C85 !important;
+    --color-text-pink: #A857A0 !important;
+    --color-text-red: #C15C66 !important;
 
     --color-bg-default: #9ba0b0 !important;
-    --color-bg-gray-light: #B4B6C3 !important;
-    --color-bg-brown-light: #938687 !important;
-    --color-bg-orange-light: #D9B9A0 !important;
-    --color-bg-yellow-light: #E8D0A6 !important;
-    --color-bg-green-light: #7D958D !important;
-    --color-bg-blue-light: #646B81 !important;
-    --color-bg-purple-light: #736D88 !important;
-    --color-bg-pink-light: #A68EA7 !important;
-    --color-bg-red-light: #AE7B82 !important;
+    --color-bg-gray: #B4B6C3 !important;
+    --color-bg-brown: #938687 !important;
+    --color-bg-orange: #D9B9A0 !important;
+    --color-bg-yellow: #E8D0A6 !important;
+    --color-bg-green: #7D958D !important;
+    --color-bg-blue: #646B81 !important;
+    --color-bg-purple: #736D88 !important;
+    --color-bg-pink: #A68EA7 !important;
+    --color-bg-red: #AE7B82 !important;
+
+    --color-bg-gray-light: var(--color-bg-gray) !important;
+    --color-bg-brown-light: var(--color-bg-brown) !important;
+    --color-bg-orange-light: var(--color-bg-orange) !important;
+    --color-bg-yellow-light: var(--color-bg-yellow) !important;
+    --color-bg-green-light: var(--color-bg-green) !important;
+    --color-bg-blue-light: var(--color-bg-blue) !important;
+    --color-bg-purple-light: var(--color-bg-purple) !important;
+    --color-bg-pink-light: var(--color-bg-pink) !important;
+    --color-bg-red-light: var(--color-bg-red) !important;
 }
 
 /* Fade in animation */
