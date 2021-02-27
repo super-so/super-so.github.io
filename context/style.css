@@ -8,8 +8,8 @@ Powered by Super.so
 /* Custom font */
 @font-face {
     font-family: 'orpheus';
-    src:  url('https://dl.dropbox.com/s/xdbovla3iwf7a80/orpheus.woff') format('woff'),
-          url('https://dl.dropbox.com/s/5k23k1p2t9eavk2/orpheus.ttf') format('truetype');
+    src:  url('https://sites.super.so/context/assets/orpheus.woff') format('woff'),
+          url('https://sites.super.so/context/assets/orpheus.ttf') format('truetype');
 }
 
 /* Variables */
