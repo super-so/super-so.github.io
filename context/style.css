@@ -35,7 +35,7 @@ Powered by Super.so
     --color-text-red: #C15C66 !important;
 
     --color-bg-default: #9ba0b0 !important;
-    --color-bg-gray: #B4B6C3 !important;
+    --color-bg-gray: #A5AAB8 !important;
     --color-bg-brown: #938687 !important;
     --color-bg-orange: #D9B9A0 !important;
     --color-bg-yellow: #E8D0A6 !important;
@@ -55,16 +55,16 @@ Powered by Super.so
     --color-bg-pink-light: var(--color-bg-pink) !important;
     --color-bg-red-light: var(--color-bg-red) !important;
 
-    --color-pill-default: var(--color-bg-gray) !important;
-    --color-pill-gray: var(--color-bg-gray) !important;
-    --color-pill-brown: var(--color-bg-brown) !important;
-    --color-pill-orange: var(--color-bg-orange) !important;
-    --color-pill-yellow: var(--color-bg-yellow) !important;
-    --color-pill-green: var(--color-bg-green) !important;
-    --color-pill-blue: var(--color-bg-blue) !important;
-    --color-pill-purple: var(--color-bg-purple) !important;
-    --color-pill-pink: var(--color-bg-pink) !important;
-    --color-pill-red: var(--color-bg-red) !important;
+    --color-pill-default: rgba(var(--color-bg-default), 0.4) !important;
+    --color-pill-gray: rgba(var(--color-bg-gray), 0.4) !important;
+    --color-pill-brown: rgba(var(--color-bg-brown), 0.4) !important;
+    --color-pill-orange: rgba(var(--color-bg-orange), 0.4) !important;
+    --color-pill-yellow: rgba(var(--color-bg-yellow), 0.4) !important;
+    --color-pill-green: rgba(var(--color-bg-green), 0.4) !important;
+    --color-pill-blue: rgba(var(--color-bg-blue), 0.4) !important;
+    --color-pill-purple: rgba(var(--color-bg-purple), 0.4) !important;
+    --color-pill-pink: rgba(var(--color-bg-pink), 0.4) !important;
+    --color-pill-red: rgba(var(--color-bg-red), 0.4) !important;
 }
 
 /* Fade in animation */
@@ -176,7 +176,7 @@ p, ul, ol {
 .notion-toggle p,
 .notion-collection-table,
 .notion-collection-card {
-    font-size: 18px !important;
+    font-size: 20px !important;
 }
 
 /* Collection list */
@@ -218,7 +218,7 @@ p, ul, ol {
     background: var(--color-bg-gray) !important;
     box-shadow: none !important;
 }
-.notion-property__title {
+.notion-collection-card .notion-property__title {
     padding: 12px 20px !important;
 }
 .notion-collection-card__property {
@@ -277,7 +277,7 @@ p, ul, ol {
     background: none !important;
 }
 .notion-toggle__content {
-    padding-left: calc(1.5em) !important;
+    padding-left: 24px !important;
 }
 
 /* Mobile styles */
