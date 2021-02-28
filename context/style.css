@@ -158,6 +158,7 @@ h1, h2, h3,
     justify-content: flex-end !important;
     align-items: center !important;
     position: fixed !important;
+    font-size: 22px !important;
     z-index: 9999 !important;
     display: flex !important;
     border: none !important;
@@ -183,7 +184,6 @@ h1 a { color: var(--color-primary) !important; }
 .notion-breadcrumb__divider,
 .notion-navbar__title,
 .notion-toggle,
-.notion-quote,
 .notion-to-do,
 p, ul, ol {
     font-size: 24px !important;
@@ -386,10 +386,8 @@ p, ul, ol {
         background: rgba(155,160,176,0.94) !important;
         justify-content: flex-start !important;
         top: var(--navbar-height) !important;
-        width: 100% !important;
-    }
-    .notion-quote a {
         font-size: 18px !important;
+        width: 100% !important;
     }
     #page-blocks .notion-collection-board {
         grid-template-columns: 1fr !important;
