@@ -137,6 +137,10 @@ h1, h2, h3,
     top: 120px !important;
 }
 
+#page-blocks .notion-collection-board {
+    grid-template-columns: 1fr 1fr 1fr !important;
+}
+
 /* Navbar */
 .notion-navbar {
     background: rgba(155,160,176,0.94) !important;
@@ -233,6 +237,7 @@ p, ul, ol {
 }
 .notion-collection-card .notion-property__title {
     padding: 12px 20px !important;
+    font-size: 18px !important;
 }
 .notion-collection-card__property {
     margin-top: 8px !important;
@@ -384,5 +389,8 @@ p, ul, ol {
     }
     .notion-quote a {
         font-size: 18px !important;
+    }
+    #page-blocks .notion-collection-board {
+        grid-template-columns: 1fr !important;
     }
 }
