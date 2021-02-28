@@ -380,6 +380,7 @@ p, ul, ol {
         background: rgba(155,160,176,0.94) !important;
         justify-content: flex-start !important;
         top: var(--navbar-height) !important;
+        width: 100% !important;
     }
     .notion-quote a {
         font-size: 18px !important;
