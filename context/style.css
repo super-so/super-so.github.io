@@ -311,9 +311,7 @@ p, ul, ol {
 }
 .notion-bookmark__content {
     padding: 18px !important;
-}
-.notion-bookmark__cover {
-    height: 100% !important;
+    flex: 1.6 !important;
 }
 .notion-bookmark__description {
     -webkit-box-orient: vertical !important;
@@ -321,11 +319,20 @@ p, ul, ol {
     display: -webkit-box !important;
     margin: 12px 0 16px !important;
     overflow: hidden !important;
+    line-height: 1.6 !important;
     line-clamp: 2 !important;
     height: auto !important;
 }
+.notion-bookmark__link>div {
+    margin: 2px 10px 0 0 !important;
+}
 .notion-bookmark__link p {
     overflow: visible !important;
+    font-size: 18px !important;
+}
+.notion-bookmark__cover {
+    height: auto !important;
+    flex: 1 !important;
 }
 
 /* Mobile styles */
