@@ -310,16 +310,17 @@ p, ul, ol {
     padding: 12px !important;
 }
 .notion-bookmark__content {
-    padding: 18px !important;
+    padding: 12px !important;
     flex: 1.6 !important;
 }
 .notion-bookmark__description {
     -webkit-box-orient: vertical !important;
     -webkit-line-clamp: 2 !important;
     display: -webkit-box !important;
-    margin: 12px 0 16px !important;
+    margin: 8px 0 12px !important;
     overflow: hidden !important;
     line-height: 1.6 !important;
+    font-size: 20px !important;
     line-clamp: 2 !important;
     height: auto !important;
 }
