@@ -178,6 +178,7 @@ h1 {
 h2 { font-size: 30px !important; }
 h1 a { color: var(--color-primary) !important; }
 .notion-semantic-string .link { border: none !important; }
+.notion-heading { padding: 0 !important; }
 
 .notion-breadcrumb__divider,
 .notion-navbar__title,
