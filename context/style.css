@@ -16,7 +16,7 @@ Powered by Super.so
 :root {
     --padding-right: calc(env(safe-area-inset-right) + 80px) !important;
     --padding-left: calc(env(safe-area-inset-left) + 80px) !important;
-    --transition: all .4s cubic-bezier(0.8,0.04,0.4,1) !important;
+    --transition: all .12s ease-in 0s !important;
     --navbar-height: 100px !important;
 
     --color-primary: #4d586f !important;
@@ -334,6 +334,30 @@ p, ul, ol {
 .notion-bookmark__cover {
     height: auto !important;
     flex: 1 !important;
+}
+
+/* Code block */
+.notion-code>pre {
+    background: var(--color-bg-gray) !important;
+    font-size: 14px !important;
+    padding: 24px !important;
+}
+.notion-code code {
+    color: var(--color-text-default) !important;
+    text-shadow: none !important;
+}
+
+/* File block */
+.notion-file {
+    transition: var(--transition) !important;
+}
+.notion-file>div {
+    padding: 12px 12px 8px !important;
+    margin: 0 !important;
+}
+.notion-file__title {
+    font-size: 20px !important;
+    line-height: 1 !important;
 }
 
 /* Mobile styles */
