@@ -56,16 +56,16 @@ Powered by Super.so
     --color-bg-pink-light: var(--color-bg-pink) !important;
     --color-bg-red-light: var(--color-bg-red) !important;
 
-    --color-pill-default: rgba(255,255,255,0.2) !important;
-    --color-pill-gray: rgba(165,170,184,0.2) !important;
-    --color-pill-brown: rgba(147,134,135,0.2) !important;
-    --color-pill-orange: rgba(217,185,160,0.2) !important;
-    --color-pill-yellow: rgba(232,208,166,0.2) !important;
-    --color-pill-green: rgba(125,149,141,0.2) !important;
-    --color-pill-blue: rgba(100,107,129,0.2) !important;
-    --color-pill-purple: rgba(115,109,136,0.2) !important;
-    --color-pill-pink: rgba(166,142,167,0.2) !important;
-    --color-pill-red: rgba(174,123,130,0.2) !important;
+    --color-pill-default: rgba(255,255,255,0.1) !important;
+    --color-pill-gray: rgba(165,170,184,0.4) !important;
+    --color-pill-brown: rgba(147,134,135,0.4) !important;
+    --color-pill-orange: rgba(217,185,160,0.4) !important;
+    --color-pill-yellow: rgba(232,208,166,0.4) !important;
+    --color-pill-green: rgba(125,149,141,0.4) !important;
+    --color-pill-blue: rgba(100,107,129,0.4) !important;
+    --color-pill-purple: rgba(115,109,136,0.4) !important;
+    --color-pill-pink: rgba(166,142,167,0.4) !important;
+    --color-pill-red: rgba(174,123,130,0.4) !important;
 }
 
 /* Fade in animation */
