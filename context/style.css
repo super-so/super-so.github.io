@@ -21,6 +21,7 @@ Powered by Super.so
 
     --color-primary: #4d586f !important;
     --color-border-default: rgba(255,255,255,0.2) !important;
+    --color-ui-hover-bg: rgba(0,0,0,0.02) !important;
 
     --color-text-default-light: rgba(255,255,255,0.4) !important;
     --color-text-default: #FFF !important;
@@ -299,6 +300,32 @@ p, ul, ol {
 }
 .notion-toggle__content {
     padding-left: 24px !important;
+}
+
+/* Bookmark block */
+.notion-bookmark {
+    border: 1px solid var(--color-border-default) !important;
+    border-radius: 0 !important;
+    overflow: hidden !important;
+    padding: 12px !important;
+}
+.notion-bookmark__content {
+    padding: 18px !important;
+}
+.notion-bookmark__cover {
+    height: 100% !important;
+}
+.notion-bookmark__description {
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
+    display: -webkit-box !important;
+    margin: 12px 0 16px !important;
+    overflow: hidden !important;
+    line-clamp: 2 !important;
+    height: auto !important;
+}
+.notion-bookmark__link p {
+    overflow: visible !important;
 }
 
 /* Mobile styles */
