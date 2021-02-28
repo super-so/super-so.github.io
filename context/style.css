@@ -375,4 +375,13 @@ p, ul, ol {
         font-size: 20px !important;
     }
     .super-content { padding-top: 40px !important; }
+    .notion-quote {
+        padding: 0 var(--padding-right) 20px var(--padding-left) !important;
+        background: rgba(155,160,176,0.94) !important;
+        justify-content: flex-start !important;
+        top: var(--navbar-height) !important;
+    }
+    .notion-quote a {
+        font-size: 18px !important;
+    }
 }
