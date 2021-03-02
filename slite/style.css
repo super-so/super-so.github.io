@@ -203,7 +203,7 @@ p {
     position: relative !important;
     padding: 24px !important;
     border: none !important;
-    top: 4px !important;
+    top: 2px !important;
 }
 
 .notion-callout:hover {
