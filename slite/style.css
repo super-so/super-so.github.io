@@ -72,7 +72,6 @@ body {
 /*-------------------------------------------*/
 
 .notion-property__title__icon-wrapper,
-.notion-collection__header,
 .notion-header__content,
 .notion-toggle.bg-gray,
 .notion-callout__icon,
@@ -119,7 +118,6 @@ p {
 .notion-semantic-string .link:hover {
     opacity: 1 !important;
 }
-
 
 /*-------------------------------------------*/
 /*---------------- GALLERY ------------------*/
