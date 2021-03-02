@@ -155,7 +155,7 @@ p {
 }
 
 .notion-collection-card:hover {
-    transform: translateX(20px) !important;
+    transform: translateX(12px) !important;
     background: none !important;
     opacity: 0.6 !important;
 }
