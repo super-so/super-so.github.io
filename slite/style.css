@@ -20,8 +20,7 @@ Powered by Super.so
 /*-------------------------------------------*/
 
 :root {
-    --color-text-default: #FFF !important;
-    --color-bg-default: #9ba0b0 !important;
+    --color-text-default: #000 !important;
     --font: 'ny', serif !important;
 }
 
