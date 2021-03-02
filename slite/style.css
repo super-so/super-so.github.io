@@ -1,0 +1,58 @@
+/*
+
+Slite Template
+Powered by Super.so
+
+*/
+
+/*-------------------------------------------*/
+/*------------------ FONTs ------------------*/
+/*-------------------------------------------*/
+@font-face {
+    font-family: 'ny';
+    src:  url('https://sites.super.so/slite/assets/ny.woff') format('woff'),
+          url('https://sites.super.so/slite/assets/ny.ttf') format('truetype');
+}
+
+/*-------------------------------------------*/
+/*---------------- VARIABLES ----------------*/
+/*-------------------------------------------*/
+:root {
+    --color-text-default: #FFF !important;
+    --color-bg-default: #9ba0b0 !important;
+    --font: 'ny', serif !important;
+}
+
+/*-------------------------------------------*/
+/*-------------- FADE ANIMATION -------------*/
+/*-------------------------------------------*/
+body {
+    -webkit-animation: fadeIn 1s !important;
+    -moz-animation: fadeIn 1s !important;
+    animation: fadeIn 1s !important;
+}
+@keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
+@-moz-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
+@-webkit-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
+
+/*-------------------------------------------*/
+/*-------------- HIDDEN CONTENT -------------*/
+/*-------------------------------------------*/
+.notion-page__icon,
+.notion-toggle.bg-gray,
+.notion-header__content,
+.notion-navbar {
+    display: none !important;
+}
+
+.super-content {
+    padding-bottom: 40px !important;
+}
+
+/*-------------------------------------------*/
+/*--------------- TYPOGRAPHY ----------------*/
+/*-------------------------------------------*/
+h1, h2, h3 {
+    font-family: var(--font) !important;
+    font-weight: 100 !important;
+}
