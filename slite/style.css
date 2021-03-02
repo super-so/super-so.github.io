@@ -89,7 +89,7 @@ body {
 }
 
 .super-content {
-    padding-bottom: 50px !important;
+    padding: 50px 0 !important;
 }
 
 /*-------------------------------------------*/
@@ -144,7 +144,7 @@ p {
 .notion-collection-card {
     grid-template-columns: min-content !important;
     transition: var(--transition) !important;
-    margin-bottom: 30px !important;
+    padding-bottom: 30px !important;
     align-items: center !important;
     overflow: visible !important;
     border-radius: 0 !important;
