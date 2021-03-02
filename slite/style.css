@@ -20,8 +20,13 @@ Powered by Super.so
 /*-------------------------------------------*/
 
 :root {
-    --color-text-default: #000 !important;
     --color-bg-default: #fff !important;
+    --color-border-default: rgba(0,0,0,0.2) !important;
+
+    --color-text-default: #000 !important;
+    --color-text-gray: var(--color-bg-default) !important;
+
+    --column-spacing: 30px !important;
     --font: 'ny', serif !important;
 }
 
@@ -54,6 +59,10 @@ body {
 
 .notion-column-list {
     align-items: baseline !important;
+}
+
+.notion-divider {
+    border-bottom: 1px solid var(--color-border-default) !important;
 }
 
 /*-------------------------------------------*/
