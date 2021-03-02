@@ -26,6 +26,7 @@ Powered by Super.so
     --color-text-default: #000 !important;
     --color-text-gray: var(--color-bg-default) !important;
 
+    --transition:: all .2s ease-in-out !important;
     --column-spacing: 30px !important;
     --font: 'ny', serif !important;
 }
@@ -102,16 +103,31 @@ p {
     min-height: calc(1.5rem) !important; 
 }
 
+.notion-semantic-string .link {
+    transition: var(--transition) !important;
+    border: none !important;
+    opacity: 0.4 !important;
+}
+
+.notion-semantic-string .link:hover {
+    opacity: 1 !important;
+}
+
 /*-------------------------------------------*/
 /*-------------- CALLOUT BLOCK --------------*/
 /*-------------------------------------------*/
 
 .notion-callout {
     background: var(--color-bg-default) !important;
+    transition: var(--transition) !important;
     border-radius: 100px !important;
     position: relative !important;
     padding: 24px !important;
     border: none !important;
+}
+
+.notion-callout:hover {
+    opacity: 0.6 !important;
 }
 
 .notion-callout a {
@@ -123,6 +139,7 @@ p {
     height: 100% !important;
     border: none !important;
     width: 100% !important;
+    opacity: 1 !important;
     left: 0 !important;
     top: 0 !important;
 }
