@@ -52,6 +52,10 @@ body {
     padding: 0 !important;
 }
 
+.notion-column-list {
+    align-items: baseline !important;
+}
+
 /*-------------------------------------------*/
 /*-------------- HIDDEN CONTENT -------------*/
 /*-------------------------------------------*/
@@ -82,10 +86,12 @@ h1 {
 }
 
 p {
-    line-height: 2 !important;
-    max-width: 85% !important;
+    line-height: 2.4 !important;
 }
 
+.notion-text {
+    min-height: calc(1.5rem) !important; 
+}
 
 /*-------------------------------------------*/
 /*-------------- CALLOUT BLOCK --------------*/
@@ -110,4 +116,13 @@ p {
     width: 100% !important;
     left: 0 !important;
     top: 0 !important;
+}
+
+
+/*-------------------------------------------*/
+/*-------------- SITE SPECIFIC --------------*/
+/*-------------------------------------------*/
+
+#block-4e524e5a61e54ff0b5fcb8aab8e2d0cb {
+    max-width: 85% !important;
 }
