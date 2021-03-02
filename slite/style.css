@@ -59,7 +59,7 @@ body {
 }
 
 .notion-column-list {
-    align-items: baseline !important;
+    align-items: center !important;
 }
 
 .notion-divider {
@@ -103,7 +103,7 @@ p {
     min-height: calc(1.5rem) !important; 
 }
 
-.notion-semantic-string .link {
+.notion-link {
     transition: var(--transition) !important;
     border: none !important;
     opacity: 0.4 !important;
