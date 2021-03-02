@@ -26,7 +26,7 @@ Powered by Super.so
     --color-text-default: #000 !important;
     --color-text-gray: var(--color-bg-default) !important;
     
-    --transition: all .4s cubic-bezier(0.8,0.04,0.4,1) !important;
+    --transition: all .3s cubic-bezier(0.8,0.04,0.4,1) !important;
     --shadow-lg: 0 40px 80px -20px rgb(0,0,0,0.1) !important;
     --shadow-md: 0 20px 40px -20px rgb(0,0,0,0.1) !important;
     --shadow-sm: 0 10px 20px -10px rgb(0,0,0,0.1) !important;
@@ -102,6 +102,7 @@ h1, h2, h3 {
 }
 
 h1 {
+    margin-top: 20px !important;
     font-size: 60px !important;
 }
 
