@@ -127,7 +127,7 @@ body {
     font-size: 24px !important;
 }
 
-notion-collection-card__content {
+.notion-collection-card__content {
     align-items: flex-end !important;
     grid-column-start: 2 !important;
     grid-row-start: 1 !important;
