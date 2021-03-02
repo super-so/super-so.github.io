@@ -26,10 +26,11 @@ Powered by Super.so
     --color-text-default: #000 !important;
     --color-text-gray: var(--color-bg-default) !important;
     
-    --transition: all .3s cubic-bezier(0.8,0.04,0.4,1) !important;
     --shadow-lg: 0 40px 80px -20px rgb(0,0,0,0.1) !important;
-    --shadow-md: 0 20px 40px -20px rgb(0,0,0,0.1) !important;
+    --shadow-md: 0 20px 40px -20px rgb(0,0,0,0.2) !important;
     --shadow-sm: 0 10px 20px -10px rgb(0,0,0,0.1) !important;
+
+    --transition: all .3s cubic-bezier(0.8,0.04,0.4,1) !important;
     --column-spacing: 30px !important;
     --font: 'ny', serif !important;
 }
@@ -52,7 +53,7 @@ body {
 @-webkit-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
 
 /*-------------------------------------------*/
-/*--------------- MAIN CONTENT --------------*/
+/*-------------- MISCELLANEOUS --------------*/
 /*-------------------------------------------*/
 
 .max-width {
@@ -157,6 +158,10 @@ p {
     transform: translateX(20px) !important;
     background: none !important;
     opacity: 0.6 !important;
+}
+
+.notion-collection-card__cover {
+    box-shadow: var(--shadow-md) !important;
 }
 
 .notion-collection-card__cover,
