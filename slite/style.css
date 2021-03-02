@@ -105,6 +105,7 @@ body {
 }
 
 .notion-collection-card__cover,
+.notion-collection-card__cover div,
 .notion-collection-card__cover img {
     border-radius: 12px !important;
     min-height: 100px !important;
