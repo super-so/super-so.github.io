@@ -78,3 +78,8 @@ h1, h2, h3 {
 h1 {
     font-size: 60px !important;
 }
+
+p {
+    line-height: 2 !important;
+    max-width: 85% !important;
+}
