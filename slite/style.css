@@ -26,7 +26,7 @@ Powered by Super.so
     --color-text-default: #000 !important;
     --color-text-gray: var(--color-bg-default) !important;
     
-    --transition: all .2s cubic-bezier(0.8,0.04,0.4,1) !important;
+    --transition: all .4s cubic-bezier(0.8,0.04,0.4,1) !important;
     --shadow: 0 10px 20px -10px rgb(0,0,0,0.1) !important;
     --column-spacing: 30px !important;
     --font: 'ny', serif !important;
@@ -135,6 +135,7 @@ p {
 .notion-collection-card {
     grid-template-columns: min-content !important;
     transition: var(--transition) !important;
+    margin-bottom: 30px !important;
     align-items: center !important;
     overflow: visible !important;
     border-radius: 0 !important;
@@ -146,7 +147,7 @@ p {
 .notion-collection-card:hover {
     transform: translateX(20px) !important;
     background: none !important;
-    opacity: 0.8 !important;
+    opacity: 0.6 !important;
 }
 
 .notion-collection-card__cover,
