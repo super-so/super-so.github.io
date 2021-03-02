@@ -22,10 +22,11 @@ Powered by Super.so
 :root {
     --color-bg-default: #fff !important;
     --color-border-default: rgba(0,0,0,0.2) !important;
-
+    
     --color-text-default: #000 !important;
     --color-text-gray: var(--color-bg-default) !important;
-
+    
+    --shadow: 0 10px 20px -10px rgb(0,0,0,0.1) !important;
     --transition: all .2s ease-in-out !important;
     --column-spacing: 30px !important;
     --font: 'ny', serif !important;
@@ -70,16 +71,65 @@ body {
 /*-------------- HIDDEN CONTENT -------------*/
 /*-------------------------------------------*/
 
-.notion-page__icon,
-.notion-toggle.bg-gray,
+.notion-property__title__icon-wrapper,
+.notion-collection__header,
 .notion-header__content,
+.notion-toggle.bg-gray,
 .notion-callout__icon,
+.notion-page__icon,
 .notion-navbar {
     display: none !important;
 }
 
 .super-content {
     padding-bottom: 40px !important;
+}
+
+/*-------------------------------------------*/
+/*---------------- GALLERY ------------------*/
+/*-------------------------------------------*/
+
+.notion-collection-gallery {
+    display: block !important;
+    border: none !important;
+}
+
+.notion-collection-card {
+    grid-template-columns: min-content !important;
+    align-items: center !important;
+    overflow: visible !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    grid-gap: 30px !important;
+    display: grid !important;
+}
+
+.notion-collection-card__cover,
+.notion-collection-card__cover img {
+    border-radius: 12px !important;
+    min-height: 125px !important;
+    max-height: 125px !important;
+    height: 125px !important;
+    width: 200px !important;
+}
+
+.notion-property__title,
+.notion-collection-card__content {
+    display: flex !important;
+    height: 60px !important;
+    padding: 0 !important;
+}
+
+.notion-property__title {
+    grid-column-start: 2 !important;
+    grid-row-start: 1 !important;
+    font-size: 24px !important;
+}
+
+notion-collection-card__content {
+    align-items: flex-end !important;
+    grid-column-start: 2 !important;
+    grid-row-start: 1 !important;
 }
 
 /*-------------------------------------------*/
@@ -93,6 +143,10 @@ h1, h2, h3 {
 
 h1 {
     font-size: 60px !important;
+}
+
+h2 {
+    font-size: 30px !important;
 }
 
 p {
@@ -120,6 +174,7 @@ p {
 .notion-callout {
     background: var(--color-bg-default) !important;
     transition: var(--transition) !important;
+    box-shadow: var(--shadow) !important;
     border-radius: 100px !important;
     position: relative !important;
     padding: 24px !important;
@@ -143,7 +198,6 @@ p {
     left: 0 !important;
     top: 0 !important;
 }
-
 
 /*-------------------------------------------*/
 /*-------------- SITE SPECIFIC --------------*/
