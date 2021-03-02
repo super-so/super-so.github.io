@@ -114,6 +114,10 @@ body {
     width: 160px !important;
 }
 
+.notion-collection-card:hover {
+    background: none !important;
+}
+
 .notion-property__title,
 .notion-collection-card__content {
     display: flex !important;
