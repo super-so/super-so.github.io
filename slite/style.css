@@ -8,6 +8,7 @@ Powered by Super.so
 /*-------------------------------------------*/
 /*------------------ FONTs ------------------*/
 /*-------------------------------------------*/
+
 @font-face {
     font-family: 'ny';
     src:  url('https://sites.super.so/slite/assets/ny.woff') format('woff'),
@@ -17,6 +18,7 @@ Powered by Super.so
 /*-------------------------------------------*/
 /*---------------- VARIABLES ----------------*/
 /*-------------------------------------------*/
+
 :root {
     --color-text-default: #FFF !important;
     --color-bg-default: #9ba0b0 !important;
@@ -26,7 +28,11 @@ Powered by Super.so
 /*-------------------------------------------*/
 /*-------------- FADE ANIMATION -------------*/
 /*-------------------------------------------*/
+
 body {
+    background: radial-gradient(30% 55.51% at 50% 70%, #FFD3C7 0%, rgba(255, 211, 200, 0.04) 100%),
+                radial-gradient(30% 80% at 94% 96%, #C8EAFF 0%, rgba(230, 245, 255, 0) 70%),
+                radial-gradient(44% 80% at 4% 94%, rgba(107, 110, 154, 0.8) 0%, rgba(225, 225, 234, 0) 100%), #FFFFFF !important;
     -webkit-animation: fadeIn 1s !important;
     -moz-animation: fadeIn 1s !important;
     animation: fadeIn 1s !important;
@@ -36,8 +42,18 @@ body {
 @-webkit-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
 
 /*-------------------------------------------*/
+/*--------------- MAIN CONTENT --------------*/
+/*-------------------------------------------*/
+
+.max-width {
+    max-width: 90% !important;
+    width: 600px !important;
+}
+
+/*-------------------------------------------*/
 /*-------------- HIDDEN CONTENT -------------*/
 /*-------------------------------------------*/
+
 .notion-page__icon,
 .notion-toggle.bg-gray,
 .notion-header__content,
@@ -52,7 +68,12 @@ body {
 /*-------------------------------------------*/
 /*--------------- TYPOGRAPHY ----------------*/
 /*-------------------------------------------*/
+
 h1, h2, h3 {
     font-family: var(--font) !important;
     font-weight: 100 !important;
+}
+
+h1 {
+    font-size: 60px !important;
 }
