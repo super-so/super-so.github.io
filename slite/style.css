@@ -32,6 +32,7 @@ body {
     background: radial-gradient(30% 55.51% at 50% 70%, #FFD3C7 0%, rgba(255, 211, 200, 0.04) 100%),
                 radial-gradient(30% 80% at 94% 96%, #C8EAFF 0%, rgba(230, 245, 255, 0) 70%),
                 radial-gradient(44% 80% at 4% 94%, rgba(107, 110, 154, 0.8) 0%, rgba(225, 225, 234, 0) 100%), #FFFFFF !important;
+    background-attachment: fixed !important;
     -webkit-animation: fadeIn 1s !important;
     -moz-animation: fadeIn 1s !important;
     animation: fadeIn 1s !important;
@@ -47,6 +48,7 @@ body {
 .max-width {
     max-width: 90% !important;
     width: 600px !important;
+    padding: 0 !important;
 }
 
 /*-------------------------------------------*/
