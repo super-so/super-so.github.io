@@ -6,7 +6,7 @@ Powered by Super.so
 */
 
 /*-------------------------------------------*/
-/*------------------ FONTs ------------------*/
+/*------------------ FONTS ------------------*/
 /*-------------------------------------------*/
 
 @font-face {
@@ -26,7 +26,7 @@ Powered by Super.so
     --color-text-default: #000 !important;
     --color-text-gray: var(--color-bg-default) !important;
 
-    --transition:: all .2s ease-in-out !important;
+    --transition: all .2s ease-in-out !important;
     --column-spacing: 30px !important;
     --font: 'ny', serif !important;
 }
