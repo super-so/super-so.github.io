@@ -52,6 +52,17 @@ body {
 @-moz-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
 @-webkit-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
 
+.super-content {
+    -webkit-animation: fadeInLeft 1s !important;
+    -moz-animation: fadeInLeft 1s !important;
+    animation: fadeInLeft 1s !important;
+    padding: 20px 0 40px !important;
+}
+
+@keyframes fadeInLeft { 0% { transform: translate3d(40px,0,0); } 100% { transform: translate3d(0,0,0); } }
+@-moz-keyframes fadeInLeft { 0% { transform: translate3d(40px,0,0); } 100% { transform: translate3d(0,0,0); } }
+@-webkit-keyframes fadeInLeft { 0% { transform: translate3d(40px,0,0); } 100% { transform: translate3d(0,0,0); } }
+
 /*-------------------------------------------*/
 /*-------------- MISCELLANEOUS --------------*/
 /*-------------------------------------------*/
@@ -87,10 +98,6 @@ body {
 .notion-page__icon,
 .notion-navbar {
     display: none !important;
-}
-
-.super-content {
-    padding: 40px 0 !important;
 }
 
 /*-------------------------------------------*/
