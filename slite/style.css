@@ -59,9 +59,9 @@ body {
     padding: 20px 0 40px !important;
 }
 
-@keyframes fadeInLeft { 0% { transform: translateX(-40px); } 100% { transform: translateX(0); } }
-@-moz-keyframes fadeInLeft { 0% { transform: translateX(-40px); } 100% { transform: translateX(0); } }
-@-webkit-keyframes fadeInLeft { 0% { transform: translateX(-40px); } 100% { transform: translateX(0); } }
+@keyframes fadeInLeft { 0% { transform: translate3d(-40px,0,0); } 100% { transform: translate3d(0,0,0); } }
+@-moz-keyframes fadeInLeft { 0% { transform: translate3d(-40px,0,0); } 100% { transform: translate3d(0,0,0); } }
+@-webkit-keyframes fadeInLeft { 0% { transform: translate3d(-40px,0,0); } 100% { transform: translate3d(0,0,0); } }
 
 /*-------------------------------------------*/
 /*-------------- MISCELLANEOUS --------------*/
