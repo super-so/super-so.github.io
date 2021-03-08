@@ -1,17 +1,3 @@
-/*-------------------------------------------*/
-/*------------ GLOBAL VARIABLES -------------*/
-/*-------------------------------------------*/
-
-/* :root {
-    --color-blackout-1: #000 !important;
-    --color-blackout-2: #0a0d0f !important;
-    --color-blackout-3: #131419 !important;
-    --color-ui-hover-bg: #f6f7f9 !important;
-    --color-light-grey: #f6f7f9 !important;
-    --color-white: #fff !important;
-    --rounded: 8px !important;
-} */
-
 :root {
     --color-ui-hover-bg: rgba(255,255,255,0.1) !important;
     --color-border-default: var(--color-ui-hover-bg) !important;
