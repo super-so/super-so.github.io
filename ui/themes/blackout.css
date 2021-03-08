@@ -13,7 +13,7 @@
 } */
 
 :root {
-    --color-text-default: #37352f;
+    --color-text-default: #fff;
     --color-text-default-light: rgba(55,53,47,0.6);
     --color-text-gray: #9b9a97;
     --color-text-brown: #64473a;
@@ -24,7 +24,8 @@
     --color-text-purple: #6940a5;
     --color-text-pink: #ad1a72;
     --color-text-red: #e03e3e;
-    --color-bg-default: #fff;
+
+    --color-bg-default: #000;
     --color-bg-gray: #ebeced;
     --color-bg-brown: #e9e5e3;
     --color-bg-orange: #faebdd;
@@ -34,6 +35,7 @@
     --color-bg-purple: #eae4f2;
     --color-bg-pink: #f4dfeb;
     --color-bg-red: #fbe4e4;
+
     --color-bg-gray-light: rgba(235,236,237,0.3);
     --color-bg-brown-light: rgba(233,229,227,0.3);
     --color-bg-orange-light: rgba(250,235,221,0.3);
@@ -43,6 +45,7 @@
     --color-bg-purple-light: rgba(234,228,242,0.3);
     --color-bg-pink-light: rgba(244,223,235,0.3);
     --color-bg-red-light: rgba(251,228,228,0.3);
+
     --color-pill-default: rgba(206,205,202,0.5);
     --color-pill-gray: hsla(45,2%,60%,0.4);
     --color-pill-brown: rgba(140,46,0,0.2);
@@ -53,6 +56,7 @@
     --color-pill-purple: rgba(103,36,222,0.2);
     --color-pill-pink: rgba(221,0,129,0.2);
     --color-pill-red: rgba(255,0,26,0.2);
+
     --color-ui-hover-bg: rgba(55,53,47,0.08);
     --color-border-default: #ebeced;
 }
