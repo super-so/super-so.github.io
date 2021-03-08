@@ -46,16 +46,16 @@
     --color-bg-pink-light: var(--color-text-pink) !important;
     --color-bg-red-light: var(--color-text-red) !important;
 
-    --color-pill-default: rgba(206,205,202,0.5) !important;
-    --color-pill-gray: hsla(45,2%,60%,0.4) !important;
-    --color-pill-brown: rgba(140,46,0,0.2) !important;
-    --color-pill-orange: rgba(245,93,0,0.2) !important;
-    --color-pill-yellow: rgba(233,168,0,0.2) !important;
-    --color-pill-green: rgba(0,135,107,0.2) !important;
-    --color-pill-blue: rgba(0,120,223,0.2) !important;
-    --color-pill-purple: rgba(103,36,222,0.2) !important;
-    --color-pill-pink: rgba(221,0,129,0.2) !important;
-    --color-pill-red: rgba(255,0,26,0.2) !important;
+    --color-pill-default: var(--color-text-default) !important;
+    --color-pill-gray: var(--color-text-gray) !important;
+    --color-pill-brown: var(--color-text-brown) !important;
+    --color-pill-orange: var(--color-text-orange) !important;
+    --color-pill-yellow: var(--color-text-yellow) !important;
+    --color-pill-green: var(--color-text-green) !important;
+    --color-pill-blue: var(--color-text-blue) !important;
+    --color-pill-purple: var(--color-text-purple) !important;
+    --color-pill-pink: var(--color-text-pink) !important;
+    --color-pill-red: var(--color-text-red) !important;
 
     --color-ui-hover-bg: rgba(255,255,255,0.1) !important;
     --color-border-default: var(--color-ui-hover-bg) !important;
