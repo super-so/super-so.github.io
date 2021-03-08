@@ -6,7 +6,7 @@
     --color-ui-hover-bg: rgba(255,255,255,0.1) !important;
     --color-border-default: var(--color-ui-hover-bg) !important;
 
-    --color-text-default: #947678 !important;
+    --color-text-default: #4d586f !important;
     --color-text-default-light: #64748B !important;
     --color-text-gray: var(--color-text-default-light) !important;
     --color-text-brown: #B45309 !important;
@@ -18,7 +18,7 @@
     --color-text-pink: #DB2777 !important;
     --color-text-red: #DC2626 !important;
 
-    --color-bg-default: #FFF7ED !important;
+    --color-bg-default: #FAF5F0 !important;
     --color-bg-gray: var(--color-text-gray) !important;
     --color-bg-brown: var(--color-text-brown) !important;
     --color-bg-orange: var(--color-text-orange) !important;
