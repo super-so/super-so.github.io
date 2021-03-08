@@ -13,28 +13,28 @@
 } */
 
 :root {
-    --color-text-default: #fff !important;
+    --color-text-default: #FFF !important;
     --color-text-default-light: rgba(55,53,47,0.6) !important;
-    --color-text-gray: #9b9a97 !important;
-    --color-text-brown: #64473a !important;
-    --color-text-orange: #d9730d !important;
-    --color-text-yellow: #dfab01 !important;
-    --color-text-green: #0f7b6c !important;
-    --color-text-blue: #0b6e99 !important;
-    --color-text-purple: #6940a5 !important;
-    --color-text-pink: #ad1a72 !important;
-    --color-text-red: #e03e3e !important;
+    --color-text-gray: #64748B !important;
+    --color-text-brown: #B45309 !important;
+    --color-text-orange: #EA580C !important;
+    --color-text-yellow: #EAB308 !important;
+    --color-text-green: #0D9488 !important;
+    --color-text-blue: #2563EB !important;
+    --color-text-purple: #7C3AED !important;
+    --color-text-pink: #DB2777 !important;
+    --color-text-red: #DC2626 !important;
 
-    --color-bg-default: #000 !important;
-    --color-bg-gray: #ebeced !important;
-    --color-bg-brown: #e9e5e3 !important;
-    --color-bg-orange: #faebdd !important;
-    --color-bg-yellow: #fbf3db !important;
-    --color-bg-green: #ddedea !important;
-    --color-bg-blue: #ddebf1 !important;
-    --color-bg-purple: #eae4f2 !important;
-    --color-bg-pink: #f4dfeb !important;
-    --color-bg-red: #fbe4e4 !important;
+    --color-bg-default: var(--color-text-default) !important;
+    --color-bg-gray: var(--color-text-gray) !important;
+    --color-bg-brown: var(--color-text-brown) !important;
+    --color-bg-orange: var(--color-text-orange) !important;
+    --color-bg-yellow: var(--color-text-yellow) !important;
+    --color-bg-green: var(--color-text-green) !important;
+    --color-bg-blue: var(--color-text-blue) !important;
+    --color-bg-purple: var(--color-text-purple) !important;
+    --color-bg-pink: var(--color-text-pink) !important;
+    --color-bg-red: var(--color-text-red) !important;
 
     --color-bg-gray-light: rgba(235,236,237,0.3) !important;
     --color-bg-brown-light: rgba(233,229,227,0.3) !important;
