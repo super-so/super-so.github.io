@@ -25,7 +25,7 @@
     --color-text-pink: #DB2777 !important;
     --color-text-red: #DC2626 !important;
 
-    --color-bg-default: var(--color-text-default) !important;
+    --color-bg-default: #000 !important;
     --color-bg-gray: var(--color-text-gray) !important;
     --color-bg-brown: var(--color-text-brown) !important;
     --color-bg-orange: var(--color-text-orange) !important;
