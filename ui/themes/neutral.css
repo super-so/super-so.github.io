@@ -19,15 +19,15 @@
     --color-text-red: #F87171 !important;
 
     --color-bg-default: #FAF5F0 !important;
-    --color-bg-gray: #E5E7EB !important;
-    --color-bg-brown: #DFB596 !important;
-    --color-bg-orange: #FED7AA !important;
-    --color-bg-yellow: #FDE68A !important;
-    --color-bg-green: #A7F3D0 !important;
-    --color-bg-blue: #BFDBFE !important;
-    --color-bg-purple: #D8B4FE !important;
-    --color-bg-pink: #FBCFE8 !important;
-    --color-bg-red: #FCA5A5 !important;
+    --color-bg-gray: #F0EDEB !important;
+    --color-bg-brown: #F0E4DA !important;
+    --color-bg-orange: #FCE4D1 !important;
+    --color-bg-yellow: #FBEED0 !important;
+    --color-bg-green: #DEEDE8 !important;
+    --color-bg-blue: #DEE8F7 !important;
+    --color-bg-purple: #E0D8F4 !important;
+    --color-bg-pink: #FAE0F0 !important;
+    --color-bg-red: #FBD6D2 !important;
 
     --color-bg-gray-light: var(--color-bg-gray) !important;
     --color-bg-brown-light: var(--color-bg-brown) !important;
