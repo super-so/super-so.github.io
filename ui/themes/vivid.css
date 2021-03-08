@@ -6,7 +6,7 @@
     --color-ui-hover-bg: rgba(255,255,255,0.1) !important;
     --color-border-default: var(--color-ui-hover-bg) !important;
 
-    --color-text-default: #FFF !important;
+    --color-text-default: #000 !important;
     --color-text-default-light: #64748B !important;
     --color-text-gray: var(--color-text-default-light) !important;
     --color-text-brown: #B45309 !important;
