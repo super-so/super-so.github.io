@@ -14,11 +14,11 @@
 
 :root {
     --color-text-default: #FFF !important;
-    --color-text-default-light: rgba(55,53,47,0.6) !important;
-    --color-text-gray: #64748B !important;
+    --color-text-default-light: #64748B !important;
+    --color-text-gray: var(--color-text-default-light) !important;
     --color-text-brown: #B45309 !important;
     --color-text-orange: #EA580C !important;
-    --color-text-yellow: #EAB308 !important;
+    --color-text-yellow: #F59E0B !important;
     --color-text-green: #0D9488 !important;
     --color-text-blue: #2563EB !important;
     --color-text-purple: #7C3AED !important;
