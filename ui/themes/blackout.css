@@ -57,6 +57,6 @@
     --color-pill-pink: rgba(221,0,129,0.2) !important;
     --color-pill-red: rgba(255,0,26,0.2) !important;
 
-    --color-ui-hover-bg: rgba(55,53,47,0.08) !important;
-    --color-border-default: #ebeced !important;
+    --color-ui-hover-bg: rgba(255,255,255,0.1) !important;
+    --color-border-default: var(--color-ui-hover-bg) !important;
 }
