@@ -3,41 +3,41 @@
 /*-------------------------------------------*/
 
 :root {
-    --color-ui-hover-bg: rgba(255,255,255,0.1) !important;
+    --color-ui-hover-bg: rgba(0,0,0,0.04) !important;
     --color-border-default: var(--color-ui-hover-bg) !important;
 
     --color-text-default: #4d586f !important;
     --color-text-default-light: #64748B !important;
-    --color-text-gray: var(--color-text-default-light) !important;
-    --color-text-brown: #B45309 !important;
-    --color-text-orange: #EA580C !important;
-    --color-text-yellow: #F59E0B !important;
-    --color-text-green: #0D9488 !important;
-    --color-text-blue: #2563EB !important;
-    --color-text-purple: #7C3AED !important;
-    --color-text-pink: #DB2777 !important;
-    --color-text-red: #DC2626 !important;
+    --color-text-gray: #9CA3AF !important;
+    --color-text-brown: #C9844F !important;
+    --color-text-orange: #FB923C !important;
+    --color-text-yellow: #FBBF24 !important;
+    --color-text-green: #34D399 !important;
+    --color-text-blue: #60A5FA !important;
+    --color-text-purple: #C084FC !important;
+    --color-text-pink: #F472B6 !important;
+    --color-text-red: #F87171 !important;
 
     --color-bg-default: #FAF5F0 !important;
-    --color-bg-gray: var(--color-text-gray) !important;
-    --color-bg-brown: var(--color-text-brown) !important;
-    --color-bg-orange: var(--color-text-orange) !important;
-    --color-bg-yellow: var(--color-text-yellow) !important;
-    --color-bg-green: var(--color-text-green) !important;
-    --color-bg-blue: var(--color-text-blue) !important;
-    --color-bg-purple: var(--color-text-purple) !important;
-    --color-bg-pink: var(--color-text-pink) !important;
-    --color-bg-red: var(--color-text-red) !important;
+    --color-bg-gray: #E5E7EB !important;
+    --color-bg-brown: #DFB596 !important;
+    --color-bg-orange: #FED7AA !important;
+    --color-bg-yellow: #FDE68A !important;
+    --color-bg-green: #A7F3D0 !important;
+    --color-bg-blue: #BFDBFE !important;
+    --color-bg-purple: #D8B4FE !important;
+    --color-bg-pink: #FBCFE8 !important;
+    --color-bg-red: #FCA5A5 !important;
 
-    --color-bg-gray-light: var(--color-text-gray) !important;
-    --color-bg-brown-light: var(--color-text-brown) !important;
-    --color-bg-orange-light: var(--color-text-orange) !important;
-    --color-bg-yellow-light: var(--color-text-yellow) !important;
-    --color-bg-green-light: var(--color-text-green) !important;
-    --color-bg-blue-light: var(--color-text-blue) !important;
-    --color-bg-purple-light: var(--color-text-purple) !important;
-    --color-bg-pink-light: var(--color-text-pink) !important;
-    --color-bg-red-light: var(--color-text-red) !important;
+    --color-bg-gray-light: var(--color-bg-gray) !important;
+    --color-bg-brown-light: var(--color-bg-brown) !important;
+    --color-bg-orange-light: var(--color-bg-orange) !important;
+    --color-bg-yellow-light: var(--color-bg-yellow) !important;
+    --color-bg-green-light: var(--color-bg-green) !important;
+    --color-bg-blue-light: var(--color-bg-blue) !important;
+    --color-bg-purple-light: var(--color-bg-purple) !important;
+    --color-bg-pink-light: var(--color-bg-pink) !important;
+    --color-bg-red-light: var(--color-bg-red) !important;
 
     --color-pill-default: var(--color-ui-hover-bg) !important;
     --color-pill-gray: var(--color-text-gray) !important;
@@ -50,3 +50,4 @@
     --color-pill-pink: var(--color-text-pink) !important;
     --color-pill-red: var(--color-text-red) !important;
 }
+
