@@ -36,15 +36,15 @@
     --color-bg-pink: var(--color-text-pink) !important;
     --color-bg-red: var(--color-text-red) !important;
 
-    --color-bg-gray-light: rgba(235,236,237,0.3) !important;
-    --color-bg-brown-light: rgba(233,229,227,0.3) !important;
-    --color-bg-orange-light: rgba(250,235,221,0.3) !important;
-    --color-bg-yellow-light: rgba(251,243,219,0.3) !important;
-    --color-bg-green-light: rgba(221,237,234,0.3) !important;
-    --color-bg-blue-light: rgba(221,235,241,0.3) !important;
-    --color-bg-purple-light: rgba(234,228,242,0.3) !important;
-    --color-bg-pink-light: rgba(244,223,235,0.3) !important;
-    --color-bg-red-light: rgba(251,228,228,0.3) !important;
+    --color-bg-gray-light: var(--color-text-gray) !important;
+    --color-bg-brown-light: var(--color-text-brown) !important;
+    --color-bg-orange-light: var(--color-text-orange) !important;
+    --color-bg-yellow-light: var(--color-text-yellow) !important;
+    --color-bg-green-light: var(--color-text-green) !important;
+    --color-bg-blue-light: var(--color-text-blue) !important;
+    --color-bg-purple-light: var(--color-text-purple) !important;
+    --color-bg-pink-light: var(--color-text-pink) !important;
+    --color-bg-red-light: var(--color-text-red) !important;
 
     --color-pill-default: rgba(206,205,202,0.5) !important;
     --color-pill-gray: hsla(45,2%,60%,0.4) !important;
