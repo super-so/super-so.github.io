@@ -1,0 +1,52 @@
+/*-------------------------------------------*/
+/*----------- NEUTRAL SUPER THEME -----------*/
+/*-------------------------------------------*/
+
+:root {
+    --color-ui-hover-bg: rgba(255,255,255,0.1) !important;
+    --color-border-default: var(--color-ui-hover-bg) !important;
+
+    --color-text-default: #947678 !important;
+    --color-text-default-light: #64748B !important;
+    --color-text-gray: var(--color-text-default-light) !important;
+    --color-text-brown: #B45309 !important;
+    --color-text-orange: #EA580C !important;
+    --color-text-yellow: #F59E0B !important;
+    --color-text-green: #0D9488 !important;
+    --color-text-blue: #2563EB !important;
+    --color-text-purple: #7C3AED !important;
+    --color-text-pink: #DB2777 !important;
+    --color-text-red: #DC2626 !important;
+
+    --color-bg-default: #FFF7ED !important;
+    --color-bg-gray: var(--color-text-gray) !important;
+    --color-bg-brown: var(--color-text-brown) !important;
+    --color-bg-orange: var(--color-text-orange) !important;
+    --color-bg-yellow: var(--color-text-yellow) !important;
+    --color-bg-green: var(--color-text-green) !important;
+    --color-bg-blue: var(--color-text-blue) !important;
+    --color-bg-purple: var(--color-text-purple) !important;
+    --color-bg-pink: var(--color-text-pink) !important;
+    --color-bg-red: var(--color-text-red) !important;
+
+    --color-bg-gray-light: var(--color-text-gray) !important;
+    --color-bg-brown-light: var(--color-text-brown) !important;
+    --color-bg-orange-light: var(--color-text-orange) !important;
+    --color-bg-yellow-light: var(--color-text-yellow) !important;
+    --color-bg-green-light: var(--color-text-green) !important;
+    --color-bg-blue-light: var(--color-text-blue) !important;
+    --color-bg-purple-light: var(--color-text-purple) !important;
+    --color-bg-pink-light: var(--color-text-pink) !important;
+    --color-bg-red-light: var(--color-text-red) !important;
+
+    --color-pill-default: var(--color-ui-hover-bg) !important;
+    --color-pill-gray: var(--color-text-gray) !important;
+    --color-pill-brown: var(--color-text-brown) !important;
+    --color-pill-orange: var(--color-text-orange) !important;
+    --color-pill-yellow: var(--color-text-yellow) !important;
+    --color-pill-green: var(--color-text-green) !important;
+    --color-pill-blue: var(--color-text-blue) !important;
+    --color-pill-purple: var(--color-text-purple) !important;
+    --color-pill-pink: var(--color-text-pink) !important;
+    --color-pill-red: var(--color-text-red) !important;
+}
