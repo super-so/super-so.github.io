@@ -13,6 +13,9 @@
 } */
 
 :root {
+    --color-ui-hover-bg: rgba(255,255,255,0.1) !important;
+    --color-border-default: var(--color-ui-hover-bg) !important;
+
     --color-text-default: #FFF !important;
     --color-text-default-light: #64748B !important;
     --color-text-gray: var(--color-text-default-light) !important;
@@ -46,7 +49,7 @@
     --color-bg-pink-light: var(--color-text-pink) !important;
     --color-bg-red-light: var(--color-text-red) !important;
 
-    --color-pill-default: var(--color-text-default) !important;
+    --color-pill-default: var(--color-ui-hover-bg) !important;
     --color-pill-gray: var(--color-text-gray) !important;
     --color-pill-brown: var(--color-text-brown) !important;
     --color-pill-orange: var(--color-text-orange) !important;
@@ -56,7 +59,4 @@
     --color-pill-purple: var(--color-text-purple) !important;
     --color-pill-pink: var(--color-text-pink) !important;
     --color-pill-red: var(--color-text-red) !important;
-
-    --color-ui-hover-bg: rgba(255,255,255,0.1) !important;
-    --color-border-default: var(--color-ui-hover-bg) !important;
 }
