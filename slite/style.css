@@ -266,6 +266,17 @@ p {
     h1 {
         font-size: 32px !important;
     }
+    .notion-collection-gallery {
+        display: block !important;
+    }
+    .notion-collection-card__cover {
+        margin: 12px 0 !important;
+    }
+    .notion-property__title,
+    .notion-collection-card__content {
+        height: auto !important;
+        width: 100% !important;
+    }
 }
 
 /*-------------------------------------------*/
