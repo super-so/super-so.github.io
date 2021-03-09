@@ -52,17 +52,6 @@ body {
 @-moz-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
 @-webkit-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
 
-.super-content {
-    -webkit-animation: fadeInLeft 1s !important;
-    -moz-animation: fadeInLeft 1s !important;
-    animation: fadeInLeft 1s !important;
-    padding: 20px 0 40px !important;
-}
-
-@keyframes fadeInLeft { 0% { transform: translate3d(-40px,0,0); } 100% { transform: translate3d(0,0,0); } }
-@-moz-keyframes fadeInLeft { 0% { transform: translate3d(-40px,0,0); } 100% { transform: translate3d(0,0,0); } }
-@-webkit-keyframes fadeInLeft { 0% { transform: translate3d(-40px,0,0); } 100% { transform: translate3d(0,0,0); } }
-
 /*-------------------------------------------*/
 /*-------------- MISCELLANEOUS --------------*/
 /*-------------------------------------------*/
@@ -72,6 +61,17 @@ body {
     width: 600px !important;
     padding: 0 !important;
 }
+
+.super-content {
+    -webkit-animation: fadeInLeft 1s !important;
+    -moz-animation: fadeInLeft 1s !important;
+    animation: fadeInLeft 1s !important;
+    padding: 0 0 60px !important;
+}
+
+@keyframes fadeInLeft { 0% { transform: translate3d(-40px,0,0); } 100% { transform: translate3d(0,0,0); } }
+@-moz-keyframes fadeInLeft { 0% { transform: translate3d(-40px,0,0); } 100% { transform: translate3d(0,0,0); } }
+@-webkit-keyframes fadeInLeft { 0% { transform: translate3d(-40px,0,0); } 100% { transform: translate3d(0,0,0); } }
 
 .notion-column-list {
     align-items: center !important;
@@ -121,6 +121,10 @@ h1 {
 
 h2 {
     font-size: 30px !important;
+}
+
+h3 {
+    margin: 12px 0 !important;
 }
 
 p {
@@ -242,7 +246,20 @@ p {
 }
 
 /*-------------------------------------------*/
-/*-------------- SITE SPECIFIC --------------*/
+/*---------------- CODE BLOCK ---------------*/
+/*-------------------------------------------*/
+
+.notion-semantic-string .code {
+    color: var(--color-text-default) !important;
+    background: rgba(0,0,0,0.04) !important;
+    display: inline-block !important;
+    padding: 10px 16px !important;
+    font-size: 12px !important;
+    margin: 8px 0 !important;
+}
+
+/*-------------------------------------------*/
+/*---------------- SLITE DEMO ---------------*/
 /*-------------------------------------------*/
 
 #block-4e524e5a61e54ff0b5fcb8aab8e2d0cb {
