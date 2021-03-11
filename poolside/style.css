@@ -17,6 +17,7 @@ a {
 .notion-navbar {
     background: var(--color-primary) !important;
     color: var(--color-bg-default) !important;
+    height: 20px !important;
 }
 
 .notion-navbar>a {
