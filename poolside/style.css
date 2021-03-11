@@ -1,11 +1,4 @@
-@font-face {
-    font-family: 'chicago';
-    src:  url('https://poolside.fm/fonts/chikarego2-webfont.ed446049.woff2') format('woff');
-}
-
 * {
-    font-family: 'chicago', monospace !important;
-    font-weight: normal !important;
     transition: none !important;
 }
 
