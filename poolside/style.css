@@ -8,7 +8,7 @@ body {
     background: url('https://images.ctfassets.net/hsst7dmi6ghe/485OaQSumrI0eBGnrAddx9/68882d2bc30e782a6b5000d941ec04af/1.gif') !important;
 }
 
-.notion-navnar {
+.notion-navbar {
     background: var(--color-primary) !important;
     color: var(--color-bg-default) !important;
 }
