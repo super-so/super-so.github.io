@@ -18,7 +18,7 @@
     --color-text-pink: #DB2777 !important;
     --color-text-red: #DC2626 !important;
 
-    --color-bg-default: #fff !important;
+    --color-bg-default: linear-gradient(135deg, #61b2d8 0%, #f9a4f2 100%) !important;
     --color-bg-gray: var(--color-text-gray) !important;
     --color-bg-brown: var(--color-text-brown) !important;
     --color-bg-orange: var(--color-text-orange) !important;
