@@ -37,7 +37,3 @@ a {
 .notion-navbar__title {
     font-size: 12px !important;
 }
-
-.notion-page>div:hover {
-    background: var()
-}
