@@ -10,6 +10,7 @@ body {
 }
 
 a {
+    cursor: url('https://poolside.fm/img/click.a54d5106.svg') 3 0, auto !important;
     transition: none !important;
 }
 
