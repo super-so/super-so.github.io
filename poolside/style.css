@@ -1,3 +1,7 @@
+* {
+    transition: none !important;
+}
+
 :root {
     --color-text-default: #fff !important;
     --color-ui-hover-bg: #000 !important;
@@ -11,7 +15,6 @@ body {
 
 a {
     cursor: url('https://poolside.fm/img/click.a54d5106.svg') 3 0, auto !important;
-    transition: none !important;
 }
 
 .notion-navbar {
