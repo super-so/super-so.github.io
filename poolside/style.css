@@ -1,5 +1,6 @@
 :root {
     --color-text-default: #fff !important;
+    --color-ui-hover-bg: #000 !important;
     --color-bg-default: #000 !important;
     --color-primary: #ffc9c9 !important;
 }
@@ -8,7 +9,30 @@ body {
     background: url('https://images.ctfassets.net/hsst7dmi6ghe/485OaQSumrI0eBGnrAddx9/68882d2bc30e782a6b5000d941ec04af/1.gif') !important;
 }
 
+a {
+    transition: none !important;
+}
+
 .notion-navbar {
     background: var(--color-primary) !important;
     color: var(--color-bg-default) !important;
+}
+
+.notion-navbar>a {
+    border-radius: 0 !important;
+    padding: 0 12px !important;
+    height: 100% !important;
+}
+
+.notion-navbar>a:hover {
+    background: var(--color-bg-default) !important;
+    color: var(--color-text-default) !important;
+}
+
+.notion-navbar__title {
+    font-size: 12px !important;
+}
+
+.notion-page>div:hover {
+    background: var()
 }
