@@ -50,6 +50,7 @@ a {
     font-size: 12px !important;
 }
 
+.notion-navbar>a:active,
 .notion-page>div:active {
     border: 1px dashed var(--color-text-default) !important;
 }
