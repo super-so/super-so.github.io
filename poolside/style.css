@@ -9,6 +9,11 @@
     --color-primary: #ffc9c9 !important;
 }
 
+::selection {
+    background: var(--color-bg-default) !important;
+    color: var(--color-text-default) !important;
+}
+
 body {
     background-image: url('https://images.ctfassets.net/hsst7dmi6ghe/485OaQSumrI0eBGnrAddx9/68882d2bc30e782a6b5000d941ec04af/1.gif') !important;
 }
