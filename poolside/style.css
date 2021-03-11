@@ -49,3 +49,7 @@ a {
 .notion-navbar__title {
     font-size: 12px !important;
 }
+
+.notion-page>div:active {
+    border: 1px dashed var(--color-text-default) !important;
+}
