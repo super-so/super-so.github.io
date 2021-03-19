@@ -50,3 +50,13 @@
     --color-pill-pink: var(--color-text-pink) !important;
     --color-pill-red: var(--color-text-red) !important;
 }
+
+.notion-navbar,
+.notion-collection__header {
+    display: none !important;
+}
+
+.notion-collection-list {
+    border: none !important;
+    padding: 0 !important;
+}
