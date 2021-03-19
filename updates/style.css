@@ -90,6 +90,7 @@ h1 {
     border-radius: 12px !important;
     position: relative !important;
     overflow: hidden !important;
+    margin: 20px 0 !important;
     order: 2 !important;
 }
 
@@ -103,11 +104,12 @@ h1 {
 }
 
 .notion-collection-card__content {
+    padding: 0 !important;
     order: 3 !important;
 }
 
 .notion-property__title {
-    padding-left: 60px !important;
+    padding: 0 0 0 60px !important;
     order: 1 !important;
     position: relative;
 }
