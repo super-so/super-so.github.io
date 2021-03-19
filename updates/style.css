@@ -88,8 +88,8 @@ h1 {
 
 .notion-collection-card {
     flex-direction: column !important;
-    overflow: visible !important;
     box-shadow: none !important;
+    padding: 40px 0 !important;
     display: flex !important;
 }
 
@@ -104,9 +104,9 @@ h1 {
 .notion-collection-card__cover,
 .notion-collection-card__cover div,
 .notion-collection-card__cover img {
-    min-height: 400px !important;
-    max-height: 400px !important;
-    height: 400px !important;
+    min-height: 360px !important;
+    max-height: 360px !important;
+    height: 360px !important;
     border: none !important;
 }
 
@@ -117,11 +117,21 @@ h1 {
 }
 
 .notion-property__title {
-    letter-spacing: -0.5px !important;
-    padding: 0 0 0 60px !important;
+    letter-spacing: -0.4px !important;
+    padding: 0 0 0 64px !important;
     font-size: 18px !important;
     order: 1 !important;
     position: relative;
+}
+
+.notion-collection-card__property {
+    min-height: auto !important;
+}
+
+.notion-collection-card__property .notion-semantic-string {
+    letter-spacing: -0.4px !important;
+    white-space: unset !important;
+    line-height: 1.8 !important;
 }
 
 .notion-property__title:before {
@@ -130,11 +140,11 @@ h1 {
     border-radius: 100px !important;
     align-items: center !important;
     position: absolute !important;
-    margin-top: 2px !important;
+    margin-top: 1px !important;
     font-size: 12px !important;
     content: "New" !important;
     display: flex !important;
-    height: 30px !important;
+    height: 26px !important;
     width: 48px !important;
     color: #fff !important;
     left: 0 !important;
@@ -142,5 +152,6 @@ h1 {
 
 .notion-property__date {
     position: absolute !important;
-    top: -40px !important;
+    font-size: 14px !important;
+    top: 0 !important;
 }
