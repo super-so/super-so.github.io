@@ -57,6 +57,12 @@
     display: none !important;
 }
 
+.max-width {
+    max-width: 90% !important;
+    width: 600px !important;
+    padding: 0 !important;
+}
+
 h1 {
     font-size: 30px !important;
 }
@@ -82,6 +88,7 @@ h1 {
 
 .notion-collection-card {
     flex-direction: column !important;
+    overflow: visible !important;
     box-shadow: none !important;
     display: flex !important;
 }
@@ -104,12 +111,15 @@ h1 {
 }
 
 .notion-collection-card__content {
+    font-size: 18px !important;
     padding: 0 !important;
     order: 3 !important;
 }
 
 .notion-property__title {
+    letter-spacing: -0.5px !important;
     padding: 0 0 0 60px !important;
+    font-size: 18px !important;
     order: 1 !important;
     position: relative;
 }
@@ -120,10 +130,17 @@ h1 {
     border-radius: 100px !important;
     align-items: center !important;
     position: absolute !important;
-    content: "NEW" !important;
+    margin-top: 2px !important;
+    font-size: 12px !important;
+    content: "New" !important;
     display: flex !important;
     height: 30px !important;
-    width: 50px !important;
+    width: 48px !important;
     color: #fff !important;
     left: 0 !important;
+}
+
+.notion-property__date {
+    position: absolute !important;
+    top: -40px !important;
 }
