@@ -3,8 +3,8 @@
 /*-------------------------------------------*/
 
 :root {
-    --color-ui-hover-bg: rgba(255,255,255,0.1) !important;
-    --color-border-default: var(--color-ui-hover-bg) !important;
+    --color-ui-hover-bg: #F9FAFE !important;
+    --color-border-default: #EDEEF3 !important;
 
     --color-text-default: #000 !important;
     --color-text-default-light: #64748B !important;
@@ -87,9 +87,10 @@ h1 {
 }
 
 .notion-collection-card {
+    border-bottom: 1px solid var(--color-border-default);
     flex-direction: column !important;
+    padding: 40px 0 60px !important;
     box-shadow: none !important;
-    padding: 40px 0 !important;
     display: flex !important;
 }
 
@@ -118,7 +119,7 @@ h1 {
 
 .notion-property__title {
     letter-spacing: -0.4px !important;
-    padding: 0 0 0 64px !important;
+    padding: 0 0 0 60px !important;
     font-size: 18px !important;
     order: 1 !important;
     position: relative;
