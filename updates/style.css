@@ -56,7 +56,28 @@
     display: none !important;
 }
 
-.notion-collection-list {
+.notion-collection-gallery {
+    grid-template-columns: 1fr !important;
+    grid-gap: 60px !important;
     border: none !important;
     padding: 0 !important;
+}
+
+.notion-collection-card {
+    box-shadow: none !important;
+}
+
+.notion-collection-card__cover {
+    border-radius: 12px !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.notion-collection-card__cover,
+.notion-collection-card__cover div,
+.notion-collection-card__cover img {
+    min-height: 400px !important;
+    max-height: 400px !important;
+    height: 400px !important;
+    border: none !important;
 }
