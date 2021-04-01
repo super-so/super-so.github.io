@@ -12,7 +12,7 @@
     --rounded: 8px !important;
 }
 
-.notion-header {
+#page-index .notion-header {
     display: none !important;
 }
 
