@@ -88,6 +88,8 @@ h1 {
 .notion-table-of-contents__item {
     transition: all .3s ease-in-out !important;
     border-radius: var(--rounded) !important;
+    letter-spacing: -0.2px !important;
+    font-weight: 500 !important;
 }
 
 .notion-table-of-contents__item:hover {
