@@ -67,6 +67,15 @@ h1 {
     white-space: pre !important;
 }
 
+.notion-image div {
+    overflow: visible !important;
+}
+
+.notion-image img {
+    box-shadow: 0 20px 40px -20px rgb(0,0,0,0.1) !important;
+    border-radius: 12px !important;
+}
+
 /*-------------------------------------------*/
 /*-------------- TOC SIDEBAR ----------------*/
 /*-------------------------------------------*/
