@@ -16,6 +16,10 @@
     display: none !important;
 }
 
+#page-index .super-content {
+    padding: 40px env(safe-area-inset-right) 40px calc(env(safe-area-inset-left) + 96px) !important;
+}
+
 /*-------------------------------------------*/
 /*------------- GLOBAL BLOCKS ---------------*/
 /*-------------------------------------------*/
@@ -60,6 +64,20 @@ h1 {
 }
 .notion-property__text .notion-semantic-string {
     white-space: pre !important;
+}
+
+/*-------------------------------------------*/
+/*-------------- TOC SIDEBAR ----------------*/
+/*-------------------------------------------*/
+
+#block-295eb30c2eb046c4819a2d0b16aea78b {
+    padding: 80px 48px 0 !important;
+    background: #F9FAFE !important;
+    position: fixed !important;
+    height: 100vh !important;
+    width: 300px !important;
+    left: 0 !important;
+    top: 0 !important;
 }
 
 /*-------------------------------------------*/
