@@ -31,6 +31,7 @@ h1 {
     padding: 4px !important;
 }
 
+.notion-page__icon div,
 .notion-page__icon img {
     height: 30px !important;
     width: 30px !important;
