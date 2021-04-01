@@ -95,7 +95,7 @@ h1 {
 }
 
 .notion-table-of-contents__item {
-    transition: all .3s ease-in-out !important;
+    transition: all .1s ease-in-out !important;
     border-radius: var(--rounded) !important;
     letter-spacing: -0.2px !important;
     font-weight: 500 !important;
@@ -107,7 +107,7 @@ h1 {
 }
 
 .notion-table-of-contents__item>a>div {
-    padding: 8px 16px !important
+    padding: 10px 20px !important
 }
 
 /*-------------------------------------------*/
