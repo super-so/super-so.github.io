@@ -80,6 +80,24 @@ h1 {
     top: 0 !important;
 }
 
+.notion-table-of-contents__item .notion-semantic-string {
+    border: none !important;
+}
+
+.notion-table-of-contents__item {
+    transition: all .3s ease-in-out !important;
+    border-radius: var(--rounded) !important;
+}
+
+.notion-table-of-contents__item:hover {
+    box-shadow: 0 10px 20px -10px rgb(0,0,0,0.1) !important;
+    background: var(--color-white) !important;
+}
+
+.notion-table-of-contents__item>a>div {
+    padding: 8px 16px !important
+}
+
 /*-------------------------------------------*/
 /*------------- BLACKOUT THEME --------------*/
 /*-------------------------------------------*/
