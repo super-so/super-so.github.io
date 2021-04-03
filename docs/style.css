@@ -9,6 +9,7 @@
     --color-ui-hover-bg: #f6f7f9 !important;
     --color-light-grey: #f6f7f9 !important;
     --color-text-gray: #808c99 !important;
+    --column-spacing: 80px !important;
     --color-white: #fff !important;
     --rounded: 8px !important;
 }
@@ -81,13 +82,14 @@ h1 {
 /*-------------------------------------------*/
 
 #block-295eb30c2eb046c4819a2d0b16aea78b {
-    padding: 80px 40px 0 !important;
+    height: calc(100vh - 45px) !important;
     background: #F9FAFE !important;
+    overflow: scroll !important;
     position: fixed !important;
-    height: 100vh !important;
-    width: 300px !important;
+    padding: 40px !important;
+    width: 340px !important;
+    top: 45px !important;
     left: 0 !important;
-    top: 0 !important;
 }
 
 .notion-table-of-contents__item .notion-semantic-string {
