@@ -1,6 +1,7 @@
 :root {
     --color-bg-default: #000 !important;
     --color-text-default: #fff !important;
+    --color-text-gray: #8F9BA8 !important;
     
     --navbar-height: 100px !important;
     --transition: all .2s linear !important;

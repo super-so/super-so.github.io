@@ -1,6 +1,16 @@
 h1 {
+    padding-bottom: 40px !important;
     max-width: var(--container-md);
     font-weight: 600 !important;
     line-height: 1.4 !important;
     font-size: 60px !important;
+}
+
+.notion-semantic-string .link {
+    color: var(--color-text-gray) !important;
+    opacity: 1 !important;
+}
+
+.notion-semantic-string .link:hover {
+    color: var(--color-text-default) !important;
 }
