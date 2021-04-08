@@ -6,7 +6,7 @@
     --navbar-height: 88px !important;
     --transition: all .2s linear !important;
 
-    --container-md: 900px !important;
+    --container-md: 920px !important;
 
     --padding-right: calc(env(safe-area-inset-right) + 40px) !important;
     --padding-left: calc(env(safe-area-inset-left) + 40px) !important;
