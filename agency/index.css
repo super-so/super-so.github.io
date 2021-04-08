@@ -4,7 +4,7 @@
 
 #page-index h1 {
     max-width: var(--container-md);
-    /* text-align: left !important; */
+    text-align: left !important;
 }
 
 #page-index .super-content {
