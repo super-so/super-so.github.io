@@ -1,0 +1,5 @@
+h1 {
+    max-width: var(--container-md);
+    font-weight: 500 !important;
+    font-size: 50px !important;
+}
