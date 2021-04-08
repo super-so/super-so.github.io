@@ -8,6 +8,10 @@
     position: fixed !important;
 }
 
+.notion-navbar a[href="/"] {
+    display: flex !important;
+}
+
 .notion-navbar>a:hover {
     background: none !important;
 }
