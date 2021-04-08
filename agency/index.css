@@ -2,7 +2,7 @@
     display: none !important;
 }
 
-#page-index .notion-header__title {
+#page-index h1 {
     max-width: var(--container-md);
     text-align: left !important;
 }
