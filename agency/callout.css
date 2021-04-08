@@ -1,0 +1,20 @@
+.notion-callout {
+    position: relative !important;
+    min-height: 60px !important;
+    border: none !important;
+}
+
+.notion-callout__content {
+    margin: 0 !important;
+}
+
+.notion-callout a {
+    background: var(--color-text-default) !important;
+    color: var(--color-bg-default) !important;
+    justify-content: center !important;
+    border-radius: 100px !important;
+    align-items: center !important;
+    width: fit-content !important;
+    min-height: 60px !important;
+    display: flex !important;
+}

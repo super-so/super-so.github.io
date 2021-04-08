@@ -6,6 +6,11 @@ h1 {
     font-size: 60px !important;
 }
 
+h2 {
+    line-height: 1.5 !important;
+    font-size: 26px !important;
+}
+
 .notion-semantic-string .link {
     transition: var(--transition) !important;
     color: var(--color-text-gray) !important;
