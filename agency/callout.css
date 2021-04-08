@@ -1,4 +1,6 @@
 .notion-callout {
+    border-radius: 100px !important;
+    width: fit-content !important;
     position: relative !important;
     min-height: 60px !important;
     border: none !important;
@@ -10,7 +12,6 @@
 }
 
 .notion-callout .notion-semantic-string .link {
-    background: var(--color-text-default) !important;
     color: var(--color-bg-default) !important;
     justify-content: center !important;
     border-radius: 100px !important;
