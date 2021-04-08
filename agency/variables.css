@@ -1,0 +1,10 @@
+:root {
+    --color-bg-default: #000 !important;
+    --color-text-default: #fff !important;
+    
+    --navbar-height: 100px !important;
+    --transition: all .2s linear !important;
+
+    --padding-right: calc(env(safe-area-inset-right) + 80px) !important;
+    --padding-left: calc(env(safe-area-inset-left) + 80px) !important;
+}

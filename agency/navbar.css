@@ -1,0 +1,20 @@
+.notion-navbar {
+    background: var(--color-bg-default) !important;
+    height: var(--navbar-height) !important;
+    position: fixed !important;
+}
+
+.notion-quote {
+    padding: 0 var(--padding-right) 0 0 !important;
+    height: var(--navbar-height) !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    position: fixed !important;
+    font-size: 22px !important;
+    z-index: 9999 !important;
+    display: flex !important;
+    border: none !important;
+    margin: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+}

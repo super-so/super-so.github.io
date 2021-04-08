@@ -1,0 +1,4 @@
+.notion-page__icon,
+.notion-breadcrumb__item {
+    display: none !important;
+}
