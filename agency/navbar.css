@@ -1,8 +1,10 @@
 .notion-navbar {
-    background: var(--color-bg-default) !important;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.4) !important;
     padding-right: var(--padding-right) !important;
     padding-left: var(--padding-left) !important;
     height: var(--navbar-height) !important;
+    backdrop-filter: blur(20px) !important;
+    background: rgba(0,0,0,0.9) !important;
     position: fixed !important;
 }
 
