@@ -1,3 +1,8 @@
 #page-index .notion-header {
     display: none !important;
 }
+
+#page-index .notion-header__title {
+    max-width: var(--container-md);
+    text-align: left !important;
+}

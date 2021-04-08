@@ -10,6 +10,11 @@
 @import "hidden.css";
 @import "index.css";
 
+.notion-header__title {
+    text-align: center !important;
+}
+
+
 /*
 Checklist
 - Works with every Notion block
