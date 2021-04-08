@@ -12,6 +12,6 @@
     --padding-left: calc(env(safe-area-inset-left) + 40px) !important;
 }
 
-*::-webkit-selection { background-color: var(--color-text-grey); color: var(--color-text-default); }
-*::-moz-selection { background-color: var(--color-text-grey); color: var(--color-text-default); }
-*::selection { background-color: var(--color-text-grey); color: var(--color-text-default); }
+*::-webkit-selection { background-color: var(--color-text-gray); color: var(--color-text-default); }
+*::-moz-selection { background-color: var(--color-text-gray); color: var(--color-text-default); }
+*::selection { background-color: var(--color-text-gray); color: var(--color-text-default); }
