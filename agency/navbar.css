@@ -36,6 +36,10 @@
     top: 0 !important;
 }
 
+.notion-quote .notion-semantic-string .link {
+    letter-spacing: -0.4px !important;
+}
+
 .nav-active {
     color: var(--color-text-default) !important;
 }
