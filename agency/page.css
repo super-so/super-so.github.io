@@ -1,0 +1,10 @@
+.notion-page {
+    transition: var(--transition) !important;
+    letter-spacing: -1px !important;
+    font-size: 40px !important;
+}
+
+.notion-page:hover {
+    color: var(--color-text-gray) !important;
+    background: none !important;
+}
