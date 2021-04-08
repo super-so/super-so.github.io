@@ -6,3 +6,7 @@
     max-width: var(--container-md);
     text-align: left !important;
 }
+
+#page-index .super-content {
+    padding-top: 300px !important;
+}
