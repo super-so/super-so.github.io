@@ -12,6 +12,18 @@ h2 {
     font-size: 32px !important;
 }
 
+h3 {
+    letter-spacing: -0.5px !important;
+    margin-bottom: 16px !important;
+    font-weight: 600 !important;
+    font-size: 24px !important;
+}
+
+p {
+    line-height: 1.6 !important;
+    font-size: 20px !important;
+}
+
 .notion-semantic-string .link {
     transition: var(--transition) !important;
     color: var(--color-text-gray) !important;
