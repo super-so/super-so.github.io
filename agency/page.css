@@ -6,5 +6,8 @@
 
 .notion-page:hover {
     color: var(--color-text-gray) !important;
+}
+
+.notion-page>div:hover {
     background: none !important;
 }
