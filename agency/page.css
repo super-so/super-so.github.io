@@ -1,7 +1,14 @@
 .notion-page {
     transition: var(--transition) !important;
     letter-spacing: -1px !important;
+    position: relative !important;
     font-size: 40px !important;
+}
+
+.notion-page:after {
+    color: var(--color-text-default);
+    position: absolute;
+    content: "→";
 }
 
 .notion-page:hover {
