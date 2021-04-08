@@ -8,6 +8,7 @@ h1 {
 }
 
 .notion-semantic-string .link {
+    transition: var(--transition) !important;
     color: var(--color-text-gray) !important;
     opacity: 1 !important;
 }
