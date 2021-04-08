@@ -7,12 +7,9 @@
 @import "container.css";
 @import "typography.css";
 @import "navbar.css";
+@import "header.css";
 @import "hidden.css";
 @import "index.css";
-
-.notion-header__title {
-    text-align: center !important;
-}
 
 
 /*
