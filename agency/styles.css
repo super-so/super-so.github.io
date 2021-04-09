@@ -4,6 +4,7 @@
 
 @import "reset.css";
 @import "variables.css";
+@import "animations.css";
 @import "container.css";
 @import "typography.css";
 @import "callout.css";
@@ -13,20 +14,3 @@
 @import "divider.css";
 @import "hidden.css";
 @import "index.css";
-
-body {
-    -webkit-animation: fadeIn 1s !important;
-    -moz-animation: fadeIn 1s !important;
-    animation: fadeIn 1s !important;
-}
-
-@keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
-@-moz-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
-@-webkit-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
-
-/*
-Checklist
-- Works with every Notion block
-- Works with search enabled
-- Works with page proprties
-*/
