@@ -5,12 +5,6 @@
     font-size: 40px !important;
 }
 
-.notion-page:after {
-    color: var(--color-text-default);
-    position: absolute;
-    content: "→";
-}
-
 .notion-page:hover {
     color: var(--color-text-gray) !important;
 }
