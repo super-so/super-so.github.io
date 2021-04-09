@@ -4,5 +4,8 @@
 
 @import "https://sites.super.so/components/reset.css";
 @import "variables.css";
+@import "container.css";
+@import "typography.css";
+@import "hidden.css";
 @import "navbar.css";
 @import "index.css";
