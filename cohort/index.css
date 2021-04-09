@@ -1,0 +1,7 @@
+#page-index .notion-header {
+    display: none !important;
+}
+
+#page-index .super-content {
+    padding-top: 300px !important;
+}
