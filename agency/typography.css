@@ -9,6 +9,7 @@ h1 {
 h2 {
     letter-spacing: -1px !important;
     line-height: 1.5 !important;
+    font-weight: 500 !important;
     font-size: 32px !important;
 }
 

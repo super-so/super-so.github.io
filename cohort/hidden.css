@@ -1,0 +1,6 @@
+.notion-page__icon,
+.notion-callout__icon,
+.notion-breadcrumb__divider,
+.notion-breadcrumb__item  {
+    display: none !important;
+}

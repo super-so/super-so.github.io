@@ -1,0 +1,40 @@
+.notion-navbar {
+    padding: 0 var(--padding-right) 0 var(--padding-left) !important;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1) !important;
+    background: rgba(255,255,255,0.8) !important;
+    height: var(--navbar-height) !important;
+    backdrop-filter: blur(20px) !important;
+    position: fixed !important;
+}
+
+.notion-navbar>a:hover {
+    background: none !important;
+}
+
+.notion-navbar__title {
+    overflow: visible !important;
+    font-size: 20px !important;
+}
+
+.notion-quote {
+    padding: 0 var(--padding-right) 0 0 !important;
+    height: var(--navbar-height) !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    position: fixed !important;
+    font-size: 18px !important;
+    z-index: 9999 !important;
+    display: flex !important;
+    border: none !important;
+    margin: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+}
+
+.notion-quote .notion-semantic-string .link {
+    letter-spacing: -0.4px !important;
+}
+
+.nav-active {
+    color: var(--color-text-default) !important;
+}
