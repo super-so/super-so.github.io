@@ -2,7 +2,7 @@
     transition: var(--transition) !important;
     letter-spacing: -1px !important;
     position: relative !important;
-    font-size: 40px !important;
+    font-size: 32px !important;
 }
 
 .notion-page:hover {
