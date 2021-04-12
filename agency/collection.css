@@ -4,7 +4,12 @@
 }
 
 .notion-collection-card {
+    transition: var(--transition) !important;
     border-radius: 0 !important;
+}
+
+.notion-collection-card:hover {
+    transform: scale(0.94) !important;
 }
 
 .notion-collection-card .notion-property__title {
