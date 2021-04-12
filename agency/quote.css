@@ -16,6 +16,10 @@
     top: 0 !important;
 }
 
+.notion-quote:first-child .notion-semantic-string .link {
+    letter-spacing: -0.4px !important;
+}
+
 .notion-quote:last-child {
     flex-direction: column !important;
     position: relative !important;
@@ -26,6 +30,12 @@
     top: auto !important;
 }
 
-.notion-quote .notion-semantic-string .link {
-    letter-spacing: -0.4px !important;
+.notion-quote:last-child .notion-semantic-string {
+    width: 100% !important;
+}
+
+.notion-quote:last-child .notion-semantic-string .link {
+    letter-spacing: -1px !important;
+    font-size: 40px !important;
+    line-height: 2 !important;
 }
