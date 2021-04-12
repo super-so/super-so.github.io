@@ -10,7 +10,8 @@
 }
 
 .notion-collection-card:hover {
-    transform: scale(0.98) !important;
+    background: none !important;
+    opacity: 0.6 !important;
 }
 
 .notion-collection-card .notion-property__title {
