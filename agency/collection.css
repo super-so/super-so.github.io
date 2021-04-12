@@ -5,11 +5,12 @@
 
 .notion-collection-card {
     transition: var(--transition) !important;
+    margin-bottom: 20px !important;
     border-radius: 0 !important;
 }
 
 .notion-collection-card:hover {
-    transform: scale(0.96) !important;
+    transform: scale(0.98) !important;
 }
 
 .notion-collection-card .notion-property__title {
