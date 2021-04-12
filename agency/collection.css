@@ -9,7 +9,7 @@
 }
 
 .notion-collection-card:hover {
-    transform: scale(0.94) !important;
+    transform: scale(0.96) !important;
 }
 
 .notion-collection-card .notion-property__title {
