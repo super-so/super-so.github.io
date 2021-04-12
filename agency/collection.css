@@ -13,6 +13,7 @@
 }
 
 .notion-collection-card .notion-property__title {
+    letter-spacing: -0.5px !important;
     padding: 30px 0 0 !important;
     font-size: 24px !important;
 }
