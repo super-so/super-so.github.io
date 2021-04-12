@@ -37,9 +37,13 @@
     top: 0 !important;
 }
 
+.notion-quote:first-child span,
+.notion-quote:first-child .link {
+    display: inline !important;
+}
+
 .notion-quote:first-child .notion-semantic-string .link {
     letter-spacing: -0.4px !important;
-    display: inline-block !important;
     font-weight: 300 !important;
     font-size: 18px !important;
     line-height: 1 !important;
