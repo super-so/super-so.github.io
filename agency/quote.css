@@ -1,0 +1,28 @@
+.notion-quote:first-child {
+    padding: 0 var(--padding-right) 0 0 !important;
+    height: var(--navbar-height) !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    position: fixed !important;
+    font-size: 18px !important;
+    z-index: 9999 !important;
+    display: flex !important;
+    border: none !important;
+    margin: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+}
+
+.notion-quote:last-child {
+    flex-direction: column !important;
+    position: relative !important;
+    z-index: auto !important;
+    height: auto !important;
+    right: auto !important;
+    padding: 0 !important;
+    top: auto !important;
+}
+
+.notion-quote .notion-semantic-string .link {
+    letter-spacing: -0.4px !important;
+}
