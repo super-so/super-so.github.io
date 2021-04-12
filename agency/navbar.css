@@ -8,6 +8,11 @@
     position: fixed !important;
 }
 
+.notion-breadcrumb__divider,
+.notion-breadcrumb__item  {
+    display: none !important;
+}
+
 .notion-navbar a[href="/"] {
     display: flex !important;
 }
@@ -38,8 +43,4 @@
 
 .notion-quote .notion-semantic-string .link {
     letter-spacing: -0.4px !important;
-}
-
-.nav-active {
-    color: var(--color-text-default) !important;
 }
