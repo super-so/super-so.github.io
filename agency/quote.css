@@ -1,4 +1,4 @@
-.notion-quote:first-child {
+.notion-quote {
     padding: 0 var(--padding-right) 0 0 !important;
     height: var(--navbar-height) !important;
     justify-content: flex-end !important;
