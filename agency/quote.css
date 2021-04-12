@@ -11,15 +11,17 @@
     top: auto !important;
 }
 
-.notion-quote span {
+.notion-quote span,
+.notion-quote .link {
+    display: block !important;
     width: 100% !important;
 }
 
 .notion-quote .notion-semantic-string .link {
     letter-spacing: -1px !important;
-    font-size: 40px !important;
-    line-height: 2 !important;
-    width: 100% !important;
+    line-height: 1.5 !important;
+    font-weight: 500 !important;
+    font-size: 32px !important;
 }
 
 .notion-quote:first-child {
@@ -37,6 +39,7 @@
 
 .notion-quote:first-child .notion-semantic-string .link {
     letter-spacing: -0.4px !important;
+    font-weight: 300 !important;
     font-size: 18px !important;
     line-height: 1 !important;
 }
