@@ -1,6 +1,7 @@
 .notion-quote {
     flex-direction: column !important;
     position: relative !important;
+    font-size: 18px !important;
     z-index: auto !important;
     display: flex !important;
     border: none !important;
