@@ -1,5 +1,5 @@
-
 .notion-callout {
+    background: var(--color-text-default) !important;
     transition: var(--transition) !important;
     border-radius: 100px !important;
     width: fit-content !important;
