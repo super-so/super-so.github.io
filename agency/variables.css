@@ -15,7 +15,3 @@
     --padding-right: calc(env(safe-area-inset-right) + 50px) !important;
     --padding-left: calc(env(safe-area-inset-left) + 50px) !important;
 }
-
-*::-webkit-selection { background-color: var(--color-text-gray); color: var(--color-text-default); }
-*::-moz-selection { background-color: var(--color-text-gray); color: var(--color-text-default); }
-*::selection { background-color: var(--color-text-gray); color: var(--color-text-default); }
