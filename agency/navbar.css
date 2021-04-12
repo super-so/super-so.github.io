@@ -3,8 +3,8 @@
     padding-right: var(--padding-right) !important;
     padding-left: var(--padding-left) !important;
     height: var(--navbar-height) !important;
+    background: rgba(0,0,0,0.85) !important;
     backdrop-filter: blur(20px) !important;
-    background: rgba(0,0,0,0.9) !important;
     position: fixed !important;
 }
 
