@@ -33,3 +33,19 @@
 .notion-property__title__icon-wrapper {
     display: none !important;
 }
+
+@media (max-width: 600px) {
+
+    .notion-collection-gallery {
+        grid-template-columns: 1fr !important;
+        grid-gap: 50px !important;
+    }
+
+    .notion-collection-card__cover,
+    .notion-collection-card__cover div,
+    .notion-collection-card__cover img {
+        max-height: 400px !important;
+        height: 400px !important;
+    }
+
+}

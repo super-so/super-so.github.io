@@ -28,9 +28,9 @@
 
 @media (max-width: 600px) {
 
-    .notion-quote:first-child {
-        top: var(--navbar-height) !important;
-        justify-content: center !important;
+    .notion-navbar {
+        height: 120px !important;
+        padding-bottom: 50px !important;
     }
 
 }
