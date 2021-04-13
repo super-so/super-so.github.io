@@ -39,7 +39,7 @@ a {
     color: var(--color-text-default) !important;
 }
 
-@media (max-width: var(--mobile)) {
+@media (max-width: 600px) {
 
     h1 {
         letter-spacing: -1px !important;

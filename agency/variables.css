@@ -9,13 +9,12 @@
 
     --container-md: 920px !important;
     --column-spacing: 80px !important;
-    --mobile: 600px !important;
 
     --padding-right: calc(env(safe-area-inset-right) + 50px) !important;
     --padding-left: calc(env(safe-area-inset-left) + 50px) !important;
 }
 
-@media (max-width: var(--mobile)) {
+@media (max-width: 600px) {
 
     :root {
         --navbar-height: 80px !important;
