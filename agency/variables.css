@@ -19,6 +19,9 @@
     :root {
         --navbar-height: 80px !important;
         --container-md: 90% !important;
+
+        --padding-right: 5% !important;
+        --padding-left: 5% !important;
     }
 
 }
