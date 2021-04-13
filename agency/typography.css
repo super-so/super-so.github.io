@@ -52,4 +52,8 @@ a {
         font-size: 24px !important;
     }
 
+    .notion-text {
+        min-height: 16px !important;
+    }
+
 }
