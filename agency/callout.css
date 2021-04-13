@@ -25,12 +25,12 @@
     color: var(--color-bg-default) !important;
     justify-content: center !important;
     border-radius: 100px !important;
-    padding: 2px 30px 0 !important;
     align-items: center !important;
     width: fit-content !important;
     font-weight: 500 !important;
     min-height: 60px !important;
     font-size: 16px !important;
+    padding: 0 30px !important;
     display: flex !important;
     border: none !important;
 }
