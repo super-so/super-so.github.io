@@ -8,3 +8,13 @@
     padding-bottom: 60px !important;
     padding-top: 60px !important;
 }
+
+@media (max-width: var(--mobile)) {
+
+    .max-width {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        width: 90% !important;
+    }
+
+}

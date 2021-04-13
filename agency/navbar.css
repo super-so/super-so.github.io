@@ -25,3 +25,12 @@
     overflow: visible !important;
     font-size: 24px !important;
 }
+
+@media (max-width: var(--mobile)) {
+
+    .notion-quote:first-child {
+        top: var(--navbar-height) !important;
+        justify-content: center !important;
+    }
+
+}
