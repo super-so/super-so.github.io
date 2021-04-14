@@ -1,6 +1,7 @@
 :root {
     --color-text-default: #FFF !important;
     --color-text-gray: #8F9BA8 !important;
+    --color-text-default-light: #8F9BA8 !important;
     --color-bg-default: #000 !important;
     --color-ui-hover-bg: #131419 !important;
     
