@@ -1,0 +1,26 @@
+/*———————————————— SPOTLIGHT TEMPLATE —————————————*/
+/*——————————————— POWERED BY SUPER.SO —————————————*/
+/*—————————————— © SUPER PUBLISHING CO ————————————*/
+
+@import "reset.css";
+@import "variables.css";
+@import "callout.css";
+@import "index.css";
+@import "navbar.css";
+@import "quote.css";
+@import "toggle.css";
+@import "typography.css";
+
+html, body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+body {
+    -webkit-animation: fadeIn 1s !important;
+    -moz-animation: fadeIn 1s !important;
+    animation: fadeIn 1s !important;
+}
+
+@keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
+@-moz-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
+@-webkit-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }

@@ -1,0 +1,12 @@
+#page-index {
+    text-align: center !important;
+}
+
+#page-index .notion-header__title,
+#page-index .notion-header__cover {
+    display: none !important;
+}
+
+#page-index .super-content {
+    padding-top: 200px !important;
+}

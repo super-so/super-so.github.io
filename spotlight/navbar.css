@@ -1,0 +1,23 @@
+.notion-navbar {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.4) !important;
+    background: var(--color-white) !important;
+    height: var(--navbar-height) !important;
+}
+
+.notion-breadcrumb__divider,
+.notion-breadcrumb__item  {
+    display: none !important;
+}
+
+.notion-navbar a[href="/"] {
+    display: flex !important;
+}
+
+.notion-navbar>a:hover {
+    background: none !important;
+}
+
+.notion-navbar__title {
+    overflow: visible !important;
+    font-size: 24px !important;
+}
