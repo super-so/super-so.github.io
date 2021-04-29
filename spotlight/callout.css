@@ -5,7 +5,7 @@
     align-items: center !important;
     position: relative !important;
     width: fit-content !important;
-    padding: 0 20px !important;
+    padding: 0 24px !important;
     border: none !important;
 }
 
@@ -13,12 +13,18 @@
     color: var(--color-text-default) !important;
     align-items: center !important;
     padding: 16px 12px !important;
+    position: relative !important;
     display: flex !important;
     border: none !important;
+    z-index: 2 !important;
     bottom: 0 !important;
     right: 0 !important;
     left: 0 !important;
     top: 0 !important;
+}
+
+.notion-callout__icon {
+    position: absolute !important;
 }
 
 .notion-callout__icon img {

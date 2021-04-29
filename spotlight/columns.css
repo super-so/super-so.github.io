@@ -1,0 +1,7 @@
+.notion-column-list {
+    justify-content: center !important;
+}
+
+.notion-column {
+    width: fit-content !important;
+}
