@@ -1,18 +1,18 @@
 .notion-callout {
     box-shadow: 0 10px 20px -10px rgba(0,0,0,0.1) !important;
     background: var(--color-white) !important;
-    padding: 16px 0 14px 24px !important;
     border-radius: 100px !important;
+    align-items: center !important;
     position: relative !important;
+    width: fit-content !important;
+    padding: 0 20px !important;
     border: none !important;
-    width: 180px !important;
 }
 
 .notion-callout a {
     color: var(--color-text-default) !important;
-    padding: 0 0 0 64px !important;
     align-items: center !important;
-    position: absolute !important;
+    padding: 16px 12px !important;
     display: flex !important;
     border: none !important;
     bottom: 0 !important;
