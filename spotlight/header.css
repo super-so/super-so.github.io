@@ -6,6 +6,7 @@
 .notion-header__icon-wrapper {
     border-radius: 24px !important;
     position: relative !important;
+    overflow: hidden !important;
     margin: 0 auto !important;
     height: 80px !important;
     width: 80px !important;
