@@ -3,5 +3,6 @@
 }
 
 .notion-column {
+    align-items: center !important;
     width: fit-content !important;
 }
