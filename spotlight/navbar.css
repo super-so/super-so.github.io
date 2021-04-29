@@ -1,5 +1,5 @@
 .notion-navbar {
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.4) !important;
+    border-bottom: 1px solid var(--color-dividers) !important;
     background: var(--color-white) !important;
     height: var(--navbar-height) !important;
 }

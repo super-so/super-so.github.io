@@ -4,8 +4,9 @@
     --color-text-default-light: #8f9ba8 !important;
     --color-bg-default: #fafafa !important;
     --color-white: #fff !important;
+    --color-dividers: #edeef3 !important;
 
-    --navbar-height: 80px !important;
+    --navbar-height: 68px !important;
     --transition: all .2s ease-in-out !important;
     
     --padding-right: calc(env(safe-area-inset-right) + 80px) !important;

@@ -2,11 +2,6 @@
     text-align: center !important;
 }
 
-#page-index .notion-header__title,
-#page-index .notion-header__cover {
+#page-index .notion-header__title {
     display: none !important;
-}
-
-#page-index .super-content {
-    padding-top: 200px !important;
 }
