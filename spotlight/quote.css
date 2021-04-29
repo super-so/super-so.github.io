@@ -26,11 +26,11 @@
 }
 
 .notion-quote:first-child {
-    padding: 0 var(--padding-right) 0 0 !important;
     height: var(--navbar-height) !important;
     justify-content: flex-end !important;
     align-items: center !important;
     flex-direction: row !important;
+    padding: 0 30px 0 0 !important;
     position: fixed !important;
     z-index: 9999 !important;
     margin: 0 !important;
