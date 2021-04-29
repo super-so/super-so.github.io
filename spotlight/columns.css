@@ -1,5 +1,6 @@
 .notion-column-list {
     justify-content: center !important;
+    flex-wrap: nowrap !important;
 }
 
 .notion-column {
