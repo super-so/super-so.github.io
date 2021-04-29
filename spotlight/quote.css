@@ -44,7 +44,8 @@
 }
 
 .notion-quote:first-child .notion-semantic-string .link {
-    letter-spacing: -0.4px !important;
+    letter-spacing: -0.2px !important;
+    font-weight: 400 !important;
     font-size: 18px !important;
     line-height: 1 !important;
 }
