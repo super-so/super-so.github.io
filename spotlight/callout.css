@@ -24,6 +24,7 @@
 }
 
 .notion-callout__icon {
+    text-align: center !important;
     position: absolute !important;
 }
 
