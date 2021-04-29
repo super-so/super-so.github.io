@@ -5,7 +5,8 @@
 }
 
 .notion-breadcrumb__divider,
-.notion-breadcrumb__item  {
+.notion-breadcrumb__item,
+.notion-navbar__icon {
     display: none !important;
 }
 
@@ -19,5 +20,6 @@
 
 .notion-navbar__title {
     overflow: visible !important;
-    font-size: 24px !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
 }
