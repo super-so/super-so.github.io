@@ -1,0 +1,12 @@
+.notion-header,
+.notion-header__title-wrapper {
+    margin: 0 !important;
+}
+
+.notion-header__icon-wrapper {
+    position: relative !important;
+    margin: 0 auto !important;
+    height: 80px !important;
+    width: 80px !important;
+    top: auto !important;
+}
