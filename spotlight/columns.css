@@ -4,7 +4,7 @@
 }
 
 .notion-column {
-    align-items: center !important;
+    justify-content: center !important;
     width: fit-content !important;
     text-align: left !important;
 }
