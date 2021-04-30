@@ -26,9 +26,9 @@
 }
 
 .notion-quote:first-child {
-    padding: 0 var(--padding-right) 0 0 !important;
     height: var(--navbar-height) !important;
     justify-content: flex-end !important;
+    padding: 0 30px 0 0 !important;
     align-items: center !important;
     flex-direction: row !important;
     position: fixed !important;
