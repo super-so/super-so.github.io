@@ -13,3 +13,7 @@
     font-weight: 300 !important;
     font-size: 20px !important;
 }
+
+.notion-column .notion-callout {
+    margin: 0 -40px !important;
+}
