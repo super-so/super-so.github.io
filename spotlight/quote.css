@@ -50,7 +50,7 @@
     line-height: 1 !important;
 }
 
-.notion-quote:not(:first-child) {
+.notion-quote:nth-child(n+2) {
     box-shadow: 0 20px 40px -20px rgba(0,0,0,0.1) !important;
     background: var(--color-white) !important;
     border-radius: 12px !important;
