@@ -23,6 +23,10 @@
     top: 0 !important;
 }
 
+.notion-callout p {
+    font-size: 18px !important;
+}
+
 .notion-callout__icon {
     text-align: center !important;
     position: absolute !important;
