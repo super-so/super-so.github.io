@@ -23,7 +23,8 @@
     top: 0 !important;
 }
 
-.notion-callout p {
+.notion-callout p,
+.notion-callout__content {
     font-size: 18px !important;
 }
 
