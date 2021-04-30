@@ -33,3 +33,7 @@
 .notion-callout__icon img {
     object-fit: none !important;
 }
+
+.notion-column .notion-callout {
+    margin: 0 -60px !important;
+}
