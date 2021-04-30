@@ -6,8 +6,10 @@
     flex-direction: row !important;
     background: none !important;
     border-radius: 0 !important;
+    font-weight: 400 !important;
     box-shadow: none !important;
     position: fixed !important;
+    font-size: 18px !important;
     display: flex !important;
     z-index: 9999 !important;
     margin: 0 !important;
@@ -28,9 +30,11 @@
 }
 
 .notion-quote {
-    box-shadow: 0 20px 40px -20px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 20px 40px -20px rgba(0,0,0,0.08) !important;
     background: var(--color-white) !important;
     border-radius: 12px !important;
+    font-weight: 300 !important;
+    font-size: 24px !important;
     padding: 50px !important;
     border: none !important;
 }
