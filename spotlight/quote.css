@@ -1,16 +1,12 @@
-.notion-quote {
-    box-shadow: 0 20px 40px -20px rgba(0,0,0,0.1) !important;
-    background: var(--color-white) !important;
-    border-radius: 12px !important;
-    padding: 50px !important;
-}
-
 .notion-quote:nth-of-type(1) {
     height: var(--navbar-height) !important;
     justify-content: flex-end !important;
     align-items: center !important;
     flex-direction: row !important;
     padding: 0 30px 0 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: none !important;
     position: fixed !important;
     z-index: 9999 !important;
     margin: 0 !important;
@@ -28,4 +24,12 @@
     font-weight: 400 !important;
     font-size: 18px !important;
     line-height: 1 !important;
+}
+
+.notion-quote {
+    box-shadow: 0 20px 40px -20px rgba(0,0,0,0.1) !important;
+    background: var(--color-white) !important;
+    border-radius: 12px !important;
+    position: relative !important;
+    padding: 50px !important;
 }
