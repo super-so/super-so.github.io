@@ -1,36 +1,10 @@
-.notion-quote {
-    flex-direction: column !important;
-    position: relative !important;
-    font-size: 18px !important;
-    z-index: auto !important;
-    display: flex !important;
-    border: none !important;
-    height: auto !important;
-    right: auto !important;
-    left: auto !important;
-    padding: 0 !important;
-    top: auto !important;
-}
-
-.notion-quote span,
-.notion-quote .link {
-    display: block !important;
-    width: 100% !important;
-}
-
-.notion-quote .notion-semantic-string .link {
-    letter-spacing: -1px !important;
-    line-height: 1.5 !important;
-    font-weight: 300 !important;
-    font-size: 32px !important;
-}
-
-.notion-quote:first-child {
+.notion-quote.bg-gray {
     height: var(--navbar-height) !important;
     justify-content: flex-end !important;
     padding: 0 30px 0 0 !important;
     align-items: center !important;
     flex-direction: row !important;
+    background: none !important;
     position: fixed !important;
     z-index: 9999 !important;
     margin: 0 !important;
@@ -38,27 +12,14 @@
     top: 0 !important;
 }
 
-.notion-quote:first-child span,
-.notion-quote:first-child .link {
+.notion-quote.bg-gray span,
+.notion-quote.bg-gray .link {
     display: inline !important;
 }
 
-.notion-quote:first-child .notion-semantic-string .link {
-    letter-spacing: -0.4px !important;
+.notion-quote.bg-gray .notion-semantic-string .link {
+    letter-spacing: -0.2px !important;
+    font-weight: 400 !important;
     font-size: 18px !important;
     line-height: 1 !important;
-}
-
-@media (max-width: 600px) {
-
-    .notion-quote:first-child {
-        text-align: center !important;
-        top: 48px !important;
-        left: 0 !important;
-    }
-
-    .notion-quote:first-child .notion-semantic-string .link {
-        font-size: 14px !important;
-    }
-
 }
