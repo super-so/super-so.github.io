@@ -5,10 +5,11 @@
     align-items: center !important;
     flex-direction: row !important;
     background: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
     position: fixed !important;
     display: flex !important;
     z-index: 9999 !important;
-    border: none !important;
     margin: 0 !important;
     right: 0 !important;
     top: 0 !important;
@@ -30,4 +31,6 @@
     box-shadow: 0 20px 40px -20px rgba(0,0,0,0.1) !important;
     background: var(--color-white) !important;
     border-radius: 12px !important;
+    padding: 50px !important;
+    border: none !important;
 }
