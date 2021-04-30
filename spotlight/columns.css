@@ -1,9 +1,9 @@
-.notion-column-list {
+#page-index .notion-column-list {
     justify-content: center !important;
     flex-wrap: nowrap !important;
 }
 
-.notion-column {
+#page-index .notion-column {
     justify-content: center !important;
     width: fit-content !important;
     text-align: left !important;
