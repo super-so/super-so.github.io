@@ -1,0 +1,23 @@
+.notion-navbar {
+    padding-right: var(--padding-right) !important;
+    padding-left: var(--padding-left) !important;
+    background: var(--color-white) !important;
+    height: var(--navbar-height) !important;
+    position: relative !important;
+    box-shadow: none !important;
+}
+
+.notion-navbar>a:hover {
+    background: none !important;
+}
+
+.notion-navbar__title {
+    color: var(--color-primary) !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+}
+
+.notion-breadcrumb__item:first-child:before {
+    content: url('https://code.tr.af/uigoodies/assets/icon-heart.svg') !important;
+    margin-right: 6px !important;
+}
