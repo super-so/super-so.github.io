@@ -1,7 +1,7 @@
 .notion-quote.bg-gray {
     height: var(--navbar-height) !important;
     justify-content: flex-end !important;
-    padding: 0 30px 0 0 !important;
+    padding: 0 20px 0 0 !important;
     align-items: center !important;
     flex-direction: row !important;
     background: none !important;
@@ -42,4 +42,12 @@
     font-size: 24px !important;
     padding: 50px !important;
     border: none !important;
+}
+
+@media (max-width: var(--breakpoint)) {
+
+    .notion-quote.bg-gray {
+        display: none !important;
+    }
+
 }

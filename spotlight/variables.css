@@ -8,4 +8,9 @@
     --navbar-height: 68px !important;
     --column-spacing: 80px !important;
     --transition: all .2s ease-in-out !important;
+    --breakpoint: 900px !important;
+}
+
+@media (max-width: var(--breakpoint)) {
+
 }

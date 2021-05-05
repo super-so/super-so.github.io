@@ -54,7 +54,7 @@ a {
     }
 
     .notion-text {
-        min-height: 16px !important;
+        min-height: 8px !important;
     }
 
 }

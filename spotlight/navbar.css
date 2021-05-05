@@ -24,3 +24,15 @@
     font-weight: 500 !important;
     font-size: 18px !important;
 }
+
+@media (max-width: var(--breakpoint)) {
+
+    .notion-navbar {
+        justify-content: center !important;
+    }
+
+    .notion-navbar__title {
+        margin: 0 !important;
+    }
+
+}

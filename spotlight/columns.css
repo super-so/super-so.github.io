@@ -12,3 +12,11 @@
     font-weight: 300 !important;
     font-size: 22px !important;
 }
+
+@media (max-width: var(--breakpoint)) {
+
+    #page-index .notion-column-list {
+        flex-wrap: wrap !important;
+    }
+
+}
