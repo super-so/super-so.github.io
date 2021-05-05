@@ -38,7 +38,7 @@
     margin: 0 -50px !important;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 900px) {
 
     .notion-column .notion-callout {
         margin: 0 auto -8px !important;

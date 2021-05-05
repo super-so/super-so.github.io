@@ -25,7 +25,7 @@
     font-size: 18px !important;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 900px) {
 
     .notion-navbar {
         justify-content: center !important;
