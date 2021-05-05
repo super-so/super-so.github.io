@@ -19,4 +19,8 @@
         flex-wrap: wrap !important;
     }
 
+    .notion-column-list:nth-child(even) > .notion-column {
+        order: 2 !important;
+    }
+
 }
