@@ -22,6 +22,7 @@ body {
     -webkit-animation: fadeIn 1s !important;
     -moz-animation: fadeIn 1s !important;
     animation: fadeIn 1s !important;
+    text-align: center !important;
 }
 
 @keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
