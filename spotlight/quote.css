@@ -19,7 +19,10 @@
 
 .notion-quote.bg-gray span,
 .notion-quote.bg-gray .link {
-    display: inline !important;
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+    height: 100% !important;
 }
 
 .notion-quote.bg-gray .notion-semantic-string .link {
