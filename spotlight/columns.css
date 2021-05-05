@@ -19,7 +19,7 @@
         flex-wrap: wrap !important;
     }
 
-    .notion-column-list:nth-child(even) .notion-column:first-child {
+    .notion-column-list:nth-child(even) > .notion-column:first-child {
         order: 2 !important;
     }
 
