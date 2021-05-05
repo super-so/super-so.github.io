@@ -8,7 +8,6 @@
 @import "code.css";
 @import "columns.css";
 @import "header.css";
-@import "index.css";
 @import "navbar.css";
 @import "quote.css";
 @import "toggle.css";
@@ -22,6 +21,7 @@ body {
     -webkit-animation: fadeIn 1s !important;
     -moz-animation: fadeIn 1s !important;
     animation: fadeIn 1s !important;
+    text-align: center !important;
 }
 
 @keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
@@ -31,3 +31,7 @@ body {
 .super-content { padding-bottom: 40px !important; }
 .max-width { max-width: 960px !important; }
 .notion-divider { border-bottom: 1px solid var(--color-dividers) !important; }
+
+#page-index .notion-header__title {
+    display: none !important;
+}
