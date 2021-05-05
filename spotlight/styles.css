@@ -4,6 +4,7 @@
 
 @import "reset.css";
 @import "variables.css";
+@import "main.css";
 @import "callout.css";
 @import "code.css";
 @import "columns.css";
@@ -12,27 +13,3 @@
 @import "quote.css";
 @import "toggle.css";
 @import "typography.css";
-
-html, body {
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
-}
-
-body {
-    -webkit-animation: fadeIn 1s !important;
-    -moz-animation: fadeIn 1s !important;
-    animation: fadeIn 1s !important;
-    text-align: center !important;
-}
-
-@keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
-@-moz-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
-@-webkit-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
-
-::selection { background: var(--color-text-gray) !important; }
-.super-content { padding-bottom: 20px !important; }
-.max-width { max-width: 960px !important; }
-.notion-divider { border-bottom: 1px solid var(--color-dividers) !important; }
-
-#page-index .notion-header__title {
-    display: none !important;
-}
