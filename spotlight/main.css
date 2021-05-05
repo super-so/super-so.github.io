@@ -13,7 +13,7 @@ body {
 @-moz-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
 @-webkit-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
 
-::selection { background: var(--color-text-gray) !important; }
+::selection { background: #ccc !important; }
 .super-content { padding-bottom: 20px !important; }
 .max-width { max-width: 960px !important; }
 .notion-divider { border-bottom: 1px solid var(--color-dividers) !important; }
