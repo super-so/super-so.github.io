@@ -44,7 +44,7 @@
     border: none !important;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 900px) {
 
     .notion-quote.bg-gray {
         display: none !important;
