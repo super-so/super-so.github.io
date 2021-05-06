@@ -1,0 +1,164 @@
+/*———————————— JULIA K CRIST WEBSITE ——————————*/
+/*————————————— POWERED BY SUPER.SO ———————————*/
+/*——————————————— BUILT BY @TRAF ——————————————*/
+
+* {
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizeSpeed !important;
+    font-weight: normal !important;
+    outline: none !important;
+}
+
+@font-face {
+    font-family: 'retiro';
+    src:  url('https://code.tr.af/julia/assets/retiro.woff') format('woff'),
+          url('https://code.tr.af/julia/assets/retiro.ttf') format('truetype');
+}
+
+/*—————————————————————————————————————————————*/
+/*—————————————————— VARIABLES ————————————————*/
+/*—————————————————————————————————————————————*/
+
+:root {
+    --font: 'retiro', serif !important;
+    --column-spacing: 20px !important;
+
+    --color-green: #b4b2a2 !important;
+    --color-red: #a17163 !important;
+}
+
+/*—————————————————————————————————————————————*/
+/*——————————————— HIDDEN ELEMENTS —————————————*/
+/*—————————————————————————————————————————————*/
+
+.notion-callout__icon {
+    display: none !important;
+}
+
+/*—————————————————————————————————————————————*/
+/*———————————————— NOTION BLOCKS ——————————————*/
+/*—————————————————————————————————————————————*/
+
+.max-width {
+    max-width: 800px !important;
+}
+
+.notion-navbar {
+    background: rgba(255,255,255,0.2) !important;
+    backdrop-filter: blur(20px) !important;
+}
+
+/*—————————————————————————————————————————————*/
+/*————————————— GLOBAL FOOTER BLOCK ———————————*/
+/*—————————————————————————————————————————————*/
+
+.super-footer {
+    background: var(--color-green);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin-top: auto;
+    padding: 50px;
+    display: flex;
+    width: 100%;
+    z-index: 2;
+}
+
+.super-footer-links {
+    justify-content: space-between;
+    margin: 50px 0px 30px 0px;
+    flex-direction: row;
+    display: flex;
+}
+
+.super-footer-links a {
+    font-size: 18px !important;
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .super-footer-links {
+        flex-direction: column!important;
+        margin-bottom: 0px!important;
+        margin-top: 40px!important;
+    }
+    .super-footer-link a:nth-of-type(2) { margin-top: 10px; }
+    .super-footer-link a:nth-of-type(3) { margin-top: 10px; }
+    .super-footer-link a:nth-of-type(4) { margin-top: 10px; }
+    .logo { margin-top: 20px; }
+}
+
+/*—————————————————————————————————————————————*/
+/*————————————————— TYPOGRAPHY ————————————————*/
+/*—————————————————————————————————————————————*/
+
+h1 {
+    font-family: var(--font) !important;
+    pointer-events: none !important;
+    font-size: 120px !important;
+    line-height: 1 !important;
+}
+
+/*—————————————————————————————————————————————*/
+/*—————————————— CALLOUT BUTTONS ——————————————*/
+/*—————————————————————————————————————————————*/
+
+.notion-callout {
+    position: relative !important;
+    min-height: 44px !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.notion-callout__content {
+    margin: 0 !important;
+}
+
+.notion-callout a {
+    background: rgba(255,255,255,0.2) !important;
+    transition: all .2s ease-in-out !important;
+    backdrop-filter: blur(8px) !important;
+    color: var(--color-red) !important;
+    border-radius: 100px !important;
+    position: absolute !important;
+    padding: 8px 12px !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    border: none !important;
+    opacity: 1 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    top: 0 !important;
+}
+
+.notion-callout a:hover {
+    box-shadow: 0 10px 20px -10px rgb(161,113,99,0.1) !important;
+    background: rgba(255,255,255,0.4) !important;
+}
+
+/*—————————————————————————————————————————————*/
+/*—————————————— HOME PAGE STUFF ——————————————*/
+/*—————————————————————————————————————————————*/
+
+#page-index {
+    text-align: center !important;
+    color: #fff !important;
+}
+
+#page-index h1 {
+    transform: scale(1.4) !important;
+    line-height: 1.4 !important;
+}
+
+#page-index .notion-header__cover {
+    height: 160px !important;
+}
+
+#page-index .notion-header__cover-image {
+    position: fixed !important;
+}
