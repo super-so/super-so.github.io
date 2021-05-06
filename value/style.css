@@ -17,6 +17,7 @@
     --color-text-green: #f0bd66 !important;
     --color-text-default: #fff !important;
     --color-text-gray: #c4c4c4 !important;
+    --color-card-bg: transparent !important;
 }
 
 .link {
