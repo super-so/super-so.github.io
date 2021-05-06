@@ -161,4 +161,8 @@ h1 {
 
 #page-index .notion-header__cover-image {
     position: fixed !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    top: 0 !important;
 }
