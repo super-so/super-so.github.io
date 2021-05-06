@@ -4,6 +4,7 @@
     --color-text-default-light: #8F9BA8 !important;
     --color-bg-default: #000 !important;
     --color-ui-hover-bg: #131419 !important;
+    --color-card-bg: transparent !important;
     
     --navbar-height: 88px !important;
     --transition: all .2s ease-in-out !important;
