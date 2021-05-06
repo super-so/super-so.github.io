@@ -2,6 +2,7 @@
 :root {
     --color-bg-navbar: rgba(25,25,25,0.9) !important;
     --transition: all .2s ease-in-out !important;
+    --color-card-bg: transparent !important;
     --color-bg-default: #191919 !important;
     --color-text-green: #25FFBE !important;
     --color-text-default: #fff !important;

@@ -22,6 +22,7 @@ Powered by Super.so
 :root {
     --color-bg-default: #fff !important;
     --color-border-default: rgba(0,0,0,0.2) !important;
+    --color-card-bg: transparent !important;
     
     --color-text-default: #000 !important;
     --color-text-gray: var(--color-bg-default) !important;
