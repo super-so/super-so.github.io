@@ -1,6 +1,6 @@
 .notion-callout {
     box-shadow: 0 10px 20px -10px rgba(0,0,0,0.1) !important;
-    background: var(--color-white) !important;
+    background: rgba(0,0,0,0.1) !important;
     border-radius: 100px !important;
     align-items: center !important;
     position: relative !important;
