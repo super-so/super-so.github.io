@@ -1,0 +1,38 @@
+.notion-navbar {
+    border-bottom: 1px solid var(--color-dividers) !important;
+    background: var(--color-white) !important;
+    height: var(--navbar-height) !important;
+}
+
+.notion-breadcrumb__divider,
+.notion-breadcrumb__item,
+.notion-navbar__icon,
+.notion-navbar>a.has-icon div:first-child {
+    display: none !important;
+}
+
+.notion-navbar a[href="/"] {
+    display: flex !important;
+}
+
+.notion-navbar>a:hover {
+    background: none !important;
+}
+
+.notion-navbar__title {
+    overflow: visible !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+}
+
+@media (max-width: 900px) {
+
+    .notion-navbar {
+        justify-content: center !important;
+    }
+
+    .notion-navbar__title {
+        margin: 0 !important;
+    }
+
+}

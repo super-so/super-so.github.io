@@ -1,0 +1,60 @@
+h1 {
+    padding-bottom: 10px !important;
+    letter-spacing: -1px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    font-size: 54px !important;
+}
+
+h2 {
+    letter-spacing: -0.5px !important;
+    margin-bottom: 4px !important;
+    line-height: 1.5 !important;
+    font-weight: 600 !important;
+    font-size: 42px !important;
+}
+
+h3 {
+    letter-spacing: -0.5px !important;
+    margin-bottom: 16px !important;
+    font-weight: 600 !important;
+    font-size: 24px !important;
+}
+
+p {
+    line-height: 1.6 !important;
+    font-size: 18px !important;
+}
+
+a {
+    border: none !important;
+}
+
+.notion-semantic-string .link {
+    transition: var(--transition) !important;
+    color: var(--color-text-gray) !important;
+    opacity: 1 !important;
+}
+
+.notion-semantic-string .link:hover {
+    color: var(--color-text-default) !important;
+}
+
+@media (max-width: 900px) {
+
+    h1 {
+        letter-spacing: -1px !important;
+        line-height: 1.5 !important;
+        font-size: 32px !important;
+    }
+
+    h2 {
+        letter-spacing: -0.5px !important;
+        font-size: 24px !important;
+    }
+
+    .notion-text {
+        min-height: 8px !important;
+    }
+
+}

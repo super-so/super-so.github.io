@@ -1,0 +1,26 @@
+#page-index .notion-column-list {
+    justify-content: center !important;
+    flex-wrap: nowrap !important;
+}
+
+#page-index .notion-column {
+    justify-content: center !important;
+    text-align: left !important;
+}
+
+.notion-column p {
+    font-weight: 300 !important;
+    font-size: 22px !important;
+}
+
+@media (max-width: 900px) {
+
+    #page-index .notion-column-list {
+        flex-wrap: wrap !important;
+    }
+
+    .notion-column-list:nth-child(even) > .notion-column {
+        order: 2 !important;
+    }
+
+}
