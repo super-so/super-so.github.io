@@ -1,7 +1,3 @@
-/*-------------------------------------------*/
-/*------------ VIVID SUPER THEME ------------*/
-/*-------------------------------------------*/
-
 :root {
     --color-ui-hover-bg: #F9FAFE !important;
     --color-border-default: #EDEEF3 !important;
@@ -92,6 +88,10 @@ h1 {
     padding: 40px 0 60px !important;
     box-shadow: none !important;
     display: flex !important;
+}
+
+.notion-collection-card:hover {
+    background: none !important;
 }
 
 .notion-collection-card__cover {
