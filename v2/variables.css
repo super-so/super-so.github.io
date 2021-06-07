@@ -16,7 +16,7 @@
     --color-card-bg: transparent !important;
     --transition: all .2s ease-in-out !important;
     --column-spacing: 30px !important;
-    --navbar-height: 80px !important;
+    --navbar-height: 90px !important;
 
     --padding-right: calc(env(safe-area-inset-right) + 120px) !important;
     --padding-left: calc(env(safe-area-inset-left) + 120px) !important;
