@@ -2,9 +2,12 @@
     background: var(--color-black) !important;
     transition: var(--transition) !important;
     color: var(--color-white) !important;
+    letter-spacing: -0.4px !important;
     border-radius: 100px !important;
     width: fit-content !important;
     position: relative !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
     border: none !important;
     padding: 0 !important;
 }
@@ -18,5 +21,7 @@
 .notion-callout__icon { display: none !important; }
 
 .notion-callout .notion-semantic-string .link {
-    padding: 12px 20px !important;
+    padding: 20px 32px !important;
+    display: block !important;
+    opacity: 1 !important;
 }
