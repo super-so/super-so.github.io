@@ -7,8 +7,9 @@
 @import "reset.css";
 @import "variables.css";
 @import "callout.css";
-@import "header.css";
 @import "column.css";
+@import "container.css";
+@import "header.css";
 @import "navbar.css";
 @import "typography.css";
 @import "page-index.css";
