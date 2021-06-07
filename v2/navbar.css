@@ -1,5 +1,7 @@
 .notion-navbar {
     padding: 0 var(--padding-right) 0 var(--padding-left) !important;
+    backdrop-filter: blur(20px) saturate(200%) !important;
+    background: rgba(255,255,255,0.8) !important;
     height: var(--navbar-height) !important;
 }
 
@@ -7,9 +9,17 @@
     height: auto !important;
 }
 
+.notion-navbar>a.has-icon {
+    padding: 2px !important;
+}
+
 .notion-navbar>a.has-icon>div {
-    height: 40px !important;
-    width: 40px !important;
+    height: 30px !important;
+    width: 30px !important;
+}
+
+.notion-navbar>a:hover {
+    background: none !important;
 }
 
 .notion-navbar__title {
