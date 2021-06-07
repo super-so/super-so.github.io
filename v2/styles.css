@@ -1,5 +1,8 @@
+/*—————————————————————————————————————————————————*/
 /*—————————————————— SUPER WEBSITE ————————————————*/
 /*—————————————— © SUPER PUBLISHING CO ————————————*/
+/*———————————— POWERED BY NOTION & SUPER ——————————*/
+/*—————————————————————————————————————————————————*/
 
 @import "reset.css";
 @import "variables.css";
@@ -7,3 +10,5 @@
 @import "header.css";
 @import "column.css";
 @import "navbar.css";
+@import "typography.css";
+@import "page-index.css";
