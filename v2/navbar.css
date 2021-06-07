@@ -10,12 +10,12 @@
 }
 
 .notion-navbar>a.has-icon {
-    padding: 2px !important;
+    padding: 0 !important;
 }
 
 .notion-navbar>a.has-icon>div {
-    height: 30px !important;
-    width: 30px !important;
+    height: 36px !important;
+    width: 36px !important;
 }
 
 .notion-navbar>a:hover {
