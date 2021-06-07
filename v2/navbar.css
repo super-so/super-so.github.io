@@ -1,3 +1,8 @@
+.notion-navbar {
+    padding: 0 var(--padding-right) 0 var(--padding-left) !important;
+    height: var(--navbar-height) !important;
+}
+
 .notion-navbar>a {
     height: auto !important;
 }
