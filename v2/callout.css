@@ -1,18 +1,22 @@
 .notion-callout {
-    background: var(--color-text-default) !important;
+    background: var(--color-black) !important;
     transition: var(--transition) !important;
+    color: var(--color-white) !important;
     border-radius: 100px !important;
     width: fit-content !important;
     position: relative !important;
-    min-height: 60px !important;
     border: none !important;
     padding: 0 !important;
 }
 
-.notion-callout__content {
-    margin: 0 !important;
+.notion-callout.bg-gray-light {
+    background: var(--color-off-white) !important;
+    color: var(--color-black) !important;
 }
 
-.notion-callout__icon {
-    display: none !important;
+.notion-callout__content { margin: 0 !important; }
+.notion-callout__icon { display: none !important; }
+
+.notion-callout .notion-semantic-string .link {
+    padding: 12px 20px !important;
 }
