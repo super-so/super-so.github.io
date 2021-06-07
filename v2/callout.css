@@ -21,7 +21,7 @@
 .notion-callout__icon { display: none !important; }
 
 .notion-callout .notion-semantic-string .link {
-    padding: 20px 32px !important;
+    padding: 14px 28px !important;
     display: block !important;
     opacity: 1 !important;
 }
