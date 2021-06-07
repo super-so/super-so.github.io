@@ -1,0 +1,18 @@
+.notion-callout {
+    background: var(--color-text-default) !important;
+    transition: var(--transition) !important;
+    border-radius: 100px !important;
+    width: fit-content !important;
+    position: relative !important;
+    min-height: 60px !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.notion-callout__content {
+    margin: 0 !important;
+}
+
+.notion-callout__icon {
+    display: none !important;
+}
