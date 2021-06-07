@@ -3,10 +3,11 @@
     padding-left: var(--padding-left) !important;
 }
 
-.notion-header__icon-wrapper {
+.notion-header__icon-wrapper,
+.notion-header__cover.no-cover {
     display: none !important;
 }
 
 .notion-header__title-wrapper {
-    margin-top: 80px !important;
+    margin-top: 200px !important;
 }
