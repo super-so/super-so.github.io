@@ -3,6 +3,8 @@
 
 @import "reset.css";
 @import "callout.css";
+@import "header.css";
+@import "navbar.css";
 
 :root {
     --color-black: #000 !important;

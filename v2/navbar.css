@@ -1,0 +1,8 @@
+.notion-navbar>a.has-icon>div {
+    height: 40px !important;
+    width: 40px !important;
+}
+
+.notion-navbar__title {
+    display: none !important;
+}
