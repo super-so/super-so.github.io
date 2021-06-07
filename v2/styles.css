@@ -2,26 +2,8 @@
 /*—————————————— © SUPER PUBLISHING CO ————————————*/
 
 @import "reset.css";
+@import "variables.css";
 @import "callout.css";
 @import "header.css";
+@import "column.css";
 @import "navbar.css";
-
-:root {
-    --color-black: #000 !important;
-    --color-grey: #8f9ba8 !important;
-    --color-off-white: #f5f6fa !important;
-    --color-white: #fff !important;
-    --color-primary: #f0bd66 !important;
-
-    --color-text-default: var(--color-black) !important;
-    --color-text-gray: var(--color-grey) !important;
-    --color-text-default-light: var(--color-grey) !important;
-
-    --color-bg-default: var(--color-white) !important;
-    --color-bg-gray-light: var(--color-grey) !important;
-    --color-ui-hover-bg: var(--color-off-white) !important;
-
-    --color-card-bg: transparent !important;
-    --transition: all .2s ease-in-out !important;
-    --container: 920px !important;
-}
