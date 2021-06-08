@@ -3,6 +3,7 @@
     height: var(--navbar-height) !important;
     font-size: 16px !important;
     position: fixed !important;
+    display: flex !important;
     border: none !important;
     z-index: 99 !important;
     margin: 0 !important;
