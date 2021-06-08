@@ -1,0 +1,11 @@
+.notion-quote {
+    font-size: 16px !important;
+    border: none !important;
+    z-index: 99 !important;
+    margin: 0 !important;
+    position: fixed !important;
+    top: 0 !important;
+    height: var(--navbar-height) !important;
+    right: 0 !important;
+    padding-right: var(--padding-right) !important;
+}
