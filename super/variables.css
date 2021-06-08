@@ -18,6 +18,6 @@
     --column-spacing: 30px !important;
     --navbar-height: 90px !important;
 
-    --padding-right: calc(env(safe-area-inset-right) + 120px) !important;
-    --padding-left: calc(env(safe-area-inset-left) + 120px) !important;
+    --padding-right: calc(env(safe-area-inset-right) + 80px) !important;
+    --padding-left: calc(env(safe-area-inset-left) + 80px) !important;
 }
