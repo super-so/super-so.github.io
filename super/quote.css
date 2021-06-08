@@ -19,6 +19,7 @@
 }
 
 .notion-quote a {
+    transition: var(--transition) !important;
     color: var(--color-grey) !important;
     padding: 10px 20px !important;
     font-weight: 500 !important;

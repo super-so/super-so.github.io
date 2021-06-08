@@ -12,8 +12,8 @@
     --color-bg-default: var(--color-white) !important;
     --color-bg-gray-light: var(--color-grey) !important;
     --color-ui-hover-bg: var(--color-off-white) !important;
-
     --color-card-bg: transparent !important;
+
     --transition: all .2s ease-in-out !important;
     --column-spacing: 30px !important;
     --navbar-height: 90px !important;
