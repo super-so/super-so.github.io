@@ -1,24 +1,34 @@
 .notion-quote {
+    padding: 0 var(--padding-right) 0 0 !important;
+    height: var(--navbar-height) !important;
     font-size: 16px !important;
+    position: fixed !important;
     border: none !important;
     z-index: 99 !important;
     margin: 0 !important;
-    position: fixed !important;
-    top: 0 !important;
-    height: var(--navbar-height) !important;
     right: 0 !important;
-    padding-right: var(--padding-right) !important;
+    top: 0 !important;
 }
 
 .notion-quote span {
     justify-content: center !important;
     align-items: center !important;
     display: flex !important;
-    height: 100% !important;
+    height: auto !important;
 }
 
 .notion-quote a {
     color: var(--color-grey) !important;
-    padding: 10px 16px !important;
+    padding: 10px 20px !important;
     font-weight: 500 !important;
+}
+
+.notion-quote a:hover {
+    color: var(--color-black) !important;
+}
+
+.notion-quote .bg-gray {
+    background: var(--color-off-white) !important;
+    border-radius: 100px !important;
+    margin-left: 16px !important;
 }
