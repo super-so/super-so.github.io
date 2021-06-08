@@ -9,3 +9,16 @@
     right: 0 !important;
     padding-right: var(--padding-right) !important;
 }
+
+.notion-quote span {
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+    height: 100% !important;
+}
+
+.notion-quote a {
+    padding: 10px 16px !important;
+    color: var(--grey) !important;
+    font-weight: 500 !important;
+}
