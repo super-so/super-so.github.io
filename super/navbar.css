@@ -26,3 +26,11 @@
 .notion-navbar__title {
     display: none !important;
 }
+
+.nav-active {
+    color: var(--color-black) !important;
+}
+
+.nav-scrolled {
+    height: var(--navbar-height-scrolled) !important;
+}
