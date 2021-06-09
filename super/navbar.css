@@ -2,6 +2,7 @@
     padding: 0 var(--padding-right) 0 var(--padding-left) !important;
     backdrop-filter: blur(20px) saturate(200%) !important;
     background: rgba(255,255,255,0.9) !important;
+    transition: var(--transition) !important;
     height: var(--navbar-height) !important;
 }
 
@@ -33,4 +34,5 @@
 
 .nav-scrolled {
     height: var(--navbar-height-scrolled) !important;
+    box-shadow: 0 0 20px rgb(0,0,0,0.04) !important;
 }

@@ -1,5 +1,6 @@
 .notion-quote {
     padding: 0 var(--padding-right) 0 0 !important;
+    transition: var(--transition) !important;
     height: var(--navbar-height) !important;
     font-size: 16px !important;
     position: fixed !important;
@@ -33,4 +34,8 @@
     background: var(--color-off-white) !important;
     border-radius: 100px !important;
     margin-left: 16px !important;
+}
+
+.quote-scrolled {
+    height: var(--navbar-height-scrolled) !important;
 }
