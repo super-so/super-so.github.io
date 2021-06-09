@@ -29,6 +29,7 @@
 
 .notion-callout__content { margin: 0 !important; }
 .notion-callout__icon { display: none !important; }
+.notion-callout p { font-size: 17px !important; }
 
 .notion-callout .notion-semantic-string .link {
     padding: 14px 28px !important;
