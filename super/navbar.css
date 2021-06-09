@@ -30,8 +30,14 @@
     transform: rotate(0) scale(1) !important;
 }
 
-.notion-navbar__title {
+.notion-navbar__title,
+.notion-breadcrumb__item,
+.notion-breadcrumb__divider {
     display: none !important;
+}
+
+.notion-navbar a[href="/"] {
+    display: flex !important;
 }
 
 .nav-active {
