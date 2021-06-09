@@ -7,6 +7,7 @@
 }
 
 .notion-navbar>a {
+    transition: var(--transition) !important;
     height: auto !important;
 }
 
@@ -21,7 +22,12 @@
 }
 
 .notion-navbar>a:hover {
+    transform: rotate(-8deg) scale(1.08) !important;
     background: none !important;
+}
+
+.notion-navbar>a:active {
+    transform: rotate(0) scale(1) !important;
 }
 
 .notion-navbar__title {
