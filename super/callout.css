@@ -1,5 +1,5 @@
 .notion-callout {
-    box-shadow: 0 20px 30px -10px rgb(0,0,0,0.4) !important;
+    box-shadow: 0 20px 30px -10px rgb(0,0,0,0.3) !important;
     background: var(--color-black) !important;
     transition: var(--transition) !important;
     color: var(--color-white) !important;
