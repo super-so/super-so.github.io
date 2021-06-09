@@ -14,7 +14,7 @@
     --color-ui-hover-bg: var(--color-off-white) !important;
     --color-card-bg: transparent !important;
 
-    --transition: all .2s ease-in-out !important;
+    --transition: all .2s cubic-bezier(.4,0,.2,1) !important;
     --column-spacing: 30px !important;
     --navbar-height: 110px !important;
     --navbar-height-scrolled: 70px !important;
