@@ -27,7 +27,7 @@
 }
 
 .notion-navbar>a:active {
-    transform: rotate(0) scale(1) !important;
+    transform: rotate(-8deg) scale(1) !important;
 }
 
 .notion-navbar__title,
