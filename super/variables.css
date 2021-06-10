@@ -19,6 +19,6 @@
     --navbar-height: 110px !important;
     --navbar-height-scrolled: 70px !important;
 
-    --padding-right: calc(env(safe-area-inset-right) + 120px) !important;
-    --padding-left: calc(env(safe-area-inset-left) + 120px) !important;
+    --padding-right: calc(env(safe-area-inset-right) + 100px) !important;
+    --padding-left: calc(env(safe-area-inset-left) + 100px) !important;
 }
