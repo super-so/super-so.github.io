@@ -36,3 +36,8 @@ h1 {
     height: 32px !important;
     width: 32px !important;
 }
+
+.notion-image img {
+    box-shadow: 0 20px 40px rgb(0 0 0 / 4%) !important;
+    border-radius: 8px !important;
+}
