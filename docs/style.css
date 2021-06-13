@@ -7,6 +7,10 @@
     --rounded: 8px !important;
 }
 
+h1 {
+    letter-spacing: -1px !important;
+}
+
 #page-index .notion-header__icon-wrapper,
 #page-index .notion-header__cover {
     display: none !important;
@@ -29,31 +33,6 @@
 
 .notion-page__icon div,
 .notion-page__icon img {
-    height: 34px !important;
-    width: 34px !important;
-}
-
-.notion-code pre {
-    background: var(--color-light-grey) !important;
-    border-radius: var(--rounded) !important;
-    padding: 18px 24px !important;
-    font-size: 14px !important;
-    line-height: 2 !important;
-}
-
-.notion-property__text code {
-    display: block !important;
-}
-.notion-collection-table td,
-.notion-collection-table th {
-    border: 1px solid #edeef3 !important;
-    vertical-align: middle !important;
-    padding: 12px !important;
-}
-.notion-property__text .notion-semantic-string {
-    white-space: pre !important;
-}
-
-.notion-image div {
-    overflow: visible !important;
+    height: 32px !important;
+    width: 32px !important;
 }
