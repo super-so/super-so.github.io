@@ -3,9 +3,6 @@
 /*-------------------------------------------*/
 
 :root {
-    --color-blackout-1: #000 !important;
-    --color-blackout-2: #0a0d0f !important;
-    --color-blackout-3: #131419 !important;
     --color-ui-hover-bg: #f6f7f9 !important;
     --color-light-grey: #f6f7f9 !important;
     --color-text-gray: #808c99 !important;
@@ -17,10 +14,6 @@
 /*-------------------------------------------*/
 /*------------- GLOBAL BLOCKS ---------------*/
 /*-------------------------------------------*/
-
-h1 {
-    line-height: 1.8 !important;
-}
 
 .notion-header { margin-bottom: 24px !important; }
 .notion-heading { margin-bottom: 16px !important; }
