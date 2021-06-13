@@ -11,7 +11,8 @@
     --rounded: 8px !important;
 }
 
-#page-index .notion-header__icon-wrapper {
+#page-index .notion-header__icon-wrapper,
+#page-index .notion-header__cover {
     display: none !important;
 }
 
