@@ -19,11 +19,7 @@
 .notion-header { margin-bottom: 24px !important; }
 .notion-heading { margin-bottom: 16px !important; }
 .notion-page__icon { margin: 2px 12px 2px 2px !important; }
-
-.notion-page__title .notion-semantic-string {
-    font-size: 18px !important;
-    border: none !important;
-}
+.notion-page__title .notion-semantic-string { border: none !important; }
 
 .notion-page>div {
     border-radius: var(--rounded) !important;
