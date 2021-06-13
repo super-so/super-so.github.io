@@ -11,9 +11,9 @@
     --rounded: 8px !important;
 }
 
-/*-------------------------------------------*/
-/*------------- GLOBAL BLOCKS ---------------*/
-/*-------------------------------------------*/
+#page-index .notion-header__icon-wrapper {
+    display: none !important;
+}
 
 .notion-header { margin-bottom: 24px !important; }
 .notion-heading { margin-bottom: 16px !important; }
@@ -28,8 +28,8 @@
 
 .notion-page__icon div,
 .notion-page__icon img {
-    height: 30px !important;
-    width: 30px !important;
+    height: 34px !important;
+    width: 34px !important;
 }
 
 .notion-code pre {
