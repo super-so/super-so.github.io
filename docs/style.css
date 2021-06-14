@@ -13,7 +13,8 @@ h1 {
 }
 
 #page-index .notion-header__icon-wrapper,
-#page-index .notion-header__cover {
+#page-index .notion-header__cover,
+#block-vip {
     display: none !important;
 }
 
