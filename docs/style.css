@@ -14,7 +14,7 @@ h1 {
 
 #page-index .notion-header__icon-wrapper,
 #page-index .notion-header__cover,
-#block-vip {
+a#block-vip {
     display: none !important;
 }
 
