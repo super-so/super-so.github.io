@@ -13,3 +13,7 @@ h3 {
 .notion-heading .notion-semantic-string {
     line-height: 1.2 !important;
 }
+
+.notion-semantic-string .link {
+    opacity: 1 !important;
+}
