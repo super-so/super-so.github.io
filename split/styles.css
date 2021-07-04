@@ -1,0 +1,15 @@
+/*—————————————————————————————————————————————————*/
+/*——————————————————— WWW.SUPER.SO ————————————————*/
+/*—————————————— © SUPER PUBLISHING CO ————————————*/
+/*—————————————————————————————————————————————————*/
+
+@import "reset.css";
+@import "variables.css";
+@import "content.css";
+@import "header.css";
+
+.super-badge,
+.notion-navbar,
+.notion-header__content {
+    display: none !important;
+}

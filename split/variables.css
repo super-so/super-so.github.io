@@ -1,0 +1,10 @@
+:root {
+    --color-text-default: #000 !important;
+    --color-text-gray: #8f9ba8 !important;
+    --color-text-default-light: #8f9ba8 !important;
+    --color-bg-default: #fff !important;
+    --color-bg-gray-light: #8f9ba8 !important;
+    --color-ui-hover-bg: #fff !important;
+    --color-card-bg: transparent !important;
+    --transition: all .2s ease-in-out !important;
+}

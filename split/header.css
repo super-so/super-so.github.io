@@ -1,0 +1,10 @@
+.notion-header {
+    height: 100vh !important;
+    width: 50vw !important;
+    margin: 0 !important;
+}
+
+.notion-header__cover {
+    max-height: 100% !important;
+    height: 100% !important;
+}
