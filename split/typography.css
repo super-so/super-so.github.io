@@ -1,0 +1,11 @@
+h1 {
+    letter-spacing: -2px !important;
+    font-size: 60px !important;
+}
+
+h3 {
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 8px !important;
+    font-size: 14px !important;
+}
