@@ -1,7 +1,11 @@
 .notion-header {
+    position: fixed !important;
     height: 100vh !important;
     width: 50vw !important;
+    bottom: 0 !important;
     margin: 0 !important;
+    left: 0 !important;
+    top: 0 !important;
 }
 
 .notion-header__cover {
