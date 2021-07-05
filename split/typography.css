@@ -20,4 +20,13 @@ h3 {
 
 .notion-semantic-string .link:hover {
     border-bottom: 1px solid var(--color-text-default) !important;
+    cursor: ne-resize !important;
+}
+
+@media (max-width: 680px) {
+
+    h1 {
+        font-size: 50px !important;
+    }
+
 }
