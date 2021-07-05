@@ -6,10 +6,5 @@
 @import "reset.css";
 @import "variables.css";
 @import "content.css";
+@import "hidden.css";
 @import "typography.css";
-
-.super-badge,
-.notion-navbar,
-.notion-header__content {
-    display: none !important;
-}

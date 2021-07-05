@@ -1,0 +1,5 @@
+.super-badge,
+.notion-navbar,
+.notion-header__content {
+    display: none !important;
+}
