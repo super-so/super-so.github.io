@@ -1,0 +1,7 @@
+:root {
+    --color-text-default: #fff !important;
+    --color-text-gray: #8f9ba8 !important;
+    --color-text-default-light: #3d434a !important;
+    --color-bg-default: #1b1f23 !important;
+    --color-ui-hover-bg: #edeef3 !important;
+}

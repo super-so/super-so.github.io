@@ -3,8 +3,5 @@
     --color-text-gray: #8f9ba8 !important;
     --color-text-default-light: #edeef3 !important;
     --color-bg-default: #fff !important;
-    --color-bg-gray-light: #edeef3 !important;
-    --color-ui-hover-bg: #fff !important;
-    --color-card-bg: transparent !important;
-    --transition: all .2s ease-in-out !important;
+    --color-ui-hover-bg: #edeef3 !important;
 }

@@ -4,7 +4,7 @@
 /*—————————————————————————————————————————————————*/
 
 @import "reset.css";
-@import "variables.css";
+@import "theme.css";
 @import "content.css";
 @import "hidden.css";
 @import "typography.css";
