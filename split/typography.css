@@ -17,3 +17,7 @@ h3 {
 .notion-semantic-string .link {
     opacity: 1 !important;
 }
+
+.notion-semantic-string .link:hover {
+    border-bottom: 1px solid var(--color-text-default) !important;
+}
