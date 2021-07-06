@@ -8,6 +8,10 @@
     --rounded: 8px !important;
 }
 
+.super-content.max-width {
+    max-width: 1000px !important;
+}
+
 h1 {
     letter-spacing: -1px !important;
 }
@@ -43,7 +47,9 @@ a#block-vip {
     overflow: visible !important;
 }
 
-.notion-image img {
+.notion-image img,
+.notion-embed {
     box-shadow: 0 20px 40px rgb(0 0 0 / 4%) !important;
     border-radius: 8px !important;
+    overflow: hidden !important;
 }
