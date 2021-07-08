@@ -11,6 +11,10 @@ h3 {
     font-size: 12px !important;
 }
 
+p {
+    letter-spacing: -0.3px !important;
+}
+
 .notion-heading .notion-semantic-string {
     line-height: 1.2 !important;
 }
