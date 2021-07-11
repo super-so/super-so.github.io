@@ -26,6 +26,12 @@ a#block-vip {
     margin-top: 120px !important;
 }
 
+#page-index .notion-root {
+    grid-template-columns: 1fr 1fr 1fr !important;
+    grid-gap: 12px !important;
+    display: grid !important;
+}
+
 .notion-header { margin-bottom: 24px !important; }
 .notion-heading { margin-bottom: 16px !important; }
 .notion-page__icon { margin: 2px 12px 2px 2px !important; }
@@ -35,6 +41,11 @@ a#block-vip {
     border-radius: var(--rounded) !important;
     align-items: center !important;
     padding: 4px !important;
+}
+
+#page-index .notion-page>div {
+    padding: 12px !important;
+    border: 1px solid #EDEEF3;
 }
 
 .notion-page__icon div,
@@ -52,4 +63,19 @@ a#block-vip {
     box-shadow: 0 20px 40px rgb(0 0 0 / 4%) !important;
     border-radius: 8px !important;
     overflow: hidden !important;
+}
+
+@media (max-width: 860px) {
+
+    #page-index .notion-root {
+        grid-template-columns: 1fr !important;
+        display: flex !important;
+        grid-gap: 0 !important;
+    }
+
+    #page-index .notion-page>div {
+        padding: 4px !important;
+        border: none !important;
+    }
+
 }
