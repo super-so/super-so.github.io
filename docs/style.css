@@ -35,6 +35,7 @@ a#block-vip {
 .notion-header { margin-bottom: 36px !important; }
 .notion-heading { margin-bottom: 16px !important; }
 .notion-page__icon { margin: 2px 12px 2px 2px !important; }
+.notion-page__title { font-size: 17px !important; }
 .notion-page__title .notion-semantic-string { border: none !important; }
 
 .notion-page>div {
@@ -44,14 +45,14 @@ a#block-vip {
 }
 
 #page-index .notion-page>div {
-    padding: 12px !important;
+    padding: 16px !important;
     border: 1px solid #EDEEF3;
 }
 
 .notion-page__icon div,
 .notion-page__icon img {
-    height: 32px !important;
-    width: 32px !important;
+    height: 36px !important;
+    width: 36px !important;
 }
 
 .notion-image>div {
