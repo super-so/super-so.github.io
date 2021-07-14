@@ -22,7 +22,7 @@
 .notion-quote a {
     transition: var(--transition) !important;
     color: var(--color-grey) !important;
-    padding: 10px 20px !important;
+    padding: 8px 16px 9px !important;
     font-weight: 500 !important;
 }
 
