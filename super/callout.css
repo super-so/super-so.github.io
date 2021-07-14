@@ -15,8 +15,7 @@
 }
 
 .notion-callout:hover {
-    box-shadow: 0 20px 30px -10px rgba(240,189,102,0.8) !important;
-    background: var(--color-primary) !important;
+    box-shadow: 0 20px 30px -10px rgba(0,0,0,0.4) !important;
 }
 
 .notion-callout:active {
