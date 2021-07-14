@@ -30,8 +30,17 @@
 
 .notion-callout__icon {
     pointer-events: none !important;
-    min-width: auto !important;
+    position: absolute !important;
     display: none !important;
+    left: 24px !important;
+}
+
+.notion-callout__icon,
+.notion-callout__icon div,
+.notion-callout__icon img {
+    max-width: auto !important;
+    min-width: auto !important;
+    height: 20px !important;
     width: 20px !important;
 }
 
