@@ -16,12 +16,11 @@
 
 .notion-callout:hover {
     box-shadow: 0 20px 30px -10px rgba(0,0,0,0.4) !important;
-    transform: scale(1.04) !important;
 }
 
 .notion-callout:active {
     box-shadow: 0 20px 30px -10px rgb(0,0,0,0.2) !important;
-    transform: scale(1) !important;
+    transform: scale(0.96) !important;
 }
 
 .notion-callout.bg-gray-light {
