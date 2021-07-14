@@ -1,7 +1,4 @@
-#page-index .notion-header__title {
-    width: 650px !important;
-}
-
+#page-index .notion-header__title,
 #page-index .notion-toggle {
     display: none !important;
 }
