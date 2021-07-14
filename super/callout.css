@@ -29,6 +29,7 @@
 }
 
 .notion-callout__icon {
+    pointer-events: none !important;
     min-width: auto !important;
     display: none !important;
     width: 20px !important;
