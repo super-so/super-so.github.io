@@ -22,9 +22,12 @@
 .notion-quote a {
     transition: var(--transition) !important;
     color: var(--color-grey) !important;
+    justify-content: center !important;
     letter-spacing: -0.2px !important;
     padding: 8px 18px 9px !important;
+    align-items: center !important;
     font-weight: 500 !important;
+    display: flex !important;
 }
 
 .notion-quote a:hover {
@@ -39,4 +42,14 @@
 
 .quote-scrolled {
     height: var(--navbar-height-scrolled) !important;
+}
+
+.quote-scrolled span,
+.quote-scrolled a {
+    height: 100% !important;
+}
+
+.quote-scrolled .highlighted-color,
+.quote-scrolled .bg-gray {
+    height: auto !important;
 }
