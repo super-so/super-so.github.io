@@ -9,7 +9,6 @@
     width: fit-content !important;
     position: relative !important;
     font-weight: 600 !important;
-    font-size: 18px !important;
     border: none !important;
     padding: 0 !important;
 }
@@ -45,7 +44,7 @@
 }
 
 .notion-callout__content { margin: 0 !important; }
-.notion-callout p { font-size: 16px !important; }
+.notion-callout p { font-size: 18px !important; }
 
 .notion-callout .notion-semantic-string .link {
     padding: 16px 32px 17px !important;
