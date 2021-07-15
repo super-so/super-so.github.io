@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="22px" height="12px" viewBox="0 0 22 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>source_icons_link</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-        <g id="source_icons_link" transform="translate(1.000000, 0.999990)" stroke="#F0BD66" stroke-width="1.5">
-            <path d="M12,4.99761 C12,2.50591 9.683,1e-05 6.85714,1e-05 C6.52241,1e-05 5.41904,1e-05 5.14286,1e-05 C2.30254,1e-05 0,2.23753 0,4.99761 C0,7.37601 1.70973,9.36641 4,9.87141 C4.36756,9.95251 4.75006,9.99521 5.14286,9.99521" id="Path"></path>
-            <path d="M8,4.99761 C8,7.48931 10.317,9.99521 13.1429,9.99521 C13.4776,9.99521 14.581,9.99521 14.8571,9.99521 C17.6975,9.99521 20,7.75771 20,4.99761 C20,2.61921 18.2903,0.62885 16,0.12384 C15.6324,0.04279 15.2499,0 14.8571,0" id="Path"></path>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><g transform="translate(2 11)"><path d="M 21.6 8.996 C 21.6 4.511 17.429 0 12.343 0 L 9.257 0 C 4.145 0 0 4.028 0 8.996 C 0 13.277 3.078 16.859 7.2 17.768 C 7.876 17.917 8.566 17.991 9.257 17.991" fill="transparent" stroke-width="2.5" stroke="rgb(240,189,102)" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""></path><path d="M 14.4 8.996 C 14.4 13.48 18.571 17.991 23.657 17.991 L 26.743 17.991 C 31.855 17.991 36 13.964 36 8.996 C 36 4.714 32.922 1.13 28.8 0.223 C 28.124 0.074 27.434 -0 26.743 0" fill="transparent" stroke-width="2.5" stroke="rgb(240,189,102)" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""></path></g></svg>

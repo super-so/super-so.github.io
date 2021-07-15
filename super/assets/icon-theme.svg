@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>source_icons_color-filter</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-        <g id="source_icons_color-filter" transform="translate(1.000000, 1.500000)" stroke="#F0BD66" stroke-width="1.5">
-            <path d="M10,12 C13.3137,12 16,9.3137 16,6 C16,2.68629 13.3137,0 10,0 C6.68629,0 4,2.68629 4,6 C4,9.3137 6.68629,12 10,12 Z" id="Path"></path>
-            <path d="M14,19 C17.3137,19 20,16.3137 20,13 C20,9.6863 17.3137,7 14,7 C10.6863,7 8,9.6863 8,13 C8,16.3137 10.6863,19 14,19 Z" id="Path"></path>
-            <path d="M6,19 C9.3137,19 12,16.3137 12,13 C12,9.6863 9.3137,7 6,7 C2.68629,7 0,9.6863 0,13 C0,16.3137 2.68629,19 6,19 Z" id="Path"></path>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><g transform="translate(5 6)"><path d="M 15 18 C 19.971 18 24 13.971 24 9 C 24 4.029 19.971 0 15 0 C 10.029 0 6 4.029 6 9 C 6 13.971 10.029 18 15 18 Z" fill="transparent" stroke-width="2.5" stroke="rgb(240,189,102)" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""></path><path d="M 21 28.5 C 25.971 28.5 30 24.471 30 19.5 C 30 14.529 25.971 10.5 21 10.5 C 16.029 10.5 12 14.529 12 19.5 C 12 24.471 16.029 28.5 21 28.5 Z" fill="transparent" stroke-width="2.5" stroke="rgb(240,189,102)" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""></path><path d="M 9 28.5 C 13.971 28.5 18 24.471 18 19.5 C 18 14.529 13.971 10.5 9 10.5 C 4.029 10.5 0 14.529 0 19.5 C 0 24.471 4.029 28.5 9 28.5 Z" fill="transparent" stroke-width="2.5" stroke="rgb(240,189,102)" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""></path></g></svg>
