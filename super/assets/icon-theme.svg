@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>source_icons_color-filter</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="source_icons_color-filter" transform="translate(1.000000, 1.500000)" stroke="#F0BD66" stroke-width="1.5">
+            <path d="M10,12 C13.3137,12 16,9.3137 16,6 C16,2.68629 13.3137,0 10,0 C6.68629,0 4,2.68629 4,6 C4,9.3137 6.68629,12 10,12 Z" id="Path"></path>
+            <path d="M14,19 C17.3137,19 20,16.3137 20,13 C20,9.6863 17.3137,7 14,7 C10.6863,7 8,9.6863 8,13 C8,16.3137 10.6863,19 14,19 Z" id="Path"></path>
+            <path d="M6,19 C9.3137,19 12,16.3137 12,13 C12,9.6863 9.3137,7 6,7 C2.68629,7 0,9.6863 0,13 C0,16.3137 2.68629,19 6,19 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="12px" viewBox="0 0 22 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>source_icons_link</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="source_icons_link" transform="translate(1.000000, 0.999990)" stroke="#F0BD66" stroke-width="1.5">
+            <path d="M12,4.99761 C12,2.50591 9.683,1e-05 6.85714,1e-05 C6.52241,1e-05 5.41904,1e-05 5.14286,1e-05 C2.30254,1e-05 0,2.23753 0,4.99761 C0,7.37601 1.70973,9.36641 4,9.87141 C4.36756,9.95251 4.75006,9.99521 5.14286,9.99521" id="Path"></path>
+            <path d="M8,4.99761 C8,7.48931 10.317,9.99521 13.1429,9.99521 C13.4776,9.99521 14.581,9.99521 14.8571,9.99521 C17.6975,9.99521 20,7.75771 20,4.99761 C20,2.61921 18.2903,0.62885 16,0.12384 C15.6324,0.04279 15.2499,0 14.8571,0" id="Path"></path>
+        </g>
+    </g>
+</svg>

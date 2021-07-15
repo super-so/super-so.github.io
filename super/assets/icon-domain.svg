@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-window</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-window" transform="translate(1.000000, 1.000000)" stroke="#F0BD66" stroke-width="1.5">
+            <path d="M0,12 L0,2 C0,0.89543 0.89543,0 2,0 L16,0 C17.1046,0 18,0.89543 18,2 L18,12 C18,13.1046 17.1046,14 16,14 L2,14 C0.89543,14 0,13.1046 0,12 Z" id="Path"></path>
+            <line x1="3" y1="3" x2="5" y2="3" id="Path" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>

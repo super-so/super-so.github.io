@@ -8,6 +8,7 @@
     --color-text-default: var(--color-black) !important;
     --color-text-gray: var(--color-grey) !important;
     --color-text-default-light: var(--color-grey) !important;
+    --color-text-yellow: var(--color-primary) !important;
 
     --color-bg-default: var(--color-white) !important;
     --color-bg-gray-light: var(--color-grey) !important;

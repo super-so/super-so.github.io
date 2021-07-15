@@ -7,6 +7,12 @@ h1 {
     width: 700px !important;
 }
 
+h2 {
+    letter-spacing: -1px !important;
+    font-weight: 700 !important;
+    margin-top: 20px !important;
+}
+
 p {
     letter-spacing: -0.2px !important;
     font-weight: 500 !important;
