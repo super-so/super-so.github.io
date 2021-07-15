@@ -29,3 +29,7 @@ p .highlighted-color {
     border: none !important;
     opacity: 1 !important;
 }
+
+.color-yellow a:hover {
+    color: var(--color-black) !important;
+}
