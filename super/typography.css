@@ -25,11 +25,8 @@ p .highlighted-color {
     font-size: 15px !important;
 }
 
-a {
-    transition: var(--transition) !important;
-}
-
 .notion-semantic-string .link {
+    transition: var(--transition) !important;
     border: none !important;
     opacity: 1 !important;
 }
