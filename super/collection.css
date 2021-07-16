@@ -12,7 +12,7 @@
 
 .notion-collection-card {
     box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
-    padding: 20px 24px 24px ​!important;
+    padding: 20px 24px 24px !important;
     border-radius: 16px !important;
 }
 
@@ -53,11 +53,12 @@
 }
 
 .notion-collection-card__content .notion-property__select .notion-pill {
+    background: var(--color-off-white) !important;
     color: var(--color-grey) !important;
-    letter-spacing: -0.3px !important;
-    background: none !important;
+    letter-spacing: -0.2px !important;
+    border-radius: 8px !important;
     font-weight: 600 !important;
-    font-size: 16px !important;
+    font-size: 12px !important;
     padding: 0 !important;
 }
 
