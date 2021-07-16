@@ -20,8 +20,10 @@
 .notion-collection-card__cover>div,
 .notion-collection-card__cover>img {
     border-radius: 12px !important;
+    position: relative !important;
     max-height: 200px !important;
     height: 200px !important;
+    border: none !important;
 }
 
 .notion-collection-card__cover img {
