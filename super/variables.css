@@ -13,7 +13,7 @@
     --color-bg-default: var(--color-white) !important;
     --color-bg-gray-light: var(--color-grey) !important;
     --color-ui-hover-bg: var(--color-off-white) !important;
-    --color-card-bg: transparent !important;
+    --color-card-bg: var(--color-white) !important;
 
     --transition: all .2s cubic-bezier(.4,0,.2,1) !important;
     --column-spacing: 30px !important;

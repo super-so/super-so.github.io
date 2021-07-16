@@ -1,0 +1,63 @@
+/* GLOBAL */
+.notion-collection__header {
+    display: none !important;
+}
+
+/* GALLERIES */
+.notion-collection-gallery {
+    grid-gap: 32px !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.notion-collection-card {
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
+    padding: 20px 24px 24px ​!important;
+    border-radius: 16px !important;
+}
+
+.notion-collection-card__cover,
+.notion-collection-card__cover>div,
+.notion-collection-card__cover>img {
+    border-radius: 12px !important;
+    max-height: 200px !important;
+    height: 200px !important;
+}
+
+.notion-collection-card__cover img {
+    transition: var(--transition) !important;
+    transform: scale(1.06) !important;
+}
+
+.notion-collection-card:hover {
+    background: var(--color-white) !important;
+}
+
+.notion-collection-card:hover .notion-collection-card__cover img {
+    transform: scale(1.001) !important;
+}
+
+.notion-property__title,
+.notion-collection-card__content {
+    padding: 0 !important;
+}
+
+.notion-property__title {
+    margin: 20px 0 4px !important;
+    font-size: 24px !important;
+}
+
+.notion-property__title .notion-semantic-string {
+    letter-spacing: -1px !important;
+    font-weight: 700 !important;
+}
+
+.notion-collection-card__content .notion-property__select .notion-pill {
+    color: var(--color-grey) !important;
+    letter-spacing: -0.3px !important;
+    background: none !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    padding: 0 !important;
+}
+
