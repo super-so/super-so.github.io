@@ -35,14 +35,14 @@
 }
 
 .notion-collection-card:hover {
-    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.16) !important;
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.2) !important;
     background: var(--color-white) !important;
-    transform: scale(1.04) !important;
+    transform: translateY(-6px) !important;
 }
 
 .notion-collection-card:active {
     box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
-    transform: scale(1) !important;
+    transform: translateY(0) !important;
 }
 
 .notion-collection-card:hover .notion-collection-card__cover img {
