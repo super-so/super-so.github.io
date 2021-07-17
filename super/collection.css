@@ -35,7 +35,7 @@
 }
 
 .notion-collection-card:hover {
-    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.16) !important;
+    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.12) !important;
     background: var(--color-white) !important;
     transform: translateY(-6px) !important;
 }
