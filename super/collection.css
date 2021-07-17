@@ -55,12 +55,8 @@
 }
 
 .notion-property__title {
-    font-size: 24px !important;
-    order: 2 !important;
-}
-
-.notion-collection-card__content  {
     margin: 20px 0 4px !important;
+    font-size: 24px !important;
 }
 
 .notion-property__title .notion-semantic-string {
@@ -69,8 +65,6 @@
 }
 
 .notion-collection-card__content .notion-property__select .notion-pill {
-    /* background: var(--color-off-white) !important; */
-    /* padding: 8px 12px !important; */
     color: var(--color-grey) !important;
     letter-spacing: -0.2px !important;
     border-radius: 8px !important;
@@ -80,3 +74,12 @@
     padding: 0 !important;
 }
 
+.notion-collection-card__content {
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.notion-collection-card__content:first-child {
+    position: absolute !important;
+    top: -65px !important;
+}
