@@ -82,7 +82,7 @@
 /* Subcategory */
 .notion-collection-card__property:first-child {
     position: absolute !important;
-    top: -66px !important;
+    top: -64px !important;
 }
 
 /* Right text */
