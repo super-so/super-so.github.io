@@ -13,7 +13,9 @@
 .notion-collection-card {
     box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
     padding: 20px 24px 24px !important;
+    flex-direction: column !important;
     border-radius: 16px !important;
+    display: flex !important;
 }
 
 .notion-collection-card__cover,
@@ -45,8 +47,12 @@
 }
 
 .notion-property__title {
-    margin: 20px 0 4px !important;
     font-size: 24px !important;
+    order: 2 !important;
+}
+
+.notion-collection-card__content  {
+    margin: 20px 0 4px !important;
 }
 
 .notion-property__title .notion-semantic-string {
@@ -55,12 +61,14 @@
 }
 
 .notion-collection-card__content .notion-property__select .notion-pill {
-    background: var(--color-off-white) !important;
+    /* background: var(--color-off-white) !important; */
+    /* padding: 8px 12px !important; */
     color: var(--color-grey) !important;
     letter-spacing: -0.2px !important;
     border-radius: 8px !important;
-    padding: 8px 12px !important;
+    background: none !important;
     font-weight: 600 !important;
-    font-size: 12px !important;
+    font-size: 16px !important;
+    padding: 0 !important;
 }
 
