@@ -55,7 +55,7 @@
 }
 
 .notion-property__title {
-    margin: 20px 0 4px !important;
+    margin: 50px 0 4px !important;
     font-size: 24px !important;
 }
 
@@ -79,7 +79,7 @@
     overflow: visible !important;
 }
 
-.notion-collection-card__content:first-child {
+.notion-collection-card__property:first-child {
     position: absolute !important;
     top: -65px !important;
 }
