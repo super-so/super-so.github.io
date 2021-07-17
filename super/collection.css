@@ -12,6 +12,7 @@
 
 .notion-collection-card {
     box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
+    transition: var(--transition) !important;
     padding: 20px 24px 24px !important;
     flex-direction: column !important;
     border-radius: 16px !important;
