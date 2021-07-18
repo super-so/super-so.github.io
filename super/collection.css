@@ -77,14 +77,13 @@
 }
 
 .notion-collection-card__content {
-    position: relative !important;
     overflow: visible !important;
 }
 
-/* Subcategory */
+/* Subcategory label */
 .notion-collection-card__property:first-child {
     position: absolute !important;
-    top: -64px !important;
+    top: 236px !important;
 }
 
 /* Right text */
