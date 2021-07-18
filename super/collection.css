@@ -1,5 +1,6 @@
 /* GLOBAL */
-.notion-collection__header {
+.notion-collection__header,
+.notion-property__title__icon-wrapper {
     display: none !important;
 }
 
