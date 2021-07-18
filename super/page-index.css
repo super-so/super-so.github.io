@@ -15,5 +15,6 @@
 }
 
 #page-index .collection-34515e24eca84100b4305b4f2923809f .notion-property__title {
-    padding: 0 36px 0 0 !important;
+    max-width: 140px !important;
+    padding: 0 !important;
 }
