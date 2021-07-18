@@ -34,3 +34,7 @@ p .highlighted-color {
 .color-yellow a:hover {
     color: var(--color-black) !important;
 }
+
+strong {
+    font-weight: 900 !important;
+}
