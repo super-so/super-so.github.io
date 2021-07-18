@@ -1,3 +1,7 @@
+.notion-code {
+    margin: 24px 0 8px !important;
+}
+
 .notion-code pre {
     box-shadow: 0 10px 40px -10px rgba(0,0,0,0.08) !important;
     background: var(--color-white) !important;
