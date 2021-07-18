@@ -2,6 +2,7 @@
 .collection-34515e24eca84100b4305b4f2923809f .notion-collection-card:hover  {
     background: none !important;
     box-shadow: none !important;
+    border-radius: 0 !important;
     transform: none !important;
     padding: 0 !important;
 }
