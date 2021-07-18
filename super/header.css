@@ -1,4 +1,9 @@
-.notion-header__title {
+#page-index .notion-header__title,
+#page-market .notion-header__title,
+#page-guides .notion-header__title,
+#page-features .notion-header__title,
+#page-pricing .notion-header__title,
+#page-showcase .notion-header__title {
     color: var(--color-grey) !important;
     letter-spacing: -1px !important;
     position: absolute !important;
