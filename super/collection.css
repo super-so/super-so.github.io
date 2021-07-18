@@ -22,7 +22,7 @@
 
 .notion-collection-card__cover,
 .notion-collection-card__cover>div,
-.notion-collection-card__cover>img {
+.notion-collection-card__cover img {
     border-radius: 12px !important;
     position: relative !important;
     max-height: 200px !important;
