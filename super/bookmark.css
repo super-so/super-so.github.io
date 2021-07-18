@@ -1,0 +1,67 @@
+.notion-bookmark {
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
+    background: var(--color-white) !important;
+    transition: var(--transition) !important;
+    border-radius: 16px !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.notion-bookmark:hover {
+    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.12) !important;
+    background: var(--color-white) !important;
+    transform: translateY(-8px) !important;
+}
+
+.notion-bookmark:active {
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
+    transform: translateY(0) !important;
+}
+
+.notion-bookmark>a {
+    flex-direction: column !important;
+    display: flex !important;
+    padding: 24px !important;
+}
+
+.notion-bookmark__cover {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    border: none !important;
+    flex: none !important;
+    order: 1 !important;
+}
+
+.notion-bookmark__content {
+    padding: 20px ​0 4px !important;
+    flex: none !important;
+    order: 2 !important;
+}
+
+.notion-bookmark__cover img {
+    transition: var(--transition) !important;
+    transform: scale(1.06) !important;
+}
+
+.notion-bookmark__title {
+    color: var(--color-grey) !important;
+    letter-spacing: -0.4px !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+}
+
+.notion-bookmark__description {
+    color: var(--color-black) !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    height: 55px !important;
+    opacity: 1 !important;
+}
+
+.notion-bookmark__link {
+    margin-top: 12px !important;
+}
+
+.notion-bookmark__link p {
+    font-size: 14px !important;
+}

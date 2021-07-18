@@ -9,8 +9,8 @@ h1 {
 
 h2 {
     letter-spacing: -1px !important;
+    margin: 20px 0 12px !important;
     font-weight: 700 !important;
-    margin-top: 20px !important;
     line-height: 1.4 !important;
     font-size: 26px !important;
 }
@@ -23,7 +23,7 @@ h3 {
 }
 
 p {
-    letter-spacing: -0.2px !important;
+    letter-spacing: -0.3px !important;
     font-weight: 500 !important;
     font-size: 18px !important;
 }
