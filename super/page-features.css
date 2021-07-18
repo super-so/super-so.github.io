@@ -1,3 +1,8 @@
+.collection-34515e24eca84100b4305b4f2923809f .notion-collection-gallery {
+    grid-column-gap: 40px !important;
+    grid-row-gap: 80px !important;
+}
+
 .collection-34515e24eca84100b4305b4f2923809f .notion-collection-card,
 .collection-34515e24eca84100b4305b4f2923809f .notion-collection-card:hover  {
     background: none !important;
@@ -19,5 +24,5 @@
 }
 
 .collection-34515e24eca84100b4305b4f2923809f .notion-property__title {
-    padding: 0 48px 0 0  !important;
+    padding: 0 30px 0 0  !important;
 }
