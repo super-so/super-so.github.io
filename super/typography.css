@@ -15,6 +15,13 @@ h2 {
     font-size: 26px !important;
 }
 
+h3 {
+    letter-spacing: -0.4px !important;
+    margin-bottom: 12px !important;
+    line-height: 1.5 !important;
+    font-size: 20px !important;
+}
+
 p {
     letter-spacing: -0.2px !important;
     font-weight: 500 !important;
