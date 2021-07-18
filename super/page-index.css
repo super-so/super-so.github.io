@@ -7,3 +7,8 @@
 #page-index .collection-34515e24eca84100b4305b4f2923809f {
     padding: 100px !important;
 }
+
+#page-index .collection-34515e24eca84100b4305b4f2923809f .notion-collection-gallery {
+    grid-template-columns: repeat(4, 1fr) !important;
+    grid-gap: 120px !important;
+}
