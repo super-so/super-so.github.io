@@ -13,6 +13,11 @@
     transform: translateY(-8px) !important;
 }
 
+.notion-bookmark:hover .notion-bookmark__cover img {
+    transform: scale(1) !important;
+}
+
+
 .notion-bookmark:active {
     box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
     transform: translateY(0) !important;
