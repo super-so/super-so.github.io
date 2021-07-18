@@ -27,3 +27,7 @@
     padding: 0 60px 0 0  !important;
     margin: 40px 0 0 !important;
 }
+
+#block-all-features-view-all-features:hover .notion-property__title {
+    color: var(--color-primary) !important;
+}
