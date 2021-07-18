@@ -5,7 +5,7 @@
 /*—————————————————————————————————————————————————*/
 
 @import "reset.css";
-@import "variables.css";
+@import "theme.css";
 @import "callout.css";
 @import "code.css";
 @import "collection-defaults.css";
