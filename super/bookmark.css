@@ -28,12 +28,13 @@
     border-radius: 12px !important;
     overflow: hidden !important;
     border: none !important;
+    width: 100% !important;
     flex: none !important;
     order: 1 !important;
 }
 
 .notion-bookmark__content {
-    padding: 20px ​0 4px !important;
+    padding: 20px 0 4px !important;
     flex: none !important;
     order: 2 !important;
 }
@@ -56,6 +57,11 @@
     line-height: 1.4 !important;
     height: 55px !important;
     opacity: 1 !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    overflow: hidden;
 }
 
 .notion-bookmark__link {
