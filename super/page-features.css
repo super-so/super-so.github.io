@@ -1,0 +1,25 @@
+.collection-34515e24eca84100b4305b4f2923809f {
+    padding: 100px !important;
+}
+
+.collection-34515e24eca84100b4305b4f2923809f .notion-collection-card,
+.collection-34515e24eca84100b4305b4f2923809f .notion-collection-card:hover  {
+    background: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    padding: 0 !important;
+}
+
+.collection-34515e24eca84100b4305b4f2923809f .notion-collection-card__cover,
+.collection-34515e24eca84100b4305b4f2923809f .notion-collection-card__cover>div,
+.collection-34515e24eca84100b4305b4f2923809f .notion-collection-card__cover>img {
+    max-height: 40px !important;
+    min-height: auto !important;
+    border-radius: 0 !important;
+    height: 40px !important;
+    width: 40px !important;
+}
+
+.collection-34515e24eca84100b4305b4f2923809f .notion-property__title {
+    padding: 0 48px 0 0  !important;
+}
