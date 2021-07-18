@@ -8,7 +8,8 @@
 @import "variables.css";
 @import "callout.css";
 @import "code.css";
-@import "collection.css";
+@import "collection-defaults.css";
+@import "collection-features.css";
 @import "column.css";
 @import "container.css";
 @import "embed.css";
@@ -18,4 +19,3 @@
 @import "quote.css";
 @import "typography.css";
 @import "page-index.css";
-@import "page-features.css";
