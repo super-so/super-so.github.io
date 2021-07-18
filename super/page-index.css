@@ -12,3 +12,7 @@
     grid-template-columns: repeat(4, 1fr) !important;
     grid-gap: 120px !important;
 }
+
+#page-index .collection-34515e24eca84100b4305b4f2923809f .notion-property__title {
+    padding: 0 36px 0 0 !important;
+}
