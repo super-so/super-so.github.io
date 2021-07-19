@@ -30,7 +30,7 @@
 }
 
 .notion-callout.bg-gray-light:hover {
-    box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 20px 30px -10px rgba(0,0,0,0.04) !important;
 }
 
 .notion-callout__icon {
