@@ -1,6 +1,6 @@
 #page-icons,
 #page-icons-light {
-    transition: var(--transition);
+    transition: var(--transition) !important;
 }
 
 #page-icons-light,
