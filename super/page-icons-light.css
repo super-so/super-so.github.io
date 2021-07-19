@@ -4,12 +4,10 @@
 }
 
 #page-icons-light,
-#page-icons-light .super-badge span,
 #page-icons-light .notion-quote a:hover {
     color: var(--color-white) !important;
 }
 
-#page-icons-light .super-badge,
 #page-icons-light .notion-quote .bg-gray {
     background: var(--color-charcoal) !important;
 }
