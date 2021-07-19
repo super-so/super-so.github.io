@@ -11,7 +11,7 @@
 }
 
 .static-tweet-header-icon-twitter {
-    filter: hue-rotate(200deg) brightness(130%) !important;
+    filter: hue-rotate(196deg) brightness(130%) saturate(0.8) !important;
 }
 
 .static-tweet-p a,
