@@ -1,3 +1,8 @@
+#page-icons,
+#page-icons-light {
+    transition: var(--transition);
+}
+
 #page-icons-light,
 #page-icons-light .notion-navbar {
     background: var(--color-off-black) !important;
