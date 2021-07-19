@@ -10,17 +10,10 @@
 .notion-bookmark:hover {
     box-shadow: 0 20px 40px -10px rgba(0,0,0,0.12) !important;
     background: var(--color-white) !important;
-    transform: translateY(-8px) !important;
 }
-
-.notion-bookmark:hover .notion-bookmark__cover img {
-    transform: scale(1) !important;
-}
-
 
 .notion-bookmark:active {
     box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
-    transform: translateY(0) !important;
 }
 
 .notion-bookmark>a {
@@ -42,11 +35,6 @@
     padding: 20px 0 4px !important;
     flex: none !important;
     order: 2 !important;
-}
-
-.notion-bookmark__cover img {
-    transition: var(--transition) !important;
-    transform: scale(1.06) !important;
 }
 
 .notion-bookmark__title {
