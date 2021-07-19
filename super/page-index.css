@@ -7,13 +7,11 @@
 #page-index .collection-34515e24eca84100b4305b4f2923809f {
     padding: 100px !important;
 }
-
 #page-index .collection-34515e24eca84100b4305b4f2923809f .notion-collection-gallery {
     grid-template-columns: repeat(4, 1fr) !important;
     grid-column-gap: 120px !important;
     grid-row-gap: 100px !important;
 }
-
 #page-index .collection-34515e24eca84100b4305b4f2923809f .notion-property__title {
     max-width: 140px !important;
     padding: 0 !important;
