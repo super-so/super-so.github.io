@@ -3,6 +3,10 @@
     margin: 0 !important;
 }
 
+.notion-toggle p .highlighted-color {
+    font-size: inherit !important;
+}
+
 .notion-toggle:first-child {
     border-top-right-radius: 12px !important;
     border-top-left-radius: 12px !important;
@@ -40,8 +44,8 @@
 }
 
 .notion-toggle__content {
+    padding: 0 15% 40px 40px !important;
     padding-inline-start: 0 !important;
-    padding: 0 40px 40px !important;
     margin-top: -24px !important;
 }
 
