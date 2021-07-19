@@ -96,8 +96,8 @@
     position: absolute !important;
     font-weight: 700 !important;
     font-size: 20px !important;
-    top: -60px !important;
-    right: 0 !important;
+    bottom: 30px !important;
+    right: 24px !important;
     padding: 12px 16px;
 }
 
