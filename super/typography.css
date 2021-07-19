@@ -39,6 +39,10 @@ p .highlighted-color {
     opacity: 1 !important;
 }
 
+.notion-semantic-string .link:hover {
+    border-bottom: 1px solid var(--color-black) !important;
+}
+
 .color-yellow a:hover {
     color: var(--color-black) !important;
 }
