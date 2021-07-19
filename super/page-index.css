@@ -21,3 +21,12 @@
     max-width: 140px !important;
     padding: 0 !important;
 } */
+
+/* SHOWCASE SECTION */
+#page-index .notion-collection-card__content {
+    display: none !important;
+}
+
+#page-index .notion-property__title {
+    margin: 20px 0 0 !important;
+}
