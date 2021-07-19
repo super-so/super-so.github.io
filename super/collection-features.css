@@ -31,3 +31,8 @@
 #block-all-features-view-all-features:hover .notion-property__title {
     color: var(--color-primary) !important;
 }
+
+.collection-34515e24eca84100b4305b4f2923809f .notion-property__title .notion-semantic-string {
+    word-break: normal !important;
+    overflow: visible !important;
+}
