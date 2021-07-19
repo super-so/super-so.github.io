@@ -29,13 +29,15 @@
 }
 
 .notion-toggle[open]>summary:before {
-    content: "-" !important;
+    content: "–" !important;
 }
 
 .notion-toggle__summary:hover:before {
     background: none !important;
 }
 
-.notion-toggle__summary .notion-semantic-string {
+.notion-toggle__content {
     padding-inline-start: 0 !important;
+    padding: 0 40px 40px !important;
+    margin-top: -24px !important;
 }
