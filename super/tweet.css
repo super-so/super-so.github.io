@@ -1,0 +1,22 @@
+.static-tweet-body {
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    border: none !important;
+}
+
+.static-tweet-p {
+    letter-spacing: -0.8px !important;;
+    font-weight: 600 !important;
+}
+
+.static-tweet-header-icon-twitter {
+    filter: hue-rotate(200deg) brightness(130%) !important;
+}
+
+.static-tweet-p a,
+.static-tweet-anchor,
+.static-tweet-twitter-link,
+.static-tweet-twitter-link s {
+    color: var(--color-primary) !important;
+}
