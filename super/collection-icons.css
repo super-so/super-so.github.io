@@ -8,7 +8,6 @@
     background: none !important;
     box-shadow: none !important;
     border-radius: 0 !important;
-    transform: none !important;
     padding: 0 !important;
 }
 
@@ -24,15 +23,13 @@
 }
 
 .collection-09375bcba39f43259808bfc83b40a7a4 .notion-property__title {
-    padding: 0 60px 0 0  !important;
-    margin: 40px 0 0 !important;
-}
-
-#block-all-features-view-all-features:hover .notion-property__title {
-    color: var(--color-primary) !important;
+    margin: 30px 0 0 !important;
+    font-size: 18px !important;
+    padding: 0  !important;
 }
 
 .collection-09375bcba39f43259808bfc83b40a7a4 .notion-property__title .notion-semantic-string {
+    letter-spacing: -0.5px !important;
     word-break: normal !important;
     overflow: visible !important;
 }
