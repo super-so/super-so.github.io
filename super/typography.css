@@ -23,9 +23,9 @@ h3 {
 }
 
 p {
-    letter-spacing: -0.3px !important;
-    font-weight: 500 !important;
-    font-size: 18px !important;
+    letter-spacing: -0.4px !important;
+    font-weight: 400 !important;
+    font-size: 20px !important;
 }
 
 p .highlighted-color {

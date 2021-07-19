@@ -11,6 +11,8 @@
     padding: 28px !important;
 }
 
+.notion-code pre,
+.notion-code code,
 .notion-code pre span {
-    color: var(--color-grey) !important;
+    color: var(--color-black) !important;
 }
