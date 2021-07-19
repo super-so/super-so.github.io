@@ -26,17 +26,17 @@
     /* content: "\0253C" !important; */
     /* order: 2 !important; */
     transition: var(--transition) !important;
-    line-height: 0.8 !important;
     font-weight: 100 !important;
+    margin: -4px 0 0 !important;
     font-size: 40px !important;
+    line-height: 1 !important;
     opacity: 0.4 !important;
     content: "+" !important;
     right: 40px !important;
-    margin: 0 !important;
 }
 
 .notion-toggle[open]>summary:before {
-    transform: rotate(45deg) !important;
+    transform: rotate(45deg) translate(2px, -1px) !important;
 }
 
 .notion-toggle__summary:hover:before {
