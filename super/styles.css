@@ -1,11 +1,13 @@
-/*—————————————————————————————————————————————————*/
-/*——————————————————— WWW.SUPER.SO ————————————————*/
-/*—————————————— © SUPER PUBLISHING CO ————————————*/
-/*———————————— POWERED BY NOTION & SUPER ——————————*/
-/*—————————————————————————————————————————————————*/
+/*———————————————————————————————————*/
+/*——————————— WWW.SUPER.SO ——————————*/
+/*—————— © SUPER PUBLISHING CO ——————*/
+/*———————————————————————————————————*/
 
 @import "reset.css";
 @import "theme.css";
+
+/*———————————————————————————————————*/
+
 @import "bookmark.css";
 @import "callout.css";
 @import "code.css";
@@ -19,8 +21,15 @@
 @import "toggle.css";
 @import "tweet.css";
 @import "typography.css";
+
+/*———————————————————————————————————*/
+
+@import "page-index.css";
+@import "page-icons-light.css";
+@import "page-pricing.css";
+
+/*———————————————————————————————————*/
+
 @import "collection-defaults.css";
 @import "collection-features.css";
 @import "collection-icons.css";
-@import "page-index.css";
-@import "page-pricing.css";

@@ -23,7 +23,7 @@
 }
 
 .notion-callout.bg-gray-light {
-    background: var(--color-off-white) !important;
+    background: var(--color-white) !important;
     color: var(--color-black) !important;
 }
 
