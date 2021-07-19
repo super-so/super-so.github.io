@@ -21,15 +21,18 @@
     /* position: relative !important; */
     /* content: "\0253C" !important; */
     /* order: 2 !important; */
+    transition: var(--transition) !important;
+    line-height: 0.8 !important;
     font-weight: 100 !important;
     font-size: 40px !important;
+    opacity: 0.4 !important;
     content: "+" !important;
     right: 40px !important;
     margin: 0 !important;
 }
 
 .notion-toggle[open]>summary:before {
-    content: "–" !important;
+    transform: rotate(45deg) !important;
 }
 
 .notion-toggle__summary:hover:before {
@@ -40,4 +43,8 @@
     padding-inline-start: 0 !important;
     padding: 0 40px 40px !important;
     margin-top: -24px !important;
+}
+
+.notion-toggle__summary .notion-semantic-string {
+    padding-inline-start: 0 !important;
 }
