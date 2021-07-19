@@ -1,14 +1,14 @@
 .notion-bookmark {
-    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0) !important;
+    border: 1px solid var(--color-dividers) !important;
     background: var(--color-white) !important;
     transition: var(--transition) !important;
     border-radius: 16px !important;
-    border: none !important;
     padding: 0 !important;
 }
 
 .notion-bookmark:hover {
-    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.12) !important;
+    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.08) !important;
     background: var(--color-white) !important;
 }
 

@@ -4,6 +4,7 @@
     --color-off-white: #f5f6fa !important;
     --color-white: #fff !important;
     --color-primary: #f0bd66 !important;
+    --color-dividers: #edeef3 !important;
 
     --color-text-default: var(--color-black) !important;
     --color-text-gray: var(--color-grey) !important;
