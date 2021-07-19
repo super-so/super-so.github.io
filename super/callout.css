@@ -29,7 +29,7 @@
     box-shadow: none !important;
 }
 
-.notion-callout.ng-gray-light:hover {
+.notion-callout.bg-gray-light:hover {
     box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1) !important;
 }
 
