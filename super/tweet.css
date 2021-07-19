@@ -19,4 +19,9 @@
 .static-tweet-twitter-link,
 .static-tweet-twitter-link s {
     color: var(--color-primary) !important;
+    display: inline-block !important;
+}
+
+.static-tweet .image-container {
+    display: none !important;
 }
