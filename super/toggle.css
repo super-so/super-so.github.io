@@ -1,5 +1,8 @@
 .notion-toggle {
     box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1) !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    user-select: none !important;
     margin: 0 !important;
 }
 
