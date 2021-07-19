@@ -25,3 +25,7 @@
     background: var(--color-charcoal) !important;
     color: var(--color-white) !important;
 }
+
+#page-icons-light .notion-callout.bg-gray-light:hover {
+    box-shadow: 0 20px 30px -10px rgba(0,0,0,0.4) !important;
+}
