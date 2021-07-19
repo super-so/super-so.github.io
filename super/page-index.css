@@ -23,10 +23,10 @@
 } */
 
 /* SHOWCASE SECTION */
-#page-index .notion-collection-card__content {
+#page-index .notion-collection-card.gallery .notion-collection-card__content {
     display: none !important;
 }
 
-#page-index .notion-property__title {
+#page-index .notion-collection-card.gallery .notion-property__title {
     margin: 20px 0 0 !important;
 }
