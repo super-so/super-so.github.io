@@ -1,12 +1,29 @@
 .static-tweet-body {
     box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
+    transition: var(--transition) !important;
     border-radius: 12px !important;
-    padding: 12px !important;
+    position: relative !important;
+    padding: 32px !important;
     border: none !important;
 }
 
+.static-tweet-body:hover {
+    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.12) !important;
+    transform: translateY(-8px) !important;
+}
+
+.static-tweet-body:active {
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
+    transform: translateY(0) !important;
+}
+
+.static-tweet blockquote {
+    position: static !important;
+    padding: 0 !important;
+}
+
 .static-tweet-p {
-    letter-spacing: -0.8px !important;;
+    letter-spacing: -0.6px !important;;
     font-weight: 600 !important;
 }
 
@@ -24,4 +41,16 @@
 
 .static-tweet .image-container {
     display: none !important;
+}
+
+.static-tweet-header-brand {
+    position: absolute !important;
+    text-align: right !important;
+    padding: 32px !important;
+    height: 100% !important;
+    width: 100% !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    top: 0 !important;
 }
