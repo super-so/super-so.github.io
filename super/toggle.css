@@ -10,11 +10,6 @@
     font-size: inherit !important;
 }
 
-.notion-toggle:first-child {
-    border-top-right-radius: 12px !important;
-    border-top-left-radius: 12px !important;
-}
-
 .notion-toggle__summary {
     color: var(--color-grey) !important;
     letter-spacing: -0.5px !important;
