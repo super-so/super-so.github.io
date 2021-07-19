@@ -1,20 +1,33 @@
 .notion-toggle {
-    padding: 40px !important;
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.08) !important;
+}
+
+.notion-toggle:first-child {
+    border-top-right-radius: 12px !important;
+    border-top-left-radius: 12px !important;
 }
 
 .notion-toggle__summary {
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
     color: var(--color-grey) !important;
     letter-spacing: -0.5px !important;
     position: relative !important;
     font-weight: 600 !important;
     font-size: 24px !important;
+    padding: 40px !important;
 }
 
 .notion-toggle__summary:before {
-    margin: 0 0 0 12px !important;
-    position: relative !important;
-    content: "\0253C" !important;
-    order: 2 !important;
+    /* position: relative !important; */
+    /* content: "\0253C" !important; */
+    /* order: 2 !important; */
+    content: "+" !important;
+    right: 40px !important;
+    margin: 0 !important;
+}
+
+.notion-toggle[open]>summary:before {
+    content: "-"
 }
 
 .notion-toggle__summary:hover:before {

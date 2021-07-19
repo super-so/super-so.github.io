@@ -11,3 +11,7 @@
     max-width: 140px !important;
     padding: 0 !important;
 }
+
+/* #page-pricing .notion-toggle {
+    width: calc(100vw - (env(safe-area-inset-left) + 100px)) !important;
+} */
