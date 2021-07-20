@@ -67,7 +67,6 @@
 
 .menu-show {
     visibility: visible !important;
-    pointer-events: all !important;
 }
 
 @media (max-width: 600px) {
@@ -86,7 +85,6 @@
         background: var(--color-white) !important;
         width: calc(100% - 32px) !important;
         flex-direction: column !important;
-        pointer-events: none !important;
         border-radius: 12px !important;
         visibility: hidden !important;
         position: fixed !important;
