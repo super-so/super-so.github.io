@@ -33,14 +33,11 @@
 }
 #page-index .property-5e547c71 {
     transition: var(--transition) !important;
-    transform: rotate(-45deg) !important;
-    margin: 10px -4px 0 auto !important;
     position: relative !important;
     opacity: 0.2 !important;
-    top: auto !important;
 }
 #page-index .notion-collection-card:last-child:hover .property-5e547c71 {
-    transform: rotate(-45deg) translateX(8px) !important;
+    transform: translate(8px, -8px) !important;
     opacity: 1 !important;
 }
 #page-index .collection-5691069c53964e6bbeca9ed509e43912 
