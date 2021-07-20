@@ -31,10 +31,20 @@
 }
 #page-index .collection-5691069c53964e6bbeca9ed509e43912 .notion-property__title {
     margin: 20px 0 0 !important;
+    font-size: 22px !important;
 }
 #page-index .collection-5691069c53964e6bbeca9ed509e43912 .notion-collection-card__cover,
 #page-index .collection-5691069c53964e6bbeca9ed509e43912 .notion-collection-card__cover>div,
 #page-index .collection-5691069c53964e6bbeca9ed509e43912 .notion-collection-card__cover img {
     max-height: 140px !important;
     height: 140px !important;
+}
+
+/* Hide last gallery cover photo */
+#page-index .collection-5691069c53964e6bbeca9ed509e43912 .notion-collection-card:last-child .notion-collection-card__cover {
+    display: none !important;
+}
+
+#page-index .collection-5691069c53964e6bbeca9ed509e43912 .notion-collection-card:last-child .notion-property__title {
+    font-size: 30px !important;
 }
