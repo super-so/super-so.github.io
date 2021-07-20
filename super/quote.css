@@ -56,6 +56,7 @@
 }
 
 .notion-quote .bg-yellow {
+    visibility: visible !important;
     background: none !important;
     font-size: 30px !important;
     display: none !important;
@@ -71,7 +72,9 @@
         box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
         background: var(--color-white) !important;
         flex-direction: column !important;
+        pointer-events: none !important;
         border-radius: 12px !important;
+        visibility: hidden !important;
         height: 260px ​!important;
         right: -20px !important;
         width: 85vw !important;
@@ -90,6 +93,10 @@
         background: none !important;
         border-radius: 0 !important;
         margin-left: 0 !important;
+    }
+
+    .notion-quote .bg-yellow {
+        display: block !important;
     }
 
 }
