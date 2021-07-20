@@ -58,3 +58,12 @@ h3 .notion-semantic-string .link:hover {
 strong {
     font-weight: 900 !important;
 }
+
+@media (max-width: 600px) {
+
+    h1 {
+        letter-spacing: -1.5 !important;
+        font-size: 32px !important;
+    }
+
+}
