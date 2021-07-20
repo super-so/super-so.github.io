@@ -34,7 +34,7 @@
     --break-mobile: 680px !important;
 }
 
-@media (max-width: var(--break-tablet)) {
+@media (max-width: 900px) {
     :root {
         --padding-right: calc(env(safe-area-inset-right) + 40px) !important;
         --padding-left: calc(env(safe-area-inset-left) + 40px) !important;
