@@ -62,6 +62,7 @@
     position: fixed !important;
     display: none !important;
     right: 30px !important;
+    z-index: 2 !important;
     top: 10px !important;
 }
 
