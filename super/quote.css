@@ -41,6 +41,10 @@
     margin-left: 16px !important;
 }
 
+.notion-quote .bg-yellow {
+    display: none !important;
+}
+
 .quote-scrolled {
     height: var(--navbar-height-scrolled) !important;
 }
