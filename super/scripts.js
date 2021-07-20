@@ -12,3 +12,8 @@ $(window).scroll(function(event){
          $('.notion-quote').removeClass('quote-scrolled');
      }
 });
+
+// Mobile nav menu
+$('.notion-quote .bg-yellow').click(function(){
+    $('.notion-quote .notion-semantic-string').toggleClass('menu-show');
+});
