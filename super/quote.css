@@ -66,10 +66,6 @@
     top: 13px !important;
 }
 
-.menu-show {
-    visibility: visible !important;
-}    
-
 @media (max-width: 600px) {
 
     .notion-quote {
@@ -84,23 +80,33 @@
     .notion-quote .notion-semantic-string {
         box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
         background: var(--color-white) !important;
+        transition: var(--transition) !important;
+        justify-content: flex-end !important;
         width: calc(100% - 32px) !important;
         flex-direction: column !important;
         border-radius: 12px !important;
+        padding: 40px 20px !important;
+        transform: translateX(100vw);
         position: fixed !important;
-        height: 280px !important;
-        right: 16px !important;
-        left: 16px !important;
-        top: 12px !important;
-        visibility: hidden;
+        height: 100% !important;
+        right: 0 !important;
+        left: 0 !important;
+        top: 0 !important;
     }
+
+    .menu-show {
+        transform: translateX(0) !important;
+    }    
 
     .notion-quote span {
         align-items: flex-start !important;
     }
 
     .notion-quote a {
+        letter-spacing: -1px !important;
         padding: 12px 36px !important;
+        font-weight: 700 !important;
+        font-size: 30px !important;
     }
 
     .notion-quote .bg-gray {
