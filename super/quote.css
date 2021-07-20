@@ -56,6 +56,7 @@
 }
 
 .notion-quote .bg-yellow {
+    transform: translateX(-100vw);
     background: none !important;
     font-size: 30px !important;
     position: fixed !important;
@@ -93,12 +94,9 @@
         top: 0 !important;
     }
 
-    .menu-show {
-        transform: translateX(0) !important;
-    }
-
+    .menu-show,
     .menu-show .bg-yellow {
-        transform: translateX(-100vw) !important;
+        transform: translateX(0) !important;
     }
 
     .notion-quote span {
