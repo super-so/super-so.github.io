@@ -33,8 +33,10 @@
 }
 #page-index .property-5e547c71 {
     transition: var(--transition) !important;
-    position: relative !important;
+    position: absolute !important;
     opacity: 0.2 !important;
+    right: 24px !important;
+    top: 36px !important;
 }
 #page-index .notion-collection-card:last-child:hover .property-5e547c71 {
     transform: translate(8px, -8px) !important;
@@ -58,12 +60,6 @@
     overflow: visible !important;
 }
 
-/* View more arrow styles */
-#page-index .collection-5691069c53964e6bbeca9ed509e43912 .property-5e547c71 span {
-    color: var(--color-black)!important;
-    font-weight: 300 !important;
-    font-size: 40px !important;
-}
 #page-index .collection-5691069c53964e6bbeca9ed509e43912 
 .notion-collection-card:last-child .notion-semantic-string {
     line-height: 1.4 !important;
