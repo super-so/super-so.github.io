@@ -60,7 +60,9 @@
 #page-index .collection-5691069c53964e6bbeca9ed509e43912 .property-5e547c71 {
     overflow: visible !important;
 }
-#page-index .collection-5691069c53964e6bbeca9ed509e43912 .property-5e547c71 {
+
+/* View more arrow styles */
+#page-index .collection-5691069c53964e6bbeca9ed509e43912 .property-5e547c71 span {
     color: var(--color-black)!important;
     font-weight: 300 !important;
     font-size: 40px !important;
