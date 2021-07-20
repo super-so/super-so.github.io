@@ -51,7 +51,7 @@
     transform: rotate(-45deg) !important;
     margin: 10px -6px 0 auto !important;
     position: relative !important;
-    opacity: 0.12 !important;
+    opacity: 0.2 !important;
     top: auto !important;
 }
 
@@ -84,6 +84,7 @@
 #page-index .collection-5691069c53964e6bbeca9ed509e43912 
 .notion-collection-card:last-child .notion-pill {
     color: var(--color-black)!important;
+    font-weight: 300 !important;
     font-size: 40px !important;
 }
 
