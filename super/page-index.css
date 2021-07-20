@@ -56,7 +56,7 @@
 }
 
 #page-index .collection-5691069c53964e6bbeca9ed509e43912 
-.notion-collection-card:last-child .notion-collection-card:hover .notion-collection-card__property:first-child {
+.notion-collection-card:last-child:hover .notion-collection-card__property:first-child {
     transform: rotate(-45deg) translateX(12px) !important;
 }
 
@@ -83,4 +83,9 @@
 #page-index .collection-5691069c53964e6bbeca9ed509e43912 
 .notion-collection-card:last-child .notion-pill {
     font-size: 40px !important;
+}
+
+#page-index .collection-5691069c53964e6bbeca9ed509e43912 
+.notion-collection-card:last-child .notion-semantic-string {
+    line-height: 1.4 !important;
 }
