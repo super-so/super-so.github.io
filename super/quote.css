@@ -83,7 +83,7 @@
         justify-content: flex-end !important;
         flex-direction: column !important;
         border-radius: 12px !important;
-        padding: 40px 20px !important;
+        padding: 40px 12px !important;
         transform: translateX(100vw);
         position: fixed !important;
         height: 100% !important;
