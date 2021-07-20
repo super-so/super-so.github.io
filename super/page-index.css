@@ -76,3 +76,7 @@
 .notion-collection-card:last-child .notion-semantic-string {
     line-height: 1.4 !important;
 }
+
+#page-index #block-7cc67da23a8a429cbce9450e256304a3 .notion-column {
+    width: fit-content !important;
+}
