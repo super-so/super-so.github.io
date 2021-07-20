@@ -104,4 +104,9 @@
         display: block !important;
     }
 
+    .quote-scrolled span,
+    .quote-scrolled a {
+        height: auto !important;
+    }
+
 }
