@@ -8,6 +8,7 @@
     --color-primary: #f0bd66 !important;
     --color-dividers: #edeef3 !important;
     --color-dividers-dark: #323335 !important;
+    --color-link-dividers: #d4d7dd !important;
 
     --color-text-default: var(--color-black) !important;
     --color-text-gray: var(--color-grey) !important;

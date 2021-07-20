@@ -42,7 +42,7 @@ p .highlighted-color {
 h1 .notion-semantic-string .link,
 h2 .notion-semantic-string .link,
 h3 .notion-semantic-string .link {
-    border-bottom: 1px solid var(--color-dividers) !important;
+    border-bottom: 1px solid var(--color-link-dividers) !important;
 }
 
 h1 .notion-semantic-string .link:hover,
