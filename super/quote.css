@@ -97,7 +97,7 @@
         transform: translateX(0) !important;
     }
 
-    .menu-show .notion-quote .bg-yellow {
+    .menu-show .bg-yellow {
         transform: translateX(-100vw) !important;
     }
 
