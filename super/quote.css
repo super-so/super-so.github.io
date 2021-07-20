@@ -56,7 +56,6 @@
 }
 
 .notion-quote .bg-yellow {
-    visibility: visible !important;
     background: none !important;
     font-size: 30px !important;
     position: fixed !important;
@@ -82,13 +81,13 @@
         background: var(--color-white) !important;
         transition: var(--transition) !important;
         justify-content: flex-end !important;
-        width: calc(100% - 32px) !important;
         flex-direction: column !important;
         border-radius: 12px !important;
         padding: 40px 20px !important;
         transform: translateX(100vw);
         position: fixed !important;
         height: 100% !important;
+        width: 100% !important;
         right: 0 !important;
         left: 0 !important;
         top: 0 !important;
@@ -96,7 +95,11 @@
 
     .menu-show {
         transform: translateX(0) !important;
-    }    
+    }
+
+    .menu-show .notion-quote .bg-yellow {
+        transform: translateX(-100vw) !important;
+    }
 
     .notion-quote span {
         align-items: flex-start !important;
