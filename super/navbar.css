@@ -4,6 +4,7 @@
     background: rgba(255,255,255,0.85) !important;
     transition: var(--transition) !important;
     height: var(--navbar-height) !important;
+    box-shadow: none !important;
 }
 
 .notion-navbar>a {
