@@ -71,6 +71,11 @@
         width: 260px !important;
     }
     
+    .quote-scrolled span,
+    .quote-scrolled a {
+        height: auto !important;
+    }
+    
     .notion-quote .notion-semantic-string {
         box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
         background: var(--color-white) !important;
@@ -102,11 +107,6 @@
 
     .notion-quote .bg-yellow {
         display: block !important;
-    }
-
-    .quote-scrolled span,
-    .quote-scrolled a {
-        height: auto !important;
     }
 
 }
