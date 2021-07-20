@@ -8,6 +8,7 @@
 @import "theme.css";
 @import "content.css";
 @import "typography.css";
+@import "footer.css";
 
 /* NOTION BLOCKS ————————————————————*/
 @import "bookmark.css";
