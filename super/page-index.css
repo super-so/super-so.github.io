@@ -57,7 +57,7 @@
 
 #page-index .collection-5691069c53964e6bbeca9ed509e43912 
 .notion-collection-card:last-child:hover .notion-collection-card__property:first-child {
-    transform: rotate(-45deg) translateX(12px) !important;
+    transform: rotate(-45deg) translateX(8px) !important;
     opacity: 1 !important;
 }
 
