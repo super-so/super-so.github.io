@@ -66,10 +66,6 @@
     top: 10px !important;
 }
 
-.menu-show {
-    visibility: visible !important;
-}
-
 @media (max-width: 600px) {
 
     .notion-quote {
@@ -89,7 +85,7 @@
         border-radius: 12px !important;
         visibility: hidden !important;
         position: fixed !important;
-        height: 280px ​!important;
+        height: 280px !important;
         right: 16px !important;
         left: 16px !important;
         top: 12px !important;
@@ -112,5 +108,9 @@
     .notion-quote .bg-yellow {
         display: block !important;
     }
+
+    .menu-show {
+        visibility: visible !important;
+    }    
 
 }

@@ -16,7 +16,6 @@ $(window).scroll(function(event){
 $(function(){
     // Mobile nav menu
     $('.notion-quote .bg-yellow').click(function(){
-        console.log('clicked');
         $('.notion-quote .notion-semantic-string').toggleClass('menu-show');
     });
 });
