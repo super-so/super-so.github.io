@@ -9,7 +9,7 @@
 }
 
 #page-icons-light .notion-navbar {
-    background: var(--color-off-black) !important;
+    background: rgba(24,25,27,0.85) !important;
 }
 
 #page-icons-light .notion-quote a:hover {
@@ -18,6 +18,10 @@
 
 #page-icons-light .notion-quote .bg-gray {
     background: var(--color-charcoal) !important;
+}
+
+#page-icons-light .notion-property__title {
+    transition: none !important;
 }
 
 #page-icons-light .notion-callout.bg-gray-light {
