@@ -59,7 +59,10 @@
     visibility: visible !important;
     background: none !important;
     font-size: 30px !important;
+    position: fixed !important;
     display: none !important;
+    right: 30px !important;
+    top: 10px !important;
 }
 
 @media (max-width: 600px) {
@@ -71,14 +74,16 @@
     .notion-quote .notion-semantic-string {
         box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
         background: var(--color-white) !important;
+        width: calc(100% - 32px) !important;
         flex-direction: column !important;
         pointer-events: none !important;
         border-radius: 12px !important;
         visibility: hidden !important;
-        height: 260px ​!important;
-        right: -20px !important;
-        width: 85vw !important;
-        top: 24px !important;
+        position: fixed !important;
+        height: 280px ​!important;
+        right: 16px !important;
+        left: 16px !important;
+        top: 12px !important;
     }
 
     .notion-quote span {
