@@ -26,6 +26,7 @@
 /* PAGES ————————————————————————————*/
 @import "page-index.css";
 @import "page-icons.css";
+@import "page-guides.css";
 
 /* COLLECTIONS ——————————————————————*/
 @import "collection-defaults.css";
