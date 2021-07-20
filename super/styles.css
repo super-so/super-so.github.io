@@ -3,16 +3,17 @@
 /*—————— © SUPER PUBLISHING CO ——————*/
 /*———————————————————————————————————*/
 
+/* GLOBAL STYLES ————————————————————*/
 @import "reset.css";
 @import "theme.css";
+@import "content.css";
+@import "typography.css";
 
-/*———————————————————————————————————*/
-
+/* NOTION BLOCKS ————————————————————*/
 @import "bookmark.css";
 @import "callout.css";
 @import "code.css";
 @import "column.css";
-@import "content.css";
 @import "embed.css";
 @import "header.css";
 @import "iframe.css";
@@ -21,16 +22,12 @@
 @import "quote.css";
 @import "toggle.css";
 @import "tweet.css";
-@import "typography.css";
 
-/*———————————————————————————————————*/
-
+/* PAGES ————————————————————————————*/
 @import "page-index.css";
 @import "page-icons.css";
-@import "page-pricing.css";
 
-/*———————————————————————————————————*/
-
+/* COLLECTIONS ——————————————————————*/
 @import "collection-defaults.css";
 @import "collection-features.css";
 @import "collection-icons.css";
