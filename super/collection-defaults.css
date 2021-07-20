@@ -25,9 +25,9 @@
 .notion-collection-card__cover img {
     border-radius: 12px !important;
     position: relative !important;
-    max-height: 200px !important;
+    max-height: 180px !important;
     min-height: auto !important;
-    height: 200px !important;
+    height: 180px !important;
     border: none !important;
 }
 
