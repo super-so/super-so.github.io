@@ -83,7 +83,18 @@
     overflow: visible !important;
 }
 
-
+/* View more arrow */
+.property-5e547c71 {
+    transition: var(--transition) !important;
+    position: absolute !important;
+    opacity: 0.2 !important;
+    right: 24px !important;
+    top: 36px !important;
+}
+.notion-collection-card:last-child:hover .property-5e547c71 {
+    transform: translate(8px, -8px) !important;
+    opacity: 1 !important;
+}
 
 
 
