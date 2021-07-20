@@ -29,13 +29,11 @@
 
     --padding-right: calc(env(safe-area-inset-right) + 100px) !important;
     --padding-left: calc(env(safe-area-inset-left) + 100px) !important;
-
-    --break-tablet: 900px !important;
-    --break-mobile: 680px !important;
 }
 
 @media (max-width: 900px) {
     :root {
+        --navbar-height: 70px !important;
         --padding-right: calc(env(safe-area-inset-right) + 40px) !important;
         --padding-left: calc(env(safe-area-inset-left) + 40px) !important;
     }
