@@ -1,3 +1,11 @@
 .notion-column {
     justify-content: center !important;
 }
+
+@media (max-width: 600px) {
+
+    .notion-column {
+        padding: 4px 0 !important;
+    }
+
+}
