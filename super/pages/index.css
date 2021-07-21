@@ -65,7 +65,7 @@
 
 #page-index h2 { max-width: 560px !important; }
 #page-index h3 { max-width: 320px !important; }
-#block-7f6d38f96cc141fc94e68adccae7eee7 { max-width: none !important; }
+#page-index #block-7f6d38f96cc141fc94e68adccae7eee7 { max-width: none !important; }
 
 @media (max-width: 600px) {
 
