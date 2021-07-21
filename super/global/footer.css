@@ -15,7 +15,7 @@
     position: absolute !important;
     margin-left: 8px !important;
     opacity: 0 !important;
-    top: 0 !important;
+    top: 1px !important;
 }
 
 #block-b1d6e6bbac3348289aeb36f0b03355af .notion-semantic-string .link:hover:after {
