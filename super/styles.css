@@ -4,34 +4,34 @@
 /*———————————————————————————————————*/
 
 /* GLOBAL STYLES ————————————————————*/
-@import "reset.css";
-@import "theme.css";
-@import "content.css";
-@import "typography.css";
-@import "footer.css";
+@import "global/reset.css";
+@import "global/theme.css";
+@import "global/content.css";
+@import "global/typography.css";
+@import "global/footer.css";
 
 /* NOTION BLOCKS ————————————————————*/
-@import "bookmark.css";
-@import "callout.css";
-@import "code.css";
-@import "column.css";
-@import "embed.css";
-@import "header.css";
-@import "iframe.css";
-@import "image.css";
-@import "navbar.css";
-@import "page.css";
-@import "quote.css";
-@import "toggle.css";
-@import "tweet.css";
+@import "blocks/bookmark.css";
+@import "blocks/callout.css";
+@import "blocks/code.css";
+@import "blocks/column.css";
+@import "blocks/embed.css";
+@import "blocks/header.css";
+@import "blocks/iframe.css";
+@import "blocks/image.css";
+@import "blocks/navbar.css";
+@import "blocks/page.css";
+@import "blocks/quote.css";
+@import "blocks/toggle.css";
+@import "blocks/tweet.css";
 
 /* PAGES ————————————————————————————*/
-@import "page-index.css";
-@import "page-icons.css";
-@import "page-guides.css";
-@import "page-market.css";
+@import "pages/index.css";
+@import "pages/icons.css";
+@import "pages/guides.css";
+@import "pages/market.css";
 
 /* COLLECTIONS ——————————————————————*/
-@import "collection-defaults.css";
-@import "collection-features.css";
-@import "collection-icons.css";
+@import "collections/defaults.css";
+@import "collections/features.css";
+@import "collections/icons.css";
