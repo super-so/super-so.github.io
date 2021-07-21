@@ -1,0 +1,28 @@
+#page-docs .notion-page {
+    margin: 0 0 16px 0 !important;
+}
+
+#page-docs .notion-page>div {
+    align-items: center !important;
+    padding: 12px 0 !important;
+}
+
+#page-docs .notion-page>div:hover {
+    background: none !important;
+}
+
+#page-docs .notion-page__icon {
+    margin: 0 16px 0 0 !important;
+}
+
+#page-docs .notion-page__icon>div {
+    height: 50px !important;
+    width: 50px !important;
+}
+
+#page-docs .notion-page__title .notion-semantic-string {
+    letter-spacing: -1px !important;
+    font-weight: 700 !important;
+    font-size: 28px !important;
+    border: none !important;
+}
