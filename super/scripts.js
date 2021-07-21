@@ -13,9 +13,15 @@ $(window).scroll(function(event){
      }
 });
 
-$(function(){
-    // Mobile nav menu
+window.addEventListener('load', function(event) {
     $('.notion-quote .bg-yellow').click(function(){
         $('.notion-quote .notion-semantic-string').toggleClass('menu-show');
     });
 });
+
+// $(function(){
+//     // Mobile nav menu
+//     $('.notion-quote .bg-yellow').click(function(){
+//         $('.notion-quote .notion-semantic-string').toggleClass('menu-show');
+//     });
+// });
