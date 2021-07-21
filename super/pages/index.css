@@ -35,6 +35,34 @@
     margin-inline-start: 40px !important;
 }
 
+/* View more CTA cards */
+.property-5e547c71 {
+    transition: var(--transition) !important;
+    position: absolute !important;
+    opacity: 0.2 !important;
+    right: 24px !important;
+    top: 36px !important;
+}
+#block-ffed8ef8b152456ca87ff90f9043369a:hover .property-5e547c71,
+#block-f4f1af7a7a0541e89d562b75c4c2de16:hover .property-5e547c71 {
+    transform: translate(8px, -8px) !important;
+    opacity: 1 !important;
+}
+#block-ffed8ef8b152456ca87ff90f9043369a .notion-collection-card__cover,
+#block-f4f1af7a7a0541e89d562b75c4c2de16 .notion-collection-card__cover {
+    display: none !important;;
+}
+#block-ffed8ef8b152456ca87ff90f9043369a .notion-property__title,
+#block-f4f1af7a7a0541e89d562b75c4c2de16 .notion-property__title {
+    margin: auto 0 0 !important;
+    font-size: 30px !important;
+    order: 2 !important;
+}
+#block-ffed8ef8b152456ca87ff90f9043369a .notion-semantic-string,
+#block-f4f1af7a7a0541e89d562b75c4c2de16 .notion-semantic-string {
+    line-height: 1.4 !important;
+}
+
 @media (max-width: 600px) {
 
     #page-index .collection-5691069c53964e6bbeca9ed509e43912 .notion-collection-gallery {
