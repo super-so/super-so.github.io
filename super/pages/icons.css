@@ -34,6 +34,10 @@
     box-shadow: 0 20px 30px -10px rgba(0,0,0,0.4) !important;
 }
 
+#block-01dbcfc718c24fdc85ea868f916d9da0 {
+    width: fit-content !important;
+}
+
 @media (max-width: 600px) {
 
     #block-ed9dc13f86aa45149464e0001cc0c926 {
