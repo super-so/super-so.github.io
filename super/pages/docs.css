@@ -17,7 +17,8 @@
     margin: 0 16px 0 0 !important;
 }
 
-#page-docs .notion-page__icon>div {
+#page-docs .notion-page__icon>div,
+#page-docs .notion-page__icon img {
     height: 50px !important;
     width: 50px !important;
 }
