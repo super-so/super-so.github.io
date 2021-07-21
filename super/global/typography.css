@@ -67,6 +67,10 @@ strong {
         font-size: 36px !important;
     }
 
+    p {
+        font-size: 20px !important;
+    }
+
     .notion-text {
         min-height: 20px !important;
     }
