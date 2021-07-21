@@ -4,12 +4,6 @@
     display: none !important;
 }
 
-/* SPACING DIVIDER */
-#page-index .notion-divider {
-    margin: 50px 0 !important;
-    border: none !important;
-}
-
 /* SHOWCASE & TEMPLATES */
 #page-index .collection-5691069c53964e6bbeca9ed509e43912 .notion-collection-gallery {
     grid-template-columns: repeat(4, 1fr) !important;
