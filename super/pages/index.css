@@ -63,9 +63,8 @@
     line-height: 1.4 !important;
 }
 
-#page-index h2 {
-    max-width: 480px !important;
-}
+#page-index h2 { max-width: 560px !important; }
+#page-index h3 { max-width: 320px !important; }
 
 @media (max-width: 600px) {
 
@@ -88,7 +87,8 @@
         margin-inline-start: 0 !important;
     }
 
-    #page-index h2 {
+    #page-index h2,
+    #page-index h3 {
         max-width: 100% !important;
     }
 
