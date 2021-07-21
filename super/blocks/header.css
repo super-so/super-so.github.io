@@ -38,3 +38,19 @@
 .notion-header__title-wrapper {
     margin-top: 120px !important;
 }
+
+@media (max-width: 600px) {
+
+    #page-index .notion-header__title-wrapper,
+    #page-market .notion-header__title-wrapper,
+    #page-guides .notion-header__title-wrapper,
+    #page-features .notion-header__title-wrapper,
+    #page-pricing .notion-header__title-wrapper,
+    #page-showcase .notion-header__title-wrapper,
+    #page-icons .notion-header__title-wrapper,
+    #page-icons-light .notion-header__title-wrapper,
+    .notion-header__title-wrapper  {
+        margin-top: 140px !important;
+    }
+
+}
