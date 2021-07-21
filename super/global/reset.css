@@ -14,7 +14,7 @@
 
 html, body {
     -ms-overflow-style: none;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     min-height: 100%;
     width: 100%;
 }
