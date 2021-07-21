@@ -1,3 +1,11 @@
 .notion-divider {
     margin: 80px 0 !important;
 }
+
+@media (max-width: 600px) {
+
+    .notion-divider {
+        margin: 30px 0 !important;
+    }
+
+}
