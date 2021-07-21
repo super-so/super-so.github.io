@@ -52,11 +52,3 @@
 #page-index #block-7cc67da23a8a429cbce9450e256304a3 .notion-column {
     width: fit-content !important;
 }
-
-@media (max-width: 600px) {
-
-    #page-index #block-7cc67da23a8a429cbce9450e256304a3 .notion-column {
-        width: 100% !important;
-    }
-
-}
