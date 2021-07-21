@@ -13,18 +13,6 @@
     color: var(--color-white) !important;
 }
 
-#page-icons-light .notion-navbar {
-    background: rgba(24,25,27,0.85) !important;
-}
-
-#page-icons-light .notion-quote a:hover {
-    color: var(--color-white) !important;
-}
-
-#page-icons-light .notion-quote .bg-gray {
-    background: var(--color-charcoal) !important;
-}
-
 #page-icons-light .notion-property__title {
     transition: none !important;
 }
