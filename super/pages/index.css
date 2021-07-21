@@ -59,4 +59,14 @@
         grid-template-columns: 1fr !important;
     }
 
+    #block-content-miriam-gonzalez,
+    #block-content-anotioneer,
+    #block-content-side-hustle-stack,
+    #block-content-sam-judge,
+    #block-content-persona,
+    #block-content-photon,
+    #block-content-spotlight {
+        display: none !important;
+    }
+
 }
