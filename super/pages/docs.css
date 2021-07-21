@@ -3,11 +3,13 @@
 }
 
 #page-docs .notion-page>div {
+    transition: var(--transition) !important;
     align-items: center !important;
     padding: 12px 0 !important;
 }
 
 #page-docs .notion-page>div:hover {
+    transform: translateX(12px) !important;
     background: none !important;
 }
 
