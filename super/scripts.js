@@ -13,10 +13,10 @@ $(window).scroll(function(event){
      }
 });
 
-
 $(document).ready(function(){
     // Mobile nav menu
     $('.notion-quote .bg-yellow').click(function(){
+        console.log('nav menu clicked');
         $('.notion-quote .notion-semantic-string').toggleClass('menu-show');
     });
 });
