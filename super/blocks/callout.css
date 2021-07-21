@@ -59,3 +59,7 @@
     font-weight: 500 !important;
     border: none !important;
 }
+
+.notion-callout .notion-semantic-string .link:hover {
+    border: none !important;
+}
