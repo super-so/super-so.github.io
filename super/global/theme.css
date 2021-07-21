@@ -31,6 +31,11 @@
     --padding-left: calc(env(safe-area-inset-left) + 100px) !important;
 }
 
+::selection {
+    background: var(--color-primary) !important;
+    color: var(--color-white) !important;
+}
+
 @media (max-width: 900px) {
     :root {
         --navbar-height: 80px !important;
