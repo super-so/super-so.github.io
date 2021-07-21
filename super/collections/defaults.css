@@ -79,8 +79,8 @@
     padding: 0 !important;
 }
 
-#block-content-view-all-templates .notion-collection-card__content:first-child,
-#block-content-visit-our-showcase .notion-collection-card__content:first-child {
+#block-content-view-all-templates .notion-collection-card__property:first-child,
+#block-content-visit-our-showcase .notion-collection-card__property:first-child {
     display: none !important;
 }
 
