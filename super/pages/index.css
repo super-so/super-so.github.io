@@ -63,6 +63,10 @@
     line-height: 1.4 !important;
 }
 
+#page-index h2 {
+    max-width: 480px !important;
+}
+
 @media (max-width: 600px) {
 
     #page-index .collection-5691069c53964e6bbeca9ed509e43912 .notion-collection-gallery {
@@ -83,4 +87,9 @@
     #block-b5c75dedb3d745e296c6fd7572a9275d {
         margin-inline-start: 0 !important;
     }
+
+    #page-index h2 {
+        max-width: 100% !important;
+    }
+
 }
