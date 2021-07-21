@@ -14,9 +14,9 @@ $(window).scroll(function(event){
 });
 
 
-$(function(){
+$(document).ready(function(){
     // Mobile nav menu
     $('.notion-quote .bg-yellow').click(function(){
-        $('.notion-quote .notion-semantic-string').addClass('menu-show');
+        $('.notion-quote .notion-semantic-string').toggleClass('menu-show');
     });
 });
