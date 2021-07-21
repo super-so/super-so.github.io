@@ -55,6 +55,7 @@
 #page-index .collection-5691069c53964e6bbeca9ed509e43912 #block-content-view-all-templates .notion-property__title,
 #page-index .collection-5691069c53964e6bbeca9ed509e43912 #block-content-visit-our-showcase .notion-property__title {
     margin: auto 0 0 !important;
+    max-width: 200px !important;
     font-size: 30px !important;
     order: 2 !important;
 }
