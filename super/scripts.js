@@ -22,7 +22,7 @@ function toggleMenu(){
     });
 };
 
-window.addEventListener('locationchange', function(){
+window.addEventListener('hashchange', function(){
     toggleMenu();
 })
 
