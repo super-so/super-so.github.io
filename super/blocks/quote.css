@@ -86,6 +86,7 @@
         border-radius: 12px !important;
         padding: 40px 12px !important;
         transform: translateX(100vw);
+        border-radius: 0 !important;
         position: fixed !important;
         height: 100% !important;
         width: 100% !important;

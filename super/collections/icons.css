@@ -36,6 +36,18 @@
 
 @media (max-width: 600px) {
 
+    #page-icons-light .notion-quote .notion-semantic-string {
+        background: var(--color-off-black) !important;
+    }
+
+    #page-icons-light .notion-quote a {
+        color: var(--color-white) !important;
+    }
+
+    #page-icons-light .notion-quote .bg-gray {
+        background: none !important;
+    }
+
     .collection-09375bcba39f43259808bfc83b40a7a4 .notion-collection-gallery {
         grid-template-columns: 1fr 1fr 1fr !important;
         grid-gap: 30px !important;
