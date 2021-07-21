@@ -20,9 +20,6 @@
 }
 
 .notion-toggle__summary:before {
-    /* position: relative !important; */
-    /* content: "\0253C" !important; */
-    /* order: 2 !important; */
     transition: var(--transition) !important;
     font-weight: 100 !important;
     margin: -4px 0 0 !important;
@@ -48,4 +45,26 @@
 
 .notion-toggle__summary .notion-semantic-string {
     padding-inline-start: 0 !important;
+}
+
+@media (max-width: 600px) {
+
+    .notion-toggle__summary:before {
+        display: none !important;
+    }
+
+    .notion-toggle__summary {
+        font-size: 18px !important;
+        padding: 24px !important;
+    }
+
+    .notion-toggle__content {
+        padding: 0 20px 40px 20px !important;
+        margin-top: -8px !important;
+    }
+
+    .notion-toggle__content p {
+        font-size: 18px !important;
+    }
+
 }

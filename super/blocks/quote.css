@@ -104,6 +104,7 @@
     }
 
     .notion-quote a {
+        color: var(--color-black) !important;
         letter-spacing: -1px !important;
         padding: 12px 36px !important;
         font-weight: 700 !important;
