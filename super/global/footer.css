@@ -1,5 +1,7 @@
 #block-b1d6e6bbac3348289aeb36f0b03355af .notion-semantic-string .link {
     border-bottom: 1px solid var(--color-dividers) !important;
+    display: inline-block !important;
+    margin-bottom: 12px !important;
     position: relative !important;
     font-weight: 600 !important;
 }
@@ -41,6 +43,10 @@
 }
 
 @media (max-width: 600px) {
+
+    #block-b1d6e6bbac3348289aeb36f0b03355af .notion-semantic-string .link {
+        margin-bottom: 0 !important;
+    }
 
     #block-b1d6e6bbac3348289aeb36f0b03355af .notion-semantic-string {
         flex-direction: column !important;
