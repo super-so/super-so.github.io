@@ -16,17 +16,16 @@ $(window).scroll(function(event){
 
 
 function toggleMenu(){
-    console.log('location changed');
     $('.notion-quote .bg-yellow').click(function(){
         $('.notion-quote .notion-semantic-string').toggleClass('menu-show');
     });
 };
 
-window.addEventListener('hashchange', function(){
-    toggleMenu();
-})
-
 $(function(){
+    toggleMenu();
+});
+
+$(window).on('hashchange', function(e){
     toggleMenu();
 });
 
