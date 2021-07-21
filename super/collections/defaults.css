@@ -96,7 +96,17 @@
     opacity: 1 !important;
 }
 
+@media (max-width: 600px) {
 
+    .notion-collection-gallery {
+        grid-gap: 24px !important;
+    }
+
+    .notion-property__title {
+        font-size: 22px !important;
+    }
+
+}
 
 
 

@@ -36,3 +36,13 @@
     word-break: normal !important;
     overflow: visible !important;
 }
+
+@media (max-width: 600px) {
+
+    .collection-34515e24eca84100b4305b4f2923809f .notion-collection-gallery {
+        grid-template-columns: 1fr 1fr !important;
+        grid-column-gap: 20px !important;
+        grid-row-gap: 40px !important;
+    }
+
+}

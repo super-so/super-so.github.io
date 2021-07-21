@@ -2,3 +2,11 @@
     border-radius: 20px !important;
     overflow: hidden !important;
 }
+
+@media (max-width: 600px) {
+
+    .notion-embed {
+        border-radius: 12px !important;
+    }
+
+}

@@ -52,3 +52,11 @@
 #page-index #block-7cc67da23a8a429cbce9450e256304a3 .notion-column {
     width: fit-content !important;
 }
+
+@media (max-width: 600px) {
+
+    #page-index .collection-5691069c53964e6bbeca9ed509e43912 .notion-collection-gallery {
+        grid-template-columns: 1fr !important;
+    }
+
+}
