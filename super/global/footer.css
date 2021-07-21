@@ -23,6 +23,11 @@
     opacity: 1 !important;
 }
 
+/* Copyright Headline */
+#block-ff98da33773d424086c2229ffa23ac27 {
+    margin: 0 0 8px !important;
+}
+
 @media (max-width: 600px) {
 
     #block-b1d6e6bbac3348289aeb36f0b03355af .notion-semantic-string {
