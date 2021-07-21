@@ -23,7 +23,7 @@
     --color-card-bg: var(--color-white) !important;
 
     --transition: all .3s cubic-bezier(.4,0,.2,1) !important;
-    --column-spacing: 30px !important;
+    --column-spacing: 40px !important;
     --navbar-height: 110px !important;
     --navbar-height-scrolled: 70px !important;
 
