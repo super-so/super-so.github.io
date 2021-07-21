@@ -79,6 +79,11 @@
     padding: 0 !important;
 }
 
+#block-content-view-all-templates .notion-collection-card__content:first-child,
+#block-content-visit-our-showcase .notion-collection-card__content:first-child {
+    display: none !important;
+}
+
 .notion-collection-card__content {
     overflow: visible !important;
 }
