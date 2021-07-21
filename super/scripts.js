@@ -14,18 +14,12 @@ $(window).scroll(function(event){
 });
 
 
-
-function toggleMenu(){
+$(function(){
+    $('a').click(function() {
+        location.reload();
+    });
+    // Mobile nav menu
     $('.notion-quote .bg-yellow').click(function(){
         $('.notion-quote .notion-semantic-string').toggleClass('menu-show');
     });
-};
-
-$(function(){
-    toggleMenu();
 });
-
-$(window).on('hashchange', function(e){
-    toggleMenu();
-});
-
