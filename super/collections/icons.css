@@ -33,3 +33,20 @@
     word-break: normal !important;
     overflow: visible !important;
 }
+
+@media (max-width: 600px) {
+
+    .collection-09375bcba39f43259808bfc83b40a7a4 .notion-collection-gallery {
+        grid-template-columns: 1fr 1fr 1fr !important;
+        grid-gap: 30px !important;
+    }
+
+    .collection-09375bcba39f43259808bfc83b40a7a4 .notion-property__title {
+        font-size: 14px !important;
+    }
+
+    .collection-09375bcba39f43259808bfc83b40a7a4 .notion-collection-card__cover {
+        max-height: 30px !important;
+    }
+
+}

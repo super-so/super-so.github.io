@@ -33,3 +33,11 @@
 #page-icons-light .notion-callout.bg-gray-light:hover {
     box-shadow: 0 20px 30px -10px rgba(0,0,0,0.4) !important;
 }
+
+@media (max-width: 600px) {
+
+    #block-ed9dc13f86aa45149464e0001cc0c926 {
+        display: none !important;
+    }
+
+}
