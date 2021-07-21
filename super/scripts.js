@@ -14,7 +14,7 @@ $(window).scroll(function(event){
 });
 
 window.addEventListener('locationchange', function(){
-    console.log('location changed')
+    console.log('location changed');
     $('.notion-quote .bg-yellow').click(function(){
         $('.notion-quote .notion-semantic-string').toggleClass('menu-show');
     });
