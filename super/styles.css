@@ -27,6 +27,7 @@
 
 /* PAGES ————————————————————————————*/
 @import "pages/index.css";
+@import "pages/docs.css";
 @import "pages/features.css";
 @import "pages/guides.css";
 @import "pages/icons.css";
