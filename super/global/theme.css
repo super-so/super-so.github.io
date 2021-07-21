@@ -23,7 +23,7 @@
     --color-card-bg: var(--color-white) !important;
 
     --transition: all .3s cubic-bezier(.4,0,.2,1) !important;
-    --column-spacing: 40px !important;
+    --column-spacing: 60px !important;
     --navbar-height: 110px !important;
     --navbar-height-scrolled: 70px !important;
 
@@ -34,6 +34,7 @@
 @media (max-width: 900px) {
     :root {
         --navbar-height: 80px !important;
+        --column-spacing: 30px !important;
         --navbar-height-scrolled: 80px !important;
         --padding-right: calc(env(safe-area-inset-right) + 30px) !important;
         --padding-left: calc(env(safe-area-inset-left) + 30px) !important;
