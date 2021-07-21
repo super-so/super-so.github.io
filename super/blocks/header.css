@@ -5,7 +5,8 @@
 #page-pricing .notion-header__title,
 #page-showcase .notion-header__title,
 #page-icons .notion-header__title,
-#page-icons-light .notion-header__title {
+#page-icons-light .notion-header__title,
+#page-docs .notion-header__title {
     color: var(--color-grey) !important;
     letter-spacing: -1px !important;
     position: absolute !important;
@@ -31,7 +32,8 @@
 #page-pricing .notion-header__title-wrapper,
 #page-showcase .notion-header__title-wrapper,
 #page-icons .notion-header__title-wrapper,
-#page-icons-light .notion-header__title-wrapper  {
+#page-icons-light .notion-header__title-wrapper,
+#page-docs .notion-header__title-wrapper {
     margin-top: 168px !important;
 }
 
@@ -49,6 +51,7 @@
     #page-showcase .notion-header__title-wrapper,
     #page-icons .notion-header__title-wrapper,
     #page-icons-light .notion-header__title-wrapper,
+    #page-docs .notion-header__title-wrapper,
     .notion-header__title-wrapper  {
         margin-top: 140px !important;
     }
