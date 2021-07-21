@@ -13,16 +13,20 @@ $(window).scroll(function(event){
      }
 });
 
-window.addEventListener('locationchange', function(){
+
+
+function toggleMenu(){
     console.log('location changed');
     $('.notion-quote .bg-yellow').click(function(){
         $('.notion-quote .notion-semantic-string').toggleClass('menu-show');
     });
+};
+
+window.addEventListener('locationchange', function(){
+    toggleMenu();
 })
 
-// $(function(){
-//     // Mobile nav menu
-//     $('.notion-quote .bg-yellow').click(function(){
-//         $('.notion-quote .notion-semantic-string').toggleClass('menu-show');
-//     });
-// });
+$(function(){
+    toggleMenu();
+});
+
