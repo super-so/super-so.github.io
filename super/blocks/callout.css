@@ -57,4 +57,5 @@
     display: inline-block !important;
     white-space: pre !important;
     font-weight: 500 !important;
+    border: none !important;
 }

@@ -2,6 +2,11 @@
     transition: var(--transition) !important;
 }
 
+#page-icons .notion-page,
+#page-icons-light .notion-page {
+    display: none !important;
+}
+
 #page-icons-light {
     background: var(--color-off-black) !important;
     transition: var(--transition) !important;

@@ -33,6 +33,13 @@
     margin: 80px 0 40px !important;
 }
 
+/* Logo image */
+#block-0b03c3c9e6e24172b159f1152fb57634 {
+    border-radius: none !important;
+    margin-bottom: 12px !important;
+    box-shadow: none !important;
+}
+
 @media (max-width: 600px) {
 
     #block-b1d6e6bbac3348289aeb36f0b03355af .notion-semantic-string {

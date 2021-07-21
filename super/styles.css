@@ -27,8 +27,9 @@
 
 /* PAGES ————————————————————————————*/
 @import "pages/index.css";
-@import "pages/icons.css";
+@import "pages/features.css";
 @import "pages/guides.css";
+@import "pages/icons.css";
 @import "pages/market.css";
 @import "pages/pricing.css";
 

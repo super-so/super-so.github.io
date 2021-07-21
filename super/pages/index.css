@@ -22,26 +22,6 @@
     max-height: 130px !important;
     height: 130px !important;
 }
-#page-index .collection-5691069c53964e6bbeca9ed509e43912 
-.notion-collection-card:last-child .notion-collection-card {
-    justify-content: space-between !important;
-}
-
-#page-index .collection-5691069c53964e6bbeca9ed509e43912 
-.notion-collection-card:last-child .notion-collection-card__cover {
-    display: none !important;
-}
-#page-index .collection-5691069c53964e6bbeca9ed509e43912 
-.notion-collection-card:last-child .notion-property__title {
-    margin-top: auto !important;
-    font-size: 30px !important;
-    order: 2 !important;
-}
-
-#page-index .collection-5691069c53964e6bbeca9ed509e43912 
-.notion-collection-card:last-child .notion-semantic-string {
-    line-height: 1.4 !important;
-}
 
 #block-6e608a8f449340f188272f7c75fb6a22,
 #block-63108f9a46ee471982a372959754ed62,

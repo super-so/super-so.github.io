@@ -37,6 +37,10 @@
     overflow: visible !important;
 }
 
+#block-features-all-view-all-features:hover .notion-property__title {
+    color: var(--color-primary) !important;
+}
+
 @media (max-width: 600px) {
 
     .collection-34515e24eca84100b4305b4f2923809f .notion-collection-gallery {
