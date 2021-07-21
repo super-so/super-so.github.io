@@ -5,11 +5,11 @@
 #page-docs .notion-page>div {
     transition: var(--transition) !important;
     align-items: center !important;
-    padding: 12px 0 !important;
+    padding: 4px 0 !important;
 }
 
 #page-docs .notion-page>div:hover {
-    transform: translateX(12px) !important;
+    transform: translateX(4px) !important;
     background: none !important;
 }
 
@@ -19,13 +19,13 @@
 
 #page-docs .notion-page__icon>div,
 #page-docs .notion-page__icon img {
-    height: 50px !important;
-    width: 50px !important;
+    height: 36px !important;
+    width: 36px !important;
 }
 
 #page-docs .notion-page__title .notion-semantic-string {
     letter-spacing: -1px !important;
     font-weight: 700 !important;
-    font-size: 28px !important;
+    font-size: 24px !important;
     border: none !important;
 }
