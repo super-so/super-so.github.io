@@ -15,11 +15,8 @@ $(window).scroll(function(event){
 
 
 $(function(){
-    $('a').click(function() {
-        location.reload();
-    });
     // Mobile nav menu
     $('.notion-quote .bg-yellow').click(function(){
-        $('.notion-quote .notion-semantic-string').toggleClass('menu-show');
+        $('.notion-quote .notion-semantic-string').addClass('menu-show');
     });
 });
