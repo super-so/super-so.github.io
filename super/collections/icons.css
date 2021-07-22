@@ -57,7 +57,9 @@
         font-size: 14px !important;
     }
 
-    .collection-09375bcba39f43259808bfc83b40a7a4 .notion-collection-card__cover {
+    .collection-09375bcba39f43259808bfc83b40a7a4 .notion-collection-card__cover,
+    .collection-09375bcba39f43259808bfc83b40a7a4 .notion-collection-card__cover>div,
+    .collection-09375bcba39f43259808bfc83b40a7a4 .notion-collection-card__cover img {
         max-height: 30px !important;
         height: 30px !important;
         width: 30px !important;
