@@ -83,6 +83,39 @@
     overflow: visible !important;
 }
 
+/* Lists */
+.notion-collection-list {
+    overflow-x: visible !important;
+    border: none !important;
+}
+
+.notion-collection-list__item {
+    box-shadow: 0 4px 8px -2px rgba(0,0,0,0.08) !important;
+    background: var(--color-white) !important;
+    transition: var(--transition) !important;
+    border-radius: 12px !important;
+    margin: 0 0 12px 0 !important;
+    padding: 24px 30px !important;
+}
+
+.notion-collection-list__item:hover {
+    box-shadow: 0 10px 20px -4px rgba(0,0,0,0.08) !important;
+}
+
+.notion-collection-list__item .notion-property__title {
+    font-size: 20px !important;
+}
+
+.notion-collection-list__item .notion-property__title .notion-semantic-string>span {
+    border: none !important;
+}
+
+.notion-collection-list__item-property {
+    letter-spacing: -0.5px !important;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+}
+
 @media (max-width: 600px) {
 
     .notion-collection-gallery {

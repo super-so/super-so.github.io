@@ -1,0 +1,6 @@
+.notion-quote {
+    color: var(--color-grey) !important;
+    letter-spacing: -1px !important;
+    font-weight: 600 !important;
+    font-size: 28px !important;
+}
