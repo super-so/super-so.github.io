@@ -2,5 +2,7 @@
     color: var(--color-grey) !important;
     letter-spacing: -1px !important;
     font-weight: 600 !important;
-    font-size: 28px !important;
+    font-size: 26px !important;
+    border: none !important;
+    padding: 0 !important;
 }
