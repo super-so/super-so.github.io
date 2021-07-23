@@ -116,6 +116,30 @@
     font-size: 20px !important;
 }
 
+/* Boards */
+.notion-collection-board {
+    grid-template-columns: 1fr 1fr 1fr !important;
+    overflow-x: visible !important;
+    border: none !important;
+}
+
+.notion-collection-board__column-header {
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+}
+
+.notion-collection-board__item .notion-collection-card {
+    pointer-events: none !important;
+}
+
+.notion-collection-board__item .notion-collection-card .notion-property__title {
+    font-size: 16px !important;
+}
+
+.notion-collection-board__item .notion-property__title .notion-semantic-string {
+    letter-spacing: -0.4px !important;
+}
+
 @media (max-width: 600px) {
 
     .notion-collection-gallery {
@@ -124,6 +148,10 @@
 
     .notion-property__title {
         font-size: 22px !important;
+    }
+
+    .notion-collection-board {
+        grid-template-columns: 1fr !important;
     }
 
 }
