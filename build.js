@@ -23,4 +23,4 @@ const handlePath = (p) => {
 }
 
 files.forEach(f => handlePath(`${path}/${f}`))
-fs.writeFileSync(`${path}/index.css`, css)
+fs.writeFileSync(`${path}/build.css`, css)
