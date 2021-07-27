@@ -15,6 +15,9 @@
 }
 
 /* Typography */
+h1 {
+    letter-spacing: -2px !important;
+}
 
 .notion-callout, .notion-property__title, .notion-toggle__summary, .notion-header__title {
     font-family: 'Clash Display', sans-serif;
@@ -52,7 +55,7 @@ h1, h1.notion-header__title {
 
 #page-index h1.notion-heading:first-of-type {
     font-size: calc(32px + (64 - 32) * ((100vw - 300px) / (1600 - 300))) !important;
-    max-width: 800px !important;
+    max-width: 760px !important;
     margin: 20px auto 20px;
 }
 
