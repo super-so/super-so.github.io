@@ -499,10 +499,6 @@ article>.notion-quote:first-of-type:hover span {
     transition: var(--transition) !important;
 }
 
-article>.notion-quote:first-of-type:hover span {
-    opacity: 0.5 !important;
-}
-
 article>.notion-quote:first-of-type:hover span:hover {
     opacity: 1 !important;
 }
