@@ -4,6 +4,7 @@ const dir = process.argv[2]
 if (!dir) throw new Error('Invalid directory')
 
 const path = `${__dirname}/${dir}`
+const indexFile = `${__dirname}/${dir}/index.css`
 const files = fs.readdirSync(path);
 
 if (!files?.length) throw new Error('Invalid directory')
@@ -11,6 +12,7 @@ if (!files?.length) throw new Error('Invalid directory')
 let css = ``
 
 const handlePath = (p) => {
+  if (p === indexFile) return
   const isDir = fs.statSync(p).isDirectory()
   if (isDir) {
     const dirFiles = fs.readdirSync(p);
