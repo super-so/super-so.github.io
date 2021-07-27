@@ -19,10 +19,6 @@ h1 {
     letter-spacing: -2px !important;
 }
 
-.notion-callout, .notion-property__title, .notion-toggle__summary, .notion-header__title {
-    font-family: 'Clash Display', sans-serif;
-}
-
 blockquote {
     font-weight: 400 !important;
 }
