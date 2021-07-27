@@ -71,11 +71,11 @@
 
 .notion-collection-card__content .notion-property__select .notion-pill {
     color: var(--color-grey) !important;
-    letter-spacing: -0.2px !important;
-    border-radius: 8px !important;
+    letter-spacing: -0.4px !important;
+    border-radius: 0 !important;
     background: none !important;
-    font-weight: 600 !important;
-    font-size: 16px !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
     padding: 0 !important;
 }
 
