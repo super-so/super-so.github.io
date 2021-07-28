@@ -35,6 +35,7 @@
 @import "pages/market.css";
 @import "pages/password.css";
 @import "pages/pricing.css";
+@import "pages/pulse.css";
 
 /* COLLECTIONS ——————————————————————*/
 @import "collections/defaults.css";
