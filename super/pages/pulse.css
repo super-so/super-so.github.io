@@ -14,6 +14,6 @@
 #page-pulse .notion-collection-card__cover,
 #page-pulse .notion-collection-card__cover>div,
 #page-pulse .notion-collection-card__cover img {
-    max-height: 300px !important;
-    height: 300px !important;
+    max-height: 600px !important;
+    height: 600px !important;
 }
