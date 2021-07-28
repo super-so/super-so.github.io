@@ -306,7 +306,7 @@ h2.notion-heading {
 }
 
 .notion-collection-gallery.medium .notion-collection-card:hover .notion-collection-card__cover.medium {
-    transform: scale(1.15);
+    transform: scale(1.04);
 }
 
 .notion-collection-gallery.medium .notion-collection-gallery:hover .notion-collection-card {
@@ -417,8 +417,7 @@ details {
 
 details:hover, details[open] {
     box-shadow: var(--shadow) !important;
-    border: 2px solid var(--color-text-default) !important;
-    margin-bottom: 16px !important;
+    border: 1px solid var(--color-text-default) !important;
     transition: var(--transition) !important;
 }
 
@@ -439,7 +438,7 @@ details:hover, details[open] {
 /****  CHECK MARK  ****/
 
 .notion-to-do__content {
-    margin: 0 0 32px !important;
+    margin: 0 0 24px !important;
 }
 
 .notion-checkbox.checked {
