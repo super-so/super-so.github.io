@@ -17,3 +17,15 @@
     max-height: 300px !important;
     height: 300px !important;
 }
+
+
+@media (max-width: 600px) {
+
+    #page-pulse .notion-collection-card__cover,
+    #page-pulse .notion-collection-card__cover>div,
+    #page-pulse .notion-collection-card__cover img {
+        max-height: 160px !important;
+        height: 160px !important;
+    }
+
+}
