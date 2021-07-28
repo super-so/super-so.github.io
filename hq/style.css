@@ -147,7 +147,7 @@ h2.notion-heading {
 .notion-callout.bg-gray-light.border {
     background-color: var(--color-text-default) !important;
     color: var(--color-bg-default) !important;
-    border: 2px solid transparent !important;
+    border: 1px solid transparent !important;
     padding: 16px 24px !important;
     border-radius: 8px !important;
     transition: var(--transition);
@@ -170,7 +170,7 @@ h2.notion-heading {
     padding: inherit 24px !important;
     background-color: var(--color-bg-default) !important;
     color: var(--color-text-default) !important;
-    border: 2px solid var(--color-text-default) !important;
+    border: 1px solid var(--color-text-default) !important;
 }
 
 .notion-callout.bg-gray-light.border:hover .notion-link.link {
@@ -344,7 +344,7 @@ h3.notion-collection__header {
 .notion-collection-gallery.large .notion-collection-card {
     padding: 16px 24px !important;
     transition: var(--transition);
-    border: 2px solid transparent;
+    border: 1px solid transparent;
 }
 
 .notion-collection-gallery.large:hover {
@@ -352,7 +352,7 @@ h3.notion-collection__header {
 }
 
 .notion-collection-gallery.large .notion-collection-card:hover {
-    border: 2px solid var(--color-text-default);
+    border: 1px solid var(--color-text-default);
     background: transparent !important;
 }
 
@@ -412,7 +412,7 @@ details {
     padding: 16px 12px !important;
     border-radius: var(--radius-px) !important;
     transition: var(--transition) !important;
-    border: 2px solid transparent !important;
+    border: 1px solid transparent !important;
 }
 
 details:hover, details[open] {
@@ -572,12 +572,12 @@ article>.notion-quote:first-of-type span:nth-child(even) {
 
 .notion-collection-board__item>div {
     padding: 0px 24px 16px !important;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     transition: var(--transition);
 }
 
 .notion-collection-board__item>div:hover {
-    border: 2px solid var(--color-text-default);
+    border: 1px solid var(--color-text-default);
     background: var(--color-bg-default) !important;
     box-shadow: var(--shadow) !important;
 }
@@ -634,13 +634,13 @@ article>.notion-quote:first-of-type span:nth-child(even) {
 
 .notion-collection-list__item {
     padding: 0px 20px 12px !important;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     transition: var(--transition);
     border-radius: var(--radius-px) !important;
 }
 
 .notion-collection-list__item:hover {
-    border: 2px solid var(--color-text-default);
+    border: 1px solid var(--color-text-default);
     background: var(--color-bg-default) !important;
     box-shadow: var(--shadow);
     margin-bottom: 8px !important;
@@ -666,7 +666,7 @@ article>.notion-quote:first-of-type span:nth-child(even) {
 /****  BOOKMARK BLOCK   ****/
 
 .notion-bookmark {
-    border: 2px solid var(--color-border-default) !important;
+    border: 1px solid var(--color-border-default) !important;
     transition: var(--transition) !important;
     border-radius: var(--radius-px) !important;
 }
@@ -681,7 +681,7 @@ article>.notion-quote:first-of-type span:nth-child(even) {
 }
 
 .notion-bookmark:hover {
-    border: 2px solid var(--color-text-default) !important;
+    border: 1px solid var(--color-text-default) !important;
     box-shadow: var(--shadow) !important;
     background: var(--color-bg-default) !important;
 }
