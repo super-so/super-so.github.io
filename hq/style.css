@@ -469,6 +469,7 @@ details:hover, details[open] {
 
 .notion-callout {
     border-radius: var(--radius-px) !important;
+    align-items: center !important;
 }
 
 .notion-callout__icon>div {
