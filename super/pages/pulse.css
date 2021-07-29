@@ -24,15 +24,21 @@
 }
 
 #page-pulse .notion-property__title {
-    margin: 0 0 0 80px !important;
+    align-items: center !important;
+    margin: 0 !important;
 }
 
 #page-pulse .notion-property__title:before {
     background: var(--color-primary) !important;
     color: var(--color-white) !important;
     border-radius: 100px !important;
-    padding: 8px 12px !important;
+    position: relative !important;
+    margin-right: 10px !important;
+    padding: 3px 9px !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
     content: "New" !important;
+    top: -1px !important;
 }
 
 
