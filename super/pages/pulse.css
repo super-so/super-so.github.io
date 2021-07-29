@@ -24,7 +24,7 @@
 }
 
 #page-pulse .notion-property__title {
-    align-items: center !important;
+    max-width: 80% !important;
     margin: 0 !important;
 }
 
@@ -33,13 +33,13 @@
     color: var(--color-white) !important;
     letter-spacing: -0.3px !important;
     border-radius: 100px !important;
-    position: relative !important;
-    margin-right: 10px !important;
-    padding: 3px 9px !important;
+    position: absolute !important;
+    padding: 6px 12px !important;
     font-weight: 700 !important;
-    font-size: 13px !important;
+    font-size: 15px !important;
     content: "New" !important;
-    top: -1px !important;
+    right: 24px !important;
+    top: 22px !important;
 }
 
 
