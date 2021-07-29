@@ -1188,7 +1188,7 @@ strong {
 #page-pulse .notion-header__content {
     margin: 0 auto !important;
     max-width: 85% !important;
-    width: 600px !important;
+    width: 520px !important;
     padding: 0 !important;
 }
 
@@ -1200,8 +1200,8 @@ strong {
 #page-pulse .notion-collection-card__cover,
 #page-pulse .notion-collection-card__cover>div,
 #page-pulse .notion-collection-card__cover img {
-    max-height: 300px !important;
-    height: 300px !important;
+    max-height: none !important;
+    height: 260px !important;
 }
 
 #page-pulse .notion-collection-card__cover {
@@ -1217,6 +1217,7 @@ strong {
 #page-pulse .notion-property__title:before {
     background: var(--color-primary) !important;
     color: var(--color-white) !important;
+    letter-spacing: -0.3px !important;
     border-radius: 100px !important;
     position: relative !important;
     margin-right: 10px !important;
