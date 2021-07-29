@@ -1204,6 +1204,23 @@ strong {
     height: 300px !important;
 }
 
+#page-pulse .notion-collection-card__cover {
+    margin-top: 20px !important;
+    order: 3 !important;
+}
+
+#page-pulse .notion-property__title {
+    margin: 0 0 0 80px !important;
+}
+
+#page-pulse .notion-property__title:before {
+    background: var(--color-primary) !important;
+    color: var(--color-white) !important;
+    border-radius: 100px !important;
+    padding: 8px 12px !important;
+    content: "New" !important;
+}
+
 
 @media (max-width: 600px) {
 
