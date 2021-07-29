@@ -563,6 +563,14 @@
     letter-spacing: -0.4px !important;
 }
 
+.notion-property__text .notion-semantic-string {
+    color: var(--color-grey) !important;
+    letter-spacing: -0.5px !important;
+    white-space: normal !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+}
+
 @media (max-width: 600px) {
 
     .notion-collection-gallery {
@@ -1205,7 +1213,11 @@ strong {
 }
 
 #page-pulse .notion-collection-card__cover {
-    margin-top: 20px !important;
+    margin: 24px 0 20px !important;
+    order: 2 !important;
+}
+
+#page-pulse .notion-collection-card__content {
     order: 3 !important;
 }
 
