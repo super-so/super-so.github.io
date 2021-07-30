@@ -1217,19 +1217,24 @@ strong {
 }
 
 #page-pulse .notion-collection-card__cover {
-    margin: 24px 0 20px !important;
+    margin: 24px 0 0 !important;
     order: 2 !important;
 }
 
 #page-pulse .notion-collection-card__content {
+    margin-top: 24px !important;
     order: 3 !important;
 }
 
 #page-pulse .notion-property__title {
-    font-size: 28px !important;
+    font-size: 30px !important;
     max-width: 85% !important;
     display: block !important;
     margin: 0 !important;
+}
+
+#page-pulse .notion-property__title .notion-semantic-string {
+    line-height: 1.4 !important;
 }
 
 #page-pulse .notion-property__title:before {
