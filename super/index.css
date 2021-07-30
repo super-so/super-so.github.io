@@ -448,8 +448,8 @@
 .notion-collection-card__cover img {
     border-radius: 12px !important;
     position: relative !important;
-    max-height: 180px !important;
-    min-height: auto !important;
+    max-height: none !important;
+    min-height: none !important;
     height: 180px !important;
     border: none !important;
 }
@@ -1235,9 +1235,10 @@ strong {
 
 #page-pulse .notion-property__title .notion-semantic-string {
     line-height: 1.4 !important;
+    margin-top: 12px !important;
 }
 
-#page-pulse .notion-property__title:before {
+#page-pulse .notion-collection-card:nth-child(-n + 6) .notion-property__title:before {
     background: var(--color-primary) !important;
     color: var(--color-white) !important;
     letter-spacing: -0.3px !important;
@@ -1245,7 +1246,6 @@ strong {
     padding: 3px 10px 4px !important;
     border-radius: 100px !important;
     position: relative !important;
-    margin: 0 0 12px 0 !important;
     font-weight: 700 !important;
     font-size: 14px !important;
     content: "New" !important;
