@@ -57,6 +57,11 @@
     content: "New" !important;
 }
 
+#page-pulse .notion-embed {
+    overflow: visible !important;
+    border-radius: 0 !important;
+}
+
 @media (max-width: 600px) {
 
     #page-pulse .notion-collection-card__cover,
