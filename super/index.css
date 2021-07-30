@@ -1254,6 +1254,7 @@ strong {
 #page-pulse .notion-embed {
     overflow: visible !important;
     border-radius: 0 !important;
+    height: 60px !important;
 }
 
 @media (max-width: 600px) {
