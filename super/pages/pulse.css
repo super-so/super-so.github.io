@@ -11,6 +11,10 @@
     display: flex !important;
 }
 
+#page-pulse .notion-collection-card {
+    padding: 10px 24px 24px !important;
+}
+
 #page-pulse .notion-collection-card__cover,
 #page-pulse .notion-collection-card__cover>div,
 #page-pulse .notion-collection-card__cover img {
@@ -46,10 +50,6 @@
     font-weight: 700 !important;
     font-size: 14px !important;
     content: "New" !important;
-}
-
-#page-pulse .notion-collection-card {
-    padding: 10px ​24px 24px !important;
 }
 
 @media (max-width: 600px) {
