@@ -3,13 +3,21 @@
     color: var(--color-black) !important;
     letter-spacing: -0.4px !important;
     border-radius: 100px !important;
+    align-items: center !important;
     width: fit-content !important;
     font-weight: 600 !important;
+    padding: 0 !important;
 }
 
 .notion-callout__icon {
-    margin-left: 12px !important;
+    margin: 4px ​16px 0 0px !important;
     order: 2 !important;
+}
+
+.notion-callout .notion-semantic-string .link {
+    padding: 12px 20px !important;
+    display: block !important;
+    border: none !important;
 }
 
 * {
