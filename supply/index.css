@@ -1,0 +1,72 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeSpeed;
+    text-decoration: none;
+    outline: none;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    min-height: 100%;
+    width: 100%;
+}
+
+html, body,
+h1, h2, h3, p,
+ul, ol, li {
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+iframe, video, img {
+    max-width: 100%;
+    display: block;
+}
+
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+:root {
+    --color-black: #000 !important;
+    --color-charcoal: #18191b !important;
+    --color-grey: #8f9ba8 !important;
+    --color-white: #fff !important;
+
+    --color-text-default: var(--color-black) !important;
+    --color-text-gray: var(--color-grey) !important;
+    --color-text-default-light: var(--color-grey) !important;
+
+    --color-bg-default: var(--color-black) !important;
+    --color-bg-gray-light: var(--color-grey) !important;
+
+    --color-ui-hover-bg: var(--color-charcoal) !important;
+    --color-border-default: var(--color-charcoal) !important;
+    --color-card-bg: transparent !important;
+
+    --transition: all .3s cubic-bezier(.4,0,.2,1) !important;
+    --column-spacing: 60px !important;
+
+    --padding-right: calc(env(safe-area-inset-right) + 100px) !important;
+    --padding-left: calc(env(safe-area-inset-left) + 100px) !important;
+}
+
+::selection {
+    background: var(--color-charcoal) !important;
+    color: var(--color-white) !important;
+}
+
