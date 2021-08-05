@@ -21,7 +21,7 @@
     display: none !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
 
     .notion-link.bg-gray {
         right: 30px !important;

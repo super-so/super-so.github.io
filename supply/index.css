@@ -24,7 +24,7 @@
     padding: 40px 100px 80px !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
 
     .super-content {
         padding: 40px !important;
@@ -55,7 +55,7 @@
     display: none !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
 
     .notion-link.bg-gray {
         right: 30px !important;
@@ -97,7 +97,7 @@
     border: none !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
 
     .notion-collection-gallery {
         grid-template-columns: 1fr !important;
@@ -139,7 +139,7 @@
     background: none !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
 
     .notion-navbar {
         padding: 0 40px !important;
@@ -231,7 +231,7 @@ h2 {
     font-size: 30px !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
 
     h1 {
         letter-spacing: -1px !important;

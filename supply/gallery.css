@@ -32,7 +32,7 @@
     border: none !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
 
     .notion-collection-gallery {
         grid-template-columns: 1fr !important;
