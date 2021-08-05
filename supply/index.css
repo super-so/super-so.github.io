@@ -27,7 +27,7 @@
 .notion-collection-gallery {
     grid-template-columns: repeat(3, 1fr) !important;
     grid-gap: 30px !important;
-    margin: 40px 0 !important;
+    margin: 60px 0 !important;
     border: none !important;
     padding: 0 !important;
 }
@@ -55,7 +55,12 @@
 }
 
 .notion-navbar {
-    padding: 12px 100px !important;
+    padding: 0 100px !important;
+    height: 100px !important;
+}
+
+.notion-navbar__title {
+    font-size: 20px !important;
 }
 
 * {
@@ -128,8 +133,10 @@ img {
 }
 
 h1 {
-    letter-spacing: -2px !important;
+    letter-spacing: -1.5px !important;
+    font-weight: 600 !important;
     max-width: 680px !important;
+    line-height: 1.6 !important;
     font-size: 50px !important;
 }
 

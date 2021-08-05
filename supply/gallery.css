@@ -1,7 +1,7 @@
 .notion-collection-gallery {
     grid-template-columns: repeat(3, 1fr) !important;
     grid-gap: 30px !important;
-    margin: 40px 0 !important;
+    margin: 60px 0 !important;
     border: none !important;
     padding: 0 !important;
 }
