@@ -1,5 +1,4 @@
 .notion-header__content,
-.notion-collection__header,
-.notion-property__title {
+.notion-collection__header {
     display: none !important;
 }
