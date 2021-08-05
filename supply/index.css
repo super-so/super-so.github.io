@@ -21,8 +21,21 @@
 }
 
 .notion-collection-gallery {
+    grid-template-columns: repeat(3, 1fr) !important;
     border: none !important;
     padding: 0 !important;
+}
+
+.notion-collection-card:first-child {
+    grid-column-start: span 2 !important;
+}
+
+.notion-collection-card__cover,
+.notion-collection-card__cover>div,
+.notion-collection-card__cover img {
+    max-height: none !important;
+    min-height: none !important;
+    height: 400px !important;
 }
 
 * {

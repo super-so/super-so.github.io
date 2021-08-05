@@ -10,6 +10,7 @@
 @import "type.css";
 
 .notion-header__content,
-.notion-collection__header {
+.notion-collection__header,
+.notion-property__title {
     display: none !important;
 }
