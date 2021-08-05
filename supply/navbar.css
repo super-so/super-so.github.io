@@ -7,6 +7,10 @@
     height: 100px !important;
 }
 
+.notion-navbar .notion-breadcrumb__divider {
+    margin: 0 12px !important;
+}
+
 .notion-navbar__title {
     font-size: 20px !important;
 }
