@@ -1,10 +1,15 @@
 .notion-link.bg-gray {
-    padding: 6px 16px 4px !important;
+    background: rgba(255,255,255,0.06) !important;
+    padding: 10px 20px 8px !important;
     border-radius: 100px !important;
     position: fixed !important;
     right: 100px !important;
     z-index: 99 !important;
-    top: 28px !important;
+    top: 26px !important;
+}
+
+.notion-link.bg-gray:hover {
+    background: rgba(255,255,255,0.1) !important;
 }
 
 .notion-page>div {
