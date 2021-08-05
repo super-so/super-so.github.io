@@ -7,10 +7,5 @@
 @import "theme.css";
 @import "callout.css";
 @import "gallery.css";
+@import "hide.css";
 @import "type.css";
-
-.notion-header__content,
-.notion-collection__header,
-.notion-property__title {
-    display: none !important;
-}

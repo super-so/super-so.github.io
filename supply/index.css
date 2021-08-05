@@ -38,6 +38,12 @@
     height: 400px !important;
 }
 
+.notion-header__content,
+.notion-collection__header,
+.notion-property__title {
+    display: none !important;
+}
+
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
