@@ -10,7 +10,7 @@
     transition: var(--transition) !important;
     border-radius: 16px !important;
     overflow: hidden !important;
-    height: 420px !important;
+    height: 480px !important;
 }
 
 .notion-collection-card.gallery:before {
