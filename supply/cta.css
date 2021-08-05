@@ -1,5 +1,6 @@
 .notion-link.bg-gray {
     background: rgba(255,255,255,0.06) !important;
+    transition: var(--transition) !important;
     padding: 10px 20px 8px !important;
     border-radius: 100px !important;
     position: fixed !important;
