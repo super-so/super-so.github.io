@@ -24,7 +24,7 @@
     padding: 60px 100px !important;
 }
 
-.notion-link .bg-gray {
+.notion-link.bg-gray {
     padding: 6px ​16px 4px !important;
     border-radius: 100px !important;
     position: fixed !important;
