@@ -1,8 +1,8 @@
 .notion-link.bg-gray {
     background: rgba(255,255,255,0.06) !important;
     transition: var(--transition) !important;
+    padding: 12px 20px 10px !important;
     border-radius: 100px !important;
-    padding: 10px 20px !important;
     position: fixed !important;
     right: 100px !important;
     z-index: 99 !important;
@@ -30,9 +30,12 @@
 }
 
 @media (max-width: 1000px) {
-
     .notion-link.bg-gray {
         right: 30px !important;
     }
+}
 
+@media (prefers-color-scheme: light) {
+    .notion-link.bg-gray { background: rgba(0,0,0,0.04) !important; }
+    .notion-link.bg-gray:hover { background: rgba(0,0,0,0.06) !important; }
 }

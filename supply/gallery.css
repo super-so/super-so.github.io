@@ -10,6 +10,7 @@
     transition: var(--transition) !important;
     border-radius: 16px !important;
     overflow: hidden !important;
+    box-shadow: none !important;
     height: 480px !important;
 }
 
@@ -51,6 +52,7 @@
     padding: 24px 30px !important;
     max-width: 400px !important;
     font-size: 20px !important;
+    color: #fff !important;
     z-index: 2 !important;
     bottom: 0 !important;
     left: 0 !important;
@@ -74,6 +76,7 @@
     font-size: 18px !important;
     display: flex !important;
     height: 54px !important;
+    color: #fff !important;
     width: 54px !important;
     right: 24px !important;
     z-index: 2 !important;

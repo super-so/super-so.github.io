@@ -20,3 +20,14 @@
     display: block !important;
     border: none !important;
 }
+
+@media (prefers-color-scheme: light) {
+    .notion-callout {
+        background: var(--color-black) !important;
+        color: var(--color-white) !important;
+    }
+    .notion-callout__icon {
+        -webkit-filter: invert(1) !important;
+        filter: invert(1) !important;
+    }
+}
