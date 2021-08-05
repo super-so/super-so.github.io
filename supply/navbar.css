@@ -10,6 +10,10 @@
     font-size: 20px !important;
 }
 
+.notion-navbar>a:hover {
+    background: none !important;
+}
+
 @media (max-width: 600px) {
 
     .notion-navbar {
