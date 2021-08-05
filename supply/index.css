@@ -27,6 +27,7 @@
 .notion-collection-gallery {
     grid-template-columns: repeat(3, 1fr) !important;
     grid-gap: 30px !important;
+    margin: 40px 0 !important;
     border: none !important;
     padding: 0 !important;
 }
@@ -44,7 +45,7 @@
 .notion-collection-card__cover img {
     max-height: none !important;
     min-height: none !important;
-    height: 400px !important;
+    height: 420px !important;
 }
 
 .notion-header__content,
