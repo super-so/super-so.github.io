@@ -56,6 +56,10 @@
     background: none !important;
 }
 
+.notion-page__title .notion-semantic-string {
+    border: none !important;
+}
+
 .notion-page__icon {
     display: none !important;
 }
