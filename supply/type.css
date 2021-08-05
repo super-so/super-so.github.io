@@ -5,3 +5,9 @@ h1 {
     line-height: 1.6 !important;
     font-size: 50px !important;
 }
+
+h2 {
+    letter-spacing: -2px !important;
+    font-weight: 600 !important;
+    font-size: 30px !important;
+}
