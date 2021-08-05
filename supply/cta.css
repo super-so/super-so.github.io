@@ -17,6 +17,10 @@
     padding: 0 !important;
 }
 
+.notion-page>div:hover {
+    background: none !important;
+}
+
 .notion-page__icon {
     display: none !important;
 }
