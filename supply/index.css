@@ -38,7 +38,7 @@ notion-callout__icon>div {
 }
 
 .super-content {
-    padding: 40px 100px 80px !important;
+    padding: 0 100px 80px !important;
 }
 
 @media (max-width: 1000px) {
