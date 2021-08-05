@@ -11,3 +11,12 @@ h2 {
     font-weight: 600 !important;
     font-size: 30px !important;
 }
+
+@media (max-width: 600px) {
+
+    h1 {
+        letter-spacing: -1px !important;
+        font-size: 30px !important;
+    }
+
+}

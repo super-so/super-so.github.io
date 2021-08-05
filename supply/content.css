@@ -1,3 +1,11 @@
 .super-content {
     padding: 40px 100px 80px !important;
 }
+
+@media (max-width: 600px) {
+
+    .super-content {
+        padding: 40px !important;
+    }
+
+}

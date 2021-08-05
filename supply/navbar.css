@@ -1,10 +1,19 @@
 .notion-navbar {
     backdrop-filter: blur(20px) saturate(200%) !important;
     background: rgba(0,0,0,0.9) !important;
+    box-shadow: none !important;
     padding: 0 100px !important;
     height: 100px !important;
 }
 
 .notion-navbar__title {
     font-size: 20px !important;
+}
+
+@media (max-width: 600px) {
+
+    .notion-navbar {
+        padding: 0 40px !important;
+    }
+
 }

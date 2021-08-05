@@ -29,4 +29,23 @@
     max-height: none !important;
     min-height: none !important;
     height: 420px !important;
+    border: none !important;
+}
+
+@media (max-width: 600px) {
+
+    .notion-collection-gallery {
+        grid-template-columns: 1fr !important;
+    }
+
+    .notion-collection-card:first-child {
+        grid-column-start: auto !important;
+    }
+
+    .notion-collection-card__cover,
+    .notion-collection-card__cover>div,
+    .notion-collection-card__cover img {
+        height: 300px !important;
+    }
+
 }
