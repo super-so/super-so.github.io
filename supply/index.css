@@ -47,7 +47,7 @@ img {
     --color-grey: #8f9ba8 !important;
     --color-white: #fff !important;
 
-    --color-text-default: var(--color-black) !important;
+    --color-text-default: var(--color-white) !important;
     --color-text-gray: var(--color-grey) !important;
     --color-text-default-light: var(--color-grey) !important;
 
