@@ -7,11 +7,20 @@
 }
 
 .notion-collection-card {
+    transition: var(--transition) !important;
     border-radius: 16px !important;
 }
 
 .notion-collection-card:first-child {
     grid-column-start: span 2 !important;
+}
+
+.notion-collection-card:hover {
+    transform: translateY(-8px) !important;
+}
+
+.notion-collection-card:active {
+    transform: translateY(0) !important;
 }
 
 .notion-collection-card__cover,
