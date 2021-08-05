@@ -14,9 +14,11 @@
 }
 
 .notion-collection-card.gallery:before {
-    background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%) !important;
+    background: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 40%) !important;
+    pointer-events: none !important;
     position: absolute !important;
     content: "" !important;
+    z-index: 1 !important;
     bottom: 0 !important;
     right: 0 !important;
     left: 0 !important;
