@@ -232,5 +232,10 @@ h2 {
         font-size: 30px !important;
     }
 
+    h2 {
+        letter-spacing: -1px !important;
+        font-size: 26px !important;
+    }
+
 }
 
