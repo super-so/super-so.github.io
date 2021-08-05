@@ -125,6 +125,7 @@
 }
 
 .notion-collection-card.gallery .notion-collection-card__content {
+    border: 1px solid rgba(255,255,255,0.06) !important;
     -webkit-backdrop-filter: blur(20px) !important;
     backdrop-filter: blur(20px) !important;
     background: rgba(0,0,0,0.12) !important;
