@@ -20,6 +20,11 @@
     border: none !important;
 }
 
+.notion-collection-gallery {
+    border: none !important;
+    padding: 0 !important;
+}
+
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

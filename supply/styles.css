@@ -6,8 +6,10 @@
 @import "reset.css";
 @import "theme.css";
 @import "callout.css";
+@import "gallery.css";
 @import "type.css";
 
-.notion-header__title-wrapper {
+.notion-header__content,
+.notion-collection__header {
     display: none !important;
 }
