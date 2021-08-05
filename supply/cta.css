@@ -1,0 +1,16 @@
+.notion-link .bg-gray {
+    padding: 6px ​16px 4px !important;
+    border-radius: 100px !important;
+    position: fixed !important;
+    right: 100px !important;
+    z-index: 99 !important;
+    top: 28px !important;
+}
+
+.notion-page>div {
+    padding: 0 !important;
+}
+
+.notion-page__icon {
+    display: none !important;
+}

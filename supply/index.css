@@ -24,6 +24,23 @@
     padding: 60px 100px !important;
 }
 
+.notion-link .bg-gray {
+    padding: 6px ​16px 4px !important;
+    border-radius: 100px !important;
+    position: fixed !important;
+    right: 100px !important;
+    z-index: 99 !important;
+    top: 28px !important;
+}
+
+.notion-page>div {
+    padding: 0 !important;
+}
+
+.notion-page__icon {
+    display: none !important;
+}
+
 .notion-collection-gallery {
     grid-template-columns: repeat(3, 1fr) !important;
     grid-gap: 30px !important;
@@ -55,6 +72,8 @@
 }
 
 .notion-navbar {
+    backdrop-filter: blur(20px) saturate(200%) !important;
+    background: rgba(0,0,0,0.9) !important;
     padding: 0 100px !important;
     height: 100px !important;
 }
@@ -117,6 +136,7 @@ img {
     --color-text-default-light: var(--color-grey) !important;
 
     --color-bg-default: var(--color-black) !important;
+    --color-bg-gray: var(--color-charcoal) !important;
     --color-bg-gray-light: var(--color-grey) !important;
 
     --color-ui-hover-bg: var(--color-charcoal) !important;

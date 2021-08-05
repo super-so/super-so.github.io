@@ -9,6 +9,7 @@
     --color-text-default-light: var(--color-grey) !important;
 
     --color-bg-default: var(--color-black) !important;
+    --color-bg-gray: var(--color-charcoal) !important;
     --color-bg-gray-light: var(--color-grey) !important;
 
     --color-ui-hover-bg: var(--color-charcoal) !important;
