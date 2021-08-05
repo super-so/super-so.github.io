@@ -20,6 +20,10 @@
     border: none !important;
 }
 
+.super-content {
+    padding: 60px 100px !important;
+}
+
 .notion-collection-gallery {
     grid-template-columns: repeat(3, 1fr) !important;
     border: none !important;
@@ -42,6 +46,10 @@
 .notion-collection__header,
 .notion-property__title {
     display: none !important;
+}
+
+.notion-navbar {
+    padding: 12px 100px !important;
 }
 
 * {
@@ -106,9 +114,6 @@ img {
 
     --transition: all .3s cubic-bezier(.4,0,.2,1) !important;
     --column-spacing: 60px !important;
-
-    --padding-right: calc(env(safe-area-inset-right) + 100px) !important;
-    --padding-left: calc(env(safe-area-inset-left) + 100px) !important;
 }
 
 ::selection {

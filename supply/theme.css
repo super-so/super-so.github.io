@@ -17,9 +17,6 @@
 
     --transition: all .3s cubic-bezier(.4,0,.2,1) !important;
     --column-spacing: 60px !important;
-
-    --padding-right: calc(env(safe-area-inset-right) + 100px) !important;
-    --padding-left: calc(env(safe-area-inset-left) + 100px) !important;
 }
 
 ::selection {
