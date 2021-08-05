@@ -10,7 +10,8 @@
 }
 
 .notion-callout__icon {
-    margin: 4px 16px 0 0 !important;
+    margin: 4px 12px 0 -12px !important;
+    pointer-events: none !important;
     order: 2 !important;
 }
 
