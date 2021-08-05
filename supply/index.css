@@ -92,3 +92,9 @@ img {
     color: var(--color-white) !important;
 }
 
+h1 {
+    letter-spacing: -2px !important;
+    max-width: 640px !important;
+    font-size: 50px !important;
+}
+
