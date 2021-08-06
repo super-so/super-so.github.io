@@ -31,11 +31,6 @@
     border: none !important;
 }
 
-.notion-collection-card__cover img {
-    transition: var(--transition) !important;
-    transform: scale(1.06) !important;
-}
-
 .notion-collection-card:hover {
     box-shadow: 0 20px 40px -10px rgba(0,0,0,0.12) !important;
     background: var(--color-white) !important;
@@ -45,10 +40,6 @@
 .notion-collection-card:active {
     box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
     transform: translateY(0) !important;
-}
-
-.notion-collection-card:hover .notion-collection-card__cover img {
-    transform: scale(1.001) !important;
 }
 
 .notion-property__title,
