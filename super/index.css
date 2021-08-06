@@ -448,8 +448,8 @@
 .notion-collection-card__cover img {
     border-radius: 12px !important;
     position: relative !important;
+    min-height: unset !important;
     max-height: none !important;
-    min-height: none !important;
     height: 200px !important;
     border: none !important;
 }
