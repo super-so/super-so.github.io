@@ -41,7 +41,7 @@
 
 #page-pulse .notion-property__title .notion-semantic-string {
     line-height: 1.4 !important;
-    margin-top: 12px !important;
+    margin-top: 40px !important;
 }
 
 #page-pulse .notion-collection-card:nth-child(-n + 6) .notion-property__title:before {
@@ -61,6 +61,11 @@
     overflow: visible !important;
     border-radius: 0 !important;
     height: 60px !important;
+}
+
+#page-pulse .notion-collection-card__property:first-child {
+    position: absolute !important;
+    top: 68px !important;
 }
 
 @media (max-width: 600px) {
