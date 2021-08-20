@@ -257,8 +257,12 @@
     background-color: transparent !important;
 }
 
-.notion-image {
-    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.1) !important;
+.notion-image div {
+    overflow: visible !important;
+}
+
+.notion-image img {
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.08) !important;
     align-self: flex-start !important;
     margin-bottom: 16px !important;
     border-radius: 12px !important;
