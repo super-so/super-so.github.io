@@ -1237,8 +1237,8 @@ strong {
     margin-top: 40px !important;
 }
 
-#page-pulse .notion-collection-card:nth-child(-n + 6) .notion-property__title:before {
-    background: var(--color-primary) !important;
+#page-pulse .notion-collection-card .notion-property__title:before {
+    background: var(--color-off-white) !important;
     color: var(--color-white) !important;
     letter-spacing: -0.3px !important;
     display: inline-block !important;
@@ -1247,6 +1247,11 @@ strong {
     position: relative !important;
     font-weight: 700 !important;
     font-size: 14px !important;
+    content: "Update" !important;
+}
+
+#page-pulse .notion-collection-card:nth-child(-n + 6) .notion-property__title:before {
+    background: var(--color-primary) !important;
     content: "New" !important;
 }
 
