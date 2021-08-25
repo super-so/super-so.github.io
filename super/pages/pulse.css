@@ -46,7 +46,7 @@
 
 #page-pulse .notion-collection-card .notion-property__title:before {
     background: var(--color-off-white) !important;
-    color: var(--color-white) !important;
+    color: var(--color-grey) !important;
     letter-spacing: -0.3px !important;
     display: inline-block !important;
     padding: 3px 10px 4px !important;
@@ -59,6 +59,7 @@
 
 #page-pulse .notion-collection-card:nth-child(-n + 6) .notion-property__title:before {
     background: var(--color-primary) !important;
+    color: var(--color-white) !important;
     content: "New" !important;
 }
 
