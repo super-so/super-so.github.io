@@ -1157,38 +1157,46 @@ strong {
 }
 
 /* Subheading */
-#page-market .property-7a5f6142,
-#page-copy-of-market .property-7a5f6142 {
-    background: var(--color-off-white) !important;
-    border-radius: 12px !important;
-    position: absolute !important;
-    bottom: 30px !important;
-    right: 24px !important;
-    padding: 16px;
-}
 #page-market .property-7a5f6142 .notion-pill,
 #page-copy-of-market .property-7a5f6142 .notion-pill {
+    background: var(--color-off-white) !important;
     letter-spacing: -0.5px !important;
+    display: inline-block !important;
+    border-radius: 12px !important;
+    position: absolute !important;
     font-weight: 700 !important;
     font-size: 20px !important;
+    padding: 16px !important;
+    bottom: 30px !important;
+    right: 24px !important;
+    width: auto !important;
     margin: 0 !important;
+}
+
+#page-market .property-7a5f6142 .pill-green,
+#page-copy-of-market .property-7a5f6142 .pill-green {
+    display: none !important;
 }
 
 /* Creator */
 #page-copy-of-market .property-52525675 {
-    box-shadow: 0 4px 8px -2px rgba(0,0,0,0.08) !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.04) !important;
     background: var(--color-white) !important;
     border-radius: 100px !important;
     position: absolute !important;
     padding: 4px 8px !important;
     font-size: 16px !important;
-    bottom: 71px !important;
+    bottom: 32px !important;
     right: 20px !important;
 }
 
 #page-copy-of-market .resource { pointer-events: none !important; }
-#page-copy-of-market .resource .notion-page__icon { align-items: center !important; }
 #page-copy-of-market .notion-page__title .notion-semantic-string { border: none !important; }
+#page-copy-of-market .resource .notion-page__icon {
+    align-items: center !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+}
 
 .super-password-protection__wrapper {
     max-width: 600px !important;
