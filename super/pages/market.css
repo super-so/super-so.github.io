@@ -15,3 +15,17 @@
     font-size: 20px !important;
     margin: 0 !important;
 }
+
+#page-copy-of-market .notion-collection-card__property:nth-child(3) {
+    background: var(--color-white) !important;
+    border-radius: 100px !important;
+    position: absolute !important;
+    padding: 4px 8px !important;
+    font-size: 16px !important;
+    bottom: 71px !important;
+    right: 20px !important;
+}
+
+#page-market .notion-collection-card { overflow: visible !important; }
+#page-market .resource .notion-page__icon { align-items: center !important; }
+#page-market .notion-page__title .notion-semantic-string { border: none !important; }
