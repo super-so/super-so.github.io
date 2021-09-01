@@ -1,5 +1,5 @@
 #page-market .notion-collection-card__property:nth-child(2),
-#copy-of-market .notion-collection-card__property:nth-child(2) {
+#page-copy-of-market .notion-collection-card__property:nth-child(2) {
     background: var(--color-off-white) !important;
     border-radius: 12px !important;
     position: absolute !important;
@@ -9,7 +9,7 @@
 }
 
 #page-market .notion-collection-card__property:nth-child(2) .notion-pill,
-#copy-of-market .notion-collection-card__property:nth-child(2) .notion-pill {
+#page-copy-of-market .notion-collection-card__property:nth-child(2) .notion-pill {
     letter-spacing: -0.5px !important;
     font-weight: 700 !important;
     font-size: 20px !important;
