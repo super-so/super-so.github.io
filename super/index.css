@@ -1151,40 +1151,37 @@ strong {
 
 }
 
-#page-market .notion-collection-card__property,
-#page-copy-of-market .notion-collection-card__property {
+#page-market .notion-collection-card__property {
     min-height: unset !important;
 }
 
-/* Subheading */
-#page-market .property-7a5f6142 .notion-pill,
-#page-copy-of-market .property-7a5f6142 .notion-pill {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.04) !important;
+/* Price */
+#page-market .property-7a5f6142 .notion-pill {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.06) !important;
     background: var(--color-white) !important;
     color: var(--color-black) !important;
     justify-content: center !important;
     letter-spacing: -0.5px !important;
     align-items: center !important;
-    position: absolute !important;
     border-radius: 50% !important;
+    position: absolute !important;
     font-weight: 600 !important;
     font-size: 16px !important;
     display: flex !important;
+    height: 46px !important;
+    width: 46px !important;
     right: 34px !important;
     padding: 0 !important;
-    width: 46px !important;
-    height: 46px !important;
     margin: 0 !important;
     top: 32px !important;
 }
 
-#page-market .property-7a5f6142 .pill-green,
-#page-copy-of-market .property-7a5f6142 .pill-green {
+#page-market .property-7a5f6142 .pill-green {
     display: none !important;
 }
 
 /* Creator */
-#page-copy-of-market .property-52525675 {
+#page-market .property-52525675 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.04) !important;
     background: var(--color-white) !important;
     border-radius: 100px !important;
@@ -1195,15 +1192,15 @@ strong {
     right: 24px !important;
 }
 
-#page-copy-of-market .property-52525675 .notion-semantic-string {
+#page-market .property-52525675 .notion-semantic-string {
     letter-spacing: -0.2px !important;
     font-weight: 600 !important;
 }
 
-#page-copy-of-market .resource { pointer-events: none !important; }
-#page-copy-of-market .notion-page__title .notion-semantic-string { border: none !important; }
-#page-copy-of-market .resource .notion-page__icon { align-items: center !important; }
-#page-copy-of-market .resource .notion-page__icon>div {
+#page-market .resource { pointer-events: none !important; }
+#page-market .notion-page__title .notion-semantic-string { border: none !important; }
+#page-market .resource .notion-page__icon { align-items: center !important; }
+#page-market .resource .notion-page__icon>div {
     border-radius: 50% !important;
     overflow: hidden !important;
 }
