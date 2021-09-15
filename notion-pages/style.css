@@ -64,6 +64,7 @@ h2 {
     display: none !important;
 }
 .notion-property__title {
+    border-top: 1px solid rgba(0,0,0,0.04) !important;
     padding: 20px 20px 8px !important;
     font-size: 18px !important;
 }
