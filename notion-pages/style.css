@@ -83,8 +83,10 @@ h2 {
     background: var(--color-primary) !important;
     border-radius: 100px !important;
     padding: 8px 12px !important;
-    margin-top: 24px !important;
 }
 .notion-collection-card:hover {
     background: none !important;
+}
+.notion-collection-card__property:last-child {
+    margin-top: 24px !important;
 }
