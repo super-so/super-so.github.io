@@ -1,0 +1,14 @@
+:root {
+    --transition: all .2s ease-in-out !important;
+    --color-text-gray: #808c99 !important;
+    --rounded: 8px !important;
+}
+
+.notion-collection__header,
+.notion-header__title-wrapper {
+    display: none !important;
+}
+
+.super-content {
+    padding-bottom: 40px !important;
+}
