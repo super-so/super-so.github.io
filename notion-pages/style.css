@@ -17,13 +17,6 @@
 .notion-header__title-wrapper {
     display: none !important;
 }
-.notion-header__cover {
-    position: absolute !important;
-    max-height: none !important;
-    height: 460px !important;
-    width: 100% !important;
-    top: 0 !important;
-}
 
 /* Typography */
 h1 {
@@ -37,6 +30,13 @@ h2 {
 }
 
 /* Home page */
+#page-index .notion-header__cover {
+    position: absolute !important;
+    max-height: none !important;
+    height: 460px !important;
+    width: 100% !important;
+    top: 0 !important;
+}
 #page-index .notion-column-list {
     justify-content: space-between !important;
 }
