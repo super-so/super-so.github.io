@@ -55,8 +55,26 @@ h2 {
     padding: 0 !important;
 }
 .notion-collection-card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.04) !important;
+    border: 1px solid rgba(0,0,0,0.04) !important;
     border-radius: 8px !important;
 }
 .notion-collection__header  {
     display: none !important;
+}
+.notion-property__title {
+    padding: 20px 20px 8px !important;
+    font-size: 18px !important;
+}
+.notion-property__title .notion-semantic-string {
+    letter-spacing: -0.3px !important;
+    font-weight: 600 !important;
+}
+.notion-collection-card__content {
+    padding: 0 20px 20px !important;
+}
+.notion-collection-card__property {
+    color: var(--color-text-gray) !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
 }
