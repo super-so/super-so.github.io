@@ -1,7 +1,11 @@
 :root {
     --transition: all .2s ease-in-out !important;
-    --color-text-gray: #808c99 !important;
+    --color-text-gray: #808080 !important;
     --rounded: 8px !important;
+}
+
+.notion-navbar {
+    background: #F8F6F5 !important;
 }
 
 .notion-collection__header,
@@ -11,4 +15,25 @@
 
 .super-content {
     padding-bottom: 40px !important;
+    margin: 80px auto 0 !important;
+    max-width: 1200px !important;
+}
+
+.notion-header__cover {
+    position: absolute !important;
+    max-height: none !important;
+    height: 400px !important;
+    width: 100% !important;
+    top: 0 !important;
+}
+
+h1 {
+    letter-spacing: -1px !important;
+    font-size: 56px !important;
+}
+
+h2 {
+    letter-spacing: -0.4px !important;
+    line-height: 1.4 !important;
+    font-size: 30px !important;
 }
