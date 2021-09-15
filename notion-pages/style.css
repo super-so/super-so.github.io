@@ -1,35 +1,49 @@
+/* Theme */
 :root {
     --transition: all .2s ease-in-out !important;
     --color-text-gray: #808080 !important;
     --rounded: 8px !important;
 }
 
+/* Misc */
 .notion-navbar {
     background: #F8F6F5 !important;
 }
-
 .notion-collection__header,
 .notion-header__title-wrapper {
     display: none !important;
 }
-
 .super-content {
     padding-bottom: 40px !important;
     margin: 80px auto 0 !important;
     max-width: 1200px !important;
 }
 
+/* Typography */
 h1 {
     letter-spacing: -1px !important;
     font-size: 56px !important;
 }
-
 h2 {
     letter-spacing: -0.4px !important;
     line-height: 1.4 !important;
     font-size: 30px !important;
 }
 
+/* Home page styles */
+#page-index .notion-column-list {
+    justify-content: space-between !important;
+}
+#page-index .notion-column {
+    width: auto !important;
+    margin: 0 !important;
+}
+#page-index h1 {
+    position: relative !important;
+    top: -8px !important;
+}
+
+/* Blocks */
 .notion-header__cover {
     position: absolute !important;
     max-height: none !important;
@@ -37,22 +51,7 @@ h2 {
     width: 100% !important;
     top: 0 !important;
 }
-
 .notion-collection-gallery {
     border: none !important;
     padding: 0 !important;
-}
-
-#page-index .notion-column-list {
-    justify-content: space-between !important;
-}
-
-#page-index .notion-column {
-    width: auto !important;
-    margin: 0 !important;
-}
-
-#page-index h1 {
-    position: relative !important;
-    top: -8px !important;
 }
