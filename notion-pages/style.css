@@ -14,9 +14,6 @@
 .notion-navbar {
     background: var(--color-primary) !important;
 }
-.notion-header__title-wrapper {
-    display: none !important;
-}
 
 /* Typography */
 h1 {
@@ -36,6 +33,9 @@ h2 {
     height: 460px !important;
     width: 100% !important;
     top: 0 !important;
+}
+#page-index .notion-header__title-wrapper {
+    display: none !important;
 }
 #page-index .notion-column-list {
     justify-content: space-between !important;
