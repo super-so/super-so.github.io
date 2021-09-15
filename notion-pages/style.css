@@ -34,6 +34,7 @@ h2 {
     width: 100% !important;
     top: 0 !important;
 }
+#page-index .notion-toggle,
 #page-index .notion-header__title-wrapper {
     display: none !important;
 }
