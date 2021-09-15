@@ -2,6 +2,7 @@
 :root {
     --transition: all .2s ease-in-out !important;
     --color-text-gray: #808080 !important;
+    --color-primary: #f8f6f5 !important;
 }
 .super-content {
     padding-bottom: 40px !important;
@@ -11,7 +12,7 @@
 
 /* Header */
 .notion-navbar {
-    background: #F8F6F5 !important;
+    background: var(--color-primary) !important;
 }
 .notion-collection__header {
     display: none !important;
@@ -77,4 +78,13 @@ h2 {
     color: var(--color-text-gray) !important;
     font-weight: 600 !important;
     font-size: 14px !important;
+}
+.notion-collection-card__content .notion-pill {
+    background: var(--color-primary) !important;
+    border-radius: 100px !important;
+    padding: 8px 12px !important;
+    margin-top: 24px !important;
+}
+.notion-collection-card:hover {
+    background: none !important;
 }
