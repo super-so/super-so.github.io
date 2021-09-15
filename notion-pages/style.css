@@ -79,6 +79,10 @@ h2 {
     color: var(--color-text-gray) !important;
     font-weight: 600 !important;
     font-size: 14px !important;
+    width: 100% !important;
+}
+.notion-collection-card__property .notion-semantic-string {
+    display: block !important;
 }
 .notion-collection-card__content .notion-pill {
     background: var(--color-primary) !important;
