@@ -19,14 +19,6 @@
     max-width: 1200px !important;
 }
 
-.notion-header__cover {
-    position: absolute !important;
-    max-height: none !important;
-    height: 400px !important;
-    width: 100% !important;
-    top: 0 !important;
-}
-
 h1 {
     letter-spacing: -1px !important;
     font-size: 56px !important;
@@ -36,4 +28,31 @@ h2 {
     letter-spacing: -0.4px !important;
     line-height: 1.4 !important;
     font-size: 30px !important;
+}
+
+.notion-header__cover {
+    position: absolute !important;
+    max-height: none !important;
+    height: 440px !important;
+    width: 100% !important;
+    top: 0 !important;
+}
+
+.notion-collection-gallery {
+    border: none !important;
+    padding: 0 !important;
+}
+
+#page-index .notion-column-list {
+    justify-content: space-between !important;
+}
+
+#page-index .notion-column {
+    width: auto !important;
+    margin: 0 !important;
+}
+
+#page-index h1 {
+    position: relative !important;
+    top: -8px !important;
 }
