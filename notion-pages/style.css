@@ -14,7 +14,7 @@
 .notion-navbar {
     background: var(--color-primary) !important;
 }
-.notion-collection__header {
+.notion-header__title-wrapper {
     display: none !important;
 }
 .notion-header__cover {
