@@ -15,7 +15,7 @@
 }
 .super-content {
     padding-bottom: 40px !important;
-    margin: 80px auto 0 !important;
+    margin: 100px auto 0 !important;
     max-width: 1200px !important;
 }
 
@@ -47,7 +47,7 @@ h2 {
 .notion-header__cover {
     position: absolute !important;
     max-height: none !important;
-    height: 440px !important;
+    height: 460px !important;
     width: 100% !important;
     top: 0 !important;
 }
