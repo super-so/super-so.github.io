@@ -69,6 +69,7 @@ h2 {
 }
 .notion-property__title .notion-semantic-string {
     letter-spacing: -0.3px !important;
+    white-space: normal !important;
     font-weight: 600 !important;
 }
 .notion-collection-card__content {
