@@ -7,7 +7,7 @@
 .super-content {
     padding-bottom: 40px !important;
     margin: 100px auto 0 !important;
-    max-width: 1200px !important;
+    max-width: 1280px !important;
 }
 
 /* Header */
@@ -62,9 +62,14 @@ h2 {
     border-radius: 12px !important;
 }
 .notion-collection-card:hover {
-    box-shadow: 0 8px 12px rgba(0,0,0,0.06) !important;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.06) !important;
     transform: translateY(-8px) !important;
     background: none !important;
+}
+.notion-collection-card:active {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.04) !important;
+    transition: all .1s ease-in-out !important;
+    transform: translateY(0) !important;
 }
 .notion-collection__header  {
     display: none !important;
