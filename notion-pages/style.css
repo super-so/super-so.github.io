@@ -1,13 +1,13 @@
 /* Theme */
 :root {
     --transition: all .2s ease-in-out !important;
+    --color-bg-default: #f8f6f5 !important;
     --color-text-gray: #808080 !important;
-    --color-primary: #f8f6f5 !important;
 }
 
 /* Header */
 .notion-navbar {
-    background: var(--color-primary) !important;
+    background: var(--color-bg-default) !important;
 }
 
 /* Typography */
@@ -27,6 +27,9 @@ h3 {
 }
 
 /* Home page */
+#page-index {
+    background: #fff !important;
+}
 #page-index .super-content {
     margin: 100px auto 0 !important;
     max-width: 1280px !important;
@@ -102,7 +105,7 @@ h3 {
     display: block !important;
 }
 .notion-collection-card__content .notion-pill {
-    background: var(--color-primary) !important;
+    background: var(--color-bg-default) !important;
     border-radius: 100px !important;
     padding: 8px 12px !important;
 }
