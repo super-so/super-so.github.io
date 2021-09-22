@@ -13,7 +13,7 @@ body {
 /* Super Navbar */
 
 .super-navbar__cta {
-    padding: var(--cta-padding);
+    padding: var(--cta-padding)!important;
     border-radius: var(--cta-border-radius)!important;
     border: var(--cta-border)!important;
     box-shadow: var(--callout-shadow)!important;
@@ -108,7 +108,7 @@ h3.notion-heading {
 /* Collection list item */
 
 .notion-collection-list__item {
-    padding: var(--collection-list-item-padding);
+    padding: var(--collection-list-item-padding)!important;
     border-radius: var(--collection-list-item-border-radius)!important;
 }
 
@@ -234,7 +234,7 @@ h3.notion-heading {
 }
 
 .notion-collection-list__item:hover {
-    background: var(--color-ui-hover-bg-light);
+    background: var(--color-ui-hover-bg-light)!important;
 }
 
 
