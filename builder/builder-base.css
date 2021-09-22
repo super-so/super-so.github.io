@@ -1,0 +1,268 @@
+body {
+    letter-spacing: var(--text-spacing)!important;
+}
+
+
+/* Max Width */
+
+.max-width {
+    max-width: var(--max-width)!important;
+}
+
+
+/* Super Navbar */
+
+.super-navbar__cta {
+    padding: var(--cta-padding);
+    border-radius: var(--cta-border-radius)!important;
+    border: var(--cta-border)!important;
+    box-shadow: var(--callout-shadow)!important;
+}
+
+.super-navbar .notion-link {
+    border: 0!important;
+}
+
+
+/* Typography */
+
+.notion-text {
+    margin: var(--notion-text-margin)!important;
+}
+
+h1 {
+    font-size: var(--h1-size)!important;
+    font-weight: var(--h1-weight)!important;
+    letter-spacing: var(--h1-spacing)!important;
+    margin: var(--h1-margin)!important;
+    line-height: var(--h1-line-height)!important;
+}
+
+h1.notion-heading .notion-semantic-string,
+h1.notion-heading {
+    line-height: var(--h1-line-height)!important;
+}
+
+h2 {
+    font-size: var(--h2-size)!important;
+    font-weight: var(--h2-weight)!important;
+    letter-spacing: var(--h2-spacing)!important;
+    margin: var(--h2-margin)!important;
+}
+
+h2.notion-heading .notion-semantic-string,
+h2.notion-heading {
+    line-height: var(--h2-line-height)!important;
+}
+
+h3 {
+    font-size: var(--h3-size)!important;
+    font-weight: var(--h3-weight)!important;
+    letter-spacing: var(--h3-spacing)!important;
+    margin: var(--h3-margin)!important;
+}
+
+h3.notion-heading .notion-semantic-string,
+h3.notion-heading {
+    line-height: var(--h3-line-height)!important;
+}
+
+
+/* Images */
+
+.notion-image>div,
+.notion-image img {
+    border-radius: var(--image-border-radius)!important;
+}
+
+
+/* Links */
+
+
+/* Standard link */
+
+.notion-text .notion-text__content .notion-semantic-string .link {
+    border-width: var(--link-border-width)!important;
+    border-style: var(--link-border-style)!important;
+    border-color: var(--link-border-color)!important;
+}
+
+.notion-semantic-string .link {
+    border-width: var(--link-border-width)!important;
+    border-style: var(--link-border-style)!important;
+    border-color: var(--link-border-color)!important;
+}
+
+
+/* Collection Blocks */
+
+
+/* Remove Border top*/
+
+.notion-collection-list,
+.notion-collection-gallery {
+    border: 0px!important;
+}
+
+
+/* Collection list item */
+
+.notion-collection-list__item {
+    padding: var(--collection-list-item-padding);
+    border-radius: var(--collection-list-item-border-radius)!important;
+}
+
+.notion-property__date {
+    opacity: .5!important;
+}
+
+.notion-pill {
+    padding: var(--notion-pill-padding)!important;
+    border-radius: var(--notion-pill-border-radius)!important;
+    font-size: var(--notion-pill-text-size)!important;
+    font-weight: var(--notion-pill-text-weight)!important;
+    text-transform: var(--notion-pill-text-transform)!important;
+    letter-spacing: var(--notion-pill-letter-spacing)!important;
+}
+
+.notion-collection-list__item .notion-property__title .notion-semantic-string>span {
+    border: 0!important;
+    font-weight: 200!important;
+}
+
+.notion-property__title__icon-wrapper {
+    margin-inline-end: 10px!important;
+}
+
+.notion-property__title {
+    font-size: var(--collection-title-text-size)!important;
+}
+
+
+/* Gallery Specific */
+
+.notion-collection-card {
+    box-shadow: none!important;
+    border-radius: var(--collection-card-border-radius)!important;
+    border: var(--collection-card-border)!important;
+    cursor: pointer!important;
+}
+
+.notion-collection-gallery {
+    grid-gap: var(--collection-gallery-gap)!important;
+}
+
+.notion-collection-gallery>.notion-collection-card .notion-property__title {
+    padding: var(--collection-card-padding)!important;
+}
+
+.notion-collection-card__content {
+    margin-top: -10px!important;
+    padding-bottom: var(--collection-card-padding)!important;
+    padding-inline-start: var(--collection-card-padding)!important;
+}
+
+
+/* Set card text */
+
+.gallery .notion-collection-card__property .notion-semantic-string {
+    white-space: pre-wrap!important;
+    font-size: var(--collection-property-text-size)!important;
+    opacity: .7!important;
+}
+
+.notion-collection-card__cover img {
+    border-radius: var(--col-card-border-radius)!important;
+}
+
+
+/* Table Specific */
+
+.notion-collection-table {
+    border: 1px solid var(--color-border-default)!important;
+    font-size: 1rem!important;
+}
+
+.notion-collection-table td,
+.notion-collection-table th {
+    padding: 10px!important;
+}
+
+
+/* Callout blocks */
+
+
+/* Callout */
+
+.notion-callout {
+    margin: 5px 0px!important;
+    border-radius: var(--callout-border-radius)!important;
+    box-shadow: var(--callout-shadow)!important;
+    padding: var(--callout-padding)!important;
+}
+
+.notion-callout.border {
+    border: var(--callout-border)!important;
+}
+
+
+/* Callout Icon*/
+
+.notion-callout__icon img {
+    width: var(--callout-icon-size)!important;
+    min-width: var(--callout-icon-size)!important;
+}
+
+.notion-callout__icon span {
+    font-size: var(--callout-emoji-size)!important;
+}
+
+
+/* Image inside callout*/
+
+.notion-callout .notion-image {
+    margin-top: 0!important;
+    margin-bottom: 0px!important;
+}
+
+
+/* H1 inside callout*/
+
+.notion-callout h1.notion-heading {
+    margin-top: 15px!important;
+    margin-bottom: 10px!important;
+}
+
+.notion-collection-list__item:hover {
+    background: var(--color-ui-hover-bg-light);
+}
+
+
+/* Divider */
+
+.notion-divider {
+    margin: var(--divider-margin)!important;
+    opacity: var(--divider-opacity)!important;
+}
+
+
+/* Media Queries */
+
+@media all and (max-width: 764px) {
+    .notion-collection-list__item-content>*:not(:first-child) {
+        display: none!important;
+    }
+    .notion-collection-list__item .notion-property__title .notion-semantic-string {
+        max-width: 200px!important;
+        white-space: pre-wrap!important;
+    }
+    h1.notion-heading {
+        font-size: calc(var(--h1-size) - 0.3rem)!important;
+    }
+    h2.notion-heading {
+        font-size: calc(var(--h2-size) - 0.2rem)!important;
+    }
+    h3.notion-heading {
+        font-size: calc(var(--h3-size) - 0.1rem)!important;
+    }
+}
