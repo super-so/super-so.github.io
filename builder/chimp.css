@@ -96,7 +96,7 @@
 
 /* Import Builder Base */
 
-@import '../builder-base.css';
+@import 'builder-base.css';
 
 /* Theme overwrites */
 
