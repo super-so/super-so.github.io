@@ -1,1 +1,94 @@
+/* Theme Variables */
 
+:root {
+    /* Layout */
+    --column-spacing: 40px;
+    --max-width: 1150px;
+    /* Navbar CTA */
+    --cta-padding: 10px 12px;
+    --cta-border-radius: 0px;
+    --cta-border: none;
+    --cta-shadow: none;
+    /* Callout */
+    --callout-padding: 15px 20px 15px 15px;
+    --callout-border: 1px solid var(--color-border-default);
+    --callout-border-radius: 0px;
+    --callout-shadow: none;
+    --callout-icon-size: .8rem;
+    --callout-emoji-size: 1rem;
+    /* Collections */
+    --collection-list-item-border-radius: 0px;
+    --collection-list-item-padding: 5px 0px 5px 5px;
+    --collection-gallery-gap: 30px;
+    --collection-title-text-size: 16px;
+    --collection-property-text-size: 14px;
+    --color-card-bg: rgb(255, 255, 255);
+    --collection-card-border-radius: 0px;
+    --collection-card-padding: 20px;
+    --collection-card-border: 1px solid var(--color-border-default);
+    --collection-card-cover-size-small: 172px;
+    --collection-card-cover-size-medium: 260px;
+    --collection-card-cover-size-large: 320px;
+    /* Pill */
+    --notion-pill-padding: 2px 5px;
+    --notion-pill-border-radius: 0px;
+    --notion-pill-text-size: 11px;
+    --notion-pill-text-weight: 500;
+    --notion-pill-text-transform: uppercase;
+    --notion-pill-letter-spacing: 1px;
+    /* Images */
+    --image-border-radius: 0px;
+    /* Misc */
+    --divider-margin: 15px 0px;
+    --divider-opacity: .1;
+    /* Typography */
+    --text-spacing: -.1px;
+    --secondary-font: 'Inter', sans-serif;
+    --notion-text-margin: 0px 0px 0px 0px;
+    /* h1 */
+    --h1-size: 3rem;
+    --h1-weight: 500;
+    --h1-spacing: -1px;
+    --h1-margin: 0 0 15px 0;
+    --h1-line-height: 1.1;
+    /* h2 */
+    --h2-size: 2.3rem;
+    --h2-weight: 500;
+    --h2-spacing: -.5px;
+    --h2-margin: 0px 0px 10px 0px;
+    --h2-line-height: 1;
+    /* h3 */
+    --h3-size: 1.5rem;
+    --h3-weight: 500;
+    --h3-spacing: -.5px;
+    --h3-margin: .3rem 0rem;
+    --h3-line-height: 1.4;
+    /* Link */
+    --link-border-width: 0px 0px 0px 0px;
+    --link-border-style: none;
+    --link-border-color: none;
+    /* Colors */
+    /* Text */
+    --color-text-default: rgb(55, 53, 47);
+    --color-text-gray: #A5A5A5;
+    /* Background */
+    --color-bg-default: #F9F9F5;
+    /* Background Light */
+    --color-bg-gray-light: #1b1b1b;
+    --color-bg-brown-light: rgba(233, 229, 227, 0.6);
+    --color-bg-orange-light: rgba(250, 235, 221, 0.6);
+    --color-bg-yellow-light: rgba(251, 243, 219, 0.6);
+    --color-bg-green-light: rgba(221, 237, 234, 0.6);
+    --color-bg-blue-light: rgba(221, 235, 241, 0.6);
+    --color-bg-purple-light: rgba(234, 228, 242, 0.6);
+    --color-bg-pink-light: rgba(244, 223, 235, 0.6);
+    --color-bg-red-light: rgba(251, 228, 228, 0.6);
+    /* UI */
+    --color-ui-hover-bg: rgba(55, 53, 47, 0.08);
+    --color-ui-hover-bg-light: rgba(55, 53, 47, 0.03);
+    --color-card-bg: rgb(255, 255, 255);
+    --color-border-default: rgba(32, 32, 32, 1);
+}
+
+
+/* End Theme Variables*/
