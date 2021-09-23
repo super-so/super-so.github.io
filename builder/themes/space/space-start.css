@@ -68,6 +68,7 @@
     --link-border-style: none!important;
     --link-border-color: none!important;
     /* Colors */
+    --color-ui-hover-bg: #222330!important;
     --color-ui-hover-bg-light: #2E303D!important;
     --color-bg-gray-light: #1b1b1b!important;
     --color-text-gray: rgba(255, 255, 255, .7)!important;
