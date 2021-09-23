@@ -11,7 +11,7 @@ function getFolders(dir) {
         });
 }
 
-const buildThemes = (done) => {
+const build = (done) => {
     var folders = getFolders('./themes');
     if (folders.length === 0) return done();
     var tasks = folders.map(function(folder) {
@@ -30,9 +30,9 @@ const buildThemes = (done) => {
     done();
 };
 
-const watchThemes = () => {
-    gulp.watch('./themes', buildThemes);
+const watch = () => {
+    gulp.watch('./themes', build);
 }
 
-exports.buildThemes = buildThemes;
-exports.watchThemes = watchThemes;
+exports.build = build;
+exports.watch = watch;
