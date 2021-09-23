@@ -2,7 +2,7 @@
 
 :root {
     /* Layout */
-    --column-spacing: 40px;
+    --column-spacing: 40px!important;
     --max-width: 1100px;
     /* Call to actions */
     --cta-padding: 13px 14px;
@@ -69,7 +69,7 @@
     --link-border-color: none;
     /* Colors */
     /* Background */
-    --color-bg-default: #969AE2;
+    --color-bg-default: #969AE2!important;
     --color-bg-gray: rgb(71, 71, 71);
     --color-bg-brown: rgb(195, 182, 169);
     --color-bg-orange: rgb(247, 188, 144);
