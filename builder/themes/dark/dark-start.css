@@ -2,75 +2,75 @@
 
 :root {
     /* Layout */
-    --column-spacing: 40px;
-    --max-width: 1150px;
+    --column-spacing: 40px!important;
+    --max-width: 1150px!important;
     /* Navbar CTA */
-    --cta-padding: 14px 16px;
-    --cta-border-radius: 5px;
-    --cta-border: none;
-    --cta-shadow: none;
+    --cta-padding: 14px 16px!important;
+    --cta-border-radius: 5px!important;
+    --cta-border: none!important;
+    --cta-shadow: none!important;
     /* Callout */
-    --callout-padding: 20px 40px 15px 15px;
-    --callout-border: 1px solid var(--color-border-default);
-    --callout-border-radius: 10px;
-    --callout-shadow: none;
-    --callout-icon-size: 15px;
-    --callout-emoji-size: 18px;
+    --callout-padding: 20px 40px 15px 15px!important;
+    --callout-border: 1px solid var(--color-border-default)!important;
+    --callout-border-radius: 10px!important;
+    --callout-shadow: none!important;
+    --callout-icon-size: 15px!important;
+    --callout-emoji-size: 18px!important;
     /* Collections */
-    --collection-list-item-border-radius: 5px;
-    --collection-list-item-padding: 5px 0px 5px 5px;
-    --collection-gallery-gap: 30px;
-    --collection-title-text-size: 16px;
-    --collection-property-text-size: 14px;
-    --collection-card-border-radius: 10px;
-    --collection-card-padding: 20px;
-    --collection-card-border: 1px solid var(--color-border-default);
-    --collection-card-cover-size-small: 172px;
-    --collection-card-cover-size-medium: 260px;
-    --collection-card-cover-size-large: 320px;
+    --collection-list-item-border-radius: 5px!important;
+    --collection-list-item-padding: 5px 0px 5px 5px!important;
+    --collection-gallery-gap: 30px!important;
+    --collection-title-text-size: 16px!important;
+    --collection-property-text-size: 14px!important;
+    --collection-card-border-radius: 10px!important;
+    --collection-card-padding: 20px!important;
+    --collection-card-border: 1px solid var(--color-border-default)!important;
+    --collection-card-cover-size-small: 172px!important;
+    --collection-card-cover-size-medium: 260px!important;
+    --collection-card-cover-size-large: 320px!important;
     /*Pill */
-    --notion-pill-padding: 2px 5px;
-    --notion-pill-border-radius: 0px;
-    --notion-pill-text-size: 11px;
-    --notion-pill-text-weight: 500;
-    --notion-pill-text-transform: uppercase;
-    --notion-pill-letter-spacing: 1px;
+    --notion-pill-padding: 2px 5px!important;
+    --notion-pill-border-radius: 0px!important;
+    --notion-pill-text-size: 11px!important;
+    --notion-pill-text-weight: 500!important;
+    --notion-pill-text-transform: uppercase!important;
+    --notion-pill-letter-spacing: 1px!important;
     /* Images */
-    --image-border-radius: 10px;
+    --image-border-radius: 10px!important;
     /* Misc */
-    --divider-margin: 15px 0px;
-    --divider-opacity: .8;
+    --divider-margin: 15px 0px!important;
+    --divider-opacity: .8!important;
     /* Typography */
-    --text-spacing: -.1px;
-    --secondary-font: 'Inter', sans-serif;
-    --notion-text-margin: 0px 0px 0px 0px;
+    --text-spacing: -.1px!important;
+    --secondary-font: 'Inter', sans-serif!important;
+    --notion-text-margin: 0px 0px 0px 0px!important;
     /* h1 */
-    --h1-size: 2.6rem;
-    --h1-weight: 500;
-    --h1-spacing: -1px;
-    --h1-margin: 15px 0px 20px 0px;
-    --h1-line-height: 1.2;
+    --h1-size: 2.6rem!important;
+    --h1-weight: 500!important;
+    --h1-spacing: -1px!important;
+    --h1-margin: 15px 0px 20px 0px!important;
+    --h1-line-height: 1.2!important;
     /* h2 */
-    --h2-size: 2rem;
-    --h2-weight: 500;
-    --h2-spacing: -.5px;
-    --h2-margin: 10px 0px 20px 0px;
-    --h2-line-height: 1.3;
+    --h2-size: 2rem!important;
+    --h2-weight: 500!important;
+    --h2-spacing: -.5px!important;
+    --h2-margin: 10px 0px 20px 0px!important;
+    --h2-line-height: 1.3!important;
     /* h3 */
-    --h3-size: 1.5rem;
-    --h3-weight: 500;
-    --h3-spacing: -.5px;
-    --h3-margin: 10px 0px 5px 0px;
-    --h3-line-height: 1.2;
+    --h3-size: 1.5rem!important;
+    --h3-weight: 500!important;
+    --h3-spacing: -.5px!important;
+    --h3-margin: 10px 0px 5px 0px!important;
+    --h3-line-height: 1.2!important;
     /* Link */
-    --link-border-width: 0px 0px 0px 0px;
-    --link-border-style: none;
-    --link-border-color: none;
+    --link-border-width: 0px 0px 0px 0px!important;
+    --link-border-style: none!important;
+    --link-border-color: none!important;
     /* Colors */
-    --color-text-default-light: rgba(55, 53, 47, 0.6);
-    --color-text-gray: #A5A5A5;
-    --color-text-yellow: #f0bd66;
-    --color-bg-gray-light: #1b1b1b;
+    --color-text-default-light: rgba(55, 53, 47, 0.6)!important;
+    --color-text-gray: #A5A5A5!important;
+    --color-text-yellow: #f0bd66!important;
+    --color-bg-gray-light: #1b1b1b!important;
 }
 
 
