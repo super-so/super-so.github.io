@@ -3,6 +3,10 @@
 
 /* Start Theme overwrites */
 
+body {
+    background: #2A2B37!important;
+}
+
 .bg-gray-light {
     color: white!important;
 }
