@@ -1,0 +1,97 @@
+/* Start Theme Variables */
+
+:root {
+    /* Layout */
+    --column-spacing: 40px;
+    --max-width: 1100px;
+    /* Navbar CTA */
+    --cta-padding: 14px 16px;
+    --cta-border-radius: 5px;
+    --cta-border: none;
+    --cta-shadow: none;
+    /* Callout */
+    --callout-padding: 20px 40px 20px 15px;
+    --callout-border: 1px solid var(--color-border-default);
+    --callout-border-radius: 5px;
+    --callout-shadow: 2.0px 8.1px 20.1px hsl(0deg 0% 0% / 0.03);
+    --callout-icon-size: 18px;
+    --callout-emoji-size: 18px;
+    /* Collections */
+    --collection-list-item-border-radius: 0px;
+    --collection-list-item-padding: 5px 0px 5px 5px;
+    --collection-gallery-gap: 30px;
+    --collection-title-text-size: 16px;
+    --collection-property-text-size: 14px;
+    --collection-card-border-radius: 0px;
+    --collection-card-padding: 20px;
+    --collection-card-border: 1px solid var(--color-border-default);
+    --collection-card-cover-size-small: 172px;
+    --collection-card-cover-size-medium: 260px;
+    --collection-card-cover-size-large: 320px;
+    /* Pill */
+    --notion-pill-padding: 2px 5px;
+    --notion-pill-border-radius: 0px;
+    --notion-pill-text-size: 11px;
+    --notion-pill-text-weight: 500;
+    --notion-pill-text-transform: uppercase;
+    --notion-pill-letter-spacing: 1px;
+    /* Images */
+    --image-border-radius: 0px;
+    /* Misc */
+    --divider-margin: 15px 0px;
+    --divider-opacity: .8;
+    /* Typography */
+    --text-spacing: -.1px;
+    --secondary-font: 'Inter', sans-serif;
+    --notion-text-margin: 0px 0px 5px 0px;
+    /* h1 */
+    --h1-size: 2.7rem;
+    --h1-weight: 500;
+    --h1-spacing: -1px;
+    --h1-margin: 0 0 10px 0;
+    --h1-line-height: 1.2;
+    /* h2 */
+    --h2-size: 2.2rem;
+    --h2-weight: 500;
+    --h2-spacing: -.5px;
+    --h2-margin: 10px 0px 10px 0px;
+    --h2-line-height: 1.2;
+    /* h3 */
+    --h3-size: 1.5rem;
+    --h3-weight: 500;
+    --h3-spacing: -.5px;
+    --h3-margin: 10px 0px 5px 0px;
+    --h3-line-height: 1.4;
+    /* Link */
+    --link-border-width: 0px 0px 0px 0px;
+    --link-border-style: none;
+    --link-border-color: none;
+    /* Colors */
+    /* Text */
+    --color-text-default: rgb(55, 53, 47);
+    --color-text-gray: #A5A5A5;
+    /* Background */
+    --color-bg-default: #fbfbfb;
+    --color-bg-gray: rgb(235, 236, 237);
+    --color-bg-brown: rgb(233, 229, 227);
+    --color-bg-orange: rgb(250, 235, 221);
+    --color-bg-yellow: rgb(251, 243, 219);
+    --color-bg-green: rgb(221, 237, 234);
+    --color-bg-blue: rgb(221, 235, 241);
+    --color-bg-purple: rgb(234, 228, 242);
+    --color-bg-pink: rgb(244, 223, 235);
+    --color-bg-red: rgb(251, 228, 228);
+    /* Background Light */
+    --color-bg-gray-light: #1b1b1b;
+    /* UI */
+    --color-ui-hover-bg: rgba(55, 53, 47, 0.08);
+    --color-ui-hover-bg-light: rgba(55, 53, 47, 0.03);
+    --color-border-default: rgba(32, 32, 32, 0.1);
+    --color-border-dark: rgba(55, 53, 47, 0.16);
+}
+
+
+/* End Theme Variables*/
+
+
+/* Start Builder Base */

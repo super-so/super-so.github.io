@@ -1,0 +1,84 @@
+/* Start Theme Variables */
+
+:root {
+    /* Layout */
+    --column-spacing: 40px;
+    --max-width: 1150px;
+    /* Navbar CTA */
+    --cta-padding: 14px 20px;
+    --cta-border-radius: 10px;
+    --cta-border: none;
+    --cta-shadow: none;
+    /* Callout */
+    --callout-padding: 20px 40px 15px 20px;
+    --callout-border: none;
+    --callout-border-radius: 10px;
+    --callout-shadow: 8.6px 6px 10px rgba(0, 0, 0, 0.07), 69px 48px 80px rgba(0, 0, 0, 0.14)!important;
+    --callout-icon-size: 15px;
+    --callout-emoji-size: 18px;
+    /* Collections */
+    --collection-list-item-border-radius: 0px;
+    --collection-list-item-padding: 5px 0px 5px 5px;
+    --collection-gallery-gap: 30px;
+    --collection-title-text-size: 16px;
+    --collection-property-text-size: 14px;
+    --color-card-bg: #222330;
+    --collection-card-border-radius: 5px;
+    --collection-card-padding: 20px;
+    --collection-card-border: none;
+    --collection-card-cover-size-small: 172px;
+    --collection-card-cover-size-medium: 260px;
+    --collection-card-cover-size-large: 320px;
+    /*Pill */
+    --notion-pill-padding: 2px 5px;
+    --notion-pill-border-radius: 0px;
+    --notion-pill-text-size: 11px;
+    --notion-pill-text-weight: 500;
+    --notion-pill-text-transform: uppercase;
+    --notion-pill-letter-spacing: 1px;
+    /* Images */
+    --image-border-radius: 10px;
+    /* Misc */
+    --divider-margin: 15px 0px;
+    --divider-opacity: .8;
+    /* Typography */
+    --text-spacing: 0px;
+    --secondary-font: 'Inter', sans-serif;
+    --notion-text-margin: 0px 0px 0px 0px;
+    /* h1 */
+    --h1-size: 2.6rem;
+    --h1-weight: 500;
+    --h1-spacing: -2px;
+    --h1-margin: 10px 0px 15px 0px;
+    --h1-line-height: 1.1;
+    /* h2 */
+    --h2-size: 1.8rem;
+    --h2-weight: 500;
+    --h2-spacing: -.5px;
+    --h2-margin: 10px 0px 10px 0px;
+    --h2-line-height: 1.2;
+    /* h3 */
+    --h3-size: 1.4rem;
+    --h3-weight: 500;
+    --h3-spacing: -1px;
+    --h3-margin: 5px 0px 5px 0px;
+    --h3-line-height: 1.4;
+    /* Link */
+    --link-border-width: 0px 0px 0px 0px;
+    --link-border-style: none;
+    --link-border-color: none;
+    /* Colors */
+    --color-ui-hover-bg-light: #2E303D;
+    --color-bg-gray-light: #1b1b1b;
+    --color-text-gray: rgba(255, 255, 255, .7);
+    --color-text-yellow: #f0bd66;
+    --color-text-green: #5bd4c1;
+    --color-text-blue: #28D4D8;
+    --color-bg-default: #2A2B37;
+}
+
+
+/* End Theme Variables*/
+
+
+/* Start Builder Base */

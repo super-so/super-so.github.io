@@ -1,0 +1,17 @@
+/* End  Builder Base */
+
+
+/* Start Theme overwrites */
+
+p.notion-text__content,
+.notion-bulleted-list,
+.notion-numbered-list {
+    font-family: var(--secondary-font)!important;
+}
+
+.bg-gray-light {
+    color: white!important;
+}
+
+
+/* End Theme overwrites */

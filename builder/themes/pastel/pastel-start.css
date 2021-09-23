@@ -1,0 +1,127 @@
+/* Start Theme Variables */
+
+:root {
+    /* Layout */
+    --column-spacing: 40px;
+    --max-width: 1100px;
+    /* Call to actions */
+    --cta-padding: 13px 14px;
+    --cta-border-radius: 4px;
+    --cta-border: none;
+    --cta-shadow: none;
+    /* Callout */
+    --callout-padding: 15px 20px 15px 15px;
+    --callout-border: 1px solid var(--color-border-default);
+    --callout-border-radius: 4px;
+    --callout-shadow: none;
+    --callout-icon-size: 20px;
+    --callout-emoji-size: 18px;
+    /* Collections */
+    --collection-list-item-border-radius: 0px;
+    --collection-list-item-padding: 5px 0px 5px 5px;
+    --collection-gallery-gap: 30px;
+    --collection-title-text-size: 16px;
+    --collection-property-text-size: 14px;
+    --color-card-bg: transparent;
+    --collection-card-border-radius: 0px;
+    --collection-card-padding: 20px;
+    --collection-card-border: 1px solid var(--color-border-default);
+    --collection-card-cover-size-small: 172px;
+    --collection-card-cover-size-medium: 260px;
+    --collection-card-cover-size-large: 320px;
+    /*Pill */
+    --notion-pill-padding: 2px 5px;
+    --notion-pill-border-radius: 0px;
+    --notion-pill-text-size: 11px;
+    --notion-pill-text-weight: 500;
+    --notion-pill-text-transform: uppercase;
+    --notion-pill-letter-spacing: 1px;
+    /* Images */
+    --image-border-radius: 10px;
+    /* Misc */
+    --divider-margin: 15px 0px;
+    --divider-opacity: 1;
+    /* Typography */
+    --text-spacing: -.1px;
+    --secondary-font: 'Inter', sans-serif;
+    --notion-text-margin: 0px 0px 0px 0px;
+    /* h1 */
+    --h1-size: 3em;
+    --h1-weight: 500;
+    --h1-spacing: -1px;
+    --h1-margin: 0px 0px 15px 0px;
+    --h1-line-height: 1.1;
+    /* h2 */
+    --h2-size: 2.2rem;
+    --h2-weight: 500;
+    --h2-spacing: -.5px;
+    --h2-margin: 10px 0px 20px 0px;
+    --h2-line-height: 1.2;
+    /* h3 */
+    --h3-size: 1.5rem;
+    --h3-weight: 500;
+    --h3-spacing: -.5px;
+    --h3-margin: 5px 0px 10px 0px;
+    --h3-line-height: 1.4;
+    /* Link */
+    --link-border-width: 0px 0px 0px 0px;
+    --link-border-style: none;
+    --link-border-color: none;
+    /* Colors */
+    /* Background */
+    --color-bg-default: #969AE2;
+    --color-bg-gray: rgb(71, 71, 71);
+    --color-bg-brown: rgb(195, 182, 169);
+    --color-bg-orange: rgb(247, 188, 144);
+    --color-bg-yellow: rgb(247, 219, 144);
+    --color-bg-green: rgb(131, 206, 166);
+    --color-bg-blue: rgb(166, 210, 250);
+    --color-bg-purple: rgb(113, 110, 239);
+    --color-bg-pink: rgb(228, 166, 250);
+    --color-bg-red: rgb(250, 166, 166);
+    /* Background Light */
+    --color-bg-gray-light: rgba(71, 71, 71, 0.6);
+    --color-bg-brown-light: rgba(195, 182, 169, 0.6);
+    --color-bg-orange-light: rgba(247, 188, 144, 0.6);
+    --color-bg-yellow-light: rgba(247, 219, 144, 0.6);
+    --color-bg-green-light: rgba(131, 206, 166, 0.6);
+    --color-bg-blue-light: rgba(166, 210, 250, 0.6);
+    --color-bg-purple-light: rgba(113, 110, 239, 0.6);
+    --color-bg-pink-light: rgba(228, 166, 250, 0.6);
+    --color-bg-red-light: rgba(250, 166, 166, 0.6);
+    /* Text */
+    --color-text-default: white;
+    --color-text-default-light: rgba(55, 53, 47, 0.6);
+    --color-text-brown: rgba(220, 199, 158, 1);
+    --color-text-orange: rgba(255, 190, 158, 1);
+    --color-text-yellow: rgba(255, 221, 147, 1);
+    --color-text-green: rgba(144, 230, 201, 1);
+    --color-text-blue: rgba(145, 222, 255, 1);
+    --color-text-purple: rgba(97, 102, 189, 1);
+    --color-text-pink: rgba(255, 180, 239, 1);
+    --color-text-red: rgba(255, 158, 158, 1);
+    --color-text-gray: rgba(255, 255, 255, .7);
+    /* Pill */
+    --color-pill-purple: rgba(225, 227, 253, 0.36);
+    --color-pill-red: rgba(250, 166, 166, 0.83);
+    --color-pill-green: rgba(131, 206, 166, 0.83);
+    --color-pill-blue: rgba(166, 210, 250, 0.83);
+    --color-pill-pink: rgba(228, 166, 250, 0.83);
+    --color-pill-yellow: rgba(247, 219, 144, 0.83);
+    --color-pill-orange: rgba(247, 188, 144, 0.83);
+    --color-pill-brown: rgba(195, 182, 169, 0.83);
+    --color-pill-gray: rgba(115, 115, 115, 0.83);
+    /* UI */
+    --color-ui-hover-bg: rgba(55, 53, 47, 0.08);
+    --color-ui-hover-bg-light: rgba(55, 53, 47, 0.03);
+    --color-card-bg: rgb(255, 255, 255);
+    --color-accent-bg: rgb(46, 170, 220);
+    --color-border-default: rgba(233, 233, 233, .3);
+    --color-border-dark: rgba(55, 53, 47, 0.16);
+}
+
+
+/* End Theme Variables*/
+
+
+/* Start Builder Base */
