@@ -17,7 +17,7 @@
     --callout-icon-size: 15px!important;
     --callout-emoji-size: 18px!important;
     /* Collections */
-    --collection-list-item-border-radius: 0px!important;
+    --collection-list-item-border-radius: 5px!important;
     --collection-list-item-padding: 5px 0px 5px 5px!important;
     --collection-gallery-gap: 30px!important;
     --collection-title-text-size: 16px!important;
