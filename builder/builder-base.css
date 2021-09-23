@@ -1,5 +1,6 @@
 body {
     letter-spacing: var(--text-spacing)!important;
+    background: var(--color-bg-default)!important;
 }
 
 
