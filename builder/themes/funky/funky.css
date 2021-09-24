@@ -123,6 +123,9 @@
 
 /* End Theme Variables*/
 
+
+/* Start Theme overwrites */
+
 .notion-link {
     opacity: 1!important;
 }
@@ -130,6 +133,9 @@
 .notion-link:hover {
     opacity: .7!important;
 }
+
+
+/* End Theme overwrites */
 
 
 /* Start Builder Base */

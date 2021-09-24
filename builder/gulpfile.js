@@ -16,9 +16,9 @@ const build = (done) => {
     if (folders.length === 0) return done();
     var tasks = folders.map(function(folder) {
         return gulp.src([
-                './themes/' + folder + '/*-start.css',
+                './themes/' + folder + '/*.css',
                 './builder-base.css',
-                './themes/' + folder + '/*-end.css',
+                // './themes/' + folder + '/*-end.css',
             ], { base: './themes' })
             // concat into foldername.js
             .pipe(concat(folder + '.min.css'))

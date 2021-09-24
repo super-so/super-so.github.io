@@ -94,10 +94,20 @@
 /* End Theme Variables*/
 
 
+/* Start Theme overwrites */
+
+.bg-gray-light {
+    color: white!important;
+}
+
+
+/* End Theme overwrites */
+
+
+/* ! DELETE EVERYTHING BELOW BEFORE PUSHING TO REPO */
+
+
 /* Start Builder Base  */
-
-
-/* ! DELETE BELOW / SPLIT HERE */
 
 body {
     letter-spacing: var(--text-spacing)!important;
@@ -370,16 +380,3 @@ h3.notion-heading {
 
 
 /* End Builder Base  */
-
-
-/* ! DELETE ABOVE / SPLIT HERE */
-
-
-/* Start Theme overwrites */
-
-.bg-gray-light {
-    color: white;
-}
-
-
-/* End Theme overwrites */

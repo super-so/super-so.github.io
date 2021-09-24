@@ -8,8 +8,8 @@ Inside the root folder is the file 'builder-base.css' this is a theme dependency
 # Creating a new theme
 1. Copy the contents of 'theme-template.css' and paste into the CSS code tab on a Super site
 2. Create a theme using the live preview on Super
-3. Once finished, use the comments within the template file to split the file into two files naming them 'theme-name-start.css' and 'theme-name-end.css' respectively
+3. Once finished, use the comments within the template file to delete the builder-base styles
 4. Create a new folder in '/builder/theme' and move the files into the folder
 5. Run command 'gulp build' in the terminal to combine and minify the theme files
-6. This should output a new file in the folder called 'theme-name.css'
+6. This should output a new file in the folder called 'theme-name.min.css'
 7. Push to the repo

@@ -93,9 +93,15 @@
 
 /* End Theme Variables*/
 
+
+/* Start Theme overwrites */
+
 .bg-gray-light {
     color: white!important;
 }
+
+
+/* End Theme overwrites */
 
 
 /* Start Builder Base */

@@ -81,6 +81,9 @@
 
 /* End Theme Variables*/
 
+
+/* Start Theme overwrites */
+
 .bg-gray-light {
     color: white!important;
 }
@@ -158,6 +161,9 @@ p.notion-text__content,
 .bg-brown-light span {
     color: #2b2b2b!important;
 }
+
+
+/* End Theme overwrites */
 
 
 /* Start Builder Base */

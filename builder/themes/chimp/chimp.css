@@ -93,6 +93,9 @@
 
 /* End Theme Variables*/
 
+
+/* Start Theme overwrites */
+
 p.notion-text__content,
 .notion-bulleted-list,
 .notion-numbered-list {
@@ -102,6 +105,9 @@ p.notion-text__content,
 .bg-gray-light {
     color: white!important;
 }
+
+
+/* End Theme overwrites */
 
 
 /* Start Builder Base */
