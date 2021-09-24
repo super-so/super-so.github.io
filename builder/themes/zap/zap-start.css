@@ -93,5 +93,9 @@
 
 /* End Theme Variables*/
 
+.bg-gray-light {
+    color: white!important;
+}
+
 
 /* Start Builder Base */

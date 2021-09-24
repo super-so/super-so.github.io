@@ -3,11 +3,5 @@
 
 /* Start Theme overwrites */
 
-p.notion-text__content,
-.notion-bulleted-list,
-.notion-numbered-list {
-    font-family: var(--secondary-font)!important;
-}
-
 
 /* End Theme overwrites */

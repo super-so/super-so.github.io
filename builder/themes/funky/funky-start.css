@@ -123,5 +123,13 @@
 
 /* End Theme Variables*/
 
+.notion-link {
+    opacity: 1!important;
+}
+
+.notion-link:hover {
+    opacity: .7!important;
+}
+
 
 /* Start Builder Base */
