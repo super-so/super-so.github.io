@@ -68,6 +68,9 @@
     --link-border-style: none!important;
     --link-border-color: none!important;
     /* Colors */
+    --color-text-default: #ffffff!important;
+    --color-border-default: #454b4e!important;
+    --color-bg-default: #2A2B37!important;
     --color-ui-hover-bg: #222330!important;
     --color-ui-hover-bg-light: #2E303D!important;
     --color-bg-gray-light: #1b1b1b!important;
@@ -75,7 +78,6 @@
     --color-text-yellow: #f0bd66!important;
     --color-text-green: #5bd4c1!important;
     --color-text-blue: #28D4D8!important;
-    --color-bg-default: #2A2B37!important;
 }
 
 

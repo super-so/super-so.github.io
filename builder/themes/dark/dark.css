@@ -67,6 +67,9 @@
     --link-border-style: none!important;
     --link-border-color: none!important;
     /* Colors */
+    --color-bg-default: #2f3437!important;
+    --color-text-default: #ffffff!important;
+    --color-border-default: #454b4e!important;
     --color-text-default-light: rgba(55, 53, 47, 0.6)!important;
     --color-text-gray: #A5A5A5!important;
     --color-text-yellow: #f0bd66!important;
