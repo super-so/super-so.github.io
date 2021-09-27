@@ -149,6 +149,10 @@ h3.notion-heading {
     background: var(--color-card)!important;
 }
 
+.notion-collection-card:hover {
+    background: var(--color-ui-hover-bg-light)!important;
+}
+
 .notion-collection-gallery {
     grid-gap: var(--collection-gallery-gap)!important;
 }

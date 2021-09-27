@@ -114,7 +114,6 @@
     /* UI */
     --color-ui-hover-bg: rgba(55, 53, 47, 0.08)!important;
     --color-ui-hover-bg-light: rgba(55, 53, 47, 0.03)!important;
-    --color-card-bg: transparent!important;
     --color-accent-bg: rgb(46, 170, 220)!important;
     --color-border-default: rgba(233, 233, 233, .3)!important;
     --color-border-dark: rgba(55, 53, 47, 0.16)!important;
