@@ -3,6 +3,7 @@ const path = require('path');
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const minifyCss = require('gulp-clean-css');
+const del = require('del');
 
 function getFolders(dir) {
     return fs.readdirSync(dir)
@@ -33,5 +34,11 @@ const watch = () => {
     gulp.watch('./themes', build);
 }
 
+const clean = () => {
+    console.log('Deleting all "min.css" files')
+    return del(['themes/*/*.min.css']);
+}
+
 exports.build = build;
+exports.clean = clean;
 exports.watch = watch;
