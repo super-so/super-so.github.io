@@ -46,11 +46,11 @@
     --secondary-font: 'Inter', sans-serif!important;
     --notion-text-margin: 0px 0px 0px 0px!important;
     /* h1 */
-    --h1-size: 3.3em!important;
+    --h1-size: 3em!important;
     --h1-weight: 500!important;
     --h1-spacing: -1px!important;
     --h1-margin: 10px 0px 15px 0px!important;
-    --h1-line-height: 1.3!important;
+    --h1-line-height: 1.2!important;
     /* h2 */
     --h2-size: 2.2rem!important;
     --h2-weight: 500!important;
