@@ -146,6 +146,7 @@ h3.notion-heading {
     border-radius: var(--collection-card-border-radius)!important;
     border: var(--collection-card-border)!important;
     cursor: pointer!important;
+    background: var(--color-card)!important;
 }
 
 .notion-collection-gallery {
