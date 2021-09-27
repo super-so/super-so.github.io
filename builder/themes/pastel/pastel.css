@@ -23,7 +23,7 @@
     --collection-title-text-size: 16px!important;
     --collection-property-text-size: 14px!important;
     --color-card-bg: transparent!important;
-    --collection-card-border-radius: 0px!important;
+    --collection-card-border-radius: 5px!important;
     --collection-card-padding: 20px!important;
     --collection-card-border: 1px solid var(--color-border-default)!important;
     --collection-card-cover-size-small: 172px!important;
@@ -114,7 +114,7 @@
     /* UI */
     --color-ui-hover-bg: rgba(55, 53, 47, 0.08)!important;
     --color-ui-hover-bg-light: rgba(55, 53, 47, 0.03)!important;
-    --color-card-bg: rgb(255, 255, 255)!important;
+    --color-card-bg: transparent!important;
     --color-accent-bg: rgb(46, 170, 220)!important;
     --color-border-default: rgba(233, 233, 233, .3)!important;
     --color-border-dark: rgba(55, 53, 47, 0.16)!important;
