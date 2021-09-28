@@ -7,7 +7,8 @@
 #page-icons .notion-header__title,
 #page-icons-light .notion-header__title,
 #page-docs .notion-header__title,
-#page-pulse .notion-header__title {
+#page-pulse .notion-header__title,
+#page-builder .notion-header__title {
     color: var(--color-grey) !important;
     letter-spacing: -1px !important;
     position: absolute !important;
@@ -19,6 +20,8 @@
 .notion-header__content {
     padding-right: var(--padding-right) !important;
     padding-left: var(--padding-left) !important;
+    max-width: 1600px !important;
+    margin: 0 auto !important;
 }
 
 .notion-header__icon-wrapper,
@@ -35,7 +38,8 @@
 #page-icons .notion-header__title-wrapper,
 #page-icons-light .notion-header__title-wrapper,
 #page-docs .notion-header__title-wrapper,
-#page-pulse .notion-header__title-wrapper {
+#page-pulse .notion-header__title-wrapper,
+#page-builder .notion-header__title-wrapper {
     margin-top: 168px !important;
 }
 
@@ -55,6 +59,7 @@
     #page-icons-light .notion-header__title-wrapper,
     #page-docs .notion-header__title-wrapper,
     #page-pulse .notion-header__title-wrapper,
+    #page-builder .notion-header__title-wrapper,
     .notion-header__title-wrapper  {
         margin-top: 140px !important;
     }
