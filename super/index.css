@@ -278,6 +278,11 @@
     display: none !important;
 }
 
+.super-navbar__content {
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+}
+
 .notion-pill {
     letter-spacing: -0.3px !important;
     border-radius: 8px !important;
