@@ -22,7 +22,7 @@
     --collection-gallery-gap: 30px!important;
     --collection-title-text-size: 16px!important;
     --collection-property-text-size: 14px!important;
-    --collection-card-border-radius: 0px!important;
+    --collection-card-border-radius: 5px!important;
     --collection-card-padding: 20px!important;
     --collection-card-border: 1px solid var(--color-border-default)!important;
     --collection-card-cover-size-small: 172px!important;
