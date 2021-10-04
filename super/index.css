@@ -987,6 +987,12 @@ strong {
     transform: none !important;
 }
 
+#page-careers .notion-collection__header {
+    color: var(--color-grey) !important;
+    font-weight: 700 !important;
+    display: block !important;
+}
+
 #page-docs .notion-page {
     padding: 0 !important;
     margin: 0 !important;
