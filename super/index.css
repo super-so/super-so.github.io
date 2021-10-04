@@ -213,8 +213,12 @@
 .notion-header__content {
     padding-right: var(--padding-right) !important;
     padding-left: var(--padding-left) !important;
-    /* max-width: 1600px !important; */
+    max-width: 1600px !important;
     margin: 0 auto !important;
+}
+
+.notion-header__content.max-width {
+    max-width: 900px !important;
 }
 
 .notion-header__icon-wrapper,
@@ -282,7 +286,7 @@
 }
 
 .super-navbar__content {
-    /* max-width: 1400px !important; */
+    max-width: 1400px !important;
     margin: 0 auto !important;
 }
 
@@ -726,8 +730,12 @@
     padding-right: var(--padding-right) !important;
     padding-left: var(--padding-left) !important;
     padding-bottom: 68px !important;
-    /* max-width: 1600px !important; */
+    max-width: 1600px !important;
     margin: 0 auto !important;
+}
+
+.max-width {
+    max-width: 900px !important;
 }
 
 @media (max-width: 600px) {
