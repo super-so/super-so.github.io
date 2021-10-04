@@ -200,7 +200,8 @@
 #page-icons-light .notion-header__title,
 #page-docs .notion-header__title,
 #page-pulse .notion-header__title,
-#page-builder .notion-header__title {
+#page-builder .notion-header__title,
+#page-careers .notion-header__title {
     color: var(--color-grey) !important;
     letter-spacing: -1px !important;
     position: absolute !important;
@@ -231,7 +232,8 @@
 #page-icons-light .notion-header__title-wrapper,
 #page-docs .notion-header__title-wrapper,
 #page-pulse .notion-header__title-wrapper,
-#page-builder .notion-header__title-wrapper {
+#page-builder .notion-header__title-wrapper,
+#page-careers .notion-header__title-wrapper {
     margin-top: 168px !important;
 }
 
@@ -252,6 +254,7 @@
     #page-docs .notion-header__title-wrapper,
     #page-pulse .notion-header__title-wrapper,
     #page-builder .notion-header__title-wrapper,
+    #page-careers .notion-header__title-wrapper,
     .notion-header__title-wrapper  {
         margin-top: 140px !important;
     }
