@@ -995,6 +995,7 @@ strong {
     transform: none !important;
 }
 
+/* 
 #page-builder #block-69fd1e5b8a4e431587680b970fd385a7 {
     justify-content: center!important;
 }
@@ -1018,7 +1019,7 @@ strong {
     #page-builder #block-69fd1e5b8a4e431587680b970fd385a7 {
         margin-top: 40px!important;
     }
-}
+} */
 
 #page-careers .notion-collection__header {
     color: var(--color-grey) !important;
