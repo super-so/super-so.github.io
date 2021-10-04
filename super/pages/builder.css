@@ -1,5 +1,30 @@
 #page-builder .collection-99fa2cb2bd2744fdb066e1e62e1af6ab .notion-collection-card,
 #page-builder .collection-99fa2cb2bd2744fdb066e1e62e1af6ab .notion-collection-card:hover {
-    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12) !important;
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.12) !important;
     transform: none !important;
+}
+
+#page-builder #block-69fd1e5b8a4e431587680b970fd385a7 {
+    justify-content: center!important;
+}
+
+@media all and (max-width: 1160px) {
+    #page-builder #block-4a338f0929cc435587c6f05169b41e46 {
+        width: 100%!important;
+        max-width: 700px!important;
+    }
+    #page-builder #block-69fd1e5b8a4e431587680b970fd385a7 {
+        margin-top: 30px!important;
+        width: 100%!important;
+        margin-inline-start: 0px!important;
+    }
+}
+
+@media all and (max-width: 976px) {
+    #page-builder #block-4a338f0929cc435587c6f05169b41e46 {
+        width: 100%!important;
+    }
+    #page-builder #block-69fd1e5b8a4e431587680b970fd385a7 {
+        margin-top: 40px!important;
+    }
 }
