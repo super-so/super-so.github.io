@@ -3,3 +3,8 @@
     font-weight: 700 !important;
     display: block !important;
 }
+
+#page-careers .notion-image img {
+    border-radius: 0 !important;
+    box-shadow: nonw !important;
+}

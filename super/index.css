@@ -1026,6 +1026,11 @@ strong {
     display: block !important;
 }
 
+#page-careers .notion-image img {
+    border-radius: 0 !important;
+    box-shadow: nonw !important;
+}
+
 #page-docs .notion-page {
     padding: 0 !important;
     margin: 0 !important;
