@@ -282,7 +282,7 @@
 }
 
 .super-navbar__content {
-    max-width: 1400px !important;
+    /* max-width: 1400px !important; */
     margin: 0 auto !important;
 }
 
