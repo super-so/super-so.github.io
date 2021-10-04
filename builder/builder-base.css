@@ -251,6 +251,13 @@ h3.notion-heading {
 }
 
 
+/* Tally Forms */
+
+iframe {
+    background: transparent!important;
+}
+
+
 /* Media Queries */
 
 @media all and (max-width: 764px) {
