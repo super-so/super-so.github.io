@@ -2,6 +2,10 @@ body {
     letter-spacing: var(--text-spacing)!important;
 }
 
+.super-content {
+    padding-bottom: 10vh!important;
+}
+
 
 /* Max Width */
 
