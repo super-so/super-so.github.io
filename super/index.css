@@ -881,6 +881,7 @@ img {
     --color-pill-yellow: rgba(240,189,102,0.2) !important;
     --color-pill-green: rgba(89,232,187,0.2) !important;
     --color-pill-default: var(--color-off-white) !important;
+    --color-pill-gray: var(--color-off-white) !important;
 
     --transition: all .3s cubic-bezier(.4,0,.2,1) !important;
     --column-spacing: 60px !important;
@@ -1021,11 +1022,11 @@ strong {
     }
 } */
 
-#page-careers .notion-collection__header {
+/* #page-careers .notion-collection__header {
     color: var(--color-grey) !important;
     font-weight: 700 !important;
     display: block !important;
-}
+} */
 
 #block-0f6a2e281f6e4447a9030a2fc8c340a3 img,
 #block-f79014381f504057824d8a9ac9547398 img {
