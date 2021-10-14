@@ -6,3 +6,11 @@
     border: none !important;
     padding: 0 !important;
 }
+
+@media (max-width: 600px) {
+
+    .notion-quote {
+        font-size: 22px !important;
+    }
+
+}

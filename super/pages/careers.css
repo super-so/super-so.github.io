@@ -13,3 +13,21 @@
     margin-inline-end: 0 !important;
     pointer-events: none !important;
 }
+
+
+@media (max-width: 600px) {
+    
+    #page-careers .notion-collection-list__item {
+        align-items: flex-start !important;
+        flex-direction: column !important;
+    }
+
+    #page-careers .notion-pill {
+        margin: 20px 0 0 0 !important;
+    }
+
+    #page-careers .notion-pill.first {
+        margin: 20px 12px 0 0 !important;
+    }
+
+}

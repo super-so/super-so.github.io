@@ -307,6 +307,14 @@
     padding: 0 !important;
 }
 
+@media (max-width: 600px) {
+
+    .notion-quote {
+        font-size: 22px !important;
+    }
+
+}
+
 .notion-toggle {
     box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1) !important;
     -webkit-user-select: none !important;
@@ -1036,6 +1044,24 @@ strong {
     margin: 4px 0 4px 10px !important;
     margin-inline-end: 0 !important;
     pointer-events: none !important;
+}
+
+
+@media (max-width: 600px) {
+    
+    #page-careers .notion-collection-list__item {
+        align-items: flex-start !important;
+        flex-direction: column !important;
+    }
+
+    #page-careers .notion-pill {
+        margin: 20px 0 0 0 !important;
+    }
+
+    #page-careers .notion-pill.first {
+        margin: 20px 12px 0 0 !important;
+    }
+
 }
 
 #page-docs .notion-page {
