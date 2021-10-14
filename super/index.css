@@ -344,9 +344,10 @@
     color: var(--color-black) !important;
 }
 
+#page-icons-light .super-navbar { background: rgba(24, 25, 27, 1) !important; }
 #page-icons-light .super-navbar.scrolled { background: rgba(24, 25, 27, 0.85) !important; }
 #page-icons-light .super-navbar__item:hover { color: var(--color-white) !important; }
-#page-icons-light .super-navbar__button { background: #212224 !important; }
+#page-icons-light .super-navbar__cta { background: #212224 !important; }
 
 .notion-pill {
     letter-spacing: -0.3px !important;
