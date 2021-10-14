@@ -11,6 +11,7 @@
 .super-navbar__content {
     max-width: 1400px !important;
     margin: 0 auto !important;
+    padding: 0 !important;
 }
 
 .super-navbar__item:hover,
@@ -45,6 +46,11 @@
 .super-navbar__logo {
     filter: drop-shadow(0 4px 8px rgba(240, 189, 102, 0.2)) !important;
     transition: var(--transition) !important;
+    padding: 0 !important;
+}
+
+.super-navbar__actions {
+    padding: 0 0 0 16px !important;
 }
   
 .super-navbar__logo-wrapper:hover .super-navbar__logo {
