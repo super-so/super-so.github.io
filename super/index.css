@@ -1022,12 +1022,6 @@ strong {
     }
 } */
 
-/* #page-careers .notion-collection__header {
-    color: var(--color-grey) !important;
-    font-weight: 700 !important;
-    display: block !important;
-} */
-
 #block-0f6a2e281f6e4447a9030a2fc8c340a3 img,
 #block-f79014381f504057824d8a9ac9547398 img {
     border-radius: 0 !important;
@@ -1041,6 +1035,7 @@ strong {
 #page-careers .notion-pill {
     margin: 4px 0 4px 10px !important;
     margin-inline-end: 0 !important;
+    pointer-events: none !important;
 }
 
 #page-docs .notion-page {
