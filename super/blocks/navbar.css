@@ -3,6 +3,7 @@
 }
 
 .super-navbar {
+    padding: 0 var(--padding-right) 0 var(--padding-left) !important;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0) !important;
     transition: height 0.3s ease-in-out !important;
 }
@@ -25,6 +26,7 @@
 }
 
 .super-navbar__cta {
+    transition: all 0.2s ease-in-out !important;
     letter-spacing: -0.3px !important;
     padding: 12px 20px !important;
     font-weight: 500 !important;
