@@ -8,6 +8,10 @@
     top: 0 !important;
 }
 
+.notion-header__content {
+    display: none !important;
+}
+
 .notion-header__cover {
     max-height: 100% !important;
     height: 100% !important;

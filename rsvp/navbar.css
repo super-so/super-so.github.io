@@ -1,7 +1,3 @@
-.notion-header__content {
-    display: none !important;
-}
-
 .notion-navbar {
     position: fixed !important;
     display: flex !important;
