@@ -127,13 +127,13 @@ h3 {
     h2 { font-size: 22px !important; }
 
     #page-index .super-content {
-        margin: 80px 0 !important;
+        margin: 80px auto !important;
     }
 
     .super-content {
         max-width: 90% !important;
+        padding: 0 10% !important;
         width: 100% !important;
-        padding: 0 !important;
     }
 
 }
