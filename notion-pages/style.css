@@ -139,7 +139,12 @@ h3 {
         margin: 80px auto !important;
     }
 
-    .super-content,
+    .super-content {
+        padding: 0 10% 60px !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
     .notion-header__content {
         max-width: 100% !important;
         padding: 0 10% !important;
