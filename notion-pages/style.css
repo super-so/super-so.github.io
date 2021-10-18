@@ -38,6 +38,9 @@ h3 {
 #page-index {
     background: #fff !important;
 }
+#page-index .notion-header__title-wrapper {
+    display: none !important;
+}
 #page-index .super-content {
     margin: 100px auto 0 !important;
     max-width: 1280px !important;
