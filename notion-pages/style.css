@@ -5,9 +5,16 @@
     --color-text-gray: #808080 !important;
 }
 
-/* Header */
+/* Navbar */
 .notion-navbar {
     background: var(--color-bg-default) !important;
+}
+.super-navbar__item {
+    color: var(--color-text-gray) !important;
+    opacity: 1 !important;
+}
+.super-navbar__item:hover {
+    color: var(--color-text-default) !important;
 }
 
 /* Typography */
@@ -111,4 +118,22 @@ h3 {
 }
 .notion-collection-card__property:last-child {
     margin-top: 24px !important;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+
+    h1 { font-size: 42px !important; }
+    h2 { font-size: 22px !important; }
+
+    #page-index .super-content {
+        margin: 80px 0 !important;
+    }
+
+    .super-content {
+        max-width: 90% !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
 }
