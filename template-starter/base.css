@@ -1,5 +1,64 @@
 /* Template Starter Base */
 
+:root {
+   /* Colors */
+  --color-default: 55, 53, 47!important;
+  --color-white: 255, 255, 255!important;
+  --color-gray: 155, 154, 151!important;
+  --color-brown: 100, 71, 58!important;
+  --color-orange: 217, 115, 13!important;
+  --color-yellow: 223, 171, 1!important;
+  --color-green: 15, 123, 108!important;
+  --color-blue: 11, 110, 153!important;
+  --color-purple: 105, 64, 165!important;
+  --color-pink: 173, 26, 114!important;
+  --color-red: 224, 62, 62!important;
+  /* Text */
+  --color-text-default: rgb(var(--color-default))!important;
+  --color-text-default-light: rgba(var(--color-default), 0.6)!important;
+  --color-text-gray: rgb(var(--color-gray))!important;
+  --color-text-brown: rgb(var(--color-brown))!important;
+  --color-text-orange: rgb(var(--color-orange))!important;
+  --color-text-yellow: rgb(var(--color-yellow))!important;
+  --color-text-green: rgb(var(--color-green))!important;
+  --color-text-blue: rgb(var(--color-blue))!important;
+  --color-text-purple: rgb(var(--color-purple))!important;
+  --color-text-pink: rgb(var(--color-pink))!important;
+  --color-text-red: rgb(var(--color-red))!important;
+  /* Background */
+  --color-bg-default: rgba(var(--color-white))!important;
+  --color-bg-gray: rgba(var(--color-gray),.18)!important;
+  --color-bg-brown: rgba(var(--color-brown),.15)!important;
+  --color-bg-orange: rgba(var(--color-orange),.15)!important;
+  --color-bg-yellow: rgba(var(--color-yellow),.15)!important;
+  --color-bg-green: rgba(var(--color-green),.15)!important;
+  --color-bg-blue: rgba(var(--color-blue),.15)!important;
+  --color-bg-purple: rgba(var(--color-purple),.15)!important;
+  --color-bg-pink: rgba(var(--color-pink),.15)!important;
+  --color-bg-red: rgba(var(--color-red),.15)!important;
+  /* Background Light  */
+  --color-bg-gray-light: rgba(var(--color-gray),.05)!important;
+  --color-bg-brown-light: rgba(var(--color-brown),.05)!important;
+  --color-bg-orange-light: rgba(var(--color-orange),.05)!important;
+  --color-bg-yellow-light: rgba(var(--color-yellow),.05)!important;
+  --color-bg-green-light: rgba(var(--color-green),.05)!important;
+  --color-bg-blue-light: rgba(var(--color-blue),.05)!important;
+  --color-bg-purple-light: rgba(var(--color-purple),.05)!important;
+  --color-bg-pink-light: rgba(var(--color-pink),.05)!important;
+  --color-bg-red-light: rgba(var(--color-red),.05)!important;
+  /* Pill */
+  --color-pill-default: rgba(var( --color-default), 0.5)!important;
+  --color-pill-gray: rgba(var(--color-gray),.2)!important;
+  --color-pill-brown: rgba(var(--color-brown),.2)!important;
+  --color-pill-orange: rgba(var(--color-orange),.2)!important;
+  --color-pill-yellow: rgba(var(--color-yellow),.2)!important;
+  --color-pill-green: rgba(var(--color-green),.2)!important;
+  --color-pill-blue: rgba(var(--color-blue),.2)!important;
+  --color-pill-purple: rgba(var(--color-purple),.2)!important;
+  --color-pill-pink: rgba(var(--color-pink),.2)!important;
+  --color-pill-red: rgba(var(--color-red),.2)!important;
+}
+
 .super-content {
     padding-bottom: 10vh!important;
 }
