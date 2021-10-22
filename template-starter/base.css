@@ -60,7 +60,8 @@
 }
 
 .super-content {
-    padding-bottom: 10vh!important;
+   padding-top: var(--top-spacing)!important;
+   padding-bottom: 10vh!important;
 }
 
 .notion-header {
