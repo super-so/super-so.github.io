@@ -1,0 +1,37 @@
+h1 {
+    letter-spacing: -2px !important;
+    margin-top: 8px !important;
+    font-size: 60px !important;
+}
+
+h3 {
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 12px !important;
+    font-size: 12px !important;
+}
+
+p {
+    letter-spacing: -0.3px !important;
+}
+
+.notion-heading .notion-semantic-string {
+    line-height: 1.2 !important;
+}
+
+.notion-semantic-string .link {
+    opacity: 1 !important;
+}
+
+.notion-semantic-string .link:hover {
+    border-bottom: 1px solid var(--color-text-default) !important;
+    cursor: ne-resize !important;
+}
+
+@media (max-width: 680px) {
+
+    h1 {
+        font-size: 50px !important;
+    }
+
+}

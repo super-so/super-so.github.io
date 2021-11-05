@@ -25,6 +25,7 @@
     --color-pill-yellow: rgba(240,189,102,0.2) !important;
     --color-pill-green: rgba(89,232,187,0.2) !important;
     --color-pill-default: var(--color-off-white) !important;
+    --color-pill-gray: var(--color-off-white) !important;
 
     --transition: all .3s cubic-bezier(.4,0,.2,1) !important;
     --column-spacing: 60px !important;

@@ -1,10 +1,33 @@
-#page-careers .notion-collection__header {
-    color: var(--color-grey) !important;
-    font-weight: 700 !important;
-    display: block !important;
+#block-0f6a2e281f6e4447a9030a2fc8c340a3 img,
+#block-f79014381f504057824d8a9ac9547398 img {
+    border-radius: 0 !important;
+    box-shadow: none !important;
 }
 
-#page-careers .notion-image img {
-    border-radius: 0 !important;
-    box-shadow: nonw !important;
+#block-3a8372a1342b43298e8f6347ba7a4461 img {
+    box-shadow: none !important;
+}
+
+#page-careers .notion-pill {
+    margin: 4px 0 4px 10px !important;
+    margin-inline-end: 0 !important;
+    pointer-events: none !important;
+}
+
+
+@media (max-width: 600px) {
+    
+    #page-careers .notion-collection-list__item {
+        align-items: flex-start !important;
+        flex-direction: column !important;
+    }
+
+    #page-careers .notion-pill {
+        margin: 20px 0 0 0 !important;
+    }
+
+    #page-careers .notion-pill.first {
+        margin: 20px 12px 0 0 !important;
+    }
+
 }

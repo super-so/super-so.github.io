@@ -1,0 +1,235 @@
+/* Template Starter Base */
+
+:root {
+   /* Colors */
+  --color-default: 55, 53, 47!important;
+  --color-white: 255, 255, 255!important;
+  --color-gray: 155, 154, 151!important;
+  --color-brown: 100, 71, 58!important;
+  --color-orange: 217, 115, 13!important;
+  --color-yellow: 223, 171, 1!important;
+  --color-green: 15, 123, 108!important;
+  --color-blue: 11, 110, 153!important;
+  --color-purple: 105, 64, 165!important;
+  --color-pink: 173, 26, 114!important;
+  --color-red: 224, 62, 62!important;
+  /* Text */
+  --color-text-default: rgb(var(--color-default))!important;
+  --color-text-default-light: rgba(var(--color-default), 0.6)!important;
+  --color-text-gray: rgb(var(--color-gray))!important;
+  --color-text-brown: rgb(var(--color-brown))!important;
+  --color-text-orange: rgb(var(--color-orange))!important;
+  --color-text-yellow: rgb(var(--color-yellow))!important;
+  --color-text-green: rgb(var(--color-green))!important;
+  --color-text-blue: rgb(var(--color-blue))!important;
+  --color-text-purple: rgb(var(--color-purple))!important;
+  --color-text-pink: rgb(var(--color-pink))!important;
+  --color-text-red: rgb(var(--color-red))!important;
+  /* Background */
+  --color-bg-default: rgba(var(--color-white))!important;
+  --color-bg-gray: rgba(var(--color-gray),.18)!important;
+  --color-bg-brown: rgba(var(--color-brown),.15)!important;
+  --color-bg-orange: rgba(var(--color-orange),.15)!important;
+  --color-bg-yellow: rgba(var(--color-yellow),.15)!important;
+  --color-bg-green: rgba(var(--color-green),.15)!important;
+  --color-bg-blue: rgba(var(--color-blue),.15)!important;
+  --color-bg-purple: rgba(var(--color-purple),.15)!important;
+  --color-bg-pink: rgba(var(--color-pink),.15)!important;
+  --color-bg-red: rgba(var(--color-red),.15)!important;
+  /* Background Light  */
+  --color-bg-gray-light: rgba(var(--color-gray),.05)!important;
+  --color-bg-brown-light: rgba(var(--color-brown),.05)!important;
+  --color-bg-orange-light: rgba(var(--color-orange),.05)!important;
+  --color-bg-yellow-light: rgba(var(--color-yellow),.05)!important;
+  --color-bg-green-light: rgba(var(--color-green),.05)!important;
+  --color-bg-blue-light: rgba(var(--color-blue),.05)!important;
+  --color-bg-purple-light: rgba(var(--color-purple),.05)!important;
+  --color-bg-pink-light: rgba(var(--color-pink),.05)!important;
+  --color-bg-red-light: rgba(var(--color-red),.05)!important;
+  /* Pill */
+  --color-pill-default: rgba(var( --color-default), 0.5)!important;
+  --color-pill-gray: rgba(var(--color-gray),.2)!important;
+  --color-pill-brown: rgba(var(--color-brown),.2)!important;
+  --color-pill-orange: rgba(var(--color-orange),.2)!important;
+  --color-pill-yellow: rgba(var(--color-yellow),.2)!important;
+  --color-pill-green: rgba(var(--color-green),.2)!important;
+  --color-pill-blue: rgba(var(--color-blue),.2)!important;
+  --color-pill-purple: rgba(var(--color-purple),.2)!important;
+  --color-pill-pink: rgba(var(--color-pink),.2)!important;
+  --color-pill-red: rgba(var(--color-red),.2)!important;
+}
+
+.super-content {
+   padding-top: var(--top-spacing)!important;
+   padding-bottom: 10vh!important;
+}
+
+.notion-header {
+  display: var(--notion-header-display)!important;
+}
+
+/* Max Width */
+
+.max-width {
+    max-width: var(--max-width)!important;
+}
+
+/* Super Navbar */
+
+.super-navbar__cta {
+    padding: var(--cta-padding)!important;
+    border-radius: var(--cta-border-radius)!important;
+    border: var(--cta-border)!important;
+    box-shadow: var(--callout-shadow)!important;
+}
+
+/* Typography */
+
+h1.notion-heading {
+    font-size: var(--h1-size)!important;
+    font-weight: var(--h1-weight)!important;
+}
+
+h2.notion-heading {
+    font-size: var(--h2-size)!important;
+    font-weight: var(--h2-weight)!important;
+}
+
+h3.notion-heading {
+    font-size: var(--h3-size)!important;
+    font-weight: var(--h3-weight)!important;
+}
+
+/* Images */
+
+.notion-image>div,
+.notion-image img {
+    border-radius: var(--image-border-radius)!important;
+}
+
+/* Blockquote */
+
+.notion-quote {
+  font-size: var(--quote-size)!important;
+}
+
+/* Collection Blocks */
+
+.notion-collection__header {
+  display: var(--collection-header-display)!important;
+}
+
+.notion-collection-gallery, .notion-collection-board, .notion-collection-list {
+  border-top: var(--collection-header-border)!important;
+}
+
+/* Collection list item */
+
+.notion-collection-list__item {
+    padding: var(--collection-list-item-padding)!important;
+    border-radius: var(--collection-list-item-border-radius)!important;
+}
+
+.notion-pill {
+  margin: var(--notion-pill-margin)!important;
+  padding: var(--notion-pill-padding)!important;
+  border-radius: var(--notion-pill-border-radius)!important;
+  font-size: var(--notion-pill-text-size)!important;
+}
+
+.notion-property__title {
+    font-size: var(--collection-title-text-size)!important;
+}
+
+
+/* Gallery Specific */
+
+.notion-collection-card {
+    box-shadow: var(--collection-card-shadow)!important;
+    -webkit-box-shadow: var(--collection-card-shadow)!important;
+    border-radius: var(--collection-card-border-radius)!important;
+    border: var(--collection-card-border)!important;
+    cursor: pointer!important;
+    background: var(--color-card)!important;
+}
+
+.notion-collection-card:hover {
+    background: var(--color-ui-hover-bg-light)!important;
+}
+
+.notion-collection-gallery {
+    grid-gap: var(--collection-gallery-gap)!important;
+}
+
+/* Code */
+code {
+  font-size: var(--code-size)!important;
+}
+
+
+/* Set card text */
+
+.gallery .notion-collection-card__property .notion-semantic-string {
+    font-size: var(--collection-property-text-size)!important;
+}
+
+.notion-collection-card__cover img {
+    border-radius: var(--col-card-border-radius)!important;
+}
+
+
+/* Table Specific */
+
+
+.notion-collection-table td,
+.notion-collection-table th {
+    padding: var(--table-padding)!important;
+}
+
+
+/* Callout blocks */
+
+
+/* Callout */
+
+.notion-callout {
+    margin: var(--callout-margin)!important;
+    border-radius: var(--callout-border-radius)!important;
+    box-shadow: var(--callout-shadow)!important;
+    padding: var(--callout-padding)!important;
+}
+
+.notion-callout.border {
+    border: var(--callout-border)!important;
+}
+
+
+/* Callout Icon*/
+
+.notion-callout__icon img {
+    width: var(--callout-icon-size)!important;
+    min-width: var(--callout-icon-size)!important;
+}
+
+.notion-callout__icon span {
+    font-size: var(--callout-emoji-size)!important;
+}
+
+
+
+/* Divider */
+
+.notion-divider {
+    margin: var(--divider-margin)!important;
+    opacity: var(--divider-opacity)!important;
+}
+
+
+/* Tally Forms */
+
+iframe {
+    background: transparent!important;
+}
+
+
+/*  End Template Starter Base */
