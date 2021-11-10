@@ -1,7 +1,7 @@
 function onPageLoad() {
     const setActivePage = () => {
         const currentPage = document.querySelectorAll('a[href="' + window.location.pathname + '"]');
-        currentPage.forEach(function (page) {
+        currentPage.forEach(function(page) {
             if (!page.classList.contains('super-navbar__logo')) {
                 page.classList.add('page-active')
             }
@@ -13,19 +13,19 @@ function onPageLoad() {
     }
     setActivePage()
 
-    const header = document.querySelector('.notion-header');
-    const fixHeader = () => {
-        const content = document.querySelector('.notion-root > .notion-column-list > .notion-column:nth-child(2)');
-        content.prepend(header, content.firstChild);
-    }
-    fixHeader()
+    // const header = document.querySelector('.notion-header');
+    // const fixHeader = () => {
+    //     const content = document.querySelector('.notion-root > .notion-column-list > .notion-column:nth-child(2)');
+    //     content.prepend(header, content.firstChild);
+    // }
+    // fixHeader()
 
     const config = { subtree: true, characterData: true };
 
-    const callback = function (mutationsList, observer) {
+    const callback = function(mutationsList, observer) {
         for (const mutation of mutationsList) {
             if (mutation.type === 'characterData') {
-                fixHeader()
+                // fixHeader()
                 setActivePage()
             }
         }
@@ -36,8 +36,3 @@ function onPageLoad() {
 }
 
 document.addEventListener("DOMContentLoaded", onPageLoad);
-
-
-if (location.hostname == "app.super.so") {
-    document.querySelector('.notion-root > .notion-column-list > .notion-column:nth-child(2)').prepend(document.querySelector('.notion-header'), document.querySelector('.notion-root > .notion-column-list > .notion-column:nth-child(2)').firstChild);
-}
