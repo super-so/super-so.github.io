@@ -69,27 +69,16 @@ body {
     box-shadow: 0 25px 36px rgba(255, 255, 255, 0.4)!important;
     -webkit-box-shadow: 0 25px 36px rgba(255, 255, 255, 0.4)!important;
     -moz-box-shadow: 0 25px 36px rgba(255, 255, 255, 0.4)!important;
-    z-index: 9999!important;
+    z-index: 20!important;
 }
 
 .super-navbar__button.super-navbar__menu-open {
     display: none!important;
 }
 
-.super-navbar__logo {
-    letter-spacing: -.3px!important;
-    background: transparent!important;
-}
-
-.super-navbar__logo:before {
-    content: ""!important;
-    display: block!important;
-    padding-right: 7px!important;
-    height: 25px!important;
-    width: 25px!important;
-    background-size: 25px 25px!important;
-    background-image: url('https://super-docs.super.site/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fbb40d70c-1d06-4a05-8516-78a1cd5352cc%2Fimages%2F26642a43-18ff-4c06-9748-cccb5a92b717.svg&w=1920&q=80')!important;
-    background-repeat: no-repeat!important;
+.super-navbar__logo:hover {
+    opacity: .7!important;
+    transition: var(--transition)!important;
 }
 
 .super-navbar__item {
@@ -485,7 +474,7 @@ ul>.notion-list-item:before {
     padding: 15px!important;
     padding-top: 25px!important;
     border-right: 1px solid var(--color-border-default)!important;
-    z-index: 99!important;
+    z-index: 10!important;
     width: 270px!important;
     min-width: 270px!important;
 }
@@ -548,13 +537,13 @@ ul>.notion-list-item:before {
 }
 
 .notion-root>.notion-column-list>.notion-column:first-child .notion-page__icon {
-    filter: grayscale(100%);
-    opacity: .5!important;
-    transition: var(--transition)!important;
+    filter: grayscale(70%) saturate(84%) hue-rotate(184deg);
+    opacity: .4!important;
+    transition: opacity .2s ease-in-out!important;
 }
 
 .notion-root>.notion-column-list>.notion-column:first-child .notion-page:hover .notion-page__icon {
-    filter: grayscale(0%);
+    filter: grayscale(0%) saturate(100%);
     opacity: 1!important;
 }
 
@@ -572,6 +561,7 @@ ul>.notion-list-item:before {
     max-width: 750px !important;
     min-width: 500px !important;
     margin: 0 auto !important;
+    z-index: 10!important;
 }
 
 .notion-root>.notion-column-list>.notion-column:nth-child(3) {
@@ -586,7 +576,7 @@ ul>.notion-list-item:before {
     padding: 30px!important;
     padding-top: 25px!important;
     border-left: 1px solid var(--color-border-default)!important;
-    z-index: 99!important;
+    z-index: 10!important;
     background: var(--color-bg-default)!important;
     overflow: auto!important;
 }
@@ -603,6 +593,22 @@ ul>.notion-list-item:before {
 .notion-root>.notion-column-list>.notion-column:nth-child(3) .notion-text:first-child p {
     margin-bottom: 0 !important;
     margin-top: 0 !important;
+}
+
+.notion-root>.notion-column-list>.notion-column:first-child::-webkit-scrollbar,
+.notion-root>.notion-column-list>.notion-column:nth-child(3)::-webkit-scrollbar {
+    width: 6px!important;
+}
+
+.notion-root>.notion-column-list>.notion-column:first-child::-webkit-scrollbar-track,
+.notion-root>.notion-column-list>.notion-column:nth-child(3)::-webkit-scrollbar-track {
+    background: transparent!important;
+}
+
+.notion-root>.notion-column-list>.notion-column:first-child::-webkit-scrollbar-thumb,
+.notion-root>.notion-column-list>.notion-column:nth-child(3)::-webkit-scrollbar-thumb {
+    background-color: var(--color-ui-hover-bg);
+    border-radius: 20px!important;
 }
 
 .notion-collection__header {
@@ -1010,6 +1016,10 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
     transition: var(--transition)!important;
 }
 
+.notion-root>.notion-column-list .notion-column-list:last-child .notion-column .highlighted-color.color-gray {
+    pointer-events: none!important;
+}
+
 .notion-root>.notion-column-list .notion-column-list:last-child .notion-column a:hover {
     background: var(--color-bg-gray-light)!important;
 }
@@ -1073,6 +1083,11 @@ p {
 
 .notion-root>.notion-callout img:hover {
     opacity: .7!important;
+    transition: var(--transition)!important;
+}
+
+.notion-root>.notion-callout .notion-text:last-child {
+    opacity: .4!important;
 }
 
 .notion-root>.notion-callout>.notion-callout__content>.notion-text:nth-child(3) p span span {
@@ -1090,6 +1105,7 @@ p {
         height: 400px!important;
     }
 }
+
 
 /* SYNTAX */
 
@@ -1151,10 +1167,6 @@ pre[class*="language-"] {
     opacity: 0.7;
 }
 
-.token.atrule {
-    color: #7c4dff!important;
-}
-
 .token.attr-name {
     color: #2e3237!important;
 }
@@ -1167,85 +1179,20 @@ pre[class*="language-"] {
     color: #f6a434!important;
 }
 
-.token.boolean {
-    color: #7c4dff!important;
-}
-
-.token.builtin {
-    color: #39adb5!important;
-}
-
-.token.cdata {
-    color: #39adb5!important;
-}
-
-.token.char {
-    color: #39adb5!important;
-}
-
-.token.class {
-    color: #39adb5!important;
-}
-
-.token.class-name {
-    color: #6182b8!important;
-}
-
 .token.comment {
     color: #949ea9!important;
-}
-
-.token.constant {
-    color: #7c4dff!important;
-}
-
-.token.deleted {
-    color: #e53935!important;
 }
 
 .token.doctype {
     color: #aabfc9!important;
 }
 
-.token.entity {
-    color: #e53935!important;
-}
-
 .token.function {
     color: #2e3237!important;
 }
 
-.token.hexcode {
-    color: #f76d47!important;
-}
-
-.token.id {
-    color: #7c4dff!important;
-    font-weight: bold!important;
-}
-
 .token.important {
     color: #909ca8!important;
-}
-
-.token.inserted {
-    color: #39adb5!important;
-}
-
-.token.keyword {
-    color: #7c4dff!important;
-}
-
-.token.number {
-    color: #f76d47!important;
-}
-
-.token.operator {
-    color: #39adb5!important;
-}
-
-.token.prolog {
-    color: #aabfc9!important;
 }
 
 .token.property {
@@ -1264,10 +1211,6 @@ pre[class*="language-"] {
     color: #2e3237!important;
 }
 
-.token.regex {
-    color: #6182b8!important;
-}
-
 .token.selector {
     color: #2e3237!important;
 }
@@ -1276,22 +1219,6 @@ pre[class*="language-"] {
     color: #f6a434!important;
 }
 
-.token.symbol {
-    color: #7c4dff!important;
-}
-
 .token.tag {
     color: #2e3237!important;
-}
-
-.token.unit {
-    color: #f76d47!important;
-}
-
-.token.url {
-    color: #e53935!important;
-}
-
-.token.variable {
-    color: #e53935!important;
 }
