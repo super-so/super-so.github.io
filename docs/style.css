@@ -1183,10 +1183,6 @@ pre[class*="language-"] {
     color: #949ea9!important;
 }
 
-.token.doctype {
-    color: #aabfc9!important;
-}
-
 .token.function {
     color: #2e3237!important;
 }
