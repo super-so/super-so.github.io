@@ -69,7 +69,12 @@ body {
     box-shadow: 0 25px 36px rgba(255, 255, 255, 0.4)!important;
     -webkit-box-shadow: 0 25px 36px rgba(255, 255, 255, 0.4)!important;
     -moz-box-shadow: 0 25px 36px rgba(255, 255, 255, 0.4)!important;
+    justify-content: center !important;
     z-index: 20!important;
+}
+
+.super-navbar__content {
+    max-width: 1680px !important;
 }
 
 .super-navbar__button.super-navbar__menu-open {
@@ -460,7 +465,7 @@ ul>.notion-list-item:before {
 }
 
 .notion-root>.notion-column-list:first-child {
-    max-width: 90rem!important;
+    max-width: 1680px!important;
     margin: 0 auto!important;
 }
 
