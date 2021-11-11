@@ -1,4 +1,5 @@
 function onPageLoad() {
+    const header = document.querySelector('.notion-header');
     const setActivePage = () => {
         const currentPage = document.querySelectorAll('a[href="' + window.location.pathname + '"]');
         currentPage.forEach(function(page) {
