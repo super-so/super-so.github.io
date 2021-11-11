@@ -74,7 +74,7 @@ body {
 }
 
 .super-navbar__content {
-    max-width: 1680px !important;
+    max-width: 1500px !important;
 }
 
 .super-navbar__button.super-navbar__menu-open {
@@ -465,7 +465,7 @@ ul>.notion-list-item:before {
 }
 
 .notion-root>.notion-column-list:first-child {
-    max-width: 1680px!important;
+    max-width: 1500px!important;
     margin: 0 auto!important;
 }
 
