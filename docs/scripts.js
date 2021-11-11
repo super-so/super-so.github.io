@@ -13,19 +13,12 @@ function onPageLoad() {
     }
     setActivePage()
 
-    // const header = document.querySelector('.notion-header');
-    // const fixHeader = () => {
-    //     const content = document.querySelector('.notion-root > .notion-column-list > .notion-column:nth-child(2)');
-    //     content.prepend(header, content.firstChild);
-    // }
-    // fixHeader()
 
     const config = { subtree: true, characterData: true };
 
     const callback = function(mutationsList, observer) {
         for (const mutation of mutationsList) {
             if (mutation.type === 'characterData') {
-                // fixHeader()
                 setActivePage()
             }
         }
