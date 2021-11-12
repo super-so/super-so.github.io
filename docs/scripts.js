@@ -3,7 +3,7 @@ function onPageLoad() {
     const setActivePage = () => {
         const currentPage = document.querySelectorAll('a[href="' + window.location.pathname + '"]');
         currentPage.forEach(function(page) {
-            if (!page.classList.contains('super-navbar__logo')) {
+            if (!page.classList.contains('super-navbar__logo') && !page.parentNode.classList.contains('notion-image')) {
                 page.classList.add('page-active')
             }
             const pageIcon = page.querySelector('.notion-page__icon')
