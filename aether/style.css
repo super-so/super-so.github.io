@@ -603,6 +603,7 @@ ul>.notion-list-item:before {
 .notion-collection-gallery {
     border-top: 0 !important;
     gap: 30px!important;
+    padding-top: 0px!important;
 }
 
 .notion-collection-list,
@@ -1046,10 +1047,6 @@ p {
     transition: var(--transition)!important;
 }
 
-.notion-root>.notion-callout .notion-text:last-child {
-    opacity: .4!important;
-}
-
 .notion-root>.notion-callout>.notion-callout__content>.notion-text:nth-child(3) p span span {
     margin: 0px 4px;
 }
@@ -1139,7 +1136,7 @@ pre[class*="language-"] {
     word-spacing: normal;
     word-break: normal;
     word-wrap: normal;
-    color: #e8b354!important;
+    color: var(--color-primary)!important;
     font-size: 1em;
     line-height: 1.5em;
     -moz-tab-size: 4;
@@ -1151,11 +1148,12 @@ pre[class*="language-"] {
     hyphens: none;
 }
 
-code[class*="language-"]::-moz-selection,
+
+/* code[class*="language-"]::-moz-selection,
 pre[class*="language-"]::-moz-selection,
 code[class*="language-"] ::-moz-selection,
 pre[class*="language-"] ::-moz-selection {
-    background: #f0bd66;
+    background: var(--color-primary)!important;;
     color: #2e3237;
 }
 
@@ -1163,9 +1161,9 @@ code[class*="language-"]::selection,
 pre[class*="language-"]::selection,
 code[class*="language-"] ::selection,
 pre[class*="language-"] ::selection {
-    background: #f0bd66;
+    background: var(--color-primary)!important;;
     color: #2e3237;
-}
+} */
 
 :not(pre)>code[class*="language-"] {
     white-space: normal;
@@ -1183,7 +1181,7 @@ pre[class*="language-"] {
 .language-css>code,
 .language-sass>code,
 .language-scss>code {
-    color: #e8b355!important;
+    color: var(--color-primary)!important;
 }
 
 [class*="language-"] .namespace {
@@ -1283,4 +1281,18 @@ pre[class*="language-"] {
     display: flex!important;
     align-items: center!important;
     justify-content: center!important;
+    z-index: 9999!important;
+    color: var(--color-text-default)!important;
+    text-decoration: none!important;
+    opacity: .6!important;
+    bottom: 30px!important;
+    left: 22px!important;
+}
+
+.super-badge:hover {
+    opacity: 1!important;
+}
+
+.super-badge img {
+    margin-left: 5px!important;
 }
