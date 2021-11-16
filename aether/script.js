@@ -1694,7 +1694,7 @@ if (Prism.languages.markup) {
 
 Prism.languages.js = Prism.languages.javascript;
 
-//  Active Links
+//  Aether
 function onPageLoad() {
     const header = document.querySelector('.notion-header');
     const setActivePage = () => {
@@ -1711,6 +1711,17 @@ function onPageLoad() {
     }
     setActivePage()
 
+    const initBadge = () => {
+        const page = document.getElementById('page-index')
+        const badge = document.createElement('a')
+        const wrapper = document.createElement('div')
+        wrapper.textContent = 'Powered by Super'
+        badge.classList.add('super-badge')
+        badge.href = 'https://s.super.so/badge'
+        badge.prepend(wrapper)
+        page.prepend(badge)
+    }
+    initBadge()
 
     const config = { subtree: true, characterData: true };
 
@@ -1718,6 +1729,7 @@ function onPageLoad() {
         for (const mutation of mutationsList) {
             if (mutation.type === 'characterData') {
                 setActivePage()
+                initBadge()
             }
         }
     };

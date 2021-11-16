@@ -1,26 +1,26 @@
 :root {
     --color-primary: #1ca0f1!important;
+    --cta-color-bg: #e4f5fe!important;
+    --cta-padding: 12px 22px!important;
+    --cta-border-radius: 50px!important;
+    --cta-color-text: var(--color-text-default)!important;
+    --color-text-default: #424b55!important;
+    --callout-border-radius: 20px!important;
+    --inline-code-bg-color: rgba(28, 160, 241, 0.1)!important;
+    /**/
     --color-code-block: #fafafa !important;
     --color-text-light: white !important;
     --column-spacing: 15px !important;
     --collection-card-cover-size-small: 180px!important;
     --collection-card-cover-size-medium: 260px!important;
     --collection-card-cover-size-large: calc(50% - 15px)!important;
-    --color-text-default: #424b55!important;
     --transition: all .17s ease-in-out!important;
     --color-bg-gray-light: #f6f7fb!important;
     --color-bg-gray: #f5f4f2!important;
     --color-ui-hover-bg: #F1F5F7!important;
     --color-ui-hover-bg-light: #e7f5fd!important;
-    --color-border-default: #f5f4f2!important;
+    --color-border-default: #F1F5F7!important;
     --color-accent-bg: var(--color-primary);
-    --cta-padding: 12px 22px!important;
-    --cta-border-radius: 50px!important;
-    --cta-color-bg: #e4f5fe!important;
-    --cta-color-text: #424b55!important;
-    --callout-border-radius: 20px!important;
-    /* Code */
-    --inline-code-bg-color: rgba(28, 160, 241, 0.1)!important;
 }
 
 body {
@@ -84,6 +84,8 @@ body {
     padding: var(--cta-padding)!important;
     font-weight: 500 !important;
     border-radius: var(--cta-border-radius)!important;
+    background: var(--cta-color-bg)!important;
+    color: var(--cta-color-text)!important;
 }
 
 .notion-icon__search:hover path:nth-child(2) {
@@ -344,7 +346,7 @@ code span {
     background: 0 0 !important;
 }
 
-.notion-semantic-string .code {
+.notion-semantic-string.code {
     background: var(--inline-code-bg-color) !important;
     color: var(--color-text-default) !important;
     font-size: 0.9em !important;
@@ -998,7 +1000,7 @@ p {
 }
 
 .page-active {
-    background: #f7f9fd!important;
+    background: var(--color-ui-hover-bg-light)!important;
 }
 
 .page-icon-active {
@@ -1271,4 +1273,14 @@ pre[class*="language-"] {
 
 .static-tweet {
     --link-color: var(--color-primary)!important;
+}
+
+.super-badge {
+    background-color: var(--color-bg-default)!important;
+    border-radius: 70px!important;
+    -webkit-box-shadow: 0 4px 20px 0 rgb(0 0 0 / 8%)!important;
+    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 8%)!important;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
 }
