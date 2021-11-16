@@ -7,6 +7,7 @@
     --color-text-default: #424b55!important;
     --callout-border-radius: 20px!important;
     --inline-code-bg-color: rgba(28, 160, 241, 0.1)!important;
+    --content-width: 1500px!important;
     /**/
     --color-code-block: #fafafa !important;
     --color-text-light: white !important;
@@ -45,7 +46,7 @@ body {
 }
 
 .super-navbar__content {
-    max-width: 1500px !important;
+    max-width: var(--content-width) !important;
 }
 
 .super-navbar__button.super-navbar__menu-open {
@@ -421,7 +422,7 @@ ul>.notion-list-item:before {
 }
 
 .notion-root>.notion-column-list:first-child {
-    max-width: 1500px!important;
+    max-width: var(--content-width) !important;
     margin: 0 auto!important;
 }
 
