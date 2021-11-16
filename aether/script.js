@@ -1718,7 +1718,7 @@ function onPageLoad() {
         wrapper.textContent = 'Powered by Super'
         badge.classList.add('super-badge')
         badge.href = 'https://s.super.so/badge'
-        badge.prepend(wrapper)
+        badge.appendChild(wrapper)
         page.prepend(badge)
     }
     initBadge()

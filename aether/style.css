@@ -1000,7 +1000,7 @@ p {
 }
 
 .page-active {
-    background: var(--color-ui-hover-bg-light)!important;
+    background: var(--color-ui-hover-bg)!important;
 }
 
 .page-icon-active {
