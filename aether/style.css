@@ -1282,6 +1282,7 @@ pre[class*="language-"] {
     text-decoration: none!important;
     bottom: 30px!important;
     left: 22px!important;
+    opacity: 1!important;
 }
 
 .super-badge img {
