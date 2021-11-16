@@ -1712,14 +1712,14 @@ function onPageLoad() {
     setActivePage()
 
     const initBadge = () => {
-        const page = document.getElementById('page-index')
+        const footer = document.querySelector('.notion-root>.notion-callout>.notion-callout__content')
         const badge = document.createElement('a')
         const wrapper = document.createElement('div')
         wrapper.textContent = 'Powered by Super'
         badge.classList.add('super-badge')
         badge.href = 'https://s.super.so/badge'
         badge.appendChild(wrapper)
-        page.prepend(badge)
+        footer.appendChild(badge)
     }
     initBadge()
 
