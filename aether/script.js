@@ -38,12 +38,12 @@ function onPageLoad() {
         const wrapper = document.createElement('span')
         const logo = document.createElement('img')
         logo.setAttribute('src', 'https://sites.super.so/aether/icon.svg')
-        logo.style.width = '16px'
-        wrapper.textContent = 'Powered by Super'
+        logo.style.width = '18px'
+        wrapper.textContent = 'Made with Super'
         badge.classList.add('super-badge')
         badge.href = 'https://s.super.so/badge'
         badge.appendChild(wrapper)
-        badge.appendChild(logo)
+        badge.prepend(logo)
         footer.appendChild(badge)
     }
     initBadge()
