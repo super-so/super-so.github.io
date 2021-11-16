@@ -1714,7 +1714,7 @@ function onPageLoad() {
     const initBadge = () => {
         const footer = document.querySelector('.notion-root>.notion-callout>.notion-callout__content')
         const badge = document.createElement('a')
-        const wrapper = document.createElement('div')
+        const wrapper = document.createElement('span')
         const logo = document.createElement('img')
         logo.setAttribute('src', 'https://sites.super.so/aether/icon.svg')
         logo.style.width = '16px'
