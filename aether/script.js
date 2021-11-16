@@ -1715,10 +1715,14 @@ function onPageLoad() {
         const footer = document.querySelector('.notion-root>.notion-callout>.notion-callout__content')
         const badge = document.createElement('a')
         const wrapper = document.createElement('div')
+        const logo = document.createElement('img')
+        logo.setAttribute('src', 'https://sites.super.so/aether/icon.svg')
+        logo.style.width = '16px'
         wrapper.textContent = 'Powered by Super'
         badge.classList.add('super-badge')
         badge.href = 'https://s.super.so/badge'
         badge.appendChild(wrapper)
+        badge.appendChild(logo)
         footer.appendChild(badge)
     }
     initBadge()
