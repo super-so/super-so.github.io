@@ -1719,7 +1719,7 @@ function onPageLoad() {
         logo.setAttribute('src', 'https://sites.super.so/aether/icon.svg')
         logo.style.width = '16px'
         wrapper.textContent = 'Powered by Super'
-        badge.classList.add('super-badge')
+        badge.classList.add('super-credit')
         badge.href = 'https://s.super.so/badge'
         badge.appendChild(wrapper)
         badge.appendChild(logo)
