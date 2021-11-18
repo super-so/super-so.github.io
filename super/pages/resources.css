@@ -22,6 +22,10 @@
 
 #block-24cd09904efa452b879c7a3f3c927474 .notion-image img {
     border-radius: 12px 12px 0 0 !important;
+}
+
+#block-24cd09904efa452b879c7a3f3c927474 .notion-image,
+#block-24cd09904efa452b879c7a3f3c927474 .notion-image img {
     margin: 0 !important;
 }
 
