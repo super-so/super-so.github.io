@@ -3,12 +3,15 @@
     background: var(--color-off-white) !important;
     color: var(--color-black) !important;
     padding: 80px 80px 0 !important;
+    border-radius: 20px !important;
     text-align: center !important;
     box-shadow: none !important;
+    width: 100% !important;
 }
 
 #block-24cd09904efa452b879c7a3f3c927474 .notion-callout__content {
     overflow: visible !important;
+    width: 100% !important;
 }
 
 #block-24cd09904efa452b879c7a3f3c927474:hover,
@@ -19,8 +22,14 @@
 
 #block-24cd09904efa452b879c7a3f3c927474 .notion-image img {
     border-radius: 12px 12px 0 0 !important;
+    margin: 0 !important;
 }
 
+#block-24cd09904efa452b879c7a3f3c927474 .color-yellow {
+    font-size: 22px !important;
+}
+
+/* Reapply default callout styles */
 #block-24cd09904efa452b879c7a3f3c927474 .notion-callout {
     box-shadow: 0 20px 30px -10px rgb(0,0,0,0.2) !important;
     background: var(--color-black) !important;
@@ -29,8 +38,9 @@
     letter-spacing: -0.4px !important;
     border-radius: 100px !important;
     align-items: center !important;
-    width: fit-content !important;
     position: relative !important;
+    margin: 0 auto 8px !important;
+    width: fit-content !important;
     font-weight: 600 !important;
     border: none !important;
     padding: 0 !important;
@@ -38,6 +48,7 @@
 
 #block-24cd09904efa452b879c7a3f3c927474 .notion-callout:hover {
     box-shadow: 0 20px 30px -10px rgba(0,0,0,0.3) !important;
+    transform: scale(1.02) !important;
 }
 
 #block-24cd09904efa452b879c7a3f3c927474 .notion-callout:active {
