@@ -60,3 +60,11 @@
     box-shadow: 0 20px 30px -10px rgb(0,0,0,0.2) !important;
     transform: scale(0.96) !important;
 }
+
+@media (max-width: 600px) {
+
+    #block-3571f0c319a74343b245eb951d1c7a7e {
+        padding: 40px 30px 0 !important;
+    }
+
+}
