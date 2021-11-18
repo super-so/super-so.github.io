@@ -1483,7 +1483,7 @@ strong {
 }
 
 /* Callout CTA */
-#block-24cd09904efa452b879c7a3f3c927474 {
+#block-3571f0c319a74343b245eb951d1c7a7e {
     background: var(--color-off-white) !important;
     color: var(--color-black) !important;
     padding: 80px 80px 0 !important;
@@ -1493,32 +1493,32 @@ strong {
     width: 100% !important;
 }
 
-#block-24cd09904efa452b879c7a3f3c927474 .notion-callout__content {
+#block-3571f0c319a74343b245eb951d1c7a7e .notion-callout__content {
     overflow: visible !important;
     width: 100% !important;
 }
 
-#block-24cd09904efa452b879c7a3f3c927474:hover,
-#block-24cd09904efa452b879c7a3f3c927474:active {
+#block-3571f0c319a74343b245eb951d1c7a7e:hover,
+#block-3571f0c319a74343b245eb951d1c7a7e:active {
     box-shadow: none !important;
     transform: none !important;
 }
 
-#block-24cd09904efa452b879c7a3f3c927474 .notion-image img {
+#block-3571f0c319a74343b245eb951d1c7a7e .notion-image img {
     border-radius: 12px 12px 0 0 !important;
 }
 
-#block-24cd09904efa452b879c7a3f3c927474 .notion-image,
-#block-24cd09904efa452b879c7a3f3c927474 .notion-image img {
+#block-3571f0c319a74343b245eb951d1c7a7e .notion-image,
+#block-3571f0c319a74343b245eb951d1c7a7e .notion-image img {
     margin: 0 !important;
 }
 
-#block-24cd09904efa452b879c7a3f3c927474 .color-yellow {
+#block-3571f0c319a74343b245eb951d1c7a7e .color-yellow {
     font-size: 22px !important;
 }
 
 /* Reapply default callout styles */
-#block-24cd09904efa452b879c7a3f3c927474 .notion-callout {
+#block-3571f0c319a74343b245eb951d1c7a7e .notion-callout {
     box-shadow: 0 20px 30px -10px rgb(0,0,0,0.2) !important;
     background: var(--color-black) !important;
     transition: var(--transition) !important;
@@ -1531,15 +1531,16 @@ strong {
     width: fit-content !important;
     font-weight: 600 !important;
     border: none !important;
+    opacity: 0.9 !important;
     padding: 0 !important;
 }
 
-#block-24cd09904efa452b879c7a3f3c927474 .notion-callout:hover {
+#block-3571f0c319a74343b245eb951d1c7a7e .notion-callout:hover {
     box-shadow: 0 20px 30px -10px rgba(0,0,0,0.3) !important;
-    transform: scale(1.02) !important;
+    opacity: 1 !important;
 }
 
-#block-24cd09904efa452b879c7a3f3c927474 .notion-callout:active {
+#block-3571f0c319a74343b245eb951d1c7a7e .notion-callout:active {
     box-shadow: 0 20px 30px -10px rgb(0,0,0,0.2) !important;
     transform: scale(0.96) !important;
 }
