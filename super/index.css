@@ -193,6 +193,7 @@
 #page-index .notion-header__title,
 #page-market .notion-header__title,
 #page-guides .notion-header__title,
+#page-blog .notion-header__title,
 #page-features .notion-header__title,
 #page-pricing .notion-header__title,
 #page-showcase .notion-header__title,
@@ -230,6 +231,7 @@
 #page-index .notion-header__title-wrapper,
 #page-market .notion-header__title-wrapper,
 #page-guides .notion-header__title-wrapper,
+#page-blog .notion-header__title-wrapper,
 #page-features .notion-header__title-wrapper,
 #page-pricing .notion-header__title-wrapper,
 #page-showcase .notion-header__title-wrapper,
@@ -251,6 +253,7 @@
 
     #page-index .notion-header__title-wrapper,
     #page-market .notion-header__title-wrapper,
+    #page-blog .notion-header__title-wrapper,
     #page-guides .notion-header__title-wrapper,
     #page-features .notion-header__title-wrapper,
     #page-pricing .notion-header__title-wrapper,
@@ -1136,6 +1139,15 @@ strong {
         min-height: 20px !important;
     }
     
+}
+
+#page-blog .notion-property__title {
+    margin: 8px 0 0 !important;
+    order: 2 !important;
+}
+
+#page-blog .notion-collection-card__content {
+    margin-top: 16px !important;
 }
 
 #page-builder .collection-99fa2cb2bd2744fdb066e1e62e1af6ab .notion-collection-card,
