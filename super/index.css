@@ -886,7 +886,7 @@
 }
 
 .max-width {
-    max-width: 900px !important;
+    max-width: 960px !important;
 }
 
 @media (max-width: 600px) {
