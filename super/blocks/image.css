@@ -1,3 +1,7 @@
+.notion-image {
+    margin: 20px auto !important;
+}
+
 .notion-image div {
     overflow: visible !important;
 }
