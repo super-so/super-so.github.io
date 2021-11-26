@@ -93,7 +93,7 @@ p.notion-text__content,
 }
 
 .notion-semantic-string .date {
-    color: var(--color-text-default);
+    color: var(--color-text-default)!important;
 }
 
 
