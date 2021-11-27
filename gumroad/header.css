@@ -3,7 +3,7 @@
     top: 0 !important;
 }
 
-notion-header__content {
+.notion-header__content {
     display: none !important;
 }
 
