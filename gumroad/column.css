@@ -6,3 +6,13 @@
     width: 100% !important;
     padding: 0 !important;
 }
+
+.notion-column .notion-image,
+.notion-column .notion-callout {
+    height: 100% !important;
+}
+
+.notion-column .notion-callout {
+    align-items: center !important;
+    padding: 100px !important;
+}
