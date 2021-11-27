@@ -41,3 +41,8 @@
     display: flex !important;
     height: 100% !important;
 }
+
+.super-navbar__cta:hover {
+    background: var(--color-pink) !important;
+    color: var(--color-black) !important;
+}
