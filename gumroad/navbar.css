@@ -5,15 +5,22 @@
     top: 0 !important;
 }
 
+.super-navbar__content {
+    grid-template-columns: 1fr 1fr !important;
+    padding: 0 36px !important;
+}
+
 .super-navbar__logo {
     display: none !important;
 }
 
 .super-navbar__item-list {
+    justify-content: flex-start !important;
     flex-wrap: nowrap !important;
     overflow: unset !important;
 }
 
 .super-navbar__item {
+    padding: 14px 22px !important;
     opacity: 1 !important;
 }
