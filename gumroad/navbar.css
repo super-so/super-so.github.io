@@ -1,5 +1,10 @@
 .super-navbar {
-    border: 1px solid var(--color-black) none !important;
+    border-bottom: 2px solid var(--color-black) !important;
+    border-top: 2px solid var(--color-black) !important;
     margin-top: 260px !important;
     top: 0 !important;
+}
+
+.super-navbar__logo {
+    display: none !important;
 }
