@@ -35,6 +35,7 @@
 }
 
 .super-navbar__cta {
+    border-left: 2px solid var(--color-black) !important;
     align-items: center !important;
     padding: 0 46px 2px !important;
     border-radius: 0 !important;
@@ -43,7 +44,6 @@
 }
 
 .super-navbar__cta:hover {
-    border-left: 2px solid var(--color-black) !important;
     background: var(--color-pink) !important;
     color: var(--color-black) !important;
 }
