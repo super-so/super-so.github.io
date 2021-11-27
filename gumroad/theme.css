@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'mabry';
-    src:  url('https://sites.super.so/gumroad/assets/mabry.woff2') format('woff2'),
+    src:  url('https://sites.super.so/gumroad/assets/mabry.woff2') format('woff2');
 }
 
 :root {
