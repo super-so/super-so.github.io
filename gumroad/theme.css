@@ -19,6 +19,8 @@
     --color-bg-green-light: var(--color-green) !important;
     --color-bg-purple-light: var(--color-purple) !important;
     --color-bg-pink-light: var(--color-pink) !important;
+
+    --column-spacing: 0 !important;
 }
 
 body {

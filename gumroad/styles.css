@@ -1,4 +1,7 @@
 @import "reset.css";
 @import "theme.css";
-@import "navbar.css";
 @import "header.css";
+@import "column.css";
+@import "content.css";
+@import "image.css";
+@import "navbar.css";

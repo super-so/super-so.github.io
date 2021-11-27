@@ -1,0 +1,8 @@
+.notion-column-list {
+    flex-wrap: nowrap !important;
+}
+
+.notion-column {
+    width: 100% !important;
+    padding: 0 !important;
+}
