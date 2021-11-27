@@ -7,7 +7,16 @@
 
 .super-navbar__content {
     grid-template-columns: 1fr 1fr !important;
-    padding: 0 36px !important;
+    padding: 0 0 0 36px !important;
+    height: 100% !important;;
+}
+
+.super-navbar__actions {
+    padding: 0 !important;
+}
+
+.super-navbar__actions a {
+    height: 100% !important;
 }
 
 .super-navbar__logo {
@@ -23,4 +32,11 @@
 .super-navbar__item {
     padding: 14px 22px !important;
     opacity: 1 !important;
+}
+
+.super-navbar__cta {
+    align-items: center !important;
+    padding: 0 46px 2px !important;
+    border-radius: 0 !important;
+    display: flex !important;
 }
