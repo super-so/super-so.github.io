@@ -1,0 +1,15 @@
+.notion-header {
+    position: absolute !important;
+    top: 0 !important;
+}
+
+notion-header__content {
+    display: none !important;
+}
+
+.notion-header__cover,
+.notion-header__cover * {
+    max-height: none !important;
+    min-height: auto !important;
+    height: 260px !important;
+}
