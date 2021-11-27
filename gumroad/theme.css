@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'mabry';
+    src:  url('https://sites.super.so/gumroad/assets/mabry.woff2') format('woff2'),
+}
+
+:root {
+    --color-black: #000 !important;
+    --color-off-black: #18191b !important;
+}
+
+body {
+    font-family: 'mabry', sans-serif !important;
+}
