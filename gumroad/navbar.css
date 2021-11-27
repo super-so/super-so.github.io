@@ -8,3 +8,12 @@
 .super-navbar__logo {
     display: none !important;
 }
+
+.super-navbar__item-list {
+    flex-wrap: nowrap !important;
+    overflow: unset !important;
+}
+
+.super-navbar__item {
+    opacity: 1 !important;
+}
