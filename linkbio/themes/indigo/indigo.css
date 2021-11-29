@@ -1,0 +1,18 @@
+:root {
+    --body-background: url('https://images.unsplash.com/photo-1620641838842-b3981afc392e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80')!important;
+    --color-text-default: #ffffff!important;
+    --max-width: 640px!important;
+    --link-padding: 20px!important;
+    --link-border-radius: 18px!important;
+    --link-background: rgba(0, 0, 0, .3)!important;
+    --link-hover-background: rgba(0, 0, 0, .5)!important;
+    --link-backdrop-filter: blur(20px)!important;
+    --link-border: 1px solid rgba(0, 0, 0, .1)!important;
+    --link-color: #ffffff!important;
+    --link-shadow: 0 10px 40px -10px rgb(0 0 0 / 52%)!important;
+    --link-hover-shadow: 0 20px 40px -10px rgb(0 0 0 / 12%)!important;
+    --link-hover-translate: translate(0px, -2px)!important;
+    --social-icons-filter: grayscale(100%) brightness(0%) invert(100%) contrast(100%)!important;
+    --collection-card-cover-size-small: 26px!important;
+    --color-text-default-light: #ffffff!important;
+}
