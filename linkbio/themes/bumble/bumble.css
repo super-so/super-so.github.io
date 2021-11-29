@@ -1,0 +1,18 @@
+:root {
+    --body-background: #ffd140!important;
+    --body-background-image: none!important;
+    --color-bg-default: #e0e0e0!important;
+    --color-text-default: #2b2b2b!important;
+    --primary-color: #eda10a!important;
+    --max-width: 650px!important;
+    --link-padding: 20px!important;
+    --link-border-radius: 10px!important;
+    --link-background: #ffffff!important;
+    --link-border: 3px solid rgba(0, 0, 0, .75)!important;
+    --link-color: #2b2b2b!important;
+    --link-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 0.75)!important;
+    --link-hover-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 0.75)!important;
+    --link-hover-translate: translate(0, 2px)!important;
+    --link-backdrop-filter: 0!important;
+    --social-icons-filter: grayscale(100%) brightness(0%) contrast(60%)!important;
+}

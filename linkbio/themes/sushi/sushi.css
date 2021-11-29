@@ -1,0 +1,20 @@
+/* Sushi */
+
+:root {
+    --body-background: url('https://images.unsplash.com/photo-1620202119243-212a883c5627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2767&q=80') no-repeat center center !important;
+    --color-bg-default: #777dff!important;
+    --color-text-default: #f2f2f2!important;
+    --max-width: 650px!important;
+    --link-padding: 20px!important;
+    --link-border-radius: 16px!important;
+    --link-background: rgba(255, 255, 255, 0.09)!important;
+    --link-border: 1px solid rgba(255, 255, 255, 0.19)!important;
+    --link-color: #f2f2f2!important;
+    --link-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)!important;
+    --link-hover-shadow: 0 7px 12px rgba(0, 0, 0, 0.1)!important;
+    --link-hover-translate: translate(0, 2px)!important;
+    --link-backdrop-filter: blur(8.9px)!important;
+    --social-icons-filter: grayscale(100%) brightness(0%) invert(100%) contrast(100%)!important;
+    --link-hover-background: rgba(255, 255, 255, 0.15)!important;
+    --color-text-default-light: #ffffff!important;
+}
