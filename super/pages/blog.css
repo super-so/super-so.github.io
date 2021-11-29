@@ -1,0 +1,8 @@
+#page-blog .notion-property__title {
+    margin: 8px 0 0 !important;
+    order: 2 !important;
+}
+
+#page-blog .notion-collection-card__content {
+    margin-top: 16px !important;
+}

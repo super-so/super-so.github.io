@@ -71,6 +71,12 @@
     max-width: none !important;
 }
 
+/* No CC Required */
+#block-5c809ef39711472ca4d128434e16bc6a {
+    justify-content: center !important;
+    margin-left: 20px !important;
+}
+
 @media (max-width: 600px) {
 
     #page-index .collection-5691069c53964e6bbeca9ed509e43912 .notion-collection-gallery {

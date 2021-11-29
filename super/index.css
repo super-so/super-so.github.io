@@ -193,6 +193,7 @@
 #page-index .notion-header__title,
 #page-market .notion-header__title,
 #page-guides .notion-header__title,
+#page-blog .notion-header__title,
 #page-features .notion-header__title,
 #page-pricing .notion-header__title,
 #page-showcase .notion-header__title,
@@ -201,7 +202,8 @@
 #page-docs .notion-header__title,
 #page-pulse .notion-header__title,
 #page-builder .notion-header__title,
-#page-careers .notion-header__title {
+#page-careers .notion-header__title,
+#page-resources .notion-header__title {
     color: var(--color-grey) !important;
     letter-spacing: -1px !important;
     position: absolute !important;
@@ -218,7 +220,7 @@
 }
 
 .notion-header__content.max-width {
-    max-width: 900px !important;
+    max-width: 960px !important;
 }
 
 .notion-header__icon-wrapper,
@@ -229,6 +231,7 @@
 #page-index .notion-header__title-wrapper,
 #page-market .notion-header__title-wrapper,
 #page-guides .notion-header__title-wrapper,
+#page-blog .notion-header__title-wrapper,
 #page-features .notion-header__title-wrapper,
 #page-pricing .notion-header__title-wrapper,
 #page-showcase .notion-header__title-wrapper,
@@ -237,18 +240,20 @@
 #page-docs .notion-header__title-wrapper,
 #page-pulse .notion-header__title-wrapper,
 #page-builder .notion-header__title-wrapper,
-#page-careers .notion-header__title-wrapper {
+#page-careers .notion-header__title-wrapper,
+#page-resources .notion-header__title-wrapper {
     margin-top: 168px !important;
 }
 
 .notion-header__title-wrapper {
-    margin-top: 120px !important;
+    margin-top: 140px !important;
 }
 
 @media (max-width: 600px) {
 
     #page-index .notion-header__title-wrapper,
     #page-market .notion-header__title-wrapper,
+    #page-blog .notion-header__title-wrapper,
     #page-guides .notion-header__title-wrapper,
     #page-features .notion-header__title-wrapper,
     #page-pricing .notion-header__title-wrapper,
@@ -259,14 +264,95 @@
     #page-pulse .notion-header__title-wrapper,
     #page-builder .notion-header__title-wrapper,
     #page-careers .notion-header__title-wrapper,
+    #page-resources .notion-header__title-wrapper,
     .notion-header__title-wrapper  {
         margin-top: 120px !important;
     }
 
 }
 
+/* Hero CTA */
+#block-3571f0c319a74343b245eb951d1c7a7e {
+    background: var(--color-off-white) !important;
+    color: var(--color-black) !important;
+    padding: 80px 80px 0 !important;
+    border-radius: 20px !important;
+    text-align: center !important;
+    box-shadow: none !important;
+    width: 100% !important;
+}
+
+#block-3571f0c319a74343b245eb951d1c7a7e .notion-callout__content {
+    overflow: visible !important;
+    width: 100% !important;
+}
+
+#block-3571f0c319a74343b245eb951d1c7a7e:hover,
+#block-3571f0c319a74343b245eb951d1c7a7e:active {
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+#block-3571f0c319a74343b245eb951d1c7a7e .notion-image img {
+    border-radius: 12px 12px 0 0 !important;
+}
+
+#block-3571f0c319a74343b245eb951d1c7a7e .notion-image,
+#block-3571f0c319a74343b245eb951d1c7a7e .notion-image img {
+    margin: 0 !important;
+}
+
+#page-index #block-3571f0c319a74343b245eb951d1c7a7e h2,
+#page-index #block-3571f0c319a74343b245eb951d1c7a7e h3 {
+    max-width: none !important;
+}
+
+#block-3571f0c319a74343b245eb951d1c7a7e .color-yellow {
+    font-size: 22px !important;
+}
+
+/* Reapply default callout styles */
+#block-3571f0c319a74343b245eb951d1c7a7e .notion-callout {
+    box-shadow: 0 20px 30px -10px rgb(0,0,0,0.2) !important;
+    background: var(--color-black) !important;
+    transition: var(--transition) !important;
+    color: var(--color-white) !important;
+    letter-spacing: -0.4px !important;
+    border-radius: 100px !important;
+    align-items: center !important;
+    position: relative !important;
+    margin: 0 auto 8px !important;
+    width: fit-content !important;
+    font-weight: 600 !important;
+    border: none !important;
+    opacity: 0.8 !important;
+    padding: 0 !important;
+}
+
+#block-3571f0c319a74343b245eb951d1c7a7e .notion-callout:hover {
+    box-shadow: 0 20px 30px -10px rgba(0,0,0,0.3) !important;
+    opacity: 1 !important;
+}
+
+#block-3571f0c319a74343b245eb951d1c7a7e .notion-callout:active {
+    box-shadow: 0 20px 30px -10px rgb(0,0,0,0.2) !important;
+    transform: scale(0.96) !important;
+}
+
+@media (max-width: 600px) {
+
+    #block-3571f0c319a74343b245eb951d1c7a7e {
+        padding: 40px 30px 0 !important;
+    }
+
+}
+
 .notion-embed__container>iframe {
     background-color: transparent !important;
+}
+
+.notion-image {
+    margin: 20px 0 !important;
 }
 
 .notion-image div {
@@ -363,7 +449,7 @@
     color: var(--color-grey) !important;
     letter-spacing: -1px !important;
     font-weight: 600 !important;
-    font-size: 26px !important;
+    font-size: 24px !important;
     border: none !important;
     padding: 0 !important;
 }
@@ -804,7 +890,7 @@
 }
 
 .max-width {
-    max-width: 900px !important;
+    max-width: 960px !important;
 }
 
 @media (max-width: 600px) {
@@ -984,10 +1070,10 @@ h1 {
 }
 
 h2 {
-    letter-spacing: -2px !important;
+    letter-spacing: -1.5px !important;
+    margin: 12px 0 8px !important;
     font-weight: 700 !important;
     line-height: 1.4 !important;
-    margin: 12px 0 0 !important;
     font-size: 40px !important;
 }
 
@@ -1057,6 +1143,15 @@ strong {
         min-height: 20px !important;
     }
     
+}
+
+#page-blog .notion-property__title {
+    margin: 8px 0 0 !important;
+    order: 2 !important;
+}
+
+#page-blog .notion-collection-card__content {
+    margin-top: 16px !important;
 }
 
 #page-builder .collection-99fa2cb2bd2744fdb066e1e62e1af6ab .notion-collection-card,
@@ -1282,6 +1377,12 @@ strong {
     max-width: none !important;
 }
 
+/* No CC Required */
+#block-5c809ef39711472ca4d128434e16bc6a {
+    justify-content: center !important;
+    margin-left: 20px !important;
+}
+
 @media (max-width: 600px) {
 
     #page-index .collection-5691069c53964e6bbeca9ed509e43912 .notion-collection-gallery {
@@ -1477,5 +1578,22 @@ strong {
         height: 160px !important;
     }
 
+}
+
+#page-resources .notion-header__description {
+    letter-spacing: -2.5px !important;
+    margin-bottom: 50px !important;
+    font-weight: 900 !important;
+    font-size: 60px !important;
+    max-width: 100% !important;
+    width: 700px !important;
+}
+
+#page-resources .notion-header__title-wrapper>div {
+    display: none !important;
+}
+
+#page-resources .notion-header__description .notion-semantic-string {
+    line-height: 1.3 !important;
 }
 
