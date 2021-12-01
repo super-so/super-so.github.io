@@ -236,4 +236,8 @@ body {
     .notion-collection-list {
         padding: 15px!important;
     }
+    .notion-collection-list__item {
+        display: flex!important;
+        align-items: center!important;
+    }
 }
