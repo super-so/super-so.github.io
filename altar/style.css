@@ -344,22 +344,6 @@ h3.notion-collection__header {
 /*———————— MISC PAGE STYLES ———————*/
 /*—————————————————————————————————*/
 
-#page-our-story img {
-    object-fit: contain !important;
-}
-
-#page-our-story .notion-image:after {
-    background: linear-gradient(160deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.604079131652661) 100%) !important;
-    pointer-events: none !important;
-    position: absolute !important;
-    content: "" !important;
-    z-index: 2 !important;
-    bottom: 0 !important;
-    right: 0 !important;
-    left: 0 !important;
-    top: 0 !important;
-}
-
 #page-our-story .notion-column,
 #page-our-story .notion-column *,
 #page-getting-there .notion-column,
