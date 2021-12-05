@@ -111,12 +111,6 @@
     padding: 0 !important;
 }
 
-.super-navbar__logo {
-    filter: brightness(2) !important;
-    flex-grow: unset !important;
-    width: 140px !important;
-}
-
 .super-navbar__item {
     text-transform: uppercase !important;
     letter-spacing: 1px !important;
