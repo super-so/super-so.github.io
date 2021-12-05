@@ -1478,6 +1478,16 @@ strong {
     margin: 100px auto !important;
 }
 
+@media (max-width: 600px) {
+
+    #block-39ccc12396de4f7585433408bb913588 .notion-image,
+    #block-39ccc12396de4f7585433408bb913588 .notion-embed {
+        transform: scale(1) !important;
+        margin: 20px auto !important;
+    }
+
+}
+
 .super-password-protection__wrapper {
     max-width: 600px !important;
 }
