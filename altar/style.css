@@ -46,8 +46,9 @@
 /*————————————— IMAGES ————————————*/
 /*—————————————————————————————————*/
 
-#page-index .notion-image:before {
+#page-index .notion-image:after {
     background: linear-gradient(0deg, rgba(254,252,248,0) 0%, rgba(254,252,248,1) 100%) !important;
+    pointer-events: none !important;
     position: absolute !important;
     content: "" !important;
     bottom: 0 !important;
