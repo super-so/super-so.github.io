@@ -11,6 +11,13 @@
     margin: 100px auto !important;
 }
 
+/* Footer logo */
+#block-0b03c3c9e6e24172b159f1152fb57634 {
+    border-radius: 0 !important;
+    margin: 0 0 12px !important;
+    transform: none !important;
+}
+
 @media (max-width: 600px) {
 
     #block-39ccc12396de4f7585433408bb913588 .notion-image,
