@@ -18,6 +18,10 @@
     transform: none !important;
 }
 
+#block-0b03c3c9e6e24172b159f1152fb57634 img {
+    object-fit: contain !important;
+}
+
 @media (max-width: 600px) {
 
     #block-39ccc12396de4f7585433408bb913588 .notion-image,
