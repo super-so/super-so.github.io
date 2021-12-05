@@ -1473,9 +1473,9 @@ strong {
 
 #block-39ccc12396de4f7585433408bb913588 .notion-image,
 #block-39ccc12396de4f7585433408bb913588 .notion-embed {
-    transform: scale(1.3) !important;
+    transform: scale(1.2) !important;
     border-radius: 12px !important;
-    margin: 100px auto !important;
+    margin: 80px auto !important;
 }
 
 /* Footer logo */
