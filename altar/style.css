@@ -301,17 +301,6 @@ h3.notion-collection__header {
     z-index: -1 !important;
 }
 
-/* #page-index .notion-image:after {
-    background: url('https://code.tr.af/singhers/assets/badge.png') !important;
-    background-size: cover !important;
-    position: absolute !important;
-    bottom: -90px !important;
-    height: 150px !important;
-    right: -120px !important;
-    width: 150px !important;
-    content: "" !important;
-} */
-
 #page-index .notion-text {
     min-height: 24px !important;
 }
@@ -370,6 +359,14 @@ h3.notion-collection__header {
 
 #page-while-there .notion-collection-card a {
     display: none !important;
+}
+
+.notion-semantic-string .code {
+    background: rgba(255,255,255,0.12) !important;
+    color: var(--color-white) !important;
+    display: inline-block !important;
+    margin-top: 12px !important;
+    padding: 8px !important;
 }
 
 /*—————————————————————————————————*/
