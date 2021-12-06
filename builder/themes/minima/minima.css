@@ -2,7 +2,7 @@
 
 :root {
     /* Layout */
-    --column-spacing: 40px!important;
+    --column-spacing: 120px!important;
     --max-width: 1100px!important;
     /* Navbar CTA */
     --cta-padding: 14px 16px!important;
@@ -45,9 +45,9 @@
     --secondary-font: 'Inter', sans-serif!important;
     --notion-text-margin: 0px 0px 5px 0px!important;
     /* h1 */
-    --h1-size: 2.7rem!important;
-    --h1-weight: 500!important;
-    --h1-spacing: -1px!important;
+    --h1-size: 3rem!important;
+    --h1-weight: 800!important;
+    --h1-spacing: -1.5px!important;
     --h1-margin: 0 0 10px 0!important;
     --h1-line-height: 1.25!important;
     /* h2 */
