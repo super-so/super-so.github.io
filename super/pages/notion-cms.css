@@ -1,31 +1,31 @@
 /* Notion as a CMS post */
-#block-39ccc12396de4f7585433408bb913588 .notion-image img {
+#block-blog-notion-as-a-cms .notion-image img {
     object-fit: cover !important;
     box-shadow: none !important;
 }
 
-#block-39ccc12396de4f7585433408bb913588 .notion-image,
-#block-39ccc12396de4f7585433408bb913588 .notion-embed {
+#block-blog-notion-as-a-cms .notion-image,
+#block-blog-notion-as-a-cms .notion-embed {
     transform: scale(1.2) !important;
     border-radius: 12px !important;
     margin: 80px auto !important;
 }
 
 /* Footer logo */
-#block-39ccc12396de4f7585433408bb913588 #block-0b03c3c9e6e24172b159f1152fb57634 {
+#block-blog-notion-as-a-cms #block-0b03c3c9e6e24172b159f1152fb57634 {
     border-radius: 0 !important;
     margin: 0 0 12px !important;
     transform: none !important;
 }
 
-#block-39ccc12396de4f7585433408bb913588 #block-0b03c3c9e6e24172b159f1152fb57634 img {
+#block-blog-notion-as-a-cms #block-0b03c3c9e6e24172b159f1152fb57634 img {
     object-fit: contain !important;
 }
 
 @media (max-width: 600px) {
 
-    #block-39ccc12396de4f7585433408bb913588 .notion-image,
-    #block-39ccc12396de4f7585433408bb913588 .notion-embed {
+    #block-blog-notion-as-a-cms .notion-image,
+    #block-blog-notion-as-a-cms .notion-embed {
         transform: scale(1) !important;
         margin: 20px auto !important;
     }
