@@ -12,7 +12,7 @@
     /* Callout */
     --callout-padding: 20px 40px 20px 15px!important;
     --callout-border: 1px solid var(--color-border-default)!important;
-    --callout-border-radius: 5px!important;
+    --callout-border-radius: 100px!important;
     --callout-shadow: 2.0px 8.1px 20.1px hsl(0deg 0% 0% / 0.03)!important;
     --callout-icon-size: 18px!important;
     --callout-emoji-size: 18px!important;
