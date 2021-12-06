@@ -68,7 +68,7 @@
     --link-border-color: none!important;
     /* Colors */
     /* Text */
-    --color-text-default: rgb(55, 53, 47)!important;
+    --color-text-default: #111!important;
     --color-text-gray: #A5A5A5!important;
     /* Background */
     --color-bg-default: #FFFEFC!important;
