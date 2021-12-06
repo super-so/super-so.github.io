@@ -1,0 +1,108 @@
+/* Start Theme Variables */
+
+:root {
+    /* Layout */
+    --column-spacing: 40px!important;
+    --max-width: 1100px!important;
+    /* Navbar CTA */
+    --cta-padding: 14px 16px!important;
+    --cta-border-radius: 5px!important;
+    --cta-border: none!important;
+    --cta-shadow: none!important;
+    /* Callout */
+    --callout-padding: 20px 40px 20px 15px!important;
+    --callout-border: 1px solid var(--color-border-default)!important;
+    --callout-border-radius: 5px!important;
+    --callout-shadow: 2.0px 8.1px 20.1px hsl(0deg 0% 0% / 0.03)!important;
+    --callout-icon-size: 18px!important;
+    --callout-emoji-size: 18px!important;
+    /* Collections */
+    --collection-list-item-border-radius: 0px!important;
+    --collection-list-item-padding: 5px 0px 5px 5px!important;
+    --collection-gallery-gap: 30px!important;
+    --collection-title-text-size: 16px!important;
+    --collection-property-text-size: 14px!important;
+    --collection-card-border-radius: 5px!important;
+    --collection-card-padding: 20px!important;
+    --collection-card-border: 1px solid var(--color-border-default)!important;
+    --collection-card-cover-size-small: 172px!important;
+    --collection-card-cover-size-medium: 260px!important;
+    --collection-card-cover-size-large: 320px!important;
+    /* Pill */
+    --notion-pill-padding: 2px 5px!important;
+    --notion-pill-border-radius: 0px!important;
+    --notion-pill-text-size: 11px!important;
+    --notion-pill-text-weight: 500!important;
+    --notion-pill-text-transform: uppercase!important;
+    --notion-pill-letter-spacing: 1px!important;
+    /* Images */
+    --image-border-radius: 0px!important;
+    /* Misc */
+    --divider-margin: 15px 0px!important;
+    --divider-opacity: .8!important;
+    /* Typography */
+    --text-spacing: -.1px!important;
+    --secondary-font: 'Inter', sans-serif!important;
+    --notion-text-margin: 0px 0px 5px 0px!important;
+    /* h1 */
+    --h1-size: 2.7rem!important;
+    --h1-weight: 500!important;
+    --h1-spacing: -1px!important;
+    --h1-margin: 0 0 10px 0!important;
+    --h1-line-height: 1.25!important;
+    /* h2 */
+    --h2-size: 2.2rem!important;
+    --h2-weight: 500!important;
+    --h2-spacing: -.5px!important;
+    --h2-margin: 10px 0px 10px 0px!important;
+    --h2-line-height: 1.2!important;
+    /* h3 */
+    --h3-size: 1.5rem!important;
+    --h3-weight: 500!important;
+    --h3-spacing: -.5px!important;
+    --h3-margin: 10px 0px 5px 0px!important;
+    --h3-line-height: 1.4!important;
+    /* Link */
+    --link-border-width: 0px 0px 0px 0px!important;
+    --link-border-style: none!important;
+    --link-border-color: none!important;
+    /* Colors */
+    /* Text */
+    --color-text-default: rgb(55, 53, 47)!important;
+    --color-text-gray: #A5A5A5!important;
+    /* Background */
+    --color-bg-default: #FFFEFC!important;
+    --color-bg-gray: rgb(235, 236, 237)!important;
+    --color-bg-brown: rgb(233, 229, 227)!important;
+    --color-bg-orange: rgb(250, 235, 221)!important;
+    --color-bg-yellow: rgb(251, 243, 219)!important;
+    --color-bg-green: rgb(221, 237, 234)!important;
+    --color-bg-blue: rgb(221, 235, 241)!important;
+    --color-bg-purple: rgb(234, 228, 242)!important;
+    --color-bg-pink: rgb(244, 223, 235)!important;
+    --color-bg-red: rgb(251, 228, 228)!important;
+    /* Background Light */
+    --color-bg-gray-light: #1b1b1b!important;
+    /* UI */
+    --color-ui-hover-bg: rgba(55, 53, 47, 0.08)!important;
+    --color-ui-hover-bg-light: rgba(55, 53, 47, 0.03)!important;
+    --color-border-default: rgba(32, 32, 32, 0.1)!important;
+    --color-border-dark: rgba(55, 53, 47, 0.16)!important;
+}
+
+
+/* End Theme Variables*/
+
+
+/* Start Theme overwrites */
+
+.bg-gray-light {
+    color: white !important;
+    background: var(--color-text-default) !important;
+}
+
+
+/* End Theme overwrites */
+
+
+/* Start Builder Base */
