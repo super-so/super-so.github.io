@@ -28,12 +28,22 @@
     margin: 0 auto !important;
 }
 
+#block-blog-notion-as-a-cms #block-3571f0c319a74343b245eb951d1c7a7e {
+    margin-left: -10% !important;
+    width: 120% !important;
+}
+
 @media (max-width: 600px) {
 
     #block-blog-notion-as-a-cms .notion-image,
     #block-blog-notion-as-a-cms .notion-embed {
         transform: scale(1) !important;
         margin: 20px auto !important;
+    }
+
+    #block-blog-notion-as-a-cms #block-3571f0c319a74343b245eb951d1c7a7e {
+        margin-left: 0 !important;
+        width: 100% !important;
     }
 
 }
