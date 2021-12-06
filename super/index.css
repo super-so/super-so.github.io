@@ -1489,6 +1489,12 @@ strong {
     object-fit: contain !important;
 }
 
+/* CTA Image */
+#block-blog-notion-as-a-cms #block-7842338f65ae44ca87a2111d8b430ce0 {
+    transform: scale(1.1) !important;
+    margin: 0 auto !important;
+}
+
 @media (max-width: 600px) {
 
     #block-blog-notion-as-a-cms .notion-image,
