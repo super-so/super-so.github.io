@@ -3,7 +3,7 @@
     --cta-color-bg: #e4f5fe!important;
     --cta-padding: 12px 22px!important;
     --cta-border-radius: 50px!important;
-    --cta-color-text: var(--color-text-default)!important;
+    --cta-color-text: var(--color-text-default);
     --color-text-default: #424b55;
     --callout-border-radius: 20px!important;
     --inline-code-bg-color: rgba(28, 160, 241, 0.1)!important;
@@ -18,9 +18,9 @@
     --transition: all .17s ease-in-out!important;
     --color-bg-gray-light: #f5f5f5!important;
     --color-bg-gray: #f5f4f2!important;
-    --color-ui-hover-bg: #F1F5F7!important;
+    --color-ui-hover-bg: rgba(150,150,150,.1)!important;
     --color-ui-hover-bg-light: #e7f5fd!important;
-    --color-border-default: #F1F5F7!important;
+    --color-border-default: #F1F5F7;
     --color-accent-bg: var(--color-primary);
 }
 
