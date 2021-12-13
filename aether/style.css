@@ -37,9 +37,6 @@ body {
 
 .super-navbar {
     border-bottom: 1px solid var(--color-border-default)!important;
-    box-shadow: 0 25px 36px rgba(255, 255, 255, 0.4)!important;
-    -webkit-box-shadow: 0 25px 36px rgba(255, 255, 255, 0.4)!important;
-    -moz-box-shadow: 0 25px 36px rgba(255, 255, 255, 0.4)!important;
     justify-content: center !important;
     z-index: 20!important;
     height: 70px!important;
