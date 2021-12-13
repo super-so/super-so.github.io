@@ -16,7 +16,7 @@
     --collection-card-cover-size-medium: 260px!important;
     --collection-card-cover-size-large: calc(50% - 15px)!important;
     --transition: all .17s ease-in-out!important;
-    --color-bg-gray-light: #f5f5f5!important;
+    /* --color-bg-gray-light: #f5f5f5!important; */
     --color-bg-gray: #f5f4f2!important;
     --color-ui-hover-bg: rgba(150,150,150,.1)!important;
     --color-ui-hover-bg-light: #e7f5fd!important;
@@ -398,10 +398,6 @@ ul>.notion-list-item:before {
     margin-left: 3px!important;
 }
 
-.notion-callout.bg-gray-light {
-    background: var(--color-bg-gray-light)!important;
-    color: var(--color-text-default)!important;
-}
 
 .notion-callout__content {
     margin: 0 !important;
