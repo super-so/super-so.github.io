@@ -3,7 +3,7 @@
     --cta-color-bg: #e4f5fe!important;
     --cta-padding: 12px 22px!important;
     --cta-border-radius: 50px!important;
-    --cta-color-text: var(--color-text-default);
+    --cta-color-text: #424b55!important;
     --color-text-default: #424b55;
     --callout-border-radius: 20px!important;
     --inline-code-bg-color: rgba(28, 160, 241, 0.1)!important;
@@ -22,6 +22,7 @@
     --color-ui-hover-bg-light: #e7f5fd!important;
     --color-border-default: #F1F5F7;
     --color-accent-bg: var(--color-primary);
+    --color-card-bg: rgba(150,150,150,.1)!important;
 }
 
 body {
@@ -357,7 +358,7 @@ ul>.notion-list-item:before {
 }
 
 .notion-quote {
-    border: 1px solid #eceae6!important;
+    border: 1px solid var(--color-border-default)!important;
     border-radius: 15px !important;
     padding: 15px 22px !important;
     margin: 1rem 0 !important;
@@ -621,7 +622,7 @@ ul>.notion-list-item:before {
 
 .notion-collection-gallery>.notion-collection-card {
     border-radius: 10px !important;
-    border: 0!important;
+    border: 1px solid var(--color-border-default)!important;
     transition: var(--transition)!important;
     box-shadow: 0 10px 20px -10px rgb(0 0 0 / 12%)!important;
 }
@@ -1012,7 +1013,7 @@ p {
 }
 
 .notion-root>.notion-callout .notion-collection-card__cover img {
-    filter: grayscale(100%) brightness(0%) contrast(50%)!important;
+    filter: grayscale(100%) contrast(0%)!important;
 }
 
 @media all and (max-width: 1100px) {
@@ -1244,6 +1245,7 @@ pre[class*="language-"] {
     transition: var(--transition)!important;
     background: var(--cta-color-bg)!important;
     color: var(--cta-color-text)!important;
+    margin: -2px!important;
 }
 
 .notion-quote.bg-gray,
