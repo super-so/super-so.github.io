@@ -620,7 +620,8 @@ ul>.notion-list-item:before {
     transform: translateY(-4px)!important;
 }
 
-.notion-collection-gallery>.notion-collection-card {
+.notion-collection-gallery.large > .notion-collection-card,
+.notion-collection-gallery.medium > .notion-collection-card {
     border-radius: 10px !important;
     border: 1px solid var(--color-border-default)!important;
     transition: var(--transition)!important;
