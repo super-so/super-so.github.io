@@ -139,6 +139,7 @@ body {
     transform: var(--link-hover-translate)!important;
     box-shadow: var(--link-hover-shadow)!important;
     background: var(--link-hover-background)!important;
+    color:var(--link-text-hover)!important;
 }
 
 

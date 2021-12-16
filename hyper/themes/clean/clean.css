@@ -1,0 +1,22 @@
+:root {
+    --body-background: #FFFEFC!important;
+    --color-text-default: #111111!important;
+    --max-width: 580px!important;
+    --link-padding: 16px!important;
+    --link-border-radius: 6px!important;
+    --link-background: 0!important;
+    --link-hover-background: #111111!important;
+    --link-border: 1px solid #111111!important;
+    --link-color: #111111!important;
+    --link-shadow: none!important;
+    --link-hover-shadow: none!important;
+    --link-hover-translate: translate(0px, 0px)!important;
+    --social-icons-filter: grayscale(100%) brightness(0%) contrast(100%)!important;
+    --collection-card-cover-size-small: 26px!important;
+    --color-text-default-light: #111111!important;
+    --link-text-hover: #FFFEFC!important;
+}
+
+.notion-header__title {
+  letter-spacing: -2px;
+}
