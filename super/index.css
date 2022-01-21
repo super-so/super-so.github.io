@@ -269,7 +269,7 @@
         margin-top: 120px !important;
     }
 
-    #page-blog .notion-header__content.has-cover .notion-header__title-wrapper {
+    .notion-header__content.has-cover > .notion-header__title-wrapper {
         margin-top: 60px!important;
     }
 }
