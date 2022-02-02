@@ -11,6 +11,7 @@
 #page-pulse .notion-header__title,
 #page-builder .notion-header__title,
 #page-careers .notion-header__title,
+#page-report .notion-header__title,
 #page-resources .notion-header__title {
     color: var(--color-grey) !important;
     letter-spacing: -1px !important;
