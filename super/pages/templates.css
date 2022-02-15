@@ -1,9 +1,9 @@
-#page-market .notion-collection-card__property {
+#page-templates .notion-collection-card__property {
     min-height: unset !important;
 }
 
 /* Price */
-#page-market .property-7a5f6142 .notion-pill {
+#page-templates .property-7a5f6142 .notion-pill {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.06) !important;
     background: var(--color-white) !important;
     color: var(--color-black) !important;
@@ -23,12 +23,12 @@
     top: 32px !important;
 }
 
-#page-market .property-7a5f6142 .pill-green {
+#page-templates .property-7a5f6142 .pill-green {
     display: none !important;
 }
 
 /* Creator */
-#page-market .property-52525675 {
+#page-templates .property-52525675 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.04) !important;
     background: var(--color-white) !important;
     border-radius: 100px !important;
@@ -39,15 +39,15 @@
     right: 24px !important;
 }
 
-#page-market .property-52525675 .notion-semantic-string {
+#page-templates .property-52525675 .notion-semantic-string {
     letter-spacing: -0.2px !important;
     font-weight: 600 !important;
 }
 
-#page-market .resource { pointer-events: none !important; }
-#page-market .notion-page__title .notion-semantic-string { border: none !important; }
-#page-market .resource .notion-page__icon { align-items: center !important; }
-#page-market .resource .notion-page__icon>div {
+#page-templates .resource { pointer-events: none !important; }
+#page-templates .notion-page__title .notion-semantic-string { border: none !important; }
+#page-templates .resource .notion-page__icon { align-items: center !important; }
+#page-templates .resource .notion-page__icon>div {
     border-radius: 50% !important;
     overflow: hidden !important;
 }

@@ -1,5 +1,5 @@
 #page-index .notion-header__title,
-#page-market .notion-header__title,
+#page-templates .notion-header__title,
 #page-guides .notion-header__title,
 #page-blog .notion-header__title,
 #page-features .notion-header__title,
@@ -38,7 +38,7 @@
 }
 
 #page-index .notion-header__title-wrapper,
-#page-market .notion-header__title-wrapper,
+#page-templates .notion-header__title-wrapper,
 #page-guides .notion-header__title-wrapper,
 #page-blog .notion-header__title-wrapper,
 #page-features .notion-header__title-wrapper,
@@ -61,7 +61,7 @@
 @media (max-width: 600px) {
 
     #page-index .notion-header__title-wrapper,
-    #page-market .notion-header__title-wrapper,
+    #page-templates .notion-header__title-wrapper,
     #page-blog .notion-header__title-wrapper,
     #page-guides .notion-header__title-wrapper,
     #page-features .notion-header__title-wrapper,
