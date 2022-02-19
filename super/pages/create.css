@@ -11,6 +11,10 @@
   max-width: 700px!important;
 }
 
+.parent-page__create h1:first-of-type {
+  width: 720px!important;
+}
+
 .parent-page__create .notion-root > .notion-column-list > .notion-column:nth-of-type(1) {
   position: sticky!important;
   position: -webkit-sticky!important;
