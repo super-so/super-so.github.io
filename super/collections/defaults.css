@@ -312,10 +312,6 @@
         margin-left: -10px!important;
     }
 
-    .notion-collection-card {
-        transition: all .2s ease-in-out;
-    }
-
     .notion-dropdown__option.active-filter {
         background: var(--color-off-black)!important;
     }
