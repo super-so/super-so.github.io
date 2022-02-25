@@ -66,3 +66,27 @@
         max-height: 190px!important;
     }
 }
+
+
+.parent-page__create .collection-5691069c53964e6bbeca9ed509e43912 .notion-collection-gallery.small {
+  gap: 16px!important;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(120px, 1fr)
+  );
+  display: none!important;
+}
+
+.parent-page__create #block-307050977ca6468389e611eb680685bc, .parent-page__create #block-43c2f6658f9a47cd99bd853a30de3c75 {
+  display: none!important;
+}
+
+.parent-page__create .collection-5691069c53964e6bbeca9ed509e43912 .notion-collection-card {
+  padding: 15px!important;
+  box-shadow: 0 10px 25px -10px rgba(0,0,0,0.12) !important;
+}
+
+.parent-page__create .collection-5691069c53964e6bbeca9ed509e43912 .notion-collection-gallery.small .notion-property__title {
+  margin-top: 0!important;
+  font-size: 18px!important;
+}
