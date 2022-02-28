@@ -36,7 +36,7 @@ body {
     padding: 0 !important;
 }
 
-.super-navbar {
+.super-navbar, .notion-navbar {
     border-bottom: 1px solid var(--color-border-default)!important;
     justify-content: center !important;
     z-index: 20!important;
@@ -495,6 +495,10 @@ ul>.notion-list-item:before {
     margin-bottom: 5px !important;
     margin-top: 20px !important;
 }
+
+.notion-semantic-string .resource .notion-link {
+    border: 0!important;
+  }
 
 .notion-root>.notion-column-list>.notion-column:first-child .notion-text:first-child p {
     margin-top: 0 !important;
