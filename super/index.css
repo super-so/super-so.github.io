@@ -376,6 +376,7 @@
     padding: 0 var(--padding-right) 0 var(--padding-left) !important;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0) !important;
     transition: height 0.3s ease-in-out !important;
+    z-index: 99!important;
 }
 
 .super-navbar__content {
