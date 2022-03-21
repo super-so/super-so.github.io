@@ -1459,11 +1459,6 @@ strong {
     auto-fill,
     minmax(120px, 1fr)
   );
-  display: none!important;
-}
-
-.parent-page__create #block-307050977ca6468389e611eb680685bc, .parent-page__create #block-43c2f6658f9a47cd99bd853a30de3c75 {
-  display: none!important;
 }
 
 .parent-page__create .collection-5691069c53964e6bbeca9ed509e43912 .notion-collection-card {
