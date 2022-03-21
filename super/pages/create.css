@@ -72,7 +72,7 @@
   gap: 16px!important;
   grid-template-columns: repeat(
     auto-fill,
-    minmax(120px, 1fr)
+    minmax(290px, 1fr)
   );
 }
 
