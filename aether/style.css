@@ -308,7 +308,7 @@ p>span>span>a {
     max-width: 100%!important;
 }
 
-.notion-image.page-width {
+.notion-column > .notion-image.page-width {
     width: 115%!important;
     max-width: 115%!important;
     margin-left: 50%!important;
