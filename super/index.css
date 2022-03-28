@@ -271,6 +271,10 @@
         margin-top: 120px !important;
     }
 
+    .parent-page__blog {
+        margin-top: 50px!important;
+    }
+
 }
 
 /* Hero CTA */
@@ -1288,7 +1292,7 @@ h3 {
 }
 
 p {
-    letter-spacing: -0.3px !important;
+    letter-spacing: -0.1px !important;
     line-height: 1.8 !important;
     font-weight: 400 !important;
     font-size: 18px !important;
