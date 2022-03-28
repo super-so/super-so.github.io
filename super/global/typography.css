@@ -1,3 +1,42 @@
+@font-face {
+    font-family: 'Beausite Classic';
+    src: url('https://sites.super.so/super/assets/fonts/beausite-regular.eot');
+    src:  url('https://sites.super.so/super/assets/fonts/beausite-regular.woff') format('woff'),
+          url('https://sites.super.so/super/assets/fonts/beausite-regular.woff2') format('woff2'),
+          url('https://sites.super.so/super/assets/fonts/beausite-regular.ttf') format('truetype'),
+          url('https://sites.super.so/super/assets/fonts/beausite-regular.eot?#iefix') format('embedded-opentype'),
+          url('https://sites.super.so/super/assets/fonts/beausite-regular.svg#beausite-regular') format('svg');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Beausite Classic';
+    src: url('https://sites.super.so/super/assets/fonts/beausite-medium.eot');
+    src:  url('https://sites.super.so/super/assets/fonts/beausite-medium.woff') format('woff'),
+          url('https://sites.super.so/super/assets/fonts/beausite-medium.woff2') format('woff2'),
+          url('https://sites.super.so/super/assets/fonts/beausite-medium.ttf') format('truetype'),
+          url('https://sites.super.so/super/assets/fonts/beausite-medium.eot?#iefix') format('embedded-opentype'),
+          url('https://sites.super.so/super/assets/fonts/beausite-medium.svg#beausite-medium') format('svg');
+    font-weight: 500;
+  }
+
+
+  @font-face {
+    font-family: 'Beausite Classic';
+    src: url('https://sites.super.so/super/assets/fonts/beausite-bold.eot');
+    src:  url('https://sites.super.so/super/assets/fonts/beausite-bold.woff') format('woff'),
+          url('https://sites.super.so/super/assets/fonts/beausite-bold.woff2') format('woff2'),
+          url('https://sites.super.so/super/assets/fonts/beausite-bold.ttf') format('truetype'),
+          url('https://sites.super.so/super/assets/fonts/beausite-bold.eot?#iefix') format('embedded-opentype'),
+          url('https://sites.super.so/super/assets/fonts/beausite-bold.svg#beausite-bold') format('svg');
+    font-weight: 600;
+  }
+
+  body {
+      font-family: 'Beausite Classic', Inter, Helvetica, sans-serif!important;
+  }
+
+
 h1 {
     letter-spacing: -2.5px !important;
     margin-bottom: 8px !important;
