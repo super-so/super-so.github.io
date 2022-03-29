@@ -1,9 +1,19 @@
 #page-index .notion-header__title,
-.parent-page__index .notion-header__title,
+#page-templates .notion-header__title,
+#page-guides .notion-header__title,
+#page-blog .notion-header__title,
+#page-features .notion-header__title,
+#page-pricing .notion-header__title,
+#page-showcase .notion-header__title,
 #page-icons .notion-header__title,
-#page-icons-light .notion-header__title
-:not(#page__privacy .notion-header__title),
-:not(#page__terms .notion-header__title) {
+#page-icons-light .notion-header__title,
+#page-docs .notion-header__title,
+#page-pulse .notion-header__title,
+#page-builder .notion-header__title,
+#page-careers .notion-header__title,
+#page-report .notion-header__title,
+#page-resources .notion-header__title,
+#page-create .notion-header__title {
     color: var(--color-grey) !important;
     letter-spacing: -1px !important;
     position: absolute !important;
