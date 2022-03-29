@@ -155,6 +155,168 @@
 
 }
 
+/* DB View switcher code*/
+@-webkit-keyframes dropdown-animation-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-5%) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+@keyframes dropdown-animation-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-5%) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+@-webkit-keyframes dropdown-animation-out {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    to {
+        z-index: -1;
+        opacity: 0;
+        transform: translateY(-5%) scale(0.95);
+    }
+}
+@keyframes dropdown-animation-out {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    to {
+        z-index: -1;
+        opacity: 0;
+        transform: translateY(-5%) scale(0.95);
+    }
+}
 
+.notion-dropdown__menu-header, .notion-dropdown__option-icon, .notion-dropdown__button svg:first-of-type {
+  display: none!important;
+}
 
+.notion-dropdown {
+  width: 100%!important;
+}
+
+.notion-dropdown__button {
+  justify-content: space-between!important;
+  width: 100%!important;
+  border: 1px solid var(--color-border-default)!important;
+  padding: 10px!important;
+  border-radius: 8px!important;
+}
+
+.notion-dropdown__menu-wrapper {
+  margin-bottom: 25px!important;
+}
+
+.notion-dropdown__menu {
+  width: 100%!important;
+  border-radius: 8px!important;
+  transform: none !important;
+  left: auto !important;
+  top: auto !important;
+  box-shadow: 0 10px 20px -10px rgb(0 0 0 / 12%) !important;
+}
+
+.notion-dropdown__option-list {
+  padding: 0px!important;
+  flex-wrap: wrap!important;
+}
+
+.notion-dropdown__option {
+  padding: 5px 16px!important;
+  height: 50px!important;
+}
+
+.notion-dropdown__option p, .notion-dropdown__button-title {
+  font-size: 16px!important;
+}
+
+/* Desktop styles */
+@media all and (min-width: 624px) { 
+    /* Hide default dropdown */
+    .notion-dropdown__button,
+    .notion-dropdown__menu-header,
+    .notion-dropdown__option-icon {
+        display: none !important;
+    }
+
+    /* Dropdown Initial State */
+    .notion-dropdown__menu.initial-state {
+        z-index: 1 !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    /* Remove animations */
+    .notion-dropdown__menu.animate-in.animate-out,
+    .notion-dropdown__menu.animate-in,
+    .notion-dropdown__menu.animate-out {
+        animation: none!important;
+    }
+
+    /* Restyle menu */
+    .notion-dropdown__menu {
+        background: none !important;
+        box-shadow: unset !important;
+        transform: none !important;
+        left: auto !important;
+        top: auto !important;
+        position: relative !important;
+    }
+
+    /* Menu wrapper */
+    .notion-dropdown__menu-wrapper {
+        margin-bottom: 40px!important;
+        position: relative!important;
+    }
+
+    /* Item hover */
+    .notion-dropdown__option:hover {
+        background: var(--color-off-white)!important;
+    }
+
+    /* Text hover style*/
+    .notion-dropdown__option:hover p {
+        color: var(--color-text-default)!important;
+    }
+
+    /* Item margin*/
+    .notion-dropdown__option {
+        margin: 10px 10px;
+        border: 1px solid var(--color-border-default)!important;
+        border-radius: 100px!important;
+        transition: var(--transition)!important;
+    }
+
+    /* Item text */
+    .notion-dropdown__option p {
+        transition: color .2s ease-in-out  !important;
+        color: var(--color-grey)!important;
+        font-size: 18px !important;
+    }
+
+    .notion-dropdown__option-list {
+        display: flex !important;
+        padding: 0 !important;
+        margin-left: -10px!important;
+    }
+
+    .notion-dropdown__option.active-filter {
+        background: var(--color-off-black)!important;
+    }
+    .notion-dropdown__option.active-filter p {
+        color: var(--color-white)!important;
+    }
+}
 
