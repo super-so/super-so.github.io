@@ -230,19 +230,9 @@
 }
 
 #page-index .notion-header__title-wrapper,
-#page-templates .notion-header__title-wrapper,
-#page-guides .notion-header__title-wrapper,
-#page-blog .notion-header__title-wrapper,
-#page-features .notion-header__title-wrapper,
-#page-pricing .notion-header__title-wrapper,
-#page-showcase .notion-header__title-wrapper,
+#parent-page__index .notion-header__title-wrapper,
 #page-icons .notion-header__title-wrapper,
-#page-icons-light .notion-header__title-wrapper,
-#page-docs .notion-header__title-wrapper,
-#page-pulse .notion-header__title-wrapper,
-#page-builder .notion-header__title-wrapper,
-#page-careers .notion-header__title-wrapper,
-#page-resources .notion-header__title-wrapper {
+#page-icons-light .notion-header__title-wrapper {
     margin-top: 168px !important;
 }
 
@@ -251,25 +241,16 @@
 }
 
 @media (max-width: 600px) {
-
     #page-index .notion-header__title-wrapper,
-    #page-templates .notion-header__title-wrapper,
-    #page-blog .notion-header__title-wrapper,
-    #page-guides .notion-header__title-wrapper,
-    #page-features .notion-header__title-wrapper,
-    #page-pricing .notion-header__title-wrapper,
-    #page-showcase .notion-header__title-wrapper,
+    #parent-page__index .notion-header__title-wrapper,
     #page-icons .notion-header__title-wrapper,
-    #page-icons-light .notion-header__title-wrapper,
-    #page-docs .notion-header__title-wrapper,
-    #page-pulse .notion-header__title-wrapper,
-    #page-builder .notion-header__title-wrapper,
-    #page-careers .notion-header__title-wrapper,
-    #page-resources .notion-header__title-wrapper,
-    .notion-header__title-wrapper  {
+    #page-icons-light .notion-header__title-wrapper {
         margin-top: 120px !important;
     }
 
+    .notion-header__title-wrapper {
+        margin-top: 36px !important;
+    }
 }
 
 /* Hero CTA */
@@ -1387,16 +1368,6 @@ strong {
 
     #page-index .collection-5691069c53964e6bbeca9ed509e43912 .notion-collection-gallery {
         grid-template-columns: 1fr !important;
-    }
-
-    #block-content-miriam-gonzalez,
-    #block-content-anotioneer,
-    #block-content-the-notion-bar,
-    #block-content-sam-judge,
-    #block-content-persona,
-    #block-content-photon,
-    #block-content-cy {
-        display: none !important;
     }
 
     #block-63108f9a46ee471982a372959754ed62,

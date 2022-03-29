@@ -84,16 +84,6 @@
         grid-template-columns: 1fr !important;
     }
 
-    #block-content-miriam-gonzalez,
-    #block-content-anotioneer,
-    #block-content-the-notion-bar,
-    #block-content-sam-judge,
-    #block-content-persona,
-    #block-content-photon,
-    #block-content-cy {
-        display: none !important;
-    }
-
     #block-63108f9a46ee471982a372959754ed62,
     #block-b5c75dedb3d745e296c6fd7572a9275d {
         margin-inline-start: 0 !important;
