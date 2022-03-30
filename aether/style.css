@@ -1111,6 +1111,11 @@ p {
     .notion-root>.notion-column-list .notion-column-list:last-child .notion-column a {
         padding: 45px 20px 20px 20px!important;
     }
+
+    .notion-root > .notion-column-list > .notion-column > .notion-image.page-width {
+        width: 100%!important;
+        max-width: 100%!important;
+    }
 }
 
 
