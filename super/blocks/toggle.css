@@ -47,6 +47,10 @@
     padding-inline-start: 0 !important;
 }
 
+.notion-toggle__trigger .notion-toggle__trigger_icon {
+    display: none!important;
+}
+
 @media (max-width: 600px) {
 
     .notion-toggle__summary:before {
