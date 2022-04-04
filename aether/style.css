@@ -864,6 +864,7 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
 .notion-root>.notion-column-list .notion-column-list:last-child .notion-column .notion-page {
     display: flex!important;
     justify-content: flex-end!important;
+    height: auto!important;
 }
 
 
