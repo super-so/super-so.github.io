@@ -861,6 +861,12 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
     position: relative!important;
 }
 
+.notion-root>.notion-column-list .notion-column-list:last-child .notion-column .notion-page {
+    display: flex!important;
+    justify-content: flex-end!important;
+}
+
+
 .notion-root>.notion-column-list .notion-column-list:last-child .notion-column a {
     position: absolute!important;
     height: 100%!important;
@@ -1028,6 +1034,10 @@ p {
     .notion-root>.notion-column-list .notion-column-list:last-child {
         grid-template-columns: 1fr!important;
     }
+    .notion-root>.notion-column-list .notion-column-list:last-child .notion-column {
+        height: 100px!important;
+    }
+    
     .super-navbar__item {
         padding: 12px!important;
     }
