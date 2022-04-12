@@ -1251,6 +1251,15 @@ h1 {
     letter-spacing: -2.5px !important;
     margin-bottom: 8px !important;
     line-height: 1.3 !important;
+    font-size: 62px !important;
+    max-width: 100% !important;
+    width: 700px !important;
+}
+
+#page-index h1 {
+    letter-spacing: -2.5px !important;
+    margin-bottom: 8px !important;
+    line-height: 1.3 !important;
     font-size: 68px !important;
     max-width: 100% !important;
     width: 700px !important;
