@@ -1593,9 +1593,7 @@ strong {
 #page-illustrations .notion-collection-gallery.medium {
     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr))!important;
 }
-  #page-illustrations h1.notion-heading {
-  font-size: 62px!important;
-}
+
 
 #page-illustrations .notion-collection-card {
   box-shadow: none!important;
