@@ -861,9 +861,16 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
     position: relative!important;
 }
 
+.notion-root>.notion-column-list .notion-column-list:last-child .notion-column:last-child .notion-page {
+    display: flex!important;
+    justify-content: flex-end!important;
+    height: auto!important;
+}
+
+
 .notion-root>.notion-column-list .notion-column-list:last-child .notion-column a {
     position: absolute!important;
-    height: 100%!important;
+    height: auto!important;
     width: 100%!important;
     top: 0!important;
     right: 0!important;
@@ -1028,6 +1035,10 @@ p {
     .notion-root>.notion-column-list .notion-column-list:last-child {
         grid-template-columns: 1fr!important;
     }
+    .notion-root>.notion-column-list .notion-column-list:last-child .notion-column {
+        height: 100px!important;
+    }
+    
     .super-navbar__item {
         padding: 12px!important;
     }
@@ -1110,6 +1121,11 @@ p {
     }
     .notion-root>.notion-column-list .notion-column-list:last-child .notion-column a {
         padding: 45px 20px 20px 20px!important;
+    }
+
+    .notion-root > .notion-column-list > .notion-column > .notion-image.page-width {
+        width: 100%!important;
+        max-width: 100%!important;
     }
 }
 
