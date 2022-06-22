@@ -1187,6 +1187,9 @@ img {
 
     --padding-right: calc(env(safe-area-inset-right) + 100px) !important;
     --padding-left: calc(env(safe-area-inset-left) + 100px) !important;
+
+    --primary-font: 'Beausite Classic', Inter, Helvetica, sans-serif!important;
+    --secondary-font: 'Beausite Classic', Inter, Helvetica, sans-serif!important;
 }
 
 ::selection {
