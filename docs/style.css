@@ -601,7 +601,7 @@ ul>.notion-list-item:before {
     margin-top: 0 !important;
 }
 
-.notion-root>.notion-column-list>.notion-column:first-child::-webkit-scrollbar,
+/* .notion-root>.notion-column-list>.notion-column:first-child::-webkit-scrollbar,
 .notion-root>.notion-column-list>.notion-column:nth-child(3)::-webkit-scrollbar {
     width: 6px!important;
 }
@@ -615,7 +615,7 @@ ul>.notion-list-item:before {
 .notion-root>.notion-column-list>.notion-column:nth-child(3)::-webkit-scrollbar-thumb {
     background-color: var(--color-ui-hover-bg);
     border-radius: 20px!important;
-}
+} */
 
 .notion-collection__header {
     display: none !important;
