@@ -161,17 +161,6 @@ h3.notion-heading {
     grid-gap: var(--collection-gallery-gap)!important;
 }
 
-.notion-collection-gallery>.notion-collection-card .notion-property__title {
-    padding: var(--collection-card-padding)!important;
-}
-
-.notion-collection-card__content {
-    margin-top: -10px!important;
-    padding-bottom: var(--collection-card-padding)!important;
-    padding-inline-start: var(--collection-card-padding)!important;
-}
-
-
 /* Set card text */
 
 .gallery .notion-collection-card__property .notion-semantic-string {
