@@ -25,11 +25,6 @@
     top: 0 !important;
 }
 
-.notion-callout__icon {
-    text-align: center !important;
-    position: absolute !important;
-}
-
 .notion-callout__icon img {
     object-fit: none !important;
 }
