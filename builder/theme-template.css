@@ -240,10 +240,6 @@ h3.notion-heading {
     font-weight: 200!important;
 }
 
-.notion-property__title__icon-wrapper {
-    margin-inline-end: 10px!important;
-}
-
 .notion-property__title {
     font-size: var(--collection-title-text-size)!important;
 }
@@ -266,13 +262,6 @@ h3.notion-heading {
     padding: var(--collection-card-padding)!important;
 }
 
-.notion-collection-card__content {
-    margin-top: -10px!important;
-    padding-bottom: var(--collection-card-padding)!important;
-    padding-inline-start: var(--collection-card-padding)!important;
-}
-
-
 /* Set card text */
 
 .gallery .notion-collection-card__property .notion-semantic-string {
@@ -284,7 +273,6 @@ h3.notion-heading {
 .notion-collection-card__cover img {
     border-radius: var(--col-card-border-radius)!important;
 }
-
 
 /* Table Specific */
 
