@@ -76,7 +76,8 @@ body {
   display: none !important; }
 
 .notion-header__content {
-  margin: 0 auto !important; }
+  margin: 0 auto !important;
+  max-width: 1280px !important; }
 
 .notion-header__content .notion-header__title-wrapper {
   margin-top: 96px;

@@ -309,6 +309,7 @@ body {
 
 .notion-header__content {
     margin: 0 auto!important;
+    max-width: 1280px !important;
 }
 
 .notion-header__content .notion-header__title-wrapper {
@@ -1476,7 +1477,7 @@ h2.notion-heading .notion-semantic-string  {
 }
 
 .notion-embed__container > iframe {
-    border-radius: 24px!important;
+    border-radius: 24px!important; 
 }
 
 // Typography
