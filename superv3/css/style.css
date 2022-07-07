@@ -1084,7 +1084,7 @@ h2.notion-heading .notion-semantic-string {
       color: var(--gray-700) !important; }
 
 .super-content {
-  padding-top: 170px !important;
+  padding-top: 120px !important;
   max-width: 1280px !important;
   margin: 0 auto !important; }
   @media screen and (max-width: 576px) {
