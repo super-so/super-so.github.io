@@ -555,7 +555,7 @@ h2.notion-heading .notion-semantic-string  {
     // –––––––––––––––––
     #block-a00cb4de7898428b9501e67cc48f19a5 {
         text-align: center!important;
-        @include center;
+        // @include center;
 
         h1.notion-heading {
             max-width: 800px!important;
@@ -1872,17 +1872,37 @@ h2.notion-heading .notion-semantic-string  {
 // –––––––––––––––––
 // section-CTA
 // –––––––––––––––––
-.notion-root > .notion-callout:last-child {
+#block-1efa808dfcce4ebaae1f7d5c21cc5bf6 {
     text-align: center!important;
     padding: 100px 24px!important;
     border-radius: 40px!important;
-    background-image: url('https://sites.super.so/super/assets/cta-bg-cover.png')!important;
     background-position: center!important;
     background-size: cover!important;
+    position: relative!important;
+    overflow: hidden!important;
 
     .notion-link {
         margin-top: 24px!important;
         @include button-primary-dark;
+    }
+
+    .notion-image:last-child {
+        position: absolute!important;
+        width: 120%!important;
+        height: 120%!important;
+        max-width: 120%!important;
+        max-height: 120%!important;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -1!important;
+
+        @include breakpoint-xs {
+            width: 300%!important;
+            height: 300%!important;
+            max-width: 300%!important;
+            max-height: 300%!important;
+        }
     }
 }
 
@@ -1901,7 +1921,7 @@ h2.notion-heading .notion-semantic-string  {
     &:before {
         content: '';
         position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
+        top: 0; right: 0; bottom: 0; left: 0; 
         z-index: -1;
         margin: -1px;
         border-radius: inherit;

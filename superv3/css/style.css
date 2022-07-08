@@ -263,10 +263,7 @@ h2.notion-heading .notion-semantic-string {
   margin-top: 8px !important; }
 
 #page-index #block-a00cb4de7898428b9501e67cc48f19a5 {
-  text-align: center !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important; }
+  text-align: center !important; }
   #page-index #block-a00cb4de7898428b9501e67cc48f19a5 h1.notion-heading {
     max-width: 800px !important;
     margin: 0 auto !important;
@@ -1359,14 +1356,15 @@ h2.notion-heading .notion-semantic-string {
   .notion-toggle h3 {
     font-weight: 300 !important; }
 
-.notion-root > .notion-callout:last-child {
+#block-1efa808dfcce4ebaae1f7d5c21cc5bf6 {
   text-align: center !important;
   padding: 100px 24px !important;
   border-radius: 40px !important;
-  background-image: url("https://sites.super.so/super/assets/cta-bg-cover.png") !important;
   background-position: center !important;
-  background-size: cover !important; }
-  .notion-root > .notion-callout:last-child .notion-link {
+  background-size: cover !important;
+  position: relative !important;
+  overflow: hidden !important; }
+  #block-1efa808dfcce4ebaae1f7d5c21cc5bf6 .notion-link {
     margin-top: 24px !important;
     opacity: 1 !important;
     padding: 13px 16px 14px 16px !important;
@@ -1380,12 +1378,28 @@ h2.notion-heading .notion-semantic-string {
     transition: color 0.2s ease-in-out, background 0.2s ease-in-out, transform 0.1s ease-in-out, box-shadow 0.15s ease-in-out !important;
     background: var(--base-black) !important;
     color: var(--base-white) !important; }
-    .notion-root > .notion-callout:last-child .notion-link:hover {
+    #block-1efa808dfcce4ebaae1f7d5c21cc5bf6 .notion-link:hover {
       box-shadow: 0px 5px 28px -6px #ffbe3d !important;
       -webkit-box-shadow: 0px 5px 28px -6px #ffbe3d !important;
       background: var(--gray-900) !important; }
-    .notion-root > .notion-callout:last-child .notion-link:active {
+    #block-1efa808dfcce4ebaae1f7d5c21cc5bf6 .notion-link:active {
       transform: translateY(1px) !important; }
+  #block-1efa808dfcce4ebaae1f7d5c21cc5bf6 .notion-image:last-child {
+    position: absolute !important;
+    width: 120% !important;
+    height: 120% !important;
+    max-width: 120% !important;
+    max-height: 120% !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1 !important; }
+    @media screen and (max-width: 576px) {
+      #block-1efa808dfcce4ebaae1f7d5c21cc5bf6 .notion-image:last-child {
+        width: 300% !important;
+        height: 300% !important;
+        max-width: 300% !important;
+        max-height: 300% !important; } }
 
 .notion-callout.bg-gray-light {
   background: var(--gray-900) !important;
