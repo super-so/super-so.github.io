@@ -1024,6 +1024,11 @@ h2.notion-heading .notion-semantic-string  {
         text-align: center!important;
         // @include center;
 
+        .notion-callout__content {
+            display: flex!important;
+            flex-direction: column!important;
+        }
+
         h1.notion-heading {
             max-width: 800px!important;
             margin: 0 auto!important;
@@ -1036,7 +1041,7 @@ h2.notion-heading .notion-semantic-string  {
             max-width: 48rem!important;
             margin: 16px auto 0!important;
         }
-
+ 
         .notion-link {
             @include button-primary;
             box-shadow: var(--shadow-md)!important;

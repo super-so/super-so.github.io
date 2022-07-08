@@ -602,6 +602,9 @@ h2.notion-heading .notion-semantic-string {
 
 #page-index #block-a00cb4de7898428b9501e67cc48f19a5 {
   text-align: center !important; }
+  #page-index #block-a00cb4de7898428b9501e67cc48f19a5 .notion-callout__content {
+    display: flex !important;
+    flex-direction: column !important; }
   #page-index #block-a00cb4de7898428b9501e67cc48f19a5 h1.notion-heading {
     max-width: 800px !important;
     margin: 0 auto !important;
