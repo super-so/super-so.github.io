@@ -210,6 +210,15 @@
     --primary-font: 'Beausite Classic'!important;
     --secondary-font: 'Beausite Classic'!important;
     --collection-card-cover-height-small: 48px!important;
+    --padding-layout: 1rem!important;
+    --breakpoint: 1100px!important;
+    --padding-xxxl: 48px!important;
+    --padding-xxl: 40px!important;
+    --padding-xl: 32px!important;
+    --padding-lg: 24px!important;
+    --padding-md: 16px!important;
+    --padding-sm: 8px !important;
+    --padding-xs: 4px!important;
     --primary-500: #FFBE3C!important;
     --primary-600: #FBB43C!important;
     --gray-25: #F7F8F9!important;
@@ -230,11 +239,11 @@
     --color-bg-default: #FDFDFC!important;
     --color-text-default: var(--gray-900)!important;
     --column-spacing: 32px!important;
-    --navbar-height: 80px!important;
+    --navbar-height: 80px!important; 
     --cta-background: var(--primary-500)!important;
     --cta-text: var(--color-text-default)!important;
-    --button-padding: 13px 16px 14px 16px!important;
     --shadow-md: 0px 12px 40px -3px rgba(18,18,32,0.05)!important;
+    --shadow-feature-dark: 0px 12px 31px -3px rgba(0,0,0,0.1),0px 4px 15px -3px rgba(0,0,0,0.2),inset 0px 6px 66px -9px rgba(0,0,0,0.1)!important;
     --shadow-feature-light: 0px 12px 31px -3px rgba(0,0,0,0.06),0px 4px 15px -3px rgba(0,0,0,0.05),inset 0px 6px 66px -9px rgba(0,0,0,0.01)!important;
 } 
 
