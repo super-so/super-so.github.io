@@ -33,6 +33,7 @@
   --color-text-default: var(--gray-900)!important;
   --column-spacing: 32px!important;
   --navbar-height: 80px!important;
+  --button-padding: 13px 16px 14px 16px!important;
   --cta-background: var(--primary-500)!important;
   --cta-text: var(--color-text-default)!important;
   --shadow-md: 0px 12px 40px -3px rgba(18,18,32,0.05)!important;
@@ -611,9 +612,6 @@ h2.notion-heading .notion-semantic-string {
 
 #page-index #block-a00cb4de7898428b9501e67cc48f19a5 {
   text-align: center !important; }
-  #page-index #block-a00cb4de7898428b9501e67cc48f19a5 .notion-callout__content {
-    display: flex !important;
-    flex-direction: column !important; }
   #page-index #block-a00cb4de7898428b9501e67cc48f19a5 h1.notion-heading {
     max-width: 800px !important;
     margin: 0 auto !important;
