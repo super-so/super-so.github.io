@@ -482,9 +482,6 @@ h2.notion-heading .notion-semantic-string  {
 
                 // Price property
                 .property-7a5f6142 {
-                    .pill-green {
-                        display: none!important;
-                    }
 
                     span {
                         position: absolute!important;
@@ -1192,19 +1189,6 @@ h2.notion-heading .notion-semantic-string  {
     // –––––––––––––––––
     #block-4ec0da2865a3465eae8ce500894d1281 {
         @include full-width-section(var(--gray-900));
-
-        .notion-image {
-            background: var(--gray-800)!important;
-            border: 1px solid var(--gray-700)!important;
-            width: 56px!important;
-            height: 56px!important;
-            display: flex!important;
-            justify-content: center!important;
-            align-items: center!important;
-            border-radius: 8px!important;
-            transition: all .15s ease-out!important;
-            filter: drop-shadow(0px 4px 11px rgba(53, 53, 53, 0.01)) drop-shadow(0px 0px 7px rgba(73, 73, 73, 0.45))!important;
-        }
     }
     // –––––––––––––––––
     // section-testimonials
@@ -1521,8 +1505,9 @@ h2.notion-heading .notion-semantic-string  {
     #block-5f4034b33f5e4ef5aee7421baadd223e {
         .notion-link {
             &::after {
+                margin-top: -2px!important;
                 content: 'save 20%';
-                margin-left: 8px!important;
+                margin-left: 8px!important; 
                 @include black-pill;
             }
         }
@@ -1806,7 +1791,7 @@ h2.notion-heading .notion-semantic-string  {
             }
 
             .notion-property__title {
-                color: var(--gray-700)!important;
+                color: var(--gray-700)!important; 
             }
         }
     }
