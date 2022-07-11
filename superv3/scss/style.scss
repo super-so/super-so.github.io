@@ -70,14 +70,11 @@
 }
     
 @mixin button-special {
-    display: inline-flex!important;
+    @include button;
     background: var(--base-white)!important;
     border: 1px solid var(--primary-500);
     box-shadow: 0px 4px 11px rgba(53, 53, 53, 0.01), 0px 0px 7px rgba(251, 180, 60, 0.45);
-    border-radius: 8px;
-    padding: 12px 20px!important;
-    justify-content: center!important;
-    width: 100%!important;
+    color: var(--gray-700)!important;
 
     &:hover {
         background: var(--primary-500)!important;
@@ -1508,6 +1505,8 @@ h2.notion-heading .notion-semantic-string  {
                 margin-top: -2px!important;
                 content: 'save 20%';
                 margin-left: 8px!important; 
+                position: relative!important;
+                top: -1px!important;
                 @include black-pill;
             }
         }
@@ -1631,12 +1630,14 @@ h2.notion-heading .notion-semantic-string  {
     #block-abea645bf4084158b5f710c635984ec4 {
 
         .notion-column-list {
+            // Upgraded site
             .notion-column:last-child > .notion-callout {
                 border: 1px solid var(--primary-500)!important;
                 // box-shadow: 0px 4px 11px rgba(53, 53, 53, 0.01), 0px 0px 7px rgba(251, 180, 60, 0.45)!important;
                 
                 .notion-link {
                     @include button-special;
+                    width: 100%!important;
                     margin-top: 16px!important;
                     position: relative!important;
                     align-items: center!important;
@@ -1657,10 +1658,28 @@ h2.notion-heading .notion-semantic-string  {
                 }       
             }
 
+            // Free site
             .notion-column:first-child > .notion-callout {
                 .notion-link {
                     @include button-secondary-gray;
+                    width: 100%!important;
                     margin-top: 16px!important;
+                    position: relative!important;
+                    align-items: center!important;
+
+                    &::after {
+                        width: 20px!important;
+                        height: 20px!important;
+                        margin-left: 4px!important;
+                        content: url('https://sites.super.so/super/assets/arrow-right-gray-500.svg');
+                    }
+
+                    &:hover::after {
+                        width: 20px!important;
+                        height: 20px!important;
+                        margin-left: 4px!important;
+                        content: url('https://sites.super.so/super/assets/arrow-right-black.svg')!important;
+                    }
                 }
             }
         
