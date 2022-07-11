@@ -180,15 +180,7 @@
     --primary-font: 'Beausite Classic'!important;
     --secondary-font: 'Beausite Classic'!important;
     --collection-card-cover-height-small: 48px!important;
-    --padding-layout: 1rem!important;
-    --breakpoint: 1100px!important;
-    --padding-xxxl: 48px!important;
-    --padding-xxl: 40px!important;
-    --padding-xl: 32px!important;
-    --padding-lg: 24px!important;
-    --padding-md: 16px!important;
-    --padding-sm: 8px !important;
-    --padding-xs: 4px!important;
+    --rounded-md: 8px!important;
     --primary-500: #FFBE3C!important;
     --primary-600: #FBB43C!important;
     --gray-25: #F7F8F9!important;
@@ -205,17 +197,12 @@
     --base-warm-gray: #FDFDFC!important;
     --base-cold-white: #F9FAFE!important;
     --base-black: #111111!important;
-    --rounded-md: 8px!important;
     --color-bg-default: #FDFDFC!important;
     --color-text-default: var(--gray-900)!important;
     --column-spacing: 32px!important;
     --navbar-height: 80px!important; 
     --button-padding: 13px 16px 14px 16px!important;
-    --cta-background: var(--primary-500)!important;
-    --cta-text: var(--color-text-default)!important;
     --shadow-md: 0px 12px 40px -3px rgba(18,18,32,0.05)!important;
-    --shadow-feature-dark: 0px 12px 31px -3px rgba(0,0,0,0.1),0px 4px 15px -3px rgba(0,0,0,0.2),inset 0px 6px 66px -9px rgba(0,0,0,0.1)!important;
-    --shadow-feature-light: 0px 12px 31px -3px rgba(0,0,0,0.06),0px 4px 15px -3px rgba(0,0,0,0.05),inset 0px 6px 66px -9px rgba(0,0,0,0.01)!important;
 } 
 
 // –––––––––––––––––   
@@ -443,6 +430,28 @@ h2.notion-heading .notion-semantic-string  {
                     }
                 }
 
+                // Price property
+                .property-7a5f6142 {
+
+                    span {
+                        position: absolute!important;
+                        top: 8px!important;
+                        right: 8px!important;
+                        background: var(--base-white)!important;
+                        color: var(--base-black)!important;
+                        width: 48px!important;
+                        height: 48px!important;
+                        padding: 4px!important;
+                        display: flex!important;
+                        justify-content: center!important;
+                        align-items: center!important;
+                        border-radius: 100%!important;
+                        @include text-lg;
+                        font-weight: 500!important;
+                        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.06)!important;
+                    }
+                }
+
                 // Author property
                 .property-52525675 {
                     display: flex!important;
@@ -474,28 +483,6 @@ h2.notion-heading .notion-semantic-string  {
                         color: var(--gray-500)!important;
                         @include text-base;
                         padding: 4px 8px!important;
-                    }
-                }
-
-                // Price property
-                .property-7a5f6142 {
-
-                    span {
-                        position: absolute!important;
-                        top: 8px!important;
-                        right: 8px!important;
-                        background: var(--base-white)!important;
-                        color: var(--base-black)!important;
-                        width: 48px!important;
-                        height: 48px!important;
-                        padding: 4px!important;
-                        display: flex!important;
-                        justify-content: center!important;
-                        align-items: center!important;
-                        border-radius: 100%!important;
-                        @include text-lg;
-                        font-weight: 500!important;
-                        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.06)!important;
                     }
                 }
             }
@@ -1010,7 +997,7 @@ h2.notion-heading .notion-semantic-string  {
             max-width: 48rem!important;
             margin: 16px auto 0!important;
         }
- 
+
         .notion-link {
             @include button-primary-default;
             box-shadow: var(--shadow-md)!important;
@@ -1045,19 +1032,23 @@ h2.notion-heading .notion-semantic-string  {
                     width: 100%!important;
                 }
 
+                // Notion
                 &:nth-child(1) {
                     flex: 1!important;
                 }
 
+                // Super
                 &:nth-child(3) {
                     flex: 1!important;
                 }
 
+                // Arrow
                 &:nth-child(2) {
                     width: 3%!important;
                     display: flex!important;
                     align-items: center!important;
                     justify-content: center!important;
+                    margin: 0px 8px!important;
 
                     @include breakpoint-xs {
                         width:10%!important;
@@ -1071,18 +1062,11 @@ h2.notion-heading .notion-semantic-string  {
                         }
                     }
                 }
+
                 .notion-callout {
                     .notion-image {
-                        box-shadow: var(--shadow-feature-light)!important;
-                        
-                        &:first-of-type {
-                            position: relative!important;
-                            top: 24px!important;
-                            width: 48px!important;
-                            height: 48px!important;
-                            z-index: 10!important;
-                            margin: 0 auto!important;
-                        }
+                    filter: drop-shadow(0px 10px 12px rgba(0,0,0,0.06));
+                    -webkit-filter: drop-shadow(0px 10px 12px rgba(0,0,0,0.06));
                     }
                 }
             }
@@ -1277,6 +1261,14 @@ h2.notion-heading .notion-semantic-string  {
             }
         }
     }
+
+    // Content lives in Notion Icons
+    //Customize to match brand Icons
+    #block-aee16c9e7f704fdea51d1e1d3b8ac4f0,
+    #block-3cb9d6fc0b2c4516b73480fc7ba14901 {
+        align-self: flex-start!important;
+    }
+
     // –––––––––––––––––
     // section-templates
     // –––––––––––––––––
@@ -1321,28 +1313,6 @@ h2.notion-heading .notion-semantic-string  {
                         padding: 4px 8px!important;
                     }
                 }
-                
-                //  Price property
-                .property-7a5f6142 {
-
-                    span {
-                        position: absolute!important;
-                        top: 8px!important;
-                        right: 8px!important;
-                        background: var(--base-white)!important;
-                        color: var(--base-black)!important;
-                        width: 48px!important;
-                        height: 48px!important;
-                        padding: 4px!important;
-                        display: flex!important;
-                        justify-content: center!important;
-                        align-items: center!important;
-                        border-radius: 100%!important;
-                        @include text-lg;
-                        font-weight: 500!important;
-                        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.06)!important;
-                    }
-                }
 
                 @include breakpoint-md {
                     grid-template-columns: 1fr 1fr!important;
@@ -1383,6 +1353,11 @@ h2.notion-heading .notion-semantic-string  {
         .notion-collection-gallery.small {
             gap: 30px!important;
             grid-row-gap: 50px!important;
+
+            @include breakpoint-xs {
+                grid-template-columns: 1fr 1fr!important;
+                grid-row-gap: 0px!important;
+            }
 
             .notion-collection-card {
                 box-shadow: none!important;
@@ -1573,6 +1548,11 @@ h2.notion-heading .notion-semantic-string  {
         58px 88px 57px rgba(0, 0, 0, 0.05)
         !important;
 
+        @include breakpoint-xs {
+            border-radius: 12px!important;
+        }
+        
+
         .notion-column-list {
             @include breakpoint-xs {
                 flex-wrap: nowrap!important;
@@ -1592,6 +1572,7 @@ h2.notion-heading .notion-semantic-string  {
 
             @include breakpoint-xs {
                 width: 100%!important;
+                border-radius: 8px!important;
             }
 
             .notion-callout {
@@ -1615,6 +1596,10 @@ h2.notion-heading .notion-semantic-string  {
                 border-radius: 100px!important;
                 padding: 12px 16px!important;
                 opacity: 1!important;
+
+                @include breakpoint-xs {
+                    border-radius: 8px!important;
+                }
 
                 &:hover {
                     background: var(--gray-100);
