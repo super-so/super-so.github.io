@@ -798,7 +798,13 @@ h2.notion-heading .notion-semantic-string  {
 // –––––––––––––––––
 // Misc
 // –––––––––––––––––
-.notion-page { display: none!important; }
+#page-icons .notion-page,
+#page-icons-light .notion-page,
+#page-pricing .notion-page, 
+#page-pricing-annual .notion-page
+#page-illustrations, .notion-page { 
+    display: none!important; 
+}
 //
 // Submit template button
 // Submit showcase button
@@ -814,6 +820,22 @@ h2.notion-heading .notion-semantic-string  {
     @include button-secondary-gray;
     padding: 7px 16px 8px 16px!important;
 }
+
+// Illustration title button columns
+#block-6a08570a7e92473c882204fd47a23929,
+#block-ec94fe5d64a948299b9b4b04b3f389cf,
+#block-ffe08794afa54ccabb22846d3c275817,
+#block-7e42cc9f2abc4a54ac461cb91a302890 {
+    align-items: flex-end!important;
+}
+#block-d5e6ad3be6c043c3af705142bea8a32b .notion-link,
+#block-b48fd9fe1332421cbd3206849dec4c6b .notion-link,
+#block-2d988931dd65430abf8a4e3d18f9da62 .notion-link,
+#block-7ad1ab6f1d564dd4a0b21edf6475d114 .notion-link {
+    @include button-secondary-gray;
+    padding: 7px 16px 8px 16px!important;
+}
+
 
 // Video modal calsses
 
@@ -1810,15 +1832,21 @@ h2.notion-heading .notion-semantic-string  {
     background: var(--base-black) !important;
     transition: var(--transition) !important;
     color: var(--base-white) !important;
-    
-    .super-navbar__item:last-child {
-        border: 1px solid var(--base-white)!important;
-        background: transparent!important;
+
+    .notion-text {
+        color: var(--gray-200)!important;
     }
 
-    .super-navbar__cta {
+    .super-navbar {
         background: var(--base-white)!important;
-        color: var(--base-black)!important;
+
+        .super-navbar__item {
+            color: var(--gray-900)!important;
+        }
+    }
+
+    .super-navbar.scrolled {
+        background: rgba(255, 255, 255, 1) !important;
     }
 
     .notion-collection-gallery.small {
@@ -1836,5 +1864,11 @@ h2.notion-heading .notion-semantic-string  {
                 color: var(--gray-700)!important; 
             }
         }
+    }
+}
+
+#page-illustrations {
+    .notion-collection-card .notion-property__title {
+        justify-content: center!important;
     }
 }
