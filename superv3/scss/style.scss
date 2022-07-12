@@ -607,7 +607,7 @@ h2.notion-heading .notion-semantic-string  {
             
             .notion-dropdown__option {
                 border-radius: 50px!important;
-                border: 1px solid var(--gray-50)!important;
+                border: 1px solid var(--gray-100)!important;
                 transition: all .15s ease-in-out!important;
                 align-items: center!important;
 
@@ -740,16 +740,24 @@ h2.notion-heading .notion-semantic-string  {
         height: 120%!important;
         max-width: 120%!important;
         max-height: 120%!important;
-        top: 50%; 
-        left: 50%;
+        top: 60%!important;
+        left: 50%!important;
         transform: translate(-50%,-50%);
         z-index: -1!important;
 
+        @include breakpoint-md {
+            top: 50%!important;
+            width: 140%!important;
+            max-width: 140%!important;
+            max-height: 140%!important;
+        }
+
         @include breakpoint-xs {
-            width: 300%!important;
-            height: 300%!important;
-            max-width: 300%!important;
-            max-height: 300%!important;
+            top: 130%!important;
+            width: 280%!important;
+            height: 280%!important;
+            max-width: 280%!important;
+            max-height: 280%!important;
         }
     }
 }
@@ -790,9 +798,18 @@ h2.notion-heading .notion-semantic-string  {
 // –––––––––––––––––
 // Misc
 // –––––––––––––––––
-
-// Submit template/showcase button
-.notion-root > .notion-text:first-of-type .notion-link {
+.notion-page { display: none!important; }
+//
+// Submit template button
+// Submit showcase button
+// Builder duplicate button
+// Icon light toggle button
+// Icon dark toggle button
+#block-a86b81903a6543e79aaccdb292aaefa2 .notion-link,
+#block-4bc224d57a9d4a33acf1c1115706792d .notion-link,
+#block-d4275c52214e4bc3929a23f991fa9c18 .notion-link, 
+#block-85d934e03c8840b29134ed96836c9b33 .notion-link,
+#block-7ee63c2361cb48188152939336f9ea8e .notion-link {
     margin-top: 16px!important;
     @include button-secondary-gray;
     padding: 7px 16px 8px 16px!important;
@@ -806,6 +823,27 @@ h2.notion-heading .notion-semantic-string  {
 
 .modal-open {
     display: flex!important;
+}
+
+// Header title on secondary pages 
+
+#page-privacy-policy, #page-terms-of-service {
+
+    .super-content {
+        padding-top: 2rem!important;
+    }
+
+    .notion-header__title {
+        color: var(--base-black) !important;
+        letter-spacing: -1px !important;
+        position: static !important;
+        font-size: clamp(3rem, 4vw, 2.4rem)!important;
+        margin-top: 6rem!important;
+
+        @include breakpoint-xs {
+            top: 40px !important; 
+        }
+    }
 }
 
 // –––––––––––––––––   
@@ -882,6 +920,14 @@ h2.notion-heading .notion-semantic-string  {
         color: var(--color-text-default)!important;
     }
 
+    @include breakpoint-xs {
+        .super-navbar__item:last-child {
+            transition: none!important;
+            font-weight: 700!important;
+            color: var(--base-black)!important;
+        }
+    }
+
     @include above-xs {
         .super-navbar__item:last-child {
             height: 44px!important;
@@ -936,24 +982,15 @@ h2.notion-heading .notion-semantic-string  {
     }
 
     // Feature images
-    // 1. Creating a site shouldn't be complicated
-    // 2. Transform the look
-    #block-d52d50b32f2640a1ba67da69e691c637,
-    #block-9fedf59276874d43b9be52031cb5c206 {
+    // 1. Your content lives in Notion
+    // 2. Customize to match your brand
+
+    #block-47d80926dfb54a588732432a8a7d9565,
+    #block-638dabeaf2b146d7bd92521e650cf64e {
         position: relative!important;
-        left: -220px!important;
 
         @include breakpoint-xs {
-            left: 0!important;
-            right: 0!important;
-        }
-
-        & * {
-            width: 120%!important;
-
-            @include breakpoint-xs {
-                width: 100%!important;
-            }
+            display: none!important;
         }
     
         &::after {
@@ -1156,7 +1193,11 @@ h2.notion-heading .notion-semantic-string  {
                 max-width: 180px!important;
 
                 @include breakpoint-xs {
-                    max-width: 130px!important;;
+                    max-width: 130px!important;
+
+                    &:nth-child(4) {
+                        max-width: 100px!important;
+                    }
                 }
             }
         }
@@ -1368,12 +1409,13 @@ h2.notion-heading .notion-semantic-string  {
                 
                 .notion-property__title {
                     transition: color .2s ease-in-out!important;
+                    @include text-lg;
                 }
 
-                &:hover {
-                    border: 0!important;
-                    transform: none!important;
-                }
+                // &:hover {
+                //     border: 0!important;
+                //     transform: none!important;
+                // }
     
                 &:hover .notion-property__title {
                     color: var(--base-white)!important;
@@ -1384,23 +1426,23 @@ h2.notion-heading .notion-semantic-string  {
                     background: var(--gray-800);
                     /* Primary/300 */
                     border: 1px solid var(--gray-700);
-                    width: 56px!important;
-                    height: 56px!important;
-                    min-height: 56px!important;
+                    width: 72px!important;
+                    height: 72px!important;
+                    min-height: 72px!important;
                     display: flex!important;
                     justify-content: center!important;
                     align-items: center!important;
-                    border-radius: 50%!important;
+                    border-radius: 12px!important;
                     transition: all .15s ease-out!important;
                     /* Shadow/special */
                     // filter: drop-shadow(0px 4px 11px rgba(53, 53, 53, 0.01)) drop-shadow(0px 0px 7px rgba(251, 180, 60, 0.45))!important;
 
                     img {
-                        height: 24px!important;
-                        width: 24px!important;
-                        max-width: 24px!important;
-                        max-height: 24px!important;
-                        min-height: 24px!important;
+                        height: 32px!important;
+                        width: 32px!important;
+                        max-width: 32px!important;
+                        max-height: 32px!important;
+                        min-height: 32px!important;
                     }
                 }
             }
@@ -1456,11 +1498,11 @@ h2.notion-heading .notion-semantic-string  {
         }
     }
 }
+
 // –––––––––––––––––
 // Page: Pricing 
 // –––––––––––––––––
 #page-pricing, #page-pricing-annual {
-    .notion-page { display: none!important; }
     // –––––––––––––––––
     // section-billing toggle
     // –––––––––––––––––    
@@ -1768,7 +1810,6 @@ h2.notion-heading .notion-semantic-string  {
     background: var(--base-black) !important;
     transition: var(--transition) !important;
     color: var(--base-white) !important;
-
     
     .super-navbar__item:last-child {
         border: 1px solid var(--base-white)!important;
