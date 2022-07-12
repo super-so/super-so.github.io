@@ -531,12 +531,6 @@ h2.notion-heading .notion-semantic-string  {
 // –––––––––––––––––
 // Database view picker
 // –––––––––––––––––
-.notion-dropdown__option.active-filter {
-    background: var(--base-black)!important;
-}
-.notion-dropdown__option.active-filter p {
-    color: var(--base-white)!important;
-}
 .notion-dropdown {
     font-family: var(--primary-font)!important;
     width: 100%!important;
