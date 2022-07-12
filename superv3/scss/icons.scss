@@ -1,0 +1,42 @@
+// –––––––––––––––––
+// Page: Icons
+// –––––––––––––––––
+#page-icons {
+    --color-text-default: var(--base-white) !important;
+    background: var(--base-black) !important;
+    transition: var(--transition) !important;
+    color: var(--base-white) !important;
+
+    .notion-text {
+        color: var(--gray-200) !important;
+    }
+
+    .super-navbar {
+        background: var(--base-white) !important;
+    }
+
+    .super-navbar.scrolled {
+        background: rgba(255, 255, 255, 1) !important;
+    }
+
+    .super-navbar__item {
+        color: var(--gray-900) !important;
+    }
+
+    .notion-collection-gallery.small {
+        .notion-collection-card {
+            border: 1px solid var(--gray-900) !important;
+            &:hover {
+                border: 1px solid var(--gray-500) !important;
+            }
+
+            &:hover .notion-property__title {
+                color: var(--base-white) !important;
+            }
+
+            .notion-property__title {
+                color: var(--gray-700) !important;
+            }
+        }
+    }
+}

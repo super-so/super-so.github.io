@@ -16,7 +16,9 @@ const buildStyles = () => {
 
 const concatStyles = () => {
   return gulp.src('./css/**/*.css')
-  .pipe(concatCss("bundle.css"))
+    .pipe(gulpIgnore.exclude('style.css'))
+    .pipe(gulpIgnore.exclude('bundle.css'))
+    .pipe(concatCss("bundle.css"))
     .pipe(gulp.dest('./css'));
 }
 
@@ -27,10 +29,10 @@ const minify = () => {
     .pipe(gulp.dest('./min-css'));
 }
 
-const watch = () => {
-  gulp.watch('./scss/**/*.scss', series(buildStyles, concatStyles, minify));
-};
+const tasks = [buildStyles, concatStyles, minify]
 
-exports.buildStyles = buildStyles;
+const build = () => series(...tasks)
+const watch = () => gulp.watch('./scss/**/*.scss', series(...tasks));
+
 exports.watch = watch
-exports.default = watch
+exports.default = build

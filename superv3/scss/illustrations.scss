@@ -1,0 +1,24 @@
+@import "mixins";
+// –––––––––––––––––
+// Page: Illustrations 
+// –––––––––––––––––
+#page-illustrations {
+  .notion-collection-card .notion-property__title {
+      justify-content: center!important;
+  }
+}
+
+// Illustration title button columns
+#block-6a08570a7e92473c882204fd47a23929,
+#block-ec94fe5d64a948299b9b4b04b3f389cf,
+#block-ffe08794afa54ccabb22846d3c275817,
+#block-7e42cc9f2abc4a54ac461cb91a302890 {
+    align-items: flex-end !important;
+}
+#block-d5e6ad3be6c043c3af705142bea8a32b .notion-link,
+#block-b48fd9fe1332421cbd3206849dec4c6b .notion-link,
+#block-2d988931dd65430abf8a4e3d18f9da62 .notion-link,
+#block-7ad1ab6f1d564dd4a0b21edf6475d114 .notion-link {
+    @include button-secondary-gray;
+    padding: 7px 16px 8px 16px !important;
+}
