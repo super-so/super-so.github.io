@@ -607,6 +607,10 @@ h2.notion-heading .notion-semantic-string  {
             display: flex !important;
             gap: 8px!important;
 
+            .notion-dropdown__option.active-filter {
+                background: var(--gray-50)!important;
+            }
+            
             .notion-dropdown__option {
                 border-radius: 50px!important;
                 border: 1px solid var(--gray-50)!important;
@@ -634,6 +638,10 @@ h2.notion-heading .notion-semantic-string  {
     }
 
     .notion-dropdown__option:hover {
+        background: var(--gray-800)!important;
+    }
+
+    .notion-dropdown__option.active-filter {
         background: var(--gray-800)!important;
     }
     
@@ -1151,16 +1159,10 @@ h2.notion-heading .notion-semantic-string  {
             
             .notion-image {
                 padding: 4px 16px!important;
-                filter: saturate(0)!important;
-                transition: filter .2s ease-in-out!important;
                 max-width: 180px!important;
 
                 @include breakpoint-xs {
                     max-width: 130px!important;;
-                }
-
-                &:hover {
-                    filter: saturate(1)!important;
                 }
             }
         }
@@ -1479,7 +1481,7 @@ h2.notion-heading .notion-semantic-string  {
         .notion-link {
             &::after {
                 margin-top: -2px!important;
-                content: 'save 20%';
+                content: '1 month free';
                 margin-left: 8px!important; 
                 position: relative!important;
                 top: -1px!important;

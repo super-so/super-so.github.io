@@ -295,6 +295,8 @@ h2.notion-heading .notion-semantic-string {
     .notion-dropdown__menu .notion-dropdown__option-list {
       display: flex !important;
       gap: 8px !important; }
+      .notion-dropdown__menu .notion-dropdown__option-list .notion-dropdown__option.active-filter {
+        background: var(--gray-50) !important; }
       .notion-dropdown__menu .notion-dropdown__option-list .notion-dropdown__option {
         border-radius: 50px !important;
         border: 1px solid var(--gray-50) !important;
@@ -310,6 +312,9 @@ h2.notion-heading .notion-semantic-string {
   border: 1px solid var(--gray-800) !important; }
 
 .notion-callout.bg-gray-light .notion-dropdown__option:hover {
+  background: var(--gray-800) !important; }
+
+.notion-callout.bg-gray-light .notion-dropdown__option.active-filter {
   background: var(--gray-800) !important; }
 
 @media screen and (max-width: 576px) {
@@ -747,14 +752,10 @@ h2.notion-heading .notion-semantic-string {
       gap: 16px !important; } }
   #page-index #block-c2b91ef5f88a4f49a294e572dc98ca5f .notion-callout__content .notion-image {
     padding: 4px 16px !important;
-    filter: saturate(0) !important;
-    transition: filter 0.2s ease-in-out !important;
     max-width: 180px !important; }
     @media screen and (max-width: 576px) {
       #page-index #block-c2b91ef5f88a4f49a294e572dc98ca5f .notion-callout__content .notion-image {
         max-width: 130px !important; } }
-    #page-index #block-c2b91ef5f88a4f49a294e572dc98ca5f .notion-callout__content .notion-image:hover {
-      filter: saturate(1) !important; }
 
 #page-index #block-4ec0da2865a3465eae8ce500894d1281 {
   width: 100vw !important;
@@ -1078,7 +1079,7 @@ h2.notion-heading .notion-semantic-string {
 
 #page-pricing #block-5f4034b33f5e4ef5aee7421baadd223e .notion-link::after, #page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-link::after {
   margin-top: -2px !important;
-  content: 'save 20%';
+  content: '1 month free';
   margin-left: 8px !important;
   position: relative !important;
   top: -1px !important;
