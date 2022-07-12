@@ -48,11 +48,9 @@ const onRouteChangeComplete = (url) => {
     const videoModal = document.querySelector('#block-0566e957626d48dfb97500a48d34fe8e')
     const closeModalBtn = document.querySelector('#block-89f4c511b4d945a586e530a8a1f4bc13')
     const onOpenModalBtnClick = () => {
-      console.log('OPEN')
       videoModal.classList.add("modal-open");
     }
     const onCloseModalBtnClick = () => {
-      console.log('CLOSE')
       videoModal.classList.remove("modal-open");
     }
 
@@ -74,11 +72,9 @@ const onRouteChangeStart = () => {
     const videoModal = document.querySelector('#block-0566e957626d48dfb97500a48d34fe8e')
     const closeModalBtn = document.querySelector('#block-89f4c511b4d945a586e530a8a1f4bc13')
     const onOpenModalBtnClick = () => {
-      console.log('OPEN')
       videoModal.classList.add("modal-open");
     }
     const onCloseModalBtnClick = () => {
-      console.log('CLOSE')
       videoModal.classList.remove("modal-open");
     }
 
@@ -88,7 +84,6 @@ const onRouteChangeStart = () => {
 }
 
 const onLoad = () => {
-  console.log('LOADED')
   onRouteChangeComplete(next.router.state.route)
   next.router.events.on('routeChangeStart', onRouteChangeStart)
   next.router.events.on('routeChangeComplete', onRouteChangeComplete)
