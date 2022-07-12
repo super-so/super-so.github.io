@@ -350,11 +350,7 @@ h2.notion-heading .notion-semantic-string  {
     }
 }
 
-#page-index, #page-pricing, #page-pricing-annual {
-    .notion-header__title {
-        display: none!important;
-    }
-}
+
 
 .super-root:not(#page-index, #page-pricing, #page-pricing-annual) {
     .notion-root > h1.notion-heading {
@@ -534,6 +530,7 @@ h2.notion-heading .notion-semantic-string  {
 .notion-dropdown {
     font-family: var(--primary-font)!important;
     width: 100%!important;
+    z-index: 1!important;
 
     .notion-dropdown__menu-header, 
     .notion-dropdown__option-icon, 
@@ -805,7 +802,8 @@ h2.notion-heading .notion-semantic-string  {
 #page-illustrations, .notion-page { 
     display: none!important; 
 }
-//
+
+
 // Submit template button
 // Submit showcase button
 // Builder duplicate button
@@ -849,24 +847,6 @@ h2.notion-heading .notion-semantic-string  {
 
 // Header title on secondary pages 
 
-#page-privacy-policy, #page-terms-of-service {
-
-    .super-content {
-        padding-top: 2rem!important;
-    }
-
-    .notion-header__title {
-        color: var(--base-black) !important;
-        letter-spacing: -1px !important;
-        position: static !important;
-        font-size: clamp(3rem, 4vw, 2.4rem)!important;
-        margin-top: 6rem!important;
-
-        @include breakpoint-xs {
-            top: 40px !important; 
-        }
-    }
-}
 
 // –––––––––––––––––   
 // Header
@@ -874,6 +854,30 @@ h2.notion-heading .notion-semantic-string  {
 
 .notion-header__icon-wrapper, .notion-header__cover.no-cover {
     display: none!important;
+}
+
+#page-index, 
+#page-templates,
+#page-showcase,
+#page-icons, 
+#page-illustrations, 
+#page-guides, 
+#page-blog,
+#page-create,
+#page-report,
+#page-builder {
+    .notion-header__title {
+        color: var(--gray-300) !important;
+        letter-spacing: -1px !important;
+        position: absolute !important;
+        font-size: 24px !important;
+        top: 100px !important;
+        left: 2px !important;
+
+        @include breakpoint-xs {
+            top: 40px !important; 
+        }
+    }
 }
 
 .notion-header__content {
@@ -884,20 +888,7 @@ h2.notion-heading .notion-semantic-string  {
         margin-bottom: 4px;
         position: relative;
         margin-top: 0px!important;
-        z-index: 1;
-
-        .notion-header__title {
-            color: var(--gray-300) !important;
-            letter-spacing: -1px !important;
-            position: absolute !important;
-            font-size: 24px !important;
-            top: 100px !important;
-            left: 2px !important;
-
-            @include breakpoint-xs {
-                top: 40px !important; 
-            }
-        }
+        z-index: 1!important;
     }
 }
 
@@ -1010,10 +1001,6 @@ h2.notion-heading .notion-semantic-string  {
     #block-47d80926dfb54a588732432a8a7d9565,
     #block-638dabeaf2b146d7bd92521e650cf64e {
         position: relative!important;
-
-        @include breakpoint-xs {
-            display: none!important;
-        }
     
         &::after {
             content: ""!important;
@@ -1024,6 +1011,14 @@ h2.notion-heading .notion-semantic-string  {
             width: 120%!important;
             height: 100%!important;
         }
+    }
+
+    // Feature icons
+    // 1. Your content lives in Notion
+    // 2. Customize to match your brand
+    #block-aee16c9e7f704fdea51d1e1d3b8ac4f0,
+    #block-3cb9d6fc0b2c4516b73480fc7ba14901 {
+        align-self: flex-start!important;
     }
 
     // Feature paragraphs
@@ -1213,7 +1208,8 @@ h2.notion-heading .notion-semantic-string  {
             .notion-image {
                 padding: 4px 16px!important;
                 max-width: 180px!important;
-
+                filter: saturate(0) contrast(0.7)!important;
+ 
                 @include breakpoint-xs {
                     max-width: 130px!important;
 
@@ -1322,12 +1318,6 @@ h2.notion-heading .notion-semantic-string  {
         }
     }
 
-    // Content lives in Notion Icons
-    //Customize to match brand Icons
-    #block-aee16c9e7f704fdea51d1e1d3b8ac4f0,
-    #block-3cb9d6fc0b2c4516b73480fc7ba14901 {
-        align-self: flex-start!important;
-    }
 
     // –––––––––––––––––
     // section-templates
@@ -1870,5 +1860,11 @@ h2.notion-heading .notion-semantic-string  {
 #page-illustrations {
     .notion-collection-card .notion-property__title {
         justify-content: center!important;
+    }
+}
+
+#page-index, #page-pricing, #page-pricing-annual {
+    .notion-header__title {
+        display: none!important;
     }
 }
