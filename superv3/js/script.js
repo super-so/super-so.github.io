@@ -94,7 +94,7 @@ const onLoad = () => {
   next.router.events.on('routeChangeComplete', onRouteChangeComplete)
 }
 
-onLoad()
+window.onload = onLoad
 
 // Navbar Code
 window.addEventListener("scroll", () => {
