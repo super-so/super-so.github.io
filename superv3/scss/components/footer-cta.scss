@@ -1,0 +1,47 @@
+@import "../mixins";
+@import "../components/callout";
+// –––––––––––––––––
+// Global footer CTA
+// –––––––––––––––––
+.super-root .super-content #block-1efa808dfcce4ebaae1f7d5c21cc5bf6 {
+  @include callout-container;
+  text-align: center !important;
+  padding: 100px 24px !important;
+  border-radius: 40px !important;
+  background-position: center !important;
+  background-size: cover !important;
+  position: relative !important;
+  overflow: hidden !important;
+
+  .notion-link {
+      margin-top: 24px !important;
+      @include button-primary-dark;
+  }
+
+  .notion-image:last-child {
+      position: absolute !important;
+      width: 120% !important;
+      height: 120% !important;
+      max-width: 120% !important;
+      max-height: 120% !important;
+      top: 60% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%);
+      z-index: -1 !important;
+
+      @include breakpoint-md {
+          top: 50% !important;
+          width: 140% !important;
+          max-width: 140% !important;
+          max-height: 140% !important;
+      }
+
+      @include breakpoint-xs {
+          top: 130% !important;
+          width: 280% !important;
+          height: 280% !important;
+          max-width: 280% !important;
+          max-height: 280% !important;
+      }
+  }
+}

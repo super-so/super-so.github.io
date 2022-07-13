@@ -1,0 +1,24 @@
+// –––––––––––––––––
+// Callouts
+// –––––––––––––––––
+// #page-index .notion-callout,
+// #page-pricing .notion-callout,
+// #page-pricing-annual
+@mixin callout-container {
+  padding: 0px !important;
+  margin: 0px !important;
+  border: none !important;
+  overflow: visible !important;
+
+  .notion-callout__icon {
+    display: none !important;
+  }
+  .notion-callout__content {
+    margin-inline-start: 0px !important;
+    overflow: visible !important;
+
+    & > span {
+      display: none !important;
+    }
+  }
+}

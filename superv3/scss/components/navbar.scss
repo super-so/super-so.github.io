@@ -1,0 +1,54 @@
+@import "../mixins";
+// –––––––––––––––––
+// Navbar
+// –––––––––––––––––
+
+.super-navbar {
+  height: var(--navbar-height) !important;
+  background: transparent !important;
+  transition: height 0.3s ease-in-out, background 0.2s ease-in-out !important;
+
+  .super-navbar__item {
+      color: var(--color-text-default) !important;
+  }
+
+  @include breakpoint-xs {
+      .super-navbar__item:last-child {
+          transition: none !important;
+          font-weight: 700 !important;
+          color: var(--base-black) !important;
+      }
+  }
+
+  @include above-xs {
+      .super-navbar__item:last-child {
+          height: 44px !important;
+          @include button-secondary-gray;
+          margin-left: 8px !important;
+          padding: 10px 16px !important;
+          transition: none !important;
+          font-weight: 500 !important;
+      }
+  }
+
+  .super-navbar__cta {
+      border-radius: 8px !important;
+      padding: 10px 16px !important;
+      background: var(--primary-500) !important;
+      color: var(--base-black) !important;
+      font-weight: 500 !important;
+
+      @include breakpoint-xs {
+          padding: 8px 12px !important;
+      }
+  }
+}
+
+.super-navbar.scrolled {
+  -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
+  -moz-backdrop-filter: blur(20px) saturate(200%) !important;
+  backdrop-filter: blur(20px) saturate(200%) !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.04) !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+  height: 70px !important;
+}
