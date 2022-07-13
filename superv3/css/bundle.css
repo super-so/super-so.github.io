@@ -1560,6 +1560,7 @@ h2.notion-heading .notion-semantic-string {
   background-clip: padding-box !important;
   border: solid 1px transparent !important;
   position: relative !important;
+  border-radius: 24px !important;
 }
 
 @media screen and (max-width: 576px) {
