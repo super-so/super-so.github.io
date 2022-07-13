@@ -269,35 +269,33 @@
                 font-size: 48px!important;
                 font-weight: 500!important;
             }
+            .notion-callout__content {
+                display: flex!important;
+                align-items: center!important;
 
+                @include breakpoint-md {
+                    flex-direction: column!important;
+                    align-items: flex-start!important;
+                }
 
-        .notion-callout__content {
-            // display: flex!important;
-            align-items: center!important;
+                strong {
+                    margin-right: 6px!important;
+                    font-size: 48px!important;
+                    font-weight: 500!important;
 
-            @include breakpoint-md {
-                flex-direction: column!important;
-                align-items: flex-start!important;
-            }
+                }
 
-            strong {
-                margin-right: 6px!important;
-                font-size: 48px!important;
-                font-weight: 500!important;
-
-            }
-
-            .notion-text {
-                @include text-sm;
-                padding: 0px!important;
-                margin-top: 8px!important;
-                color: var(--base-black)!important;
-                
-                * {
-                    line-height: 1.2!important;
+                .notion-text {
+                    @include text-sm;
+                    padding: 0px!important;
+                    margin-top: 8px!important;
+                    color: var(--base-black)!important;
+                    
+                    * {
+                        line-height: 1.2!important;
+                    }
                 }
             }
         }
-    }
     }
 }

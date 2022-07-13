@@ -1901,6 +1901,7 @@ h2.notion-heading .notion-semantic-string {
 
 #block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout .notion-callout__content,
 #block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout .notion-callout__content {
+  display: flex !important;
   align-items: center !important;
 }
 
