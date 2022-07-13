@@ -323,6 +323,8 @@
 
     // Column list wrapper
     #block-618181ac627d4b07b192a8a07578d857 {
+        margin-top: 16px!important;
+        
         .notion-column {
             @include breakpoint-md {
                 flex-grow: 1 !important;

@@ -350,6 +350,9 @@
 #page-index #block-88bbe3ad95784b4bae4613cdc44f843a .notion-callout .notion-column .notion-text__content {
   padding: 0px !important;
 }
+#page-index #block-88bbe3ad95784b4bae4613cdc44f843a #block-618181ac627d4b07b192a8a07578d857 {
+  margin-top: 16px !important;
+}
 @media screen and (max-width: 992px) {
   #page-index #block-88bbe3ad95784b4bae4613cdc44f843a #block-618181ac627d4b07b192a8a07578d857 .notion-column {
     flex-grow: 1 !important;
