@@ -1551,6 +1551,7 @@ h2.notion-heading .notion-semantic-string {
   background: var(--gray-200) !important;
 }
 
+#page-builder .notion-callout.bg-gray-light,
 #page-index .notion-callout.bg-gray-light {
   background: var(--gray-900) !important;
   color: var(--base-white) !important;
@@ -1562,11 +1563,13 @@ h2.notion-heading .notion-semantic-string {
 }
 
 @media screen and (max-width: 576px) {
+  #page-builder .notion-callout.bg-gray-light,
   #page-index .notion-callout.bg-gray-light {
     padding: 8px !important;
   }
 }
 
+#page-builder .notion-callout.bg-gray-light:before,
 #page-index .notion-callout.bg-gray-light:before {
   content: "";
   position: absolute;
@@ -1580,6 +1583,7 @@ h2.notion-heading .notion-semantic-string {
   background: linear-gradient(to right, rgb(95, 95, 95), rgb(239, 239, 239));
 }
 
+#page-builder .notion-callout.bg-gray-light .notion-text,
 #page-index .notion-callout.bg-gray-light .notion-text {
   color: var(--gray-200) !important;
 }
