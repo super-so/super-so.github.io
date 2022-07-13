@@ -543,6 +543,10 @@
     position: relative !important;
     border-radius: 24px!important;
 
+    .notion-callout__icon {
+        display: none!important;
+    }
+
     @include breakpoint-xs {
         padding: 8px !important;
     }
