@@ -416,7 +416,6 @@ h2.notion-heading .notion-semantic-string {
   position: relative !important;
   overflow: hidden !important;
   border: none !important;
-  overflow: visible !important;
 }
 .super-root .super-content #block-1efa808dfcce4ebaae1f7d5c21cc5bf6 .notion-callout__icon {
   display: none !important;
