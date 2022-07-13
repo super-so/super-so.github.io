@@ -116,15 +116,10 @@
         padding: 8px !important;
         margin-bottom: 16px !important;
         cursor: pointer !important;
-        transition: background 0.2s ease-in-out, transform 0.2s ease-in-out !important;
+        transition: background 0.2s ease-in-out !important;
 
         &:hover {
             background: rgba(255, 255, 255, 0.5) !important;
-            transform: scale(1.03) !important;
-        }
-
-        &:active {
-            transform: scale(0.95) !important;
         }
 
         img {

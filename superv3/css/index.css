@@ -122,14 +122,10 @@
   padding: 8px !important;
   margin-bottom: 16px !important;
   cursor: pointer !important;
-  transition: background 0.2s ease-in-out, transform 0.2s ease-in-out !important;
+  transition: background 0.2s ease-in-out !important;
 }
 #block-0566e957626d48dfb97500a48d34fe8e .notion-image:hover {
   background: rgba(255, 255, 255, 0.5) !important;
-  transform: scale(1.03) !important;
-}
-#block-0566e957626d48dfb97500a48d34fe8e .notion-image:active {
-  transform: scale(0.95) !important;
 }
 #block-0566e957626d48dfb97500a48d34fe8e .notion-image img {
   height: 32px !important;
