@@ -924,7 +924,7 @@ h2.notion-heading .notion-semantic-string {
   left: 0 !important;
   width: 100% !important;
   height: 100vh !important;
-  display: none !important;
+  display: none;
   justify-content: center !important;
   align-items: center !important;
   z-index: 999 !important;
