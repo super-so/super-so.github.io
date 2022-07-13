@@ -6,12 +6,11 @@
   // –––––––––––––––––
   // section-billing toggle
   // –––––––––––––––––    
-  .notion-root > h1.notion-heading,
-  .notion-root > .notion-text  {
-      text-align: center!important;
-      max-width: 800px!important;
-      margin: 0 auto!important;
-  }
+    .notion-root > h1.notion-heading {
+        text-align: center!important;
+        max-width: 800px!important;
+        margin: 0 auto!important;
+    }
 }
 
 // Monthly
@@ -93,7 +92,6 @@
         border-radius: 12px!important;
     }
     
-
     .notion-column-list {
         @include breakpoint-xs {
             flex-wrap: nowrap!important;

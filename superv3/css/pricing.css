@@ -1,6 +1,4 @@
-#page-pricing .notion-root > h1.notion-heading,
-#page-pricing .notion-root > .notion-text, #page-pricing-annual .notion-root > h1.notion-heading,
-#page-pricing-annual .notion-root > .notion-text {
+#page-pricing .notion-root > h1.notion-heading, #page-pricing-annual .notion-root > h1.notion-heading {
   text-align: center !important;
   max-width: 800px !important;
   margin: 0 auto !important;
