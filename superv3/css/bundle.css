@@ -653,23 +653,31 @@ h2.notion-heading .notion-semantic-string {
   display: flex !important;
 }
 
-.notion-callout {
+#page-index .notion-callout,
+#page-pricing .notion-callout,
+#page-pricing-annual .notion-callout {
   padding: 0px !important;
   margin: 0px !important;
   border: none !important;
   overflow: visible !important;
 }
 
-.notion-callout .notion-callout__icon {
+#page-index .notion-callout .notion-callout__icon,
+#page-pricing .notion-callout .notion-callout__icon,
+#page-pricing-annual .notion-callout .notion-callout__icon {
   display: none !important;
 }
 
-.notion-callout .notion-callout__content {
+#page-index .notion-callout .notion-callout__content,
+#page-pricing .notion-callout .notion-callout__content,
+#page-pricing-annual .notion-callout .notion-callout__content {
   margin-inline-start: 0px !important;
   overflow: visible !important;
 }
 
-.notion-callout .notion-callout__content > span {
+#page-index .notion-callout .notion-callout__content > span,
+#page-pricing .notion-callout .notion-callout__content > span,
+#page-pricing-annual .notion-callout .notion-callout__content > span {
   display: none !important;
 }
 

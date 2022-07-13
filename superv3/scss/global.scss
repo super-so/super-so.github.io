@@ -691,10 +691,9 @@ h2.notion-heading .notion-semantic-string {
 // –––––––––––––––––
 // Callouts
 // –––––––––––––––––
-// #page-index .notion-callout,
-// #page-pricing .notion-callout,
-// #page-pricing-annual 
-.notion-callout {
+#page-index .notion-callout,
+#page-pricing .notion-callout,
+#page-pricing-annual .notion-callout {
     padding: 0px !important;
     margin: 0px !important;
     border: none !important;
