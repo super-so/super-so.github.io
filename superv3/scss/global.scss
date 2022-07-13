@@ -524,6 +524,20 @@ h2.notion-heading .notion-semantic-string {
     background-size: cover !important;
     position: relative !important;
     overflow: hidden !important;
+    border: none !important;
+    overflow: visible !important;
+
+    .notion-callout__icon {
+        display: none !important;
+    }
+    .notion-callout__content {
+        margin-inline-start: 0px !important;
+        overflow: visible !important;
+
+        & > span {
+            display: none !important;
+        }
+    }
 
     .notion-link {
         margin-top: 24px !important;
