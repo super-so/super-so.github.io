@@ -98,7 +98,7 @@
   left: 0 !important;
   width: 100% !important;
   height: 100vh !important;
-  display: none;
+  justify-content: center !important;
   align-items: center !important;
   z-index: 999 !important;
   background: rgba(0, 0, 0, 0.4) !important;
@@ -110,7 +110,7 @@
   display: flex !important;
   align-items: center !important;
   flex-direction: column !important;
-  margin: 6rem !important;
+  max-width: 900px !important;
 }
 #block-0566e957626d48dfb97500a48d34fe8e .notion-image {
   align-self: flex-end !important;
