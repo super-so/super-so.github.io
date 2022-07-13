@@ -110,6 +110,7 @@
   display: flex !important;
   align-items: center !important;
   flex-direction: column !important;
+  margin: 6rem !important;
 }
 #block-0566e957626d48dfb97500a48d34fe8e .notion-image {
   align-self: flex-end !important;
@@ -513,7 +514,7 @@
   background: transparent !important;
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   flex-direction: column !important;
   overflow: visible !important;
   border: 0 !important;

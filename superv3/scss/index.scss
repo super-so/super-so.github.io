@@ -103,6 +103,7 @@
         display: flex !important;
         align-items: center !important;
         flex-direction: column !important;
+        margin: 6rem!important;
     }
 
     .notion-image {
@@ -434,7 +435,7 @@
             background: transparent !important;
             display: flex !important;
             align-items: center !important;
-            justify-content: center !important;
+            justify-content: flex-start !important;
             flex-direction: column !important;
             overflow: visible !important;
             border: 0 !important;
