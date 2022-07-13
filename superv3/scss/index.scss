@@ -365,7 +365,7 @@
                 color: var(--gray-200) !important;
                 @include text-base;
                 padding: 4px 8px !important;
-            }
+            } 
         }
 
         @include breakpoint-md {
@@ -381,6 +381,11 @@
 // section-showcase
 // –––––––––––––––––
 #block-41e832c0a32a4c35ab58e507af0f105a {
+
+    .notion-collection-gallery {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
     .notion-text .notion-link:first-of-type {
         @include button-secondary-gray;
         margin-top: 16px !important;
