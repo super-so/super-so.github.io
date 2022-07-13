@@ -275,31 +275,31 @@
   font-size: 48px !important;
   font-weight: 500 !important;
 }
-#block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout__content,
-#block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout__content {
+#block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout .notion-callout__content,
+#block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout .notion-callout__content {
   align-items: center !important;
 }
 @media screen and (max-width: 992px) {
-  #block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout__content,
-#block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout__content {
+  #block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout .notion-callout__content,
+#block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout .notion-callout__content {
     flex-direction: column !important;
     align-items: flex-start !important;
   }
 }
-#block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout__content strong,
-#block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout__content strong {
+#block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout .notion-callout__content strong,
+#block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout .notion-callout__content strong {
   margin-right: 6px !important;
   font-size: 48px !important;
   font-weight: 500 !important;
 }
-#block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout__content .notion-text,
-#block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout__content .notion-text {
+#block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout .notion-callout__content .notion-text,
+#block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout .notion-callout__content .notion-text {
   font-size: 0.875rem !important;
   padding: 0px !important;
   margin-top: 8px !important;
   color: var(--base-black) !important;
 }
-#block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout__content .notion-text *,
-#block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout__content .notion-text * {
+#block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout .notion-callout__content .notion-text *,
+#block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout .notion-callout__content .notion-text * {
   line-height: 1.2 !important;
 }
