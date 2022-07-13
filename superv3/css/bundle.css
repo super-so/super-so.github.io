@@ -757,42 +757,42 @@ h2.notion-heading .notion-semantic-string {
   background: var(--gray-25) !important;
   color: var(--gray-900) !important;
 }
-#page-icons {
+#page-icons-light {
   --color-text-default: var(--base-white) !important;
   background: var(--base-black) !important;
   transition: var(--transition) !important;
   color: var(--base-white) !important;
 }
 
-#page-icons .notion-text {
+#page-icons-light .notion-text {
   color: var(--gray-200) !important;
 }
 
-#page-icons .super-navbar {
+#page-icons-light .super-navbar {
   background: var(--base-white) !important;
 }
 
-#page-icons .super-navbar.scrolled {
+#page-icons-light .super-navbar.scrolled {
   background: rgb(255, 255, 255) !important;
 }
 
-#page-icons .super-navbar__item {
+#page-icons-light .super-navbar__item {
   color: var(--gray-900) !important;
 }
 
-#page-icons .notion-collection-gallery.small .notion-collection-card {
+#page-icons-light .notion-collection-gallery.small .notion-collection-card {
   border: 1px solid var(--gray-900) !important;
 }
 
-#page-icons .notion-collection-gallery.small .notion-collection-card:hover {
+#page-icons-light .notion-collection-gallery.small .notion-collection-card:hover {
   border: 1px solid var(--gray-500) !important;
 }
 
-#page-icons .notion-collection-gallery.small .notion-collection-card:hover .notion-property__title {
+#page-icons-light .notion-collection-gallery.small .notion-collection-card:hover .notion-property__title {
   color: var(--base-white) !important;
 }
 
-#page-icons .notion-collection-gallery.small .notion-collection-card .notion-property__title {
+#page-icons-light .notion-collection-gallery.small .notion-collection-card .notion-property__title {
   color: var(--gray-700) !important;
 }
 #page-illustrations .notion-collection-card .notion-property__title {
