@@ -42,21 +42,21 @@ const setActiveTab = (options, currentTabContent) => {
 }
 
 const onRouteChangeComplete = (url) => {
-  if (url === '/') {
-    // Video modal
-    const openModalBtn = document.querySelector('#block-ca319f58fb8f4a0ab5bb814aeffd6062')
-    const videoModal = document.querySelector('#block-0566e957626d48dfb97500a48d34fe8e')
-    const closeModalBtn = document.querySelector('#block-89f4c511b4d945a586e530a8a1f4bc13')
-    const onOpenModalBtnClick = () => {
-      videoModal.classList.add("modal-open");
-    }
-    const onCloseModalBtnClick = () => {
-      videoModal.classList.remove("modal-open");
-    }
+  // if (url === '/') {
+  //   // Video modal
+  //   const openModalBtn = document.querySelector('#block-ca319f58fb8f4a0ab5bb814aeffd6062')
+  //   const videoModal = document.querySelector('#block-0566e957626d48dfb97500a48d34fe8e')
+  //   const closeModalBtn = document.querySelector('#block-89f4c511b4d945a586e530a8a1f4bc13')
+  //   const onOpenModalBtnClick = () => {
+  //     videoModal.classList.add("modal-open");
+  //   }
+  //   const onCloseModalBtnClick = () => {
+  //     videoModal.classList.remove("modal-open");
+  //   }
 
-    openModalBtn.addEventListener('click', onOpenModalBtnClick);
-    closeModalBtn.addEventListener('click', onCloseModalBtnClick);
-  }
+  //   openModalBtn.addEventListener('click', onOpenModalBtnClick);
+  //   closeModalBtn.addEventListener('click', onCloseModalBtnClick);
+  // }
 
   const options = document.querySelectorAll('.notion-dropdown__option')
   const currentTab = document.querySelector('.notion-dropdown__button-title')
@@ -66,29 +66,29 @@ const onRouteChangeComplete = (url) => {
   }
 }
 
-const onRouteChangeStart = () => {
-  if (next.router.state.route === '/') {
-    const video = document.getElementById("#block-579642c3c43749958ba0f1a38e9ecdb7 video");
-    const openModalBtn = document.querySelector('#block-ca319f58fb8f4a0ab5bb814aeffd6062')
-    const videoModal = document.querySelector('#block-0566e957626d48dfb97500a48d34fe8e')
-    const closeModalBtn = document.querySelector('#block-89f4c511b4d945a586e530a8a1f4bc13')
-    const onOpenModalBtnClick = () => {
-      videoModal.classList.add("modal-open");
-      video.play();
-    }
-    const onCloseModalBtnClick = () => {
-      videoModal.classList.remove("modal-open");
-      video.pause();
-    }
+// const onRouteChangeStart = () => {
+//   if (next.router.state.route === '/') {
+//     const video = document.getElementById("#block-579642c3c43749958ba0f1a38e9ecdb7 video");
+//     const openModalBtn = document.querySelector('#block-ca319f58fb8f4a0ab5bb814aeffd6062')
+//     const videoModal = document.querySelector('#block-0566e957626d48dfb97500a48d34fe8e')
+//     const closeModalBtn = document.querySelector('#block-89f4c511b4d945a586e530a8a1f4bc13')
+//     const onOpenModalBtnClick = () => {
+//       videoModal.classList.add("modal-open");
+//       video.play();
+//     }
+//     const onCloseModalBtnClick = () => {
+//       videoModal.classList.remove("modal-open");
+//       video.pause();
+//     }
 
-    openModalBtn.removeEventListener('click', onOpenModalBtnClick);
-    closeModalBtn.removeEventListener('click', onCloseModalBtnClick);
-  }
-}
+//     openModalBtn.removeEventListener('click', onOpenModalBtnClick);
+//     closeModalBtn.removeEventListener('click', onCloseModalBtnClick);
+//   }
+// }
 
 const onLoad = () => {
   onRouteChangeComplete(next.router.state.route)
-  next.router.events.on('routeChangeStart', onRouteChangeStart)
+  // next.router.events.on('routeChangeStart', onRouteChangeStart)
   next.router.events.on('routeChangeComplete', onRouteChangeComplete)
 }
 
