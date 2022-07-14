@@ -568,6 +568,7 @@ h2.notion-heading .notion-semantic-string {
 
 .super-root:not(#page-index, #page-pricing, #page-pricing-annual) .notion-root > h1.notion-heading {
   max-width: 48rem !important;
+  margin-top: 16px !important;
 }
 
 .super-footer__footnote {
