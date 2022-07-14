@@ -508,6 +508,7 @@ h2.notion-heading .notion-semantic-string {
   display: none !important;
 }
 
+#page-features .notion-header__title,
 #page-templates .notion-header__title,
 #page-showcase .notion-header__title,
 #page-icons .notion-header__title,
@@ -526,7 +527,8 @@ h2.notion-heading .notion-semantic-string {
   left: 2px !important;
 }
 @media screen and (max-width: 576px) {
-  #page-templates .notion-header__title,
+  #page-features .notion-header__title,
+#page-templates .notion-header__title,
 #page-showcase .notion-header__title,
 #page-icons .notion-header__title,
 #page-icons-light .notion-header__title,
