@@ -11,12 +11,14 @@ const buildStyles = () => {
   return gulp.src('./scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulpIgnore.exclude('mixins.css'))
+    .pipe(gulpIgnore.exclude('variables.css'))
+    .pipe(gulpIgnore.exclude('font.css'))
+    .pipe(gulpIgnore.exclude('components/*.css'))
     .pipe(gulp.dest('./css'));
 };
 
 const concatStyles = () => {
   return gulp.src('./css/**/*.css')
-    .pipe(gulpIgnore.exclude('style.css'))
     .pipe(gulpIgnore.exclude('bundle.css'))
     .pipe(concatCss("bundle.css"))
     .pipe(gulp.dest('./css'));

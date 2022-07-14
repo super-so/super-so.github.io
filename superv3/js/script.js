@@ -1,29 +1,40 @@
-
-// const card = document.querySelector("#block-46a1c2fe8a194580a4e2adb75269c77b");
-// const motionMatchMedia = window.matchMedia("(prefers-reduced-motion)");
-// const THRESHOLD = 5;
-
-// function handleHover(e) {
-//   const { clientX, clientY, currentTarget } = e;
-//   const { clientWidth, clientHeight, offsetLeft, offsetTop } = currentTarget;
-
-//   const horizontal = (clientX - offsetLeft) / clientWidth;
-//   const vertical = (clientY - offsetTop) / clientHeight;
-//   const rotateX = (THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2);
-//   const rotateY = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
+// const handleVideoModal = (url, mount) => {
+//   if (mount) {
+//     if (url === '/') {
+//       // Video modal
+//       const openModalBtn = document.querySelector('#block-ca319f58fb8f4a0ab5bb814aeffd6062')
+//       const videoModal = document.querySelector('#block-0566e957626d48dfb97500a48d34fe8e')
+//       const closeModalBtn = document.querySelector('#block-89f4c511b4d945a586e530a8a1f4bc13')
+//       const onOpenModalBtnClick = () => {
+//         videoModal.classList.add("modal-open");
+//       }
+//       const onCloseModalBtnClick = () => {
+//         videoModal.classList.remove("modal-open");
+//       }
   
-//   card.style.transform = `perspective(${clientWidth}px)  rotateX(${rotateX}deg) rotateY(${rotateX}deg) scale3d(1.01, 1.01, 1.01)`;
+//       openModalBtn.addEventListener('click', onOpenModalBtnClick);
+//       closeModalBtn.addEventListener('click', onCloseModalBtnClick);
+//     }
+//   } else {
+//     if (url === '/') {
+//       const video = document.getElementById("#block-579642c3c43749958ba0f1a38e9ecdb7 video");
+//       const openModalBtn = document.querySelector('#block-ca319f58fb8f4a0ab5bb814aeffd6062')
+//       const videoModal = document.querySelector('#block-0566e957626d48dfb97500a48d34fe8e')
+//       const closeModalBtn = document.querySelector('#block-89f4c511b4d945a586e530a8a1f4bc13')
+//       const onOpenModalBtnClick = () => {
+//         videoModal.classList.add("modal-open");
+//         video.play();
+//       }
+//       const onCloseModalBtnClick = () => {
+//         videoModal.classList.remove("modal-open");
+//         video.pause();
+//       }
+  
+//       openModalBtn.removeEventListener('click', onOpenModalBtnClick);
+//       closeModalBtn.removeEventListener('click', onCloseModalBtnClick);
+//     }
+//   }
 // }
-
-// function resetStyles(e) {
-//   card.style.transform = `perspective(${e.currentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
-// }
-
-// if (!motionMatchMedia.matches) {
-//     card.addEventListener("mousemove", handleHover);
-//     card.addEventListener("mouseleave", resetStyles);
-// }
-
 
 // DB VIEW SWITCHER
 const setActiveTab = (options, currentTabContent) => {
@@ -42,22 +53,7 @@ const setActiveTab = (options, currentTabContent) => {
 }
 
 const onRouteChangeComplete = (url) => {
-  // if (url === '/') {
-  //   // Video modal
-  //   const openModalBtn = document.querySelector('#block-ca319f58fb8f4a0ab5bb814aeffd6062')
-  //   const videoModal = document.querySelector('#block-0566e957626d48dfb97500a48d34fe8e')
-  //   const closeModalBtn = document.querySelector('#block-89f4c511b4d945a586e530a8a1f4bc13')
-  //   const onOpenModalBtnClick = () => {
-  //     videoModal.classList.add("modal-open");
-  //   }
-  //   const onCloseModalBtnClick = () => {
-  //     videoModal.classList.remove("modal-open");
-  //   }
-
-  //   openModalBtn.addEventListener('click', onOpenModalBtnClick);
-  //   closeModalBtn.addEventListener('click', onCloseModalBtnClick);
-  // }
-
+  // handleVideoModal(url, true)
   const options = document.querySelectorAll('.notion-dropdown__option')
   const currentTab = document.querySelector('.notion-dropdown__button-title')
 
@@ -67,23 +63,7 @@ const onRouteChangeComplete = (url) => {
 }
 
 // const onRouteChangeStart = () => {
-//   if (next.router.state.route === '/') {
-//     const video = document.getElementById("#block-579642c3c43749958ba0f1a38e9ecdb7 video");
-//     const openModalBtn = document.querySelector('#block-ca319f58fb8f4a0ab5bb814aeffd6062')
-//     const videoModal = document.querySelector('#block-0566e957626d48dfb97500a48d34fe8e')
-//     const closeModalBtn = document.querySelector('#block-89f4c511b4d945a586e530a8a1f4bc13')
-//     const onOpenModalBtnClick = () => {
-//       videoModal.classList.add("modal-open");
-//       video.play();
-//     }
-//     const onCloseModalBtnClick = () => {
-//       videoModal.classList.remove("modal-open");
-//       video.pause();
-//     }
-
-//     openModalBtn.removeEventListener('click', onOpenModalBtnClick);
-//     closeModalBtn.removeEventListener('click', onCloseModalBtnClick);
-//   }
+//   handleVideoModal(next.router.state.route, false)
 // }
 
 const onLoad = () => {
