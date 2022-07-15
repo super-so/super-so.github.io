@@ -101,7 +101,7 @@
     gap: 8px !important;
   }
 
-  .notion-dropdown__menu .notion-dropdown__option.active-filter {
+  .notion-dropdown__menu .notion-dropdown__option.active {
     background: var(--gray-50) !important;
   }
 
@@ -130,7 +130,7 @@
   background: var(--gray-800) !important;
 }
 
-.notion-callout.bg-gray-light .notion-dropdown__menu .notion-dropdown__option.active-filter {
+.notion-callout.bg-gray-light .notion-dropdown__menu .notion-dropdown__option.active {
   background: var(--gray-800) !important;
 }
 
@@ -465,7 +465,7 @@
   height: 120% !important;
   max-width: 120% !important;
   max-height: 120% !important;
-  top: 60% !important;
+  top: 58% !important;
   left: 50% !important;
   transform: translate(-50%, -50%);
   z-index: -1 !important;
