@@ -707,6 +707,7 @@ h2.notion-heading .notion-semantic-string {
 #page-index .notion-callout.bg-gray-light {
   background: var(--gray-900) !important;
   color: var(--base-white) !important;
+  fill: var(--base-white) !important;
   transition: box-shadow 0.2s ease-out !important;
   padding: 48px !important;
   background-clip: padding-box !important;
