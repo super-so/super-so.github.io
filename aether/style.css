@@ -917,6 +917,11 @@ p {
     opacity: 1!important;
 }
 
+.super-footer {
+    border-top: 1px solid var(--color-border-default)!important;
+}
+
+/* Legacy Footer */
 .notion-root>.notion-callout {
     width: 100%!important;
     border: 0!important;
@@ -1024,7 +1029,7 @@ p {
 .notion-root>.notion-callout .notion-collection-card__cover img {
     filter: grayscale(100%) contrast(0%)!important;
 }
-
+/* End legacy footer */
 @media all and (max-width: 1100px) {
     .notion-root>.notion-column-list>.notion-column:nth-child(3) {
         display: none !important;
