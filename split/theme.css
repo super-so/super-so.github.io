@@ -4,16 +4,4 @@
     --color-text-default-light: #d4d7dd;
     --color-bg-default: #fff;
     --color-ui-hover-bg: #f6f7f9;
-    --heading1-size: 60px;
-    --heading2-size: 32px;
-    --heading2-size: 12px;
-}
-
-
-@media (max-width: 680px) {
-
-    :root {
-        --heading2-size: 50px !important;
-    }
-
 }
