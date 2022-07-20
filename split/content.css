@@ -5,6 +5,7 @@
 .notion-header {
     height: 100vh !important;
     width: 50vw !important;
+    margin-bottom: 0px!important;
 }
 
 .notion-header__cover {
