@@ -3,3 +3,6 @@
 .notion-header__content {
     display: none !important;
 }
+#block-c6cca0bab9b04e0b81622ecf4de87dae, .notion-toggle.bg-brown {
+    display: none!important;
+}
