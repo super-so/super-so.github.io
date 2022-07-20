@@ -193,8 +193,6 @@ p {
 
 .notion-property__title,
 .notion-collection-card__content {
-    display: flex !important;
-    height: 64px !important;
     padding: 0 !important;
 }
 
