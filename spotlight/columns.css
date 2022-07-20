@@ -8,11 +8,6 @@
     text-align: left !important;
 }
 
-.notion-column p {
-    font-weight: 300 !important;
-    font-size: 22px !important;
-}
-
 @media (max-width: 900px) {
 
     #page-index .notion-column-list {
