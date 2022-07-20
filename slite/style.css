@@ -57,6 +57,10 @@ body {
 /*-------------- MISCELLANEOUS --------------*/
 /*-------------------------------------------*/
 
+.super-navbar {
+    background: transparent!important;
+}
+
 .max-width {
     max-width: 85% !important;
     width: 600px !important;
@@ -136,7 +140,7 @@ p {
     min-height: calc(1.5rem) !important; 
 }
 
-.notion-link {
+.notion-root > .notion-link {
     transition: var(--transition) !important;
     border: none !important;
     opacity: 0.4 !important;
