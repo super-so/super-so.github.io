@@ -20,6 +20,10 @@
 
 @media (max-width: 1020px) {
 
+    .super-content-wrapper {
+        flex-direction: column!important;
+    }
+
     .notion-header,
     .super-content {
         position: relative !important;
