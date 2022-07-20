@@ -908,11 +908,11 @@ p {
     border-radius: 20px!important;
 }
 
-.page-active {
+.notion-column-list:first-child .page-active {
     background: var(--color-ui-hover-bg)!important;
 }
 
-.page-icon-active {
+.notion-column-list:first-child .page-icon-active {
     filter: grayscale(0%)!important;
     opacity: 1!important;
 }
