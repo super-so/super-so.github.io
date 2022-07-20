@@ -645,7 +645,7 @@ ul>.notion-list-item:before {
 }
 
 .notion-collection-gallery>.notion-collection-card {
-    padding-bottom: 20px!important;
+    padding-bottom: 12px!important;
 }
 
 .gallery .notion-property__title .notion-property__title__icon-wrapper {
