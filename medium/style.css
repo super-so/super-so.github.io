@@ -1,6 +1,12 @@
 :root {
     --transition: all .2s ease-in-out !important;
     --color-text-gray: #808c99 !important;
+    --rounded: 8px !important;
+}
+
+/* Add border radii to images */
+.notion-image img {
+    border-radius: var(--rounded) !important;
 }
 
 .super-navbar__cta {
@@ -109,6 +115,7 @@
 .notion-collection-card__cover {
     position: relative !important;
     border: none !important;
+    border-radius: var(--rounded) !important;
     flex: 2 !important;
 }
 
