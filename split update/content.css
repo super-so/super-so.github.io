@@ -1,11 +1,13 @@
+.super-content-wrapper {
+    display: flex!important;
+}
+
 .notion-header {
-    position: fixed !important;
     height: 100vh !important;
     width: 50vw !important;
-    bottom: 0 !important;
-    margin: 0 !important;
-    left: 0 !important;
-    top: 0 !important;
+    margin-bottom: 0px!important;
+    position: sticky!important;
+    top: 0!important;
 }
 
 .notion-header__cover {
@@ -14,15 +16,15 @@
 }
 
 .super-content {
-    position: absolute !important;
     padding: 120px !important;
     width: 50vw !important;
-    margin: 0 !important;
-    right: 0 !important;
-    top: 0 !important;
 }
 
 @media (max-width: 1020px) {
+
+    .super-content-wrapper {
+        flex-direction: column!important;
+    }
 
     .notion-header,
     .super-content {
