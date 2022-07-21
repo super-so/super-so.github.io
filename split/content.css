@@ -7,7 +7,7 @@
     width: 50vw !important;
     margin-bottom: 0px!important;
     position: sticky!important;
-    top: 0!
+    top: 0!important;
 }
 
 .notion-header__cover {
