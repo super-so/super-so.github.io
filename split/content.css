@@ -6,6 +6,8 @@
     height: 100vh !important;
     width: 50vw !important;
     margin-bottom: 0px!important;
+    position: sticky!important;
+    top: 0!
 }
 
 .notion-header__cover {
