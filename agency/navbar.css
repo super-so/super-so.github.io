@@ -1,13 +1,8 @@
 .notion-navbar {
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.4) !important;
     padding-right: var(--padding-right) !important;
     padding-left: var(--padding-left) !important;
     height: var(--navbar-height) !important;
-    background: rgba(0,0,0,0.9) !important;
     position: fixed !important;
-    -webkit-backdrop-filter: blur(20px) !important;
-    -moz-backdrop-filter: blur(20px) !important;
-    backdrop-filter: blur(20px) !important;
 }
 
 .notion-breadcrumb__divider,
