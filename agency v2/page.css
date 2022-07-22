@@ -1,0 +1,18 @@
+.notion-page__icon {
+    display: none !important;
+}
+
+.notion-page {
+    transition: var(--transition) !important;
+    letter-spacing: -1px !important;
+    position: relative !important;
+    font-size: 32px !important;
+}
+
+.notion-page:hover {
+    color: var(--color-text-gray) !important;
+}
+
+.notion-page>div:hover {
+    background: none !important;
+}

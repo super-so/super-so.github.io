@@ -1,0 +1,33 @@
+.notion-navbar {
+    padding-right: var(--padding-right) !important;
+    padding-left: var(--padding-left) !important;
+    height: var(--navbar-height) !important;
+    position: fixed !important;
+}
+
+.notion-breadcrumb__divider,
+.notion-breadcrumb__item  {
+    display: none !important;
+}
+
+.notion-navbar a[href="/"] {
+    display: flex !important;
+}
+
+.notion-navbar>a:hover {
+    background: none !important;
+}
+
+.notion-navbar__title {
+    overflow: visible !important;
+    font-size: 24px !important;
+}
+
+@media (max-width: 600px) {
+
+    .notion-navbar {
+        height: 120px !important;
+        padding-bottom: 50px !important;
+    }
+
+}
