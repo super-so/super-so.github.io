@@ -425,6 +425,10 @@ ul>.notion-list-item:before {
     display: none !important;
 }
 
+.notion-toggle .notion-heading {
+    margin-top: 0px!important;
+  }
+
 .notion-root>.notion-column-list>.notion-column:first-child {
     background: var(--color-bg-default) !important;
     height: calc(100vh - 70px) !important;
