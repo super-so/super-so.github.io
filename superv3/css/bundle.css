@@ -834,6 +834,7 @@ h2.notion-heading .notion-semantic-string {
 }
 #page-illustrations .notion-collection-card .notion-property__title {
   justify-content: center !important;
+  text-align: center !important;
 }
 
 #page-illustrations #block-6a08570a7e92473c882204fd47a23929,
