@@ -530,6 +530,16 @@ h2.notion-heading span {
   margin-bottom: 8px !important;
 }
 
+h3,
+h3.notion-heading,
+h3.notion-heading span {
+  letter-spacing: -0.8px !important;
+  font-size: clamp(0.275rem, 4vw, 1.6rem) !important;
+  line-height: 1.2 !important;
+  margin-bottom: 8px !important;
+  margin-top: 24px !important;
+}
+
 h2.notion-heading .notion-semantic-string {
   letter-spacing: -1.5px !important;
 }
@@ -549,6 +559,14 @@ h2.notion-heading .notion-semantic-string {
 .super-root:not(#page-index, #page-pricing, #page-pricing-annual) .notion-root > h1.notion-heading {
   max-width: 48rem !important;
   margin-top: 16px !important;
+}
+
+.notion-quote {
+  margin: 1rem 0 !important;
+  border: 1px solid var(--gray-50) !important;
+  border-radius: 16px !important;
+  padding: 16px 20px !important;
+  color: var(--gray-700) !important;
 }
 
 .super-footer__footnote {
@@ -746,6 +764,19 @@ h2.notion-heading .notion-semantic-string {
 
 #page-builder #block-e48a71fc43f4443a820c9e59e6333519 .notion-callout__icon {
   display: none !important;
+}
+.parent-page__guides {
+  --layout-max-width: 900px!important;
+}
+
+.parent-page__guides .notion-bulleted-list {
+  color: var(--gray-600) !important;
+  margin: 16px 0px !important;
+  margin-left: 16px !important;
+}
+
+.parent-page__guides .notion-image {
+  filter: drop-shadow(0 0.4rem 0.8rem rgba(0, 0, 0, 0.08)) !important;
 }
 #page-icons-light {
   --color-text-default: var(--base-white) !important;

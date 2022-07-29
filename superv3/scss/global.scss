@@ -61,6 +61,17 @@ h2.notion-heading span {
     margin-bottom: 8px !important;
 }
 
+// h3
+h3,
+h3.notion-heading,
+h3.notion-heading span {
+    letter-spacing: -.8px!important;
+    font-size: clamp(.275rem, 4vw, 1.6rem) !important;
+    line-height: 1.2 !important;
+    margin-bottom: 8px !important;
+    margin-top: 24px!important;
+}
+
 h2.notion-heading .notion-semantic-string {
     letter-spacing: -1.5px !important;
 }
@@ -81,6 +92,14 @@ h2.notion-heading .notion-semantic-string {
         max-width: 48rem !important;
         margin-top: 16px!important;
     }
+}
+
+.notion-quote {
+    margin: 1rem 0!important;
+    border: 1px solid var(--gray-50)!important;
+    border-radius: 16px!important;
+    padding: 16px 20px!important;
+    color: var(--gray-700)!important;
 }
 
 // –––––––––––––––––

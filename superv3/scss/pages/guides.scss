@@ -1,0 +1,13 @@
+.parent-page__guides {
+    --layout-max-width: 900px!important;
+
+    .notion-bulleted-list {
+        color: var(--gray-600)!important;
+        margin: 16px 0px!important;
+        margin-left: 16px!important;
+    }
+
+    .notion-image {
+        filter: drop-shadow(0 0.4rem 0.8rem rgba(0, 0, 0, 0.08))!important;
+    }
+}
