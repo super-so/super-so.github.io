@@ -1,6 +1,3 @@
-.parent-page__guides, .parent-page__blog {
-  --image-border-radii: 16px!important;
-}
 .parent-page__guides .notion-bulleted-list, .parent-page__blog .notion-bulleted-list {
   color: var(--gray-600) !important;
   margin: 16px 0px !important;
