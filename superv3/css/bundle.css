@@ -765,6 +765,22 @@ h2.notion-heading .notion-semantic-string {
 #page-builder #block-e48a71fc43f4443a820c9e59e6333519 .notion-callout__icon {
   display: none !important;
 }
+.parent-page__guides,
+.parent-page__blog {
+  --image-border-radii: 16px!important;
+}
+
+.parent-page__guides .notion-bulleted-list,
+.parent-page__blog .notion-bulleted-list {
+  color: var(--gray-600) !important;
+  margin: 16px 0px !important;
+  margin-left: 16px !important;
+}
+
+.parent-page__guides .notion-image,
+.parent-page__blog .notion-image {
+  filter: drop-shadow(0 0.4rem 0.8rem rgba(0, 0, 0, 0.08)) !important;
+}
 .parent-page__guides {
   --layout-max-width: 900px!important;
 }
