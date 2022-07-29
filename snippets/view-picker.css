@@ -1,11 +1,27 @@
-.notion-dropdown {
-    width: 100% !important;
-    z-index: 1 !important; }
-  
+:root {
+    /* Active colors */
+  --picker-active-bg-color: rgb(233, 233, 233)!important;
+  --picker-active-text-color: rgb(70, 70, 70)!important;
+  /* Default colors */
+  --picker-border-color: rgb(233, 233, 233)!important;
+  --picker-text-color: rgb(70, 70, 70)!important;
+  --picker-border-radius: 8px!important;
+  /* Hover colors */
+  --picker-hover-bg-color: rgb(233, 233, 233)!important;
+  --picker-hover-text-color: rgb(70, 70, 70)!important;
+  --picker-hover-border-color: rgb(233, 233, 233)!important;
+  }
+
   .notion-dropdown__menu-header,
   .notion-dropdown__option-icon,
   .notion-dropdown__button svg:first-of-type {
     display: none !important; }
+    
+  @media all and (min-width: 576px) {
+  .notion-dropdown {
+    width: 100% !important;
+    z-index: 1 !important; }
+
   
   .notion-dropdown__button {
     justify-content: space-between !important;
@@ -30,7 +46,7 @@
         padding: 5px 16px !important;
         height: 50px !important; }
   
-  @media all and (min-width: 576px) {
+
     .notion-dropdown__button {
       display: none !important; }
     .notion-dropdown__menu.initial-state {
