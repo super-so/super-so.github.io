@@ -9,4 +9,15 @@
     .notion-image {
         filter: drop-shadow(0 0.4rem 0.8rem rgba(0, 0, 0, 0.08))!important;
     }
+
+    // h3
+    h3,
+    h3.notion-heading,
+    h3.notion-heading span {
+        letter-spacing: -.8px!important;
+        font-size: clamp(.275rem, 4vw, 1.6rem) !important;
+        line-height: 1.2 !important;
+        margin-bottom: 8px !important;
+        margin-top: 24px!important;
+    }
 }
