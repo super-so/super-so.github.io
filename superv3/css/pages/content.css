@@ -6,3 +6,14 @@
 .parent-page__guides .notion-image, .parent-page__blog .notion-image {
   filter: drop-shadow(0 0.4rem 0.8rem rgba(0, 0, 0, 0.08)) !important;
 }
+.parent-page__guides h3,
+.parent-page__guides h3.notion-heading,
+.parent-page__guides h3.notion-heading span, .parent-page__blog h3,
+.parent-page__blog h3.notion-heading,
+.parent-page__blog h3.notion-heading span {
+  letter-spacing: -0.8px !important;
+  font-size: clamp(0.275rem, 4vw, 1.6rem) !important;
+  line-height: 1.2 !important;
+  margin-bottom: 8px !important;
+  margin-top: 24px !important;
+}

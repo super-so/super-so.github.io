@@ -530,16 +530,6 @@ h2.notion-heading span {
   margin-bottom: 8px !important;
 }
 
-h3,
-h3.notion-heading,
-h3.notion-heading span {
-  letter-spacing: -0.8px !important;
-  font-size: clamp(0.275rem, 4vw, 1.6rem) !important;
-  line-height: 1.2 !important;
-  margin-bottom: 8px !important;
-  margin-top: 24px !important;
-}
-
 h2.notion-heading .notion-semantic-string {
   letter-spacing: -1.5px !important;
 }
@@ -775,6 +765,19 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__guides .notion-image,
 .parent-page__blog .notion-image {
   filter: drop-shadow(0 0.4rem 0.8rem rgba(0, 0, 0, 0.08)) !important;
+}
+
+.parent-page__guides h3,
+.parent-page__guides h3.notion-heading,
+.parent-page__guides h3.notion-heading span,
+.parent-page__blog h3,
+.parent-page__blog h3.notion-heading,
+.parent-page__blog h3.notion-heading span {
+  letter-spacing: -0.8px !important;
+  font-size: clamp(0.275rem, 4vw, 1.6rem) !important;
+  line-height: 1.2 !important;
+  margin-bottom: 8px !important;
+  margin-top: 24px !important;
 }
 .parent-page__guides {
   --layout-max-width: 900px!important;
