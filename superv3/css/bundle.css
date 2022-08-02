@@ -804,6 +804,10 @@ h2.notion-heading .notion-semantic-string {
   background: var(--gray-25) !important;
   color: var(--gray-900) !important;
 }
+
+.parent-page__create .notion-collection-gallery.small .notion-property__title__icon-wrapper {
+  display: none !important;
+}
 .parent-page__guides {
   --layout-max-width: 900px!important;
 }

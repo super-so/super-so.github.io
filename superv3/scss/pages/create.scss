@@ -6,4 +6,11 @@
         @include button-secondary-gray;
         padding: 7px 16px 8px 16px !important;
     }
+
+
+    .notion-collection-gallery.small {
+        .notion-property__title__icon-wrapper {
+            display: none!important;
+        }
+    }
 }  
