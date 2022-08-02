@@ -793,7 +793,7 @@ h2.notion-heading .notion-semantic-string {
   margin-bottom: 8px !important;
   margin-top: 24px !important;
 }
-.parent-page__create .notion-root .notion-link:first-of-type {
+.parent-page__create #block-fab75fae37de455eac5b04faea2b9026 .notion-link:first-of-type {
   margin-top: 16px !important;
   opacity: 1 !important;
   padding: var(--button-padding) !important;
@@ -810,7 +810,7 @@ h2.notion-heading .notion-semantic-string {
   padding: 7px 16px 8px 16px !important;
 }
 
-.parent-page__create .notion-root .notion-link:first-of-type:hover {
+.parent-page__create #block-fab75fae37de455eac5b04faea2b9026 .notion-link:first-of-type:hover {
   background: var(--gray-25) !important;
   color: var(--gray-900) !important;
 }
