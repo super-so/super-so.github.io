@@ -1,0 +1,9 @@
+@import "../mixins";
+
+.parent-page__create {
+    .notion-root .notion-link:first-of-type {
+        margin-top: 16px !important;
+        @include button-secondary-gray;
+        padding: 7px 16px 8px 16px !important;
+    }
+}  

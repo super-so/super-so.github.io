@@ -138,6 +138,10 @@
   border-top: 0px !important;
 }
 
+.notion-collection__header-wrapper {
+  display: none !important;
+}
+
 .notion-collection-gallery.small .notion-collection-card {
   box-shadow: none !important;
   border: 1px solid var(--gray-50) !important;
