@@ -1,0 +1,16 @@
+.super-navbar {
+    -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
+    backdrop-filter: blur(20px) saturate(200%) !important;
+    background: rgba(0,0,0,0.9) !important;
+    box-shadow: none !important;
+    padding: 0 100px !important;
+    height: 100px !important;
+}
+
+
+
+@media (prefers-color-scheme: light) {
+    .notion-navbar {
+        background: rgba(255,255,255,0.9) !important;
+    }
+}
