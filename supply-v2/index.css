@@ -112,8 +112,7 @@ h2 {
     backdrop-filter: blur(20px) saturate(200%) !important;
     background: rgba(0,0,0,0.9) !important;
     box-shadow: none !important;
-    padding: 0 100px !important;
-    height: 100px !important;
+    padding: 0 85px !important;
 }
 
 @media (prefers-color-scheme: light) {
