@@ -9,11 +9,6 @@
     padding: 0 !important;
 }
 
-.notion-callout__icon {
-    margin: 4px 16px 0 -12px !important;
-    pointer-events: none !important;
-    order: 2 !important;
-}
 
 .notion-callout__icon>div {
     height: 20px !important;

@@ -62,7 +62,7 @@
     font-weight: 400 !important;
 }
 
-.notion-collection-card.gallery .notion-collection-card__content {
+/* .notion-collection-card.gallery .notion-collection-card__content {
     border: 1px solid rgba(255,255,255,0.06) !important;
     -webkit-backdrop-filter: blur(20px) !important;
     backdrop-filter: blur(8px) !important;
@@ -81,7 +81,7 @@
     right: 24px !important;
     z-index: 2 !important;
     top: 24px !important;
-}
+} */
 
 @media (max-width: 1000px) {
 
