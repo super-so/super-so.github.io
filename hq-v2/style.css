@@ -148,6 +148,22 @@ h2.notion-heading {
     margin: 0 auto !important;
 }
 
+/* New CTA */
+.notion-root .notion-text .notion-text__content .notion-semantic-string span strong .notion-link, 
+.notion-root .notion-text .notion-text__content .notion-semantic-string span .notion-link strong {
+    margin: 0 auto !important;
+    padding: 16px 24px !important;
+    border-radius: 8px !important;
+    opacity: 1!important;
+    font-weight: 300!important;
+    display: inline-flex!important;
+    justify-content: center!important;
+    transition: background .2s ease-in-out!important;
+    border: 1px solid transparent !important;
+    background-color: var(--color-text-default) !important;
+    color: var(--color-bg-default) !important;
+}
+
 /* Remove callout icon */
 
 .notion-callout.bg-gray-light.border .notion-callout__icon {
