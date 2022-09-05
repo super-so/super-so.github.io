@@ -164,6 +164,11 @@ h2.notion-heading {
     color: var(--color-bg-default) !important;
 }
 
+.notion-root .notion-text .notion-text__content .notion-semantic-string span strong .notion-link:hover, 
+.notion-root .notion-text .notion-text__content .notion-semantic-string span .notion-link strong:hover {
+    padding: 16px 40px !important;
+}
+
 /* Remove callout icon */
 
 .notion-callout.bg-gray-light.border .notion-callout__icon {
