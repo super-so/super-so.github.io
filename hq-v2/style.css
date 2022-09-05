@@ -166,7 +166,7 @@ h2.notion-heading {
 
 .notion-root .notion-text .notion-text__content .notion-semantic-string span strong .notion-link:hover, 
 .notion-root .notion-text .notion-text__content .notion-semantic-string span .notion-link strong:hover {
-    padding: 16px 40px !important;
+    opacity: .7!important;
 }
 
 /* Remove callout icon */
