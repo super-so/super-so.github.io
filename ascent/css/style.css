@@ -11,7 +11,19 @@
   --header-cover-height: 45vh!important;
   --image-border-radii: 8px!important;
   --large-gallery-background-color: var(--primary-color);
-  --large-gallery-text-color: white; }
+  --large-gallery-text-color: white;
+  /* Active colors */
+  --picker-active-bg-color: var(--primary-color)!important;
+  --picker-active-text-color: white!important;
+  --picker-active-border-color: var(--primary-color)!important;
+  /* Default colors */
+  --picker-border-color: rgb(233, 233, 233)!important;
+  --picker-text-color: rgb(70, 70, 70)!important;
+  --picker-border-radius: 8px!important;
+  /* Hover colors */
+  --picker-hover-bg-color: rgb(233, 233, 233)!important;
+  --picker-hover-text-color: rgb(70, 70, 70)!important;
+  --picker-hover-border-color: rgb(233, 233, 233)!important; }
 
 .notion-property__title__icon-wrapper {
   display: none !important; }
@@ -264,3 +276,71 @@ h2.notion-heading {
 .notion-collection-list__item-property .notion-property__text {
   font-size: 1rem !important;
   max-width: 100% !important; }
+
+.notion-dropdown__menu-header,
+.notion-dropdown__option-icon,
+.notion-dropdown__button svg:first-of-type {
+  display: none !important; }
+
+@media all and (min-width: 576px) {
+  .notion-dropdown {
+    width: 100% !important;
+    z-index: 1 !important; }
+  .notion-dropdown__button {
+    justify-content: space-between !important;
+    width: 100% !important;
+    border: 1px solid var(--color-border-default) !important;
+    padding: 10px !important;
+    border-radius: 8px !important; }
+  .notion-dropdown__menu-wrapper {
+    margin-bottom: 16px !important;
+    position: relative !important; }
+  .notion-dropdown__menu-wrapper .notion-dropdown__menu {
+    width: 100% !important;
+    border-radius: 8px !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important; }
+  .notion-dropdown__menu-wrapper .notion-dropdown__menu .notion-dropdown__option-list {
+    padding: 0px !important;
+    flex-wrap: wrap !important; }
+  .notion-dropdown__menu-wrapper .notion-dropdown__menu .notion-dropdown__option {
+    padding: 5px 16px !important;
+    height: 50px !important; }
+  .notion-dropdown__button {
+    display: none !important; }
+  .notion-dropdown__menu.initial-state {
+    z-index: 1 !important;
+    opacity: 1 !important;
+    transform: none !important; }
+  .notion-dropdown__menu.animate-in.animate-out,
+  .notion-dropdown__menu.animate-in,
+  .notion-dropdown__menu.animate-out {
+    animation: none !important; }
+  .notion-dropdown__menu {
+    width: 80% !important;
+    margin: 0 auto !important;
+    background: none !important;
+    box-shadow: unset !important;
+    position: relative !important; }
+  .notion-dropdown__menu .notion-dropdown__option-list {
+    display: flex !important;
+    gap: 8px !important; }
+  .notion-dropdown__menu .notion-dropdown__option.active {
+    background: var(--picker-active-bg-color) !important;
+    border: 1px solid var(--picker-active-border-color) !important; }
+  .notion-dropdown__menu .notion-dropdown__option.active p {
+    color: var(--picker-active-text-color) !important; }
+  .notion-dropdown__menu .notion-dropdown__option {
+    border-radius: var(--picker-border-radius) !important;
+    border: 1px solid var(--picker-border-color) !important;
+    transition: all 0.15s ease-in-out !important;
+    align-items: center !important; }
+  .notion-dropdown__menu .notion-dropdown__option:hover {
+    background: var(--picker-hover-bg-color) !important;
+    border-color: var(--picker-hover-border-color) !important; }
+  .notion-dropdown__menu .notion-dropdown__option:hover p {
+    color: var(--picker-hover-text-color) !important; }
+  .notion-dropdown__menu .notion-dropdown__option p {
+    font-size: 1rem !important;
+    color: var(--picker-text-color) !important; } }
