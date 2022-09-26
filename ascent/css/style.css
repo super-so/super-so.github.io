@@ -21,9 +21,9 @@
   --picker-text-color: rgb(70, 70, 70)!important;
   --picker-border-radius: 8px!important;
   /* Hover colors */
-  --picker-hover-bg-color: rgb(233, 233, 233)!important;
-  --picker-hover-text-color: rgb(70, 70, 70)!important;
-  --picker-hover-border-color: rgb(233, 233, 233)!important; }
+  --picker-hover-bg-color: var(--primary-color)!important;
+  --picker-hover-text-color: white!important;
+  --picker-hover-border-color: var(--primary-color)!important; }
 
 .notion-property__title__icon-wrapper {
   display: none !important; }
