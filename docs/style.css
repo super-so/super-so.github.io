@@ -355,12 +355,6 @@ p>span>span>a {
 .notion-image.page-width {
     width: 115%!important;
     max-width: 115%!important;
-    margin-left: 50%!important;
-    -webkit-transform: translateX(-50%)!important;
-    -moz-transform: translateX(-50%)!important;
-    -ms-transform: translateX(-50%)!important;
-    -o-transform: translateX(-50%)!important;
-    transform: translateX(-50%)!important;
 }
 
 pre {
