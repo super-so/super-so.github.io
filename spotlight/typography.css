@@ -3,7 +3,6 @@ h1 {
     letter-spacing: -1px !important;
     font-weight: 700 !important;
     line-height: 1.4 !important;
-    font-size: 54px !important;
 }
 
 h2 {
@@ -11,19 +10,12 @@ h2 {
     margin-bottom: 4px !important;
     line-height: 1.5 !important;
     font-weight: 600 !important;
-    font-size: 42px !important;
 }
 
 h3 {
     letter-spacing: -0.5px !important;
     margin-bottom: 16px !important;
     font-weight: 600 !important;
-    font-size: 24px !important;
-}
-
-p {
-    line-height: 1.6 !important;
-    font-size: 18px !important;
 }
 
 a {

@@ -4,30 +4,37 @@
     --rounded: 8px !important;
 }
 
-/* Increase default font size */
-html {
-    font-size: 18px !important;
+/* Add border radii to images */
+.notion-image img {
+    border-radius: var(--rounded) !important;
+}
+
+.super-navbar__cta {
+  border-radius: 0px!important;
+}
+
+.super-root:not(#page-index) .notion-header {
+  padding-top: 120px!important;
+}
+
+#page-index .notion-header__title {
+  display: none!important;
 }
 
 /* Hide certain elements */
 .notion-collection__header,
 .notion-property__title__icon-wrapper,
-.notion-header__cover.no-cover,
-.notion-caption {
+.notion-header__cover.no-cover {
     display: none !important;
+}
+
+.notion-collection__header-wrapper {
+  margin-top: 0px!important;
 }
 
 /* Decrease default bottom spacing */
 .super-content {
     padding-bottom: 40px !important;
-}
-
-/* Move content up to hide main page title */
-.notion-root.full-width {
-    background: var(--color-bg-default) !important;
-    position: relative !important;
-    margin-top: -200px !important;
-    z-index: 2 !important;
 }
 
 /* Change default font weights for headings */
@@ -36,31 +43,10 @@ html {
     font-weight: 500 !important;
 }
 
-/* Change default margins for headings */
-.notion-heading {
-    margin-bottom: 8px !important;
-}
-
-/* Change default font size for header titles */
-.notion-header__title {
-    font-size: 50px !important;
-}
-
-/* Center & change size for H3 elements */
-h3 {
-    text-align: center !important;
-    font-size: 30px !important;
-}
-
 /* Remove background & decrease margin for iframes */
 .notion-embed__container>iframe {
     background: none !important;
     margin: -20px 0 !important;
-}
-
-/* Increase top page spacing */
-.notion-header {
-    margin-top: 180px !important;
 }
 
 /* Make post images full width */
@@ -74,10 +60,6 @@ h3 {
     margin: 0 !important;
 }
 
-/* Add border radii to images */
-.notion-image img {
-    border-radius: var(--rounded) !important;
-}
 
 /* Remove border radii for full width images */
 .notion-image.page-width img {
@@ -114,12 +96,6 @@ h3 {
     border: none !important;
 }
 
-/* Make gallery cards opaque on hover */
-.notion-collection-card:hover {
-    background: none !important;
-    opacity: 1 !important;
-}
-
 /* Change default height of gallery card covers */
 .notion-collection-card__cover,
 .notion-collection-card__cover div,
@@ -128,11 +104,18 @@ h3 {
     height: 100% !important;
 }
 
+
+/* Make gallery cards opaque on hover */
+.notion-collection-card:hover {
+    background: none !important;
+    opacity: 1 !important;
+}
+
 /* Change default gallery card cover styles */
 .notion-collection-card__cover {
-    border-radius: var(--rounded) !important;
     position: relative !important;
     border: none !important;
+    border-radius: var(--rounded) !important;
     flex: 2 !important;
 }
 
@@ -159,8 +142,8 @@ h3 {
     border-left: 1px solid !important;
 }
 
-/* Make sticky sidebar. Replace with your own block ID */
-#block-50a6bc93fda24f0da238d89d8a8655eb {
+/* Make sticky sidebar */
+#page-index .notion-root > .notion-column-list > .notion-column:first-child {
     align-self: flex-start !important;
     position: sticky !important;
     top: 115px !important;
@@ -189,16 +172,13 @@ h3 {
         min-height: 200px !important;
     }
 
-    #block-50a6bc93fda24f0da238d89d8a8655eb {
+    #page-index .notion-root > .notion-column-list > .notion-column:first-child {
         position: relative !important;
         align-self: auto !important;
         top: auto !important;
     }
 
 }
-
-.notion-toggle,
-#block-ae4e9789ebd04a64b47fd27ed7813140,
-#block-ad16c910da4647e890c29cb06a9185d5 {
-    display: none !important;
+.notion-toggle.bg-brown {
+  display: none!important ;
 }

@@ -1,0 +1,26 @@
+:root {
+    --color-text-default: #FFF;
+    --color-text-gray: #8F9BA8;
+    --color-text-default-light: #8F9BA8;
+    --color-bg-default: #000;
+    --color-ui-hover-bg: #131419;
+    --color-card-bg: transparent;
+    --transition: all .2s ease-in-out !important;
+    --container-md: 920px !important;
+    --column-spacing: 80px;
+    --padding-right: calc(env(safe-area-inset-right) + 50px) !important;
+    --padding-left: calc(env(safe-area-inset-left) + 50px) !important;
+    --heading1-size: 58px;
+    --heading2-size: 32px;
+}
+
+@media (max-width: 600px) {
+
+    :root {
+        --navbar-height: 80px !important;
+        --container-md: 90% !important;
+        --padding-right: 5% !important;
+        --padding-left: 5% !important;
+    }
+
+}

@@ -1,11 +1,13 @@
 :root {
-    --color-text-default: #000 !important;
-    --color-text-gray: #8f9ba8 !important;
-    --color-text-default-light: #8f9ba8 !important;
-    --color-bg-default: #f9fafe !important;
+    --color-text-default: #000;
+    --color-text-gray: #8f9ba8;
+    --color-text-default-light: #8f9ba8;
+    --color-bg-default: #f9fafe;
     --color-white: #fff !important;
     --color-dividers: #edeef3 !important;
-    --navbar-height: 68px !important;
     --column-spacing: 80px !important;
     --transition: all .2s ease-in-out !important;
+    --heading1-size: 54px;
+    --heading2-size: 42px;
+    --heading2-size: 24px;
 }

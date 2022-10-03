@@ -1,0 +1,7 @@
+.notion-semantic-string .code {
+    background: var(--color-ui-hover-bg) !important;
+    display: inline-block !important;
+    padding: 12px 20px !important;
+    margin-top: 12px !important;
+    font-size: 16px !important;
+}

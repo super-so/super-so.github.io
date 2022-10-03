@@ -57,6 +57,10 @@ body {
 /*-------------- MISCELLANEOUS --------------*/
 /*-------------------------------------------*/
 
+.super-navbar {
+    background: transparent!important;
+}
+
 .max-width {
     max-width: 85% !important;
     width: 600px !important;
@@ -99,7 +103,7 @@ body {
 
 .notion-property__title__icon-wrapper,
 .notion-header__content,
-.notion-toggle.bg-gray,
+.notion-toggle.bg-brown,
 .notion-callout__icon,
 .notion-page__icon,
 .notion-navbar {
@@ -136,7 +140,7 @@ p {
     min-height: calc(1.5rem) !important; 
 }
 
-.notion-link {
+.notion-root > .notion-link {
     transition: var(--transition) !important;
     border: none !important;
     opacity: 0.4 !important;
@@ -193,8 +197,6 @@ p {
 
 .notion-property__title,
 .notion-collection-card__content {
-    display: flex !important;
-    height: 64px !important;
     padding: 0 !important;
 }
 
@@ -210,7 +212,7 @@ p {
     grid-column-start: 2 !important;
     grid-row-start: 1 !important;
     font-size: 14px !important;
-    opacity: 0.4 !important;
+    opacity: 0.6 !important;
 }
 
 /*-------------------------------------------*/

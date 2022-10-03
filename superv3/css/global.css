@@ -477,6 +477,16 @@ h2.notion-heading span {
   margin-bottom: 8px !important;
 }
 
+h3:not(.toggle),
+h3.notion-heading:not(.toggle),
+h3.notion-heading:not(.toggle) span {
+  letter-spacing: -0.8px !important;
+  font-size: clamp(0.275rem, 4vw, 1.6rem) !important;
+  line-height: 1.2 !important;
+  margin-bottom: 8px !important;
+  margin-top: 24px !important;
+}
+
 h2.notion-heading .notion-semantic-string {
   letter-spacing: -1.5px !important;
 }
@@ -495,6 +505,14 @@ h2.notion-heading .notion-semantic-string {
 .super-root:not(#page-index, #page-pricing, #page-pricing-annual) .notion-root > h1.notion-heading {
   max-width: 48rem !important;
   margin-top: 16px !important;
+}
+
+.notion-quote {
+  margin: 1rem 0 !important;
+  border: 1px solid var(--gray-50) !important;
+  border-radius: 16px !important;
+  padding: 16px 20px !important;
+  color: var(--gray-700) !important;
 }
 
 .super-footer__footnote {
