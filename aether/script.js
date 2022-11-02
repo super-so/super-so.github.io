@@ -32,29 +32,12 @@ function onPageLoad() {
     }
     setActivePage()
 
-    // const initBadge = () => {
-    //     const footer = document.querySelector('.notion-root>.notion-callout>.notion-callout__content')
-    //     const badge = document.createElement('a')
-    //     const wrapper = document.createElement('span')
-    //     const logo = document.createElement('img')
-    //     logo.setAttribute('src', 'https://sites.super.so/aether/icon.svg')
-    //     logo.style.width = '18px'
-    //     wrapper.textContent = 'Made with Super'
-    //     badge.classList.add('super-badge')
-    //     badge.href = 'https://s.super.so/badge'
-    //     badge.appendChild(wrapper)
-    //     badge.prepend(logo)
-    //     footer.appendChild(badge)
-    // }
-    // initBadge()
-
     const config = { subtree: true, characterData: true };
 
     const callback = function(mutationsList, observer) {
         for (const mutation of mutationsList) {
             if (mutation.type === 'characterData') {
                 setActivePage()
-                // initBadge()
             }
         }
     };
