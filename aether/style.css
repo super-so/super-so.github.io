@@ -1288,23 +1288,3 @@ pre[class*="language-"] {
 .static-tweet {
     --link-color: var(--color-primary)!important;
 }
-
-.super-badge {
-    background-color: var(--color-bg-default)!important;
-    border-radius: 70px!important;
-    -webkit-box-shadow: 0 4px 20px 0 rgb(0 0 0 / 8%)!important;
-    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 8%)!important;
-    display: flex!important;
-    align-items: center!important;
-    justify-content: center!important;
-    z-index: 9999!important;
-    color: var(--color-text-default)!important;
-    text-decoration: none!important;
-    bottom: 30px!important;
-    left: 22px!important;
-    opacity: 1!important;
-}
-
-.super-badge img {
-    margin-left: 5px!important;
-}
