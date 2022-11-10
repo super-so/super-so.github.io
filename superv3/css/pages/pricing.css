@@ -24,20 +24,6 @@
 #page-pricing-annual .notion-callout .notion-callout__content > span {
   display: none !important;
 }
-#page-pricing #block-5f4034b33f5e4ef5aee7421baadd223e .notion-link::after,
-#page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-link::after {
-  margin-top: -2px !important;
-  content: "1 month free";
-  margin-left: 8px !important;
-  position: relative !important;
-  top: -1px !important;
-  background-color: var(--base-black) !important;
-  color: var(--base-white) !important;
-  border-radius: 100px !important;
-  padding: 4px 8px 4px 8px !important;
-  font-family: inherit !important;
-  font-size: 0.75rem !important;
-}
 #page-pricing #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column:first-child,
 #page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column:first-child {
   padding: 12px 16px !important;
