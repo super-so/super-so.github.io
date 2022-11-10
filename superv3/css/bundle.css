@@ -1742,10 +1742,9 @@ h2.notion-heading .notion-semantic-string {
   justify-content: center !important;
   cursor: pointer !important;
   transition: background 0.2s ease-in-out, transform 0.1s ease-in-out, box-shadow 0.15s ease-in-out !important;
-  background: var(--base-white) !important;
-  border: 1px solid var(--primary-500);
-  box-shadow: 0px 4px 11px rgba(53, 53, 53, 0.01), 0px 0px 7px rgba(251, 180, 60, 0.45);
+  border: 1px solid var(--gray-50) !important;
   color: var(--gray-700) !important;
+  background: var(--base-white) !important;
   width: 100% !important;
   margin-top: 16px !important;
   position: relative !important;
@@ -1756,8 +1755,8 @@ h2.notion-heading .notion-semantic-string {
 #page-pricing #block-abea645bf4084158b5f710c635984ec4 .notion-column:last-child > .notion-callout .notion-link:hover,
 #page-pricing-annual #block-f59ac23d8cf344f084e546567605a696 .notion-column:last-child > .notion-callout .notion-link:hover,
 #page-pricing-annual #block-abea645bf4084158b5f710c635984ec4 .notion-column:last-child > .notion-callout .notion-link:hover {
-  background: var(--primary-500) !important;
-  color: var(--base-black) !important;
+  background: var(--gray-25) !important;
+  color: var(--gray-900) !important;
 }
 
 #page-pricing #block-f59ac23d8cf344f084e546567605a696 .notion-column:last-child > .notion-callout .notion-link::after,
