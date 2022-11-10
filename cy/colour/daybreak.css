@@ -1,0 +1,16 @@
+/* Daybreak */
+:root {
+  --color-bg-default: #fbf0cf !important;
+  --color-text-default: #3d3126 !important;
+  --color-text-default-light: #968479 !important;
+  --color-text-gray: #968479 !important;
+  --color-border-default: rgba(25,23,23,0.15) !important;
+  --color-custom-highlight: #f63714 !important;
+}
+
+.notion-semantic-string .link, .notion-collection-table td .notion-semantic-string .link {
+  opacity: 1 !important;
+  color: var(--color-custom-highlight) !important;
+  border-bottom-color: var(--color-custom-highlight) !important;
+  border-bottom-opacity: 0.8 !important;
+}

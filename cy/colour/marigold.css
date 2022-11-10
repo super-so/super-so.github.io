@@ -1,0 +1,12 @@
+/* Marigold */
+:root {
+  --color-bg-default: #ffd220 !important;
+  --color-text-default: #000 !important;
+  --color-text-default-light: rgba(0,0,0,0.5) !important;
+  --color-text-gray: rgba(0,0,0,0.5) !important;
+  --color-border-default: rgba(0,0,0,0.1) !important;
+}
+
+.notion-semantic-string .link {
+  opacity: 1 !important;
+}

@@ -1,0 +1,8 @@
+/* Charcoal */
+:root {
+  --color-bg-default: #111 !important;
+  --color-text-default: #efefef !important;
+  --color-text-default-light: #7a7a7a  !important;
+  --color-text-gray: #7a7a7a !important;
+  --color-border-default: rgba(255,255,255,0.25) !important;
+}

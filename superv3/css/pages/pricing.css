@@ -73,17 +73,6 @@
     margin-top: 8px !important;
   }
 }
-#page-pricing #block-e5bbddb674254449a439e4d6a593c5da .notion-column:last-child::after,
-#page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column:last-child::after {
-  content: "1 month free";
-  margin-left: 8px !important;
-  background-color: var(--base-black) !important;
-  color: var(--base-white) !important;
-  border-radius: 100px !important;
-  padding: 4px 8px 4px 8px !important;
-  font-family: inherit !important;
-  font-size: 0.75rem !important;
-}
 #page-pricing #block-5f4034b33f5e4ef5aee7421baadd223e,
 #page-pricing #block-e5bbddb674254449a439e4d6a593c5da,
 #page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e,

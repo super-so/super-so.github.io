@@ -1,0 +1,12 @@
+/* Candy apple */
+:root {
+  --color-bg-default: #fff !important;
+  --color-text-default: #ff0000 !important;
+  --color-text-default-light: #ff0000 !important;
+  --color-text-gray: #ff0000 !important;
+  --color-border-default: #ff0000 !important;
+}
+
+.notion-semantic-string .link {
+  opacity: 1 !important;
+}

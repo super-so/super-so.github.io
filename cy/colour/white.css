@@ -1,0 +1,8 @@
+/* White */
+:root {
+  --color-bg-default: #fff !important;
+  --color-text-default: #111 !important;
+  --color-text-default-light: #7e7e7e !important;
+  --color-text-gray: #7e7e7e !important;
+  --color-border-default: rgba(0,0,0,0.1) !important;
+}

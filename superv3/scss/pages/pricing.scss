@@ -67,11 +67,11 @@
                     margin-top: 8px !important;
                 }
 
-                &::after {
-                    content: "1 month free";
-                    margin-left: 8px !important;
-                    @include black-pill;
-                }
+                // &::after {
+                //     content: "1 month free";
+                //     margin-left: 8px !important;
+                //     @include black-pill;
+                // }
             }
         }
     }
