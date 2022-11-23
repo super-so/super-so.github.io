@@ -384,7 +384,7 @@ h3.notion-heading {
 @media all and (max-width: 768px) {
   #page-index .notion-collection-gallery.large .notion-collection-card {
     flex-direction: column !important; }
-  #page-index .notion-collection-gallery.medium {
+  .notion-collection-gallery.medium {
     grid-template-columns: 1fr !important; } }
 
 .notion-collection-page .notion-dropdown__menu-wrapper {
