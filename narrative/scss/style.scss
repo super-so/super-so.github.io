@@ -552,7 +552,10 @@ h3.notion-heading {
         flex-direction: column!important;
     }
 
-     .notion-collection-gallery.medium {
+    #page-index .notion-collection-gallery.medium {
+        grid-template-columns: 1fr!important;
+    }
+    #page-posts .notion-collection-gallery.medium {
         grid-template-columns: 1fr!important;
     }
 } 
