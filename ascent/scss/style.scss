@@ -126,8 +126,8 @@ body {
 
 // Navbar
 .super-navbar__cta {
-    border-radius: 4px!important;
-    padding: 12px 16px!important;
+    padding: var(--cta-padding)!important;
+    border-radius: var(--cta-border-radius)!important;
     font-weight: 500!important;
 }
 
