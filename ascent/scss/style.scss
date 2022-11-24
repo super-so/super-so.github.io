@@ -30,6 +30,11 @@
     --picker-hover-bg-color: var(--primary-color)!important;
     --picker-hover-text-color: white!important;
     --picker-hover-border-color: var(--primary-color)!important;
+    /* CTA button styles */
+    --cta-color-bg: var(--primary-color)!important;
+    --cta-padding: 12px 16px!important;
+    --cta-border-radius: 4px!important;
+    --cta-color-text: white!important;
 }  
 
 // Hide database page icons
@@ -158,31 +163,31 @@ body {
 //Button
 .notion-root .notion-text .notion-text__content .notion-semantic-string span strong .notion-link,
 .notion-root .notion-text .notion-text__content .notion-semantic-string span .notion-link strong {
-    padding: 12px 16px!important;
-    border-radius: 4px!important;
+    padding: var(--cta-padding)!important;
+    border-radius: var(--cta-border-radius)!important;
     opacity: 1!important;
     font-weight: 500!important;
     display: inline-flex!important;
     justify-content: center!important;
     transition: background .2s ease-in-out!important;
-    background: var(--primary-color)!important;
-    color: white!important;
+    background: var(--cta-color-bg)!important;
+    color: var(--cta-color-text)!important;
     margin: -2px!important;
 }
 
 // Button on green
 .notion-root .bg-green-light .notion-text .notion-text__content .notion-semantic-string span strong .notion-link,
 .notion-root .bg-green-light .notion-text .notion-text__content .notion-semantic-string span .notion-link strong {
-    padding: 12px 16px!important;
-    border-radius: 4px!important;
+    padding: var(--cta-padding)!important;
+    border-radius: var(--cta-border-radius)!important;
     opacity: 1!important;
     font-weight: 500!important;
     display: inline-flex!important;
     justify-content: center!important;
     transition: background .2s ease-in-out!important;
-    background: white!important;
-    color: var(--primary-color)!important;
-    margin: -2px!important;
+    background: var(--cta-color-text)!important;
+    color: var(--cta-color-bg)!important;
+    margin: -2px!important; 
 
 }
 
