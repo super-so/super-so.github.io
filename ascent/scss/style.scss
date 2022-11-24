@@ -32,8 +32,8 @@
     --picker-hover-border-color: var(--primary-color)!important;
     /* CTA button styles */
     --cta-color-bg: var(--primary-color)!important;
-    --cta-padding: 12px 16px!important;
-    --cta-border-radius: 4px!important;
+    --cta-padding: 12px 16px!important; 
+    --cta-border-radii: 4px!important;
     --cta-color-text: white!important;
 }  
 
@@ -126,8 +126,8 @@ body {
 
 // Navbar
 .super-navbar__cta {
-    padding: var(--cta-padding)!important;
-    border-radius: var(--cta-border-radius)!important;
+    padding: 12px 16px!important;
+    border-radius: 4px!important;
     font-weight: 500!important;
 }
 
@@ -164,7 +164,7 @@ body {
 .notion-root .notion-text .notion-text__content .notion-semantic-string span strong .notion-link,
 .notion-root .notion-text .notion-text__content .notion-semantic-string span .notion-link strong {
     padding: var(--cta-padding)!important;
-    border-radius: var(--cta-border-radius)!important;
+    border-radius: var(--cta-border-radii)!important;
     opacity: 1!important;
     font-weight: 500!important;
     display: inline-flex!important;
@@ -179,7 +179,7 @@ body {
 .notion-root .bg-green-light .notion-text .notion-text__content .notion-semantic-string span strong .notion-link,
 .notion-root .bg-green-light .notion-text .notion-text__content .notion-semantic-string span .notion-link strong {
     padding: var(--cta-padding)!important;
-    border-radius: var(--cta-border-radius)!important;
+    border-radius: var(--cta-border-radii)!important;
     opacity: 1!important;
     font-weight: 500!important;
     display: inline-flex!important;
