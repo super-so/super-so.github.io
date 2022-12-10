@@ -642,7 +642,6 @@ h2.notion-heading .notion-semantic-string {
   object-position: center !important;
   object-fit: cover !important;
   height: 100% !important;
-  width: 90% !important;
   z-index: -9999 !important;
 }
 
