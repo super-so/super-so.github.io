@@ -1,14 +1,16 @@
 @import "../mixins";
 @import "../components/callout";
+
 // –––––––––––––––––
 // Page: Pricing
 // –––––––––––––––––
 #page-pricing,
 #page-pricing-annual {
+
     // –––––––––––––––––
     // section-billing toggle
     // –––––––––––––––––
-    .notion-root > h1.notion-heading {
+    .notion-root>h1.notion-heading {
         text-align: center !important;
         max-width: 800px !important;
         margin: 0 auto !important;
@@ -18,7 +20,10 @@
         @include callout-container;
     }
 
-    // Monthly
+    // 
+    // START: SWITCH PAYMENT TIME TOGGLE BLOCK
+    //
+    // Toggle block on MONTHLY 
     #block-5f4034b33f5e4ef5aee7421baadd223e {
         // .notion-link {
         //     &::after {
@@ -53,7 +58,7 @@
         }
     }
 
-    // Annually
+    // Toggle block on ANNUAL
     #block-e5bbddb674254449a439e4d6a593c5da {
         .notion-column {
             &:last-child {
@@ -146,15 +151,34 @@
             }
         }
     }
+
+    // END PAYMENT TYPE TOGGLE BLOCK
+
     // –––––––––––––––––
     // section-pricing
     // –––––––––––––––––
+    // CARD COLUMN LIST WRAPPER
+    // block-f59: MONTHLY PAGE
+    // block-abe: ANNUAL PAGE
     #block-f59ac23d8cf344f084e546567605a696,
     #block-abea645bf4084158b5f710c635984ec4 {
+
         // Upgraded site
-        .notion-column:last-child > .notion-callout {
+        .notion-column:last-child>.notion-callout {
+            position: relative !important;
             // border: 1px solid var(--primary-500) !important; 
             // box-shadow: 0px 4px 11px rgba(53, 53, 53, 0.01), 0px 0px 7px rgba(251, 180, 60, 0.45)!important;
+
+            // New badge on PRO card
+            &::before {
+                content: 'New' !important;
+                position: absolute !important;
+                top: -16px !important;
+                background: #FFF9ED !important;
+                padding: 6px 12px !important;
+                border-radius: 50px !important;
+                border: 1px solid #FFBE3D !important;
+            }
 
             .notion-link {
                 @include button-secondary-gray;
@@ -180,7 +204,7 @@
         }
 
         // Free site
-        .notion-column:first-child > .notion-callout {
+        .notion-column:first-child>.notion-callout {
             .notion-link {
                 @include button-secondary-gray;
                 width: 100% !important;
@@ -263,6 +287,7 @@
                     font-size: 48px !important;
                     font-weight: 500 !important;
                 }
+
                 .notion-callout__content {
                     display: flex !important;
                     align-items: center !important;
