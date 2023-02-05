@@ -14,7 +14,7 @@ let css = ``
 const handlePath = (p) => {
   if (p === indexFile) return
   const isDir = fs.statSync(p).isDirectory()
-  if (isDir) {
+  if (isDir && !p.includes('/node_modules')) {
     const dirFiles = fs.readdirSync(p);
     dirFiles.forEach((f) => handlePath(`${p}/${f}`))
   } else if (!p.endsWith('styles.css') && p.endsWith('.css')) {
