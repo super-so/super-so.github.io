@@ -886,7 +886,6 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__case-studies .notion-bulleted-list,
 .parent-page__create .notion-bulleted-list {
   color: var(--gray-600) !important;
-  margin: 16px 0px !important;
   margin-left: 16px !important;
 }
 

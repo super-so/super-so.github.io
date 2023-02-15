@@ -10,7 +10,6 @@
 .parent-page__case-studies .notion-bulleted-list,
 .parent-page__create .notion-bulleted-list {
   color: var(--gray-600) !important;
-  margin: 16px 0px !important;
   margin-left: 16px !important;
 }
 .parent-page__guides .notion-bulleted-list li,
