@@ -505,14 +505,6 @@ h2.notion-heading .notion-semantic-string {
   margin-top: 16px !important;
 }
 
-.notion-quote {
-  margin: 1rem 0 !important;
-  border: 1px solid var(--gray-50) !important;
-  border-radius: 16px !important;
-  padding: 16px 20px !important;
-  color: var(--gray-700) !important;
-}
-
 .super-footer__footnote {
   opacity: 0.4 !important;
   text-align: left !important;

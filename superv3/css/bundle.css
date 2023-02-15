@@ -559,14 +559,6 @@ h2.notion-heading .notion-semantic-string {
   margin-top: 16px !important;
 }
 
-.notion-quote {
-  margin: 1rem 0 !important;
-  border: 1px solid var(--gray-50) !important;
-  border-radius: 16px !important;
-  padding: 16px 20px !important;
-  color: var(--gray-700) !important;
-}
-
 .super-footer__footnote {
   opacity: 0.4 !important;
   text-align: left !important;
@@ -879,12 +871,26 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__create {
   --header-cover-height: 42vh !important;
   --image-border-radii: 12px !important;
+  --quote-size: 1.4rem !important;
+}
+
+.parent-page__guides .notion-quote,
+.parent-page__blog .notion-quote,
+.parent-page__case-studies .notion-quote,
+.parent-page__create .notion-quote {
+  margin: 1.2rem 0 !important;
+  color: var(--gray-600) !important;
+  letter-spacing: -0.3px !important;
 }
 
 .parent-page__guides .notion-bulleted-list,
+.parent-page__guides .notion-numbered-list,
 .parent-page__blog .notion-bulleted-list,
+.parent-page__blog .notion-numbered-list,
 .parent-page__case-studies .notion-bulleted-list,
-.parent-page__create .notion-bulleted-list {
+.parent-page__case-studies .notion-numbered-list,
+.parent-page__create .notion-bulleted-list,
+.parent-page__create .notion-numbered-list {
   color: var(--gray-600) !important;
   margin-left: 16px !important;
 }

@@ -13,6 +13,7 @@
 ::selection {
     background: rgba(255, 193, 88, 0.4) !important;
 }
+
 ::-moz-selection {
     background: rgba(255, 193, 88, 0.4) !important;
 }
@@ -30,14 +31,14 @@ body {
 
 // hide brown toggles
 .notion-toggle.bg-brown {
-    display: none !important; 
+    display: none !important;
 }
 
 // –––––––––––––––––
 // Media
 // –––––––––––––––––
 .notion-video video,
-.notion-embed__container > iframe {
+.notion-embed__container>iframe {
     border-radius: 24px !important;
 }
 
@@ -52,6 +53,7 @@ h1.notion-heading span {
     line-height: 1.1 !important;
     letter-spacing: -2.5px !important;
 }
+
 // h2
 h2,
 h2.notion-heading,
@@ -65,11 +67,11 @@ h2.notion-heading span {
 h3:not(.toggle),
 h3.notion-heading:not(.toggle),
 h3.notion-heading:not(.toggle) span {
-    letter-spacing: -.8px!important;
+    letter-spacing: -.8px !important;
     font-size: clamp(.275rem, 4vw, 1.6rem) !important;
     line-height: 1.2 !important;
     margin-bottom: 8px !important;
-    margin-top: 24px!important;
+    margin-top: 24px !important;
 }
 
 h2.notion-heading .notion-semantic-string {
@@ -78,28 +80,21 @@ h2.notion-heading .notion-semantic-string {
 
 .notion-text {
     color: var(--gray-600) !important;
+
     & * {
         line-height: 1.6 !important;
     }
 }
 
-.notion-root > .notion-heading {
+.notion-root>.notion-heading {
     margin-bottom: 16px !important;
 }
 
 .super-root:not(#page-index, #page-pricing, #page-pricing-annual) {
-    .notion-root > h1.notion-heading {
+    .notion-root>h1.notion-heading {
         max-width: 48rem !important;
-        margin-top: 16px!important;
+        margin-top: 16px !important;
     }
-}
-
-.notion-quote {
-    margin: 1rem 0!important;
-    border: 1px solid var(--gray-50)!important;
-    border-radius: 16px!important;
-    padding: 16px 20px!important;
-    color: var(--gray-700)!important;
 }
 
 // –––––––––––––––––
@@ -175,11 +170,9 @@ h2.notion-heading .notion-semantic-string {
             position: absolute !important;
             z-index: 1 !important;
             bottom: -2px !important;
-            background-image: linear-gradient(
-                to bottom,
-                rgba(253, 253, 252, 0),
-                rgba(253, 253, 252, 1) 100%
-            ) !important;
+            background-image: linear-gradient(to bottom,
+                    rgba(253, 253, 252, 0),
+                    rgba(253, 253, 252, 1) 100%) !important;
             width: 100% !important;
             height: 100vh !important;
         }
