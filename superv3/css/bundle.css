@@ -880,7 +880,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__create .notion-quote {
   margin: 1.2rem 0 !important;
   color: var(--gray-600) !important;
-  letter-spacing: -0.3px !important;
+  letter-spacing: -0.2px !important;
 }
 
 .parent-page__guides .notion-bulleted-list,
