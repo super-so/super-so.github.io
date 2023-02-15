@@ -24,7 +24,6 @@
   --navbar-height: 80px !important;
   --button-padding: 13px 16px 14px 16px !important;
   --shadow-md: 0px 12px 40px -3px rgba(18, 18, 32, 0.05) !important;
-  --image-border-radii: 12px !important;
 }
 
 .notion-dropdown {
@@ -879,6 +878,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__case-studies,
 .parent-page__create {
   --header-cover-height: 42vh !important;
+  --image-border-radii: 12px !important;
 }
 
 .parent-page__guides .notion-bulleted-list,

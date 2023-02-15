@@ -6,6 +6,7 @@
 .parent-page__case-studies,
 .parent-page__create {
     --header-cover-height: 42vh !important;
+    --image-border-radii: 12px !important;
 
     .notion-bulleted-list {
         color: var(--gray-600) !important;
