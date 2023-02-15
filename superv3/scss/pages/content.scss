@@ -1,23 +1,89 @@
-.parent-page__guides, .parent-page__blog {
+@import "../mixins";
+@import "../components/callout";
 
-    .notion-bulleted-list {
-        color: var(--gray-600)!important;
-        margin: 16px 0px!important;
-        margin-left: 16px!important;
+.parent-page__guides,
+.parent-page__blog,
+.parent-page__case-studies,
+.parent-page__create {
+
+    .notion-bulleted-list li {
+        color: var(--gray-600) !important;
+        margin: 16px 0px !important;
+        margin-left: 16px !important;
     }
 
+    .notion-bulleted-list li {
+        color: var(--gray-600) !important;
+    }
+
+
     .notion-image {
-        filter: drop-shadow(0 0.4rem 0.8rem rgba(0, 0, 0, 0.08))!important;
+        filter: drop-shadow(0 0.4rem 0.8rem rgba(0, 0, 0, 0.08)) !important;
     }
 
     // h3
     h3,
     h3.notion-heading,
     h3.notion-heading span {
-        letter-spacing: -.8px!important;
+        letter-spacing: -.8px !important;
         font-size: clamp(.275rem, 4vw, 1.6rem) !important;
         line-height: 1.2 !important;
         margin-bottom: 8px !important;
-        margin-top: 24px!important;
+        margin-top: 24px !important;
+    }
+
+    // –––––––––––––––––
+    // CTA Button
+    // –––––––––––––––––
+    .notion-text .notion-text__content strong .notion-link,
+    .notion-text .notion-text__content .notion-link strong {
+        @include button-primary-default;
+
+    }
+
+    // –––––––––––––––––
+    // Footer CTA
+    // –––––––––––––––––
+    #block-e79bc599f53e43ac8e25706f10fa5f63 {
+        @include callout-container;
+        text-align: center !important;
+        padding: 100px 22px !important;
+        border-radius: 40px !important;
+        background-position: center !important;
+        background-size: cover !important;
+        position: relative !important;
+        overflow: hidden !important;
+
+        .notion-link {
+            margin-top: 24px !important;
+            @include button-primary-dark;
+        }
+
+        .notion-image:last-child {
+            position: absolute !important;
+            width: 120% !important;
+            height: 120% !important;
+            max-width: 120% !important;
+            max-height: 120% !important;
+            top: 58% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%);
+            z-index: -1 !important;
+
+            @include breakpoint-md {
+                top: 50% !important;
+                width: 140% !important;
+                max-width: 140% !important;
+                max-height: 140% !important;
+            }
+
+            @include breakpoint-xs {
+                top: 130% !important;
+                width: 280% !important;
+                height: 280% !important;
+                max-width: 280% !important;
+                max-height: 280% !important;
+            }
+        }
     }
 }
