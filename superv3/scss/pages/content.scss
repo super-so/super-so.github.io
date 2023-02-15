@@ -5,6 +5,7 @@
 .parent-page__blog,
 .parent-page__case-studies,
 .parent-page__create {
+    --header-cover-height: 42vh !important;
 
     .notion-bulleted-list {
         color: var(--gray-600) !important;

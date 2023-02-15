@@ -1,3 +1,9 @@
+.parent-page__guides,
+.parent-page__blog,
+.parent-page__case-studies,
+.parent-page__create {
+  --header-cover-height: 42vh !important;
+}
 .parent-page__guides .notion-bulleted-list,
 .parent-page__blog .notion-bulleted-list,
 .parent-page__case-studies .notion-bulleted-list,
