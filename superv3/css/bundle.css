@@ -874,10 +874,10 @@ h2.notion-heading .notion-semantic-string {
 #page-builder #block-e48a71fc43f4443a820c9e59e6333519 .notion-callout__icon {
   display: none !important;
 }
-.parent-page__guides .notion-bulleted-list li,
-.parent-page__blog .notion-bulleted-list li,
-.parent-page__case-studies .notion-bulleted-list li,
-.parent-page__create .notion-bulleted-list li {
+.parent-page__guides .notion-bulleted-list,
+.parent-page__blog .notion-bulleted-list,
+.parent-page__case-studies .notion-bulleted-list,
+.parent-page__create .notion-bulleted-list {
   color: var(--gray-600) !important;
   margin: 16px 0px !important;
   margin-left: 16px !important;
