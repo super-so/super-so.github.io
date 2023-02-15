@@ -39,7 +39,6 @@
     .notion-text .notion-text__content strong .notion-link,
     .notion-text .notion-text__content .notion-link strong {
         @include button-primary-default;
-
     }
 
     // –––––––––––––––––
@@ -48,7 +47,7 @@
     #block-e79bc599f53e43ac8e25706f10fa5f63 {
         @include callout-container;
         text-align: center !important;
-        padding: 100px 22px !important;
+        padding: 100px 24px !important;
         border-radius: 40px !important;
         background-position: center !important;
         background-size: cover !important;
