@@ -6,18 +6,24 @@
   --image-border-radii: 12px !important;
   --quote-size: 1.4rem !important;
 }
-.parent-page__guides .notion-link:not(.super-navbar__item),
-.parent-page__blog .notion-link:not(.super-navbar__item),
-.parent-page__case-studies .notion-link:not(.super-navbar__item),
-.parent-page__create .notion-link:not(.super-navbar__item) {
+.parent-page__guides .super-footer__icons .notion-link,
+.parent-page__blog .super-footer__icons .notion-link,
+.parent-page__case-studies .super-footer__icons .notion-link,
+.parent-page__create .super-footer__icons .notion-link {
+  color: white !important;
+}
+.parent-page__guides .notion-link:not(.super-navbar__item):not(.super-footer__link),
+.parent-page__blog .notion-link:not(.super-navbar__item):not(.super-footer__link),
+.parent-page__case-studies .notion-link:not(.super-navbar__item):not(.super-footer__link),
+.parent-page__create .notion-link:not(.super-navbar__item):not(.super-footer__link) {
   opacity: 1 !important;
   color: var(--color-text-default) !important;
   font-weight: 500 !important;
 }
-.parent-page__guides .notion-link:not(.super-navbar__item):hover,
-.parent-page__blog .notion-link:not(.super-navbar__item):hover,
-.parent-page__case-studies .notion-link:not(.super-navbar__item):hover,
-.parent-page__create .notion-link:not(.super-navbar__item):hover {
+.parent-page__guides .notion-link:not(.super-navbar__item):not(.super-footer__link):hover,
+.parent-page__blog .notion-link:not(.super-navbar__item):not(.super-footer__link):hover,
+.parent-page__case-studies .notion-link:not(.super-navbar__item):not(.super-footer__link):hover,
+.parent-page__create .notion-link:not(.super-navbar__item):not(.super-footer__link):hover {
   opacity: 0.7 !important;
 }
 .parent-page__guides .notion-quote,

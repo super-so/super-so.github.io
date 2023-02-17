@@ -9,13 +9,19 @@
     --image-border-radii: 12px !important;
     --quote-size: 1.4rem !important;
 
-    .notion-link:not(.super-navbar__item) {
+    .super-footer__icons {
+        .notion-link {
+            color: white !important;
+        }
+    }
+
+    .notion-link:not(.super-navbar__item):not(.super-footer__link) {
         opacity: 1 !important;
         color: var(--color-text-default) !important;
         font-weight: 500 !important;
     }
 
-    .notion-link:not(.super-navbar__item):hover {
+    .notion-link:not(.super-navbar__item):not(.super-footer__link):hover {
         opacity: .7 !important;
     }
 
