@@ -9,6 +9,12 @@
     --image-border-radii: 12px !important;
     --quote-size: 1.4rem !important;
 
+    .notion-link:not(.super-navbar__item) {
+        opacity: 1 !important;
+        color: var(--color-text-default) !important;
+        font-weight: 500 !important;
+    }
+
     .notion-quote {
         margin: 1.2rem 0 !important;
         color: var(--gray-600) !important;
