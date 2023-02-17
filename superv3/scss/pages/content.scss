@@ -15,6 +15,10 @@
         font-weight: 500 !important;
     }
 
+    .notion-link:not(.super-navbar__item):hover {
+        opacity: .7 !important;
+    }
+
     .notion-quote {
         margin: 1.2rem 0 !important;
         color: var(--gray-600) !important;

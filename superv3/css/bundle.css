@@ -883,6 +883,13 @@ h2.notion-heading .notion-semantic-string {
   font-weight: 500 !important;
 }
 
+.parent-page__guides .notion-link:not(.super-navbar__item):hover,
+.parent-page__blog .notion-link:not(.super-navbar__item):hover,
+.parent-page__case-studies .notion-link:not(.super-navbar__item):hover,
+.parent-page__create .notion-link:not(.super-navbar__item):hover {
+  opacity: 0.7 !important;
+}
+
 .parent-page__guides .notion-quote,
 .parent-page__blog .notion-quote,
 .parent-page__case-studies .notion-quote,
