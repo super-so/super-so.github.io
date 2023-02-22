@@ -13,7 +13,7 @@
   }
 
   @include breakpoint-xs {
-      .super-navbar__item:last-child {
+      .super-navbar__item-list :last-child .super-navbar__item {
           transition: none !important;
           font-weight: 700 !important;
           color: var(--base-black) !important;
@@ -21,7 +21,7 @@
   }
 
   @include above-xs {
-      .super-navbar__item:last-child {
+      .super-navbar__item-list :last-child .super-navbar__item {
           height: 44px !important;
           @include button-secondary-gray;
           margin-left: 8px !important;

@@ -347,7 +347,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  .super-navbar .super-navbar__item:last-child {
+  .super-navbar .super-navbar__item-list :last-child .super-navbar__item {
     transition: none !important;
     font-weight: 700 !important;
     color: var(--base-black) !important;
@@ -355,7 +355,7 @@
 }
 
 @media all and (min-width: 576px) {
-  .super-navbar .super-navbar__item:last-child {
+  .super-navbar .super-navbar__item-list :last-child .super-navbar__item {
     height: 44px !important;
     opacity: 1 !important;
     padding: var(--button-padding) !important;
@@ -375,7 +375,7 @@
     font-weight: 500 !important;
   }
 
-  .super-navbar .super-navbar__item:last-child:hover {
+  .super-navbar .super-navbar__item-list :last-child .super-navbar__item:hover {
     background: var(--gray-25) !important;
     color: var(--gray-900) !important;
   }
