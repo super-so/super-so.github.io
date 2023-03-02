@@ -15,35 +15,57 @@ Prism.languages.scss=Prism.languages.extend("css",{comment:{pattern:/(^|[^\\])(?
 !function(){if("undefined"!=typeof Prism&&"undefined"!=typeof document){var i=[],l={},d=function(){};Prism.plugins.toolbar={};var e=Prism.plugins.toolbar.registerButton=function(e,n){var t;t="function"==typeof n?n:function(e){var t;return"function"==typeof n.onClick?((t=document.createElement("button")).type="button",t.addEventListener("click",function(){n.onClick.call(this,e)})):"string"==typeof n.url?(t=document.createElement("a")).href=n.url:t=document.createElement("span"),n.className&&t.classList.add(n.className),t.textContent=n.text,t},e in l?console.warn('There is a button with the key "'+e+'" registered already.'):i.push(l[e]=t)},t=Prism.plugins.toolbar.hook=function(a){var e=a.element.parentNode;if(e&&/pre/i.test(e.nodeName)&&!e.parentNode.classList.contains("code-toolbar")){var t=document.createElement("div");t.classList.add("code-toolbar"),e.parentNode.insertBefore(t,e),t.appendChild(e);var r=document.createElement("div");r.classList.add("toolbar");var n=i,o=function(e){for(;e;){var t=e.getAttribute("data-toolbar-order");if(null!=t)return(t=t.trim()).length?t.split(/\s*,\s*/g):[];e=e.parentElement}}(a.element);o&&(n=o.map(function(e){return l[e]||d})),n.forEach(function(e){var t=e(a);if(t){var n=document.createElement("div");n.classList.add("toolbar-item"),n.appendChild(t),r.appendChild(n)}}),t.appendChild(r)}};e("label",function(e){var t=e.element.parentNode;if(t&&/pre/i.test(t.nodeName)&&t.hasAttribute("data-label")){var n,a,r=t.getAttribute("data-label");try{a=document.querySelector("template#"+r)}catch(e){}return a?n=a.content:(t.hasAttribute("data-url")?(n=document.createElement("a")).href=t.getAttribute("data-url"):n=document.createElement("span"),n.textContent=r),n}}),Prism.hooks.add("complete",t)}}();
 !function(){function u(t,e){t.addEventListener("click",function(){!function(t){navigator.clipboard?navigator.clipboard.writeText(t.getText()).then(t.success,function(){o(t)}):o(t)}(e)})}function o(e){var t=document.createElement("textarea");t.value=e.getText(),t.style.top="0",t.style.left="0",t.style.position="fixed",document.body.appendChild(t),t.focus(),t.select();try{var o=document.execCommand("copy");setTimeout(function(){o?e.success():e.error()},1)}catch(t){setTimeout(function(){e.error(t)},1)}document.body.removeChild(t)}"undefined"!=typeof Prism&&"undefined"!=typeof document&&(Prism.plugins.toolbar?Prism.plugins.toolbar.registerButton("copy-to-clipboard",function(t){var e=t.element,o=function(t){var e={copy:"Copy","copy-error":"Press Ctrl+C to copy","copy-success":"Copied!","copy-timeout":5e3};for(var o in e){for(var n="data-prismjs-"+o,c=t;c&&!c.hasAttribute(n);)c=c.parentElement;c&&(e[o]=c.getAttribute(n))}return e}(e),n=document.createElement("button");n.className="copy-to-clipboard-button",n.setAttribute("type","button");var c=document.createElement("span");return n.appendChild(c),i("copy"),u(n,{getText:function(){return e.textContent},success:function(){i("copy-success"),r()},error:function(){i("copy-error"),setTimeout(function(){!function(t){window.getSelection().selectAllChildren(t)}(e)},1),r()}}),n;function r(){setTimeout(function(){i("copy")},o["copy-timeout"])}function i(t){c.textContent=o[t],n.setAttribute("data-copy-state",t)}}):console.warn("Copy to Clipboard plugin loaded before Toolbar plugin."))}();
 
-//  Aether
-function onPageLoad() {
-    const header = document.querySelector('.notion-header');
-    const setActivePage = () => {
-        const currentPage = document.querySelectorAll('a[href="' + window.location.pathname + '"]');
-        currentPage.forEach(function(page) {
-            if (!page.classList.contains('super-navbar__logo') && !page.parentNode.classList.contains('notion-image')) {
-                page.classList.add('page-active')
-            }
-            const pageIcon = page.querySelector('.notion-page__icon')
-            if (pageIcon) {
-                pageIcon.setAttribute("style", "opacity:1!important; filter:grayscale(0%)!important;")
-            }
-        });
-    }
-    setActivePage()
+//  Old code
+// function onPageLoad() {
+//     const header = document.querySelector('.notion-header');
+//     const setActivePage = () => {
+//         const currentPage = document.querySelectorAll('a[href="' + window.location.pathname + '"]');
+//         currentPage.forEach(function(page) {
+//             if (!page.classList.contains('super-navbar__logo') && !page.parentNode.classList.contains('notion-image')) {
+//                 page.classList.add('page-active')
+//             }
+//             const pageIcon = page.querySelector('.notion-page__icon')
+//             if (pageIcon) {
+//                 pageIcon.setAttribute("style", "opacity:1!important; filter:grayscale(0%)!important;")
+//             }
+//         });
+//     }
+//     setActivePage()
 
-    const config = { subtree: true, characterData: true };
+//     const config = { subtree: true, characterData: true };
 
-    const callback = function(mutationsList, observer) {
-        for (const mutation of mutationsList) {
-            if (mutation.type === 'characterData') {
-                setActivePage()
-            }
+//     const callback = function(mutationsList, observer) {
+//         for (const mutation of mutationsList) {
+//             if (mutation.type === 'characterData') {
+//                 setActivePage()
+//             }
+//         }
+//     };
+
+//     const observer = new MutationObserver(callback);
+//     observer.observe(header, config);
+// }
+
+// document.addEventListener("DOMContentLoaded", onPageLoad);
+
+// New code
+const setActivePage = () => {
+    const currentPage = document.querySelectorAll('a[href="' + window.location.pathname + '"]');
+    currentPage.forEach(function(page) {
+        if (!page.classList.contains('super-navbar__logo') && !page.parentNode.classList.contains('notion-image')) {
+            page.classList.add('page-active')
         }
-    };
-
-    const observer = new MutationObserver(callback);
-    observer.observe(header, config);
+        const pageIcon = page.querySelector('.notion-page__icon')
+        if (pageIcon) {
+            pageIcon.setAttribute("style", "opacity:1!important; filter:grayscale(0%)!important;")
+        }
+    });
 }
 
-document.addEventListener("DOMContentLoaded", onPageLoad);
+window.addEventListener('load', e => {
+    setActivePage()
+     next.router.events.on('routeChangeComplete', url => {
+         console.log(`Page has changed to ${url}`)
+         setActivePage()
+      })
+  })
