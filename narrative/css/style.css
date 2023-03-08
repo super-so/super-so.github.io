@@ -395,3 +395,6 @@ h3.notion-heading {
 
 .notion-collection-page .notion-dropdown__menu-wrapper {
   left: 0px !important; }
+
+.notion-collection-list__item .notion-property.notion-property__title .notion-semantic-string > span {
+  white-space: pre-wrap !important; }

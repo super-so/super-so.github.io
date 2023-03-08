@@ -361,6 +361,7 @@ h3.notion-heading {
     }
 }
 
+
 .notion-collection-list {
     gap: 8px!important;
     padding: 0px!important;
@@ -568,3 +569,8 @@ h3.notion-heading {
 .notion-collection-page .notion-dropdown__menu-wrapper {
     left: 0px!important;
 }
+
+.notion-collection-list__item .notion-property.notion-property__title .notion-semantic-string>span {
+    white-space: pre-wrap!important;
+}
+ 
