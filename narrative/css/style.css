@@ -233,12 +233,13 @@ h3.notion-heading {
         content: "Featured" !important;
         padding: 4px 8px !important;
         font-size: 0.875rem !important;
-        background: #F0F0F0 !important;
+        background: var(--color-pill-default) !important;
+        color: var(--color-pill-text-default) !important;
         border-radius: 50px !important;
         display: inline-block !important;
         margin-bottom: 16px !important;
         width: fit-content !important;
-        border: 1px solid #E3E3E3 !important; }
+        border: 1px solid var(--color-border-default) !important; }
     .notion-collection-gallery.large .notion-collection-card .notion-pill {
       max-width: 100% !important; }
     .notion-collection-gallery.large .notion-collection-card .notion-collection-card__property-list {
