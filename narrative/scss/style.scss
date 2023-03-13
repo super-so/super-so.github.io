@@ -398,7 +398,7 @@ h3.notion-heading {
         }
 
         &:hover {
-            background: #F8F8F8!important;
+            background: var(--color-card-bg-hover)!important;
         }
     }
 }

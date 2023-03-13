@@ -283,7 +283,7 @@ h3.notion-heading {
     .notion-collection-list .notion-collection-list__item:nth-child(n+6) {
       display: none !important; }
     .notion-collection-list .notion-collection-list__item:hover {
-      background: #F8F8F8 !important; }
+      background: var(--color-card-bg-hover) !important; }
 
 .super-root:not(.page__index) .notion-header__title {
   text-align: center !important;
