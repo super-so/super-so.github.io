@@ -4,13 +4,13 @@
   --callout-border-radii: 8px!important;
   --column-spacing: 32px!important;
   --layout-max-width: 1000px!important;
-  --color-border-default: #E7E6E6!important;
+  --color-border-default: #E7E6E6;
   --collection-card-gap: 24px!important;
   --header-cover-height: 45vh!important;
   --image-border-radii: 8px!important;
   --db-title-spacing: -0.5px!important;
-  --color-card-bg: #F8F8F8!important;
-  --color-card-bg-hover: #f4f4f4!important;
+  --color-card-bg: #F8F8F8;
+  --color-card-bg-hover: #f4f4f4;
   --collection-card-cover-height-small: 160px!important;
   --quote-background: #e2edff!important;
   /* Database view picker options */
