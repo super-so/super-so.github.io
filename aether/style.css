@@ -1294,3 +1294,7 @@ pre[class*="language-"] {
     align-items: center!important;
     justify-content: center!important;
 }
+
+.notion-collection-card__property {
+    justify-content: center!important;
+}
