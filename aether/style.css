@@ -1298,3 +1298,9 @@ pre[class*="language-"] {
 .notion-collection-card__property {
     justify-content: center!important;
 }
+
+.notion-collection-card__property-list {
+    display: flex!important;
+    flex-direction: column!important;
+    gap: 8px!important;
+}
