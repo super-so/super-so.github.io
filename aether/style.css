@@ -1288,3 +1288,9 @@ pre[class*="language-"] {
 .static-tweet {
     --link-color: var(--color-primary)!important;
 }
+
+.notion-collection-card__content .notion-property__select {
+    flex-wrap: wrap!important;
+    align-items: center!important;
+    justify-content: center!important;
+}
