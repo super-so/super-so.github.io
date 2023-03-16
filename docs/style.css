@@ -478,7 +478,7 @@ ul>.notion-list-item:before {
     flex-shrink: 0 !important;
     position: sticky !important;
     position: -webkit-sticky !important;
-    top: 70px !important;
+    top: 0 !important;
     overflow: auto !important;
     padding: 15px!important;
     padding-top: 25px!important;
@@ -580,7 +580,7 @@ ul>.notion-list-item:before {
     flex-shrink: 0 !important;
     position: sticky !important;
     position: -webkit-sticky !important;
-    top: 70px !important;
+    top: 0 !important;
     /*position: fixed;*/
     padding: 30px!important;
     padding-top: 25px!important;
