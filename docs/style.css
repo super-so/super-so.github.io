@@ -1,46 +1,46 @@
 :root {
-    --color-gray: #7a8693 !important;
-    --color-brown: #cbba9e !important;
-    --color-orange: #eb7a34 !important;
-    --color-yellow: #f0bd66 !important;
-    --color-green: #2fbaa1 !important;
-    --color-blue: #3399ff !important;
-    --color-purple: #7d47cf !important;
-    --color-pink: #ff99cc !important;
-    --color-red: #e33c4d !important;
+    --color-gray: #7a8693;
+    --color-brown: #cbba9e;
+    --color-orange: #eb7a34;
+    --color-yellow: #f0bd66;
+    --color-green: #2fbaa1;
+    --color-blue: #3399ff;
+    --color-purple: #7d47cf;
+    --color-pink: #ff99cc;
+    --color-red: #e33c4d;
     --color-primary: var(--color-yellow) !important;
-    --color-code-block: #fafafa !important;
-    --color-text-light: white !important;
+    --color-code-block: #fafafa;
+    --color-text-light: white;
     --color-accent-bg: var(--color-primary);
     --column-spacing: 15px !important;
     --collection-card-cover-size-small: 180px!important;
     --collection-card-cover-size-medium: 260px!important;
     --collection-card-cover-size-large: calc(50% - 15px)!important;
-    --color-text-default: #424b55!important;
-    --color-text-gray: var(--color-gray) !important;
-    --color-text-brown: var(--color-brown) !important;
-    --color-text-orange: var(--color-orange) !important;
-    --color-text-yellow: var(--color-yellow) !important;
-    --color-text-green: var(--color-green) !important;
-    --color-text-blue: var(--color-blue) !important;
-    --color-text-purple: var(--color-purple) !important;
-    --color-text-pink: var(--color-pink) !important;
-    --color-text-red: var(--color-red) !important;
-    --color-bg-gray: var(--color-gray) !important;
-    --color-bg-brown: var(--color-brown) !important;
-    --color-bg-orange: var(--color-orange) !important;
-    --color-bg-yellow: var(--color-yellow) !important;
-    --color-bg-green: var(--color-green) !important;
-    --color-bg-blue: var(--color-blue) !important;
-    --color-bg-purple: var(--color-purple) !important;
-    --color-bg-pink: var(--color-pink) !important;
-    --color-bg-red: var(--color-red) !important;
+    --color-text-default: #424b55;
+    --color-text-gray: var(--color-gray);
+    --color-text-brown: var(--color-brown);
+    --color-text-orange: var(--color-orange);
+    --color-text-yellow: var(--color-yellow);
+    --color-text-green: var(--color-green);
+    --color-text-blue: var(--color-blue);
+    --color-text-purple: var(--color-purple);
+    --color-text-pink: var(--color-pink);
+    --color-text-red: var(--color-red);
+    --color-bg-gray: var(--color-gray);
+    --color-bg-brown: var(--color-brown);
+    --color-bg-orange: var(--color-orange);
+    --color-bg-yellow: var(--color-yellow);
+    --color-bg-green: var(--color-green);
+    --color-bg-blue: var(--color-blue);
+    --color-bg-purple: var(--color-purple);
+    --color-bg-pink: var(--color-pink);
+    --color-bg-red: var(--color-red);
     --transition: all .17s ease-in-out!important;
-    --color-bg-gray-light: #f6f7fb!important;
-    --color-bg-yellow-light: #f8ebca!important;
-    --color-ui-hover-bg: #f7f9fd!important;
-    --color-ui-hover-bg-light: #FBFCFE!important;
-    --color-border-default: #f5f4f2!important;
+    --color-bg-gray-light: #f6f7fb;
+    --color-bg-yellow-light: #f8ebca;
+    --color-ui-hover-bg: #f7f9fd;
+    --color-ui-hover-bg-light: #FBFCFE;
+    --color-border-default: #f5f4f2;
 }
 
 ::selection {
@@ -71,6 +71,12 @@ body {
     -moz-box-shadow: 0 25px 36px rgba(255, 255, 255, 0.4)!important;
     justify-content: center !important;
     z-index: 20!important;
+}
+
+.theme-dark .super-navbar {
+    box-shadow: 0 25px 36px rgba(0, 0, 0, 0.4)!important;
+    -webkit-box-shadow: 0 25px 36px rgba(0, 0, 0, 0.4)!important;
+    -moz-box-shadow: 0 25px 36px rgba(0, 0, 0, 0.4)!important;
 }
 
 .super-navbar__content {
