@@ -41,6 +41,9 @@
     --color-ui-hover-bg: #f7f9fd;
     --color-ui-hover-bg-light: #FBFCFE;
     --color-border-default: #f5f4f2;
+    --scrollbar-background-color:var(--color-bg-default)!important;
+    --scrollbar-thumb-color: var(--color-border-default)!important;
+    --scrollbar-border-color: var(--color-bg-default)!important;
 }
 
 ::selection {
@@ -74,9 +77,9 @@ body {
 }
 
 .theme-dark .super-navbar {
-    box-shadow: 0 25px 36px rgba(0, 0, 0, 0.4)!important;
-    -webkit-box-shadow: 0 25px 36px rgba(0, 0, 0, 0.4)!important;
-    -moz-box-shadow: 0 25px 36px rgba(0, 0, 0, 0.4)!important;
+    box-shadow: 0 25px 36px rgba(25, 25, 25, 0.4)!important;
+    -webkit-box-shadow: 0 25px 36px rgba(25, 25, 25, 0.4)!important;
+    -moz-box-shadow: 0 25px 36px rgba(25, 25, 25, 0.4)!important;
 }
 
 .super-navbar__content {
@@ -116,7 +119,7 @@ body {
 .super-navbar__cta {
     transition: all 0.2s ease-in-out !important;
     letter-spacing: -0.3px !important;
-    padding: 12px 20px!important;
+    padding: 8px 12px!important;
     font-weight: 500 !important;
     border-radius: 50px!important;
 }
@@ -407,7 +410,7 @@ ul>.notion-list-item:before {
     padding: 15px 22px !important;
     margin: 1rem 0 !important;
     letter-spacing: -.4px!important;
-    background: #f7f9fd!important;
+    background: var(--color-ui-hover-bg);
 }
 
 .notion-embed__container>iframe {
