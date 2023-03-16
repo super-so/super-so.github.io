@@ -473,7 +473,7 @@ ul>.notion-list-item:before {
 }
 
 .notion-root>.notion-column-list>.notion-column:first-child {
-    background: var(--color-bg-default) !important;
+    background: transparent !important;
     height: calc(100vh - 70px) !important;
     flex-shrink: 0 !important;
     position: sticky !important;
@@ -557,7 +557,7 @@ ul>.notion-list-item:before {
 }
 
 .notion-root>.notion-column-list>.notion-column:first-child .notion-page:hover {
-    background: #f7f9fd!important;
+    background: var(--color-ui-hover-bg)!important;
 }
 
 .notion-root>.notion-column-list>.notion-column:nth-child(2) {
@@ -586,7 +586,7 @@ ul>.notion-list-item:before {
     padding-top: 25px!important;
     border-left: 1px solid var(--color-border-default)!important;
     z-index: 10!important;
-    background: var(--color-bg-default)!important;
+    background: transparent!important;
     overflow: auto!important;
 }
 
