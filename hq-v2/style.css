@@ -11,7 +11,7 @@
     --gradient: linear-gradient(100deg, #363EA0, #3278D8, #59BFD7) !important;
     --shadow: 0 0 50px 0.5px var(--color-border-dark) !important;
     --transition: all 250ms ease !important;
-    --radius-px: 10px !important;
+    --radius-px: 10px !important; 
 }
 
 /* Typography */
