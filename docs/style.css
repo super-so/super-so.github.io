@@ -1049,7 +1049,7 @@ p {
 }
 
 .page-active {
-    background: #f7f9fd!important;
+    background: var(--color-ui-hover-bg)!important;
 }
 
 .page-icon-active {
