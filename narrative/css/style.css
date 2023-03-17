@@ -33,6 +33,19 @@
   --cta-color-bg: var(--navbar-button-background-color)!important;
   --cta-color-text: var(--navbar-button-text-color)!important; }
 
+.theme-dark {
+  --picker-active-bg-color: #373737!important;
+  --picker-active-text-color: var(--color-text-default)!important;
+  --picker-active-border-color: #373737!important;
+  /* Default colors */
+  --picker-border-color: #373737!important;
+  --picker-text-color: rgb(127, 127, 127)!important;
+  --picker-border-radius: 50px!important;
+  /* Hover colors */
+  --picker-hover-bg-color: #373737!important;
+  --picker-hover-text-color: var(--color-text-default)!important;
+  --picker-hover-border-color: #373737!important; }
+
 body {
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
