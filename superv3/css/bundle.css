@@ -1884,13 +1884,6 @@ h2.notion-heading .notion-semantic-string {
 }
 
 @media screen and (max-width: 576px) {
-  #page-pricing #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column:first-child,
-  #page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column:first-child {
-    margin-bottom: 8px !important;
-  }
-}
-
-@media screen and (max-width: 576px) {
   #page-pricing #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column:last-child,
   #page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column:last-child {
     padding-top: 8px !important;

@@ -42,10 +42,6 @@
                 background: var(--base-white) !important;
                 margin-right: 8px !important;
                 cursor: default !important;
-
-                @include breakpoint-xs {
-                    margin-bottom: 8px !important;
-                }
             }
 
             &:last-child {
