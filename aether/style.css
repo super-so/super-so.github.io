@@ -312,19 +312,19 @@ pre {
     padding: 20px !important;
     margin: 10px 0 20px 0 !important;
     background-color: var(--color-code-block) !important;
-    color: #2e3237!important;
+    /* color: #2e3237!important; */
 }
 
 code {
     font-size: 14px !important;
     text-shadow: none !important;
     font-family: "Roboto Mono", monospace !important;
-    color: #2e3237!important;
+    /* color: #2e3237!important; */
 }
 
-code span {
+/* code span {
     color: #2e3237!important;
-}
+} */
 
 .token {
     background: 0 0 !important;
@@ -1139,7 +1139,7 @@ p {
 
 
 /* SYNTAX */
-
+/* 
 code[class*="language-"],
 pre[class*="language-"] {
     text-align: left;
@@ -1157,7 +1157,7 @@ pre[class*="language-"] {
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
-}
+} */
 
 /* code[class*="language-"]::-moz-selection,
 pre[class*="language-"]::-moz-selection,
@@ -1175,7 +1175,7 @@ pre[class*="language-"] ::selection {
     color: #2e3237;
 } */
 
-:not(pre)>code[class*="language-"] {
+/* :not(pre)>code[class*="language-"] {
     white-space: normal;
     border-radius: 0.2em;
     padding: 0.1em;
@@ -1248,7 +1248,7 @@ pre[class*="language-"] {
 
 .token.tag {
     color: #2e3237!important;
-}
+} */
 
 .notion-root .notion-text .notion-text__content .notion-semantic-string span strong .notion-link,
 .notion-text .notion-text__content .notion-semantic-string span .notion-link strong {
