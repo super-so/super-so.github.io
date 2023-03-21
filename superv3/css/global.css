@@ -76,8 +76,8 @@
     transform: none !important;
   }
   .notion-dropdown__menu.animate-in.animate-out,
-  .notion-dropdown__menu.animate-in,
-  .notion-dropdown__menu.animate-out {
+.notion-dropdown__menu.animate-in,
+.notion-dropdown__menu.animate-out {
     animation: none !important;
   }
   .notion-dropdown__menu {
@@ -536,16 +536,16 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 576px) {
   #page-features .notion-header__title,
-  #page-templates .notion-header__title,
-  #page-showcase .notion-header__title,
-  #page-icons .notion-header__title,
-  #page-icons-light .notion-header__title,
-  #page-illustrations .notion-header__title,
-  #page-guides .notion-header__title,
-  #page-blog .notion-header__title,
-  #page-create .notion-header__title,
-  #page-report .notion-header__title,
-  #page-builder .notion-header__title {
+#page-templates .notion-header__title,
+#page-showcase .notion-header__title,
+#page-icons .notion-header__title,
+#page-icons-light .notion-header__title,
+#page-illustrations .notion-header__title,
+#page-guides .notion-header__title,
+#page-blog .notion-header__title,
+#page-create .notion-header__title,
+#page-report .notion-header__title,
+#page-builder .notion-header__title {
     top: 86px !important;
   }
 }
@@ -591,7 +591,7 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 576px) {
   #page-index .super-content,
-  .parent-page__index:not(#page-privacy, #page-terms) .super-content {
+.parent-page__index:not(#page-privacy, #page-terms) .super-content {
     padding-top: 100px !important;
   }
 }
@@ -660,7 +660,7 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 576px) {
   #page-builder .notion-callout.bg-gray-light,
-  #page-index .notion-callout.bg-gray-light {
+#page-index .notion-callout.bg-gray-light {
     padding: 8px !important;
   }
 }

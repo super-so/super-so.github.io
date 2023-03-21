@@ -1911,7 +1911,6 @@ h2.notion-heading .notion-semantic-string {
   #page-pricing #block-e5bbddb674254449a439e4d6a593c5da .notion-column:last-child,
   #page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column:last-child {
     margin: 0px !important;
-    margin-top: 8px !important;
   }
 }
 
@@ -1934,6 +1933,7 @@ h2.notion-heading .notion-semantic-string {
   #page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e,
   #page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da {
     border-radius: 12px !important;
+    width: 100% !important;
   }
 }
 
@@ -1943,7 +1943,6 @@ h2.notion-heading .notion-semantic-string {
   #page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column-list,
   #page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column-list {
     flex-wrap: nowrap !important;
-    flex-direction: column !important;
   }
 }
 

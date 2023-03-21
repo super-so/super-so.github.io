@@ -69,7 +69,7 @@
 
                 @include breakpoint-xs {
                     margin: 0px !important;
-                    margin-top: 8px !important;
+                   // margin-top: 8px !important;
                 }
 
                 // &::after {
@@ -79,8 +79,8 @@
                 // }
             }
         }
-    }
-
+    } 
+ 
     // Both
     #block-5f4034b33f5e4ef5aee7421baadd223e,
     #block-e5bbddb674254449a439e4d6a593c5da {
@@ -95,12 +95,13 @@
 
         @include breakpoint-xs {
             border-radius: 12px !important;
+            width: 100%!important;
         }
 
         .notion-column-list {
             @include breakpoint-xs {
                 flex-wrap: nowrap !important;
-                flex-direction: column !important;
+               // flex-direction: column !important;
             }
         }
 
