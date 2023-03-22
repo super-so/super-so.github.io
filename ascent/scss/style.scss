@@ -223,6 +223,10 @@ h2.notion-heading {
 
 // Databases
 
+.notion-collection-list__item-anchor {
+    z-index: 100 !important;
+    }
+
 .notion-collection-gallery, .notion-collection-list {
     border: 0!important;
 }

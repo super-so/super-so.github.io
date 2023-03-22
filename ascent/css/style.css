@@ -163,6 +163,9 @@ h2.notion-heading {
   h2.notion-heading * {
     line-height: 1.2 !important; }
 
+.notion-collection-list__item-anchor {
+  z-index: 100 !important; }
+
 .notion-collection-gallery, .notion-collection-list {
   border: 0 !important; }
 
