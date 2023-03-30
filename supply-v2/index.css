@@ -5,16 +5,16 @@
     --color-off-white: #f5f6fa !important;
     --color-white: #fff !important;
 
-    --color-text-default: var(--color-white) !important;
-    --color-text-gray: var(--color-grey) !important;
-    --color-text-default-light: var(--color-grey) !important;
+    --color-text-default: var(--color-white);
+    --color-text-gray: var(--color-grey);
+    --color-text-default-light: var(--color-grey);
 
-    --color-bg-default: var(--color-black) !important;
-    --color-bg-gray: var(--color-charcoal) !important;
-    --color-bg-gray-light: var(--color-grey) !important;
+    --color-bg-default: var(--color-black);
+    --color-bg-gray: var(--color-charcoal);
+    --color-bg-gray-light: var(--color-grey);
 
-    --color-ui-hover-bg: var(--color-charcoal) !important;
-    --color-border-default: var(--color-charcoal) !important;
+    --color-ui-hover-bg: var(--color-charcoal);
+    --color-border-default: var(--color-charcoal);
     --color-card-bg: transparent !important;
 
     --transition: all .3s cubic-bezier(.4,0,.2,1) !important;
@@ -24,16 +24,6 @@
 ::selection {
     background: var(--color-charcoal) !important;
     color: var(--color-white) !important;
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --color-text-default: var(--color-black) !important;
-        --color-bg-default: var(--color-white) !important;
-        --color-bg-gray: var(--color-off-white) !important;
-        --color-ui-hover-bg: var(--color-off-white) !important;
-        --color-border-default: var(--color-off-white) !important;
-    }
 }
 
 * {
@@ -110,15 +100,8 @@ h2 {
 .super-navbar {
     -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
     backdrop-filter: blur(20px) saturate(200%) !important;
-    background: rgba(0,0,0,0.9) !important;
     box-shadow: none !important;
     padding: 0 85px !important;
-}
-
-@media (prefers-color-scheme: light) {
-    .notion-navbar {
-        background: rgba(255,255,255,0.9) !important;
-    }
 }
 
 .notion-header__content,
@@ -159,7 +142,8 @@ h2 {
     right: 0!important;
     top: 0!important;
     padding: 10px!important;
-    background: var(--color-black)!important;
+    background: var(--color-text-default)!important;
+    color: var(--color-bg-default)!important;
     border-radius: 50px!important;
     width: 60px!important;
     height: 60px!important;
@@ -269,11 +253,6 @@ h2 {
     }
 }
 
-@media (prefers-color-scheme: light) {
-    .notion-link.bg-gray { background: rgba(0,0,0,0.04) !important; }
-    .notion-link.bg-gray:hover { background: rgba(0,0,0,0.06) !important; }
-}
-
 .notion-callout {
     background: var(--color-white) !important;
     color: var(--color-black) !important;
@@ -294,15 +273,4 @@ h2 {
     padding: 14px 20px 12px !important;
     display: block !important;
     border: none !important;
-}
-
-@media (prefers-color-scheme: light) {
-    .notion-callout {
-        background: var(--color-black) !important;
-        color: var(--color-white) !important;
-    }
-    .notion-callout__icon {
-        -webkit-filter: invert(1) !important;
-        filter: invert(1) !important;
-    }
 }
