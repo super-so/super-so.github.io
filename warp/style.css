@@ -248,6 +248,10 @@ h3.notion-heading * {
     display: none !important;
 }
 
+.notion-toggle__content {
+  padding-inline-end: calc(1.5em + 4px)!important;
+}
+
 .notion-toggle__content .notion-text__content {
     margin-bottom: 0px !important;
 }
