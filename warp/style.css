@@ -20,6 +20,8 @@
   /*Miscelaneous*/
   --collection-card-bg-color: #F7F6F5;
   --navbar-background-color: #ffffff80 !important;
+  --color-code-bg: #f2f2f2!important;
+  --color-code-text: var(--color-text-default);
 }
 
 .theme-dark {
@@ -27,6 +29,11 @@
   --color-card-bg: #191919!important;
   --color-card-bg-hover: #1B1B1B!important;
   --collection-card-bg-color: #111111;
+  --color-code-bg: #111111!important;
+}
+
+.notion-code code {
+  color: var(--color-code-text)!important;
 }
 
 #page-index .notion-header {
