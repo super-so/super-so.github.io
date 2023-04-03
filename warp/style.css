@@ -10,7 +10,7 @@
   /* Database view switcher */
   /* Active colors */
   --picker-active-bg-color: var(--primary-color)!important;
-  --picker-active-text-color: var(--color-text-default);
+  --picker-active-text-color: var(--navbar-button-text-color)!important;
   --picker-active-border-color: var(--primary-color)!important;
     /* Default colors */
   --picker-border-color: var(--color-border-default)!important;
