@@ -10,11 +10,11 @@
   /* Database view switcher */
   /* Active colors */
   --picker-active-bg-color: var(--primary-color)!important;
-  --picker-active-text-color: var(--color-text-default)!important;
+  --picker-active-text-color: var(--color-text-default);
   --picker-active-border-color: var(--primary-color)!important;
     /* Default colors */
   --picker-border-color: var(--color-border-default)!important;
-  --picker-text-color: var(--color-text-default)!important;
+  --picker-text-color: var(--color-text-default);
   --picker-border-radius: 8px!important;
 
   /*Miscelaneous*/
