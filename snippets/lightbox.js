@@ -1,19 +1,12 @@
 const initLightbox = () => {
-    // Get images
     const images = document.querySelectorAll('.notion-image');
-    // Get image container
-    const lightboxImage = document.querySelector('.lightbox-image')
-    // Get lightbox wrapper
-    const lightboxWrapper = document.querySelector('.lightbox-wrapper')
-    // Get lightbox close button
-    const closeLightbox = document.querySelector('.close-lightbox')
+    const lightboxImage = document.querySelector('.lightbox-image');
+    const lightboxWrapper = document.querySelector('.lightbox-wrapper');
+    const closeLightbox = document.querySelector('.close-lightbox');
 
-    // For each image, add click
     images.forEach(image => {
         image.addEventListener('click', (e) => {
-            console.log(e.target.src)
-            console.log('hello')
-            lightboxImage.setAttribute("src", e.target.src)
+            lightboxImage.setAttribute("src", e.target.src);
             lightboxWrapper.style.display = 'flex';
             lightboxWrapper.classList.add('open');
         });
@@ -37,8 +30,8 @@ const initLightbox = () => {
 }
 
 window.addEventListener('load', e => {
-    initLightbox()
+    initLightbox();
     next.router.events.on('routeChangeComplete', url => {
-        initLightbox()
+        initLightbox();
     })
 })
