@@ -16,8 +16,6 @@ const initLightbox = () => {
             lightboxImage.setAttribute("src", e.target.src)
             lightboxWrapper.style.display = 'flex';
             lightboxWrapper.classList.add('open');
-            lightboxImage.classList.add('fade-in');
-
         });
     });
 

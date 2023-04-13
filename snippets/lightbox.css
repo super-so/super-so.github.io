@@ -38,10 +38,8 @@
     height: auto;
     z-index: 100;
     border-radius: 12px;
-    transition: opacity 1s ease-in-out;
-    opacity: 0;
 }
 
-.lightbox-image.fade-in {
-    opacity: 1;
+.notion-image {
+    cursor: pointer!important;
 }
