@@ -1,0 +1,14 @@
+{
+  "name": "super-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.scss",
+  "scripts": {
+    "scss": "node-sass --watch scss -o css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
