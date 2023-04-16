@@ -9,9 +9,6 @@ const initLightbox = () => {
             lightboxImage.setAttribute("src", e.target.src);
             lightboxWrapper.style.display = 'flex';
             lightboxWrapper.classList.add('open');
-
-            console.log(e.target.src)
-
         });
     });
 
