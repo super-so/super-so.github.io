@@ -40,6 +40,6 @@
     border-radius: 12px;
 }
 
-.notion-image {
+.notion-image, .notion-collection-card {
     cursor: pointer!important;
 }
