@@ -461,7 +461,7 @@
   background: #24282C !important;
   border: 1px solid #272D32 !important;
 }
-#page-index #block-e3c38ab927894e78b4eca1d2cebdd6a9 .notion-collection-gallery.small .notion-collection-card__cover:hover span {
+#page-index #block-e3c38ab927894e78b4eca1d2cebdd6a9 .notion-collection-gallery.small .notion-collection-card__cover:hover picture {
   background: #212529 !important;
   border: 1px solid #24292F !important;
 }
@@ -469,7 +469,7 @@
   background: #2A2E33 !important;
   border: 1px solid #373C41 !important;
 }
-#page-index #block-e3c38ab927894e78b4eca1d2cebdd6a9 .notion-collection-gallery.small .notion-collection-card__cover span {
+#page-index #block-e3c38ab927894e78b4eca1d2cebdd6a9 .notion-collection-gallery.small .notion-collection-card__cover picture {
   position: static !important;
   width: 100% !important;
   height: 100% !important;
