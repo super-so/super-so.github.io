@@ -237,6 +237,10 @@ h3.notion-heading {
         letter-spacing: var(--db-title-spacing) !important; }
     .notion-collection-gallery.large .notion-collection-card .notion-collection-card__cover {
       height: 100% !important; }
+      .notion-collection-gallery.large .notion-collection-card .notion-collection-card__cover div {
+        height: 100% !important; }
+      .notion-collection-gallery.large .notion-collection-card .notion-collection-card__cover img {
+        height: 100% !important; }
     .notion-collection-gallery.large .notion-collection-card .notion-collection-card__content {
       display: flex !important;
       flex-direction: column !important;

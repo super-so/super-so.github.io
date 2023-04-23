@@ -322,6 +322,14 @@ h3.notion-heading {
 
         .notion-collection-card__cover {
             height: 100%!important;
+
+            div {
+                height: 100%!important;
+            }
+
+            img {
+                height: 100%!important;
+            }
         }
 
         .notion-collection-card__content {
