@@ -1,5 +1,5 @@
 function initCodeCopy() {
-    const codeBlocks = document.querySelectorAll('code');
+    const codeBlocks = document.querySelectorAll('code[class*="language-"]');
 
     codeBlocks.forEach((block) => {
         const referenceEl = block.parentElement;
