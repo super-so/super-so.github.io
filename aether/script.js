@@ -1,4 +1,4 @@
-function initCodeCopy() {
+const initCodeCopy = () => {
     const codeBlocks = document.querySelectorAll('code[class*="language-"]');
 
     codeBlocks.forEach((block) => {
@@ -20,8 +20,6 @@ function initCodeCopy() {
 
     function copy(e) {
         const btn = e.currentTarget;
-        const lang = btn.dataset.lang;
-
         const text = e.currentTarget.previousSibling.children[0].textContent;
 
         navigator.clipboard.writeText(text).then(
@@ -45,6 +43,7 @@ function initCodeCopy() {
         btn.addEventListener('click', copy);
     });
 }
+initCodeCopy()
 
 const setActivePage = () => {
     const currentPage = document.querySelectorAll('a[href="' + window.location.pathname + '"]');
