@@ -72,9 +72,11 @@ document.addEventListener("DOMContentLoaded", function(){
 window.addEventListener('load', e => {
     initPrism()
     setActivePage()
+    Prism.highlightAll()
     next.router.events.on('routeChangeComplete', url => {
         //  console.log(`Page has changed to ${url}`)
         setActivePage()
         initPrism()
+        Prism.highlightAll()
     })
 })
