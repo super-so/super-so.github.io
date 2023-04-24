@@ -695,7 +695,12 @@ th {
     overflow: auto!important;
 }
 
-.copy-to-clipboard-button, .copy-button {
+pre {
+    position: relative!important;
+    transition: opacity .2s ease-in-out!important;
+}
+
+.copy-to-clipboard-button {
     z-index: 9999!important;
     border: 0 !important;
     box-shadow: none !important;
@@ -711,9 +716,15 @@ th {
     font-family: 'Roboto Mono', monospace!important;
     font-weight: 400 !important;
     position: relative !important;
+    opacity: 0!important;
+    transition: opacity .2s ease-in-out!important;
 }
 
-.copy-button svg {
+pre:hover .copy-button {
+    opacity: 1!important;
+  }
+
+.copy-to-clipboard-button svg {
     width: 14px!important;
   }  
  
