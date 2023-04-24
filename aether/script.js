@@ -1,343 +1,63 @@
-// New code
+function initCodeCopy() {
+    const codeBlocks = document.querySelectorAll('code[class*="language-"]');
 
-if (typeof Prism === 'undefined' || typeof document === 'undefined') {
-    return;
-}
+    codeBlocks.forEach((block) => {
+        const lang = parseLanguage(block);
+        const referenceEl = block.parentElement;
+        const parent = block.parentElement.parentElement;
+        
+        const wrapper = document.createElement('div');
+        wrapper.className = 'code-wrapper';
+        parent.insertBefore(wrapper, referenceEl);
+        wrapper.append(block.parentElement);
 
-var callbacks = [];
-var map = {};
-var noop = function () { };
+        const copyBtn = document.createElement('button');
+        copyBtn.setAttribute('class', 'copy-button');
+        copyBtn.setAttribute('data-lang', lang);
+        copyBtn.innerHTML = `${lang} <svg viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7 6V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-3v3c0 .552-.45 1-1.007 1H4.007A1.001 1.001 0 0 1 3 21l.003-14c0-.552.45-1 1.007-1H7zM5.003 8L5 20h10V8H5.003zM9 6h8v10h2V4H9v2z" fill="currentColor"/></svg>`;
 
-Prism.plugins.toolbar = {};
-
-/**
- * @typedef ButtonOptions
- * @property {string} text The text displayed.
- * @property {string} [url] The URL of the link which will be created.
- * @property {Function} [onClick] The event listener for the `click` event of the created button.
- * @property {string} [className] The class attribute to include with element.
- */
-
-/**
- * Register a button callback with the toolbar.
- *
- * @param {string} key
- * @param {ButtonOptions|Function} opts
- */
-var registerButton = Prism.plugins.toolbar.registerButton = function (key, opts) {
-    var callback;
-
-    if (typeof opts === 'function') {
-        callback = opts;
-    } else {
-        callback = function (env) {
-            var element;
-
-            if (typeof opts.onClick === 'function') {
-                element = document.createElement('button');
-                element.type = 'button';
-                element.addEventListener('click', function () {
-                    opts.onClick.call(this, env);
-                });
-            } else if (typeof opts.url === 'string') {
-                element = document.createElement('a');
-                element.href = opts.url;
-            } else {
-                element = document.createElement('span');
-            }
-
-            if (opts.className) {
-                element.classList.add(opts.className);
-            }
-
-            element.textContent = opts.text;
-
-            return element;
-        };
-    }
-
-    if (key in map) {
-        console.warn('There is a button with the key "' + key + '" registered already.');
-        return;
-    }
-
-    callbacks.push(map[key] = callback);
-};
-
-/**
- * Returns the callback order of the given element.
- *
- * @param {HTMLElement} element
- * @returns {string[] | undefined}
- */
-function getOrder(element) {
-    while (element) {
-        var order = element.getAttribute('data-toolbar-order');
-        if (order != null) {
-            order = order.trim();
-            if (order.length) {
-                return order.split(/\s*,\s*/g);
-            } else {
-                return [];
-            }
-        }
-        element = element.parentElement;
-    }
-}
-
-/**
- * Post-highlight Prism hook callback.
- *
- * @param env
- */
-var hook = Prism.plugins.toolbar.hook = function (env) {
-    // Check if inline or actual code block (credit to line-numbers plugin)
-    var pre = env.element.parentNode;
-    if (!pre || !/pre/i.test(pre.nodeName)) {
-        return;
-    }
-
-    // Autoloader rehighlights, so only do this once.
-    if (pre.parentNode.classList.contains('code-toolbar')) {
-        return;
-    }
-
-    // Create wrapper for <pre> to prevent scrolling toolbar with content
-    var wrapper = document.createElement('div');
-    wrapper.classList.add('code-toolbar');
-    pre.parentNode.insertBefore(wrapper, pre);
-    wrapper.appendChild(pre);
-
-    // Setup the toolbar
-    var toolbar = document.createElement('div');
-    toolbar.classList.add('toolbar');
-
-    // order callbacks
-    var elementCallbacks = callbacks;
-    var order = getOrder(env.element);
-    if (order) {
-        elementCallbacks = order.map(function (key) {
-            return map[key] || noop;
-        });
-    }
-
-    elementCallbacks.forEach(function (callback) {
-        var element = callback(env);
-
-        if (!element) {
-            return;
-        }
-
-        var item = document.createElement('div');
-        item.classList.add('toolbar-item');
-
-        item.appendChild(element);
-        toolbar.appendChild(item);
+        wrapper.insertAdjacentElement('beforeend', copyBtn);
     });
 
-    // Add our toolbar to the currently created wrapper of <pre> tag
-    wrapper.appendChild(toolbar);
-};
-
-registerButton('label', function (env) {
-    var pre = env.element.parentNode;
-    if (!pre || !/pre/i.test(pre.nodeName)) {
-        return;
-    }
-
-    if (!pre.hasAttribute('data-label')) {
-        return;
-    }
-
-    var element; var template;
-    var text = pre.getAttribute('data-label');
-    try {
-        // Any normal text will blow up this selector.
-        template = document.querySelector('template#' + text);
-    } catch (e) { /* noop */ }
-
-    if (template) {
-        element = template.content;
-    } else {
-        if (pre.hasAttribute('data-url')) {
-            element = document.createElement('a');
-            element.href = pre.getAttribute('data-url');
-        } else {
-            element = document.createElement('span');
+    function parseLanguage(block) {
+        const className = block.className;
+        if (className.startsWith('language')) {
+            const [prefix, lang] = className.split('-');
+            return lang;
         }
-
-        element.textContent = text;
     }
 
-    return element;
-});
+    function copy(e) {
+        const btn = e.currentTarget;
+        const lang = btn.dataset.lang;
 
-/**
- * Register the toolbar with Prism.
- */
-Prism.hooks.add('complete', hook);
+        const text = e.currentTarget.previousSibling.children[0].textContent;
 
-if (typeof Prism === 'undefined' || typeof document === 'undefined') {
-    return;
-}
+        navigator.clipboard.writeText(text).then(
+            () => {
+                btn.innerHTML = `copied! <svg viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7 6V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-3v3c0 .552-.45 1-1.007 1H4.007A1.001 1.001 0 0 1 3 21l.003-14c0-.552.45-1 1.007-1H7zm2 0h8v10h2V4H9v2z" fill="currentColor"/></svg>`;
+                btn.setAttribute('style', 'opacity: 1');
+                
+            },
+            () => alert('failed to copy'),
+        );
 
-if (!Prism.plugins.toolbar) {
-    console.warn('Copy to Clipboard plugin loaded before Toolbar plugin.');
+        setTimeout(() => {
+            btn.removeAttribute('style');
+            btn.innerHTML = `${lang} <svg viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7 6V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-3v3c0 .552-.45 1-1.007 1H4.007A1.001 1.001 0 0 1 3 21l.003-14c0-.552.45-1 1.007-1H7zM5.003 8L5 20h10V8H5.003zM9 6h8v10h2V4H9v2z" fill="currentColor"/></svg>`;
+        }, 3000);
+    }
 
-    return;
-}
+    const copyButtons = document.querySelectorAll('.copy-button');
 
-/**
- * When the given elements is clicked by the user, the given text will be copied to clipboard.
- *
- * @param {HTMLElement} element
- * @param {CopyInfo} copyInfo
- *
- * @typedef CopyInfo
- * @property {() => string} getText
- * @property {() => void} success
- * @property {(reason: unknown) => void} error
- */
-function registerClipboard(element, copyInfo) {
-    element.addEventListener('click', function () {
-        copyTextToClipboard(copyInfo);
+    copyButtons.forEach((btn) => {
+        btn.addEventListener('click', copy);
     });
 }
-// https://stackoverflow.com/a/30810322/7595472
-
-/** @param {CopyInfo} copyInfo */
-function fallbackCopyTextToClipboard(copyInfo) {
-    var textArea = document.createElement('textarea');
-    textArea.value = copyInfo.getText();
-
-    // Avoid scrolling to bottom
-    textArea.style.top = '0';
-    textArea.style.left = '0';
-    textArea.style.position = 'fixed';
-
-    document.body.appendChild(textArea);
-    textArea.focus();
-    textArea.select();
-
-    try {
-        var successful = document.execCommand('copy');
-        setTimeout(function () {
-            if (successful) {
-                copyInfo.success();
-            } else {
-                copyInfo.error();
-            }
-        }, 1);
-    } catch (err) {
-        setTimeout(function () {
-            copyInfo.error(err);
-        }, 1);
-    }
-
-    document.body.removeChild(textArea);
-}
-/** @param {CopyInfo} copyInfo */
-function copyTextToClipboard(copyInfo) {
-    if (navigator.clipboard) {
-        navigator.clipboard.writeText(copyInfo.getText()).then(copyInfo.success, function () {
-            // try the fallback in case `writeText` didn't work
-            fallbackCopyTextToClipboard(copyInfo);
-        });
-    } else {
-        fallbackCopyTextToClipboard(copyInfo);
-    }
-}
-
-/**
- * Selects the text content of the given element.
- *
- * @param {Element} element
- */
-function selectElementText(element) {
-    // https://stackoverflow.com/a/20079910/7595472
-    window.getSelection().selectAllChildren(element);
-}
-
-/**
- * Traverses up the DOM tree to find data attributes that override the default plugin settings.
- *
- * @param {Element} startElement An element to start from.
- * @returns {Settings} The plugin settings.
- * @typedef {Record<"copy" | "copy-error" | "copy-success" | "copy-timeout", string | number>} Settings
- */
-function getSettings(startElement) {
-    /** @type {Settings} */
-    var settings = {
-        'copy': 'Copy',
-        'copy-error': 'Press Ctrl+C to copy',
-        'copy-success': 'Copied!',
-        'copy-timeout': 5000
-    };
-
-    var prefix = 'data-prismjs-';
-    for (var key in settings) {
-        var attr = prefix + key;
-        var element = startElement;
-        while (element && !element.hasAttribute(attr)) {
-            element = element.parentElement;
-        }
-        if (element) {
-            settings[key] = element.getAttribute(attr);
-        }
-    }
-    return settings;
-}
-
-Prism.plugins.toolbar.registerButton('copy-to-clipboard', function (env) {
-    var element = env.element;
-
-    var settings = getSettings(element);
-
-    var linkCopy = document.createElement('button');
-    linkCopy.className = 'copy-to-clipboard-button';
-    linkCopy.setAttribute('type', 'button');
-    var linkSpan = document.createElement('span');
-    linkCopy.appendChild(linkSpan);
-
-    setState('copy');
-
-    registerClipboard(linkCopy, {
-        getText: function () {
-            return element.textContent;
-        },
-        success: function () {
-            setState('copy-success');
-
-            resetText();
-        },
-        error: function () {
-            setState('copy-error');
-
-            setTimeout(function () {
-                selectElementText(element);
-            }, 1);
-
-            resetText();
-        }
-    });
-
-    return linkCopy;
-
-    function resetText() {
-        setTimeout(function () { setState('copy'); }, settings['copy-timeout']);
-    }
-
-    /** @param {"copy" | "copy-error" | "copy-success"} state */
-    function setState(state) {
-        linkSpan.textContent = settings[state];
-        linkCopy.setAttribute('data-copy-state', state);
-    }
-});
-
 
 const setActivePage = () => {
     const currentPage = document.querySelectorAll('a[href="' + window.location.pathname + '"]');
-    currentPage.forEach(function (page) {
+    currentPage.forEach(function(page) {
         if (!page.classList.contains('super-navbar__logo') && !page.classList.contains('super-footer__logo') && !page.parentNode.classList.contains('notion-image')) {
             page.classList.add('page-active')
         }
@@ -350,7 +70,10 @@ const setActivePage = () => {
 
 window.addEventListener('load', e => {
     setActivePage()
+    initCodeCopy()
+
     next.router.events.on('routeChangeComplete', url => {
         setActivePage()
+        initCodeCopy()
     })
 })
