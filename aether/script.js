@@ -71,10 +71,8 @@ const setActivePage = () => {
 
 window.addEventListener('load', e => {
     setActivePage()
-   // addCopyButtonToCodeBlocks()
 
     next.router.events.on('routeChangeComplete', url => {
         setActivePage()
-      //  addCopyButtonToCodeBlocks()
     })
 })
