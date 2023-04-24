@@ -714,9 +714,9 @@ th {
 }
 
 .copy-button svg {
-    width: 14px;
+    width: 14px!important;
   }  
-
+ 
   .code-wrapper {
     position: relative!important;
   }
