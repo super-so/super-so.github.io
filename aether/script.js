@@ -1,8 +1,345 @@
 // New code
 const initPrism = () => {
-!function(){if("undefined"!=typeof Prism&&"undefined"!=typeof document){var t=[],e={},n=function(){};Prism.plugins.toolbar={};var r=Prism.plugins.toolbar.registerButton=function(n,r){var o;if(o="function"==typeof r?r:function(t){var e;return"function"==typeof r.onClick?((e=document.createElement("button")).type="button",e.addEventListener("click",function(){r.onClick.call(this,t)})):"string"==typeof r.url?(e=document.createElement("a")).href=r.url:e=document.createElement("span"),r.className&&e.classList.add(r.className),e.textContent=r.text,e},n in e){console.warn('There is a button with the key "'+n+'" registered already.');return}t.push(e[n]=o)},o=Prism.plugins.toolbar.hook=function(r){var o=r.element.parentNode;if(!(!o||!/pre/i.test(o.nodeName)||o.parentNode.classList.contains("code-toolbar"))){var a=document.createElement("div");a.classList.add("code-toolbar"),o.parentNode.insertBefore(a,o),a.appendChild(o);var i=document.createElement("div");i.classList.add("toolbar");var c=t,l=function t(e){for(;e;){var n=e.getAttribute("data-toolbar-order");if(null!=n){if((n=n.trim()).length)return n.split(/\s*,\s*/g);return[]}e=e.parentElement}}(r.element);l&&(c=l.map(function(t){return e[t]||n})),c.forEach(function(t){var e=t(r);if(e){var n=document.createElement("div");n.classList.add("toolbar-item"),n.appendChild(e),i.appendChild(n)}}),a.appendChild(i)}};r("label",function(t){var e,n,r=t.element.parentNode;if(r&&/pre/i.test(r.nodeName)&&r.hasAttribute("data-label")){var o=r.getAttribute("data-label");try{n=document.querySelector("template#"+o)}catch(a){}return n?e=n.content:(r.hasAttribute("data-url")?(e=document.createElement("a")).href=r.getAttribute("data-url"):e=document.createElement("span"),e.textContent=o),e}}),Prism.hooks.add("complete",o)}}(),function(){if("undefined"!=typeof Prism&&"undefined"!=typeof document){if(!Prism.plugins.toolbar){console.warn("Copy to Clipboard plugin loaded before Toolbar plugin.");return}Prism.plugins.toolbar.registerButton("copy-to-clipboard",function(e){var n=e.element,r=function t(e){var n={copy:"Copy","copy-error":"Press Ctrl+C to copy","copy-success":"Copied!","copy-timeout":5e3};for(var r in n){for(var o="data-prismjs-"+r,a=e;a&&!a.hasAttribute(o);)a=a.parentElement;a&&(n[r]=a.getAttribute(o))}return n}(n),o=document.createElement("button");o.className="copy-to-clipboard-button",o.setAttribute("type","button");var a=document.createElement("span");return o.appendChild(a),c("copy"),function e(n,r){n.addEventListener("click",function(){var e;e=r,navigator.clipboard?navigator.clipboard.writeText(e.getText()).then(e.success,function(){t(e)}):t(e)})}(o,{getText:function(){return n.textContent},success:function(){c("copy-success"),i()},error:function(){c("copy-error"),setTimeout(function(){var t;t=n,window.getSelection().selectAllChildren(t)},1),i()}}),o;function i(){setTimeout(function(){c("copy")},r["copy-timeout"])}function c(t){a.textContent=r[t],o.setAttribute("data-copy-state",t)}})}function t(t){var e=document.createElement("textarea");e.value=t.getText(),e.style.top="0",e.style.left="0",e.style.position="fixed",document.body.appendChild(e),e.focus(),e.select();try{var n=document.execCommand("copy");setTimeout(function(){n?t.success():t.error()},1)}catch(r){setTimeout(function(){t.error(r)},1)}document.body.removeChild(e)}}();
-};
-
+    (function () {
+    
+        if (typeof Prism === 'undefined' || typeof document === 'undefined') {
+            return;
+        }
+    
+        var callbacks = [];
+        var map = {};
+        var noop = function () {};
+    
+        Prism.plugins.toolbar = {};
+    
+        /**
+         * @typedef ButtonOptions
+         * @property {string} text The text displayed.
+         * @property {string} [url] The URL of the link which will be created.
+         * @property {Function} [onClick] The event listener for the `click` event of the created button.
+         * @property {string} [className] The class attribute to include with element.
+         */
+    
+        /**
+         * Register a button callback with the toolbar.
+         *
+         * @param {string} key
+         * @param {ButtonOptions|Function} opts
+         */
+        var registerButton = Prism.plugins.toolbar.registerButton = function (key, opts) {
+            var callback;
+    
+            if (typeof opts === 'function') {
+                callback = opts;
+            } else {
+                callback = function (env) {
+                    var element;
+    
+                    if (typeof opts.onClick === 'function') {
+                        element = document.createElement('button');
+                        element.type = 'button';
+                        element.addEventListener('click', function () {
+                            opts.onClick.call(this, env);
+                        });
+                    } else if (typeof opts.url === 'string') {
+                        element = document.createElement('a');
+                        element.href = opts.url;
+                    } else {
+                        element = document.createElement('span');
+                    }
+    
+                    if (opts.className) {
+                        element.classList.add(opts.className);
+                    }
+    
+                    element.textContent = opts.text;
+    
+                    return element;
+                };
+            }
+    
+            if (key in map) {
+                console.warn('There is a button with the key "' + key + '" registered already.');
+                return;
+            }
+    
+            callbacks.push(map[key] = callback);
+        };
+    
+        /**
+         * Returns the callback order of the given element.
+         *
+         * @param {HTMLElement} element
+         * @returns {string[] | undefined}
+         */
+        function getOrder(element) {
+            while (element) {
+                var order = element.getAttribute('data-toolbar-order');
+                if (order != null) {
+                    order = order.trim();
+                    if (order.length) {
+                        return order.split(/\s*,\s*/g);
+                    } else {
+                        return [];
+                    }
+                }
+                element = element.parentElement;
+            }
+        }
+    
+        /**
+         * Post-highlight Prism hook callback.
+         *
+         * @param env
+         */
+        var hook = Prism.plugins.toolbar.hook = function (env) {
+            // Check if inline or actual code block (credit to line-numbers plugin)
+            var pre = env.element.parentNode;
+            if (!pre || !/pre/i.test(pre.nodeName)) {
+                return;
+            }
+    
+            // Autoloader rehighlights, so only do this once.
+            if (pre.parentNode.classList.contains('code-toolbar')) {
+                return;
+            }
+    
+            // Create wrapper for <pre> to prevent scrolling toolbar with content
+            var wrapper = document.createElement('div');
+            wrapper.classList.add('code-toolbar');
+            pre.parentNode.insertBefore(wrapper, pre);
+            wrapper.appendChild(pre);
+    
+            // Setup the toolbar
+            var toolbar = document.createElement('div');
+            toolbar.classList.add('toolbar');
+    
+            // order callbacks
+            var elementCallbacks = callbacks;
+            var order = getOrder(env.element);
+            if (order) {
+                elementCallbacks = order.map(function (key) {
+                    return map[key] || noop;
+                });
+            }
+    
+            elementCallbacks.forEach(function (callback) {
+                var element = callback(env);
+    
+                if (!element) {
+                    return;
+                }
+    
+                var item = document.createElement('div');
+                item.classList.add('toolbar-item');
+    
+                item.appendChild(element);
+                toolbar.appendChild(item);
+            });
+    
+            // Add our toolbar to the currently created wrapper of <pre> tag
+            wrapper.appendChild(toolbar);
+        };
+    
+        registerButton('label', function (env) {
+            var pre = env.element.parentNode;
+            if (!pre || !/pre/i.test(pre.nodeName)) {
+                return;
+            }
+    
+            if (!pre.hasAttribute('data-label')) {
+                return;
+            }
+    
+            var element; var template;
+            var text = pre.getAttribute('data-label');
+            try {
+                // Any normal text will blow up this selector.
+                template = document.querySelector('template#' + text);
+            } catch (e) { /* noop */ }
+    
+            if (template) {
+                element = template.content;
+            } else {
+                if (pre.hasAttribute('data-url')) {
+                    element = document.createElement('a');
+                    element.href = pre.getAttribute('data-url');
+                } else {
+                    element = document.createElement('span');
+                }
+    
+                element.textContent = text;
+            }
+    
+            return element;
+        });
+    
+        /**
+         * Register the toolbar with Prism.
+         */
+        Prism.hooks.add('complete', hook);
+    }());
+    
+    (function () {
+    
+        if (typeof Prism === 'undefined' || typeof document === 'undefined') {
+            return;
+        }
+    
+        if (!Prism.plugins.toolbar) {
+            console.warn('Copy to Clipboard plugin loaded before Toolbar plugin.');
+    
+            return;
+        }
+    
+        /**
+         * When the given elements is clicked by the user, the given text will be copied to clipboard.
+         *
+         * @param {HTMLElement} element
+         * @param {CopyInfo} copyInfo
+         *
+         * @typedef CopyInfo
+         * @property {() => string} getText
+         * @property {() => void} success
+         * @property {(reason: unknown) => void} error
+         */
+        function registerClipboard(element, copyInfo) {
+            element.addEventListener('click', function () {
+                copyTextToClipboard(copyInfo);
+            });
+        }
+        // https://stackoverflow.com/a/30810322/7595472
+    
+        /** @param {CopyInfo} copyInfo */
+        function fallbackCopyTextToClipboard(copyInfo) {
+            var textArea = document.createElement('textarea');
+            textArea.value = copyInfo.getText();
+    
+            // Avoid scrolling to bottom
+            textArea.style.top = '0';
+            textArea.style.left = '0';
+            textArea.style.position = 'fixed';
+    
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+    
+            try {
+                var successful = document.execCommand('copy');
+                setTimeout(function () {
+                    if (successful) {
+                        copyInfo.success();
+                    } else {
+                        copyInfo.error();
+                    }
+                }, 1);
+            } catch (err) {
+                setTimeout(function () {
+                    copyInfo.error(err);
+                }, 1);
+            }
+    
+            document.body.removeChild(textArea);
+        }
+        /** @param {CopyInfo} copyInfo */
+        function copyTextToClipboard(copyInfo) {
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(copyInfo.getText()).then(copyInfo.success, function () {
+                    // try the fallback in case `writeText` didn't work
+                    fallbackCopyTextToClipboard(copyInfo);
+                });
+            } else {
+                fallbackCopyTextToClipboard(copyInfo);
+            }
+        }
+    
+        /**
+         * Selects the text content of the given element.
+         *
+         * @param {Element} element
+         */
+        function selectElementText(element) {
+            // https://stackoverflow.com/a/20079910/7595472
+            window.getSelection().selectAllChildren(element);
+        }
+    
+        /**
+         * Traverses up the DOM tree to find data attributes that override the default plugin settings.
+         *
+         * @param {Element} startElement An element to start from.
+         * @returns {Settings} The plugin settings.
+         * @typedef {Record<"copy" | "copy-error" | "copy-success" | "copy-timeout", string | number>} Settings
+         */
+    function getSettings(startElement) {
+            /** @type {Settings} */
+            var settings = {
+                'copy': 'Copy',
+                'copy-error': 'Press Ctrl+C to copy',
+                'copy-success': 'Copied!',
+                'copy-timeout': 5000
+            };
+    
+            var prefix = 'data-prismjs-';
+            for (var key in settings) {
+                var attr = prefix + key;
+                var element = startElement;
+                while (element && !element.hasAttribute(attr)) {
+                    element = element.parentElement;
+                }
+                if (element) {
+                    settings[key] = element.getAttribute(attr);
+                }
+            }
+            return settings;
+        }
+    
+        Prism.plugins.toolbar.registerButton('copy-to-clipboard', function (env) {
+            var element = env.element;
+    
+            var settings = getSettings(element);
+    
+            var linkCopy = document.createElement('button');
+            linkCopy.className = 'copy-to-clipboard-button';
+            linkCopy.setAttribute('type', 'button');
+            var linkSpan = document.createElement('span');
+            linkCopy.appendChild(linkSpan);
+    
+            setState('copy');
+    
+            registerClipboard(linkCopy, {
+                getText: function () {
+                    return element.textContent;
+                },
+                success: function () {
+                    setState('copy-success');
+    
+                    resetText();
+                },
+                error: function () {
+                    setState('copy-error');
+    
+                    setTimeout(function () {
+                        selectElementText(element);
+                    }, 1);
+    
+                    resetText();
+                }
+            });
+    
+            return linkCopy;
+    
+            function resetText() {
+                setTimeout(function () { setState('copy'); }, settings['copy-timeout']);
+            }
+    
+            /** @param {"copy" | "copy-error" | "copy-success"} state */
+            function setState(state) {
+                linkSpan.textContent = settings[state];
+                linkCopy.setAttribute('data-copy-state', state);
+            }
+        });
+    }());
+    }; 
 initPrism()
 
 const setActivePage = () => {
@@ -20,9 +357,7 @@ const setActivePage = () => {
 
 window.addEventListener('load', e => {
     setActivePage()
-    initPrism()
     next.router.events.on('routeChangeComplete', url => {
         setActivePage()
-        initPrism()
     })
 })
