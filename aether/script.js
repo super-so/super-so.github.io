@@ -65,6 +65,10 @@ Prism.languages.scss=Prism.languages.extend("css",{comment:{pattern:/(^|[^\\])(?
 
 }
 
+document.addEventListener("DOMContentLoaded", function(){
+    initPrism()
+});
+
 window.addEventListener('load', e => {
     initPrism()
     setActivePage()
