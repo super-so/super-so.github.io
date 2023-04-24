@@ -695,7 +695,7 @@ th {
     overflow: auto!important;
 }
 
-.copy-to-clipboard-button {
+.copy-to-clipboard-button, .copy-button {
     z-index: 9999!important;
     border: 0 !important;
     box-shadow: none !important;
@@ -712,6 +712,14 @@ th {
     font-weight: 400 !important;
     position: relative !important;
 }
+
+.copy-button svg {
+    width: 14px;
+  }  
+
+  .code-wrapper {
+    position: relative!important;
+  }
 
 .copy-to-clipboard-button:hover {
     cursor: pointer !important;
