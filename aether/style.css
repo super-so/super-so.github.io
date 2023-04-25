@@ -704,33 +704,34 @@ pre {
     z-index: 9999!important;
     border: 0 !important;
     box-shadow: none !important;
-    background: 0 0 !important;
     background: var(--color-primary) !important;
     border: 1px solid var(--color-border-default);
     color: var(--color-text-light) !important;
-    padding: 6px !important;
+    padding: 0px 5px !important;
     margin-right: 8px !important;
-    margin-top: 5px !important;
+    margin-top: 8px !important;
     border-radius: 5px !important;
     font-size: 14px !important;
     font-family: 'Roboto Mono', monospace!important;
     font-weight: 400 !important;
-    position: relative !important;
+    position: absolute !important;
+    top: 0!important;
+    right: 0!important;
     opacity: 0!important;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
     transition: opacity .2s ease-in-out!important;
 }
 
-pre:hover .copy-button {
+pre:hover .copy-to-clipboard-button {
     opacity: 1!important;
   }
 
 .copy-to-clipboard-button svg {
     width: 14px!important;
   }  
- 
-  .code-wrapper {
-    position: relative!important;
-  }
+
 
 .copy-to-clipboard-button:hover {
     cursor: pointer !important;
