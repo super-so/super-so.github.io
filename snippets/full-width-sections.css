@@ -1,0 +1,50 @@
+body {
+    overflow-x: hidden !important;
+}
+
+.notion-root>div[class^='notion-callout bg-'] {
+    border-radius: 0px !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    position: relative !important;
+    margin: 0 !important;
+    margin-left: -50vw !important;
+    left: 50% !important;
+    padding: 50px 0px !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    flex-direction: column !important;
+    border: 0 !important;
+}
+
+.notion-root>div[class^='notion-callout bg-']>.notion-callout__icon {
+    display: none !important;
+}
+
+.notion-root>div[class^='notion-callout bg-']>.notion-callout__icon {
+    width: var(--layout-max-width) !important;
+    max-width: var(--layout-max-width) !important;
+    padding-left: var(--padding-left) !important;
+    padding-right: var(--padding-right) !important;
+    margin: 0 auto !important;
+}
+
+.notion-root>div[class^='notion-callout bg-']>.notion-callout__content {
+    margin-inline-start: 0 !important;
+    max-width: var(--layout-max-width) !important;
+    padding-left: var(--padding-left) !important;
+    padding-right: var(--padding-right) !important;
+    margin: 0 auto !important;
+}
+
+@media all and (max-width: 546px) {
+    .notion-root>div[class^='notion-callout bg-']>.notion-callout__content {
+        padding-left: var(--padding-left-mobile) !important;
+        padding-right: var(--padding-right-mobile) !important;
+    }
+
+    .notion-root>div[class^='notion-callout bg-']>.notion-callout__icon {
+        padding-left: var(--padding-left-mobile) !important;
+        padding-right: var(--padding-right-mobile) !important;
+    }
+}
