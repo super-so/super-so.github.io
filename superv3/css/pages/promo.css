@@ -2,6 +2,9 @@
 .parent-page__promo .notion-header__cover.no-cover {
   display: none !important;
 }
+.parent-page__promo .super-content.has-footer {
+  padding-bottom: 0px !important;
+}
 .parent-page__promo .notion-header__cover.has-cover {
   height: 110vh !important;
   width: 100% !important;

@@ -7,6 +7,10 @@
         display: none !important;
     }
 
+    .super-content.has-footer {
+        padding-bottom: 0px!important;
+    }
+
     .notion-header__cover.has-cover {
         height: 110vh !important;
         width: 100% !important;
