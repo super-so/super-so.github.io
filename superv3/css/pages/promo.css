@@ -1,13 +1,3 @@
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -20%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
 .parent-page__promo .notion-header__icon-wrapper,
 .parent-page__promo .notion-header__cover.no-cover {
   display: none !important;
@@ -43,7 +33,6 @@
   max-width: 720px !important;
   margin: 0 auto !important;
   margin-top: 34px !important;
-  animation: 1000ms ease 0s 1 normal backwards running fadeIn !important;
   background: -webkit-linear-gradient(#262A2E, #34393E) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
