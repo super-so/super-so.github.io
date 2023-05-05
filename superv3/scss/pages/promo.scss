@@ -1,0 +1,310 @@
+@import "../mixins";
+@import "../components/callout";
+
+.parent-page__promo {
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translate3d(0, -20%, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .notion-header__icon-wrapper,
+    .notion-header__cover.no-cover {
+        display: none !important;
+    }
+
+    .notion-header__cover.has-cover {
+        height: 110vh !important;
+        width: 100% !important;
+        max-height: none !important; 
+        z-index: -9999 !important;
+        position: absolute !important;
+        top: -320px !important;
+        opacity: .8 !important;
+
+        &::after {
+            content: "" !important;
+            position: absolute !important;
+            z-index: 1 !important;
+            bottom: -2px !important;
+            background-image: linear-gradient(to bottom,
+                    rgba(253, 253, 252, 0),
+                    rgba(253, 253, 252, 1) 100%) !important;
+            width: 100% !important;
+            height: 100vh !important;
+        }
+
+        img {
+            position: absolute;
+            object-position: center !important;
+            object-fit: cover !important;
+            height: 100% !important;
+            z-index: -9999 !important;
+        }
+    }
+
+    h1 {
+        font-size: 4rem !important;
+        text-align: center !important;
+        max-width: 720px !important;
+        margin: 0 auto !important;
+        margin-top: 34px !important;
+        animation: 1000ms ease 0s 1 normal backwards running fadeIn !important;
+        background: -webkit-linear-gradient(#262A2E, #34393E) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+
+        @include breakpoint-sm {
+            font-size: 2.8rem !important;
+        }
+    }
+
+    h2,
+    h2.notion-heading,
+    h2.notion-heading span {
+
+        @include breakpoint-sm {
+            font-size: 1.8rem !important;
+        }
+    }
+
+    h3,
+    h3.notion-heading,
+    h3.notion-heading span {
+        color: var(--color-text-default) !important;
+        margin-top: 0px !important;
+
+        @include breakpoint-sm {
+            font-size: 1.2rem !important;
+            line-height: 0.4 !important;
+        }
+    }
+
+    .notion-header__title {
+        margin-top: 64px !important;
+    }
+
+    .notion-quote {
+        border: 0 !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+        max-width: 680px !important;
+
+        @include breakpoint-sm {
+            font-size: 1.2rem !important;
+        }
+    }
+
+    .notion-callout__icon {
+        display: none !important;
+    }
+
+    // Features
+    #block-4cc0d8cb6e344758a800d923d84884e3 {
+        @include full-width-section(#FDFDFC);
+        border: 0 !important;
+
+        .notion-column {
+            @include breakpoint-sm {
+                padding: 0 !important;
+            }
+
+            .notion-image {
+                @include breakpoint-sm {
+                    margin: 0 !important;
+                }
+            }
+        }
+
+        .notion-callout__content {
+            padding-top: 0px !important;
+        }
+
+        .notion-callout {
+            @include callout-container;
+
+            .notion-callout__content {
+                text-align: center !important;
+            }
+        }
+    }
+
+    // Testimonials
+    #block-02e938ebfc4944e2985aa7f166342174 {
+        --column-spacing: 24px !important;
+        text-align: center !important;
+        @include full-width-section(#f9f9f8);
+        border: 0 !important;
+
+        .notion-callout__icon {
+            display: none !important;
+        }
+
+        .notion-link {
+            border: 0 !important;
+        }
+
+        .notion-callout__content>.notion-text {
+            opacity: 0.7 !important;
+            margin-top: 8px !important;
+        }
+
+        .notion-callout {
+            padding: 24px !important;
+            padding-top: 20px !important;
+            border: 1px solid #f2f1f1 !important;
+            border-radius: 16px !important;
+            margin-bottom: 24px !important;
+            text-align: left !important;
+            cursor: default !important;
+            transition: all 0.15s ease-out !important;
+            @include text-sm;
+            background: #fdfdfc !important;
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 20px 0px !important;
+                border: 1px solid transparent !important;
+                transform: translateY(-2px) !important;
+            }
+
+            .notion-column-list {
+                margin-top: 0 !important;
+                align-items: center !important;
+
+                .notion-image {
+                    width: 56px !important;
+                    height: 56px !important;
+                    border-radius: 50% !important;
+
+                    img {
+                        border-radius: 50% !important;
+                        height: auto !important;
+                    }
+                }
+            }
+
+            .notion-column {
+                padding: 0px !important;
+
+                &:first-child {
+                    max-width: fit-content !important;
+                }
+
+                &:last-child {
+                    margin-inline-start: 16px !important;
+
+                    @include breakpoint-sm {
+                        width: calc((100% - var(--column-spacing) * 1) * 0.75) !important;
+                    }
+                }
+
+                .notion-text {
+                    min-height: auto !important;
+                }
+
+                .notion-text__content {
+                    padding: 0px !important;
+                }
+            }
+        }
+
+        .notion-column-list {
+            margin-top: 16px !important;
+
+            .notion-column {
+                @include breakpoint-md {
+                    flex-grow: 1 !important;
+                }
+            }
+        }
+
+        #block-c28e448137d14883a260979588aeb357 {
+            @include breakpoint-md {
+                display: none !important;
+            }
+        }
+    }
+
+    // First form block
+    #block-a9cadcd621844ea59fcafa87f1ec3c19 {
+        @include full-width-section(#FDFDFC);
+        border: 0 !important;
+
+        h2 {
+            color: var(--color-text-default) !important;
+        }
+
+        .notion-embed {
+            width: 270px !important;
+        }
+
+        & * {
+            max-width: 600px !important;
+        }
+
+        .notion-callout__content {
+            margin: 0 auto !important;
+            text-align: center !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            @include center;
+            flex-direction: column !important;
+        }
+    }
+
+    // Form
+    #block-a149f8b0a9824ab5934b95f1a8098cc0 {
+        @include full-width-section(#262A2E);
+        color: #f2f2f2 !important;
+
+        .notion-embed {
+            width: 270px !important;
+        }
+
+        h2 {
+            color: #FDFDFC !important;
+        }
+
+        .notion-callout__content {
+            margin: 0 auto !important;
+            text-align: center !important;
+            @include center;
+            flex-direction: column !important;
+        }
+
+        & * {
+            max-width: 600px !important;
+        }
+
+        .notion-text {
+            color: var(--gray-200) !important;
+        }
+
+        .notion-callout__icon {
+            display: none !important;
+        }
+    }
+
+    // How it works
+    #block-5102003ddafd4f219b2abbec38acdcdc {
+        @include full-width-section(#FDFDFC);
+        border: 0 !important;
+
+        img {
+            height: 230px !important;
+        }
+
+        h2 {
+            color: var(--color-text-default) !important;
+            text-align: center !important;
+            margin-bottom: 16px !important;
+        }
+    }
+}
