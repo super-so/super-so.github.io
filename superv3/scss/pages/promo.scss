@@ -253,6 +253,8 @@
     #block-a149f8b0a9824ab5934b95f1a8098cc0 {
         @include full-width-section(#262A2E);
         color: #f2f2f2 !important;
+        border: 0!important;
+        margin-bottom: 0!important;
 
         .notion-embed {
             width: 270px !important;
