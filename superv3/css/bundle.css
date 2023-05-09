@@ -1171,14 +1171,16 @@ h2.notion-heading .notion-semantic-string {
 #page-illustrations #block-6a08570a7e92473c882204fd47a23929,
 #page-illustrations #block-ec94fe5d64a948299b9b4b04b3f389cf,
 #page-illustrations #block-ffe08794afa54ccabb22846d3c275817,
-#page-illustrations #block-7e42cc9f2abc4a54ac461cb91a302890 {
+#page-illustrations #block-7e42cc9f2abc4a54ac461cb91a302890,
+#page-illustrations #block-4b21bf404c374e0c9bb9a6eee84baef1 {
   align-items: flex-end !important;
 }
 
 #page-illustrations #block-d5e6ad3be6c043c3af705142bea8a32b .notion-link,
 #page-illustrations #block-b48fd9fe1332421cbd3206849dec4c6b .notion-link,
 #page-illustrations #block-2d988931dd65430abf8a4e3d18f9da62 .notion-link,
-#page-illustrations #block-7ad1ab6f1d564dd4a0b21edf6475d114 .notion-link {
+#page-illustrations #block-7ad1ab6f1d564dd4a0b21edf6475d114 .notion-link,
+#page-illustrations #block-6c983c96e4174ec398f57662b01427ad .notion-link {
   opacity: 1 !important;
   padding: var(--button-padding) !important;
   border-radius: var(--rounded-md) !important;
@@ -1197,7 +1199,8 @@ h2.notion-heading .notion-semantic-string {
 #page-illustrations #block-d5e6ad3be6c043c3af705142bea8a32b .notion-link:hover,
 #page-illustrations #block-b48fd9fe1332421cbd3206849dec4c6b .notion-link:hover,
 #page-illustrations #block-2d988931dd65430abf8a4e3d18f9da62 .notion-link:hover,
-#page-illustrations #block-7ad1ab6f1d564dd4a0b21edf6475d114 .notion-link:hover {
+#page-illustrations #block-7ad1ab6f1d564dd4a0b21edf6475d114 .notion-link:hover,
+#page-illustrations #block-6c983c96e4174ec398f57662b01427ad .notion-link:hover {
   background: var(--gray-25) !important;
   color: var(--gray-900) !important;
 }
