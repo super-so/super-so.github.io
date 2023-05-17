@@ -7,7 +7,7 @@
         display: none !important;
     }
 
-    .super-content.has-footer {
+    .super-content {
         padding-bottom: 0px!important;
     }
 
@@ -222,35 +222,8 @@
         }
     }
 
-    // First form block
-    #block-a9cadcd621844ea59fcafa87f1ec3c19 {
-        @include full-width-section(#FDFDFC);
-        border: 0 !important;
-
-        h2 {
-            color: var(--color-text-default) !important;
-        }
-
-        .notion-embed {
-            width: 270px !important;
-        }
-
-        & * {
-            max-width: 600px !important;
-        }
-
-        .notion-callout__content {
-            margin: 0 auto !important;
-            text-align: center !important;
-            padding-top: 0 !important;
-            padding-bottom: 0 !important;
-            @include center;
-            flex-direction: column !important;
-        }
-    }
-
     // Form
-    #block-a149f8b0a9824ab5934b95f1a8098cc0 {
+    #block-a149f8b0a9824ab5934b95f1a8098cc0, #block-1475b60ceea54b3fbd9d4822faa45549 {
         @include full-width-section(#262A2E);
         color: #f2f2f2 !important;
         border: 0!important;
