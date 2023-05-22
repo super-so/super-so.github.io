@@ -1164,8 +1164,9 @@ h2.notion-heading .notion-semantic-string {
   letter-spacing: -0.6px !important;
 }
 
-.parent-page__features .notion-text p {
+.parent-page__features p .notion-semantic-string {
   margin-bottom: 16px !important;
+  line-height: 1.7rem !important;
   font-size: 18px !important;
 }
 .parent-page__guides {
