@@ -236,8 +236,8 @@
         @include full-width-section(var(--gray-900));
 
         #block-9f00557430834843a033a575d2c795e7 {
-            .notion-icon {
-                display: none;
+            .notion-collection-card .notion-property__title .notion-property__title__icon-wrapper {
+                display: none!important;
             }
         }
     }

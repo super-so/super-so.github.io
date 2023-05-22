@@ -1487,8 +1487,8 @@ h2.notion-heading .notion-semantic-string {
   }
 }
 
-#page-index #block-4ec0da2865a3465eae8ce500894d1281 #block-9f00557430834843a033a575d2c795e7 .notion-icon {
-  display: none;
+#page-index #block-4ec0da2865a3465eae8ce500894d1281 #block-9f00557430834843a033a575d2c795e7 .notion-collection-card .notion-property__title .notion-property__title__icon-wrapper {
+  display: none !important;
 }
 
 #page-index #block-88bbe3ad95784b4bae4613cdc44f843a {
