@@ -44,8 +44,8 @@
     // –––––––––––––––––
     // CTA Button
     // –––––––––––––––––
-    .notion-text__content strong .notion-link,
-    .notion-text__content .notion-link strong {
+    strong .notion-link,
+    .notion-link strong {
         @include button-primary-default;
     }
 
