@@ -234,6 +234,12 @@
     // –––––––––––––––––
     #block-4ec0da2865a3465eae8ce500894d1281 {
         @include full-width-section(var(--gray-900));
+
+        #block-9f00557430834843a033a575d2c795e7 {
+            .notion-icon {
+                display: none;
+            }
+        }
     }
     // –––––––––––––––––
     // section-testimonials
