@@ -55,14 +55,14 @@
   margin-bottom: 8px !important;
   margin-top: 24px !important;
 }
-.parent-page__guides .notion-text .notion-text__content strong .notion-link,
-.parent-page__guides .notion-text .notion-text__content .notion-link strong,
-.parent-page__blog .notion-text .notion-text__content strong .notion-link,
-.parent-page__blog .notion-text .notion-text__content .notion-link strong,
-.parent-page__case-studies .notion-text .notion-text__content strong .notion-link,
-.parent-page__case-studies .notion-text .notion-text__content .notion-link strong,
-.parent-page__create .notion-text .notion-text__content strong .notion-link,
-.parent-page__create .notion-text .notion-text__content .notion-link strong {
+.parent-page__guides .notion-text__content strong .notion-link,
+.parent-page__guides .notion-text__content .notion-link strong,
+.parent-page__blog .notion-text__content strong .notion-link,
+.parent-page__blog .notion-text__content .notion-link strong,
+.parent-page__case-studies .notion-text__content strong .notion-link,
+.parent-page__case-studies .notion-text__content .notion-link strong,
+.parent-page__create .notion-text__content strong .notion-link,
+.parent-page__create .notion-text__content .notion-link strong {
   opacity: 1 !important;
   padding: var(--button-padding) !important;
   border-radius: var(--rounded-md) !important;
@@ -76,24 +76,24 @@
   background: var(--primary-500) !important;
   color: var(--base-black) !important;
 }
-.parent-page__guides .notion-text .notion-text__content strong .notion-link:active,
-.parent-page__guides .notion-text .notion-text__content .notion-link strong:active,
-.parent-page__blog .notion-text .notion-text__content strong .notion-link:active,
-.parent-page__blog .notion-text .notion-text__content .notion-link strong:active,
-.parent-page__case-studies .notion-text .notion-text__content strong .notion-link:active,
-.parent-page__case-studies .notion-text .notion-text__content .notion-link strong:active,
-.parent-page__create .notion-text .notion-text__content strong .notion-link:active,
-.parent-page__create .notion-text .notion-text__content .notion-link strong:active {
+.parent-page__guides .notion-text__content strong .notion-link:active,
+.parent-page__guides .notion-text__content .notion-link strong:active,
+.parent-page__blog .notion-text__content strong .notion-link:active,
+.parent-page__blog .notion-text__content .notion-link strong:active,
+.parent-page__case-studies .notion-text__content strong .notion-link:active,
+.parent-page__case-studies .notion-text__content .notion-link strong:active,
+.parent-page__create .notion-text__content strong .notion-link:active,
+.parent-page__create .notion-text__content .notion-link strong:active {
   transform: translateY(1px) !important;
 }
-.parent-page__guides .notion-text .notion-text__content strong .notion-link:hover,
-.parent-page__guides .notion-text .notion-text__content .notion-link strong:hover,
-.parent-page__blog .notion-text .notion-text__content strong .notion-link:hover,
-.parent-page__blog .notion-text .notion-text__content .notion-link strong:hover,
-.parent-page__case-studies .notion-text .notion-text__content strong .notion-link:hover,
-.parent-page__case-studies .notion-text .notion-text__content .notion-link strong:hover,
-.parent-page__create .notion-text .notion-text__content strong .notion-link:hover,
-.parent-page__create .notion-text .notion-text__content .notion-link strong:hover {
+.parent-page__guides .notion-text__content strong .notion-link:hover,
+.parent-page__guides .notion-text__content .notion-link strong:hover,
+.parent-page__blog .notion-text__content strong .notion-link:hover,
+.parent-page__blog .notion-text__content .notion-link strong:hover,
+.parent-page__case-studies .notion-text__content strong .notion-link:hover,
+.parent-page__case-studies .notion-text__content .notion-link strong:hover,
+.parent-page__create .notion-text__content strong .notion-link:hover,
+.parent-page__create .notion-text__content .notion-link strong:hover {
   box-shadow: 0px 5px 28px -6px rgb(255, 190, 61) !important;
   -webkit-box-shadow: 0px 5px 28px -6px rgb(255, 190, 61) !important;
   background: var(--primary-600) !important;
