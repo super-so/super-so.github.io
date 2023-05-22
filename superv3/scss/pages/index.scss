@@ -4,6 +4,10 @@
 // Page: index
 // –––––––––––––––––
 #page-index {
+    .notion-property__title__icon-wrapper {
+        display: none!important;
+    }
+
     .super-content-wrapper {
         overflow: hidden !important;
     }
@@ -234,12 +238,6 @@
     // –––––––––––––––––
     #block-4ec0da2865a3465eae8ce500894d1281 {
         @include full-width-section(var(--gray-900));
-
-        #block-9f00557430834843a033a575d2c795e7 {
-            .notion-collection-card .notion-property__title .notion-property__title__icon-wrapper {
-                display: none!important;
-            }
-        }
     }
     // –––––––––––––––––
     // section-testimonials
