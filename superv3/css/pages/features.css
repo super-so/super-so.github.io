@@ -1,3 +1,17 @@
+#page-features .notion-collection-card__cover {
+  --collection-card-cover-height-medium: 190px!important;
+}
+#page-features .notion-collection-card__content {
+  --collection-card-content-padding: 24px!important;
+}
+#page-features .notion-property__title__icon-wrapper {
+  display: none !important;
+}
+#page-features .notion-property__title {
+  justify-content: center !important;
+  text-align: center !important;
+}
+
 .parent-page__features {
   --header-cover-height: 32vh !important;
 }

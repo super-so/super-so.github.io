@@ -6,6 +6,18 @@
   border-top: 0px !important;
 }
 
+.notion-collection-card__property.notion-property__select {
+    overflow-x: scroll!important;
+    z-index: 9999!important;
+    -ms-overflow-style: none!important;
+    scrollbar-width: none!important;
+    cursor:ew-resize!important;
+}
+
+.notion-collection-card__property.notion-property__select::-webkit-scrollbar {
+    display: none!important;
+}
+
 .notion-collection-gallery.small {
   .notion-collection-card {
       box-shadow: none !important;
