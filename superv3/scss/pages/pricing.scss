@@ -65,7 +65,7 @@
 
                 @include breakpoint-xs {
                     margin: 0px !important;
-                   // margin-top: 8px !important;
+                    // margin-top: 8px !important;
                 }
 
                 // &::after {
@@ -75,8 +75,8 @@
                 // }
             }
         }
-    } 
- 
+    }
+
     // Both
     #block-5f4034b33f5e4ef5aee7421baadd223e,
     #block-e5bbddb674254449a439e4d6a593c5da {
@@ -91,13 +91,13 @@
 
         @include breakpoint-xs {
             border-radius: 12px !important;
-            width: 100%!important;
+            width: 100% !important;
         }
 
         .notion-column-list {
             @include breakpoint-xs {
                 flex-wrap: nowrap !important;
-               // flex-direction: column !important;
+                // flex-direction: column !important;
             }
         }
 
@@ -314,4 +314,78 @@
             }
         }
     }
+}
+
+#page-pricing-annual #block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout .notion-callout__content,
+#page-pricing #block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout .notion-callout__content {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+
+#block-e3e869ea4829488893e2a8767af9f57e .notion-link {
+    opacity: 1 !important;
+    padding: var(--button-padding) !important;
+    border-radius: var(--rounded-md) !important;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    transition: background .2s ease-in-out, transform .1s ease-in-out, box-shadow .15s ease-in-out !important;
+    background: var(--base-white) !important;
+    border: 1px solid var(--primary-500) !important;
+    box-shadow: 0 4px 11px rgb(53 53 53 / 1%), 0 0 7px rgb(251 180 60 / 45%);
+    color: var(--gray-700) !important;
+    width: 100% !important;
+    margin-top: 16px !important;
+    position: relative !important;
+    align-items: center !important;
+}
+
+#block-e3e869ea4829488893e2a8767af9f57e .notion-link:hover {
+    background: #FFBE3D !important;
+    color: #111111 !important;
+    opacity: 1 !important;
+}
+
+#block-1f2516c0a13841bc8d4ba00ebc554fe1,
+#block-e3db84374788481b822017d293ba9366 {
+    margin: 0 auto !important;
+    text-align: center !important;
+    margin-top: 16px !important;
+}
+
+
+#block-e3e869ea4829488893e2a8767af9f57e .notion-link::after {
+    width: 20px !important;
+    height: 20px !important;
+    margin-left: 4px !important;
+    content: url("https://sites.super.so/super/assets/arrow-right-primary-500.svg");
+}
+
+#block-e3e869ea4829488893e2a8767af9f57e .notion-link:hover::after {
+    width: 20px !important;
+    height: 20px !important;
+    margin-left: 4px !important;
+    content: url("https://sites.super.so/super/assets/arrow-right-black.svg") !important;
+}
+
+#block-e3e869ea4829488893e2a8767af9f57e a {
+    text-decoration: none !important;
+    border: 0 !important;
+}
+
+#page-pricing #block-9e0a3564e4d848c5a0718b1a083eb4e1,
+#page-pricing-annual #block-7ca1a670529a4130ba3f8e240293c9ec {
+    border: 1px solid #FFBE3D !important;
+}
+
+#page-pricing-annual #block-abea645bf4084158b5f710c635984ec4 .notion-column:last-child>.notion-callout,
+#page-pricing #block-f59ac23d8cf344f084e546567605a696 .notion-column:last-child>.notion-callout {
+    border: 0 !important;
+}
+
+#page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column:last-child::after,
+#page-pricing #block-5f4034b33f5e4ef5aee7421baadd223e .notion-link::after {
+    display: none !important;
 }

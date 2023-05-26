@@ -31,11 +31,37 @@
 .parent-page__create .notion-bulleted-list li {
   color: var(--gray-600) !important;
 }
-.parent-page__guides .notion-image,
-.parent-page__blog .notion-image,
-.parent-page__case-studies .notion-image,
-.parent-page__create .notion-image {
-  filter: drop-shadow(0 0.4rem 0.8rem rgba(0, 0, 0, 0.08)) !important;
+.parent-page__guides .notion-image:not(.notion-callout .notion-image):not(.notion-column .notion-image),
+.parent-page__blog .notion-image:not(.notion-callout .notion-image):not(.notion-column .notion-image),
+.parent-page__case-studies .notion-image:not(.notion-callout .notion-image):not(.notion-column .notion-image),
+.parent-page__create .notion-image:not(.notion-callout .notion-image):not(.notion-column .notion-image) {
+  margin-top: 2rem !important;
+}
+.parent-page__guides h2.notion-heading:not(.notion-callout h2.notion-heading),
+.parent-page__guides .parent-page__blog h2.notion-heading:not(.notion-callout h2.notion-heading),
+.parent-page__blog h2.notion-heading:not(.notion-callout h2.notion-heading),
+.parent-page__blog .parent-page__blog h2.notion-heading:not(.notion-callout h2.notion-heading),
+.parent-page__case-studies h2.notion-heading:not(.notion-callout h2.notion-heading),
+.parent-page__case-studies .parent-page__blog h2.notion-heading:not(.notion-callout h2.notion-heading),
+.parent-page__create h2.notion-heading:not(.notion-callout h2.notion-heading),
+.parent-page__create .parent-page__blog h2.notion-heading:not(.notion-callout h2.notion-heading) {
+  margin-top: 3rem !important;
+}
+.parent-page__guides h3.notion-heading:not(.notion-callout h3.notion-heading),
+.parent-page__guides .parent-page__blog h3.notion-heading:not(.notion-callout h3.notion-heading),
+.parent-page__blog h3.notion-heading:not(.notion-callout h3.notion-heading),
+.parent-page__blog .parent-page__blog h3.notion-heading:not(.notion-callout h3.notion-heading),
+.parent-page__case-studies h3.notion-heading:not(.notion-callout h3.notion-heading),
+.parent-page__case-studies .parent-page__blog h3.notion-heading:not(.notion-callout h3.notion-heading),
+.parent-page__create h3.notion-heading:not(.notion-callout h3.notion-heading),
+.parent-page__create .parent-page__blog h3.notion-heading:not(.notion-callout h3.notion-heading) {
+  margin-top: 2.2rem !important;
+}
+.parent-page__guides .notion-text p,
+.parent-page__blog .notion-text p,
+.parent-page__case-studies .notion-text p,
+.parent-page__create .notion-text p {
+  margin-top: 1rem !important;
 }
 .parent-page__guides h3,
 .parent-page__guides h3.notion-heading,
@@ -201,4 +227,22 @@
     max-width: 280% !important;
     max-height: 280% !important;
   }
+}
+
+#block-e3e869ea4829488893e2a8767af9f57e .notion-link,
+#block-e3e869ea4829488893e2a8767af9f57e .notion-link {
+  background: var(--primary-500) !important;
+}
+
+#block-e3e869ea4829488893e2a8767af9f57e .notion-link:hover,
+#block-e3e869ea4829488893e2a8767af9f57e .notion-link:hover {
+  background: #FFCC6A !important;
+}
+
+#block-e3e869ea4829488893e2a8767af9f57e .notion-link::after,
+#block-e3e869ea4829488893e2a8767af9f57e .notion-link::after {
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: 4px !important;
+  content: url("https://sites.super.so/super/assets/arrow-right-black.svg") !important;
 }

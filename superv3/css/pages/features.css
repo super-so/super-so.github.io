@@ -62,3 +62,10 @@
   line-height: 1.72rem !important;
   font-size: 18px !important;
 }
+.parent-page__features ul {
+  margin-bottom: 16px !important;
+}
+.parent-page__features li {
+  font-size: 18px !important;
+  color: var(--gray-600) !important;
+}

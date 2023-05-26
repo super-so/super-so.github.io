@@ -6,6 +6,10 @@
   border-top: 0px !important;
 }
 
+.notion-collection__header-wrapper {
+    display: flex!important;
+}
+
 .notion-collection-card__property.notion-property__select {
     overflow-x: scroll!important;
     z-index: 9999!important;
