@@ -47,8 +47,8 @@
 }
 @media screen and (max-width: 768px) {
   .parent-page__promo h2,
-  .parent-page__promo h2.notion-heading,
-  .parent-page__promo h2.notion-heading span {
+.parent-page__promo h2.notion-heading,
+.parent-page__promo h2.notion-heading span {
     font-size: 1.8rem !important;
   }
 }
@@ -60,8 +60,8 @@
 }
 @media screen and (max-width: 768px) {
   .parent-page__promo h3,
-  .parent-page__promo h3.notion-heading,
-  .parent-page__promo h3.notion-heading span {
+.parent-page__promo h3.notion-heading,
+.parent-page__promo h3.notion-heading span {
     font-size: 1.2rem !important;
     line-height: 0.4 !important;
   }
