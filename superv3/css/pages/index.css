@@ -1,5 +1,5 @@
 #page-index {
-  display: none !important;
+  overflow: hidden !important;
 }
 #page-index .notion-property__title__icon-wrapper {
   display: none !important;

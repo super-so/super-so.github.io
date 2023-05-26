@@ -1291,7 +1291,7 @@ h2.notion-heading .notion-semantic-string {
   color: var(--gray-900) !important;
 }
 #page-index {
-  display: none !important;
+  overflow: hidden !important;
 }
 
 #page-index .notion-property__title__icon-wrapper {
