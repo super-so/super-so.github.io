@@ -1,3 +1,6 @@
+#page-index {
+  display: none !important;
+}
 #page-index .notion-property__title__icon-wrapper {
   display: none !important;
 }

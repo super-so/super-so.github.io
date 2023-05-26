@@ -1290,6 +1290,10 @@ h2.notion-heading .notion-semantic-string {
   background: var(--gray-25) !important;
   color: var(--gray-900) !important;
 }
+#page-index {
+  display: none !important;
+}
+
 #page-index .notion-property__title__icon-wrapper {
   display: none !important;
 }
