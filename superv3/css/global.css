@@ -270,7 +270,7 @@
   opacity: 0.4 !important;
   content: "-" !important;
   top: 24px !important;
-  left: 20px !important;
+  right: 20px !important;
 }
 
 .notion-toggle {
@@ -292,7 +292,7 @@
   opacity: 0.4 !important;
   content: "+" !important;
   top: 24px !important;
-  left: 20px !important;
+  right: 20px !important;
 }
 .notion-toggle h3 {
   font-weight: 300 !important;
@@ -304,14 +304,14 @@
 
 .notion-toggle__summary {
   margin: 0 !important;
-  margin-left: 20px !important;
+  margin-left: 0px !important;
   padding: 20px !important;
 }
 
 .notion-toggle__content {
   padding: 20px !important;
   padding-top: 0px !important;
-  padding-left: 40px !important;
+  padding-left: 20px !important;
 }
 
 .super-navbar {
@@ -382,7 +382,7 @@
   border: none !important;
   overflow: visible !important;
   text-align: center !important;
-  padding: 100px 24px !important;
+  padding: 150px 24px !important;
   background-position: center !important;
   background-size: cover !important;
   position: relative !important;
