@@ -367,13 +367,20 @@
   }
 }
 
+.super-navbar__list-item-icon {
+  opacity: 0.35 !important;
+}
+
+.super-navbar__list-item:hover {
+  background: var(--gray-50) !important;
+}
+
 .super-navbar.scrolled {
   -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
   -moz-backdrop-filter: blur(20px) saturate(200%) !important;
   backdrop-filter: blur(20px) saturate(200%) !important;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.04) !important;
   background: rgba(255, 255, 255, 0.85) !important;
-  height: 70px !important;
 }
 
 .super-root .super-content #block-1efa808dfcce4ebaae1f7d5c21cc5bf6 {
@@ -470,6 +477,11 @@ body {
   display: none !important;
 }
 
+@media all and (min-width: 576px) {
+  .super-navbar__menu-open {
+    display: none !important;
+  }
+}
 .notion-video video,
 .notion-embed__container > iframe {
   border-radius: 24px !important;

@@ -413,88 +413,52 @@
     // section-other-features
     // –––––––––––––––––
     #block-e3c38ab927894e78b4eca1d2cebdd6a9 {
-        text-align: center !important;
         overflow: visible !important;
-        @include full-width-section(var(--gray-900));
+        text-align: center!important;
+        @include full-width-section(#F6F6F6);
+
+        h2 {
+            color: var(--base-black)!important;
+        }
 
         .notion-link:last-child {
             @include button-primary-default;
         }
 
-        .notion-collection-gallery.small {
-            gap: 30px !important;
+        .notion-collection-card__cover {
+            --collection-card-cover-height-medium: 190px!important;
+        }
+    
+        .notion-collection-card__content {
+            --collection-card-content-padding: 24px!important;
+            padding-top: 20px!important;
+            text-align: center!important;
+        }
+        .notion-property__title__icon-wrapper {
+            display: none!important;
+            text-align: center!important;
+        }
+    
+        .notion-property__title {
+            font-weight: 600!important;
+            text-align: center!important;
+            align-items: center!important;
+            justify-content: center!important;
+            color: var(--base-black)!important;
+        }
+    
+        .notion-collection-card__property .notion-semantic-string {
+            overflow: unset!important;
+            white-space: pre-wrap!important;
+        }
+    
+        .notion-collection-card__property .notion-property {
+            font-size: 14px!important;
+            color: var(--gray-600)!important;
+        }
 
-            @include breakpoint-xs {
-                grid-template-columns: 1fr 1fr !important;
-                grid-row-gap: 0px !important;
-            }
-
-            .notion-collection-card {
-                box-shadow: none !important;
-                background: transparent !important;
-                display: flex !important;
-                align-items: center !important;
-                justify-content: flex-start !important;
-                flex-direction: column !important;
-                overflow: visible !important;
-                border: 0 !important;
-
-                .notion-property__title {
-                    transition: color 0.2s ease-in-out !important;
-                    @include text-lg;
-                }
-
-                // &:hover {
-                //     border: 0!important;
-                //     transform: none!important;
-                // }
-
-                &:hover .notion-property__title {
-                    color: var(--base-white) !important;
-                }
-            }
-
-            .notion-collection-card__cover {
-                background: transparent!important;
-                border: 1px solid transparent!important;
-                width: 72px !important;
-                height: 72px !important;
-                min-height: 72px !important;
-                display: flex !important;
-                justify-content: center !important;
-                align-items: center !important;
-                border-radius: 22px !important;
-                transition: all 0.25s ease-out !important;
-                padding: 8px!important;
-                width: auto!important;
-                height: auto!important;
-                /* Shadow/special */
-                // filter: drop-shadow(0px 4px 11px rgba(53, 53, 53, 0.01)) drop-shadow(0px 0px 7px rgba(251, 180, 60, 0.45))!important;
-
-                &:hover {
-                    background: #24282C!important;
-                    border: 1px solid #272D32!important;
-                }
-                
-                &:hover img {
-                    background: #2A2E33!important;
-                    border: 1px solid #373C41!important;
-                }
-                
-                img {
-                    height: 82px !important;
-                    width: 82px !important;
-                    max-width: 82px !important;
-                    max-height: 82px !important;
-                    min-height: 82px !important;
-                    transition: background .2s ease-in-out!important;
-                    position: static!important;
-                    background: #262A2E!important;
-                    border-radius: 15px!important;
-                    border: 1px solid #303539!important;
-                    padding: 20px!important;
-                }
-            }
+        .notion-property__text {
+            max-width: 100%!important;
         }
     }
     // –––––––––––––––––

@@ -34,6 +34,12 @@ body {
     display: none !important;
 }
 
+@include above-xs {
+    .super-navbar__menu-open {
+        display: none !important;
+    }
+}
+
 // –––––––––––––––––
 // Media
 // –––––––––––––––––
@@ -61,7 +67,7 @@ h2.notion-heading span {
     font-size: clamp(2rem, 4vw, 2.4rem) !important;
     line-height: 1.1 !important;
     margin-bottom: 8px !important;
-    letter-spacing: -1px!important;
+    letter-spacing: -1px !important;
 }
 
 // h3
