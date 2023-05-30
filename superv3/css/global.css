@@ -398,6 +398,7 @@
   justify-content: flex-start !important;
   flex-direction: column !important;
   border: 0 !important;
+  margin-bottom: -5vh !important;
 }
 .super-root .super-content #block-1efa808dfcce4ebaae1f7d5c21cc5bf6 .notion-callout__icon {
   display: none !important;
@@ -443,7 +444,7 @@
   height: 120% !important;
   max-width: 120% !important;
   max-height: 120% !important;
-  top: 58% !important;
+  top: 51% !important;
   left: 50% !important;
   transform: translate(-50%, -50%);
   z-index: -1 !important;

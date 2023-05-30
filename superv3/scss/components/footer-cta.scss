@@ -23,6 +23,7 @@
   justify-content: flex-start !important;
   flex-direction: column !important;
   border: 0 !important;
+  margin-bottom: -5vh!important;
 
   h2 {
     color: var(--base-white)!important;
@@ -41,7 +42,7 @@
       height: 120% !important;
       max-width: 120% !important;
       max-height: 120% !important;
-      top: 58% !important;
+      top: 51% !important;
       left: 50% !important;
       transform: translate(-50%, -50%);
       z-index: -1 !important;
