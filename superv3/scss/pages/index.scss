@@ -6,6 +6,10 @@
 #page-index {
     overflow: hidden !important;
 
+    h3.notion-heading {
+        margin-top: 0px !important;
+      }
+
     .notion-property__title__icon-wrapper {
         display: none!important;
     }

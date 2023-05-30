@@ -1372,6 +1372,10 @@ h2.notion-heading .notion-semantic-string {
   overflow: hidden !important;
 }
 
+#page-index h3.notion-heading {
+  margin-top: 0px !important;
+}
+
 #page-index .notion-property__title__icon-wrapper {
   display: none !important;
 }
