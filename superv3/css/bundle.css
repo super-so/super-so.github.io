@@ -504,7 +504,7 @@
 @media screen and (max-width: 576px) {
   .super-root .super-content #block-1efa808dfcce4ebaae1f7d5c21cc5bf6 .notion-image:last-child {
     top: 130% !important;
-    width: 280% !important;
+    width: 180% !important;
     height: 280% !important;
     max-width: 280% !important;
     max-height: 280% !important;
@@ -1391,6 +1391,22 @@ h2.notion-heading .notion-semantic-string {
 }
 #page-index {
   overflow: hidden !important;
+}
+
+#page-index #block-27fd04823c514c298f2acd7394630eaa {
+  max-height: 720px !important;
+}
+
+@media screen and (max-width: 992px) {
+  #page-index #block-27fd04823c514c298f2acd7394630eaa {
+    max-height: 470px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #page-index #block-27fd04823c514c298f2acd7394630eaa {
+    max-height: 240px !important;
+  }
 }
 
 #page-index h3.notion-heading {

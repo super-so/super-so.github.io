@@ -451,7 +451,7 @@
 @media screen and (max-width: 576px) {
   .super-root .super-content #block-1efa808dfcce4ebaae1f7d5c21cc5bf6 .notion-image:last-child {
     top: 130% !important;
-    width: 280% !important;
+    width: 180% !important;
     height: 280% !important;
     max-width: 280% !important;
     max-height: 280% !important;

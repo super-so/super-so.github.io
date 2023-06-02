@@ -6,6 +6,17 @@
 #page-index {
     overflow: hidden !important;
 
+    #block-27fd04823c514c298f2acd7394630eaa {
+        max-height: 720px!important;
+        @include breakpoint-md {
+            max-height: 470px!important;
+        }
+
+        @include breakpoint-sm {
+            max-height: 240px!important;
+        }
+    }
+
     h3.notion-heading {
         margin-top: 0px !important;
       }
