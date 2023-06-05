@@ -1,0 +1,142 @@
+@import "../mixins";
+@import "../components/callout";
+
+#page-analytics {
+    font-size: 18px !important;
+    --analytics-color: #7057CF;
+    --image-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.34) !important;
+    --image-filter-shadow: drop-shadow(0px -293px 117px rgba(190, 173, 255, 0.02)) drop-shadow(0px -165px 99px rgba(190, 173, 255, 0.05)) drop-shadow(0px -73px 73px rgba(190, 173, 255, 0.09)) drop-shadow(0px -18px 40px rgba(190, 173, 255, 0.1)) !important;
+
+    .super-navbar__cta {
+        background: var(--analytics-color) !important;
+        color: white !important;
+    }
+
+    .super-navbar__logo-image img {
+        filter: hue-rotate(180) !important;
+    }
+
+    .notion-callout__content {
+        @include center;
+        flex-direction: column !important;
+        text-align: center!important;
+    }
+
+    .notion-header__cover {
+        height: 110vh !important;
+        width: 100% !important;
+        max-height: none !important;
+        z-index: -9999 !important;
+        position: absolute !important;
+        top: -60px !important;
+
+        &::after {
+            content: "" !important;
+            position: absolute !important;
+            z-index: 1 !important;
+            bottom: -2px !important;
+            background-image: linear-gradient(to bottom,
+                    rgba(253, 253, 252, 0),
+                    rgba(253, 253, 252, 1) 100%) !important;
+            width: 100% !important;
+            height: 100vh !important;
+        }
+
+        img {
+            position: absolute;
+            object-position: center !important;
+            object-fit: cover !important;
+            height: 56% !important;
+            z-index: -9999 !important;
+        }
+    }
+
+    .notion-header__content {
+        display: none !important;
+    }
+
+    .notion-callout {
+        @include callout-container;
+    }
+
+    .color-default-light {
+        color: var(--color-text-default) !important;
+    }
+
+    // hero
+    #block-ecf172bcab3b4ed18ff5a61a25973d43 {
+        .notion-callout__content {
+            @include center;
+            flex-direction: column !important;
+        }
+
+        // Paragraph
+        #block-395d66772d094e51a4b79acbeeba54e2 {
+            font-weight: 400!important; 
+            font-size: 27px!important;
+            line-height: 127.5%!important;
+            text-align: center!important;
+            letter-spacing: -0.05em!important; 
+            max-width: 470px!important;
+            margin-top: 16px!important;
+        }
+
+        h1.notion-heading {
+            font-size: 90px !important;
+            line-height: 108px !important;
+            text-align: center !important;
+            letter-spacing: -2px !important;
+            background: linear-gradient(111.54deg, #4F4C59 35.85%, #221D37 79.35%) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            background-clip: text !important;
+            text-fill-color: transparent !important;
+            margin-top: 0px !important;
+
+            span {
+                font-size: 90px !important;
+            }
+        }
+    }
+
+    // Main Features
+    #block-7ab9119495eb487ca3f8ba07f27e4375 {
+        .notion-column {
+            @include center;
+            text-align: center !important;
+        }
+    }
+
+    // CTA Button
+    #block-1c8b3f376bb44ee884aad04e4fb0e748 .notion-link {
+        @include button-secondary-gray;
+        margin-top: 16px!important;
+    }
+
+    #block-396eb1e3adf34edc8de926bc87896547, #block-396eb1e3adf34edc8de926bc87896547 .notion-image.page-width img, #block-396eb1e3adf34edc8de926bc87896547 .notion-image  {
+        width: 140%!important;
+        max-width: 140%!important;
+
+        @include breakpoint-md {
+            width: 100%!important;
+            max-width: 100%!important;
+        }
+
+        @include breakpoint-xs {
+            width: 100%!important;
+            max-width: 100%!important;
+        }
+    }
+
+    
+    // app images
+    #block-396eb1e3adf34edc8de926bc87896547, 
+    #block-253d51fe9a5345f2b878deac4f576899,
+    #block-6e0683e4ebfc4d25a77138e89b2b6a07 {
+        border-radius: 16px !important;
+        box-shadow: var(--image-shadow) !important;
+        filter: var(--image-filter-shadow) !important;
+        position: relative!important;
+
+    }
+}

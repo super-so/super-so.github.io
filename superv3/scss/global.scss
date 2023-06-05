@@ -97,7 +97,7 @@ h2.notion-heading .notion-semantic-string {
     margin-bottom: 16px !important;
 }
 
-.super-root:not(#page-index, #page-pricing, #page-pricing-annual) {
+.super-root:not(#page-index, #page-pricing, #page-pricing-annual, #page-super-analytics) {
     .notion-root>h1.notion-heading {
         max-width: 48rem !important;
         margin-top: 16px !important;
@@ -163,7 +163,7 @@ h2.notion-heading .notion-semantic-string {
 }
 
 #page-index,
-.parent-page__index:not(#page-privacy, #page-terms) {
+.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) {
     .notion-header__cover {
         height: 110vh !important;
         width: 100% !important;
