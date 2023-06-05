@@ -1,16 +1,17 @@
 #page-index {
   overflow: hidden !important;
 }
-#page-index #block-27fd04823c514c298f2acd7394630eaa {
-  max-height: 720px !important;
+#page-index #block-27fd04823c514c298f2acd7394630eaa * {
+  max-height: 730px !important;
+  width: 100% !important;
 }
 @media screen and (max-width: 992px) {
-  #page-index #block-27fd04823c514c298f2acd7394630eaa {
+  #page-index #block-27fd04823c514c298f2acd7394630eaa * {
     max-height: 470px !important;
   }
 }
 @media screen and (max-width: 768px) {
-  #page-index #block-27fd04823c514c298f2acd7394630eaa {
+  #page-index #block-27fd04823c514c298f2acd7394630eaa * {
     max-height: 240px !important;
   }
 }

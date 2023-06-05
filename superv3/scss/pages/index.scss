@@ -6,8 +6,10 @@
 #page-index {
     overflow: hidden !important;
 
-    #block-27fd04823c514c298f2acd7394630eaa {
-        max-height: 720px!important;
+    #block-27fd04823c514c298f2acd7394630eaa * {
+        max-height: 730px!important;
+        width: 100%!important;
+
         @include breakpoint-md {
             max-height: 470px!important;
         }

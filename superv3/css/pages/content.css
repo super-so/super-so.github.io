@@ -133,8 +133,8 @@
   border: none !important;
   overflow: visible !important;
   text-align: center !important;
-  padding: 100px 24px !important;
-  border-radius: 40px !important;
+  padding: 80px 24px !important;
+  border-radius: 24px !important;
   background-position: center !important;
   background-size: cover !important;
   position: relative !important;
@@ -158,6 +158,12 @@
 .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content > span,
 .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content > span {
   display: none !important;
+}
+.parent-page__guides #block-e79bc599f53e43ac8e25706f10fa5f63 #block-649b1da40adb4e22952930ed4c8c114c,
+.parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 #block-649b1da40adb4e22952930ed4c8c114c,
+.parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 #block-649b1da40adb4e22952930ed4c8c114c,
+.parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 #block-649b1da40adb4e22952930ed4c8c114c {
+  margin-top: 1rem !important;
 }
 .parent-page__guides #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link,
 .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link,
@@ -196,11 +202,11 @@
 .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
 .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child {
   position: absolute !important;
-  width: 120% !important;
-  height: 120% !important;
-  max-width: 120% !important;
-  max-height: 120% !important;
-  top: 58% !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  top: -5% !important;
   left: 50% !important;
   transform: translate(-50%, -50%);
   z-index: -1 !important;
@@ -210,8 +216,8 @@
 .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
 .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
 .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child {
-    top: 50% !important;
-    width: 140% !important;
+    top: 20% !important;
+    width: 100% !important;
     max-width: 140% !important;
     max-height: 140% !important;
   }
@@ -221,8 +227,8 @@
 .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
 .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
 .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child {
-    top: 130% !important;
-    width: 280% !important;
+    top: 135% !important;
+    width: 140% !important;
     height: 280% !important;
     max-width: 280% !important;
     max-height: 280% !important;
