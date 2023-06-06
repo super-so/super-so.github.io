@@ -8,7 +8,7 @@
   display: inline-flex !important;
   justify-content: center !important;
   cursor: pointer !important;
-  transition: background 0.2s ease-in-out, transform 0.1s ease-in-out, box-shadow 0.15s ease-in-out !important;
+  transition: background 0.15s ease-out, transform 0.1s ease-out, box-shadow 0.15s ease-out !important;
   border: 1px solid var(--gray-50) !important;
   color: var(--gray-700) !important;
   background: var(--base-white) !important;
