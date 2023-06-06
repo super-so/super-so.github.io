@@ -5,8 +5,8 @@ function clearBlock(el) {
 }
 
 const SELECTOR = 'code:not([super-embed-seen])';
-function setupEmbeds() {
 
+function setupEmbeds() {
     document.querySelectorAll(SELECTOR).forEach((node) => {
         node.setAttribute('super-embed-seen', 1);
         if (node.innerText.startsWith('super-embed:')) {
@@ -18,12 +18,14 @@ function setupEmbeds() {
                     eval(script.innerText);
                 } else {
                     const scr = document.createElement('script');
-                    scr.src = script.src;
+                    Array.from(script.attributes).forEach(attr => {
+                        scr.setAttribute(attr.name, attr.value);
+                    });
                     document.body.appendChild(scr);
                 }
             })
         }
-    })
+    });
 }
 
 setupEmbeds();
@@ -33,4 +35,10 @@ var observer = new MutationObserver(function (mutations) {
         setupEmbeds();
     }
 });
-observer.observe(document, { attributes: false, childList: true, characterData: false, subtree: true });
+
+observer.observe(document, {
+    attributes: false,
+    childList: true,
+    characterData: false,
+    subtree: true
+});
