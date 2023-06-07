@@ -580,7 +580,7 @@ h2.notion-heading .notion-semantic-string {
 }
 
 #page-index .notion-header__cover,
-.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-header__cover {
+.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-header__cover, .parent-page__promo .notion-header__cover {
   height: 110vh !important;
   width: 100% !important;
   max-height: none !important;
@@ -589,7 +589,7 @@ h2.notion-heading .notion-semantic-string {
   top: -110px !important;
 }
 #page-index .notion-header__cover::after,
-.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-header__cover::after {
+.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-header__cover::after, .parent-page__promo .notion-header__cover::after {
   content: "" !important;
   position: absolute !important;
   z-index: 1 !important;
@@ -599,7 +599,7 @@ h2.notion-heading .notion-semantic-string {
   height: 100vh !important;
 }
 #page-index .notion-header__cover img,
-.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-header__cover img {
+.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-header__cover img, .parent-page__promo .notion-header__cover img {
   position: absolute;
   object-position: center !important;
   object-fit: cover !important;
@@ -609,28 +609,29 @@ h2.notion-heading .notion-semantic-string {
 #page-index .notion-header__icon-wrapper,
 #page-index .notion-header__cover.no-cover,
 .parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-header__icon-wrapper,
-.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-header__cover.no-cover {
+.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-header__cover.no-cover, .parent-page__promo .notion-header__icon-wrapper,
+.parent-page__promo .notion-header__cover.no-cover {
   display: none !important;
 }
 #page-index .super-content,
-.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .super-content {
+.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .super-content, .parent-page__promo .super-content {
   padding-top: 120px !important;
   max-width: 1280px !important;
   margin: 0 auto !important;
 }
 @media screen and (max-width: 576px) {
   #page-index .super-content,
-.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .super-content {
+.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .super-content, .parent-page__promo .super-content {
     padding-top: 100px !important;
   }
 }
 #page-index .notion-header__content,
-.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-header__content {
+.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-header__content, .parent-page__promo .notion-header__content {
   margin: 0 auto !important;
   max-width: 1280px !important;
 }
 #page-index .notion-header__content .notion-header__title-wrapper,
-.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-header__content .notion-header__title-wrapper {
+.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-header__content .notion-header__title-wrapper, .parent-page__promo .notion-header__content .notion-header__title-wrapper {
   margin-bottom: 4px;
   position: relative;
   margin-top: 0px !important;

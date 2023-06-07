@@ -163,7 +163,7 @@ h2.notion-heading .notion-semantic-string {
 }
 
 #page-index,
-.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) {
+.parent-page__index:not(#page-privacy, #page-terms, #page-analytics), .parent-page__promo  {
     .notion-header__cover {
         height: 110vh !important;
         width: 100% !important;

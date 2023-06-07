@@ -4,31 +4,11 @@
 }
 .parent-page__promo .super-content {
   padding-bottom: 0px !important;
+  padding-top: 16px !important;
 }
-.parent-page__promo .notion-header__cover.has-cover {
-  height: 110vh !important;
-  width: 100% !important;
-  max-height: none !important;
-  z-index: -9999 !important;
-  position: absolute !important;
+.parent-page__promo .notion-header__cover {
   top: -320px !important;
   opacity: 0.8 !important;
-}
-.parent-page__promo .notion-header__cover.has-cover::after {
-  content: "" !important;
-  position: absolute !important;
-  z-index: 1 !important;
-  bottom: -2px !important;
-  background-image: linear-gradient(to bottom, rgba(253, 253, 252, 0), rgb(253, 253, 252) 100%) !important;
-  width: 100% !important;
-  height: 100vh !important;
-}
-.parent-page__promo .notion-header__cover.has-cover img {
-  position: absolute;
-  object-position: center !important;
-  object-fit: cover !important;
-  height: 100% !important;
-  z-index: -9999 !important;
 }
 .parent-page__promo h1 {
   font-size: 4rem !important;
@@ -139,8 +119,6 @@
   text-align: center !important;
 }
 .parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 {
-  --column-spacing: 24px !important;
-  text-align: center !important;
   width: 100vw !important;
   position: relative !important;
   margin-left: -50vw !important;
@@ -148,7 +126,8 @@
   left: 50% !important;
   background: #f9f9f8 !important;
   border-radius: 0px !important;
-  border: 0 !important;
+  --column-spacing: 24px !important;
+  text-align: center !important;
 }
 .parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 > .notion-callout__content {
   padding-top: 80px !important;
@@ -162,9 +141,6 @@
   .parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 > .notion-callout__content {
     padding: 60px 25px !important;
   }
-}
-.parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 .notion-callout__icon {
-  display: none !important;
 }
 .parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 .notion-link {
   border: 0 !important;
@@ -191,7 +167,6 @@
   transform: translateY(-2px) !important;
 }
 .parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 .notion-callout .notion-column-list {
-  margin-top: 0 !important;
   align-items: center !important;
 }
 .parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 .notion-callout .notion-column-list .notion-image {
@@ -201,7 +176,6 @@
 }
 .parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 .notion-callout .notion-column-list .notion-image img {
   border-radius: 50% !important;
-  height: auto !important;
 }
 .parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 .notion-callout .notion-column {
   padding: 0px !important;
@@ -223,17 +197,17 @@
 .parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 .notion-callout .notion-column .notion-text__content {
   padding: 0px !important;
 }
-.parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 .notion-column-list {
-  margin-top: 16px !important;
+.parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 > .notion-callout__content > .notion-column-list {
+  margin-top: 26px !important;
 }
 @media screen and (max-width: 992px) {
-  .parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 .notion-column-list .notion-column {
-    flex-grow: 1 !important;
+  .parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 > .notion-callout__content > .notion-column-list > :last-child {
+    display: none !important;
   }
 }
 @media screen and (max-width: 992px) {
-  .parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 #block-c28e448137d14883a260979588aeb357 {
-    display: none !important;
+  .parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 > .notion-callout__content > .notion-column-list .notion-column {
+    flex-grow: 1 !important;
   }
 }
 .parent-page__promo #block-a149f8b0a9824ab5934b95f1a8098cc0, .parent-page__promo #block-1475b60ceea54b3fbd9d4822faa45549 {

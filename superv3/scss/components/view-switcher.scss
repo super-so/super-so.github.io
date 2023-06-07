@@ -1,132 +1,133 @@
 @import "../mixins";
+
 // –––––––––––––––––
 // Database view picker
 // –––––––––––––––––
 .notion-dropdown {
-  font-family: var(--primary-font) !important;
-  width: 100% !important;
-  z-index: 1 !important;
+    font-family: var(--primary-font) !important;
+    width: 100% !important;
+    z-index: 1 !important;
 }
 
 .notion-dropdown__menu-header,
 .notion-dropdown__option-icon,
 .notion-dropdown__button svg:first-of-type {
-  display: none !important;
+    display: none !important;
 }
 
 .notion-dropdown__button {
-  justify-content: space-between !important;
-  width: 100% !important;
-  border: 1px solid var(--color-border-default) !important;
-  padding: 10px !important;
-  border-radius: 8px !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    border: 1px solid var(--color-border-default) !important;
+    padding: 10px !important;
+    border-radius: 8px !important;
 }
 
 .notion-dropdown__menu-wrapper {
-  margin-bottom: 16px !important;
-  position: relative !important;
+    margin-bottom: 16px !important;
+    position: relative !important;
 
-  .notion-dropdown__menu {
-      width: 100% !important;
-      border-radius: 8px !important;
-      transform: none !important;
-      left: auto !important;
-      top: auto !important;
+    .notion-dropdown__menu {
+        width: 100% !important;
+        border-radius: 8px !important;
+        transform: none !important;
+        left: auto !important;
+        top: auto !important;
 
-      .notion-dropdown__option-list {
-          padding: 0px !important;
-          flex-wrap: wrap !important;
-      }
+        .notion-dropdown__option-list {
+            padding: 0px !important;
+            flex-wrap: wrap !important;
+        }
 
-      .notion-dropdown__option {
-          padding: 5px 16px !important;
-          height: 50px !important;
-      }
-  }
+        .notion-dropdown__option {
+            padding: 5px 16px !important;
+            height: 50px !important;
+        }
+    }
 }
 
 @include above-xs {
-  .notion-dropdown__button {
-      display: none !important;
-  }
+    .notion-dropdown__button {
+        display: none !important;
+    }
 
-  .notion-dropdown__menu.initial-state {
-      z-index: 1 !important;
-      opacity: 1 !important;
-      transform: none !important;
-  }
+    .notion-dropdown__menu.initial-state {
+        z-index: 1 !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
 
-  .notion-dropdown__menu.animate-in.animate-out,
-  .notion-dropdown__menu.animate-in,
-  .notion-dropdown__menu.animate-out {
-      animation: none !important;
-  }
+    .notion-dropdown__menu.animate-in.animate-out,
+    .notion-dropdown__menu.animate-in,
+    .notion-dropdown__menu.animate-out {
+        animation: none !important;
+    }
 
-  .notion-dropdown__menu {
-      width: 80% !important;
-      margin: 0 auto !important;
-      background: none !important;
-      box-shadow: unset !important;
-      position: relative !important;
+    .notion-dropdown__menu {
+        width: 80% !important;
+        margin: 0 auto !important;
+        background: none !important;
+        box-shadow: unset !important;
+        position: relative !important;
 
-      .notion-dropdown__option-list {
-          display: flex !important;
-          gap: 8px !important;
-      }
+        .notion-dropdown__option-list {
+            display: flex !important;
+            gap: 8px !important;
+        }
 
-      .notion-dropdown__option.active {
-          background: var(--gray-50) !important;
-      }
+        .notion-dropdown__option.active {
+            background: var(--gray-50) !important;
+        }
 
-      .notion-dropdown__option {
-          border-radius: 50px !important;
-          border: 1px solid var(--gray-100) !important;
-          transition: all 0.15s ease-in-out !important;
-          align-items: center !important;
+        .notion-dropdown__option {
+            border-radius: 50px !important;
+            border: 1px solid var(--gray-100) !important;
+            transition: all 0.15s ease-in-out !important;
+            align-items: center !important;
 
-          &:hover {
-              background: var(--gray-50) !important;
-          }
+            &:hover {
+                background: var(--gray-50) !important;
+            }
 
-          p {
-              @include text-base;
-              color: var(--color-grey) !important;
-          }
-      }
-  }
+            p {
+                @include text-base;
+                color: var(--color-grey) !important;
+            }
+        }
+    }
 }
 
 // View picker inside dark background
 .notion-callout.bg-gray-light {
-  .notion-dropdown__menu {
-      .notion-dropdown__option {
-          border: 1px solid var(--gray-800) !important;
-      }
-  
-      .notion-dropdown__option:hover {
-          background: var(--gray-800) !important;
-      }
-  
-      .notion-dropdown__option.active {
-          background: var(--gray-800) !important;
-      }
-  }
+    .notion-dropdown__menu {
+        .notion-dropdown__option {
+            border: 1px solid var(--gray-800) !important;
+        }
 
-  @include breakpoint-xs {
-      .notion-dropdown__button {
-          border: 1px solid var(--gray-700) !important;
+        .notion-dropdown__option:hover {
+            background: var(--gray-800) !important;
+        }
 
-          &:hover {
-              background: var(--gray-800) !important;
-          }
-      }
+        .notion-dropdown__option.active {
+            background: var(--gray-800) !important;
+        }
+    }
 
-      .notion-dropdown__menu {
-          background: var(--gray-900) !important;
+    @include breakpoint-xs {
+        .notion-dropdown__button {
+            border: 1px solid var(--gray-700) !important;
 
-          .notion-dropdown__option {
-              border: 1px solid var(--gray-900) !important;
-          }
-      }
-  }
+            &:hover {
+                background: var(--gray-800) !important;
+            }
+        }
+
+        .notion-dropdown__menu {
+            background: var(--gray-900) !important;
+
+            .notion-dropdown__option {
+                border: 1px solid var(--gray-900) !important;
+            }
+        }
+    }
 }

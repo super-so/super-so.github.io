@@ -21,22 +21,22 @@
   transition: background 0.2s ease-in-out !important;
 
   &:hover {
-      background: var(--gray-25) !important;
+    background: var(--gray-25) !important;
   }
 
   &:before {
-      position: absolute !important;
-      font-weight: 100 !important;
-      font-size: 24px !important;
-      line-height: 1 !important;
-      opacity: 0.4 !important;
-      content: "+" !important;
-      top: 24px !important;
-      right: 20px !important;
+    position: absolute !important;
+    font-weight: 100 !important;
+    font-size: 24px !important;
+    line-height: 1 !important;
+    opacity: 0.4 !important;
+    content: "+" !important;
+    top: 24px !important;
+    right: 20px !important;
   }
 
   h3 {
-      font-weight: 300 !important;
+    font-weight: 300 !important;
   }
 }
 

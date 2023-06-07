@@ -212,8 +212,6 @@
   }
 }
 #page-index #block-88bbe3ad95784b4bae4613cdc44f843a {
-  --column-spacing: 24px !important;
-  text-align: center !important;
   width: 100vw !important;
   position: relative !important;
   margin-left: -50vw !important;
@@ -221,6 +219,8 @@
   left: 50% !important;
   background: #f9f9f8 !important;
   border-radius: 0px !important;
+  --column-spacing: 24px !important;
+  text-align: center !important;
 }
 #page-index #block-88bbe3ad95784b4bae4613cdc44f843a > .notion-callout__content {
   padding-top: 80px !important;
@@ -290,17 +290,17 @@
 #page-index #block-88bbe3ad95784b4bae4613cdc44f843a .notion-callout .notion-column .notion-text__content {
   padding: 0px !important;
 }
-#page-index #block-88bbe3ad95784b4bae4613cdc44f843a #block-618181ac627d4b07b192a8a07578d857 {
-  margin-top: 16px !important;
+#page-index #block-88bbe3ad95784b4bae4613cdc44f843a > .notion-callout__content > .notion-column-list {
+  margin-top: 26px !important;
 }
 @media screen and (max-width: 992px) {
-  #page-index #block-88bbe3ad95784b4bae4613cdc44f843a #block-618181ac627d4b07b192a8a07578d857 .notion-column {
-    flex-grow: 1 !important;
+  #page-index #block-88bbe3ad95784b4bae4613cdc44f843a > .notion-callout__content > .notion-column-list > :last-child {
+    display: none !important;
   }
 }
 @media screen and (max-width: 992px) {
-  #page-index #block-88bbe3ad95784b4bae4613cdc44f843a #block-575b8344f4364ea59201c4e73e5020dc {
-    display: none !important;
+  #page-index #block-88bbe3ad95784b4bae4613cdc44f843a > .notion-callout__content > .notion-column-list .notion-column {
+    flex-grow: 1 !important;
   }
 }
 #page-index #block-3b03677a8afc4486b464f43409fedcd3 {
@@ -442,10 +442,10 @@
   background: var(--primary-600) !important;
 }
 #page-index #block-e3c38ab927894e78b4eca1d2cebdd6a9 .notion-collection-card__cover {
-  --collection-card-cover-height-medium: 190px!important;
+  --collection-card-cover-height-medium: 190px !important;
 }
 #page-index #block-e3c38ab927894e78b4eca1d2cebdd6a9 .notion-collection-card__content {
-  --collection-card-content-padding: 24px!important;
+  --collection-card-content-padding: 24px !important;
   padding-top: 20px !important;
   text-align: center !important;
 }

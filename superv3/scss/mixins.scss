@@ -2,172 +2,261 @@
 // SASS Mixins
 // –––––––––––––––––
 @mixin button {
-  opacity: 1!important;
-  padding: var(--button-padding)!important;
-  border-radius: var(--rounded-md)!important;
-  font-weight: 500!important;
+  opacity: 1 !important;
+  padding: var(--button-padding) !important;
+  border-radius: var(--rounded-md) !important;
+  font-weight: 500 !important;
   @include text-base;
-  display: inline-flex!important;
-  justify-content: center!important;
-  cursor: pointer!important;
-  transition: background .15s ease-out, transform .1s ease-out, box-shadow .15s ease-out!important;
+  display: inline-flex !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: background .15s ease-out, transform .1s ease-out, box-shadow .15s ease-out !important;
 }
-  
+
 @mixin button-primary {
   @include button;
-  border: 0px!important;
+  border: 0px !important;
 
   &:active {
-  transform: translateY(1px)!important;
+    transform: translateY(1px) !important;
   }
 }
-  
+
 @mixin button-primary-default {
   @include button-primary;
-  background: var(--primary-500)!important;
-  color: var(--base-black)!important;
+  background: var(--primary-500) !important;
+  color: var(--base-black) !important;
 
   &:hover {
-      box-shadow: 0px 5px 28px -6px rgba(255, 190, 61, 1)!important;
-      -webkit-box-shadow: 0px 5px 28px -6px rgba(255, 190, 61, 1)!important;
-      background: var(--primary-600)!important;
-  } 
+    box-shadow: 0px 5px 28px -6px rgba(255, 190, 61, 1) !important;
+    -webkit-box-shadow: 0px 5px 28px -6px rgba(255, 190, 61, 1) !important;
+    background: var(--primary-600) !important;
+  }
 }
 
 @mixin button-primary-dark {
   @include button-primary;
-  background: var(--base-black)!important;
-  color: var(--base-white)!important;
+  background: var(--base-black) !important;
+  color: var(--base-white) !important;
 
   &:hover {
-      box-shadow: 0px 5px 28px -6px rgba(255, 190, 61, 1)!important;
-      -webkit-box-shadow: 0px 5px 28px -6px rgba(255, 190, 61, 1)!important;
-      background: var(--gray-900)!important;
+    box-shadow: 0px 5px 28px -6px rgba(255, 190, 61, 1) !important;
+    -webkit-box-shadow: 0px 5px 28px -6px rgba(255, 190, 61, 1) !important;
+    background: var(--gray-900) !important;
   }
 }
-  
+
 @mixin button-primary-light {
   @include button-primary;
-  background: var(--base-white)!important;
-  color: var(--gray-900)!important;
+  background: var(--base-white) !important;
+  color: var(--gray-900) !important;
 
 
   &:hover {
-      background: var(--gray-200)!important;
+    background: var(--gray-200) !important;
   }
 }
-  
+
 @mixin button-secondary-gray {
   @include button;
-  border: 1px solid var(--gray-50)!important;
-  color: var(--gray-700)!important;
-  background: var(--base-white)!important;
+  border: 1px solid var(--gray-50) !important;
+  color: var(--gray-700) !important;
+  background: var(--base-white) !important;
 
   &:hover {
-      background: var(--gray-25)!important;
-      color: var(--gray-900)!important;
+    background: var(--gray-25) !important;
+    color: var(--gray-900) !important;
   }
 }
-  
+
 @mixin button-special {
   @include button;
-  background: var(--base-white)!important;
+  background: var(--base-white) !important;
   border: 1px solid var(--primary-500);
   box-shadow: 0px 4px 11px rgba(53, 53, 53, 0.01), 0px 0px 7px rgba(251, 180, 60, 0.45);
-  color: var(--gray-700)!important;
+  color: var(--gray-700) !important;
 
   &:hover {
-      background: var(--primary-500)!important;
-      color: var(--base-black)!important;
+    background: var(--primary-500) !important;
+    color: var(--base-black) !important;
   }
 }
 
 @mixin black-pill {
-  background-color: var(--base-black)!important;
-  color: var(--base-white)!important;
-  border-radius: 100px!important;
-  padding: 4px 8px 4px 8px!important;
-  font-family: inherit!important;
-  font-size: 0.75rem!important;
+  background-color: var(--base-black) !important;
+  color: var(--base-white) !important;
+  border-radius: 100px !important;
+  padding: 4px 8px 4px 8px !important;
+  font-family: inherit !important;
+  font-size: 0.75rem !important;
 }
 
 @mixin center {
-  display: flex!important;
-  align-items: center!important;
-  justify-content: center!important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 @mixin full-width-section($bg-color) {
-  width: 100vw!important;
-  position: relative!important;
-  margin-left: -50vw!important;
-  height: auto!important;
-  left: 50%!important;
-  background: $bg-color!important;
-  border-radius: 0px!important;
+  width: 100vw !important;
+  position: relative !important;
+  margin-left: -50vw !important;
+  height: auto !important;
+  left: 50% !important;
+  background: $bg-color !important;
+  border-radius: 0px !important;
 
-  & > .notion-callout__content {
-      padding-top: 80px!important;
-      padding-bottom: 80px!important;
-      max-width: 1280px!important;
-      margin: 0 auto!important;
-      padding-left: calc(env(safe-area-inset-left) + 96px);
-      padding-right: calc(env(safe-area-inset-right) + 96px);
+  &>.notion-callout__content {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+    max-width: 1280px !important;
+    margin: 0 auto !important;
+    padding-left: calc(env(safe-area-inset-left) + 96px);
+    padding-right: calc(env(safe-area-inset-right) + 96px);
 
-      @include breakpoint-xs {
-          padding: 60px 25px!important;
-      }
+    @include breakpoint-xs {
+      padding: 60px 25px !important;
+    }
   }
 }
+
+@mixin testimonials-grid-section {
+  --column-spacing: 24px !important;
+  text-align: center !important;
+  
+  .notion-link {
+    border: 0 !important;
+  }
+
+  .notion-callout__content>.notion-text {
+    opacity: 0.7 !important;
+    margin-top: 8px !important;
+  }
+
+  .notion-callout {
+    padding: 24px !important;
+    padding-top: 20px !important;
+    border: 1px solid #f2f1f1 !important;
+    border-radius: 16px !important;
+    margin-bottom: 24px !important;
+    text-align: left !important;
+    cursor: default !important;
+    transition: all 0.15s ease-out !important;
+    @include text-sm;
+    background: #fdfdfc !important;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 20px 0px !important;
+      border: 1px solid transparent !important;
+      transform: translateY(-2px) !important;
+    }
+
+    .notion-column-list {
+      align-items: center !important;
+
+      .notion-image {
+        width: 56px !important;
+        height: 56px !important;
+        border-radius: 50% !important;
+
+        img {
+          border-radius: 50% !important;
+        }
+      }
+    }
+
+    .notion-column {
+      padding: 0px !important;
+
+      &:first-child {
+        max-width: fit-content !important;
+      }
+
+      &:last-child {
+        margin-inline-start: 16px !important;
+
+        @include breakpoint-sm {
+          width: calc((100% - var(--column-spacing) * 1) * 0.75) !important;
+        }
+      }
+
+      .notion-text {
+        min-height: auto !important;
+      }
+
+      .notion-text__content {
+        padding: 0px !important;
+      }
+    }
+  }
+
+  // Column list wrapper
+  &>.notion-callout__content>.notion-column-list {
+    margin-top: 26px !important;
+
+    &> :last-child {
+      @include breakpoint-md {
+        display: none !important;
+      }
+    }
+
+    .notion-column {
+      @include breakpoint-md {
+        flex-grow: 1 !important;
+      }
+    }
+  }
+}
+
 
 // –––––––––––––––––   
 // Media Query Mixins
 // –––––––––––––––––
 
 @mixin above-xs {
-  @media all and (min-width: 576px) { 
-      @content;
+  @media all and (min-width: 576px) {
+    @content;
   }
 }
 
 @mixin breakpoint-xs {
   @media screen and (max-width: 576px) {
-      @content;
+    @content;
   }
 }
 
 @mixin breakpoint-sm {
   @media screen and (max-width: 768px) {
-      @content;
+    @content;
   }
 }
 
 @mixin breakpoint-md {
   @media screen and (max-width: 992px) {
-      @content;
+    @content;
   }
 }
 
 @mixin breakpoint-lg {
   @media screen and (max-width: 1100px) {
-      @content;
+    @content;
   }
 }
 
 @mixin breakpoint-xl {
   @media screen and (max-width: 1400px) {
-      @content;
+    @content;
   }
 }
 
 @mixin text-sm {
-  font-size: 0.875rem!important;
+  font-size: 0.875rem !important;
 }
 
 @mixin text-base {
-  font-size: 1rem!important;
+  font-size: 1rem !important;
 }
 
 @mixin text-lg {
-  font-size: 1.125rem!important;
+  font-size: 1.125rem !important;
 }
