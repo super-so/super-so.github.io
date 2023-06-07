@@ -264,20 +264,7 @@ h2.notion-heading .notion-semantic-string {
     @include breakpoint-xs {
         padding: 8px !important;
     }
-
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        margin: -1px;
-        border-radius: inherit;
-        background: linear-gradient(to right, rgb(95, 95, 95), rgb(239, 239, 239));
-    }
-
+    
     .notion-text {
         color: var(--gray-200) !important;
     }
