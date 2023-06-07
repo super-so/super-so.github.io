@@ -208,6 +208,61 @@
   }
 }
 
+@mixin footer-cta-section {
+  @include callout-container;
+  text-align: center !important;
+  padding: 80px 24px !important;
+  background-position: center !important;
+  background-size: cover !important;
+  position: relative !important;
+  overflow: hidden !important;
+  border-radius: 24px !important;
+
+
+  .notion-link {
+      margin-top: 24px !important;
+      @include button-primary-dark;
+  }
+
+  .notion-image:last-child {
+      position: absolute !important;
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      top: -5% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%);
+      z-index: -1 !important;
+
+      @include breakpoint-md {
+          top: 20% !important;
+          width: 100% !important;
+          max-width: 140% !important;
+          max-height: 140% !important;
+      }
+
+      @include breakpoint-xs {
+          top: 135% !important;
+          width: 140% !important;
+          height: 280% !important;
+          max-width: 280% !important;
+          max-height: 280% !important;
+      }
+  }
+}
+
+@mixin cover-gradient($height) {
+  content: "" !important;
+  position: absolute !important;
+  z-index: 1 !important;
+  bottom: -2px !important;
+  background-image: linear-gradient(to bottom,
+          rgba(253, 253, 252, 0),
+          rgba(253, 253, 252, 1) 100%) !important;
+  width: 100% !important;
+  height: $height !important;
+}
 
 // –––––––––––––––––   
 // Media Query Mixins

@@ -1053,11 +1053,11 @@ h2.notion-heading .notion-semantic-string {
   overflow: visible !important;
   text-align: center !important;
   padding: 80px 24px !important;
-  border-radius: 24px !important;
   background-position: center !important;
   background-size: cover !important;
   position: relative !important;
   overflow: hidden !important;
+  border-radius: 24px !important;
 }
 
 .parent-page__guides #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__icon,
@@ -1080,13 +1080,6 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content > span,
 .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content > span {
   display: none !important;
-}
-
-.parent-page__guides #block-e79bc599f53e43ac8e25706f10fa5f63 #block-649b1da40adb4e22952930ed4c8c114c,
-.parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 #block-649b1da40adb4e22952930ed4c8c114c,
-.parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 #block-649b1da40adb4e22952930ed4c8c114c,
-.parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 #block-649b1da40adb4e22952930ed4c8c114c {
-  margin-top: 1rem !important;
 }
 
 .parent-page__guides #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link,
@@ -1207,11 +1200,11 @@ h2.notion-heading .notion-semantic-string {
   display: none !important;
 }
 #page-features .notion-collection-card__cover {
-  --collection-card-cover-height-medium: 190px!important;
+  --collection-card-cover-height-medium: 190px !important;
 }
 
 #page-features .notion-collection-card__content {
-  --collection-card-content-padding: 24px!important;
+  --collection-card-content-padding: 24px !important;
   padding-top: 20px !important;
 }
 
@@ -1248,8 +1241,7 @@ h2.notion-heading .notion-semantic-string {
   position: absolute !important;
   z-index: 1 !important;
   bottom: -2px !important;
-  left: 0 !important;
-  background-image: linear-gradient(to bottom, rgba(253, 253, 252, 0), rgb(253, 253, 252) 98%) !important;
+  background-image: linear-gradient(to bottom, rgba(253, 253, 252, 0), rgb(253, 253, 252) 100%) !important;
   width: 100% !important;
   height: 100% !important;
 }
@@ -2406,7 +2398,7 @@ h2.notion-heading .notion-semantic-string {
 #page-pricing #block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child,
 #page-pricing-annual #block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child,
 #page-pricing-annual #block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child {
-  background: white !important;
+  background: var(--base-white) !important;
   border-radius: 24px !important;
   box-shadow: 2.6px 4px 2.6px rgba(0, 0, 0, 0.017), 7.3px 11px 7.1px rgba(0, 0, 0, 0.025), 17.5px 26.5px 17.2px rgba(0, 0, 0, 0.033), 58px 88px 57px rgba(0, 0, 0, 0.05) !important;
   padding: 32px !important;

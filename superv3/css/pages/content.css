@@ -134,11 +134,11 @@
   overflow: visible !important;
   text-align: center !important;
   padding: 80px 24px !important;
-  border-radius: 24px !important;
   background-position: center !important;
   background-size: cover !important;
   position: relative !important;
   overflow: hidden !important;
+  border-radius: 24px !important;
 }
 .parent-page__guides #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__icon,
 .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__icon,
@@ -158,12 +158,6 @@
 .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content > span,
 .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content > span {
   display: none !important;
-}
-.parent-page__guides #block-e79bc599f53e43ac8e25706f10fa5f63 #block-649b1da40adb4e22952930ed4c8c114c,
-.parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 #block-649b1da40adb4e22952930ed4c8c114c,
-.parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 #block-649b1da40adb4e22952930ed4c8c114c,
-.parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 #block-649b1da40adb4e22952930ed4c8c114c {
-  margin-top: 1rem !important;
 }
 .parent-page__guides #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link,
 .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link,

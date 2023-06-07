@@ -223,7 +223,7 @@
 
         // All pricing cards
         .notion-callout:first-child {
-            background: white !important;
+            background: var(--base-white) !important;
             border-radius: 24px !important;
             box-shadow: 2.6px 4px 2.6px rgba(0, 0, 0, 0.017), 7.3px 11px 7.1px rgba(0, 0, 0, 0.025),
                 17.5px 26.5px 17.2px rgba(0, 0, 0, 0.033), 58px 88px 57px rgba(0, 0, 0, 0.05) !important;

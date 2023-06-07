@@ -173,15 +173,7 @@ h2.notion-heading .notion-semantic-string {
         top: -110px !important;
 
         &::after {
-            content: "" !important;
-            position: absolute !important;
-            z-index: 1 !important;
-            bottom: -2px !important;
-            background-image: linear-gradient(to bottom,
-                    rgba(253, 253, 252, 0),
-                    rgba(253, 253, 252, 1) 100%) !important;
-            width: 100% !important;
-            height: 100vh !important;
+            @include cover-gradient(100vh);
         }
 
         img {

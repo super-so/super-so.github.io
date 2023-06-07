@@ -1,8 +1,8 @@
 #page-features .notion-collection-card__cover {
-  --collection-card-cover-height-medium: 190px!important;
+  --collection-card-cover-height-medium: 190px !important;
 }
 #page-features .notion-collection-card__content {
-  --collection-card-content-padding: 24px!important;
+  --collection-card-content-padding: 24px !important;
   padding-top: 20px !important;
 }
 #page-features .notion-property__title__icon-wrapper {
@@ -33,8 +33,7 @@
   position: absolute !important;
   z-index: 1 !important;
   bottom: -2px !important;
-  left: 0 !important;
-  background-image: linear-gradient(to bottom, rgba(253, 253, 252, 0), rgb(253, 253, 252) 98%) !important;
+  background-image: linear-gradient(to bottom, rgba(253, 253, 252, 0), rgb(253, 253, 252) 100%) !important;
   width: 100% !important;
   height: 100% !important;
 }
