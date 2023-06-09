@@ -99,7 +99,7 @@ h3.notion-heading * {
 }
 
 /* CTA BUTTON */
-.notion-root .notion-text .notion-text__content .notion-semantic-string span strong .notion-link {
+.notion-root .notion-text .notion-text__content .notion-semantic-string strong .notion-link {
     padding: var(--cta-padding) !important;
     border-radius: var(--cta-border-radii) !important;
     opacity: 1 !important;
