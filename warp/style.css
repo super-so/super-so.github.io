@@ -115,7 +115,7 @@ h3.notion-heading * {
     transition: opacity .2s ease-in-out !important;
 }
 
-.notion-root .notion-text .notion-text__content .notion-semantic-string span strong .notion-link:hover {
+.notion-root .notion-text strong .notion-link:hover {
     border: 1px solid transparent !important;
     opacity: .7 !important;
 }
