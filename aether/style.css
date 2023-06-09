@@ -438,7 +438,7 @@ ul>.notion-list-item:before {
     min-height: auto !important;
 }
 
-.notion-root>.notion-column-list>.notion-column:first-child .notion-text p .color-gray {
+.notion-root>.notion-column-list>.notion-column:first-child .notion-text .color-gray {
     text-transform: uppercase !important;
     font-size: 12px !important;
     letter-spacing: 2px !important;
