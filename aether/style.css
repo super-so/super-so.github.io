@@ -169,6 +169,7 @@ body {
 .notion-page {
     margin: 0 !important;
     padding: 8px 5px!important;
+    padding-left: 8px!important;
 }
 
 .notion-page>div {
