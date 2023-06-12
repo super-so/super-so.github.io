@@ -28,7 +28,8 @@
   --cta-color-bg: var(--primary-color)!important;
   --cta-padding: 12px 16px!important;
   --cta-border-radii: 4px!important;
-  --cta-color-text: white!important; }
+  --cta-color-text: white!important;
+  --collection-card-cover-height-large: 420px!important; }
 
 .notion-property__title__icon-wrapper {
   display: none !important; }
@@ -178,8 +179,6 @@ h2.notion-heading {
     flex-direction: column-reverse !important;
     border-radius: 0px !important; }
   .notion-collection-gallery.large .notion-collection-card__cover {
-    height: 420px !important;
-    min-height: 420px !important;
     border-radius: 0px 0px 16px 16px !important; }
     .notion-collection-gallery.large .notion-collection-card__cover img {
       transition: all 0.2s ease-in-out !important; }
