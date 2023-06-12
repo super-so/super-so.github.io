@@ -210,7 +210,7 @@ h2.notion-heading {
   .notion-collection-gallery.large .notion-property__title {
     font-size: 1.8rem !important;
     max-width: 360px !important; }
-    .notion-collection-gallery.large .notion-property__title * {
+    .notion-collection-gallery.large .notion-property__title .notion-semantic-string {
       line-height: 1.2 !important;
       font-weight: 600 !important; }
   .notion-collection-gallery.large .notion-collection-card__property .notion-semantic-string {

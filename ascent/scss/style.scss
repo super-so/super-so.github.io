@@ -323,7 +323,7 @@ h2.notion-heading {
         font-size: 1.8rem!important;
         max-width: 360px!important;
 
-        & * {
+        .notion-semantic-string {
             line-height: 1.2!important;
             font-weight: 600!important;
         }
