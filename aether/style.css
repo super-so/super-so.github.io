@@ -171,6 +171,10 @@ body {
     padding: 8px 5px!important;
 }
 
+.notion-page>div {
+    padding: 0px!important;
+}
+
 .notion-page__title {
     font-size: 15px !important;
     line-height: 1.5 !important;
