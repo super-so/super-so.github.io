@@ -352,7 +352,6 @@ ul>.notion-list-item:before {
     padding: 15px 22px !important;
     margin: 1rem 0 !important;
     letter-spacing: -.4px !important;
-    background: transparent !important;
 }
 
 .notion-embed__container>iframe {
