@@ -1278,7 +1278,7 @@ pre[class*="language-"] {
 } */
 
 .notion-root .notion-text .notion-text__content .notion-semantic-string span strong .notion-link,
-.notion-text .notion-text__content .notion-semantic-string span .notion-link strong {
+.notion-root .notion-text .notion-text__content .notion-semantic-string span .notion-link strong {
     padding: var(--cta-padding) !important;
     border-radius: var(--cta-border-radius) !important;
     opacity: 1 !important;
