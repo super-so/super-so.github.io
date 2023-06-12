@@ -186,7 +186,7 @@ body {
     font-weight: 500 !important;
 }
 
-.notion-page__title .notion-semantic-string {
+.notion-page__title.notion-semantic-string {
     border: 0 !important;
     font-weight: 400 !important;
     white-space: pre-wrap !important;
