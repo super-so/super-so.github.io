@@ -168,12 +168,7 @@ body {
 
 .notion-page {
     margin: 0 !important;
-}
-
-.notion-page>div {
-    padding: 0 !important;
-    margin: 5px 0 !important;
-    padding-inline-end: 0 !important;
+    padding: 8px 5px!important;
 }
 
 .notion-page__title {
