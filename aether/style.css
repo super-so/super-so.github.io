@@ -535,7 +535,7 @@ ul>.notion-list-item:before {
     overflow: auto !important;
 }
 
-.notion-root>.notion-column-list>.notion-column:nth-child(3) div p:first-child {
+.notion-root>.notion-column-list>.notion-column:nth-child(3) .notion-text .color-gray {
     text-transform: uppercase !important;
     font-size: 12px !important;
     letter-spacing: 2px !important;
