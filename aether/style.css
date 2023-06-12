@@ -545,7 +545,7 @@ ul>.notion-list-item:before {
     font-weight: 500 !important;
 }
 
-.notion-root>.notion-column-list>.notion-column:nth-child(3) .notion-text:first-child p {
+.notion-root>.notion-column-list>.notion-column:nth-child(3) .notion-text:first-child {
     margin-bottom: 0 !important;
     margin-top: 0 !important;
 }
