@@ -478,7 +478,6 @@ ul>.notion-list-item:before {
 
 .notion-root>.notion-column-list>.notion-column:first-child .notion-page {
     /*border: 1px solid #f5f4f2!important;*/
-    padding: 3px 5px !important;
     margin: 1px 0px !important;
     border-radius: 12px !important;
     display: flex !important;
