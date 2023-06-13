@@ -1154,8 +1154,6 @@ p {
     }
 }
 
-
-
 @media all and (max-width: 764px) {
     .notion-root>.notion-callout>.notion-callout__content>.notion-text:nth-child(3) p span {
         display: flex !important;
@@ -1163,119 +1161,6 @@ p {
         margin-bottom: 5px !important;
     }
 }
-
-
-/* SYNTAX */
-/* 
-code[class*="language-"],
-pre[class*="language-"] {
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    word-wrap: normal;
-    color: var(--color-primary)!important;
-    font-size: 1em;
-    line-height: 1.5em;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-} */
-
-/* code[class*="language-"]::-moz-selection,
-pre[class*="language-"]::-moz-selection,
-code[class*="language-"] ::-moz-selection,
-pre[class*="language-"] ::-moz-selection {
-    background: var(--color-primary)!important;;
-    color: #2e3237;
-}
-
-code[class*="language-"]::selection,
-pre[class*="language-"]::selection,
-code[class*="language-"] ::selection,
-pre[class*="language-"] ::selection {
-    background: var(--color-primary)!important;;
-    color: #2e3237;
-} */
-
-/* :not(pre)>code[class*="language-"] {
-    white-space: normal;
-    border-radius: 0.2em;
-    padding: 0.1em;
-}
-
-pre[class*="language-"] {
-    overflow: auto;
-    position: relative;
-    margin: 0.5em 0;
-    padding: 1.25em 1em;
-}
-
-.language-css>code,
-.language-sass>code,
-.language-scss>code {
-    color: var(--color-primary)!important;
-}
-
-[class*="language-"] .namespace {
-    opacity: 0.7;
-}
-
-.token.attr-name {
-    color: #2e3237!important;
-}
-
-.token.attr-value {
-    color: var(--color-primary)!important;
-}
-
-.token.attribute {
-    color: var(--color-primary)!important;
-}
-
-.token.comment {
-    color: #949ea9!important;
-}
-
-.token.function {
-    color: #2e3237!important;
-}
-
-.token.important {
-    color: #909ca8!important;
-}
-
-.token.property {
-    color: #2e3237!important;
-}
-
-.token.pseudo-class {
-    color: var(--color-primary)!important;
-}
-
-.token.pseudo-element {
-    color: var(--color-primary)!important;
-}
-
-.token.punctuation {
-    color: #2e3237!important;
-}
-
-.token.selector {
-    color: #2e3237!important;
-}
-
-.token.string {
-    color: var(--color-primary)!important;
-}
-
-.token.tag {
-    color: #2e3237!important;
-} */
 
 .notion-text strong .notion-link,
 .notion-text .notion-link strong {
@@ -1292,7 +1177,7 @@ pre[class*="language-"] {
 }
 
 /* APP ROUTER BUTTON FIX */
-/* .notion-text > .notion-link > strong,
+.notion-text > .notion-link > strong,
 .notion-text > strong > .notion-link {
     padding: var(--cta-padding) !important;
     border-radius: var(--cta-border-radius) !important;
@@ -1304,7 +1189,7 @@ pre[class*="language-"] {
     background: var(--cta-color-bg) !important;
     color: var(--cta-color-text) !important;
     margin: -2px !important;
-} */
+}
 
 .notion-quote.bg-gray,
 .notion-quote.bg-brown,

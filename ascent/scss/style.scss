@@ -177,19 +177,19 @@ body {
 }
 
 //  APP ROUTER BUTTON FIX 
-// .notion-text > .notion-link > strong,
-// .notion-text > strong > .notion-link {
-//     padding: var(--cta-padding)!important;
-//     border-radius: var(--cta-border-radii)!important;
-//     opacity: 1!important;
-//     font-weight: 500!important;
-//     display: inline-flex!important;
-//     justify-content: center!important;
-//     transition: background .2s ease-in-out!important;
-//     background: var(--cta-color-bg)!important;
-//     color: var(--cta-color-text)!important;
-//     margin: -2px!important;
-// }
+.notion-text > .notion-link > strong,
+.notion-text > strong > .notion-link {
+    padding: var(--cta-padding)!important;
+    border-radius: var(--cta-border-radii)!important;
+    opacity: 1!important;
+    font-weight: 500!important;
+    display: inline-flex!important;
+    justify-content: center!important;
+    transition: background .2s ease-in-out!important;
+    background: var(--cta-color-bg)!important;
+    color: var(--cta-color-text)!important;
+    margin: -2px!important;
+}
 
 // Button on green
 .notion-root .bg-green-light .notion-text .notion-text__content .notion-semantic-string span strong .notion-link,
@@ -207,19 +207,19 @@ body {
 }
 
 //  APP ROUTER BUTTON FIX 2
-// .bg-green-light .notion-text > .notion-link > strong,
-// .bg-green-light .notion-text > strong > .notion-link {
-//     padding: var(--cta-padding)!important;
-//     border-radius: var(--cta-border-radii)!important;
-//     opacity: 1!important;
-//     font-weight: 500!important;
-//     display: inline-flex!important;
-//     justify-content: center!important;
-//     transition: background .2s ease-in-out!important;
-//     background: var(--cta-color-bg)!important;
-//     color: var(--cta-color-text)!important;
-//     margin: -2px!important;
-// }
+.bg-green-light .notion-text > .notion-link > strong,
+.bg-green-light .notion-text > strong > .notion-link {
+    padding: var(--cta-padding)!important;
+    border-radius: var(--cta-border-radii)!important;
+    opacity: 1!important;
+    font-weight: 500!important;
+    display: inline-flex!important;
+    justify-content: center!important;
+    transition: background .2s ease-in-out!important;
+    background: var(--cta-color-bg)!important;
+    color: var(--cta-color-text)!important;
+    margin: -2px!important;
+}
 
 
 // Typography
