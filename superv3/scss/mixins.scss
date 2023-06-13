@@ -2,6 +2,7 @@
 // SASS Mixins
 // –––––––––––––––––
 @mixin button {
+  text-decoration: none!important;
   opacity: 1 !important;
   padding: var(--button-padding) !important;
   border-radius: var(--rounded-md) !important;

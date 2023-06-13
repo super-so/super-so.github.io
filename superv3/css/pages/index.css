@@ -88,6 +88,7 @@
   margin: 16px auto 0 !important;
 }
 #page-index #block-a00cb4de7898428b9501e67cc48f19a5 .notion-link {
+  text-decoration: none !important;
   opacity: 1 !important;
   padding: var(--button-padding) !important;
   border-radius: var(--rounded-md) !important;
@@ -370,6 +371,7 @@
   }
 }
 #page-index #block-41e832c0a32a4c35ab58e507af0f105a .notion-text .notion-link:first-of-type {
+  text-decoration: none !important;
   opacity: 1 !important;
   padding: var(--button-padding) !important;
   border-radius: var(--rounded-md) !important;
@@ -420,6 +422,7 @@
   color: var(--base-black) !important;
 }
 #page-index #block-e3c38ab927894e78b4eca1d2cebdd6a9 .notion-link:last-child {
+  text-decoration: none !important;
   opacity: 1 !important;
   padding: var(--button-padding) !important;
   border-radius: var(--rounded-md) !important;
@@ -532,6 +535,7 @@
   }
 }
 #page-index #block-4efa8492d79a427cb7659632ebf70754 a.notion-link {
+  text-decoration: none !important;
   opacity: 1 !important;
   padding: var(--button-padding) !important;
   border-radius: var(--rounded-md) !important;

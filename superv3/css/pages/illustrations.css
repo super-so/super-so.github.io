@@ -14,6 +14,7 @@
 #page-illustrations #block-2d988931dd65430abf8a4e3d18f9da62 .notion-link,
 #page-illustrations #block-7ad1ab6f1d564dd4a0b21edf6475d114 .notion-link,
 #page-illustrations #block-6c983c96e4174ec398f57662b01427ad .notion-link {
+  text-decoration: none !important;
   opacity: 1 !important;
   padding: var(--button-padding) !important;
   border-radius: var(--rounded-md) !important;
