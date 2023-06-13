@@ -120,6 +120,21 @@ body {
     margin: -2px!important;
 }
 
+//  APP ROUTER BUTTON FIX 
+.notion-text > .notion-link > strong,
+.notion-text > strong > .notion-link {
+    padding: var(--cta-padding)!important;
+    border-radius: var(--cta-border-radii)!important;
+    opacity: 1!important;
+    font-weight: 500!important;
+    display: inline-flex!important;
+    justify-content: center!important;
+    transition: background .2s ease-in-out!important;
+    background: var(--cta-color-bg)!important;
+    color: var(--cta-color-text)!important;
+    margin: -2px!important;
+}
+
 // Typography
 h1.notion-heading {
     font-size: 2.4rem!important;
@@ -259,7 +274,6 @@ h3.notion-heading {
 
 // Small Gallery
 .notion-collection-gallery.small {
-
     .notion-collection-card__content {
         padding: 16px!important;
     }
@@ -267,6 +281,12 @@ h3.notion-heading {
     .notion-property__title {
         font-size: 1rem!important;
         white-space: normal!important;
+        // UPDATE APP ROUTER
+        font-weight: 700!important;
+        line-height: 1.2!important;
+        letter-spacing: var(--db-title-spacing)!important;
+
+// UPDATE APP ROUTER remove below
         & * {
             font-weight: 700!important;
             line-height: 1.2!important;
@@ -291,7 +311,12 @@ h3.notion-heading {
 
     .notion-property__title {
         font-size: 1.4rem!important;
+        // UPDATE APP ROUTER
+        line-height: 1.2!important;
+        font-weight: 800!important;
+        letter-spacing: var(--db-title-spacing)!important;
 
+        // UPDATE APP ROUTER remove below
         & * {
             line-height: 1.2!important;
             font-weight: 800!important;
@@ -312,7 +337,12 @@ h3.notion-heading {
         .notion-property__title {
             font-size: 2.6rem!important;
             max-width: 600px!important;
+             // UPDATE APP ROUTER
+            line-height: 1!important;
+            font-weight: 800!important;
+            letter-spacing: var(--db-title-spacing)!important;
 
+            // UPDATE APP ROUTER remove below
             & * {
                 line-height: 1!important;
                 font-weight: 800!important;
@@ -597,4 +627,3 @@ h3.notion-heading {
 .notion-collection-list__item .notion-property.notion-property__title .notion-semantic-string>span {
     white-space: pre-wrap!important;
 }
- 
