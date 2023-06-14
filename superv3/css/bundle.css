@@ -1072,35 +1072,6 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__create .notion-collection-gallery.small .notion-property__title__icon-wrapper {
   display: none !important;
 }
-#page-features strong .notion-link,
-#page-features .notion-link strong {
-  text-decoration: none !important;
-  opacity: 1 !important;
-  padding: var(--button-padding) !important;
-  border-radius: var(--rounded-md) !important;
-  font-weight: 500 !important;
-  font-size: 1rem !important;
-  display: inline-flex !important;
-  justify-content: center !important;
-  cursor: pointer !important;
-  transition: background 0.15s ease-out, transform 0.1s ease-out, box-shadow 0.15s ease-out !important;
-  border: 0px !important;
-  background: var(--primary-500) !important;
-  color: var(--base-black) !important;
-}
-
-#page-features strong .notion-link:active,
-#page-features .notion-link strong:active {
-  transform: translateY(1px) !important;
-}
-
-#page-features strong .notion-link:hover,
-#page-features .notion-link strong:hover {
-  box-shadow: 0px 5px 28px -6px rgb(255, 190, 61) !important;
-  -webkit-box-shadow: 0px 5px 28px -6px rgb(255, 190, 61) !important;
-  background: var(--primary-600) !important;
-}
-
 #page-features .notion-collection-card__cover {
   --collection-card-cover-height-medium: 190px !important;
 }
@@ -1130,6 +1101,35 @@ h2.notion-heading .notion-semantic-string {
 
 .parent-page__features {
   --header-cover-height: 32vh !important;
+}
+
+.parent-page__features strong .notion-link,
+.parent-page__features .notion-link strong {
+  text-decoration: none !important;
+  opacity: 1 !important;
+  padding: var(--button-padding) !important;
+  border-radius: var(--rounded-md) !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: background 0.15s ease-out, transform 0.1s ease-out, box-shadow 0.15s ease-out !important;
+  border: 0px !important;
+  background: var(--primary-500) !important;
+  color: var(--base-black) !important;
+}
+
+.parent-page__features strong .notion-link:active,
+.parent-page__features .notion-link strong:active {
+  transform: translateY(1px) !important;
+}
+
+.parent-page__features strong .notion-link:hover,
+.parent-page__features .notion-link strong:hover {
+  box-shadow: 0px 5px 28px -6px rgb(255, 190, 61) !important;
+  -webkit-box-shadow: 0px 5px 28px -6px rgb(255, 190, 61) !important;
+  background: var(--primary-600) !important;
 }
 
 .parent-page__features .notion-header__icon-wrapper.has-icon-image {
