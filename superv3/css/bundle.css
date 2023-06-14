@@ -128,6 +128,11 @@
   display: none !important;
 }
 
+.notion-collection-gallery.large .notion-collection-card__content .property-52525675 .notion-page,
+.notion-collection-gallery.medium .notion-collection-card__content .property-52525675 .notion-page {
+  padding: 0 !important;
+}
+
 .notion-collection-gallery.large .notion-collection-card__content .property-52525675 .notion-page__title .notion-semantic-string,
 .notion-collection-gallery.medium .notion-collection-card__content .property-52525675 .notion-page__title .notion-semantic-string {
   border: 0 !important;
@@ -138,7 +143,6 @@
 .notion-collection-gallery.medium .notion-collection-card__content .property-52525675::before {
   color: var(--gray-500) !important;
   content: "by";
-  margin-right: 4px !important;
 }
 
 .notion-collection-gallery.large .notion-collection-card__content .property-5f417276,
@@ -528,6 +532,11 @@ body {
   .super-navbar__menu-open {
     display: none !important;
   }
+}
+
+.resource .notion-page__title.notion-semantic-string {
+  text-decoration: none !important;
+  font-weight: 400 !important;
 }
 
 .notion-video video,
@@ -1573,6 +1582,7 @@ h2.notion-heading .notion-semantic-string {
 }
 
 #page-index #block-88bbe3ad95784b4bae4613cdc44f843a .notion-link {
+  text-decoration: 0 !important;
   border: 0 !important;
 }
 
@@ -1707,11 +1717,6 @@ h2.notion-heading .notion-semantic-string {
   color: var(--base-white) !important;
 }
 
-#page-index #block-ac8563a8ae1a4967a27d8383bdf78f77 .notion-collection-gallery .notion-collection-card__cover.large {
-  height: 210px !important;
-  max-height: 210px !important;
-}
-
 #page-index #block-ac8563a8ae1a4967a27d8383bdf78f77 .notion-collection-gallery .property-5f417276 {
   margin-top: 8px !important;
 }
@@ -1835,7 +1840,7 @@ h2.notion-heading .notion-semantic-string {
 }
 
 #page-index #block-e3c38ab927894e78b4eca1d2cebdd6a9 .notion-property__title {
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   text-align: center !important;
   align-items: center !important;
   justify-content: center !important;
@@ -2598,6 +2603,7 @@ h2.notion-heading .notion-semantic-string {
 }
 
 .parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 .notion-link {
+  text-decoration: 0 !important;
   border: 0 !important;
 }
 

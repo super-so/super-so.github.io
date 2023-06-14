@@ -252,11 +252,6 @@
                 color: var(--base-white) !important;
             }
 
-            .notion-collection-card__cover.large {
-                height: 210px !important;
-                max-height: 210px !important;
-            }
-
             // Type property
             .property-5f417276 {
                 margin-top: 8px !important;
@@ -326,7 +321,7 @@
         }
 
         .notion-property__title {
-            font-weight: 600 !important;
+            font-weight: 500 !important;
             text-align: center !important;
             align-items: center !important;
             justify-content: center !important;

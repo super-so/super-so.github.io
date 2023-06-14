@@ -237,6 +237,7 @@
   }
 }
 #page-index #block-88bbe3ad95784b4bae4613cdc44f843a .notion-link {
+  text-decoration: 0 !important;
   border: 0 !important;
 }
 #page-index #block-88bbe3ad95784b4bae4613cdc44f843a .notion-callout__content > .notion-text {
@@ -347,10 +348,6 @@
   background: var(--gray-800) !important;
   color: var(--base-white) !important;
 }
-#page-index #block-ac8563a8ae1a4967a27d8383bdf78f77 .notion-collection-gallery .notion-collection-card__cover.large {
-  height: 210px !important;
-  max-height: 210px !important;
-}
 #page-index #block-ac8563a8ae1a4967a27d8383bdf78f77 .notion-collection-gallery .property-5f417276 {
   margin-top: 8px !important;
 }
@@ -457,7 +454,7 @@
   text-align: center !important;
 }
 #page-index #block-e3c38ab927894e78b4eca1d2cebdd6a9 .notion-property__title {
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   text-align: center !important;
   align-items: center !important;
   justify-content: center !important;

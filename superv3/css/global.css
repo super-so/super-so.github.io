@@ -116,6 +116,10 @@
 .notion-collection-gallery.medium .notion-collection-card__content .property-52525675 .notion-page__icon {
   display: none !important;
 }
+.notion-collection-gallery.large .notion-collection-card__content .property-52525675 .notion-page,
+.notion-collection-gallery.medium .notion-collection-card__content .property-52525675 .notion-page {
+  padding: 0 !important;
+}
 .notion-collection-gallery.large .notion-collection-card__content .property-52525675 .notion-page__title .notion-semantic-string,
 .notion-collection-gallery.medium .notion-collection-card__content .property-52525675 .notion-page__title .notion-semantic-string {
   border: 0 !important;
@@ -125,7 +129,6 @@
 .notion-collection-gallery.medium .notion-collection-card__content .property-52525675::before {
   color: var(--gray-500) !important;
   content: "by";
-  margin-right: 4px !important;
 }
 .notion-collection-gallery.large .notion-collection-card__content .property-5f417276,
 .notion-collection-gallery.medium .notion-collection-card__content .property-5f417276 {
@@ -476,6 +479,11 @@ body {
     display: none !important;
   }
 }
+.resource .notion-page__title.notion-semantic-string {
+  text-decoration: none !important;
+  font-weight: 400 !important;
+}
+
 .notion-video video,
 .notion-embed__container > iframe {
   border-radius: 24px !important;
