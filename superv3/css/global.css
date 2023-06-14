@@ -509,7 +509,7 @@ h2.notion-heading span {
 h3:not(.toggle),
 h3.notion-heading:not(.toggle),
 h3.notion-heading:not(.toggle) span {
-  letter-spacing: -0.8px !important;
+  letter-spacing: -0.4px !important;
   font-size: clamp(0.275rem, 4vw, 1.6rem) !important;
   line-height: 1.2 !important;
   margin-bottom: 8px !important;
