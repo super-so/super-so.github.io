@@ -6,6 +6,13 @@
 // –––––––––––––––––
 #page-pricing,
 #page-pricing-annual {
+    overflow-x: hidden !important;
+
+    // Testimonials
+    #block-8c2505c01a7d44d3b95db58542a095b4 {
+        @include full-width-section(transparent);
+        @include testimonials-grid-section;
+    }
 
     // –––––––––––––––––
     // section-billing toggle
@@ -112,11 +119,11 @@
             }
 
             .notion-link {
-                border: 0 !important;
+                text-decoration: none !important;
                 border-radius: 100px !important;
                 padding: 12px 16px !important;
                 opacity: 1 !important;
-                transition: background .2s ease-out!important;
+                transition: background .2s ease-out !important;
 
                 @include breakpoint-xs {
                     border-radius: 8px !important;
@@ -137,22 +144,9 @@
     #block-f59ac23d8cf344f084e546567605a696,
     #block-abea645bf4084158b5f710c635984ec4 {
 
-        // PRO SITES
+        // FREE and PRO
+        .notion-column:first-child>.notion-callout,
         .notion-column:last-child>.notion-callout {
-            border: 0 !important;
-            position: relative !important;
-
-            // New badge on PRO card
-            // &::before {
-            //     content: 'New' !important;
-            //     position: absolute !important;
-            //     top: -16px !important;
-            //     background: #FFF9ED !important;
-            //     padding: 6px 12px !important;
-            //     border-radius: 50px !important;
-            //     border: 1px solid #FFBE3D !important;
-            // }
-
             .notion-link {
                 @include button-secondary-gray;
                 width: 100% !important;
@@ -175,7 +169,7 @@
                 }
             }
         }
-        
+
         // PERSONAL SITE
         .notion-column:nth-child(2)>.notion-callout {
             border: 1px solid #FFBE3D !important;
@@ -186,37 +180,12 @@
                 margin-top: 16px !important;
                 position: relative !important;
                 align-items: center !important;
-            
+
                 &::after {
                     width: 20px !important;
                     height: 20px !important;
                     margin-left: 4px !important;
                     content: url("https://sites.super.so/super/assets/arrow-right-black.svg");
-                }
-            }
-        } 
-
-        // FREE SITE
-        .notion-column:first-child>.notion-callout {
-            .notion-link {
-                @include button-secondary-gray;
-                width: 100% !important;
-                margin-top: 16px !important;
-                position: relative !important;
-                align-items: center !important;
-
-                &::after {
-                    width: 20px !important;
-                    height: 20px !important;
-                    margin-left: 4px !important;
-                    content: url("https://sites.super.so/super/assets/arrow-right-gray-500.svg");
-                }
-
-                &:hover::after {
-                    width: 20px !important;
-                    height: 20px !important;
-                    margin-left: 4px !important;
-                    content: url("https://sites.super.so/super/assets/arrow-right-black.svg") !important;
                 }
             }
         }

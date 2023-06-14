@@ -142,6 +142,11 @@
     padding: 60px 25px !important;
   }
 }
+@media screen and (max-width: 768px) {
+  .parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 .notion-column {
+    padding: 0 !important;
+  }
+}
 .parent-page__promo #block-02e938ebfc4944e2985aa7f166342174 .notion-link {
   text-decoration: 0 !important;
   border: 0 !important;

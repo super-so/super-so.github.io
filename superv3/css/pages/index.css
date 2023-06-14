@@ -236,6 +236,11 @@
     padding: 60px 25px !important;
   }
 }
+@media screen and (max-width: 768px) {
+  #page-index #block-88bbe3ad95784b4bae4613cdc44f843a .notion-column {
+    padding: 0 !important;
+  }
+}
 #page-index #block-88bbe3ad95784b4bae4613cdc44f843a .notion-link {
   text-decoration: 0 !important;
   border: 0 !important;

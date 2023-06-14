@@ -1,8 +1,6 @@
 @import "../mixins";
 
 #page-features {
-
-
     .notion-collection-card__cover {
         --collection-card-cover-height-medium: 190px !important;
     }
@@ -34,14 +32,11 @@
 .parent-page__features {
     --header-cover-height: 32vh !important;
 
-        // –––––––––––––––––
-    // CTA Button
-    // –––––––––––––––––
     strong .notion-link,
     .notion-link strong {
         @include button-primary-default;
     }
-    
+
     .notion-header__icon-wrapper.has-icon-image {
         width: 140px !important;
         height: 140px !important;
@@ -57,11 +52,11 @@
     }
 
     .notion-header__icon-wrapper.has-cover.has-icon-image {
-        top: -160px !important; 
+        top: -160px !important;
     }
 
     .notion-header__title {
-        font-size: 12px !important; 
+        font-size: 12px !important;
         padding: 4px 6px !important;
         background: var(--gray-50) !important;
         border-radius: 4px !important;

@@ -124,6 +124,12 @@
 @mixin testimonials-grid-section {
   --column-spacing: 24px !important;
   text-align: center !important;
+
+  .notion-column {
+    @include breakpoint-sm {
+      padding: 0!important;
+    }
+  }
   
   .notion-link {
     text-decoration: 0 !important;
