@@ -1,6 +1,14 @@
 @import "../mixins";
 
 #page-features {
+    // –––––––––––––––––
+    // CTA Button
+    // –––––––––––––––––
+    strong .notion-link,
+    .notion-link strong {
+        @include button-primary-default;
+    }
+    
     .notion-collection-card__cover {
         --collection-card-cover-height-medium: 190px !important;
     }
