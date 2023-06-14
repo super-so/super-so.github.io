@@ -9,6 +9,13 @@
     --image-border-radii: 12px !important;
     --quote-size: 1.4rem !important;
 
+
+    // Testimonials
+    #block-8c2505c01a7d44d3b95db58542a095b4 {
+        @include full-width-section(transparent);
+        @include testimonials-grid-section;
+    }
+
     .notion-quote {
         margin: 1.2rem 0 !important;
         color: var(--gray-600) !important;
