@@ -564,7 +564,7 @@ h2.notion-heading span {
 h3:not(.toggle),
 h3.notion-heading:not(.toggle),
 h3.notion-heading:not(.toggle) span {
-  letter-spacing: -0.4px !important;
+  letter-spacing: -0.8px !important;
   font-size: clamp(0.275rem, 4vw, 1.6rem) !important;
   line-height: 1.2 !important;
   margin-bottom: 8px !important;
@@ -2351,6 +2351,24 @@ h2.notion-heading .notion-semantic-string {
 #page-pricing-annual #block-f59ac23d8cf344f084e546567605a696 .notion-column:nth-child(2) > .notion-callout,
 #page-pricing-annual #block-abea645bf4084158b5f710c635984ec4 .notion-column:nth-child(2) > .notion-callout {
   border: 1px solid #FFBE3D !important;
+  position: relative !important;
+}
+
+#page-pricing #block-f59ac23d8cf344f084e546567605a696 .notion-column:nth-child(2) > .notion-callout::before,
+#page-pricing #block-abea645bf4084158b5f710c635984ec4 .notion-column:nth-child(2) > .notion-callout::before,
+#page-pricing-annual #block-f59ac23d8cf344f084e546567605a696 .notion-column:nth-child(2) > .notion-callout::before,
+#page-pricing-annual #block-abea645bf4084158b5f710c635984ec4 .notion-column:nth-child(2) > .notion-callout::before {
+  content: "Most popular" !important;
+  position: absolute !important;
+  top: -14px !important;
+  background: #FFF9ED !important;
+  padding: 6px 12px !important;
+  border-radius: 50px !important;
+  border: 1px solid #FFBE3D !important;
+  font-size: 11px !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
 }
 
 #page-pricing #block-f59ac23d8cf344f084e546567605a696 .notion-column:nth-child(2) > .notion-callout .notion-link,
@@ -2416,9 +2434,10 @@ h2.notion-heading .notion-semantic-string {
 #page-pricing #block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child h3,
 #page-pricing-annual #block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child h3,
 #page-pricing-annual #block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child h3 {
-  font-size: 18px !important;
+  font-size: 24px !important;
   font-weight: 500 !important;
   margin-top: 0px !important;
+  margin-bottom: 0 !important;
 }
 
 #page-pricing #block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child h3 code,
@@ -2437,7 +2456,7 @@ h2.notion-heading .notion-semantic-string {
 #page-pricing #block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-divider,
 #page-pricing-annual #block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-divider,
 #page-pricing-annual #block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-divider {
-  margin: 24px 0px !important;
+  margin: 18px 0px !important;
 }
 
 #page-pricing #block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-bulleted-list,

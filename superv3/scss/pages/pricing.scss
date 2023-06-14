@@ -173,6 +173,21 @@
         // PERSONAL SITE
         .notion-column:nth-child(2)>.notion-callout {
             border: 1px solid #FFBE3D !important;
+            position: relative!important;
+
+            &::before {
+                content: 'Most popular' !important;
+                position: absolute !important;
+                top: -14px !important;
+                background: #FFF9ED !important;
+                padding: 6px 12px !important;
+                border-radius: 50px !important;
+                border: 1px solid #FFBE3D !important;
+                font-size: 11px!important;
+                letter-spacing: 1px!important;
+                text-transform: uppercase!important;
+                font-weight: 500!important;
+            }
 
             .notion-link {
                 @include button-primary-default;
@@ -199,9 +214,10 @@
             padding: 32px !important;
 
             h3 {
-                font-size: 18px !important;
+                font-size: 24px !important;
                 font-weight: 500 !important;
                 margin-top: 0px !important;
+                margin-bottom: 0!important;
 
                 code {
                     background-color: var(--base-black) !important;
@@ -214,7 +230,7 @@
             }
 
             .notion-divider {
-                margin: 24px 0px !important;
+                margin: 18px 0px !important;
             }
 
             .notion-bulleted-list {
