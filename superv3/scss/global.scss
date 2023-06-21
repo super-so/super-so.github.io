@@ -251,13 +251,13 @@ h2.notion-heading .notion-semantic-string {
     padding: 7px 16px 8px 16px !important;
 }
 
-#block-4bc224d57a9d4a33acf1c1115706792d p span span:first-child .notion-link {
+#block-4bc224d57a9d4a33acf1c1115706792d p span span:last-child .notion-link {
     margin-top: 16px !important;
     @include button-secondary-gray;
     padding: 7px 16px 8px 16px !important;
 }
 
-#block-4bc224d57a9d4a33acf1c1115706792d p span span:last-child .notion-link {
+#block-4bc224d57a9d4a33acf1c1115706792d p span span:first-child .notion-link {
     margin-top: 16px !important;
     @include button-primary-default;
     padding: 7px 16px 8px 16px !important;
