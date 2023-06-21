@@ -242,13 +242,24 @@ h2.notion-heading .notion-semantic-string {
 // Icon light toggle button
 // Icon dark toggle button
 #block-a86b81903a6543e79aaccdb292aaefa2 .notion-link,
-#block-4bc224d57a9d4a33acf1c1115706792d .notion-link,
 #block-d4275c52214e4bc3929a23f991fa9c18 .notion-link,
 #block-85d934e03c8840b29134ed96836c9b33 .notion-link,
 #block-1b6a89ce78f34f42b0bfe60f07482ffa .notion-link,
 #block-7ee63c2361cb48188152939336f9ea8e .notion-link {
     margin-top: 16px !important;
     @include button-secondary-gray;
+    padding: 7px 16px 8px 16px !important;
+}
+
+#block-4bc224d57a9d4a33acf1c1115706792d p span span:first-child .notion-link {
+    margin-top: 16px !important;
+    @include button-secondary-gray;
+    padding: 7px 16px 8px 16px !important;
+}
+
+#block-4bc224d57a9d4a33acf1c1115706792d p span span:last-child .notion-link {
+    margin-top: 16px !important;
+    @include button-primary-default;
     padding: 7px 16px 8px 16px !important;
 }
 
