@@ -33,17 +33,17 @@
 }
 @media screen and (max-width: 576px) {
   .parent-page__guides #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
-.parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
-.parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
-.parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content {
+  .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
+  .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
+  .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content {
     padding: 60px 25px !important;
   }
 }
 @media screen and (max-width: 768px) {
   .parent-page__guides #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column,
-.parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column,
-.parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column,
-.parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column {
+  .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column,
+  .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column,
+  .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column {
     padding: 0 !important;
   }
 }
@@ -124,9 +124,9 @@
 }
 @media screen and (max-width: 768px) {
   .parent-page__guides #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
-.parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
-.parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
-.parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child {
+  .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
+  .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
+  .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child {
     width: calc((100% - var(--column-spacing) * 1) * 0.75) !important;
   }
 }
@@ -150,17 +150,17 @@
 }
 @media screen and (max-width: 992px) {
   .parent-page__guides #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child,
-.parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child,
-.parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child,
-.parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child {
+  .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child,
+  .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child,
+  .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child {
     display: none !important;
   }
 }
 @media screen and (max-width: 992px) {
   .parent-page__guides #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column,
-.parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column,
-.parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column,
-.parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column {
+  .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column,
+  .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column,
+  .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column {
     flex-grow: 1 !important;
   }
 }
@@ -367,9 +367,9 @@
 }
 @media screen and (max-width: 992px) {
   .parent-page__guides #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
-.parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
-.parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
-.parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child {
+  .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
+  .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
+  .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child {
     top: 20% !important;
     width: 100% !important;
     max-width: 140% !important;
@@ -378,9 +378,9 @@
 }
 @media screen and (max-width: 576px) {
   .parent-page__guides #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
-.parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
-.parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
-.parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child {
+  .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
+  .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
+  .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child {
     top: 135% !important;
     width: 140% !important;
     height: 280% !important;

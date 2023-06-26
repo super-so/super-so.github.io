@@ -25,13 +25,13 @@
 }
 @media screen and (max-width: 576px) {
   #page-pricing #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
-#page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content {
+  #page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content {
     padding: 60px 25px !important;
   }
 }
 @media screen and (max-width: 768px) {
   #page-pricing #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column,
-#page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column {
+  #page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column {
     padding: 0 !important;
   }
 }
@@ -92,7 +92,7 @@
 }
 @media screen and (max-width: 768px) {
   #page-pricing #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
-#page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child {
+  #page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child {
     width: calc((100% - var(--column-spacing) * 1) * 0.75) !important;
   }
 }
@@ -110,13 +110,13 @@
 }
 @media screen and (max-width: 992px) {
   #page-pricing #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child,
-#page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child {
+  #page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child {
     display: none !important;
   }
 }
 @media screen and (max-width: 992px) {
   #page-pricing #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column,
-#page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column {
+  #page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column {
     flex-grow: 1 !important;
   }
 }
@@ -155,7 +155,7 @@
 }
 @media screen and (max-width: 576px) {
   #page-pricing #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column:last-child,
-#page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column:last-child {
+  #page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column:last-child {
     padding-top: 8px !important;
     padding-bottom: 8px !important;
     width: 100% !important;
@@ -170,7 +170,7 @@
 }
 @media screen and (max-width: 576px) {
   #page-pricing #block-e5bbddb674254449a439e4d6a593c5da .notion-column:last-child,
-#page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column:last-child {
+  #page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column:last-child {
     margin: 0px !important;
   }
 }
@@ -188,18 +188,18 @@
 }
 @media screen and (max-width: 576px) {
   #page-pricing #block-5f4034b33f5e4ef5aee7421baadd223e,
-#page-pricing #block-e5bbddb674254449a439e4d6a593c5da,
-#page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e,
-#page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da {
+  #page-pricing #block-e5bbddb674254449a439e4d6a593c5da,
+  #page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e,
+  #page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da {
     border-radius: 12px !important;
     width: 100% !important;
   }
 }
 @media screen and (max-width: 576px) {
   #page-pricing #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column-list,
-#page-pricing #block-e5bbddb674254449a439e4d6a593c5da .notion-column-list,
-#page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column-list,
-#page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column-list {
+  #page-pricing #block-e5bbddb674254449a439e4d6a593c5da .notion-column-list,
+  #page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column-list,
+  #page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column-list {
     flex-wrap: nowrap !important;
   }
 }
@@ -218,9 +218,9 @@
 }
 @media screen and (max-width: 576px) {
   #page-pricing #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column,
-#page-pricing #block-e5bbddb674254449a439e4d6a593c5da .notion-column,
-#page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column,
-#page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column {
+  #page-pricing #block-e5bbddb674254449a439e4d6a593c5da .notion-column,
+  #page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column,
+  #page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column {
     width: 100% !important;
     border-radius: 8px !important;
   }
@@ -263,9 +263,9 @@
 }
 @media screen and (max-width: 576px) {
   #page-pricing #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column .notion-link,
-#page-pricing #block-e5bbddb674254449a439e4d6a593c5da .notion-column .notion-link,
-#page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column .notion-link,
-#page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column .notion-link {
+  #page-pricing #block-e5bbddb674254449a439e4d6a593c5da .notion-column .notion-link,
+  #page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column .notion-link,
+  #page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column .notion-link {
     border-radius: 8px !important;
   }
 }
@@ -493,9 +493,9 @@
 }
 @media screen and (max-width: 992px) {
   #page-pricing #block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout .notion-callout__content,
-#page-pricing #block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout .notion-callout__content,
-#page-pricing-annual #block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout .notion-callout__content,
-#page-pricing-annual #block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout .notion-callout__content {
+  #page-pricing #block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout .notion-callout__content,
+  #page-pricing-annual #block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout .notion-callout__content,
+  #page-pricing-annual #block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout .notion-callout__content {
     flex-direction: column !important;
     align-items: flex-start !important;
   }
