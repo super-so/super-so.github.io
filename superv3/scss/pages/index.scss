@@ -193,6 +193,7 @@
             .notion-image {
                 padding: 4px 16px !important;
                 max-width: 180px !important;
+                align-self: center!important;
                 filter: saturate(0) contrast(0.7) !important;
 
                 @include breakpoint-xs {

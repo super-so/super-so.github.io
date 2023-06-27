@@ -180,6 +180,7 @@
 #page-index #block-c2b91ef5f88a4f49a294e572dc98ca5f.notion-callout .notion-callout__content .notion-image {
   padding: 4px 16px !important;
   max-width: 180px !important;
+  align-self: center !important;
   filter: saturate(0) contrast(0.7) !important;
 }
 @media screen and (max-width: 576px) {
