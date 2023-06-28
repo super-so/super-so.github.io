@@ -1,6 +1,15 @@
 @import "../mixins";
 @import "../components/callout";
 
+.super-navbar .super-navbar__cta {
+    background: #7057CF !important;
+    color: white !important;
+}
+
+.super-navbar__logo-image, .super-navbar__logo-image picture, .super-navbar__logo-image picture img {
+    filter: hue-rotate(180) !important;
+}
+
 #page-analytics {
     font-size: 18px !important;
     --analytics-color: #7057CF;
@@ -8,20 +17,10 @@
     --hero-image-filter-shadow: drop-shadow(0px -43px 87px rgba(190, 173, 255, 0.04)) drop-shadow(0px -125px 99px rgba(190, 173, 255, 0.05)) drop-shadow(0px -43px 53px rgba(190, 173, 255, 0.09)) drop-shadow(0px -18px 50px rgba(190, 173, 255, 0.14)) drop-shadow(0px -6px 2px rgba(158, 142, 224, 0.267)) !important;
     --hero-image-filter-shadow: drop-shadow(0px -43px 87px rgba(190, 173, 255, 0.04)) drop-shadow(0px -125px 99px rgba(190, 173, 255, 0.05)) drop-shadow(0px -43px 53px rgba(190, 173, 255, 0.09)) drop-shadow(0px -18px 50px rgba(190, 173, 255, 0.14)) drop-shadow(0px -6px 2px rgba(158, 142, 224, 0.267)) !important;
     --hero-image-filter-shadow-hover: drop-shadow(0px -65px 87px rgba(190, 173, 255, 0.04)) drop-shadow(0px -125px 99px rgba(190, 173, 255, 0.05)) drop-shadow(0px -73px 73px rgba(190, 173, 255, 0.09)) drop-shadow(0px -18px 50px rgba(190, 173, 255, 0.2)) drop-shadow(0px -6px 2px rgba(158, 142, 224, 0.367)) !important;
-    --image-filter-shadow: drop-shadow(0px -103px 87px rgba(6, 4, 15, 0.04)) drop-shadow(0px -125px 99px rgba(190, 173, 255, 0.05)) drop-shadow(0px -73px 73px rgba(190, 173, 255, 0.09)) drop-shadow(0px -18px 50px rgba(190, 173, 255, 0.2)) !important;
     overflow-x: hidden !important;
 
     .super-content {
         --layout-max-width: 1000px !important;
-    }
-
-    .super-navbar__cta {
-        background: var(--analytics-color) !important;
-        color: white !important;
-    }
-
-    .super-navbar__logo-image img {
-        filter: hue-rotate(180) !important;
     }
 
     .notion-callout__content {
@@ -93,15 +92,15 @@
             left: 0 !important;
             z-index: 12 !important;
             border-radius: 16px !important;
-            box-shadow: 0px -20px 52px -22px rgba(111, 86, 205, 0.1), 0px -5px 8px -8px rgba(111, 86, 205, 0.4), 0px -11px 63px -17px rgba(111, 86, 205, 0.1), inset 0px 5px 10px 12px rgba(155, 132, 253, 0.03), 0px -5px 73px -54px rgba(111, 86, 205, 0.4) !important;
-            -webkit-box-shadow: 0px -20px 52px -22px rgba(111, 86, 205, 0.1), 0px -5px 8px -8px rgba(111, 86, 205, 0.4), 0px -11px 63px -17px rgba(111, 86, 205, 0.1), inset 0px 5px 10px 12px rgba(155, 132, 253, 0.03), 0px -5px 73px -54px rgba(111, 86, 205, 0.4) !important;
-            transition: box-shadow .4s ease-out !important;
-            -webkit-transition: box-shadow .4s ease-out !important;
+            box-shadow: 0px -20px 52px -22px rgba(111, 86, 205, 0.1), 0px -5px 8px -8px rgba(111, 86, 205, 0.2), 0px -11px 63px -17px rgba(111, 86, 205, 0.1), inset 0px 5px 10px 12px rgba(155, 132, 253, 0.03), 0px -5px 73px -54px rgba(111, 86, 205, 0.2) !important;
+            -webkit-box-shadow: 0px -20px 52px -22px rgba(111, 86, 205, 0.1), 0px -5px 8px -8px rgba(111, 86, 205, 0.2), 0px -11px 63px -17px rgba(111, 86, 205, 0.1), inset 0px 5px 10px 12px rgba(155, 132, 253, 0.03), 0px -5px 73px -54px rgba(111, 86, 205, 0.2) !important;
+            transition: box-shadow .2s ease-in-out !important;
+            -webkit-transition: box-shadow .2s ease-in-out !important;
         }
 
         &:hover::after {
-            box-shadow: 0px -20px 52px -22px rgba(111, 86, 205, 0.2), 0px -5px 8px -8px rgba(111, 86, 205, 0.9), 0px -11px 63px -17px rgba(111, 86, 205, 0.2), inset 0px 5px 10px 12px rgba(155, 132, 253, 0.04), 0px -56px 100px -54px rgba(111, 86, 205, 0.5) !important;
-            -webkit-box-shadow: 0px -20px 52px -22px rgba(111, 86, 205, 0.2), 0px -5px 8px -8px rgba(111, 86, 205, 0.9), 0px -11px 63px -17px rgba(111, 86, 205, 0.2), inset 0px 5px 10px 12px rgba(155, 132, 253, 0.04), 0px -56px 100px -54px rgba(111, 86, 205, 0.5) !important;
+            box-shadow: 0px -20px 52px -22px rgba(111, 86, 205, 0.2), 0px -5px 8px -8px rgba(111, 86, 205, 0.5), 0px -11px 63px -17px rgba(111, 86, 205, 0.2), inset 0px 5px 10px 12px rgba(155, 132, 253, 0.04), 0px -56px 100px -54px rgba(111, 86, 205, 0.3) !important;
+            -webkit-box-shadow: 0px -20px 52px -22px rgba(111, 86, 205, 0.2), 0px -5px 8px -8px rgba(111, 86, 205, 0.5), 0px -11px 63px -17px rgba(111, 86, 205, 0.2), inset 0px 5px 10px 12px rgba(155, 132, 253, 0.04), 0px -56px 100px -54px rgba(111, 86, 205, 0.3) !important;
         }
 
         @include breakpoint-md {
@@ -220,44 +219,43 @@
     #block-253d51fe9a5345f2b878deac4f576899,
     #block-6e0683e4ebfc4d25a77138e89b2b6a07 {
         border-radius: 16px !important;
-        box-shadow: var(--image-shadow) !important;
-        -webkit-box-shadow: var(--image-shadow) !important;
-        filter: var(--image-filter-shadow) !important;
-        -webkit-filter: var(--image-filter-shadow) !important;
+        box-shadow: 0px 12px 150px -8px rgba(120, 104, 186, 0.2)!important;
+        -webkit-box-shadow: 0px 12px 150px -8px rgba(120, 104, 186, 0.2)!important;
         position: relative !important;
     }
-
-    #block-cfc9b370d55d4edab26925f83d68a2e9,
-    #block-13057b377d1b4065bad5502ad4df72d9 {
-        filter: var(--image-filter-shadow) !important;
-        position: relative !important;
-    }
-
 
     // CTA Button
     #block-1c8b3f376bb44ee884aad04e4fb0e748 .notion-link,
     #block-f356bc7ed6db4078a6b600fe98d0d5d4 .notion-link {
         @include button;
         margin-top: 16px !important;
-        border: 1px solid #F3E9FE !important;
-        color: var(--analytics-color) !important;
-        background: linear-gradient(180deg, #F5F5F5 0%, #FFFFFF 100%), #FFFFFF !important;
-        box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.08), 0px 1px 0px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.27), 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px 7px rgba(0, 0, 0, 0.04) !important;
-        -webkit-box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.08), 0px 1px 0px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.27), 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px 7px rgba(0, 0, 0, 0.04) !important;
+        border: 1px solid #6950CE !important;
+        color: white !important;
+        background: linear-gradient(173deg, rgba(113,87,207,1) 0%, rgba(80,59,158,1) 100%)!important;
         font-weight: 500 !important;
         font-size: 16px !important;
-        // transition: border .15s ease-out, box-shadow .2s ease-out, background .2s ease-out !important;
+        transition: border .2s ease-out !important;
+        position: relative!important;
 
         &:hover {
-            background: linear-gradient(180deg, #f4eaff 0%, #FFFFFF 100%), #FFFFFF !important;
-            border: 1px solid #d4acff !important;
-            box-shadow: 0px 0px 11px rgba(168, 145, 255, 0.57), 0px 1px 0px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.27), 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px 7px rgba(0, 0, 0, 0.04) !important;
-            -webkit-box-shadow: 0px 0px 11px rgba(168, 145, 255, 0.57), 0px 1px 0px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.27), 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px 7px rgba(0, 0, 0, 0.04) !important;
+            border: 1px solid #7259d5 !important;
         }
 
-        &:active {
-            box-shadow: 0px 0px 4px rgba(168, 145, 255, 0.57), 0px 1px 0px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.27), 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px 4px rgba(0, 0, 0, 0.04) !important;
-            -webkit-box-shadow: 0px 0px 4px rgba(168, 145, 255, 0.57), 0px 1px 0px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.27), 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px 4px rgba(0, 0, 0, 0.04) !important;
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            background: linear-gradient(173deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.5) 100%)!important;
+            opacity: 0;
+            transition: all .2s ease-in-out;
+            border-radius: inherit!important;
+        }
+
+        &:hover:after {
+            opacity: .2;
         }
     }
 
