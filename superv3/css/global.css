@@ -455,7 +455,7 @@
   }
 }
 
-#page-analytics .super-navbar__logo {
+#page-analytics .super-navbar__logo, #page-analytics .super-navbar__logo picture, #page-analytics .super-navbar__logo picture img {
   filter: hue-rotate(206deg) !important;
 }
 

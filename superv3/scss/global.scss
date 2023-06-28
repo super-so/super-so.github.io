@@ -8,11 +8,10 @@
 @import "components/callout";
 
 #page-analytics {
-    .super-navbar__logo {
+    .super-navbar__logo, .super-navbar__logo picture, .super-navbar__logo picture img {
         filter: hue-rotate(206deg) !important;
     }    
 }
-
 // –––––––––––––––––
 // Base
 // –––––––––––––––––
@@ -27,7 +26,7 @@
 
 body {
     -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
+    -moz-osx-font-smoothing: grayscale !important; 
     text-rendering: optimizeLegibility !important;
     font-weight: 400 !important;
 }
