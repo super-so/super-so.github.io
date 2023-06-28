@@ -7,6 +7,12 @@
 @import "components/view-switcher";
 @import "components/callout";
 
+#page-analytics {
+    .super-navbar__logo {
+        filter: hue-rotate(206deg) !important;
+    }    
+}
+
 // –––––––––––––––––
 // Base
 // –––––––––––––––––

@@ -3,10 +3,6 @@
   color: white !important;
 }
 
-.super-navbar__logo-image, .super-navbar__logo-image picture, .super-navbar__logo-image picture img {
-  filter: hue-rotate(180) !important;
-}
-
 #page-analytics {
   font-size: 18px !important;
   --analytics-color: #7057CF;
