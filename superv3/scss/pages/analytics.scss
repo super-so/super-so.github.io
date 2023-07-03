@@ -255,6 +255,11 @@
         }
     }
 
+    #block-f356bc7ed6db4078a6b600fe98d0d5d4 .notion-link {
+        color: #6950CE!important;
+        background: linear-gradient(173deg, rgba(252,252,252,1) 0%, rgba(234,232,244,1) 100%)!important;
+    }
+
     //final cta section
     #block-83011a02f7664f43a0d8d6af1b381ce5 {
         @include full-width-section(linear-gradient(139.11deg, #7F67E1 10.36%, #553EB2 86.58%));

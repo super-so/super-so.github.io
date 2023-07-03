@@ -2644,6 +2644,11 @@ h2.notion-heading .notion-semantic-string {
   opacity: 0.2;
 }
 
+#page-analytics #block-f356bc7ed6db4078a6b600fe98d0d5d4 .notion-link {
+  color: #6950CE !important;
+  background: linear-gradient(173deg, rgb(252, 252, 252) 0%, rgb(234, 232, 244) 100%) !important;
+}
+
 #page-analytics #block-83011a02f7664f43a0d8d6af1b381ce5 {
   width: 100vw !important;
   position: relative !important;
