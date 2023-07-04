@@ -32,7 +32,7 @@ body {
     font-size: 16px !important;
 }
 
-.parent-page__index { 
+#page-docs, .parent-page__docs {
     .super-content {
         padding: 0 !important;
     }
@@ -221,36 +221,6 @@ body {
         max-width: 100% !important;
     }
 
-    pre {
-        padding: 20px !important;
-        margin: 10px 0 20px 0 !important;
-        background-color: var(--color-code-block) !important;
-        /* color: #2e3237!important; */
-    }
-
-    code {
-        font-size: 14px !important;
-        text-shadow: none !important;
-        font-family: "Roboto Mono", monospace !important;
-        /* color: #2e3237!important; */
-    }
-
-    /* code span {
-        color: #2e3237!important;
-    } */
-
-    .token {
-        background: 0 0 !important;
-    }
-
-    .notion-semantic-string.code {
-        background: var(--inline-code-bg-color) !important;
-        color: var(--color-text-default) !important;
-        font-size: 0.9em !important;
-        white-space: pre-wrap !important;
-        padding: 2px 6px !important;
-    }
-
     ul>.notion-list-item:before {
         content: "" !important;
         opacity: 0.3 !important;
@@ -259,9 +229,7 @@ body {
         font-size: 16px !important;
     }
 
-
     // Layout
-
     .notion-column-list:first-child {
         width: 100% !important;
         display: flex !important;
@@ -760,15 +728,6 @@ body {
         }
     }
 
-    .static-tweet-body {
-        font: inherit !important;
-    }
-
-    .static-tweet {
-        --link-color: var(--color-primary) !important;
-    }
-
-
 }
 
 // Global
@@ -1194,4 +1153,38 @@ th {
 .notion-collection-card__cover.large img {
     height: 190px !important;
     min-height: 190px !important;
+}
+
+
+pre {
+    padding: 20px !important;
+    margin: 10px 0 20px 0 !important;
+    background-color: var(--color-code-block) !important;
+}
+
+code {
+    font-size: 14px !important;
+    text-shadow: none !important;
+    font-family: "Roboto Mono", monospace !important;
+}
+
+.token {
+    background: 0 0 !important;
+}
+
+.notion-semantic-string.code {
+    background: var(--inline-code-bg-color) !important;
+    color: var(--color-text-default) !important;
+    font-size: 0.9em !important;
+    white-space: pre-wrap !important;
+    padding: 2px 6px !important;
+}
+
+
+.static-tweet-body {
+    font: inherit !important;
+}
+
+.static-tweet {
+    --link-color: var(--color-primary) !important;
 }
