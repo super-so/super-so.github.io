@@ -32,7 +32,7 @@ body {
     font-size: 16px !important;
 }
 
-#page-docs, .parent-page__docs {
+#page-docs, .parent-page__docs, #page-documentation, .parent-page__documentation {
     .super-content {
         padding: 0 !important;
     }
@@ -754,6 +754,7 @@ body {
     background: var(--cta-color-bg) !important;
     color: var(--cta-color-text) !important;
     margin: -2px !important;
+    border: 0!important;
 }
 
 .notion-quote.bg-gray,
