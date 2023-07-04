@@ -1,7 +1,71 @@
-:root {
-    --content-width: 1500px !important;
-    --transition: all .17s ease-in-out !important;
-    --color-border-default: #F1F5F7;
+.super-content {
+    padding: 0 !important;
+}
+
+.super-navbar,
+.notion-navbar {
+    border-bottom: 1px solid var(--color-border-default) !important;
+    justify-content: center !important;
+    z-index: 20 !important;
+    height: 70px !important;
+}
+
+.super-navbar__content {
+    max-width: var(--content-width) !important;
+}
+
+.super-navbar__button.super-navbar__menu-open {
+    display: none !important;
+}
+
+.super-navbar__logo:hover {
+    opacity: .7 !important;
+    transition: var(--transition) !important;
+}
+
+.super-navbar__item {
+    opacity: 1 !important;
+}
+
+.super-navbar__menu-wrapper {
+    overflow: auto !important;
+}
+
+.super-navbar__menu-item-list .super-navbar__item {
+    border-radius: 10px !important;
+}
+
+.super-navbar__menu-item-list .super-navbar__item:hover {
+    background: var(--color-ui-hover-bg) !important;
+    opacity: 1 !important;
+}
+
+.notion-header {
+    display: none !important;
+}
+
+.notion-header__title-wrapper {
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    height: 100% !important;
+}
+
+.notion-header__icon-wrapper {
+    font-size: 54px !important;
+    line-height: 64px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.notion-header__cover {
+    display: none !important;
+}
+
+.notion-header__content {
+    padding: 0px !important;
+    display: flex !important;
 }
 
 .notion-header__title {
@@ -122,7 +186,13 @@ ul>.notion-list-item:before {
     max-width: 100% !important;
 }
 
-/* layout */
+ul>.notion-list-item:before {
+    content: "" !important;
+    opacity: 0.3 !important;
+    display: inline-block !important;
+    margin-left: 0 !important;
+    font-size: 16px !important;
+}
 
 .notion-column-list:first-child {
     width: 100% !important;
@@ -297,6 +367,8 @@ ul>.notion-list-item:before {
     margin-top: 15px !important;
 }
 
+
+
 .notion-root>.notion-column-list .notion-column-list:last-child .notion-column:last-child {
     text-align: right !important;
 }
@@ -347,6 +419,13 @@ ul>.notion-list-item:before {
 
 .notion-root>.notion-column-list .notion-column-list:last-child .notion-column a:hover {
     background: var(--color-ui-hover-bg) !important;
+}
+
+p {
+    letter-spacing: -0.2px !important;
+    line-height: 1.6 !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
 }
 
 .notion-heading .notion-heading__anchor {
