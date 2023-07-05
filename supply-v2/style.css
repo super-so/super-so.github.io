@@ -101,7 +101,7 @@ h1 {
 }
 
 @media (min-width: 856px) {
-    .notion-collection-card:nth-child(7n - 1) {
+    .notion-collection-card:nth-child(0n +1) {
         grid-column: span 2 / auto;
     }
 }
