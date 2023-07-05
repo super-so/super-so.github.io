@@ -137,3 +137,8 @@ h1 {
     bottom: 1rem!important;
     top: unset!important;
 }
+
+.gumroad.cart-button {
+    bottom: 1rem!important;
+    top: unset!important;
+}
