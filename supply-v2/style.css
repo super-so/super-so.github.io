@@ -43,7 +43,6 @@ h1 {
 
 .notion-collection-card.gallery {
     transition: transform .3s cubic-bezier(.4, 0, .2, 1) !important;
-    border-radius: 16px !important;
     overflow: hidden !important;
     box-shadow: none !important;
 }
