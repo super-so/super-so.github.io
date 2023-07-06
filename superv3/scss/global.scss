@@ -158,7 +158,8 @@ h2.notion-heading .notion-semantic-string {
 #page-blog,
 #page-create,
 #page-report,
-#page-builder {
+#page-builder,
+#page-faq {
     .notion-header__title {
         color: var(--gray-300) !important;
         letter-spacing: -1px !important;
@@ -304,7 +305,8 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__guides,
 .parent-page__blog,
 .parent-page__case-studies,
-.parent-page__create {
+.parent-page__create,
+.parent-page__faq {
     --header-cover-height: 42vh !important;
     --image-border-radii: 12px !important;
     --quote-size: 1.4rem !important;
