@@ -562,7 +562,7 @@ h2.notion-heading .notion-semantic-string {
 #page-create .notion-header__title,
 #page-report .notion-header__title,
 #page-builder .notion-header__title,
-#page-faq .notion-header__title {
+#page-faqs .notion-header__title {
   color: var(--gray-300) !important;
   letter-spacing: -1px !important;
   position: absolute !important;
@@ -582,7 +582,7 @@ h2.notion-heading .notion-semantic-string {
 #page-create .notion-header__title,
 #page-report .notion-header__title,
 #page-builder .notion-header__title,
-#page-faq .notion-header__title {
+#page-faqs .notion-header__title {
     top: 86px !important;
   }
 }
@@ -737,7 +737,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog,
 .parent-page__case-studies,
 .parent-page__create,
-.parent-page__faq {
+.parent-page__faqs {
   --header-cover-height: 42vh !important;
   --image-border-radii: 12px !important;
   --quote-size: 1.4rem !important;
@@ -746,7 +746,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog .super-content .notion-link,
 .parent-page__case-studies .super-content .notion-link,
 .parent-page__create .super-content .notion-link,
-.parent-page__faq .super-content .notion-link {
+.parent-page__faqs .super-content .notion-link {
   font-weight: 500 !important;
   color: black !important;
 }
@@ -754,7 +754,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 {
   width: 100vw !important;
   position: relative !important;
   margin-left: -50vw !important;
@@ -769,7 +769,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content {
   padding-top: 80px !important;
   padding-bottom: 80px !important;
   max-width: 1280px !important;
@@ -782,7 +782,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content {
     padding: 60px 25px !important;
   }
 }
@@ -791,7 +791,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column {
     padding: 0 !important;
   }
 }
@@ -799,7 +799,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-link,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-link,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-link,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 .notion-link {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-link {
   text-decoration: 0 !important;
   border: 0 !important;
 }
@@ -807,7 +807,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout__content > .notion-text,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout__content > .notion-text,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout__content > .notion-text,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout__content > .notion-text {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout__content > .notion-text {
   opacity: 0.7 !important;
   margin-top: 8px !important;
 }
@@ -815,7 +815,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout {
   padding: 24px !important;
   padding-top: 20px !important;
   border: 1px solid #f2f1f1 !important;
@@ -831,7 +831,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout:hover,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout:hover,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout:hover,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout:hover {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout:hover {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 20px 0px !important;
   border: 1px solid transparent !important;
   transform: translateY(-2px) !important;
@@ -840,14 +840,14 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column-list,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column-list,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column-list,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column-list {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column-list {
   align-items: center !important;
 }
 .parent-page__guides #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column-list .notion-image,
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column-list .notion-image,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column-list .notion-image,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column-list .notion-image,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column-list .notion-image {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column-list .notion-image {
   width: 56px !important;
   height: 56px !important;
   border-radius: 50% !important;
@@ -856,28 +856,28 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column-list .notion-image img,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column-list .notion-image img,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column-list .notion-image img,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column-list .notion-image img {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column-list .notion-image img {
   border-radius: 50% !important;
 }
 .parent-page__guides #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column,
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column {
   padding: 0px !important;
 }
 .parent-page__guides #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:first-child,
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:first-child,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:first-child,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:first-child,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:first-child {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:first-child {
   max-width: fit-content !important;
 }
 .parent-page__guides #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child {
   margin-inline-start: 16px !important;
 }
 @media screen and (max-width: 768px) {
@@ -885,7 +885,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child {
     width: calc((100% - var(--column-spacing) * 1) * 0.75) !important;
   }
 }
@@ -893,21 +893,21 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column .notion-text,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column .notion-text,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column .notion-text,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column .notion-text {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column .notion-text {
   min-height: auto !important;
 }
 .parent-page__guides #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column .notion-text__content,
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column .notion-text__content,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column .notion-text__content,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column .notion-text__content,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column .notion-text__content {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column .notion-text__content {
   padding: 0px !important;
 }
 .parent-page__guides #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list,
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list {
   margin-top: 26px !important;
 }
 @media screen and (max-width: 992px) {
@@ -915,7 +915,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child {
     display: none !important;
   }
 }
@@ -924,7 +924,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column,
 .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column,
 .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column,
-.parent-page__faq #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column {
+.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column {
     flex-grow: 1 !important;
   }
 }
@@ -932,7 +932,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog .notion-quote,
 .parent-page__case-studies .notion-quote,
 .parent-page__create .notion-quote,
-.parent-page__faq .notion-quote {
+.parent-page__faqs .notion-quote {
   margin: 1.2rem 0 !important;
   color: var(--gray-600) !important;
   letter-spacing: -0.3px !important;
@@ -945,8 +945,8 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__case-studies .notion-numbered-list,
 .parent-page__create .notion-bulleted-list,
 .parent-page__create .notion-numbered-list,
-.parent-page__faq .notion-bulleted-list,
-.parent-page__faq .notion-numbered-list {
+.parent-page__faqs .notion-bulleted-list,
+.parent-page__faqs .notion-numbered-list {
   color: var(--gray-600) !important;
   margin-left: 16px !important;
 }
@@ -954,14 +954,14 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog .notion-bulleted-list li,
 .parent-page__case-studies .notion-bulleted-list li,
 .parent-page__create .notion-bulleted-list li,
-.parent-page__faq .notion-bulleted-list li {
+.parent-page__faqs .notion-bulleted-list li {
   color: var(--gray-600) !important;
 }
 .parent-page__guides .notion-image:not(.notion-callout .notion-image):not(.notion-column .notion-image),
 .parent-page__blog .notion-image:not(.notion-callout .notion-image):not(.notion-column .notion-image),
 .parent-page__case-studies .notion-image:not(.notion-callout .notion-image):not(.notion-column .notion-image),
 .parent-page__create .notion-image:not(.notion-callout .notion-image):not(.notion-column .notion-image),
-.parent-page__faq .notion-image:not(.notion-callout .notion-image):not(.notion-column .notion-image) {
+.parent-page__faqs .notion-image:not(.notion-callout .notion-image):not(.notion-column .notion-image) {
   margin-top: 2rem !important;
 }
 .parent-page__guides h2.notion-heading:not(.notion-callout h2.notion-heading),
@@ -972,8 +972,8 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__case-studies .parent-page__blog h2.notion-heading:not(.notion-callout h2.notion-heading),
 .parent-page__create h2.notion-heading:not(.notion-callout h2.notion-heading),
 .parent-page__create .parent-page__blog h2.notion-heading:not(.notion-callout h2.notion-heading),
-.parent-page__faq h2.notion-heading:not(.notion-callout h2.notion-heading),
-.parent-page__faq .parent-page__blog h2.notion-heading:not(.notion-callout h2.notion-heading) {
+.parent-page__faqs h2.notion-heading:not(.notion-callout h2.notion-heading),
+.parent-page__faqs .parent-page__blog h2.notion-heading:not(.notion-callout h2.notion-heading) {
   margin-top: 3rem !important;
 }
 .parent-page__guides h3.notion-heading:not(.notion-callout h3.notion-heading),
@@ -984,15 +984,15 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__case-studies .parent-page__blog h3.notion-heading:not(.notion-callout h3.notion-heading),
 .parent-page__create h3.notion-heading:not(.notion-callout h3.notion-heading),
 .parent-page__create .parent-page__blog h3.notion-heading:not(.notion-callout h3.notion-heading),
-.parent-page__faq h3.notion-heading:not(.notion-callout h3.notion-heading),
-.parent-page__faq .parent-page__blog h3.notion-heading:not(.notion-callout h3.notion-heading) {
+.parent-page__faqs h3.notion-heading:not(.notion-callout h3.notion-heading),
+.parent-page__faqs .parent-page__blog h3.notion-heading:not(.notion-callout h3.notion-heading) {
   margin-top: 2.2rem !important;
 }
 .parent-page__guides .notion-text p,
 .parent-page__blog .notion-text p,
 .parent-page__case-studies .notion-text p,
 .parent-page__create .notion-text p,
-.parent-page__faq .notion-text p {
+.parent-page__faqs .notion-text p {
   margin-top: 1rem !important;
 }
 .parent-page__guides h3,
@@ -1007,9 +1007,9 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__create h3,
 .parent-page__create h3.notion-heading,
 .parent-page__create h3.notion-heading span,
-.parent-page__faq h3,
-.parent-page__faq h3.notion-heading,
-.parent-page__faq h3.notion-heading span {
+.parent-page__faqs h3,
+.parent-page__faqs h3.notion-heading,
+.parent-page__faqs h3.notion-heading span {
   letter-spacing: -0.8px !important;
   font-size: clamp(0.275rem, 4vw, 1.6rem) !important;
   line-height: 1.2 !important;
@@ -1024,8 +1024,8 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__case-studies .notion-link strong,
 .parent-page__create strong .notion-link,
 .parent-page__create .notion-link strong,
-.parent-page__faq strong .notion-link,
-.parent-page__faq .notion-link strong {
+.parent-page__faqs strong .notion-link,
+.parent-page__faqs .notion-link strong {
   text-decoration: none !important;
   opacity: 1 !important;
   padding: var(--button-padding) !important;
@@ -1048,8 +1048,8 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__case-studies .notion-link strong:active,
 .parent-page__create strong .notion-link:active,
 .parent-page__create .notion-link strong:active,
-.parent-page__faq strong .notion-link:active,
-.parent-page__faq .notion-link strong:active {
+.parent-page__faqs strong .notion-link:active,
+.parent-page__faqs .notion-link strong:active {
   transform: translateY(1px) !important;
 }
 .parent-page__guides strong .notion-link:hover,
@@ -1060,8 +1060,8 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__case-studies .notion-link strong:hover,
 .parent-page__create strong .notion-link:hover,
 .parent-page__create .notion-link strong:hover,
-.parent-page__faq strong .notion-link:hover,
-.parent-page__faq .notion-link strong:hover {
+.parent-page__faqs strong .notion-link:hover,
+.parent-page__faqs .notion-link strong:hover {
   box-shadow: 0px 5px 28px -6px rgb(255, 190, 61) !important;
   -webkit-box-shadow: 0px 5px 28px -6px rgb(255, 190, 61) !important;
   background: var(--primary-600) !important;
@@ -1070,7 +1070,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63,
 .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63,
 .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63,
-.parent-page__faq #block-e79bc599f53e43ac8e25706f10fa5f63 {
+.parent-page__faqs #block-e79bc599f53e43ac8e25706f10fa5f63 {
   padding: 0px !important;
   margin: 0px !important;
   border: none !important;
@@ -1087,14 +1087,14 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__icon,
 .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__icon,
 .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__icon,
-.parent-page__faq #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__icon {
+.parent-page__faqs #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__icon {
   display: none !important;
 }
 .parent-page__guides #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content,
 .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content,
 .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content,
 .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content,
-.parent-page__faq #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content {
+.parent-page__faqs #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content {
   margin-inline-start: 0px !important;
   overflow: visible !important;
 }
@@ -1102,14 +1102,14 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content > span,
 .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content > span,
 .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content > span,
-.parent-page__faq #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content > span {
+.parent-page__faqs #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content > span {
   display: none !important;
 }
 .parent-page__guides #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link,
 .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link,
 .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link,
 .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link,
-.parent-page__faq #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link {
+.parent-page__faqs #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link {
   margin-top: 24px !important;
   text-decoration: none !important;
   opacity: 1 !important;
@@ -1129,14 +1129,14 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link:active,
 .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link:active,
 .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link:active,
-.parent-page__faq #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link:active {
+.parent-page__faqs #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link:active {
   transform: translateY(1px) !important;
 }
 .parent-page__guides #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link:hover,
 .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link:hover,
 .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link:hover,
 .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link:hover,
-.parent-page__faq #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link:hover {
+.parent-page__faqs #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link:hover {
   box-shadow: 0px 5px 28px -6px rgb(255, 190, 61) !important;
   -webkit-box-shadow: 0px 5px 28px -6px rgb(255, 190, 61) !important;
   background: var(--gray-900) !important;
@@ -1145,7 +1145,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
 .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
 .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
-.parent-page__faq #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child {
+.parent-page__faqs #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child {
   position: absolute !important;
   width: 100% !important;
   height: 100% !important;
@@ -1161,7 +1161,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
 .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
 .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
-.parent-page__faq #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child {
+.parent-page__faqs #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child {
     top: 20% !important;
     width: 100% !important;
     max-width: 140% !important;
@@ -1173,7 +1173,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
 .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
 .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
-.parent-page__faq #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child {
+.parent-page__faqs #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child {
     top: 135% !important;
     width: 140% !important;
     height: 280% !important;
