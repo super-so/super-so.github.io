@@ -742,11 +742,11 @@ h2.notion-heading .notion-semantic-string {
   --image-border-radii: 12px !important;
   --quote-size: 1.4rem !important;
 }
-.parent-page__guides .super-content .notion-link,
-.parent-page__blog .super-content .notion-link,
-.parent-page__case-studies .super-content .notion-link,
-.parent-page__create .super-content .notion-link,
-.parent-page__faqs .super-content .notion-link {
+.parent-page__guides .super-content .notion-link:not(.notion-collection-card__anchor),
+.parent-page__blog .super-content .notion-link:not(.notion-collection-card__anchor),
+.parent-page__case-studies .super-content .notion-link:not(.notion-collection-card__anchor),
+.parent-page__create .super-content .notion-link:not(.notion-collection-card__anchor),
+.parent-page__faqs .super-content .notion-link:not(.notion-collection-card__anchor) {
   font-weight: 500 !important;
   color: black !important;
 }

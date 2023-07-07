@@ -311,9 +311,9 @@ h2.notion-heading .notion-semantic-string {
     --image-border-radii: 12px !important;
     --quote-size: 1.4rem !important;
 
-    .super-content .notion-link {
+    .super-content .notion-link:not(.notion-collection-card__anchor) {
         font-weight: 500!important;
-        color: black!important;
+        color: black!important; 
     }
 
 
