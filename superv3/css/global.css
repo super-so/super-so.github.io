@@ -988,11 +988,11 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__faqs .parent-page__blog h3.notion-heading:not(.notion-callout h3.notion-heading) {
   margin-top: 2.2rem !important;
 }
-.parent-page__guides .notion-text p,
-.parent-page__blog .notion-text p,
-.parent-page__case-studies .notion-text p,
-.parent-page__create .notion-text p,
-.parent-page__faqs .notion-text p {
+.parent-page__guides p.notion-text,
+.parent-page__blog p.notion-text,
+.parent-page__case-studies p.notion-text,
+.parent-page__create p.notion-text,
+.parent-page__faqs p.notion-text {
   margin-top: 1rem !important;
 }
 .parent-page__guides h3,
