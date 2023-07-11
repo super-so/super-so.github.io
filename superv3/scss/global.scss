@@ -343,14 +343,18 @@ h2.notion-heading .notion-semantic-string {
         margin-top: 2rem !important;
     }
 
-    h2.notion-heading:not(.notion-callout h2.notion-heading),
-    .parent-page__blog h2.notion-heading:not(.notion-callout h2.notion-heading) {
+    .notion-embed {
+        margin-top: 2rem !important;
+    }
+
+    h2.notion-heading:not(.notion-callout, h2.notion-heading),
+    .parent-page__blog h2.notion-heading:not(.notion-callout, h2.notion-heading) {
         margin-top: 3rem !important;
     }
 
 
-    h3.notion-heading:not(.notion-callout h3.notion-heading),
-    .parent-page__blog h3.notion-heading:not(.notion-callout h3.notion-heading) {
+    h3.notion-heading:not(.notion-callout, h3.notion-heading),
+    .parent-page__blog h3.notion-heading:not(.notion-callout, h3.notion-heading) {
         margin-top: 2.2rem !important;
     }
 
@@ -382,6 +386,19 @@ h2.notion-heading .notion-semantic-string {
     // –––––––––––––––––
     #block-e79bc599f53e43ac8e25706f10fa5f63 {
         @include footer-cta-section;
+    }
+}
+
+// Sign up form
+#block-63f40025d3f344f6b53bca6279746f51 {
+    @include callout-container;
+
+    .notion-heading {
+        text-align: center!important;
+
+        @include breakpoint-xs {
+           font-size: 24px !important;
+        }
     }
 }
 

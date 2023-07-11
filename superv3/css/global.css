@@ -964,28 +964,35 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__faqs .notion-image:not(.notion-callout .notion-image):not(.notion-column .notion-image) {
   margin-top: 2rem !important;
 }
-.parent-page__guides h2.notion-heading:not(.notion-callout h2.notion-heading),
-.parent-page__guides .parent-page__blog h2.notion-heading:not(.notion-callout h2.notion-heading),
-.parent-page__blog h2.notion-heading:not(.notion-callout h2.notion-heading),
-.parent-page__blog .parent-page__blog h2.notion-heading:not(.notion-callout h2.notion-heading),
-.parent-page__case-studies h2.notion-heading:not(.notion-callout h2.notion-heading),
-.parent-page__case-studies .parent-page__blog h2.notion-heading:not(.notion-callout h2.notion-heading),
-.parent-page__create h2.notion-heading:not(.notion-callout h2.notion-heading),
-.parent-page__create .parent-page__blog h2.notion-heading:not(.notion-callout h2.notion-heading),
-.parent-page__faqs h2.notion-heading:not(.notion-callout h2.notion-heading),
-.parent-page__faqs .parent-page__blog h2.notion-heading:not(.notion-callout h2.notion-heading) {
+.parent-page__guides .notion-embed,
+.parent-page__blog .notion-embed,
+.parent-page__case-studies .notion-embed,
+.parent-page__create .notion-embed,
+.parent-page__faqs .notion-embed {
+  margin-top: 2rem !important;
+}
+.parent-page__guides h2.notion-heading:not(.notion-callout, h2.notion-heading),
+.parent-page__guides .parent-page__blog h2.notion-heading:not(.notion-callout, h2.notion-heading),
+.parent-page__blog h2.notion-heading:not(.notion-callout, h2.notion-heading),
+.parent-page__blog .parent-page__blog h2.notion-heading:not(.notion-callout, h2.notion-heading),
+.parent-page__case-studies h2.notion-heading:not(.notion-callout, h2.notion-heading),
+.parent-page__case-studies .parent-page__blog h2.notion-heading:not(.notion-callout, h2.notion-heading),
+.parent-page__create h2.notion-heading:not(.notion-callout, h2.notion-heading),
+.parent-page__create .parent-page__blog h2.notion-heading:not(.notion-callout, h2.notion-heading),
+.parent-page__faqs h2.notion-heading:not(.notion-callout, h2.notion-heading),
+.parent-page__faqs .parent-page__blog h2.notion-heading:not(.notion-callout, h2.notion-heading) {
   margin-top: 3rem !important;
 }
-.parent-page__guides h3.notion-heading:not(.notion-callout h3.notion-heading),
-.parent-page__guides .parent-page__blog h3.notion-heading:not(.notion-callout h3.notion-heading),
-.parent-page__blog h3.notion-heading:not(.notion-callout h3.notion-heading),
-.parent-page__blog .parent-page__blog h3.notion-heading:not(.notion-callout h3.notion-heading),
-.parent-page__case-studies h3.notion-heading:not(.notion-callout h3.notion-heading),
-.parent-page__case-studies .parent-page__blog h3.notion-heading:not(.notion-callout h3.notion-heading),
-.parent-page__create h3.notion-heading:not(.notion-callout h3.notion-heading),
-.parent-page__create .parent-page__blog h3.notion-heading:not(.notion-callout h3.notion-heading),
-.parent-page__faqs h3.notion-heading:not(.notion-callout h3.notion-heading),
-.parent-page__faqs .parent-page__blog h3.notion-heading:not(.notion-callout h3.notion-heading) {
+.parent-page__guides h3.notion-heading:not(.notion-callout, h3.notion-heading),
+.parent-page__guides .parent-page__blog h3.notion-heading:not(.notion-callout, h3.notion-heading),
+.parent-page__blog h3.notion-heading:not(.notion-callout, h3.notion-heading),
+.parent-page__blog .parent-page__blog h3.notion-heading:not(.notion-callout, h3.notion-heading),
+.parent-page__case-studies h3.notion-heading:not(.notion-callout, h3.notion-heading),
+.parent-page__case-studies .parent-page__blog h3.notion-heading:not(.notion-callout, h3.notion-heading),
+.parent-page__create h3.notion-heading:not(.notion-callout, h3.notion-heading),
+.parent-page__create .parent-page__blog h3.notion-heading:not(.notion-callout, h3.notion-heading),
+.parent-page__faqs h3.notion-heading:not(.notion-callout, h3.notion-heading),
+.parent-page__faqs .parent-page__blog h3.notion-heading:not(.notion-callout, h3.notion-heading) {
   margin-top: 2.2rem !important;
 }
 .parent-page__guides p.notion-text,
@@ -1179,6 +1186,31 @@ h2.notion-heading .notion-semantic-string {
     height: 280% !important;
     max-width: 280% !important;
     max-height: 280% !important;
+  }
+}
+
+#block-63f40025d3f344f6b53bca6279746f51 {
+  padding: 0px !important;
+  margin: 0px !important;
+  border: none !important;
+  overflow: visible !important;
+}
+#block-63f40025d3f344f6b53bca6279746f51 .notion-callout__icon {
+  display: none !important;
+}
+#block-63f40025d3f344f6b53bca6279746f51 .notion-callout__content {
+  margin-inline-start: 0px !important;
+  overflow: visible !important;
+}
+#block-63f40025d3f344f6b53bca6279746f51 .notion-callout__content > span {
+  display: none !important;
+}
+#block-63f40025d3f344f6b53bca6279746f51 .notion-heading {
+  text-align: center !important;
+}
+@media screen and (max-width: 576px) {
+  #block-63f40025d3f344f6b53bca6279746f51 .notion-heading {
+    font-size: 24px !important;
   }
 }
 
