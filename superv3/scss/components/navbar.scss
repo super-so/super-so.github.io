@@ -5,7 +5,6 @@
 
 .super-navbar {
     height: var(--navbar-height) !important;
-    background: transparent !important;
     transition: height 0.3s ease-in-out, background 0.2s ease-in-out !important;
 
     .super-navbar__item {
@@ -56,15 +55,7 @@
     background: transparent!important;
 }
 
-#page-index .super-navbar.scrolled {
-    -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
-    -moz-backdrop-filter: blur(20px) saturate(200%) !important;
-    backdrop-filter: blur(20px) saturate(200%) !important;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.04) !important;
-    background: rgba(255, 255, 255, 0.85) !important;
-}
-
-main:not(#page-index) .super-navbar {
+.super-navbar {
     -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
     -moz-backdrop-filter: blur(20px) saturate(200%) !important;
     backdrop-filter: blur(20px) saturate(200%) !important;

@@ -256,7 +256,6 @@
 
 .super-navbar {
   height: var(--navbar-height) !important;
-  background: transparent !important;
   transition: height 0.3s ease-in-out, background 0.2s ease-in-out !important;
 }
 
@@ -326,15 +325,7 @@
   background: transparent !important;
 }
 
-#page-index .super-navbar.scrolled {
-  -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
-  -moz-backdrop-filter: blur(20px) saturate(200%) !important;
-  backdrop-filter: blur(20px) saturate(200%) !important;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.04) !important;
-  background: rgba(255, 255, 255, 0.85) !important;
-}
-
-main:not(#page-index) .super-navbar {
+.super-navbar {
   -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
   -moz-backdrop-filter: blur(20px) saturate(200%) !important;
   backdrop-filter: blur(20px) saturate(200%) !important;
@@ -2994,6 +2985,18 @@ h2.notion-heading .notion-semantic-string {
   overflow: hidden !important;
 }
 
+#page-index .super-navbar {
+  background: transparent !important;
+}
+
+#page-index .super-navbar.scrolled {
+  -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
+  -moz-backdrop-filter: blur(20px) saturate(200%) !important;
+  backdrop-filter: blur(20px) saturate(200%) !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.04) !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+}
+
 #page-index #block-27fd04823c514c298f2acd7394630eaa * {
   max-height: 730px !important;
   width: 100% !important;
@@ -3232,7 +3235,7 @@ h2.notion-heading .notion-semantic-string {
   left: 50% !important;
   background: var(--gray-900) !important;
   border-radius: 0px !important;
-  --column-spacing: 45px!important;
+  --column-spacing: 45px !important;
 }
 
 #page-index #block-24841223de234f27b9e90940496494e4 > .notion-callout__content {

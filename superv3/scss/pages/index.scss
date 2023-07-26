@@ -7,6 +7,18 @@
 #page-index {
     overflow: hidden !important;
 
+    .super-navbar {
+        background: transparent !important;
+    }
+
+    .super-navbar.scrolled {
+        -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
+        -moz-backdrop-filter: blur(20px) saturate(200%) !important;
+        backdrop-filter: blur(20px) saturate(200%) !important;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.04) !important;
+        background: rgba(255, 255, 255, 0.85) !important;
+    }
+
     #block-27fd04823c514c298f2acd7394630eaa * {
         max-height: 730px !important;
         width: 100% !important;
@@ -103,7 +115,7 @@
             max-width: 875px !important;
             margin: 0 auto !important;
             margin: 16px auto 0 !important;
-            font-size: clamp(2.6rem,6vw,4rem)!important;
+            font-size: clamp(2.6rem, 6vw, 4rem) !important;
         }
 
         .notion-link {
@@ -194,7 +206,7 @@
             .notion-image {
                 padding: 4px 16px !important;
                 max-width: 180px !important;
-                align-self: center!important;
+                align-self: center !important;
                 filter: saturate(0) contrast(0.7) !important;
 
                 @include breakpoint-xs {
@@ -213,21 +225,21 @@
     // –––––––––––––––––
     #block-24841223de234f27b9e90940496494e4 {
         @include full-width-section(var(--gray-900));
-        --column-spacing: 45px!important;
+        --column-spacing: 45px !important;
 
         .notion-heading {
             color: var(--base-white) !important;
         }
 
         h2 {
-            text-align: center!important;
-            margin-bottom: 20px!important;
-            margin-top: 0px!important;
+            text-align: center !important;
+            margin-bottom: 20px !important;
+            margin-top: 0px !important;
         }
 
         h3.notion-heading {
             @include breakpoint-xs {
-                font-size: 22px!important;
+                font-size: 22px !important;
             }
         }
     }
