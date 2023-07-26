@@ -209,10 +209,27 @@
     }
 
     // –––––––––––––––––
-    // section-main_features
+    // section-steps
     // –––––––––––––––––
-    #block-4ec0da2865a3465eae8ce500894d1281 {
+    #block-24841223de234f27b9e90940496494e4 {
         @include full-width-section(var(--gray-900));
+        --column-spacing: 45px!important;
+
+        .notion-heading {
+            color: var(--base-white) !important;
+        }
+
+        h2 {
+            text-align: center!important;
+            margin-bottom: 20px!important;
+            margin-top: 0px!important;
+        }
+
+        h3.notion-heading {
+            @include breakpoint-xs {
+                font-size: 22px!important;
+            }
+        }
     }
 
     // –––––––––––––––––

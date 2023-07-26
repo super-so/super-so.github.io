@@ -322,7 +322,19 @@
   background: var(--gray-50) !important;
 }
 
-.super-navbar {
+#page-index .super-navbar {
+  background: transparent !important;
+}
+
+#page-index .super-navbar.scrolled {
+  -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
+  -moz-backdrop-filter: blur(20px) saturate(200%) !important;
+  backdrop-filter: blur(20px) saturate(200%) !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.04) !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+}
+
+main:not(#page-index) .super-navbar {
   -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
   -moz-backdrop-filter: blur(20px) saturate(200%) !important;
   backdrop-filter: blur(20px) saturate(200%) !important;
@@ -3212,7 +3224,7 @@ h2.notion-heading .notion-semantic-string {
   }
 }
 
-#page-index #block-4ec0da2865a3465eae8ce500894d1281 {
+#page-index #block-24841223de234f27b9e90940496494e4 {
   width: 100vw !important;
   position: relative !important;
   margin-left: -50vw !important;
@@ -3220,9 +3232,10 @@ h2.notion-heading .notion-semantic-string {
   left: 50% !important;
   background: var(--gray-900) !important;
   border-radius: 0px !important;
+  --column-spacing: 45px!important;
 }
 
-#page-index #block-4ec0da2865a3465eae8ce500894d1281 > .notion-callout__content {
+#page-index #block-24841223de234f27b9e90940496494e4 > .notion-callout__content {
   padding-top: 80px !important;
   padding-bottom: 80px !important;
   max-width: 1280px !important;
@@ -3232,8 +3245,24 @@ h2.notion-heading .notion-semantic-string {
 }
 
 @media screen and (max-width: 576px) {
-  #page-index #block-4ec0da2865a3465eae8ce500894d1281 > .notion-callout__content {
+  #page-index #block-24841223de234f27b9e90940496494e4 > .notion-callout__content {
     padding: 60px 25px !important;
+  }
+}
+
+#page-index #block-24841223de234f27b9e90940496494e4 .notion-heading {
+  color: var(--base-white) !important;
+}
+
+#page-index #block-24841223de234f27b9e90940496494e4 h2 {
+  text-align: center !important;
+  margin-bottom: 20px !important;
+  margin-top: 0px !important;
+}
+
+@media screen and (max-width: 576px) {
+  #page-index #block-24841223de234f27b9e90940496494e4 h3.notion-heading {
+    font-size: 22px !important;
   }
 }
 

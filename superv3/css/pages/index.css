@@ -192,7 +192,7 @@
     max-width: 100px !important;
   }
 }
-#page-index #block-4ec0da2865a3465eae8ce500894d1281 {
+#page-index #block-24841223de234f27b9e90940496494e4 {
   width: 100vw !important;
   position: relative !important;
   margin-left: -50vw !important;
@@ -200,8 +200,9 @@
   left: 50% !important;
   background: var(--gray-900) !important;
   border-radius: 0px !important;
+  --column-spacing: 45px!important;
 }
-#page-index #block-4ec0da2865a3465eae8ce500894d1281 > .notion-callout__content {
+#page-index #block-24841223de234f27b9e90940496494e4 > .notion-callout__content {
   padding-top: 80px !important;
   padding-bottom: 80px !important;
   max-width: 1280px !important;
@@ -210,8 +211,21 @@
   padding-right: calc(env(safe-area-inset-right) + 96px);
 }
 @media screen and (max-width: 576px) {
-  #page-index #block-4ec0da2865a3465eae8ce500894d1281 > .notion-callout__content {
+  #page-index #block-24841223de234f27b9e90940496494e4 > .notion-callout__content {
     padding: 60px 25px !important;
+  }
+}
+#page-index #block-24841223de234f27b9e90940496494e4 .notion-heading {
+  color: var(--base-white) !important;
+}
+#page-index #block-24841223de234f27b9e90940496494e4 h2 {
+  text-align: center !important;
+  margin-bottom: 20px !important;
+  margin-top: 0px !important;
+}
+@media screen and (max-width: 576px) {
+  #page-index #block-24841223de234f27b9e90940496494e4 h3.notion-heading {
+    font-size: 22px !important;
   }
 }
 #page-index #block-88bbe3ad95784b4bae4613cdc44f843a {
