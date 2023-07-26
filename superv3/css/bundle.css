@@ -322,7 +322,7 @@
   background: var(--gray-50) !important;
 }
 
-.super-navbar.scrolled {
+.super-navbar {
   -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
   -moz-backdrop-filter: blur(20px) saturate(200%) !important;
   backdrop-filter: blur(20px) saturate(200%) !important;
@@ -663,6 +663,7 @@ h2.notion-heading .notion-semantic-string {
   content: "" !important;
   position: absolute !important;
   z-index: 1 !important;
+  left: 0 !important;
   bottom: -2px !important;
   background-image: linear-gradient(to bottom, rgba(253, 253, 252, 0), rgb(253, 253, 252) 100%) !important;
   width: 100% !important;
@@ -829,6 +830,70 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__faqs .super-content .notion-link:not(.notion-collection-card__anchor) {
   font-weight: 500 !important;
   color: black !important;
+}
+
+.parent-page__guides .notion-header__cover,
+.parent-page__blog .notion-header__cover,
+.parent-page__case-studies .notion-header__cover,
+.parent-page__create .notion-header__cover,
+.parent-page__faqs .notion-header__cover {
+  position: absolute !important;
+  width: 100% !important;
+  top: 0 !important;
+  margin-top: var(--navbar-height) !important;
+  z-index: -2 !important;
+  opacity: 0.9 !important;
+}
+
+.parent-page__guides .notion-header__cover::after,
+.parent-page__blog .notion-header__cover::after,
+.parent-page__case-studies .notion-header__cover::after,
+.parent-page__create .notion-header__cover::after,
+.parent-page__faqs .notion-header__cover::after {
+  content: "" !important;
+  position: absolute !important;
+  z-index: 1 !important;
+  left: 0 !important;
+  bottom: -2px !important;
+  background-image: linear-gradient(to bottom, rgba(253, 253, 252, 0), rgb(253, 253, 252) 100%) !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.parent-page__guides .notion-header__content.has-cover,
+.parent-page__blog .notion-header__content.has-cover,
+.parent-page__case-studies .notion-header__content.has-cover,
+.parent-page__create .notion-header__content.has-cover,
+.parent-page__faqs .notion-header__content.has-cover {
+  padding-top: 260px !important;
+}
+
+@media screen and (max-width: 576px) {
+  .parent-page__guides .notion-header__content.has-cover,
+  .parent-page__blog .notion-header__content.has-cover,
+  .parent-page__case-studies .notion-header__content.has-cover,
+  .parent-page__create .notion-header__content.has-cover,
+  .parent-page__faqs .notion-header__content.has-cover {
+    padding-top: 90px !important;
+  }
+}
+
+.parent-page__guides .notion-header__content.no-cover,
+.parent-page__blog .notion-header__content.no-cover,
+.parent-page__case-studies .notion-header__content.no-cover,
+.parent-page__create .notion-header__content.no-cover,
+.parent-page__faqs .notion-header__content.no-cover {
+  padding-top: 120px !important;
+}
+
+@media screen and (max-width: 576px) {
+  .parent-page__guides .notion-header__content.no-cover,
+  .parent-page__blog .notion-header__content.no-cover,
+  .parent-page__case-studies .notion-header__content.no-cover,
+  .parent-page__create .notion-header__content.no-cover,
+  .parent-page__faqs .notion-header__content.no-cover {
+    padding-top: 30px !important;
+  }
 }
 
 .parent-page__guides #block-8c2505c01a7d44d3b95db58542a095b4,
@@ -2000,6 +2065,7 @@ h2.notion-heading .notion-semantic-string {
   content: "" !important;
   position: absolute !important;
   z-index: 1 !important;
+  left: 0 !important;
   bottom: -2px !important;
   background-image: linear-gradient(to bottom, rgba(253, 253, 252, 0), rgb(253, 253, 252) 100%) !important;
   width: 100% !important;
