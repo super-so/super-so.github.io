@@ -792,7 +792,7 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__case-studies .notion-header__content.has-cover,
 .parent-page__create .notion-header__content.has-cover,
 .parent-page__faqs .notion-header__content.has-cover {
-  padding-top: 260px !important;
+  padding-top: 280px !important;
 }
 @media screen and (max-width: 576px) {
   .parent-page__guides .notion-header__content.has-cover,
