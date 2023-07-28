@@ -321,34 +321,34 @@ h2.notion-heading .notion-semantic-string {
         color: black !important;
     }
 
-    .notion-header__cover {
-        position: absolute !important;
-        width: 100% !important;
-        top: 0 !important;
-        margin-top: var(--navbar-height) !important;
-        z-index: -2 !important;
-        opacity: 0.9 !important;
+    // .notion-header__cover {
+    //     position: absolute !important;
+    //     width: 100% !important;
+    //     top: 0 !important;
+    //     margin-top: var(--navbar-height) !important;
+    //     z-index: -2 !important;
+    //     opacity: 0.9 !important;
 
-        &::after {
-            @include cover-gradient(100%);
-        }
-    }
+    //     &::after {
+    //         @include cover-gradient(100%);
+    //     }
+    // }
 
-    .notion-header__content.has-cover {
-        padding-top: 280px !important;
+    // .notion-header__content.has-cover {
+    //     padding-top: 280px !important;
 
-        @include breakpoint-xs {
-            padding-top: 90px !important;
-        }
-    }
+    //     @include breakpoint-xs {
+    //         padding-top: 90px !important;
+    //     }
+    // }
 
-    .notion-header__content.no-cover {
-        padding-top: 120px !important;
+    // .notion-header__content.no-cover {
+    //     padding-top: 120px !important;
 
-        @include breakpoint-xs {
-            padding-top: 30px !important;
-        }
-    }
+    //     @include breakpoint-xs {
+    //         padding-top: 30px !important;
+    //     }
+    // }
 
     // Testimonials
     #block-8c2505c01a7d44d3b95db58542a095b4 {
