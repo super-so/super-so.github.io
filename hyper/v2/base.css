@@ -42,7 +42,7 @@
     z-index: -2 !important;
 }
 
-.notion-header__content {
+.notion-header__cover.has-cover .notion-header__content {
     margin-top: 270px!important; 
 }
 
