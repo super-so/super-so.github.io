@@ -1,0 +1,14 @@
+:root {
+    --color-text-default: #ffffff!important;
+    --max-width: 640px!important;
+    --link-padding: 20px!important;
+    --link-border-radius: 18px!important;
+    --link-background: rgba(0, 0, 0, .3)!important;
+    --link-hover-background: rgba(0, 0, 0, .5)!important;
+    --link-backdrop-filter: blur(20px)!important;
+    --link-border: 1px solid rgba(0, 0, 0, .1)!important;
+    --link-color: #ffffff!important;
+    --link-shadow: 0 10px 40px -10px rgb(0 0 0 / 52%)!important;
+    --link-hover-shadow: 0 20px 40px -10px rgb(0 0 0 / 12%)!important;
+    --link-hover-translate: translate(0px, -2px)!important;
+}

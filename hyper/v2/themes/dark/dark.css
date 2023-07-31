@@ -1,0 +1,17 @@
+:root {
+    --color-bg-default: #2b2b2b!important;
+    --color-text-default: #f2f2f2!important;
+    --max-width: 690px!important;
+    --link-padding: 20px!important;
+    --link-border-radius: 5px!important;
+    --link-background: rgba(0, 0, 0, 0.2)!important;
+    --link-border: 1px solid rgba(0, 0, 0, .1)!important;
+    --link-color: #f2f2f2!important;
+    --link-shadow: 1px 2px 1px rgba(255, 255, 255, 0.05)!important;
+    --link-hover-shadow: 0 5px 10px rgba(32, 32, 32, .5)!important;
+    --link-hover-translate: translate(0, -2px)!important;
+    --link-hover-background: rgba(0, 0, 0, 0.1)!important;
+    --link-backdrop-filter: 0!important;
+    --header-color: #ffffff!important;
+    --header-shadow: 0!important;
+}

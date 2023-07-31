@@ -1,0 +1,14 @@
+:root {
+    --color-bg-default: #e0e0e0!important;
+    --color-text-default: #2b2b2b!important;
+    --max-width: 650px!important;
+    --link-padding: 20px!important;
+    --link-border-radius: 50px!important;
+    --link-background: #e0e0e0!important;
+    --link-border: 0!important;
+    --link-color: #2b2b2b!important;
+    --link-shadow: 6px 6px 10px #bcbcbc, -6px -6px 10px #ffffff!important;
+    --link-hover-shadow: 2px 2px 7px #bcbcbc, -2px -2px 7px #ffffff!important;
+    --link-hover-translate: translate(0, -2px)!important;
+    --link-hover-background: #e2e2e2!important;
+}

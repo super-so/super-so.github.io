@@ -1,0 +1,18 @@
+/* Sushi */
+
+:root {
+    --color-bg-default: #777dff!important;
+    --color-text-default: #f2f2f2!important;
+    --max-width: 650px!important;
+    --link-padding: 20px!important;
+    --link-border-radius: 16px!important;
+    --link-background: rgba(255, 255, 255, 0.09)!important;
+    --link-border: 1px solid rgba(255, 255, 255, 0.19)!important;
+    --link-color: #f2f2f2!important;
+    --link-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)!important;
+    --link-hover-shadow: 0 7px 12px rgba(0, 0, 0, 0.1)!important;
+    --link-hover-translate: translate(0, 2px)!important;
+    --link-backdrop-filter: blur(8.9px)!important;
+    --link-hover-background: rgba(255, 255, 255, 0.15)!important;
+    --color-text-default-light: #ffffff!important;
+}
