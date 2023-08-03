@@ -59,10 +59,6 @@
         display: none !important;
     }
 
-    .notion-callout {
-        @include callout-container;
-    }
-
     .color-default-light {
         color: var(--color-text-default) !important;
     }
@@ -75,6 +71,7 @@
         border: 10px solid rgb(248, 248, 248) !important;
         border-radius: 28px !important;
         z-index: 8 !important;
+        
 
         &::after {
             content: "" !important;
@@ -112,6 +109,8 @@
 
     // hero
     #block-ecf172bcab3b4ed18ff5a61a25973d43 {
+        @include callout-container;
+
         .notion-callout__content {
             @include center;
             flex-direction: column !important;
@@ -157,6 +156,7 @@
 
     // Main Features
     #block-7ab9119495eb487ca3f8ba07f27e4375 {
+        @include callout-container;
         @include full-width-section(linear-gradient(139.11deg, #7F67E1 10.36%, #553EB2 86.58%));
         box-shadow: 0px -20px 52px -22px rgba(111, 86, 205, 0.2), 0px -5px 8px -8px rgba(111, 86, 205, 0.9), 0px -11px 63px -17px rgba(111, 86, 205, 0.2), inset 0px 5px 10px 12px rgba(155, 132, 253, 0.04), 0px -56px 100px -54px rgba(111, 86, 205, 0.5) !important;
         width: 96vw !important;
@@ -208,7 +208,7 @@
 
     // Section paragraphs
     .notion-callout__content p:not(#block-395d66772d094e51a4b79acbeeba54e2) {
-        max-width: 420px !important;
+        max-width: 460px !important;
     }
 
     // app images
@@ -259,7 +259,6 @@
         color: #6950CE!important;
         background: linear-gradient(173deg, rgba(252,252,252,1) 0%, rgba(234,232,244,1) 100%)!important;
     }
-
     //final cta section
     #block-83011a02f7664f43a0d8d6af1b381ce5 {
         @include full-width-section(linear-gradient(139.11deg, #7F67E1 10.36%, #553EB2 86.58%));
@@ -273,6 +272,44 @@
         border: 2px solid rgba(255, 255, 255, .3) !important;
         position: relative !important;
         overflow: hidden !important;
+        --column-spacing: 8px!important;
+
+        
+
+        & > {
+            @include callout-container;
+        }
+
+        & > .notion-callout__content {
+            margin: 0 auto!important;
+            margin-inline-start: auto!important; 
+        }
+
+        .notion-column {
+            @include breakpoint-xs {
+                padding: 0px!important;
+            }
+        }
+
+        .notion-callout {
+            border: 0!important;
+            padding: 0 5px!important;
+            color: #ffffff!important;
+
+            .notion-callout__icon {
+                top: 0!important;
+                img {
+                    width: 36px!important;
+                    height: 36px!important;
+                }
+            }
+
+            .notion-callout__content {
+                justify-content: center!important;
+                align-items: flex-start!important;
+                margin-left: 12px!important;
+            }
+        }
 
         #block-dc142ae1a7ba4c8e8a207ba68216d7e6.notion-image {
             position: absolute !important;
@@ -299,4 +336,10 @@
             z-index: 2 !important;
         }
     }
+}
+
+#block-5a0ef73200a648d690c019d7c872e345,
+#block-8974e2943cda4dca948f08e25fcf6e73,
+#block-f4b0f4e1aa584b36a3a573d70f5f6156 {
+    @include callout-container;
 }
