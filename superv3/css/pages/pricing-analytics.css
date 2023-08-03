@@ -52,6 +52,7 @@
 #block-b636f7b4711d4a7f92d0a47b7b4f8349 h3:not(.toggle) {
   color: var(--color-text-default) !important;
   margin: 0 0 16px 0 !important;
+  text-align: left !important;
 }
 @media screen and (max-width: 576px) {
   #block-2e25b00541164b0f938f2da56fbd60f9 h3.notion-heading:not(.toggle),

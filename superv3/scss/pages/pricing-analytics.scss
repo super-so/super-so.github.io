@@ -41,6 +41,7 @@
     h3:not(.toggle) {
         color: var(--color-text-default) !important;
         margin: 0 0 16px 0 !important;
+        text-align: left!important;
 
         @include breakpoint-xs {
             font-size: 22px !important;
