@@ -1,0 +1,56 @@
+@import "../mixins";
+@import "../components/callout";
+
+#page-notion-consultants {
+
+    .notion-root {
+        align-items: center!important;
+        text-align: center!important;
+    }
+
+    .super-content {
+        padding-bottom: 0px !important;
+        padding-top: 16px !important;
+    }
+
+    .notion-callout {
+        @include callout-container;
+
+        .notion-callout__content {
+            text-align: center !important;
+        }
+    }
+
+    // cta 
+    #block-463a8f89fa044067b93e636903f45eca .notion-link {
+        @include button-primary-default;
+        margin-top: 16px !important;
+    }
+
+    // top paragraph
+    #block-17ce8d0d087041af80786d74d9696ae3 {
+        max-width: 640px!important;
+    }
+
+    .notion-header__content {
+        display: none!important;
+    }
+
+    .notion-heading {
+        text-align: center!important;
+    }
+
+    h1 {
+        font-size: 4rem !important;
+        max-width: 720px !important;
+        margin: 0 auto !important;
+        margin-top: 64px !important;
+        background: -webkit-linear-gradient(#262A2E, #34393E) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+
+        @include breakpoint-sm {
+            font-size: 2.8rem !important;
+        }
+    }
+}

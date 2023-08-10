@@ -3,6 +3,16 @@
   color: white !important;
 }
 
+#block-8efe5e39f22d4b96835bb13a347de589 {
+  width: 247px !important;
+}
+
+@media screen and (max-width: 576px) {
+  #block-ed522bf58c234f09b000fdf3b7a4868e {
+    width: 200px !important;
+  }
+}
+
 #page-analytics {
   font-size: 18px !important;
   --analytics-color: #7057CF;
