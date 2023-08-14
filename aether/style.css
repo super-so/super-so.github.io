@@ -680,10 +680,6 @@ th {
     overflow: auto !important;
 }
 
-pre {
-    position: relative !important;
-    transition: opacity .2s ease-in-out !important;
-}
 
 .notion-search.open .notion-search__wrapper {
     z-index: 100 !important;
