@@ -704,29 +704,6 @@ th {
     overflow: auto!important;
 }
 
-.copy-to-clipboard-button {
-    z-index: 9999!important;
-    border: 0 !important;
-    box-shadow: none !important;
-    background: 0 0 !important;
-    background: var(--color-primary) !important;
-    border: 1px solid var(--color-border-default);
-    color: var(--color-text-light) !important;
-    padding: 6px !important;
-    margin-right: 8px !important;
-    margin-top: 5px !important;
-    border-radius: 5px !important;
-    font-size: 14px !important;
-    font-family: 'Roboto Mono', monospace!important;
-    font-weight: 400 !important;
-    position: relative !important;
-}
-
-.copy-to-clipboard-button:hover {
-    cursor: pointer !important;
-    box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, 0.04) !important;
-}
-
 .notion-search.open .notion-search__wrapper {
     z-index: 100 !important;
 }
@@ -1161,7 +1138,6 @@ pre[class*="language-"] ::selection {
 
 pre[class*="language-"] {
     overflow: auto;
-    position: relative;
     margin: 0.5em 0;
     padding: 1.25em 1em;
 }
