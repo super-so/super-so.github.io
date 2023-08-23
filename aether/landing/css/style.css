@@ -43,6 +43,10 @@ body {
     border-bottom: 1px solid var(--color-border-default) !important;
     justify-content: center !important;
     z-index: 20 !important; }
+  #page-docs .super-navbar__breadcrumbs, .parent-page__docs .super-navbar__breadcrumbs, #page-documentation .super-navbar__breadcrumbs, .parent-page__documentation .super-navbar__breadcrumbs {
+    max-width: var(--content-width) !important;
+    padding-top: 8px !important;
+    border-top: 1px solid var(--color-border-default) !important; }
   #page-docs .super-navbar__content, .parent-page__docs .super-navbar__content, #page-documentation .super-navbar__content, .parent-page__documentation .super-navbar__content {
     max-width: var(--content-width) !important; }
   #page-docs .super-navbar__button.super-navbar__menu-open, .parent-page__docs .super-navbar__button.super-navbar__menu-open, #page-documentation .super-navbar__button.super-navbar__menu-open, .parent-page__documentation .super-navbar__button.super-navbar__menu-open {

@@ -44,6 +44,12 @@ body {
         z-index: 20 !important;
     }
 
+    .super-navbar__breadcrumbs {
+        max-width: var(--content-width)!important;
+        padding-top: 8px!important;
+        border-top: 1px solid var(--color-border-default)!important;
+    }
+
     .super-navbar__content {
         max-width: var(--content-width) !important;
     }
