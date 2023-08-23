@@ -36,12 +36,6 @@ body {
     display: none !important;
 }
 
-@include above-xs {
-    .super-navbar__menu-open {
-        display: none !important;
-    }
-}
-
 .resource .notion-page__title.notion-semantic-string {
     text-decoration: none !important;
     font-weight: 400 !important;
