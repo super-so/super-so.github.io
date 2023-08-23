@@ -13,17 +13,20 @@ function setupEmbeds() {
             const code = node.innerText.replace('super-embed:', '');
             const parentNode = clearBlock(node);
             parentNode.innerHTML = code;
+            
             parentNode.querySelectorAll('script').forEach((script) => {
                 if (!script.src && script.innerText) {
                     eval(script.innerText);
+                    script.remove();  // Removing the original inline script after evaluation
                 } else {
                     const scr = document.createElement('script');
                     Array.from(script.attributes).forEach(attr => {
                         scr.setAttribute(attr.name, attr.value);
                     });
-                    document.body.appendChild(scr);
+                    script.parentNode.insertBefore(scr, script.nextSibling); // Insert new script right after the original one
+                    script.remove(); // Remove the original script
                 }
-            })
+            });
         }
     });
 }
