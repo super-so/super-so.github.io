@@ -74,6 +74,7 @@ body {
     -moz-box-shadow: 0 25px 36px rgba(255, 255, 255, 0.4)!important;
     justify-content: center !important;
     z-index: 20!important;
+    display: flex!important;
 }
 
 .theme-dark .super-navbar {
