@@ -42,8 +42,7 @@ body {
   .parent-page__documentation .notion-navbar {
     border-bottom: 1px solid var(--color-border-default) !important;
     justify-content: center !important;
-    z-index: 20 !important;
-    height: 70px !important; }
+    z-index: 20 !important; }
   #page-docs .super-navbar__content, .parent-page__docs .super-navbar__content, #page-documentation .super-navbar__content, .parent-page__documentation .super-navbar__content {
     max-width: var(--content-width) !important; }
   #page-docs .super-navbar__button.super-navbar__menu-open, .parent-page__docs .super-navbar__button.super-navbar__menu-open, #page-documentation .super-navbar__button.super-navbar__menu-open, .parent-page__documentation .super-navbar__button.super-navbar__menu-open {
@@ -172,7 +171,7 @@ body {
     margin-top: 0px !important; }
   #page-docs .notion-root > .notion-column-list > .notion-column:first-child, .parent-page__docs .notion-root > .notion-column-list > .notion-column:first-child, #page-documentation .notion-root > .notion-column-list > .notion-column:first-child, .parent-page__documentation .notion-root > .notion-column-list > .notion-column:first-child {
     background: transparent !important;
-    height: calc(100vh - 70px) !important;
+    height: calc(100vh - var(--navbar-height)) !important;
     flex-shrink: 0 !important;
     position: sticky !important;
     position: -webkit-sticky !important;
@@ -241,7 +240,7 @@ body {
   #page-docs .notion-root > .notion-column-list > .notion-column:nth-child(3), .parent-page__docs .notion-root > .notion-column-list > .notion-column:nth-child(3), #page-documentation .notion-root > .notion-column-list > .notion-column:nth-child(3), .parent-page__documentation .notion-root > .notion-column-list > .notion-column:nth-child(3) {
     margin-left: 0 !important;
     min-width: 130px !important;
-    height: calc(100vh - 70px) !important;
+    height: calc(100vh - var(--navbar-height)) !important;
     flex-shrink: 0 !important;
     position: sticky !important;
     position: -webkit-sticky !important;

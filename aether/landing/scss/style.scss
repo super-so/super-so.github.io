@@ -42,7 +42,6 @@ body {
         border-bottom: 1px solid var(--color-border-default) !important;
         justify-content: center !important;
         z-index: 20 !important;
-        height: 70px !important;
     }
 
     .super-navbar__content {
@@ -252,7 +251,7 @@ body {
 
     .notion-root>.notion-column-list>.notion-column:first-child {
         background: transparent !important;
-        height: calc(100vh - 70px) !important;
+        height: calc(100vh - var(--navbar-height)) !important;
         flex-shrink: 0 !important;
         position: sticky !important;
         position: -webkit-sticky !important;
@@ -351,7 +350,7 @@ body {
     .notion-root>.notion-column-list>.notion-column:nth-child(3) {
         margin-left: 0 !important;
         min-width: 130px !important;
-        height: calc(100vh - 70px) !important;
+        height: calc(100vh - var(--navbar-height)) !important;
         flex-shrink: 0 !important;
         position: sticky !important;
         position: -webkit-sticky !important;
