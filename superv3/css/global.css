@@ -402,8 +402,8 @@
     transform: none !important;
   }
   .notion-dropdown__menu.animate-in.animate-out,
-.notion-dropdown__menu.animate-in,
-.notion-dropdown__menu.animate-out {
+  .notion-dropdown__menu.animate-in,
+  .notion-dropdown__menu.animate-out {
     animation: none !important;
   }
   .notion-dropdown__menu {
@@ -477,11 +477,6 @@ body {
   display: none !important;
 }
 
-@media all and (min-width: 576px) {
-  .super-navbar__menu-open {
-    display: none !important;
-  }
-}
 .resource .notion-page__title.notion-semantic-string {
   text-decoration: none !important;
   font-weight: 400 !important;
@@ -571,17 +566,17 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 576px) {
   #page-features .notion-header__title,
-#page-templates .notion-header__title,
-#page-showcase .notion-header__title,
-#page-icons .notion-header__title,
-#page-icons-light .notion-header__title,
-#page-illustrations .notion-header__title,
-#page-guides .notion-header__title,
-#page-blog .notion-header__title,
-#page-create .notion-header__title,
-#page-report .notion-header__title,
-#page-builder .notion-header__title,
-#page-faqs .notion-header__title {
+  #page-templates .notion-header__title,
+  #page-showcase .notion-header__title,
+  #page-icons .notion-header__title,
+  #page-icons-light .notion-header__title,
+  #page-illustrations .notion-header__title,
+  #page-guides .notion-header__title,
+  #page-blog .notion-header__title,
+  #page-create .notion-header__title,
+  #page-report .notion-header__title,
+  #page-builder .notion-header__title,
+  #page-faqs .notion-header__title {
     top: 86px !important;
   }
 }
@@ -634,8 +629,8 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 576px) {
   #page-index .super-content,
-.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .super-content,
-.parent-page__promo .super-content {
+  .parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .super-content,
+  .parent-page__promo .super-content {
     padding-top: 100px !important;
   }
 }
@@ -707,7 +702,7 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 576px) {
   #page-builder .notion-callout.bg-gray-light,
-#page-index .notion-callout.bg-gray-light {
+  #page-index .notion-callout.bg-gray-light {
     padding: 8px !important;
   }
 }
@@ -787,19 +782,19 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 576px) {
   .parent-page__guides #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
-.parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
-.parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
-.parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
-.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content {
+  .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
+  .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
+  .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
+  .parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content {
     padding: 60px 25px !important;
   }
 }
 @media screen and (max-width: 768px) {
   .parent-page__guides #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column,
-.parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column,
-.parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column,
-.parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column,
-.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column {
+  .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column,
+  .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column,
+  .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column,
+  .parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column {
     padding: 0 !important;
   }
 }
@@ -890,10 +885,10 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 768px) {
   .parent-page__guides #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
-.parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
-.parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
-.parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
-.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child {
+  .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
+  .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
+  .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
+  .parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child {
     width: calc((100% - var(--column-spacing) * 1) * 0.75) !important;
   }
 }
@@ -920,19 +915,19 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 992px) {
   .parent-page__guides #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child,
-.parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child,
-.parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child,
-.parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child,
-.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child {
+  .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child,
+  .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child,
+  .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child,
+  .parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child {
     display: none !important;
   }
 }
 @media screen and (max-width: 992px) {
   .parent-page__guides #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column,
-.parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column,
-.parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column,
-.parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column,
-.parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column {
+  .parent-page__blog #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column,
+  .parent-page__case-studies #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column,
+  .parent-page__create #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column,
+  .parent-page__faqs #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column {
     flex-grow: 1 !important;
   }
 }
@@ -1173,10 +1168,10 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 992px) {
   .parent-page__guides #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
-.parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
-.parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
-.parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
-.parent-page__faqs #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child {
+  .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
+  .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
+  .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
+  .parent-page__faqs #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child {
     top: 20% !important;
     width: 100% !important;
     max-width: 140% !important;
@@ -1185,10 +1180,10 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 576px) {
   .parent-page__guides #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
-.parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
-.parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
-.parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
-.parent-page__faqs #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child {
+  .parent-page__blog #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
+  .parent-page__case-studies #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
+  .parent-page__create #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child,
+  .parent-page__faqs #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-image:last-child {
     top: 135% !important;
     width: 140% !important;
     height: 280% !important;
@@ -1267,13 +1262,13 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 576px) {
   #page-pricing #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content,
-#page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content {
+  #page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content {
     padding: 60px 25px !important;
   }
 }
 @media screen and (max-width: 768px) {
   #page-pricing #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column,
-#page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column {
+  #page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 .notion-column {
     padding: 0 !important;
   }
 }
@@ -1334,7 +1329,7 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 768px) {
   #page-pricing #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child,
-#page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child {
+  #page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 .notion-callout .notion-column:last-child {
     width: calc((100% - var(--column-spacing) * 1) * 0.75) !important;
   }
 }
@@ -1352,13 +1347,13 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 992px) {
   #page-pricing #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child,
-#page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child {
+  #page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list > :last-child {
     display: none !important;
   }
 }
 @media screen and (max-width: 992px) {
   #page-pricing #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column,
-#page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column {
+  #page-pricing-annual #block-8c2505c01a7d44d3b95db58542a095b4 > .notion-callout__content > .notion-column-list .notion-column {
     flex-grow: 1 !important;
   }
 }
@@ -1397,7 +1392,7 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 576px) {
   #page-pricing #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column:last-child,
-#page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column:last-child {
+  #page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column:last-child {
     padding-top: 8px !important;
     padding-bottom: 8px !important;
     width: 100% !important;
@@ -1412,7 +1407,7 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 576px) {
   #page-pricing #block-e5bbddb674254449a439e4d6a593c5da .notion-column:last-child,
-#page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column:last-child {
+  #page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column:last-child {
     margin: 0px !important;
   }
 }
@@ -1430,18 +1425,18 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 576px) {
   #page-pricing #block-5f4034b33f5e4ef5aee7421baadd223e,
-#page-pricing #block-e5bbddb674254449a439e4d6a593c5da,
-#page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e,
-#page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da {
+  #page-pricing #block-e5bbddb674254449a439e4d6a593c5da,
+  #page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e,
+  #page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da {
     border-radius: 12px !important;
     width: 100% !important;
   }
 }
 @media screen and (max-width: 576px) {
   #page-pricing #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column-list,
-#page-pricing #block-e5bbddb674254449a439e4d6a593c5da .notion-column-list,
-#page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column-list,
-#page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column-list {
+  #page-pricing #block-e5bbddb674254449a439e4d6a593c5da .notion-column-list,
+  #page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column-list,
+  #page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column-list {
     flex-wrap: nowrap !important;
   }
 }
@@ -1460,9 +1455,9 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 576px) {
   #page-pricing #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column,
-#page-pricing #block-e5bbddb674254449a439e4d6a593c5da .notion-column,
-#page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column,
-#page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column {
+  #page-pricing #block-e5bbddb674254449a439e4d6a593c5da .notion-column,
+  #page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column,
+  #page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column {
     width: 100% !important;
     border-radius: 8px !important;
   }
@@ -1505,9 +1500,9 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 576px) {
   #page-pricing #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column .notion-link,
-#page-pricing #block-e5bbddb674254449a439e4d6a593c5da .notion-column .notion-link,
-#page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column .notion-link,
-#page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column .notion-link {
+  #page-pricing #block-e5bbddb674254449a439e4d6a593c5da .notion-column .notion-link,
+  #page-pricing-annual #block-5f4034b33f5e4ef5aee7421baadd223e .notion-column .notion-link,
+  #page-pricing-annual #block-e5bbddb674254449a439e4d6a593c5da .notion-column .notion-link {
     border-radius: 8px !important;
   }
 }
@@ -1735,9 +1730,9 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 992px) {
   #page-pricing #block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout .notion-callout__content,
-#page-pricing #block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout .notion-callout__content,
-#page-pricing-annual #block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout .notion-callout__content,
-#page-pricing-annual #block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout .notion-callout__content {
+  #page-pricing #block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout .notion-callout__content,
+  #page-pricing-annual #block-f59ac23d8cf344f084e546567605a696 .notion-callout:first-child .notion-callout .notion-callout__content,
+  #page-pricing-annual #block-abea645bf4084158b5f710c635984ec4 .notion-callout:first-child .notion-callout .notion-callout__content {
     flex-direction: column !important;
     align-items: flex-start !important;
   }
@@ -1899,8 +1894,8 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 768px) {
   .parent-page__promo h2,
-.parent-page__promo h2.notion-heading,
-.parent-page__promo h2.notion-heading span {
+  .parent-page__promo h2.notion-heading,
+  .parent-page__promo h2.notion-heading span {
     font-size: 1.8rem !important;
   }
 }
@@ -1912,8 +1907,8 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 768px) {
   .parent-page__promo h3,
-.parent-page__promo h3.notion-heading,
-.parent-page__promo h3.notion-heading span {
+  .parent-page__promo h3.notion-heading,
+  .parent-page__promo h3.notion-heading span {
     font-size: 1.2rem !important;
     line-height: 0.4 !important;
   }
@@ -2112,7 +2107,7 @@ h2.notion-heading .notion-semantic-string {
 }
 @media screen and (max-width: 576px) {
   .parent-page__promo #block-a149f8b0a9824ab5934b95f1a8098cc0 > .notion-callout__content,
-.parent-page__promo #block-1475b60ceea54b3fbd9d4822faa45549 > .notion-callout__content {
+  .parent-page__promo #block-1475b60ceea54b3fbd9d4822faa45549 > .notion-callout__content {
     padding: 60px 25px !important;
   }
 }
