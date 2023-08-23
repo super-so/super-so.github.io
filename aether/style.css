@@ -39,9 +39,9 @@ body {
 .super-navbar,
 .notion-navbar {
     border-bottom: 1px solid var(--color-border-default) !important;
+    display: flex!important;
     justify-content: center !important;
     z-index: 20 !important;
-    height: 70px !important;
 }
 
 .super-navbar__content {
@@ -421,11 +421,11 @@ ul>.notion-list-item:before {
 
 .notion-root>.notion-column-list>.notion-column:first-child {
     background: transparent !important;
-    height: calc(100vh - 70px) !important;
+    height: calc(100vh - var(--navbar-height)) !important;
     flex-shrink: 0 !important;
     position: sticky !important;
     position: -webkit-sticky !important;
-    top: 70px !important;
+    top: var(--navbar-height) !important;
     overflow: auto !important;
     padding: 15px !important;
     padding-top: 25px !important;
@@ -522,11 +522,11 @@ ul>.notion-list-item:before {
 .notion-root>.notion-column-list>.notion-column:nth-child(3) {
     margin-left: 0 !important;
     min-width: 130px !important;
-    height: calc(100vh - 70px) !important;
+    height: calc(100vh - var(--navbar-height)) !important;
     flex-shrink: 0 !important;
     position: sticky !important;
     position: -webkit-sticky !important;
-    top: 70px !important;
+    top: var(--navbar-height) !important;
     /*position: fixed;*/
     padding: 30px !important;
     padding-top: 25px !important;
