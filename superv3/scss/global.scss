@@ -168,15 +168,16 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__index:not(#page-privacy, #page-terms, #page-analytics),
 .parent-page__promo {
     .notion-header__cover {
-        height: 110vh !important;
+        height: 78vh !important;
         width: 100% !important;
         max-height: none !important;
         z-index: -9999 !important;
         position: absolute !important;
-        top: -110px !important;
+        top: -185px !important; 
 
         &::after {
             @include cover-gradient(100vh);
+            height: 55vh!important;
         }
 
         img {

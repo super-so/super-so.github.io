@@ -640,12 +640,12 @@ h2.notion-heading .notion-semantic-string {
 #page-index .notion-header__cover,
 .parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-header__cover,
 .parent-page__promo .notion-header__cover {
-  height: 110vh !important;
+  height: 78vh !important;
   width: 100% !important;
   max-height: none !important;
   z-index: -9999 !important;
   position: absolute !important;
-  top: -110px !important;
+  top: -185px !important;
 }
 
 #page-index .notion-header__cover::after,
@@ -659,6 +659,7 @@ h2.notion-heading .notion-semantic-string {
   background-image: linear-gradient(to bottom, rgba(253, 253, 252, 0), rgb(253, 253, 252) 100%) !important;
   width: 100% !important;
   height: 100vh !important;
+  height: 55vh !important;
 }
 
 #page-index .notion-header__cover img,
@@ -2794,6 +2795,13 @@ h2.notion-heading .notion-semantic-string {
   #page-analytics #block-83011a02f7664f43a0d8d6af1b381ce5 > .notion-callout__content {
     padding: 60px 25px !important;
   }
+}
+
+#page-analytics #block-83011a02f7664f43a0d8d6af1b381ce5 > {
+  padding: 0px !important;
+  margin: 0px !important;
+  border: none !important;
+  overflow: visible !important;
 }
 
 #page-analytics #block-83011a02f7664f43a0d8d6af1b381ce5 > .notion-callout__icon {

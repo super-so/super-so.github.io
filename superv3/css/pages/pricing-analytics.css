@@ -56,11 +56,11 @@
 }
 @media screen and (max-width: 576px) {
   #block-2e25b00541164b0f938f2da56fbd60f9 h3.notion-heading:not(.toggle),
-  #block-2e25b00541164b0f938f2da56fbd60f9 h3.notion-heading:not(.toggle) span,
-  #block-2e25b00541164b0f938f2da56fbd60f9 h3:not(.toggle),
-  #block-b636f7b4711d4a7f92d0a47b7b4f8349 h3.notion-heading:not(.toggle),
-  #block-b636f7b4711d4a7f92d0a47b7b4f8349 h3.notion-heading:not(.toggle) span,
-  #block-b636f7b4711d4a7f92d0a47b7b4f8349 h3:not(.toggle) {
+#block-2e25b00541164b0f938f2da56fbd60f9 h3.notion-heading:not(.toggle) span,
+#block-2e25b00541164b0f938f2da56fbd60f9 h3:not(.toggle),
+#block-b636f7b4711d4a7f92d0a47b7b4f8349 h3.notion-heading:not(.toggle),
+#block-b636f7b4711d4a7f92d0a47b7b4f8349 h3.notion-heading:not(.toggle) span,
+#block-b636f7b4711d4a7f92d0a47b7b4f8349 h3:not(.toggle) {
     font-size: 22px !important;
   }
 }
@@ -98,7 +98,7 @@
 }
 @media screen and (max-width: 576px) {
   #block-2e25b00541164b0f938f2da56fbd60f9 .notion-column-list .notion-column,
-  #block-b636f7b4711d4a7f92d0a47b7b4f8349 .notion-column-list .notion-column {
+#block-b636f7b4711d4a7f92d0a47b7b4f8349 .notion-column-list .notion-column {
     padding: 0 !important;
   }
 }
@@ -158,7 +158,7 @@
 }
 @media screen and (max-width: 576px) {
   #block-2e25b00541164b0f938f2da56fbd60f9 .notion-column-list > .notion-column:nth-child(1) .notion-callout .notion-column:nth-child(2) p,
-  #block-b636f7b4711d4a7f92d0a47b7b4f8349 .notion-column-list > .notion-column:nth-child(1) .notion-callout .notion-column:nth-child(2) p {
+#block-b636f7b4711d4a7f92d0a47b7b4f8349 .notion-column-list > .notion-column:nth-child(1) .notion-callout .notion-column:nth-child(2) p {
     font-size: 14px !important;
   }
 }
@@ -192,7 +192,7 @@
 }
 @media screen and (max-width: 576px) {
   #block-2e25b00541164b0f938f2da56fbd60f9 .notion-column-list > .notion-column:nth-child(1) strong,
-  #block-b636f7b4711d4a7f92d0a47b7b4f8349 .notion-column-list > .notion-column:nth-child(1) strong {
+#block-b636f7b4711d4a7f92d0a47b7b4f8349 .notion-column-list > .notion-column:nth-child(1) strong {
     font-size: 26px !important;
   }
 }
@@ -202,7 +202,7 @@
 }
 @media screen and (max-width: 576px) {
   #block-2e25b00541164b0f938f2da56fbd60f9 .notion-column-list .notion-column:nth-child(2),
-  #block-b636f7b4711d4a7f92d0a47b7b4f8349 .notion-column-list .notion-column:nth-child(2) {
+#block-b636f7b4711d4a7f92d0a47b7b4f8349 .notion-column-list .notion-column:nth-child(2) {
     width: 100% !important;
   }
 }
@@ -213,7 +213,7 @@
 }
 @media screen and (max-width: 576px) {
   #block-2e25b00541164b0f938f2da56fbd60f9 .notion-column-list .notion-column:nth-child(2) .notion-callout,
-  #block-b636f7b4711d4a7f92d0a47b7b4f8349 .notion-column-list .notion-column:nth-child(2) .notion-callout {
+#block-b636f7b4711d4a7f92d0a47b7b4f8349 .notion-column-list .notion-column:nth-child(2) .notion-callout {
     margin-bottom: 16px !important;
   }
 }
