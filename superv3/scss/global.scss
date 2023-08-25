@@ -176,12 +176,17 @@ h2.notion-heading .notion-semantic-string {
         top: -185px !important; 
 
         @include breakpoint-xs {
-            top: -70px !important;
+            top: 10px !important;
+            height: 37vh!important;
         }
 
         &::after {
             @include cover-gradient(100vh);
             height: 55vh!important;
+
+            @include breakpoint-xs {
+                height: 15vh!important;
+            }
         }
 
         img {
