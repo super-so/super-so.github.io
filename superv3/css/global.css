@@ -591,6 +591,13 @@ h2.notion-heading .notion-semantic-string {
   position: absolute !important;
   top: -185px !important;
 }
+@media screen and (max-width: 576px) {
+  #page-index .notion-header__cover,
+.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-header__cover,
+.parent-page__promo .notion-header__cover {
+    top: -70px !important;
+  }
+}
 #page-index .notion-header__cover::after,
 .parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-header__cover::after,
 .parent-page__promo .notion-header__cover::after {

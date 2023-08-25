@@ -175,6 +175,10 @@ h2.notion-heading .notion-semantic-string {
         position: absolute !important;
         top: -185px !important; 
 
+        @include breakpoint-xs {
+            top: -70px !important;
+        }
+
         &::after {
             @include cover-gradient(100vh);
             height: 55vh!important;
