@@ -3128,14 +3128,6 @@ h2.notion-heading .notion-semantic-string {
   background: transparent !important;
 }
 
-#page-index .super-navbar.scrolled {
-  -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
-  -moz-backdrop-filter: blur(20px) saturate(200%) !important;
-  backdrop-filter: blur(20px) saturate(200%) !important;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.04) !important;
-  background: rgba(255, 255, 255, 0.85) !important;
-}
-
 #page-index #block-27fd04823c514c298f2acd7394630eaa * {
   max-height: 730px !important;
   width: 100% !important;
