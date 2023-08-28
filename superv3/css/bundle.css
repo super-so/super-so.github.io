@@ -2004,7 +2004,7 @@ h2.notion-heading .notion-semantic-string {
   width: 140px !important;
   height: 140px !important;
   left: -10px !important;
-  z-index: 999 !important;
+  z-index: 1 !important;
 }
 
 .parent-page__features .notion-header__cover:after {
