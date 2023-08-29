@@ -321,10 +321,6 @@
   background: var(--gray-50) !important;
 }
 
-#page-index .super-navbar {
-  background: transparent !important;
-}
-
 .super-navbar {
   -webkit-backdrop-filter: blur(4px) !important;
   -moz-backdrop-filter: blur(4px) !important;
@@ -2173,10 +2169,6 @@ h2.notion-heading .notion-semantic-string {
   background: var(--gray-25) !important;
   color: var(--gray-900) !important;
 }
-.super-navbar {
-  background: transparent !important;
-}
-
 #block-27fd04823c514c298f2acd7394630eaa * {
   max-height: 730px !important;
   width: 100% !important;
