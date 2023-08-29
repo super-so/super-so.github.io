@@ -471,6 +471,13 @@ body {
   -moz-osx-font-smoothing: grayscale !important;
   text-rendering: optimizeLegibility !important;
   font-weight: 400 !important;
+  overflow-x: hidden !important;
+}
+
+@media all and (min-width: 576px) {
+  .super-navbar__button {
+    display: none !important;
+  }
 }
 
 .notion-toggle.bg-brown {

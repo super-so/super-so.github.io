@@ -25,6 +25,13 @@ body {
     -moz-osx-font-smoothing: grayscale !important;
     text-rendering: optimizeLegibility !important;
     font-weight: 400 !important;
+    overflow-x: hidden!important;
+}
+
+.super-navbar__button {
+    @include above-xs {
+        display: none!important;
+    }
 }
 
 // ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
