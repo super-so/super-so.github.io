@@ -558,12 +558,15 @@ ul>.notion-list-item:before {
 
 .notion-root>.notion-column-list>.notion-column:first-child::-webkit-scrollbar,
 .notion-root>.notion-column-list>.notion-column:nth-child(3)::-webkit-scrollbar {
-    width: 6px !important;
+    width: 12px !important;
+    border: 0!important;
+    background: transparent!important;
 }
 
 .notion-root>.notion-column-list>.notion-column:first-child::-webkit-scrollbar-track,
 .notion-root>.notion-column-list>.notion-column:nth-child(3)::-webkit-scrollbar-track {
     background: transparent !important;
+    border: 0!important;
 }
 
 .notion-root>.notion-column-list>.notion-column:first-child::-webkit-scrollbar-thumb,
