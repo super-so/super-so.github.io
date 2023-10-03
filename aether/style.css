@@ -42,12 +42,13 @@ body {
     display: flex!important;
     justify-content: center !important;
     z-index: 20 !important;
+    flex-direction: column!important;
+    align-items: center;
 }
 
 .super-navbar__breadcrumbs {
     max-width: var(--content-width)!important;
     padding-top: 8px!important;
-    border-top: 1px solid var(--color-border-default)!important;
 }
 
 .super-navbar__content {
