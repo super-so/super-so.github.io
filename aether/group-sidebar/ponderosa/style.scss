@@ -1,6 +1,6 @@
 
-/* Start first col specific */
 .notion-root>.notion-column-list>.notion-column:first-child {
+  min-width: 350px !important;
   padding-left: 24px !important;
   --color-pill-text-default: var(--color-text-default)!important;
   
@@ -17,14 +17,12 @@
     margin-inline-end: 0!important;
   }
 
-/* Start group list specitic*/ 
 .notion-collection-group__list {
   
     .notion-collection-group__section:not(:last-child) {
     margin-bottom: 8px!important;
   }
   
-  /* Sidebar heading pill */
   .notion-collection-group__section-header .notion-pill {
     padding: 0px !important;
     margin: 0px !important;
@@ -106,16 +104,7 @@
   .notion-collection-group__section-header:not(.no-border) {
     border: 0!important;
   }
-  /* End group list specific*/
 }
-/* End first col specific */
-}
-
-
-/* PONDEROSA SPECIFIC */
-
-.notion-root>.notion-column-list>.notion-column:first-child {
-  width: 350px !important;
 }
 
 .notion-image img {

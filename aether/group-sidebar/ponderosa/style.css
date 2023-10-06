@@ -1,9 +1,7 @@
-/* Start first col specific */
 .notion-root > .notion-column-list > .notion-column:first-child {
+  min-width: 350px !important;
   padding-left: 24px !important;
   --color-pill-text-default: var(--color-text-default)!important;
-  /* Start group list specitic*/
-  /* End first col specific */
 }
 .notion-root > .notion-column-list > .notion-column:first-child .notion-text .color-gray {
   margin-left: 0px !important;
@@ -15,10 +13,6 @@
   font-size: 0.675rem !important;
   padding: 0px 5px !important;
   margin-inline-end: 0 !important;
-}
-.notion-root > .notion-column-list > .notion-column:first-child .notion-collection-group__list {
-  /* Sidebar heading pill */
-  /* End group list specific*/
 }
 .notion-root > .notion-column-list > .notion-column:first-child .notion-collection-group__list .notion-collection-group__section:not(:last-child) {
   margin-bottom: 8px !important;
@@ -89,11 +83,6 @@
 }
 .notion-root > .notion-column-list > .notion-column:first-child .notion-collection-group__list .notion-collection-group__section-header:not(.no-border) {
   border: 0 !important;
-}
-
-/* PONDEROSA SPECIFIC */
-.notion-root > .notion-column-list > .notion-column:first-child {
-  width: 350px !important;
 }
 
 .notion-image img {
