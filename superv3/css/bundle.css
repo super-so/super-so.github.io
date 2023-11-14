@@ -1824,13 +1824,6 @@ h2.notion-heading .notion-semantic-string {
   }
 }
 
-#page-analytics #block-83011a02f7664f43a0d8d6af1b381ce5 > {
-  padding: 0px !important;
-  margin: 0px !important;
-  border: none !important;
-  overflow: visible !important;
-}
-
 #page-analytics #block-83011a02f7664f43a0d8d6af1b381ce5 > .notion-callout__icon {
   display: none !important;
 }
@@ -2303,6 +2296,7 @@ h3.notion-heading {
 
 #block-c2b91ef5f88a4f49a294e572dc98ca5f.notion-callout .notion-callout__content {
   display: flex !important;
+  flex-direction: row !important;
   flex-wrap: wrap !important;
   max-width: 800px !important;
   gap: 32px !important;
