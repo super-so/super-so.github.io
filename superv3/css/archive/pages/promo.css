@@ -27,8 +27,8 @@
 }
 @media screen and (max-width: 768px) {
   .parent-page__promo h2,
-.parent-page__promo h2.notion-heading,
-.parent-page__promo h2.notion-heading span {
+  .parent-page__promo h2.notion-heading,
+  .parent-page__promo h2.notion-heading span {
     font-size: 1.8rem !important;
   }
 }
@@ -40,8 +40,8 @@
 }
 @media screen and (max-width: 768px) {
   .parent-page__promo h3,
-.parent-page__promo h3.notion-heading,
-.parent-page__promo h3.notion-heading span {
+  .parent-page__promo h3.notion-heading,
+  .parent-page__promo h3.notion-heading span {
     font-size: 1.2rem !important;
     line-height: 0.4 !important;
   }
@@ -240,7 +240,7 @@
 }
 @media screen and (max-width: 576px) {
   .parent-page__promo #block-a149f8b0a9824ab5934b95f1a8098cc0 > .notion-callout__content,
-.parent-page__promo #block-1475b60ceea54b3fbd9d4822faa45549 > .notion-callout__content {
+  .parent-page__promo #block-1475b60ceea54b3fbd9d4822faa45549 > .notion-callout__content {
     padding: 60px 25px !important;
   }
 }

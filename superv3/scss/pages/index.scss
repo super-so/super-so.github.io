@@ -145,6 +145,7 @@ h3.notion-heading {
 #block-c2b91ef5f88a4f49a294e572dc98ca5f.notion-callout {
     .notion-callout__content {
         display: flex !important;
+        flex-direction: row !important;
         flex-wrap: wrap !important;
         max-width: 800px !important;
         gap: 32px !important;
