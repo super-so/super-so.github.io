@@ -1951,6 +1951,13 @@ strong {
   color: var(--gray-900) !important;
 }
 
+#block-a52b1cde030c414a8b5b67976efd4819,
+#block-ac382547b86b4070bc20ff631119471e,
+#block-2195d1c4c7a7467da3aee18396470b85 {
+  position: relative !important;
+  left: -14px !important;
+}
+
 #block-e7e2e08b6c3c4dc5bbdf1b0e3b7fe91a .notion-link,
 #block-1a9aa39b692b4bf0bbcb11b5d18959a4 .notion-link,
 #block-5666a5b98bcb42e9a886ba87fb71a76c .notion-link {
@@ -2039,6 +2046,12 @@ strong {
   margin-top: 16px !important;
 }
 
+@media screen and (max-width: 992px) {
+  .notion-callout__content > .notion-column-list:last-child {
+    flex-direction: column !important;
+  }
+}
+
 .notion-callout__content > .notion-column-list:last-child .notion-column {
   padding: 0 !important;
 }
@@ -2048,10 +2061,12 @@ strong {
   justify-content: center !important;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .notion-callout__content > .notion-column-list:last-child .notion-column:last-child {
     align-items: flex-start !important;
     margin-top: 16px !important;
+    margin-inline-start: 0 !important;
+    width: 100% !important;
   }
 }
 
