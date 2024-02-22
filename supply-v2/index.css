@@ -141,7 +141,6 @@ h2 {
     position: absolute!important;
     right: 0!important;
     top: 0!important;
-    padding: 10px!important;
     background: var(--color-text-default)!important;
     color: var(--color-bg-default)!important;
     border-radius: 50px!important;
