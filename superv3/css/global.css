@@ -1016,12 +1016,19 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__faqs .parent-page__blog h3.notion-heading:not(.notion-callout, h3.notion-heading) {
   margin-top: 2.2rem !important;
 }
-.parent-page__guides p.notion-text,
-.parent-page__blog p.notion-text,
-.parent-page__case-studies p.notion-text,
-.parent-page__create p.notion-text,
-.parent-page__faqs p.notion-text {
-  margin-top: 1rem !important;
+.parent-page__guides .notion-text,
+.parent-page__blog .notion-text,
+.parent-page__case-studies .notion-text,
+.parent-page__create .notion-text,
+.parent-page__faqs .notion-text {
+  margin: 0.3rem 0 !important;
+}
+.parent-page__guides blockquote,
+.parent-page__blog blockquote,
+.parent-page__case-studies blockquote,
+.parent-page__create blockquote,
+.parent-page__faqs blockquote {
+  margin: 1rem 0 !important;
 }
 .parent-page__guides h3,
 .parent-page__guides h3.notion-heading,
