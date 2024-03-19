@@ -290,25 +290,18 @@ h2.notion-heading {
 
     .notion-collection-card__content {
         display: flex!important;
-        flex-direction: row!important;
         gap: 24px!important;
         justify-content: space-between!important;
         background: var(--large-gallery-background-color)!important;
         color: var(--large-gallery-text-color)!important;
         border-radius: 16px 16px 0px 0px!important;
         padding: 40px!important;
-        @include breakpoint-sm {
-            flex-direction: column!important;
-        }
     }
 
 
 
     .notion-collection-card__property-list {
-        display: flex!important;
-        flex-direction: column!important;
         gap: 8px!important;
-        max-width: 420px!important;
     }
 
     .notion-collection-card__property-list {
@@ -317,6 +310,7 @@ h2.notion-heading {
 
     .notion-property__text {
         font-size: 1rem!important;
+        white-space: pre-wrap!important;
     }
 
     .notion-property__title {
@@ -324,7 +318,6 @@ h2.notion-heading {
         max-width: 360px!important;
 
         .notion-semantic-string {
-            line-height: 1.2!important;
             font-weight: 600!important;
         }
     }
