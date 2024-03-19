@@ -113,6 +113,7 @@ h3.notion-heading * {
     margin-top: 8px !important;
     border: 1px solid transparent !important;
     transition: opacity .2s ease-in-out !important;
+    text-decoration: none!important;
 }
 
 .notion-root .notion-text strong .notion-link:hover {
