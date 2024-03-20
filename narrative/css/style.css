@@ -59,6 +59,10 @@ body {
   .notion-header__title-wrapper div:first-child {
     display: none !important; }
 
+.notion-root {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
 .notion-root.full-width, .notion-collection-page {
   max-width: var(--layout-max-width) !important;
   margin: 0 auto !important; }
@@ -246,7 +250,8 @@ h3.notion-heading {
   .notion-collection-gallery.large .notion-collection-card {
     display: flex !important;
     flex-direction: row-reverse !important;
-    min-height: 420px !important; }
+    min-height: 420px !important;
+    height: 420px !important; }
     .notion-collection-gallery.large .notion-collection-card .notion-property__title {
       font-size: 2.6rem !important;
       max-width: 600px !important;
@@ -324,11 +329,11 @@ h3.notion-heading {
     .notion-collection-list .notion-collection-list__item:hover {
       background: var(--color-card-bg-hover) !important; }
 
-.super-root:not(.page__index) .notion-header__title {
+.super-root:not(.page__index) .notion-header__title, .super-content:not(.page__index) .notion-header__title {
   text-align: center !important;
   width: 100% !important; }
 
-.super-root:not(.page__index) .notion-dropdown__option-list {
+.super-root:not(.page__index) .notion-dropdown__option-list, .super-content:not(.page__index) .notion-dropdown__option-list {
   justify-content: center !important; }
 
 .parent-page__posts .super-content {

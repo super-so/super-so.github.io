@@ -74,6 +74,11 @@ body {
     }
 }
 
+.notion-root {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
 .notion-root.full-width, .notion-collection-page {
     max-width: var(--layout-max-width)!important;
     margin: 0 auto!important;
@@ -333,6 +338,7 @@ h3.notion-heading {
         display: flex!important;
         flex-direction: row-reverse!important;
         min-height: 420px!important;
+        height: 420px!important;
 
         .notion-property__title {
             font-size: 2.6rem!important;
@@ -455,13 +461,13 @@ h3.notion-heading {
         }
     }
 }
-.super-root:not(.page__index) {
+.super-root:not(.page__index), .super-content:not(.page__index) {
     .notion-header__title {
         text-align: center!important;
         width: 100%!important;
     }
 
-    .notion-dropdown__option-list {
+    .notion-dropdown__option-list, {
         justify-content: center!important;
     }
      
