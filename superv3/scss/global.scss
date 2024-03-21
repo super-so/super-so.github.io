@@ -205,10 +205,9 @@ h2.notion-heading .notion-semantic-string {
     // –––––––––––––––––
     // Layout
     // –––––––––––––––––
-    .super-content {
-        padding-top: 120px !important;
+    .notion-root {
         max-width: 1280px !important;
-        margin: 0 auto !important;
+        margin: 120px auto 0 auto !important;
 
         @include breakpoint-xs {
             padding-top: 100px !important;

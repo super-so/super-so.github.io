@@ -638,17 +638,16 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__promo .notion-header__cover.no-cover {
   display: none !important;
 }
-#page-index .super-content,
-.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .super-content,
-.parent-page__promo .super-content {
-  padding-top: 120px !important;
+#page-index .notion-root,
+.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-root,
+.parent-page__promo .notion-root {
   max-width: 1280px !important;
-  margin: 0 auto !important;
+  margin: 120px auto 0 auto !important;
 }
 @media screen and (max-width: 576px) {
-  #page-index .super-content,
-.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .super-content,
-.parent-page__promo .super-content {
+  #page-index .notion-root,
+.parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-root,
+.parent-page__promo .notion-root {
     padding-top: 100px !important;
   }
 }
