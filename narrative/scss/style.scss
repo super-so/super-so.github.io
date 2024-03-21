@@ -461,13 +461,15 @@ h3.notion-heading {
         }
     }
 }
+
+// remove .super-root version on 3.1 launch
 .super-root:not(.page__index), .super-content:not(.page__index) {
     .notion-header__title {
         text-align: center!important;
         width: 100%!important;
     }
 
-    .notion-dropdown__option-list, {
+    .notion-dropdown__option-list {
         justify-content: center!important;
     }
      
