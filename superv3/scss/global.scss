@@ -274,7 +274,6 @@ h2.notion-heading .notion-semantic-string {
     transition: box-shadow 0.2s ease-out !important;
     padding: 48px !important;
     background-clip: padding-box !important;
-    border: solid 1px transparent !important;
     position: relative !important;
 
     @include breakpoint-xs {
