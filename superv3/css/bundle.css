@@ -712,7 +712,8 @@ h2.notion-heading .notion-semantic-string {
   #page-index .notion-root,
   .parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-root,
   .parent-page__promo .notion-root {
-    padding-top: 100px !important;
+    padding-top: 90px !important;
+    margin-top: 0px !important;
   }
 }
 
@@ -730,6 +731,10 @@ h2.notion-heading .notion-semantic-string {
   position: relative;
   margin-top: 0px !important;
   z-index: 1 !important;
+}
+
+#page-index .notion-root {
+  padding-top: 0px !important;
 }
 
 #page-icons .notion-page,

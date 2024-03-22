@@ -210,7 +210,8 @@ h2.notion-heading .notion-semantic-string {
         margin: 120px auto 0 auto !important;
 
         @include breakpoint-xs {
-            padding-top: 100px !important;
+            padding-top: 90px !important;
+            margin-top: 0px!important;
         }
     }
 
@@ -229,6 +230,10 @@ h2.notion-heading .notion-semantic-string {
             z-index: 1 !important;
         }
     }
+}
+
+#page-index .notion-root {
+    padding-top: 0px!important;
 }
 
 // –––––––––––––––––
