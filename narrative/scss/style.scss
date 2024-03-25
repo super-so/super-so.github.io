@@ -340,6 +340,10 @@ h3.notion-heading {
         min-height: 420px!important;
         height: 420px!important;
 
+        @include breakpoint-sm {
+            height: auto!important;
+        }
+
         .notion-property__title {
             font-size: 2.6rem!important;
             max-width: 600px!important;
