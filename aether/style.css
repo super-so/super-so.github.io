@@ -46,8 +46,14 @@ body {
 }
 
 .super-navbar__breadcrumbs {
+    display: flex!important;
+    justify-content: center!important;
+    border-bottom: 1px solid var(--color-border-default) !important;
+}
+
+.super-navbar__breadcrumbs > div {
     max-width: var(--content-width)!important;
-    padding-top: 8px!important;
+    margin: 0 20px!important;
 }
 
 .super-navbar__content {
