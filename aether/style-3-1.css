@@ -811,15 +811,6 @@ p {
         font-size: 32px !important;
     }
 
-    .notion-root>.notion-column-list>.notion-column:nth-child(1) {
-        display: none !important;
-    }
-
-    .notion-root>.notion-column-list>.notion-column:nth-child(1).show-nav {
-        opacity: 1 !important;
-        display: block !important;
-    }
-
     .notion-root>.notion-column-list>.notion-column:nth-child(2) {
         width: 100 !important;
         min-width: 100% !important;
