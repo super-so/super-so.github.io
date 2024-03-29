@@ -29,7 +29,6 @@ body {
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
     text-rendering: optimizeLegibility !important;
-    font-size: 16px !important;
 }
 
 .notion-root, .notion-root.has-footer {
@@ -973,10 +972,6 @@ p {
     border-radius: 12px!important;
 }
 
-.super-sidebar .super-navigation-menu__items {
-    margin-top: 12px!important;
-}
-
 .super-navigation-menu__item svg {
     width: 24px!important;
     height: 24px!important;
@@ -985,7 +980,7 @@ p {
     display: flex!important;
     justify-content: center!important;
     align-items: center!important;
-    border-radius: 6px!important;
+    border-radius: 7px!important;
     stroke: white!important; 
     margin: 0!important;
 }
