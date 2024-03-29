@@ -402,11 +402,11 @@ ul>.notion-list-item:before {
 .notion-root>.notion-column-list>.notion-column:nth-child(2) {
     margin-left: 0 !important;
     min-width: 130px !important;
-    height: calc(100vh - var(--navbar-height) + 40px) !important;
+    height: calc(100vh - var(--navbar-height)) !important;
     flex-shrink: 0 !important;
     position: sticky !important;
     position: -webkit-sticky !important;
-    top: var(--navbar-height) !important;
+    top: calc(var(--navbar-height) + 24px) !important;
     /*position: fixed;*/
     padding: 30px !important;
     padding-top: 25px !important;
@@ -902,7 +902,6 @@ p {
 }
 
 .super-navigation-menu__item, .super-navigation-menu__list-header {
-    align-items: center!important;
     border-radius: 12px!important;
 }
 
@@ -914,7 +913,6 @@ p {
     padding: 5px!important;
     display: flex!important;
     justify-content: center!important;
-    align-items: center!important;
     border-radius: 7px!important;
     stroke: white!important; 
     margin: 0!important;
