@@ -252,7 +252,6 @@ h1.notion-heading {
     margin-bottom: 10px !important;
     letter-spacing: -1px !important;
     font-weight: 600 !important;
-    font-size: 40px !important;
     margin-top: 25px !important;
 }
 
@@ -263,12 +262,10 @@ h1.notion-heading .notion-semantic-string {
 h2.notion-heading {
     line-height: 1.5 !important;
     margin-bottom: 0 !important;
-    font-size: 32px !important;
     letter-spacing: -.9px !important;
 }
 
 h3.notion-heading {
-    font-size: 26px !important;
     text-transform: none !important;
     letter-spacing: -.6px !important;
     margin-bottom: 10px !important;
@@ -972,11 +969,16 @@ p {
     width: 24px!important;
     height: 24px!important;
     background: var(--color-primary)!important;
-    padding: 4px!important;
+    padding: 5px!important;
     display: flex!important;
     justify-content: center!important;
     align-items: center!important;
     border-radius: 7px!important;
     stroke: white!important; 
     margin: 0!important;
+}
+
+.super-search-input {
+    border-radius: 7px!important;
+    padding: 4px 8px!important;
 }
