@@ -240,7 +240,6 @@ ul>.notion-list-item:before {
     opacity: 0.3 !important;
     display: inline-block !important;
     margin-left: -1em !important;
-    font-size: 16px !important;
 }
 
 .notion-heading {
@@ -313,7 +312,6 @@ ul>.notion-list-item:before {
     opacity: 0.3 !important;
     display: inline-block !important;
     margin-left: 0 !important;
-    font-size: 16px !important;
 }
 
 .notion-quote {
@@ -502,7 +500,6 @@ ul>.notion-list-item:before {
     align-items: center !important;
     justify-content: center !important;
     padding-bottom: 0 !important;
-    font-size: 16px !important;
     margin-top: 10px !important;
     margin-bottom: 0px !important;
 }
@@ -738,7 +735,6 @@ p {
     letter-spacing: -0.2px !important;
     line-height: 1.6 !important;
     font-weight: 400 !important;
-    font-size: 16px !important;
 }
 
 .notion-heading .notion-heading__anchor {
