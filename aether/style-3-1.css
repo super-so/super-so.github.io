@@ -708,6 +708,10 @@ p {
         grid-template-columns: 1fr !important;
     }
 
+    .notion-root>.notion-column-list>.notion-column:nth-child(1) {
+        padding: 0 20px!important;
+    }
+
     .notion-root>.notion-column-list .notion-column-list:last-child .notion-column {
         height: 100px !important;
     }
@@ -903,7 +907,7 @@ p {
 }
 
 .super-navigation-menu__item svg:not(.super-navigation-menu__list .super-navigation-menu__item > svg), 
-.super-navigation-menu__list-header svg {
+.super-navigation-menu__list-header svg:first-of-type {
     width: 24px!important;
     height: 24px!important;
     background: var(--color-primary)!important;
@@ -916,7 +920,7 @@ p {
     margin: 0!important;
 }
 
-.super-navigation-menu__list .super-navigation-menu__item > svg {
+.super-navigation-menu__list .super-navigation-menu__item svg {
     opacity: .7!important;
 }
 
