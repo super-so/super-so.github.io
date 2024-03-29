@@ -32,7 +32,7 @@ body {
     font-size: 16px !important;
 }
 
-.notion-content, .notion-root, .notion-root.has-footer {
+.super-content, .notion-root, .notion-root.has-footer {
     padding: 0 !important;
 }
 
