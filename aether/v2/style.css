@@ -905,7 +905,7 @@ p {
     border-radius: 12px!important;
 }
 
-.super-navigation-menu__item svg:not(.super-navigation-menu__list .super-navigation-menu__item > svg), 
+.super-navigation-menu__item svg:first-of-type:not(.super-navigation-menu__list .super-navigation-menu__item > svg:first-of-type), 
 .super-navigation-menu__list-header svg:first-of-type {
     width: 24px!important;
     height: 24px!important;
