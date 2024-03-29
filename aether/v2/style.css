@@ -1,7 +1,7 @@
 :root {
     --color-primary: #1ca0f1 !important;
     --cta-color-bg: #e4f5fe !important;
-    --cta-padding: 12px 22px !important;
+    --cta-padding: 8px 16px !important;
     --cta-border-radius: 50px !important;
     --cta-color-text: #424b55 !important;
     --color-text-default: #424b55;
@@ -290,8 +290,6 @@ p>span>span>a {
 pre {
     padding: 20px !important;
     margin: 10px 0 20px 0 !important;
-    background-color: var(--color-code-block) !important;
-    /* color: #2e3237!important; */
 }
 
 .notion-semantic-string.code {
@@ -922,6 +920,9 @@ p {
     opacity: .7!important;
 }
 
+.super-sidebar .super-navigation-menu__list .super-navigation-menu__item {
+    align-items: center!important;
+}
 
 .super-search-input {
     border-radius: 7px!important;
