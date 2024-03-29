@@ -970,6 +970,7 @@ p {
 
 .super-navigation-menu__item, .super-navigation-menu__list-header {
     align-items: center!important;
+    border-radius: 12px!important;
 }
 
 .super-sidebar .super-navigation-menu__items {
@@ -985,4 +986,6 @@ p {
     justify-content: center!important;
     align-items: center!important;
     border-radius: 6px!important;
+    stroke: white!important; 
+    margin: 0!important;
 }
