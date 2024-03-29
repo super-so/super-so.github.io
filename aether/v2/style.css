@@ -404,7 +404,6 @@ ul>.notion-list-item:before {
     position: sticky !important;
     position: -webkit-sticky !important;
     top: var(--navbar-height) !important;
-    /*position: fixed;*/
     padding: 30px !important;
     padding-top: 48px !important;
     border-left: 1px solid var(--color-border-default) !important;
