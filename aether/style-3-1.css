@@ -76,8 +76,6 @@ body {
 
 .super-navbar__cta {
     transition: all 0.2s ease-in-out !important;
-    letter-spacing: -0.3px !important;
-    padding: var(--cta-padding) !important;
     font-weight: 500 !important;
     border-radius: var(--cta-border-radius) !important;
     background: var(--cta-color-bg) !important;
@@ -965,7 +963,8 @@ p {
     border-radius: 12px!important;
 }
 
-.super-navigation-menu__item svg {
+.super-navigation-menu__item svg:not(.super-navigation-menu__list .super-navigation-menu__item svg), 
+.super-navigation-menu__list-header svg {
     width: 24px!important;
     height: 24px!important;
     background: var(--color-primary)!important;
@@ -977,6 +976,7 @@ p {
     stroke: white!important; 
     margin: 0!important;
 }
+
 
 .super-search-input {
     border-radius: 7px!important;
