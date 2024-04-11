@@ -67,8 +67,8 @@
   }
 
   .notion-collection__header-wrapper .notion-dropdown__menu.animate-in.animate-out,
-  .notion-dropdown__menu.animate-in,
-  .notion-dropdown__menu.animate-out {
+  .notion-collection__header-wrapper .notion-dropdown__menu.animate-in,
+  .notion-collection__header-wrapper .notion-dropdown__menu.animate-out {
     animation: none !important;
   }
 
