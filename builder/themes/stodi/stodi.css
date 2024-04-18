@@ -88,12 +88,14 @@
       --color-ui-hover-bg-light: rgba(55, 53, 47, 0.03)!important;
       --color-card-bg: rgb(255, 255, 255)!important;
       --color-border-default: var(--color-primary)!important;
+      --navbar-background-color: rgba(246, 243, 239, 0)!important; 
   }
   /* End Theme Variables*/
   /* Start Theme overwrites */
   
   .notion-callout a {
       opacity: 1!important;
+    text-decoration: none!important;
   }
   
   .super-navbar {
