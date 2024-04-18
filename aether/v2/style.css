@@ -704,10 +704,6 @@ p {
         grid-template-columns: 1fr !important;
     }
 
-    .notion-root>.notion-column-list>.notion-column:nth-child(1) {
-        padding: 0 20px!important;
-    }
-
     .notion-root>.notion-column-list .notion-column-list:last-child .notion-column {
         height: 100px !important;
     }
