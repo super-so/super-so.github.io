@@ -59,10 +59,6 @@ body {
   .notion-header__title-wrapper div:first-child {
     display: none !important; }
 
-.notion-root {
-  padding-left: 0 !important;
-  padding-right: 0 !important; }
-
 .notion-root.full-width, .notion-collection-page {
   max-width: var(--layout-max-width) !important;
   margin: 0 auto !important; }
