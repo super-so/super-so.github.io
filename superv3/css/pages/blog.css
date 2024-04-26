@@ -1,0 +1,150 @@
+.parent-page__blog {
+  --header-cover-height: 24vh !important;
+}
+@media only screen and (max-width: 1301px) {
+  .parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:first-child {
+    display: none;
+  }
+}
+.parent-page__blog article > .notion-column-list h2 {
+  margin-top: 32px !important;
+}
+.parent-page__blog .notion-header {
+  border-bottom: 1px solid var(--color-border-default) !important;
+  padding-bottom: 42px !important;
+  background: #F7F7F7 !important;
+}
+.parent-page__blog .notion-header__content {
+  top: 0px !important;
+  width: 100% !important;
+  border-top: 1px solid var(--color-border-default) !important;
+}
+.parent-page__blog .notion-header__title-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+}
+.parent-page__blog .notion-header__title {
+  text-align: center !important;
+  max-width: 800px !important;
+}
+.parent-page__blog .notion-root.full-width {
+  margin: 0 auto !important;
+  max-width: 1450px !important;
+}
+.parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) {
+  gap: 42px !important;
+  justify-content: space-between !important;
+}
+@media screen and (max-width: 576px) {
+  .parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) {
+    gap: 16px !important;
+  }
+}
+.parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) .notion-column {
+  margin: 0 !important;
+}
+@media only screen and (max-width: 1301px) {
+  .parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) {
+    gap: 24px !important;
+    justify-content: center !important;
+  }
+}
+.parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:not(:nth-child(2)) {
+  height: 800px !important;
+  position: sticky !important;
+  top: 100px !important;
+  min-width: 212px !important;
+}
+@media screen and (max-width: 576px) {
+  .parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:not(:nth-child(2)) {
+    height: auto !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:not(:nth-child(2)) {
+    width: 100% !important;
+  }
+}
+.parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:last-child > .notion-image:first-of-type {
+  margin-top: 0px !important;
+}
+.parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:nth-child(2) {
+  max-width: 620px !important;
+}
+@media only screen and (max-width: 1032px) {
+  .parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:nth-child(2) {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+.parent-page__blog .notion-table-of-contents__item .notion-semantic-string:not(.no-border) {
+  text-decoration: none !important;
+}
+.parent-page__blog .super-embed {
+  max-width: 550px !important;
+  width: 100% !important;
+}
+@media only screen and (max-width: 1032px) {
+  .parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:last-child {
+    width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+    height: auto !important;
+  }
+}
+.parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:last-child .notion-callout {
+  background: #F7F7F7 !important;
+  margin-top: 16px !important;
+  padding: 16px !important;
+  border-radius: 16px !important;
+}
+.parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:last-child .notion-callout p:last-child {
+  margin: 0 !important;
+}
+.parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:last-child .notion-callout .notion-callout__content {
+  margin: 0 !important;
+}
+.parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:last-child .notion-callout .notion-link strong {
+  width: 100% !important;
+  text-decoration: none !important;
+  opacity: 1 !important;
+  padding: var(--button-padding) !important;
+  border-radius: var(--rounded-md) !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: background 0.15s ease-out, transform 0.1s ease-out, box-shadow 0.15s ease-out !important;
+  border: 1px solid #E9E9E7 !important;
+  color: var(--gray-700) !important;
+  background: var(--base-white) !important;
+}
+.parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:last-child .notion-callout .notion-link strong:hover {
+  background: var(--gray-50) !important;
+  color: var(--gray-900) !important;
+  box-shadow: none !important;
+}
+.parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:last-child .notion-callout .notion-callout__icon {
+  display: none !important;
+}
+.parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:last-child .notion-callout .notion-bulleted-list {
+  position: relative !important;
+  text-align: left !important;
+  list-style: none !important;
+  margin-left: 0px !important;
+  padding-left: 36px !important;
+}
+.parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:last-child .notion-callout .notion-list-item {
+  margin: 8px 0px !important;
+}
+.parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:last-child .notion-callout .notion-list-item::before {
+  content: "";
+  position: absolute;
+  background: url("https://sites.super.so/super/assets/check-icon.svg");
+  background-size: cover !important;
+  background-position: center !important;
+  left: 0;
+  width: 24px;
+  height: 24px;
+}

@@ -87,6 +87,11 @@ h3.notion-heading:not(.toggle),
 h3.notion-heading:not(.toggle) span {
     letter-spacing: -.8px !important;
     font-size: clamp(.275rem, 4vw, 1.6rem) !important;
+
+    @include breakpoint-xs {
+       font-size: 1.4rem!important;
+    }
+
     line-height: 1.2 !important;
     margin-bottom: 8px !important;
     margin-top: 24px !important;
@@ -175,7 +180,7 @@ h2.notion-heading .notion-semantic-string {
         top: -185px !important; 
 
         @include breakpoint-xs {
-            top: 10px !important;
+            top: 0px !important;
             height: 37vh!important;
         }
 

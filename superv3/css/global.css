@@ -515,6 +515,13 @@ h3.notion-heading:not(.toggle) span {
   margin-bottom: 8px !important;
   margin-top: 24px !important;
 }
+@media screen and (max-width: 576px) {
+  h3:not(.toggle),
+h3.notion-heading:not(.toggle),
+h3.notion-heading:not(.toggle) span {
+    font-size: 1.4rem !important;
+  }
+}
 
 h2.notion-heading .notion-semantic-string {
   letter-spacing: -1.5px !important;
@@ -597,7 +604,7 @@ h2.notion-heading .notion-semantic-string {
   #page-index .notion-header__cover,
 .parent-page__index:not(#page-privacy, #page-terms, #page-analytics) .notion-header__cover,
 .parent-page__promo .notion-header__cover {
-    top: 10px !important;
+    top: 0px !important;
     height: 37vh !important;
   }
 }
