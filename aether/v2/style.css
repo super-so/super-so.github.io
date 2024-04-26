@@ -35,6 +35,13 @@ body {
     padding: 0 !important;
 }
 
+@media all and (max-width: 860px) {
+    .notion-root {
+        padding-left: var(--padding-left-mobile) !important;
+        padding-right: var(--padding-right-mobile) !important;
+    }
+}
+
 .super-navbar {
     border-bottom: 1px solid var(--color-border-default) !important;
     display: flex!important;
@@ -362,6 +369,7 @@ ul>.notion-list-item:before {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
+    justify-content: center!important;
 }
 
 .notion-root>.notion-column-list:first-child {
