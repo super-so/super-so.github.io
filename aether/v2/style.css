@@ -36,7 +36,7 @@ body {
 }
 
 @media all and (max-width: 860px) {
-    .notion-root {
+    .notion-root, .notion-root.has-footer {
         padding-left: var(--padding-left-mobile) !important;
         padding-right: var(--padding-right-mobile) !important;
     }
