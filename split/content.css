@@ -12,7 +12,9 @@
   max-height: 100% !important;
   height: 100% !important;
 }
-
+.notion-root {
+    max-width: 720px!important;
+}
 .super-root {
     overflow: hidden!important;
 }
