@@ -33,6 +33,12 @@
   }
 }
 
+@media (max-width: 1310px) {
+    .super-content {
+      padding: 60px !important;
+    }
+  }
+
 @media (max-width: 1020px) {
   .super-content {
     padding: 0px !important;
