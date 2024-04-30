@@ -14,12 +14,7 @@
 }
 
 .super-content {
-  position: absolute !important;
   padding: 120px !important;
-  width: 50vw !important;
-  margin: 0 !important;
-  right: 0 !important;
-  top: 0 !important;
 }
 
 @media (max-width: 1020px) {
