@@ -13,6 +13,10 @@
   height: 100% !important;
 }
 
+.super-root {
+    overflow: hidden!important;
+}
+
 .super-content {
   padding: 120px !important;
 }
