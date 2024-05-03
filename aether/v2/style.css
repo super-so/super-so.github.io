@@ -389,6 +389,10 @@ ul>.notion-list-item:before {
     border: 0 !important;
 }
 
+.notion-root>.notion-column-list>.notion-column:nth-child(1){
+    width: 100%!important;
+}
+
 @media all and (min-width: 861px) {
     .notion-root>.notion-column-list>.notion-column:nth-child(1) {
         padding-top: 30px !important;
