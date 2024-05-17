@@ -60,7 +60,7 @@ window.addEventListener('load', e => {
 
         initLightbox();
         observeNewImages();
-        next.router.events.on('routeChangeComplete', url => {
+        window.events.on('routeChangeComplete', url => {
             initLightbox();
         });
     }, 500);  // 2000ms = 2 seconds delay
