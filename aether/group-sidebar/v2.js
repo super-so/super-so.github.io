@@ -78,7 +78,7 @@ window.addEventListener('load', e => {
     processSections();
     // listener();
 
-    next.router.events.on('routeChangeComplete', url => {
+    window.events.on('routeChangeComplete', url => {
         processSections();
         // listener();
     })
