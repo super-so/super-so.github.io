@@ -90,7 +90,7 @@ h1 {
     background: var(--color-text-default) !important;
     color: var(--color-bg-default) !important;
     border-radius: 50px !important;
-    width: 60px !important;
+    width: auto !important;
     height: 60px !important;
     display: flex !important;
     align-items: center !important;
