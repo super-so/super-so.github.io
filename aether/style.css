@@ -204,7 +204,6 @@ body {
     text-decoration: none!important;
     font-weight: 400 !important;
     white-space: pre-wrap !important;
-    line-height: 1 !important;
 }
 
 .notion-page__title .notion-semantic-string span {
