@@ -1,4 +1,8 @@
 
+
+.notion-collection-group__section-header .notion-collection-list__toggle-wrapper {
+  flex-direction: row-reverse!important;
+}
 /* Start first col specific */
 .notion-root>.notion-column-list>.notion-column:first-child {
     --color-pill-text-default: var(--color-text-default)!important;
@@ -16,10 +20,6 @@
   /* Start group list specitic*/ 
   .notion-collection-group__list {
 
-    .notion-collection-list__toggle-wrapper {
-      flex-direction: row-reverse!important;
-    }
-    
     .notion-collection-group__section:not(:last-child) {
       margin-bottom: 16px!important;
     }
