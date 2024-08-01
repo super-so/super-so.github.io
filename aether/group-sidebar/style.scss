@@ -15,6 +15,10 @@
   
   /* Start group list specitic*/ 
   .notion-collection-group__list {
+
+    .notion-collection-list__toggle-wrapper {
+      flex-direction: row-reverse!important;
+    }
     
     .notion-collection-group__section:not(:last-child) {
       margin-bottom: 16px!important;
