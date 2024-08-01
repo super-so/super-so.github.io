@@ -993,10 +993,10 @@ p {
     opacity: .7 !important;
 }
 
-.notion-collection-group__section-header .notion-collection-list__toggle-wrapper {
+.notion-collection-group__section .notion-collection-list__toggle-wrapper {
     flex-direction: row-reverse!important;
   }
-  
+
 .notion-root>.notion-callout .notion-collection-card:hover {
     opacity: 1 !important;
     transform: translateY(0px) !important;
