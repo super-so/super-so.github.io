@@ -32,6 +32,11 @@ body {
     font-size: 16px !important;
 }
 
+.notion-collection-list__item.active {
+    background: var(--color-ui-hover-bg)!important;
+    border-color: var(--color-border-default)!important;
+}
+
 .super-content, .notion-root, .notion-root.has-footer {
     padding: 0 !important;
 }
