@@ -3,6 +3,10 @@
         @content;
     }
 }  
+
+.notion-collection-card__anchor {
+    z-index: 999!important;
+}
   // Variables
 :root {
     /* Style options */
