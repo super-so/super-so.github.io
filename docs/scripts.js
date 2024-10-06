@@ -35,7 +35,7 @@ Prism.languages.scss=Prism.languages.extend("css",{comment:{pattern:/(^|[^\\])(?
 window.addEventListener('load', e => {
     initPrism()
     setActivePage()
-    next.router.events.on('routeChangeComplete', url => {
+    window.events.on('routeChangeComplete', url => {
         //  console.log(`Page has changed to ${url}`)
         setActivePage()
         initPrism()
