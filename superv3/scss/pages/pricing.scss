@@ -291,6 +291,91 @@
     }
 }
 
+// Teams Pricing
+#block-127a50d5f2cc8031a582ef691b9e914d,
+#block-127a50d5f2cc80aea71de04967fcd35a {
+    color: var(--color-text-default) !important;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+
+    & > .notion-callout__content {
+        text-align: center !important;
+        display: flex!important;
+        justify-content: center!important;
+        max-width: 875px !important;
+
+        & > p {
+            max-width: 700px!important;
+            margin: 0 auto!important;
+        }
+    }
+
+    .notion-callout {
+        border: 1px solid var(--color-border-default) !important;
+        border-radius: 12px !important;
+        padding: 24px !important;
+        text-align: left!important;
+    }
+
+    .notion-column-list {
+        
+        .notion-callout {
+            height: 100%!important;
+            display: flex!important;
+            align-items: center!important;
+        }
+
+        .notion-callout__content {
+            text-align: left!important;
+
+            strong {
+                font-size: 32px !important;
+                color: var(--color-text-default) !important;
+
+                @include breakpoint-xs {
+                    font-size: 26px !important;
+                }
+            }
+        }
+    }
+
+    .notion-bulleted-list {
+        position: relative !important;
+        text-align: left !important;
+        list-style: none !important;
+        margin-left: 0px !important;
+        padding-left: 36px !important;
+    }
+
+    .notion-list-item {
+        margin: 8px 0px !important;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background: url("https://sites.super.so/super/assets/icon-check.svg");
+            background-size: cover !important;
+            background-position: center !important;
+            left: 0;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    h3.notion-heading:not(.toggle),
+    h3.notion-heading:not(.toggle) span,
+    h3:not(.toggle) {
+        color: var(--color-text-default) !important;
+        margin: 0 0 16px 0 !important;
+        text-align: left!important;
+
+        @include breakpoint-xs {
+            font-size: 22px !important;
+        }
+    }
+}
+
 // Analytics Pricing
 #block-2e25b00541164b0f938f2da56fbd60f9,
 #block-b636f7b4711d4a7f92d0a47b7b4f8349 {

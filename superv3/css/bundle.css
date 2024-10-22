@@ -4058,6 +4058,109 @@ h3.notion-heading {
   line-height: 1.2 !important;
 }
 
+#block-127a50d5f2cc8031a582ef691b9e914d,
+#block-127a50d5f2cc80aea71de04967fcd35a {
+  color: var(--color-text-default) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+#block-127a50d5f2cc8031a582ef691b9e914d > .notion-callout__content,
+#block-127a50d5f2cc80aea71de04967fcd35a > .notion-callout__content {
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  max-width: 875px !important;
+}
+
+#block-127a50d5f2cc8031a582ef691b9e914d > .notion-callout__content > p,
+#block-127a50d5f2cc80aea71de04967fcd35a > .notion-callout__content > p {
+  max-width: 700px !important;
+  margin: 0 auto !important;
+}
+
+#block-127a50d5f2cc8031a582ef691b9e914d .notion-callout,
+#block-127a50d5f2cc80aea71de04967fcd35a .notion-callout {
+  border: 1px solid var(--color-border-default) !important;
+  border-radius: 12px !important;
+  padding: 24px !important;
+  text-align: left !important;
+}
+
+#block-127a50d5f2cc8031a582ef691b9e914d .notion-column-list .notion-callout,
+#block-127a50d5f2cc80aea71de04967fcd35a .notion-column-list .notion-callout {
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+#block-127a50d5f2cc8031a582ef691b9e914d .notion-column-list .notion-callout__content,
+#block-127a50d5f2cc80aea71de04967fcd35a .notion-column-list .notion-callout__content {
+  text-align: left !important;
+}
+
+#block-127a50d5f2cc8031a582ef691b9e914d .notion-column-list .notion-callout__content strong,
+#block-127a50d5f2cc80aea71de04967fcd35a .notion-column-list .notion-callout__content strong {
+  font-size: 32px !important;
+  color: var(--color-text-default) !important;
+}
+
+@media screen and (max-width: 576px) {
+  #block-127a50d5f2cc8031a582ef691b9e914d .notion-column-list .notion-callout__content strong,
+  #block-127a50d5f2cc80aea71de04967fcd35a .notion-column-list .notion-callout__content strong {
+    font-size: 26px !important;
+  }
+}
+
+#block-127a50d5f2cc8031a582ef691b9e914d .notion-bulleted-list,
+#block-127a50d5f2cc80aea71de04967fcd35a .notion-bulleted-list {
+  position: relative !important;
+  text-align: left !important;
+  list-style: none !important;
+  margin-left: 0px !important;
+  padding-left: 36px !important;
+}
+
+#block-127a50d5f2cc8031a582ef691b9e914d .notion-list-item,
+#block-127a50d5f2cc80aea71de04967fcd35a .notion-list-item {
+  margin: 8px 0px !important;
+}
+
+#block-127a50d5f2cc8031a582ef691b9e914d .notion-list-item::before,
+#block-127a50d5f2cc80aea71de04967fcd35a .notion-list-item::before {
+  content: "";
+  position: absolute;
+  background: url("https://sites.super.so/super/assets/icon-check.svg");
+  background-size: cover !important;
+  background-position: center !important;
+  left: 0;
+  width: 24px;
+  height: 24px;
+}
+
+#block-127a50d5f2cc8031a582ef691b9e914d h3.notion-heading:not(.toggle),
+#block-127a50d5f2cc8031a582ef691b9e914d h3.notion-heading:not(.toggle) span,
+#block-127a50d5f2cc8031a582ef691b9e914d h3:not(.toggle),
+#block-127a50d5f2cc80aea71de04967fcd35a h3.notion-heading:not(.toggle),
+#block-127a50d5f2cc80aea71de04967fcd35a h3.notion-heading:not(.toggle) span,
+#block-127a50d5f2cc80aea71de04967fcd35a h3:not(.toggle) {
+  color: var(--color-text-default) !important;
+  margin: 0 0 16px 0 !important;
+  text-align: left !important;
+}
+
+@media screen and (max-width: 576px) {
+  #block-127a50d5f2cc8031a582ef691b9e914d h3.notion-heading:not(.toggle),
+  #block-127a50d5f2cc8031a582ef691b9e914d h3.notion-heading:not(.toggle) span,
+  #block-127a50d5f2cc8031a582ef691b9e914d h3:not(.toggle),
+  #block-127a50d5f2cc80aea71de04967fcd35a h3.notion-heading:not(.toggle),
+  #block-127a50d5f2cc80aea71de04967fcd35a h3.notion-heading:not(.toggle) span,
+  #block-127a50d5f2cc80aea71de04967fcd35a h3:not(.toggle) {
+    font-size: 22px !important;
+  }
+}
+
 #block-2e25b00541164b0f938f2da56fbd60f9,
 #block-b636f7b4711d4a7f92d0a47b7b4f8349 {
   color: var(--color-text-default) !important;
