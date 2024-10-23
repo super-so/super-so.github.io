@@ -14,8 +14,7 @@ const setActivePage = () => {
 window.addEventListener('load', e => {
     setActivePage()
 
-    next.router.events.on('routeChangeComplete', url => {
+    window.events.on('routeChangeComplete', url => {
         setActivePage()
-
     })
 })

@@ -60,7 +60,7 @@ const initLightbox = () => {
 
 window.addEventListener('load', e => {
     initLightbox();
-    next.router.events.on('routeChangeComplete', url => {
+    window.events.on('routeChangeComplete', url => {
         initLightbox();
     })
 })
