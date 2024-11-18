@@ -1557,7 +1557,8 @@ h2.notion-heading .notion-semantic-string {
 }
 
 .parent-page__blog article > .notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:not(:nth-child(2)) {
-  height: 1100px !important;
+  height: 700px !important;
+  overflow: scroll !important;
   position: sticky !important;
   top: 100px !important;
   min-width: 212px !important;

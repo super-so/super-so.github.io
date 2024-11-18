@@ -615,8 +615,9 @@ h2.notion-heading .notion-semantic-string {
 
     // 2 outer columns (not content column)
     article>.notion-column-list:first-child:has(.notion-column:nth-child(3)) > .notion-column:not(:nth-child(2)) {
-        // article > .notion-column-list > .notion-column:not(:nth-child(2)) {
-        height: 1100px !important;
+       // article > .notion-column-list > .notion-column:not(:nth-child(2)) {
+        height: 700px!important;
+        overflow: scroll!important;
         position: sticky !important;
         top: 100px !important;
         min-width: 212px !important;
