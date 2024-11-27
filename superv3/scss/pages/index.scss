@@ -187,7 +187,9 @@ h3.notion-heading {
         margin-top: 0px !important;
     }
 
-    h3.notion-heading {
+    h3 {
+        margin-top: 4px!important;
+        
         @include breakpoint-xs {
             font-size: 22px !important;
         }

@@ -207,8 +207,11 @@ h3.notion-heading {
   margin-bottom: 20px !important;
   margin-top: 0px !important;
 }
+#block-24841223de234f27b9e90940496494e4 h3 {
+  margin-top: 4px !important;
+}
 @media screen and (max-width: 576px) {
-  #block-24841223de234f27b9e90940496494e4 h3.notion-heading {
+  #block-24841223de234f27b9e90940496494e4 h3 {
     font-size: 22px !important;
   }
 }
