@@ -81,9 +81,6 @@ strong {
   margin-inline-start: 0px !important;
   overflow: visible !important;
 }
-.notion-callout .notion-callout__content > span {
-  display: none !important;
-}
 .notion-callout .notion-image {
   margin-top: 0px !important;
   width: 26px !important;

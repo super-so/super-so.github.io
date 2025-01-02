@@ -1,6 +1,22 @@
 @import "../mixins";
 @import "../components/callout";
 
+@media screen and (max-width: 1041px) {
+    #block-a5cea2ff8c2e4c0e8049ae086b48a357,
+    #block-16fa50d5f2cc809a8f34faccdc652e2a {
+        flex-direction: column !important;
+
+        .notion-column {
+            width: 100% !important;
+            margin-inline-start: 0!important;
+        }
+    }
+
+    #block-16fa50d5f2cc80ce8a00c1494dc489a7 {
+        margin-top: -52px!important;
+    }
+}
+
 // Testimonials
 #block-8c2505c01a7d44d3b95db58542a095b4 {
     @include full-width-section(transparent);
@@ -10,7 +26,7 @@
 // ––––––––––––––––– 
 // section-billing toggle
 // –––––––––––––––––
-.notion-root>h1.notion-heading {
+.notion-root > h1 {
     text-align: center !important;
     max-width: 800px !important;
     margin: 0 auto !important;
@@ -23,11 +39,14 @@
 // MONTHLY PAGE TOGGLE
 #block-5f4034b33f5e4ef5aee7421baadd223e {
     .notion-column {
+        height: 42px!important;
+        padding: 0px!important;
+        margin: 0px!important;
+        
         &:first-child {
-            padding: 12px 16px !important;
-            background: var(--base-white) !important;
-            margin-right: 8px !important;
+            background: var(--base-white) !important;    
             cursor: default !important;
+            padding: 12px 16px !important;
         }
 
         &:last-child {
@@ -61,9 +80,9 @@
 #block-e5bbddb674254449a439e4d6a593c5da {
     margin: 0 auto !important;
     text-align: center !important;
-    background: var(--gray-25) !important;
-    border-radius: 100px !important;
-    padding: 8px !important;
+    background: #F3F4F5 !important;
+    border-radius: 12px !important;
+    padding: 6px !important;
     border: 1px solid var(--gray-50) !important;
     box-shadow: 2.6px 4px 2.6px rgba(0, 0, 0, 0.017), 7.3px 11px 7.1px rgba(0, 0, 0, 0.025),
         17.5px 26.5px 17.2px rgba(0, 0, 0, 0.033), 58px 88px 57px rgba(0, 0, 0, 0.05) !important;
@@ -84,7 +103,7 @@
         width: auto !important;
         margin-inline-start: 0px !important;
         padding: 8px 0px !important;
-        border-radius: 100px !important;
+        border-radius: 8px !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -113,17 +132,13 @@
 
         .notion-link {
             text-decoration: none !important;
-            border-radius: 100px !important;
+            border-radius: 8px !important;
             padding: 12px 16px !important;
             opacity: 1 !important;
             transition: background .2s ease-out !important;
 
-            @include breakpoint-xs {
-                border-radius: 8px !important;
-            }
-
             &:hover {
-                background: var(--gray-50);
+                background: var(--gray-25);
             }
         }
     }
@@ -137,57 +152,30 @@
 #block-f59ac23d8cf344f084e546567605a696,
 #block-abea645bf4084158b5f710c635984ec4 {
 
-    // FREE and PRO
-    .notion-column:first-child>.notion-callout,
-    .notion-column:last-child>.notion-callout {
-        .notion-link {
-            @include button-secondary-gray;
-            width: 100% !important;
-            margin-top: 16px !important;
-            position: relative !important;
-            align-items: center !important;
-
-            &::after {
-                width: 20px !important;
-                height: 20px !important;
-                margin-left: 4px !important;
-                content: url("https://sites.super.so/super/assets/arrow-right-gray-500.svg");
-            }
-
-            &:hover::after {
-                width: 20px !important;
-                height: 20px !important;
-                margin-left: 4px !important;
-                content: url("https://sites.super.so/super/assets/arrow-right-black.svg") !important;
-            }
-        }
-    }
-
-    // PERSONAL SITE
+    // PRO AND PERSONAL
+    .notion-column:nth-child(3)>.notion-callout,
     .notion-column:nth-child(2)>.notion-callout {
-        border: 1px solid #FFBE3D !important;
-        position: relative !important;
+        .notion-list-item {
+            opacity: 1 !important;
 
-        &::before {
-            content: 'Most popular' !important;
-            position: absolute !important;
-            top: -14px !important;
-            background: #FFF9ED !important;
-            padding: 6px 12px !important;
-            border-radius: 50px !important;
-            border: 1px solid #FFBE3D !important;
-            font-size: 11px !important;
-            letter-spacing: 1px !important;
-            text-transform: uppercase !important;
-            font-weight: 500 !important;
+            &::before {
+                background: url("https://sites.super.so/super/assets/simple-check-primary.svg");
+            }
         }
 
-        .notion-link {
-            @include button-primary-default;
+        .notion-button__content {
+            border: 1px solid #FFBE3D !important;
+            background: #FFF8EB !important;
+            padding: var(--button-padding) !important;
             width: 100% !important;
             margin-top: 16px !important;
             position: relative !important;
             align-items: center !important;
+            transition: background .15s ease-in-out!important;
+
+            &:hover {
+                background: #FFBE3D !important;
+            }
 
             &::after {
                 width: 20px !important;
@@ -198,13 +186,106 @@
         }
     }
 
+    // FREE
+    .notion-column:first-child>.notion-callout {
+        .notion-list-item {
+            margin-top: 4px !important;
+            margin-bottom: 6px !important;
+            opacity: .6 !important;
+
+            &::before {
+                content: "";
+                position: absolute;
+                background: url("https://sites.super.so/super/assets/simple-check-gray.svg");
+                background-size: cover !important;
+                background-position: center !important;
+                left: 0;
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .notion-button__content {
+            @include button-secondary-gray;
+            width: 100% !important;
+            margin-top: 16px !important;
+            position: relative !important;
+            align-items: center !important;
+
+            &::after {
+                width: 20px !important;
+                height: 20px !important;
+                margin-left: 4px !important;
+                opacity: .4 !important;
+                content: url("https://sites.super.so/super/assets/arrow-right-black.svg") !important;
+            }
+
+            &:hover::after {
+                opacity: 1 !important;
+            }
+        }
+    }
+
+    // PERSONAL
+    .notion-column:nth-child(2)>.notion-callout {
+        border: 1px solid #FFBE3D !important;
+        position: relative !important;
+        box-shadow: 0px 0px 0px 4px rgba(254, 189, 60, 0.16) !important;
+
+        &::before {
+            content: 'Most popular' !important;
+            position: absolute !important;
+            right: 10px !important;
+            top: 12px !important;
+            background: #FFF9ED !important;
+            padding: 6px 12px !important;
+            border-radius: 8px !important;
+            border: 1px solid #FFBE3D !important;
+            font-size: 9px !important;
+            letter-spacing: 1px !important;
+            text-transform: uppercase !important;
+            font-weight: 700 !important;
+        }
+
+        .notion-callout:last-child {
+            border-top: 1px solid #FFBE3D !important;
+        }
+    }
+
     // All pricing cards
     .notion-callout:first-child {
         background: var(--base-white) !important;
-        border-radius: 24px !important;
-        box-shadow: 2.6px 4px 2.6px rgba(0, 0, 0, 0.017), 7.3px 11px 7.1px rgba(0, 0, 0, 0.025),
-            17.5px 26.5px 17.2px rgba(0, 0, 0, 0.033), 58px 88px 57px rgba(0, 0, 0, 0.05) !important;
-        padding: 32px !important;
+        border-radius: 16px !important;
+        box-shadow: 0px 0px 26px -3px rgba(0, 0, 0, 0.1) !important;
+
+        .notion-callout {
+            padding: 24px !important;
+            border-radius: 0px !important;
+        }
+
+        .notion-callout:last-child {
+            border-top: 1px solid #F3F4F5 !important;
+        }
+
+        .notion-button {
+            width: 100% !important;
+        }
+
+        .notion-list-item {
+            margin-top: 4px !important;
+            margin-bottom: 6px !important;
+
+            &::before {
+                content: "";
+                position: absolute;
+                background: url("https://sites.super.so/super/assets/simple-check-gray.svg");
+                background-size: cover !important;
+                background-position: center !important;
+                left: 0;
+                width: 22px;
+                height: 22px;
+            }
+        }
 
         h3 {
             font-size: 24px !important;
@@ -222,10 +303,6 @@
             }
         }
 
-        .notion-divider {
-            margin: 18px 0px !important;
-        }
-
         .notion-bulleted-list {
             position: relative;
             list-style: none;
@@ -238,26 +315,23 @@
             font-weight: 300 !important;
         }
 
-        .notion-list-item {
-            margin: 8px 0px !important;
-
-            &::before {
-                content: "";
-                position: absolute;
-                background: url("https://sites.super.so/super/assets/check-icon.svg");
-                background-size: cover !important;
-                background-position: center !important;
-                left: 0;
-                width: 24px;
-                height: 24px;
-            }
+        ul {
+            padding-left: 26px !important;
         }
+
+
 
         // Price wrapper
         .notion-callout {
             strong {
                 font-size: 48px !important;
                 font-weight: 500 !important;
+
+                &::after {
+                    @include text-sm;
+                    content: '/month per site';
+                    opacity: .4;
+                }
             }
 
             .notion-callout__content {
@@ -277,9 +351,8 @@
                 }
 
                 .notion-text {
-                    @include text-sm;
                     padding: 0px !important;
-                    margin-top: 8px !important;
+                    margin-top: 0px !important;
                     color: var(--base-black) !important;
 
                     * {
@@ -291,23 +364,99 @@
     }
 }
 
+// ENTERPRISE CARD
+#block-16fa50d5f2cc80ce8a00c1494dc489a7 {
+    background: var(--base-white) !important;
+    padding: 24px !important;
+    border-radius: 16px !important;
+    box-shadow: 0px 0px 26px -3px rgba(0, 0, 0, 0.1) !important;
+
+    strong {
+        font-size: 48px !important;
+        height: 50px !important;
+        display: flex !important;
+        align-items: center !important;
+        font-weight: 500 !important;
+        color: var(--base-black) !important;
+    }
+
+    .notion-column {
+        padding: 0px !important;
+    }
+
+    .notion-button {
+        width: 100% !important;
+        margin-top: 12px !important;
+    }
+
+    .notion-button__content {
+        border: 1px solid #FFBE3D !important;
+        background: #FFF8EB !important;
+        padding: var(--button-padding) !important;
+        width: 100% !important;
+        position: relative !important;
+        align-items: center !important;
+        transition: background .15s ease-in-out!important;
+
+        &:hover {
+            background: #FFBE3D !important;
+        }
+
+        &::after {
+            width: 20px !important;
+            height: 20px !important;
+            margin-left: 4px !important;
+            content: url("https://sites.super.so/super/assets/arrow-right-black.svg");
+        }
+    }
+
+    .notion-column {
+        justify-content: center !important;
+    }
+
+    .notion-bulleted-list {
+        position: relative !important;
+        text-align: left !important;
+        list-style: none !important;
+        margin-left: 0px !important;
+        padding-left: 36px !important;
+    }
+
+
+    .notion-list-item {
+        margin-top: 4px !important;
+        margin-bottom: 6px !important;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background: url("https://sites.super.so/super/assets/simple-check-gray.svg");
+            background-size: cover !important;
+            background-position: center !important;
+            left: 0;
+            width: 22px;
+            height: 22px;
+        }
+    }
+}
+
 // Teams Pricing
 #block-127a50d5f2cc8031a582ef691b9e914d,
 #block-127a50d5f2cc80aea71de04967fcd35a {
     color: var(--color-text-default) !important;
-    display: flex!important;
-    align-items: center!important;
-    justify-content: center!important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 
-    & > .notion-callout__content {
+    &>.notion-callout__content {
         text-align: center !important;
-        display: flex!important;
-        justify-content: center!important;
+        display: flex !important;
+        justify-content: center !important;
         max-width: 875px !important;
 
-        & > p {
-            max-width: 700px!important;
-            margin: 0 auto!important;
+        &>p {
+            max-width: 700px !important;
+            margin: 0 auto !important;
         }
     }
 
@@ -315,19 +464,19 @@
         border: 1px solid var(--color-border-default) !important;
         border-radius: 12px !important;
         padding: 24px !important;
-        text-align: left!important;
+        text-align: left !important;
     }
 
     .notion-column-list {
-        
+
         .notion-callout {
-            height: 100%!important;
-            display: flex!important;
-            align-items: center!important;
+            height: 100% !important;
+            display: flex !important;
+            align-items: center !important;
         }
 
         .notion-callout__content {
-            text-align: left!important;
+            text-align: left !important;
 
             strong {
                 font-size: 32px !important;
@@ -368,7 +517,7 @@
     h3:not(.toggle) {
         color: var(--color-text-default) !important;
         margin: 0 0 16px 0 !important;
-        text-align: left!important;
+        text-align: left !important;
 
         @include breakpoint-xs {
             font-size: 22px !important;
@@ -380,9 +529,9 @@
 #block-2e25b00541164b0f938f2da56fbd60f9,
 #block-b636f7b4711d4a7f92d0a47b7b4f8349 {
     color: var(--color-text-default) !important;
-    display: flex!important;
-    align-items: center!important;
-    justify-content: center!important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 
     .notion-link strong,
     strong .notion-link {
@@ -416,7 +565,7 @@
     h3:not(.toggle) {
         color: var(--color-text-default) !important;
         margin: 0 0 16px 0 !important;
-        text-align: left!important;
+        text-align: left !important;
 
         @include breakpoint-xs {
             font-size: 22px !important;

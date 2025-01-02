@@ -19,9 +19,6 @@
   margin-inline-start: 0px !important;
   overflow: visible !important;
 }
-#page-notion-consultants .notion-callout .notion-callout__content > span {
-  display: none !important;
-}
 #page-notion-consultants .notion-callout .notion-callout__content {
   text-align: center !important;
 }

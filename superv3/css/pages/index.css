@@ -40,9 +40,6 @@ h3.notion-heading {
   margin-inline-start: 0px !important;
   overflow: visible !important;
 }
-.notion-callout .notion-callout__content > span {
-  display: none !important;
-}
 
 #block-c3c403a9d51e4fec87372aeb0fd7707c,
 #block-b5aeedef74b0434f9ae72560c9962bd9,

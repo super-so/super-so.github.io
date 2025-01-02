@@ -171,9 +171,6 @@
   margin-inline-start: 0px !important;
   overflow: visible !important;
 }
-.super-root .super-content #block-1efa808dfcce4ebaae1f7d5c21cc5bf6 .notion-callout__content > span {
-  display: none !important;
-}
 .super-root .super-content #block-1efa808dfcce4ebaae1f7d5c21cc5bf6 .notion-link {
   margin-top: 24px !important;
   text-decoration: none !important;
@@ -1132,9 +1129,6 @@ h2.notion-heading .notion-semantic-string {
   margin-inline-start: 0px !important;
   overflow: visible !important;
 }
-#block-e79bc599f53e43ac8e25706f10fa5f63 .notion-callout__content > span {
-  display: none !important;
-}
 #block-e79bc599f53e43ac8e25706f10fa5f63 .notion-link {
   margin-top: 24px !important;
   text-decoration: none !important;
@@ -1200,9 +1194,6 @@ h2.notion-heading .notion-semantic-string {
 #block-63f40025d3f344f6b53bca6279746f51 .notion-callout__content {
   margin-inline-start: 0px !important;
   overflow: visible !important;
-}
-#block-63f40025d3f344f6b53bca6279746f51 .notion-callout__content > span {
-  display: none !important;
 }
 #block-63f40025d3f344f6b53bca6279746f51 .notion-heading {
   text-align: center !important;
@@ -1525,9 +1516,6 @@ h2.notion-heading .notion-semantic-string {
 .parent-page__landing .notion-callout .notion-callout__content {
   margin-inline-start: 0px !important;
   overflow: visible !important;
-}
-.parent-page__landing .notion-callout .notion-callout__content > span {
-  display: none !important;
 }
 .parent-page__landing .notion-quote {
   border: 0 !important;
