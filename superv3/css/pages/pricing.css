@@ -424,7 +424,20 @@
   line-height: 1.2 !important;
 }
 
+#block-7547b1336b10417685d7b0cb6a85cbe8,
+#block-170a50d5f2cc809d8f57f81033bccefe {
+  display: none !important;
+  text-align: center !important;
+}
+@media screen and (max-width: 576px) {
+  #block-7547b1336b10417685d7b0cb6a85cbe8,
+#block-170a50d5f2cc809d8f57f81033bccefe {
+    display: block !important;
+  }
+}
+
 #block-16fa50d5f2cc80ce8a00c1494dc489a7 {
+  margin-top: 16px !important;
   background: var(--base-white) !important;
   padding: 24px !important;
   border-radius: 16px !important;
@@ -438,12 +451,29 @@
   font-weight: 500 !important;
   color: var(--base-black) !important;
 }
+@media screen and (max-width: 992px) {
+  #block-16fa50d5f2cc80ce8a00c1494dc489a7 .notion-column-list {
+    flex-direction: column !important;
+  }
+}
 #block-16fa50d5f2cc80ce8a00c1494dc489a7 .notion-column {
   padding: 0px !important;
+  justify-content: center !important;
+}
+@media screen and (max-width: 992px) {
+  #block-16fa50d5f2cc80ce8a00c1494dc489a7 .notion-column {
+    margin-inline-start: 0px !important;
+    width: 100% !important;
+  }
 }
 #block-16fa50d5f2cc80ce8a00c1494dc489a7 .notion-button {
   width: 100% !important;
   margin-top: 12px !important;
+}
+@media screen and (max-width: 992px) {
+  #block-16fa50d5f2cc80ce8a00c1494dc489a7 .notion-button {
+    margin-bottom: 16px !important;
+  }
 }
 #block-16fa50d5f2cc80ce8a00c1494dc489a7 .notion-button__content {
   border: 1px solid #FFBE3D !important;
@@ -462,9 +492,6 @@
   height: 20px !important;
   margin-left: 4px !important;
   content: url("https://sites.super.so/super/assets/arrow-right-black.svg");
-}
-#block-16fa50d5f2cc80ce8a00c1494dc489a7 .notion-column {
-  justify-content: center !important;
 }
 #block-16fa50d5f2cc80ce8a00c1494dc489a7 .notion-bulleted-list {
   position: relative !important;

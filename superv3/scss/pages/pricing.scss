@@ -317,8 +317,19 @@
     }
 }
 
+// Table comment
+#block-7547b1336b10417685d7b0cb6a85cbe8,
+#block-170a50d5f2cc809d8f57f81033bccefe {
+    display: none!important;
+    text-align: center!important;
+    @include breakpoint-xs {
+        display: block!important;
+    }
+}
+
 // ENTERPRISE CARD
 #block-16fa50d5f2cc80ce8a00c1494dc489a7 {
+    margin-top: 16px!important;
     background: var(--base-white) !important;
     padding: 24px !important;
     border-radius: 16px !important;
@@ -333,13 +344,30 @@
         color: var(--base-black) !important;
     }
 
+    .notion-column-list {
+        @include breakpoint-md {
+            flex-direction: column!important;
+        }
+    }
+
     .notion-column {
         padding: 0px !important;
+        justify-content: center !important;
+        
+        @include breakpoint-md {
+            margin-inline-start: 0px!important;
+            width: 100%!important;
+        }
     }
 
     .notion-button {
         width: 100% !important;
         margin-top: 12px !important;
+
+        @include breakpoint-md {
+           margin-bottom: 16px!important;
+        }
+
     }
 
     .notion-button__content {
@@ -363,10 +391,6 @@
         }
     }
 
-    .notion-column {
-        justify-content: center !important;
-    }
-
     .notion-bulleted-list {
         position: relative !important;
         text-align: left !important;
@@ -374,7 +398,6 @@
         margin-left: 0px !important;
         padding-left: 36px !important;
     }
-
 
     .notion-list-item {
         margin-top: 4px !important;
