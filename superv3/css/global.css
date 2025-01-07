@@ -535,7 +535,7 @@ h2.notion-heading .notion-semantic-string {
   margin-bottom: 16px !important;
 }
 
-.super-root:not(#page-index, #page-pricing, #page-pricing-annual, #page-super-analytics) .notion-root > h1.notion-heading {
+main:not(#page-index, #page-pricing, #page-pricing-annual, #page-super-analytics) .notion-root > h1:first-of-type {
   max-width: 48rem !important;
   margin-top: 16px !important;
 }

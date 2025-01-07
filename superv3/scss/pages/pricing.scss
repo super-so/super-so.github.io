@@ -2,18 +2,14 @@
 @import "../components/callout";
 
 @media screen and (max-width: 1041px) {
-    #block-a5cea2ff8c2e4c0e8049ae086b48a357,
-    #block-16fa50d5f2cc809a8f34faccdc652e2a {
+    #block-174a50d5f2cc8028a470ed17ce4af22c,
+    #block-174a50d5f2cc805aa1eeebee40b23216 {
         flex-direction: column !important;
 
         .notion-column {
             width: 100% !important;
-            margin-inline-start: 0!important;
+            margin-inline-start: 0 !important;
         }
-    }
-
-    #block-16fa50d5f2cc80ce8a00c1494dc489a7 {
-        margin-top: -52px!important;
     }
 }
 
@@ -26,9 +22,8 @@
 // ––––––––––––––––– 
 // section-billing toggle
 // –––––––––––––––––
-.notion-root > h1 {
+.notion-root>h1 {
     text-align: center !important;
-    max-width: 800px !important;
     margin: 0 auto !important;
 }
 
@@ -36,121 +31,79 @@
     @include callout-container;
 }
 
-// MONTHLY PAGE TOGGLE
-#block-5f4034b33f5e4ef5aee7421baadd223e {
-    .notion-column {
-        height: 42px!important;
-        padding: 0px!important;
-        margin: 0px!important;
-        
-        &:first-child {
-            background: var(--base-white) !important;    
-            cursor: default !important;
-            padding: 12px 16px !important;
-        }
-
-        &:last-child {
-            @include breakpoint-xs {
-                padding-top: 8px !important;
-                padding-bottom: 8px !important;
-                width: 100% !important;
-            }
-        }
-    }
-}
-
-// ANNUAL PAGE TOGGLE
-#block-e5bbddb674254449a439e4d6a593c5da {
-    .notion-column {
-        &:last-child {
-            padding: 12px 16px !important;
-            background: var(--base-white) !important;
-            margin-left: 8px !important;
-            cursor: default !important;
-
-            @include breakpoint-xs {
-                margin: 0px !important;
-            }
-        }
-    }
-}
-
-// Both
-#block-5f4034b33f5e4ef5aee7421baadd223e,
-#block-e5bbddb674254449a439e4d6a593c5da {
-    margin: 0 auto !important;
-    text-align: center !important;
-    background: #F3F4F5 !important;
+// Price switcher
+#block-174a50d5f2cc8066961ce9fc3fe0c2ee,
+#block-174a50d5f2cc80879184c8e9bd6494ae {
+    padding: 4px !important;
+    background: #ededed !important;
+    border: 1px solid #e5e5e5!important;
     border-radius: 12px !important;
-    padding: 6px !important;
-    border: 1px solid var(--gray-50) !important;
-    box-shadow: 2.6px 4px 2.6px rgba(0, 0, 0, 0.017), 7.3px 11px 7.1px rgba(0, 0, 0, 0.025),
-        17.5px 26.5px 17.2px rgba(0, 0, 0, 0.033), 58px 88px 57px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0px 0px 26px -3px rgba(0, 0, 0, 0.1) !important;
+    margin: 0 auto!important;
 
-    @include breakpoint-xs {
-        border-radius: 12px !important;
-        width: 100% !important;
+    @include breakpoint-sm {
+        width: 100%!important;
     }
 
     .notion-column-list {
-        @include breakpoint-xs {
-            flex-wrap: nowrap !important;
-            // flex-direction: column !important;
-        }
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        gap: 4px!important;
+        
     }
 
     .notion-column {
+        padding: 0 !important;
+        margin: 0 !important;
         width: auto !important;
-        margin-inline-start: 0px !important;
-        padding: 8px 0px !important;
-        border-radius: 8px !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        flex-direction: row !important;
+        text-align: center !important;
 
-        @include breakpoint-xs {
-            width: 100% !important;
-            border-radius: 8px !important;
-        }
-
-        .notion-callout {
-            @include center;
-        }
-
-        .notion-text {
-            min-height: 0 !important;
-        }
-
-        .notion-semantic-string {
-            line-height: 0 !important;
-        }
-
-        .notion-text__content {
-            padding: 0px !important;
-        }
-
-        .notion-link {
-            text-decoration: none !important;
-            border-radius: 8px !important;
-            padding: 12px 16px !important;
-            opacity: 1 !important;
-            transition: background .2s ease-out !important;
-
-            &:hover {
-                background: var(--gray-25);
-            }
+        @include breakpoint-sm {
+            width: 100%!important;
         }
     }
+
+    p {
+        margin: 0!important;
+        padding: 0!important;
+        display: flex!important;
+        justify-content: center!important;
+        align-items: center!important;
+    }
+
+    a {
+        text-decoration: none!important;
+        border-radius: 8px!important;
+        padding: 8px 12px!important;
+        margin: 0!important;
+        opacity: 1!important;
+        width: auto!important;
+
+        @include breakpoint-sm {
+            width: 100%!important;
+        }
+
+        &:hover {
+            background: #f2f2f2!important;
+        }
+    }
+}
+
+// Monthly 
+#block-174a50d5f2cc8066961ce9fc3fe0c2ee .notion-column-list .notion-column:first-child p a {
+    background: white!important;
+}
+
+// Annual
+#block-174a50d5f2cc80879184c8e9bd6494ae .notion-column-list .notion-column:last-child p a {
+    background: white!important;
 }
 
 // –––––––––––––––––
 // section-pricing-CARDS
 // –––––––––––––––––
-// block-f59: MONTHLY PAGE
-// block-abe: ANNUAL PAGE
-#block-f59ac23d8cf344f084e546567605a696,
-#block-abea645bf4084158b5f710c635984ec4 {
+#block-174a50d5f2cc80c89a98fd50c9d0e2a3,
+#block-174a50d5f2cc803cb1a7dcfdb03b72bb {
 
     // PRO AND PERSONAL
     .notion-column:nth-child(3)>.notion-callout,
@@ -171,7 +124,7 @@
             margin-top: 16px !important;
             position: relative !important;
             align-items: center !important;
-            transition: background .15s ease-in-out!important;
+            transition: background .15s ease-in-out !important;
 
             &:hover {
                 background: #FFBE3D !important;
@@ -396,7 +349,7 @@
         width: 100% !important;
         position: relative !important;
         align-items: center !important;
-        transition: background .15s ease-in-out!important;
+        transition: background .15s ease-in-out !important;
 
         &:hover {
             background: #FFBE3D !important;
@@ -468,6 +421,16 @@
     }
 
     .notion-column-list {
+        @include breakpoint-sm {
+            flex-direction: column !important;
+        }
+
+        .notion-column {
+            @include breakpoint-sm {
+                width: 100% !important;
+                margin-inline-start: 0 !important;
+            }
+        }
 
         .notion-callout {
             height: 100% !important;
@@ -598,11 +561,15 @@
     .notion-column-list {
         gap: 16px !important;
 
+        @include breakpoint-sm {
+            flex-direction: column !important;
+        }
+
         .notion-column {
             margin-inline-start: 0px !important;
             width: auto !important;
 
-            @include breakpoint-xs {
+            @include breakpoint-sm {
                 padding: 0 !important;
             }
 
@@ -643,6 +610,11 @@
                         letter-spacing: 1px !important;
                         text-transform: uppercase !important;
                         font-weight: 500 !important;
+
+                        @include breakpoint-sm {
+                            left: 50% !important;
+                            transform: translateX(-50%) !important;
+                        }
                     }
                 }
 
@@ -668,6 +640,10 @@
 
                     &:nth-child(1) {
                         align-items: flex-start !important;
+
+                        @include breakpoint-sm {
+                            align-items: center !important;
+                        }
 
                         .notion-text:nth-child(1) {
                             font-size: 10px !important;
