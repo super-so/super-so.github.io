@@ -77,11 +77,12 @@
     margin-top: 0px!important;
 }
 
-.notion-collection-list__item .notion-property__title .notion-semantic-string>span {
+.notion-collection-list__item .notion-property__title {
     border: 0!important;
+    justify-content: center!important;
 }
 
-.notion-collection-list__item .notion-property__title .notion-semantic-string {
+.notion-collection-list__item .notion-property__title {
     margin-inline-end: 0px!important;
     margin-inline-start: 0px!important;
 }
@@ -111,7 +112,7 @@
     backdrop-filter: var(--link-backdrop-filter)!important;
 }
 
-.notion-collection-list__item .notion-property__title .notion-semantic-string>span {
+.notion-collection-list__item .notion-property__title {
     max-width: 100%!important;
     white-space: pre-wrap!important;
 }
