@@ -486,6 +486,30 @@ body {
   border-radius: 24px !important;
 }
 
+.notion-bookmark__content {
+  padding: 16px !important;
+  align-content: center !important;
+}
+
+.notion-bookmark__title {
+  font-size: 18px !important;
+  line-height: 1.4rem !important;
+  margin-bottom: 16px !important;
+}
+
+.notion-bookmark__description {
+  display: none !important;
+}
+
+.notion-bookmark__link p {
+  margin-bottom: 0px !important;
+  opacity: 0.6 !important;
+}
+
+.notion-bookmark__cover {
+  height: 100% !important;
+}
+
 h1,
 h1.notion-heading,
 h1.notion-heading span {
@@ -1314,7 +1338,7 @@ main:not(#page-index, #page-pricing, #page-pricing-annual, #page-super-analytics
   padding: 0 !important;
   letter-spacing: -0.6px !important;
 }
-.parent-page__features p {
+.parent-page__features .notion-root > p {
   margin-bottom: 16px !important;
   line-height: 1.72rem !important;
   font-size: 18px !important;
