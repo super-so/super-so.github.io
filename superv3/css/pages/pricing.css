@@ -340,6 +340,11 @@
   margin-top: 4px !important;
   margin-bottom: 6px !important;
 }
+#block-174a50d5f2cc80c89a98fd50c9d0e2a3 .notion-callout:first-child .notion-list-item .link,
+#block-174a50d5f2cc803cb1a7dcfdb03b72bb .notion-callout:first-child .notion-list-item .link {
+  opacity: 1 !important;
+  text-decoration: none !important;
+}
 #block-174a50d5f2cc80c89a98fd50c9d0e2a3 .notion-callout:first-child .notion-list-item::before,
 #block-174a50d5f2cc803cb1a7dcfdb03b72bb .notion-callout:first-child .notion-list-item::before {
   content: "";

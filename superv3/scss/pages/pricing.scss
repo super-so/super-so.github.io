@@ -228,6 +228,11 @@
             margin-top: 4px !important;
             margin-bottom: 6px !important;
 
+            .link {
+                opacity: 1!important;
+                text-decoration: none!important;
+            }
+
             &::before {
                 content: "";
                 position: absolute;
