@@ -1,126 +1,213 @@
 :root {
-    --picker-active-bg-color: rgb(233, 233, 233) !important;
-    --picker-active-text-color: rgb(70, 70, 70) !important;
-    --picker-border-color: rgb(233, 233, 233) !important;
-    --picker-text-color: rgb(70, 70, 70) !important;
-    --picker-border-radius: 8px !important;
-    --picker-hover-bg-color: rgb(233, 233, 233) !important;
-    --picker-hover-text-color: rgb(70, 70, 70) !important;
-    --picker-hover-border-color: rgb(233, 233, 233) !important;
+  --picker-active-bg-color: rgb(233, 233, 233) !important;
+  --picker-active-text-color: rgb(70, 70, 70) !important;
+  --picker-border-color: rgb(233, 233, 233) !important;
+  --picker-text-color: rgb(70, 70, 70) !important;
+  --picker-border-radius: 8px !important;
+  --picker-hover-bg-color: rgb(233, 233, 233) !important;
+  --picker-hover-text-color: rgb(70, 70, 70) !important;
+  --picker-hover-border-color: rgb(233, 233, 233) !important;
 }
+
 .notion-collection__header-wrapper .notion-dropdown__menu-header,
 .notion-dropdown__button svg:first-of-type,
 .notion-dropdown__option-icon {
+  display: none !important;
+}
+
+@keyframes dropdown-animation-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    z-index: -1;
+    opacity: 0;
+    transform: translateY(-5%) scale(0.95);
+  }
+}
+
+@media all and (max-width: 576px) {
+  .notion-dropdown {
+    width: 100% !important;
+  }
+
+  .notion-dropdown__button {
+    justify-content: space-between !important;
+    width: 100% !important;
+    border: 1px solid var(--color-border-default) !important;
+    padding: 10px !important;
+    border-radius: 8px !important;
+  }
+
+  .notion-dropdown__menu-wrapper {
+    margin-bottom: 25px !important;
+  }
+
+  .notion-dropdown__menu {
+    width: 100% !important;
+    border-radius: 8px !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+    box-shadow: 0 10px 20px -10px rgb(0 0 0 / 12%) !important;
+    background: var(--color-bg-default) !important;
+    border: 1px solid var(--color-border-default) !important;
+    margin-top: 5px !important;
+  }
+
+  .notion-dropdown__option-list {
+    padding: 0px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .notion-dropdown__option {
+    padding: 5px 16px !important;
+    height: 50px !important;
+  }
+
+  .notion-dropdown__option p,
+  .notion-dropdown__button-title {
+    font-size: 16px !important;
+  }
+
+  .notion-dropdown__button:hover {
+    background: transparent !important;
+  }
+
+  .notion-dropdown__option-icon {
     display: none !important;
+  }
 }
 
 @media all and (min-width: 576px) {
-    .notion-collection__header-wrapper .notion-dropdown {
-        width: 100% !important;
-        z-index: 1 !important;
-    }
-    .notion-collection__header-wrapper .notion-dropdown__button {
-        justify-content: space-between !important;
-        width: 100% !important;
-        border: 1px solid var(--color-border-default) !important;
-        padding: 10px !important;
-        border-radius: 8px !important;
-        display: none !important;
-    }
-    .notion-collection__header-wrapper .notion-dropdown__menu-wrapper {
-        margin-bottom: 16px !important;
-        position: relative !important;
-    }
-    .notion-collection__header-wrapper .notion-dropdown__menu-wrapper .notion-dropdown__menu {
-        width: 100% !important;
-        border-radius: 8px !important;
-        transform: none !important;
-        left: auto !important;
-        top: auto !important;
-    }
-    .notion-collection__header-wrapper .notion-dropdown__menu-wrapper .notion-dropdown__menu .notion-dropdown__option-list {
-        padding: 0 !important;
-        flex-wrap: wrap !important;
-    }
-    .notion-collection__header-wrapper .notion-dropdown__menu-wrapper .notion-dropdown__menu .notion-dropdown__option {
-        padding: 5px 16px !important;
-        height: 50px !important;
-    }
-    .notion-collection__header-wrapper .notion-dropdown__menu.initial-state {
-        z-index: 1 !important;
-        opacity: 1 !important;
-        transform: none !important;
-    }
-    .notion-collection__header-wrapper .notion-dropdown__menu.animate-in,
-    .notion-collection__header-wrapper .notion-dropdown__menu.animate-in.animate-out,
-    .notion-collection__header-wrapper .notion-dropdown__menu.animate-out {
-        animation: none !important;
-    }
-    .notion-collection__header-wrapper .notion-dropdown__menu {
-        width: 80% !important;
-        margin: 0 auto !important;
-        background: 0 0 !important;
-        box-shadow: unset !important;
-        position: relative !important;
-    }
-    .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option-list {
-        display: flex !important;
-        gap: 8px !important;
-    }
-    .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option.active {
-        background: var(--picker-active-bg-color) !important;
-    }
-    .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option.active p {
-        color: var(--picker-active-text-color) !important;
-    }
-    .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option {
-        border-radius: var(--picker-border-radius) !important;
-        border: 1px solid var(--picker-border-color) !important;
-        transition: 0.15s ease-in-out !important;
-        align-items: center !important;
-    }
-    .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option:hover {
-        background: var(--picker-hover-bg-color) !important;
-        border-color: var(--picker-hover-border-color) !important;
-    }
-    .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option:hover p {
-        color: var(--picker-hover-text-color) !important;
-    }
-    .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option p {
-        font-size: 1rem !important;
-        color: var(--picker-text-color) !important;
-    }
+  .notion-collection__header-wrapper .notion-dropdown {
+    width: 100% !important;
+    z-index: 1 !important;
+  }
+
+  .notion-collection__header-wrapper .notion-dropdown__button {
+    justify-content: space-between !important;
+    width: 100% !important;
+    border: 1px solid var(--color-border-default) !important;
+    padding: 10px !important;
+    border-radius: 8px !important;
+    display: none !important;
+  }
+
+  .notion-collection__header-wrapper .notion-dropdown__menu-wrapper {
+    margin-bottom: 16px !important;
+    position: relative !important;
+  }
+
+  .notion-collection__header-wrapper .notion-dropdown__menu-wrapper .notion-dropdown__menu {
+    width: 100% !important;
+    border-radius: 8px !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+  }
+
+  .notion-collection__header-wrapper .notion-dropdown__menu-wrapper .notion-dropdown__menu .notion-dropdown__option-list {
+    padding: 0 !important;
+    flex-wrap: wrap !important;
+  }
+
+  .notion-collection__header-wrapper .notion-dropdown__menu-wrapper .notion-dropdown__menu .notion-dropdown__option {
+    padding: 5px 16px !important;
+    height: 50px !important;
+  }
+
+  .notion-collection__header-wrapper .notion-dropdown__menu.initial-state {
+    z-index: 1 !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .notion-collection__header-wrapper .notion-dropdown__menu.animate-in,
+  .notion-collection__header-wrapper .notion-dropdown__menu.animate-in.animate-out,
+  .notion-collection__header-wrapper .notion-dropdown__menu.animate-out {
+    animation: none !important;
+  }
+
+  .notion-collection__header-wrapper .notion-dropdown__menu {
+    width: 80% !important;
+    margin: 0 auto !important;
+    background: 0 0 !important;
+    box-shadow: unset !important;
+    position: relative !important;
+  }
+
+  .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option-list {
+    display: flex !important;
+    gap: 8px !important;
+  }
+
+  .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option.active {
+    background: var(--picker-active-bg-color) !important;
+  }
+
+  .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option.active p {
+    color: var(--picker-active-text-color) !important;
+  }
+
+  .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option {
+    border-radius: var(--picker-border-radius) !important;
+    border: 1px solid var(--picker-border-color) !important;
+    transition: 0.15s ease-in-out !important;
+    align-items: center !important;
+  }
+
+  .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option:hover {
+    background: var(--picker-hover-bg-color) !important;
+    border-color: var(--picker-hover-border-color) !important;
+  }
+
+  .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option:hover p {
+    color: var(--picker-hover-text-color) !important;
+  }
+
+  .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option p {
+    font-size: 1rem !important;
+    color: var(--picker-text-color) !important;
+  }
 }
 
 /* DB View switcher code*/
 @-webkit-keyframes dropdown-animation-in {
-    0% {
-        opacity: 0;
-        transform: translateY(-5%) scale(0.95);
-   }
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-   }
+  0% {
+    opacity: 0;
+    transform: translateY(-5%) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
+
 @keyframes dropdown-animation-in {
-    0% {
-        opacity: 0;
-        transform: translateY(-5%) scale(0.95);
-   }
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-   }
+  0% {
+    opacity: 0;
+    transform: translateY(-5%) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
+
 @-webkit-keyframes dropdown-animation-out {
-    0% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-   }
-    to {
-        z-index: -1;
-        opacity: 0;
-        transform: translateY(-5%) scale(0.95);
-   }
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    z-index: -1;
+    opacity: 0;
+    transform: translateY(-5%) scale(0.95);
+  }
 }
