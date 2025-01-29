@@ -28,6 +28,10 @@
   }
 }
 
+.notion-dropdown__menu {
+  border: 0!important;
+}
+
 @media all and (max-width: 576px) {
   .notion-dropdown {
     width: 100% !important;
