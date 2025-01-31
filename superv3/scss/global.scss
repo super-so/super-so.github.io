@@ -196,7 +196,7 @@ main:not(#page-index, #page-pricing, #page-pricing-annual, #page-super-analytics
 }
 
 #page-index,
-.parent-page__index:not(#page-privacy, #page-terms, #page-analytics),
+.parent-page__index:not(#page-privacy, #page-memberships, #page-terms, #page-analytics),
 .parent-page__promo {
     .notion-header__cover {
         height: 78vh !important;

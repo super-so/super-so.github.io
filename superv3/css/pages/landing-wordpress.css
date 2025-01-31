@@ -1,0 +1,160 @@
+.super-navbar__item-list li:nth-child(1),
+.super-navbar__item-list li:nth-child(2),
+.super-navbar__item-list li:nth-child(3),
+.super-navbar__item-list li:nth-child(5),
+.super-navbar__item-list li:nth-child(6),
+.super-navbar__item-list li:nth-child(7) {
+  display: none !important;
+}
+
+.super-footer__links {
+  display: none !important;
+}
+
+.notion-root.max-width {
+  --layout-max-width: 1171px !important ;
+}
+
+/* HERO CALLOUT  */
+#block-188a50d5f2cc80028959d5393db6c63f h1.notion-heading {
+  font-size: clamp(2.6rem, 3.3vw, 3.2rem) !important;
+  margin-bottom: 2px !important;
+}
+#block-188a50d5f2cc80028959d5393db6c63f .notion-column {
+  justify-content: center !important;
+}
+#block-188a50d5f2cc80028959d5393db6c63f .notion-button {
+  margin-top: 14px !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  #block-188a50d5f2cc80028959d5393db6c63f {
+    text-align: center !important;
+  }
+  #block-188a50d5f2cc80028959d5393db6c63f .notion-column-list {
+    flex-direction: column !important;
+  }
+  .notion-column {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+/* Super is perfect for */
+#block-188a50d5f2cc80fe8a52ff09940d9058 h2 {
+  text-align: center !important;
+}
+#block-188a50d5f2cc80fe8a52ff09940d9058 .notion-callout {
+  border-radius: 24px !important;
+  border: 1px solid #eee !important;
+  padding: 24px !important;
+}
+#block-188a50d5f2cc80fe8a52ff09940d9058 h3 {
+  margin: 0 !important;
+}
+
+/* LEFT-RIGHT SECTION */
+#block-188a50d5f2cc80d18f35d7ecd3502675 .notion-column {
+  justify-content: center !important;
+  padding: 0 !important;
+}
+#block-188a50d5f2cc80d18f35d7ecd3502675 h2 {
+  text-align: center !important;
+}
+#block-188a50d5f2cc80d18f35d7ecd3502675 h3 {
+  margin: 0 !important;
+  font-size: 2rem !important;
+}
+#block-188a50d5f2cc80d18f35d7ecd3502675 .notion-image img {
+  border-radius: 24px !important;
+}
+@media only screen and (max-width: 1024px) {
+  #block-188a50d5f2cc80d18f35d7ecd3502675 .notion-column-list:nth-of-type(odd) {
+    flex-direction: column-reverse !important;
+  }
+}
+
+/* Quotes */
+#block-188a50d5f2cc8002b5cee40888048698 .notion-callout {
+  border-radius: 24px !important;
+  border: 1px solid #eee !important;
+  padding: 24px !important;
+}
+#block-188a50d5f2cc8002b5cee40888048698 .notion-quote {
+  font-size: 18px !important;
+}
+#block-188a50d5f2cc8002b5cee40888048698 h3 {
+  margin-top: 4px !important;
+}
+#block-188a50d5f2cc8002b5cee40888048698 .notion-callout__content {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+/* CTA Yellow callout */
+.notion-callout.bg-yellow-light {
+  padding: 48px 42px 48px 42px !important;
+  text-align: center !important;
+  border-radius: 24px !important;
+  background: #F9F9F8 !important;
+  border: 1px solid #eee !important;
+}
+.notion-callout.bg-yellow-light h1 {
+  font-size: 42px !important;
+  margin-top: 0px !important;
+  margin-bottom: 16px !important;
+}
+
+.notion-table {
+  width: 100% !important;
+  border-collapse: collapse;
+  border-radius: 10px;
+  /* Adjust the radius as needed */
+  overflow: hidden;
+  /* Ensures the corners are rounded */
+}
+
+td {
+  padding: 6px !important;
+}
+
+.notion-table td:nth-child(2),
+.notion-table td:nth-child(3) {
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
+.notion-table td:last-child {
+  border-left: 0 !important;
+}
+
+.notion-table.col-header tr:first-child,
+.notion-table.row-header td:first-child {
+  background: #F6F6F6 !important;
+  font-weight: 600 !important;
+}
+
+.notion-table.row-header td:first-child {
+  border-right: 1px solid var(--color-border-dark) !important;
+}
+
+#block-188a50d5f2cc803fb96bfadd58eeb3b8 {
+  text-align: center !important;
+}
+
+.notion-table tr td:nth-child(3) {
+  text-align: center !important;
+}
+
+/* Scroll table message */
+#block-189a50d5f2cc806292dbcf783cf33cf7 {
+  text-align: center !important;
+  margin-bottom: 12px !important;
+}
+
+@media (min-width: 768px) {
+  #block-189a50d5f2cc806292dbcf783cf33cf7 {
+    display: none;
+  }
+}

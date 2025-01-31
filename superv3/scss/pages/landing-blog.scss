@@ -1,0 +1,132 @@
+.super-navbar__item-list {
+
+    li:nth-child(1),
+    li:nth-child(2),
+    li:nth-child(3),
+    li:nth-child(5),
+    li:nth-child(6),
+    li:nth-child(7) {
+        display: none !important;
+    }
+}
+
+.super-footer__links {
+    display: none !important;
+}
+
+.notion-root.max-width {
+    --layout-max-width: 1171px !important
+}
+
+/* HERO CALLOUT  */
+#block-17da50d5f2cc808c85a3d8809b4b1aa0 {
+    h1.notion-heading {
+        font-size: clamp(2.6rem, 3.3vw, 3.2rem) !important;
+        margin-bottom: 2px !important;
+    }
+
+    .notion-column {
+        justify-content: center !important;
+    }
+
+    .notion-button {
+        margin-top: 14px !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #block-17da50d5f2cc808c85a3d8809b4b1aa0 {
+        text-align: center !important;
+    }
+
+    #block-17da50d5f2cc808c85a3d8809b4b1aa0 .notion-column-list {
+        flex-direction: column !important;
+    }
+
+    .notion-column {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+}
+
+#block-17da50d5f2cc8132971bcc700085bc0e {
+    h2 {
+        text-align: center !important;
+    }
+
+    .notion-callout {
+        border-radius: 24px !important;
+        border: 1px solid #eee !important;
+        padding: 24px !important;
+    }
+
+    h3 {
+        margin: 0 !important;
+    }
+}
+
+/* LEFT-RIGHT SECTION */
+#block-17da50d5f2cc8022b2a4fdfc362b0a7d {
+    .notion-column {
+        justify-content: center !important;
+        padding: 0 !important;
+    }
+
+    h2 {
+        text-align: center !important;
+    }
+
+    h3 {
+        margin: 0 !important;
+        font-size: 2rem !important;
+    }
+
+    .notion-image img {
+        border-radius: 24px !important;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .notion-column-list:nth-of-type(odd) {
+            flex-direction: column-reverse !important;
+        }
+    }
+}
+
+/* Quotes */
+#block-17da50d5f2cc81ffb22dffb29504d4d0 {
+    .notion-callout {
+        border-radius: 24px !important;
+        border: 1px solid #eee !important;
+        padding: 24px !important;
+    }
+
+    .notion-quote {
+        font-size: 18px !important;
+    }
+
+    h3 {
+        margin-top: 4px !important;
+    }
+
+    .notion-callout__content {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+}
+
+/* CTA Yellow callout */
+.notion-callout.bg-yellow-light {
+    padding: 48px 42px 48px 42px !important;
+    text-align: center !important;
+    border-radius: 24px !important;
+    background: #F9F9F8 !important;
+    border: 1px solid #eee !important;
+
+    h1 {
+        font-size: 42px !important;
+        margin-top: 0px !important;
+        margin-bottom: 16px !important;
+    }
+}

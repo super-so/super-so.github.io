@@ -1,0 +1,167 @@
+@import "../mixins";
+@import "../components/callout";
+
+.notion-callout {
+    @include callout-container;
+}
+
+.super-content {
+    --layout-max-width: 1100px !important;
+    --column-spacing: 24px!important;
+}
+
+.notion-header {
+    display: none !important;
+}
+
+.notion-callout.bg-gray-light {
+    background: #F9F9F8 !important;
+}
+
+.notion-callout__content {
+    @include center;
+    flex-direction: column !important;
+    text-align: center !important;
+}
+
+// Hero
+#block-18ba50d5f2cc80d6ae9cc9ef4fc94045 {
+    p {
+        max-width: 600px !important;
+        margin-bottom: 12px !important;
+    }
+}
+
+#block-18ba50d5f2cc80558319d3a8c45310ad {
+    display: flex!important;
+    justify-content: center!important;
+
+    img {
+        width: 140%!important;
+        max-width: none!important;
+
+        @include breakpoint-sm {
+            width: 120%!important;
+        }
+    }
+}
+
+h1:first-of-type {
+    font-family: "Instrument Serif", serif !important;
+    font-weight: 400!important;
+    font-style: italic!important;
+    font-size: 8rem !important;
+
+    @include breakpoint-sm {
+        font-size: 4.2rem !important;
+    }
+}
+
+.notion-button__content.color-gray {
+    border: 0 !important;
+    font-size: 12px !important;
+
+    img {
+        width: 12px !important;
+        height: 12px !important;
+    }
+}
+
+.notion-quote.large {
+    font-weight: 500 !important;
+    font-size: 30px !important;
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+/* Quotes */
+#block-18ba50d5f2cc80baa9bad77bb0665abc {
+    .notion-callout {
+        border-radius: 24px !important;
+        border: 1px solid #eee !important;
+        padding: 24px !important;
+    }
+
+    .notion-quote {
+        font-size: 18px !important;
+    }
+
+    h3 {
+        margin-top: 4px !important;
+    }
+
+    .notion-callout__content {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+}
+
+// Footer CTA section
+#block-18ba50d5f2cc802790cfd5cdb471b9ed,
+#block-18ba50d5f2cc807b9bd0f5ad5a0f1272 {
+    @include callout-container;
+    text-align: center !important;
+    padding: 80px 24px !important;
+    background-position: center !important;
+    background-size: cover !important;
+    position: relative !important;
+    overflow: hidden !important;
+    border-radius: 24px !important;
+    color: white !important;
+
+    h2 {
+        font-family: "Instrument Serif", serif !important;
+        font-weight: 400!important;
+        font-style: italic!important;
+        font-size: 3rem !important;
+        margin-bottom: 16px !important;
+    }
+
+    .notion-button:hover {
+        color: #111111 !important;
+    }
+
+    .notion-image:last-child {
+        position: absolute !important;
+        transform: scale(1.1) !important;
+        z-index: -1 !important;
+
+        @include breakpoint-md {
+            transform: rotate(90deg) scale(3)!important;
+        }
+
+        @include breakpoint-xs {
+            transform: rotate(90deg) scale(3)!important;
+        }
+    }
+}
+
+// Support testimonials
+#block-18ba50d5f2cc810c9262f36209bff3e7 {
+    text-align: center !important;
+
+    .notion-quote {
+        font-size: 18px!important;
+    }
+
+    p {
+        max-width: 40rem !important;
+        margin: 2px auto 12px auto !important;
+    }
+
+    .notion-callout {
+        border-radius: 24px !important;
+        border: 1px solid #eee !important;
+        padding: 16px !important;
+    }
+
+}
+
+// Build anything
+#block-18ca50d5f2cc8065bca5c3b27e992951 {
+    h3 {
+        margin-top: 8px!important;
+    }
+}
