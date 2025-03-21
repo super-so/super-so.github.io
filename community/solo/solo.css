@@ -1,0 +1,1748 @@
+@charset "UTF-8";
+.notion-header,
+.notion-toggle,
+.notion-collection__header-wrapper,
+.super-navbar__viewport-wrapper{
+  display: none !important;
+}
+
+html,
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+.super-root{
+  padding: 0px !important;
+}
+
+@media (min-width: 1280px){
+  .notion-root,
+.super-navbar__content,
+.super-footer__content{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 1400px !important;
+  }
+}
+
+.notion-root{
+  margin: 0px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: left !important;
+}
+
+.super-content-wrapper{
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+@media (min-width: 1536px){
+  .super-content-wrapper{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+.notion-text.empty{
+  display: none !important;
+  height: 0px !important;
+}
+
+.notion-text__content{
+  padding: 0px !important;
+}
+
+.notion-semantic-string .link{
+  font-weight: 700 !important;
+  opacity: 1 !important;
+}
+
+.notion-semantic-string .link:hover{
+  opacity: 1 !important;
+}
+
+.notion-image{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.notion-column{
+  margin-left: 0px !important;
+  margin-inline-start: 0px !important;
+}
+
+.notion-quote{
+  margin: 0px !important;
+  margin-inline-start: 0px !important;
+  border-inline-start-width: 0px !important;
+  padding: 0px !important;
+}
+
+.super-navbar{
+  height: 100% !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+@media (min-width: 1536px){
+  .super-navbar{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+.super-navbar {
+  background: none !important;
+}
+.super-navbar .super-navbar__content{
+  padding: 0px !important;
+}
+.super-navbar .super-navbar__content .super-navbar__logo{
+  padding: 0px !important;
+}
+.super-navbar .super-navbar__content .super-navbar__actions{
+  display: flex !important;
+  align-items: center !important;
+  gap: 1.5rem !important;
+}
+.super-navbar .super-navbar__content .super-navbar__actions .super-navbar__button{
+  --tw-scale-x: 1.05 !important;
+  --tw-scale-y: 1.05 !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+  padding: 0px !important;
+  opacity: 1 !important;
+}
+.super-navbar .super-navbar__content .super-navbar__actions .super-navbar__button:hover{
+  opacity: 0.6 !important;
+}
+.super-navbar .super-navbar__actions:has(.super-navbar__button) .notion-link:has(.super-navbar__cta){
+  padding: 0px !important;
+}
+@media (max-width: 430px) {
+  .super-navbar .super-navigation-menu__items{
+    padding-top: 9rem !important;
+  }
+  .super-navbar .super-navbar__menu-wrapper{
+    top: 0px;
+    height: 100vh;
+  }
+}
+
+.notion-root.has-footer{
+  padding: 0px !important;
+}
+
+/*
+! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-feature-settings: normal; /* 2 */
+  font-variation-settings: normal; /* 3 */
+  font-size: 1em; /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+.absolute{
+  position: absolute;
+}
+.relative{
+  position: relative;
+}
+.inset-0{
+  inset: 0px;
+}
+.m-0{
+  margin: 0px;
+}
+.mx-0{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+.my-0{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.my-12{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.my-16{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+.mb-24{
+  margin-bottom: 6rem;
+}
+.mb-3{
+  margin-bottom: 0.75rem;
+}
+.mb-4{
+  margin-bottom: 1rem;
+}
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+.ml-0{
+  margin-left: 0px;
+}
+.ms-0{
+  margin-inline-start: 0px;
+}
+.mt-0{
+  margin-top: 0px;
+}
+.mt-3{
+  margin-top: 0.75rem;
+}
+.block{
+  display: block;
+}
+.inline{
+  display: inline;
+}
+.flex{
+  display: flex;
+}
+.grid{
+  display: grid;
+}
+.hidden{
+  display: none;
+}
+.h-0{
+  height: 0px;
+}
+.h-auto{
+  height: auto;
+}
+.h-full{
+  height: 100%;
+}
+.h-screen{
+  height: 100vh;
+}
+.max-h-\[680px\]{
+  max-height: 680px;
+}
+.max-h-full{
+  max-height: 100%;
+}
+.min-h-\[120px\]{
+  min-height: 120px;
+}
+.min-h-\[480px\]{
+  min-height: 480px;
+}
+.min-h-\[640px\]{
+  min-height: 640px;
+}
+.w-20{
+  width: 5rem;
+}
+.w-full{
+  width: 100%;
+}
+.w-screen{
+  width: 100vw;
+}
+.min-w-\[200px\]{
+  min-width: 200px;
+}
+.flex-1{
+  flex: 1 1 0%;
+}
+.translate-y-0{
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.translate-y-\[150px\]{
+  --tw-translate-y: 150px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.scale-100{
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.scale-105{
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.scale-125{
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.flex-col{
+  flex-direction: column;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.items-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.gap-0{
+  gap: 0px;
+}
+.gap-4{
+  gap: 1rem;
+}
+.gap-5{
+  gap: 1.25rem;
+}
+.gap-6{
+  gap: 1.5rem;
+}
+.overflow-hidden{
+  overflow: hidden;
+}
+.rounded{
+  border-radius: 12px;
+}
+.border-\[2px\]{
+  border-width: 2px;
+}
+.border-\[3px\]{
+  border-width: 3px;
+}
+.border-b-\[1px\]{
+  border-bottom-width: 1px;
+}
+.border-s-0{
+  border-inline-start-width: 0px;
+}
+.border-t-0{
+  border-top-width: 0px;
+}
+.border-text-color{
+  border-color: color-mix(in srgb, var(--navbar-text-color) 100%, var(--navbar-text-color));
+}
+.border-text-color-light{
+  border-color: color-mix(in srgb, var(--navbar-text-color) 20%, transparent);
+}
+.bg-text-color{
+  background-color: color-mix(in srgb, var(--navbar-text-color) 100%, var(--navbar-text-color));
+}
+.bg-theme-color{
+  background-color: var(--navbar-background-color);
+}
+.bg-theme-color-gradient{
+  background-image: linear-gradient(to bottom, var(--navbar-background-color) 0%, transparent 100%);
+}
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-0{
+  padding: 0px;
+}
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.py-2\.5{
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+.py-24{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.pb-4{
+  padding-bottom: 1rem;
+}
+.pb-6{
+  padding-bottom: 1.5rem;
+}
+.pr-0{
+  padding-right: 0px;
+}
+.pt-36{
+  padding-top: 9rem;
+}
+.pt-4{
+  padding-top: 1rem;
+}
+.text-left{
+  text-align: left;
+}
+.text-base{
+  font-size: 1.1rem;
+}
+.text-lg{
+  font-size: 1.375rem;
+}
+.text-sm{
+  font-size: 0.88rem;
+}
+.text-xl{
+  font-size: 1.72rem;
+}
+.font-\[400\]{
+  font-weight: 400;
+}
+.font-bold{
+  font-weight: 700;
+}
+.font-normal{
+  font-weight: 400;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.not-italic{
+  font-style: normal;
+}
+.leading-\[1\.25\]{
+  line-height: 1.25;
+}
+.leading-\[1\.3\]{
+  line-height: 1.3;
+}
+.leading-\[1\.55\]{
+  line-height: 1.55;
+}
+.leading-\[125\%\]{
+  line-height: 125%;
+}
+.leading-\[2\.5rem\]{
+  line-height: 2.5rem;
+}
+.leading-none{
+  line-height: 1;
+}
+.tracking-wider{
+  letter-spacing: 0.05em;
+}
+.tracking-widest{
+  letter-spacing: 0.1em;
+}
+.text-text-color{
+  color: color-mix(in srgb, var(--navbar-text-color) 100%, var(--navbar-text-color));
+}
+.text-text-color-medium{
+  color: color-mix(in srgb, var(--navbar-text-color) 60%, transparent);
+}
+.text-theme-color{
+  color: var(--navbar-background-color);
+}
+.underline{
+  text-decoration-line: underline;
+}
+.no-underline{
+  text-decoration-line: none;
+}
+.decoration-text-color-light{
+  text-decoration-color: color-mix(in srgb, var(--navbar-text-color) 20%, transparent);
+}
+.decoration-2{
+  text-decoration-thickness: 2px;
+}
+.opacity-0{
+  opacity: 0;
+}
+.opacity-100{
+  opacity: 1;
+}
+.opacity-30{
+  opacity: 0.3;
+}
+.opacity-40{
+  opacity: 0.4;
+}
+.opacity-50{
+  opacity: 0.5;
+}
+.opacity-60{
+  opacity: 0.6;
+}
+.shadow-none{
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.blur-lg{
+  --tw-blur: blur(16px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-opacity{
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-transform{
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.duration-200{
+  transition-duration: 200ms;
+}
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+h1.notion-heading,
+h2.notion-heading,
+h3.notion-heading,
+h4.notion-heading,
+h5.notion-heading,
+h6.notion-heading,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  padding: 0px !important;
+  font-weight: 400 !important;
+  line-height: 1.3 !important;
+}
+
+h1,
+h1.notion-heading{
+  margin: 0px !important;
+  font-size: 1.72rem !important;
+  line-height: 2.5rem !important;
+}
+
+@media (min-width: 1024px){
+  h1,
+h1.notion-heading{
+    font-size: 2.69rem !important;
+    line-height: 3.2rem !important;
+  }
+}
+
+.notion-column h1:first-of-type{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-bottom: 0.75rem !important;
+  width: 100% !important;
+  text-align: left !important;
+}
+
+h1:first-of-type:not(.notion-column h1){
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  width: 100% !important;
+  text-align: left !important;
+}
+
+@media (min-width: 1024px){
+  h1:first-of-type:not(.notion-column h1){
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 4rem !important;
+    margin-bottom: 2rem !important;
+    width: 83.333333% !important;
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 1280px){
+  h1:first-of-type:not(.notion-column h1){
+    width: 75% !important;
+  }
+}
+
+article#block-about h1{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-bottom: 1rem !important;
+  width: 100% !important;
+  text-align: left !important;
+}
+
+h2,
+h2.notion-heading{
+  margin-bottom: 0.75rem !important;
+  font-size: 1.72rem !important;
+}
+
+@media (min-width: 1024px){
+  h2,
+h2.notion-heading{
+    font-size: 2.15rem !important;
+  }
+}
+
+h3,
+h3.notion-heading{
+  margin-bottom: 0.5rem !important;
+  font-size: 0.88rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+p,
+li{
+  font-size: 1.1rem !important;
+  line-height: 1.55 !important;
+  color: color-mix(in srgb, var(--navbar-text-color) 60%, transparent) !important;
+}
+p a,
+li a{
+  font-weight: 400 !important;
+  color: color-mix(in srgb, var(--navbar-text-color) 100%, var(--navbar-text-color)) !important;
+  text-decoration-line: underline !important;
+  text-decoration-color: color-mix(in srgb, var(--navbar-text-color) 20%, transparent) !important;
+  text-decoration-thickness: 2px !important;
+  transition-property: all !important;
+  transition-duration: 200ms !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  text-underline-offset: 3px !important;
+}
+p a:hover,
+li a:hover{
+  text-decoration-line: none !important;
+  transition-property: all !important;
+  transition-duration: 200ms !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+a{
+  font-weight: 400 !important;
+}
+
+ul.notion-bulleted-list{
+  margin: 0px !important;
+  padding: 0px !important;
+  list-style-type: none;
+}
+ul.notion-bulleted-list li{
+  position: relative;
+  padding-left: 1.5rem;
+}
+ul.notion-bulleted-list li::before {
+  content: "→ ";
+  position: absolute;
+  left: 0px;
+}
+ul.notion-bulleted-list li a{
+  font-weight: 700 !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter !important;
+  transition-duration: 200ms !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+ul.notion-bulleted-list li a:hover{
+  text-decoration-line: none !important;
+}
+
+p .color-gray a{
+  border-radius: 12px !important;
+  border-width: 3px !important;
+  border-color: color-mix(in srgb, var(--navbar-text-color) 100%, var(--navbar-text-color)) !important;
+  background-color: color-mix(in srgb, var(--navbar-text-color) 100%, var(--navbar-text-color)) !important;
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+  padding-top: 0.625rem !important;
+  padding-bottom: 0.625rem !important;
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  line-height: 1 !important;
+  letter-spacing: 0.1em !important;
+  color: var(--navbar-background-color) !important;
+  text-decoration-line: none !important;
+}
+
+p .color-gray a:hover{
+  background-color: var(--navbar-background-color) !important;
+  color: color-mix(in srgb, var(--navbar-text-color) 100%, var(--navbar-text-color)) !important;
+}
+
+p:has(span.color-gray),
+li:has(span.color-gray){
+  opacity: 1 !important;
+}
+
+.super-navbar{
+  background-image: linear-gradient(to bottom, var(--navbar-background-color) 0%, transparent 100%) !important;
+}
+.super-navbar .super-navbar__content{
+  display: flex !important;
+  min-height: 120px !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+.super-navbar .super-navbar__content .super-navbar__logo-image img{
+  height: auto !important;
+  width: 5rem !important;
+}
+.super-navbar .super-navbar__actions{
+  padding-right: 0px !important;
+}
+.super-navbar .super-navbar__actions .super-navbar__cta{
+  display: none !important;
+  border-radius: 12px !important;
+  border-width: 3px !important;
+  border-color: color-mix(in srgb, var(--navbar-text-color) 100%, var(--navbar-text-color)) !important;
+  background-color: color-mix(in srgb, var(--navbar-text-color) 100%, var(--navbar-text-color)) !important;
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+  padding-top: 0.625rem !important;
+  padding-bottom: 0.625rem !important;
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  line-height: 1 !important;
+  letter-spacing: 0.1em !important;
+  color: var(--navbar-background-color) !important;
+  text-decoration-line: none !important;
+}
+.super-navbar .super-navbar__actions .super-navbar__cta:hover{
+  background-color: var(--navbar-background-color) !important;
+  color: color-mix(in srgb, var(--navbar-text-color) 100%, var(--navbar-text-color)) !important;
+  opacity: 1 !important;
+}
+@media (min-width: 768px){
+  .super-navbar .super-navbar__actions .super-navbar__cta{
+    display: flex !important;
+  }
+}
+.super-navbar .super-navbar__item-list .super-navbar__item{
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  text-decoration-line: none !important;
+  opacity: 1 !important;
+}
+.super-navbar .super-navbar__item-list .super-navbar__item:hover{
+  opacity: 0.6 !important;
+}
+.super-navbar .super-navbar__menu-wrapper .super-navigation-menu__item,
+.super-navbar .super-navbar__menu-wrapper .super-navigation-menu__list-header{
+  --tw-scale-x: 1 !important;
+  --tw-scale-y: 1 !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.notion-collection-gallery{
+  margin-top: 4rem !important;
+  margin-bottom: 4rem !important;
+  width: 100% !important;
+  border-top-width: 0px !important;
+  padding: 0px !important;
+}
+
+@media (min-width: 1024px){
+  .notion-collection-gallery{
+    margin-top: 6rem !important;
+    margin-bottom: 6rem !important;
+  }
+}
+@media (min-width: 1025px) {
+  .notion-collection-gallery{
+    display: flex !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+    gap: 0px !important;
+  }
+  @media (min-width: 768px){
+    .notion-collection-gallery{
+      flex-direction: row !important;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .notion-collection-gallery{
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 1rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .notion-collection-gallery{
+    display: grid !important;
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    gap: 1rem !important;
+  }
+}
+.notion-collection-gallery .notion-collection-card{
+  position: relative !important;
+  min-height: 480px !important;
+  min-width: 200px !important;
+  flex: 1 1 0% !important;
+  overflow: hidden !important;
+  --tw-shadow: 0 0 #0000 !important;
+  --tw-shadow-colored: 0 0 #0000 !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+.notion-collection-gallery .notion-collection-card:nth-child(3n){
+  width: 100%;
+}
+.notion-collection-gallery .notion-collection-card .notion-collection-card__cover{
+  height: 100% !important;
+  width: 100% !important;
+  background-color: var(--navbar-background-color) !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  opacity: 1 !important;
+  transition-property: transform !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 200ms !important;
+}
+.notion-collection-gallery .notion-collection-card .notion-collection-card__content{
+  position: absolute !important;
+  inset: 0px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 0 !important;
+  transition-property: opacity !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 200ms !important;
+}
+.notion-collection-gallery .notion-collection-card:hover .notion-collection-card__cover{
+  --tw-scale-x: 1.25 !important;
+  --tw-scale-y: 1.25 !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+  opacity: 0.3 !important;
+  --tw-blur: blur(16px) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+}
+.notion-collection-gallery .notion-collection-card:hover .notion-collection-card__content{
+  opacity: 1 !important;
+}
+.notion-collection-gallery .notion-collection-card:hover .notion-collection-card__property.notion-semantic-string{
+  --tw-translate-y: 0px !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+  opacity: 1 !important;
+}
+.notion-collection-gallery .notion-collection-card .notion-collection-card__property.notion-semantic-string{
+  --tw-translate-y: 150px !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+  font-size: 1.375rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  line-height: 125% !important;
+  letter-spacing: 0.1em !important;
+  opacity: 0 !important;
+  transition-property: all !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 200ms !important;
+}
+
+main#page-index p:first-of-type:has(span.color-gray){
+  text-align: left !important;
+}
+
+@media (min-width: 1024px){
+  main#page-index p:first-of-type:has(span.color-gray){
+    text-align: center !important;
+  }
+}
+main#page-index .notion-column-list{
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 6rem !important;
+  display: grid !important;
+  width: 100% !important;
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  gap: 1.5rem !important;
+}
+@media (min-width: 1024px){
+  main#page-index .notion-column-list{
+    width: 66.666667% !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 2.5rem !important;
+  }
+}
+main#page-index .notion-column-list .notion-column{
+  margin: 0px !important;
+  margin-inline-start: 0px !important;
+  display: flex !important;
+  height: 100% !important;
+  width: 100% !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  padding: 0px !important;
+  text-align: left !important;
+}
+main#page-index .notion-column:has(.notion-image.page-width){
+  display: flex !important;
+  height: 100% !important;
+  justify-content: center !important;
+}
+main#page-index .notion-column:has(.notion-image.page-width) .notion-image.page-width{
+  margin-bottom: 1rem !important;
+  height: 100% !important;
+  min-height: 640px !important;
+  width: 100% !important;
+}
+@media (min-width: 1024px){
+  main#page-index .notion-column:has(.notion-image.page-width) .notion-image.page-width{
+    margin-bottom: 0px !important;
+  }
+}
+main#page-index .notion-column:has(.notion-image.page-width) .notion-image.page-width img{
+  margin-left: auto !important;
+  margin-right: auto !important;
+  height: 100% !important;
+  width: 100% !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+main:not(#page-index) .notion-column-list:first-child{
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+main:not(#page-index) .notion-column-list:not(:first-child){
+  margin-top: 0px !important;
+  margin-bottom: 1.5rem !important;
+}
+@media (min-width: 1024px){
+  main:not(#page-index) .notion-column-list:not(:first-child){
+    margin-bottom: 3rem !important;
+  }
+}
+main:not(#page-index) .notion-column-list{
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: grid !important;
+  width: 100% !important;
+  gap: 1.5rem !important;
+  text-align: left !important;
+}
+@media (min-width: 1024px){
+  main:not(#page-index) .notion-column-list{
+    gap: 2.5rem !important;
+  }
+}
+main:not(#page-index) .notion-column-list {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+main:not(#page-index) .notion-column-list .notion-column{
+  margin: 0px !important;
+  margin-inline-start: 0px !important;
+  height: 100% !important;
+  width: 100% !important;
+  padding: 0px !important;
+  text-align: left !important;
+}
+
+article[id^=block-about]{
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1.5rem !important;
+  text-align: left !important;
+}
+
+@media (min-width: 1024px){
+  article[id^=block-about]{
+    width: 75% !important;
+    padding-top: 3rem !important;
+    padding-bottom: 4rem !important;
+  }
+}
+
+@media (min-width: 1536px){
+  article[id^=block-about]{
+    width: 41.666667% !important;
+  }
+}
+
+article[id^=block-work-] .notion-image.full-width + .notion-column-list{
+  border-bottom-width: 1px !important;
+  border-color: color-mix(in srgb, var(--navbar-text-color) 20%, transparent) !important;
+  padding-bottom: 1rem !important;
+}
+
+@media (min-width: 1024px){
+  article[id^=block-work-] .notion-image.full-width + .notion-column-list{
+    padding-bottom: 3rem !important;
+  }
+}
+
+.notion-quote{
+  margin-bottom: 0.5rem !important;
+  margin-top: 0px !important;
+  border-width: 2px !important;
+  border-color: color-mix(in srgb, var(--navbar-text-color) 100%, var(--navbar-text-color)) !important;
+  background-color: color-mix(in srgb, var(--navbar-text-color) 100%, var(--navbar-text-color)) !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+  text-align: left !important;
+}
+
+@media (min-width: 1024px){
+  .notion-quote{
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+  }
+}
+.notion-quote span{
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: inline !important;
+  width: 100% !important;
+  font-size: 1.375rem !important;
+  line-height: 1.25 !important;
+  color: var(--navbar-background-color) !important;
+}
+@media (min-width: 1024px){
+  .notion-quote span{
+    display: block !important;
+    width: 66.666667% !important;
+    font-size: 2.15rem !important;
+  }
+}
+.notion-quote span em{
+  margin-top: 0.75rem !important;
+  display: block !important;
+  font-size: 1.1rem !important;
+  font-style: normal !important;
+  color: var(--navbar-background-color) !important;
+  opacity: 0.5 !important;
+}
+@media (min-width: 1024px){
+  .notion-quote span em{
+    font-size: 1.375rem !important;
+  }
+}
+
+.notion-image.full-width{
+  margin-bottom: 2.5rem !important;
+  max-height: 680px !important;
+  width: 100vw !important;
+}
+
+@media (min-width: 1024px){
+  .notion-image.full-width{
+    margin-bottom: 3rem !important;
+  }
+}
+.notion-image.full-width img{
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100%;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 430px) {
+  .super-footer{
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+.super-footer__content .super-footer__logo-image{
+  margin-bottom: 1.5rem !important;
+  height: auto !important;
+  width: 5rem !important;
+}
+.super-footer__content .super-footer__links{
+  gap: 1.25rem !important;
+}
+.super-footer__content .super-footer__links a.super-footer__link{
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  color: color-mix(in srgb, var(--navbar-text-color) 100%, var(--navbar-text-color)) !important;
+}
+.super-footer__content .super-footer__links a.super-footer__link:hover{
+  opacity: 0.6 !important;
+}
+.super-footer__content .super-footer__links a.super-footer__link p{
+  font-size: 0.88rem !important;
+  color: color-mix(in srgb, var(--navbar-text-color) 100%, var(--navbar-text-color)) !important;
+}
+.super-footer__content .super-footer__footnote{
+  font-size: 0.88rem !important;
+  opacity: 0.4 !important;
+}
+.hover\:bg-theme-color:hover{
+  background-color: var(--navbar-background-color);
+}
+.hover\:text-text-color:hover{
+  color: color-mix(in srgb, var(--navbar-text-color) 100%, var(--navbar-text-color));
+}
+.hover\:opacity-100:hover{
+  opacity: 1;
+}
+.hover\:opacity-60:hover{
+  opacity: 0.6;
+}
+@media (min-width: 768px){
+  .md\:flex{
+    display: flex;
+  }
+  .md\:flex-row{
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px){
+  .lg\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .lg\:my-24{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+  .lg\:mb-0{
+    margin-bottom: 0px;
+  }
+  .lg\:mb-12{
+    margin-bottom: 3rem;
+  }
+  .lg\:mb-4{
+    margin-bottom: 1rem;
+  }
+  .lg\:mb-8{
+    margin-bottom: 2rem;
+  }
+  .lg\:mt-16{
+    margin-top: 4rem;
+  }
+  .lg\:block{
+    display: block;
+  }
+  .lg\:w-10\/12{
+    width: 83.333333%;
+  }
+  .lg\:w-2\/3{
+    width: 66.666667%;
+  }
+  .lg\:w-3\/4{
+    width: 75%;
+  }
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .lg\:gap-10{
+    gap: 2.5rem;
+  }
+  .lg\:pb-12{
+    padding-bottom: 3rem;
+  }
+  .lg\:pb-16{
+    padding-bottom: 4rem;
+  }
+  .lg\:pt-12{
+    padding-top: 3rem;
+  }
+  .lg\:text-center{
+    text-align: center;
+  }
+  .lg\:text-2xl{
+    font-size: 2.15rem;
+  }
+  .lg\:text-3xl{
+    font-size: 2.69rem;
+  }
+  .lg\:text-lg{
+    font-size: 1.375rem;
+  }
+  .lg\:leading-\[3\.2rem\]{
+    line-height: 3.2rem;
+  }
+}
+@media (min-width: 1280px){
+  .xl\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .xl\:w-3\/4{
+    width: 75%;
+  }
+  .xl\:max-w-\[1400px\]{
+    max-width: 1400px;
+  }
+}
+@media (min-width: 1536px){
+  .\32xl\:w-5\/12{
+    width: 41.666667%;
+  }
+  .\32xl\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
