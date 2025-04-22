@@ -169,6 +169,7 @@ body {
   background: var(--cta-color-bg) !important;
   color: var(--cta-color-text) !important;
   margin: -2px !important;
+  text-decoration: none !important;
 }
 
 .notion-root .bg-green-light .notion-text .notion-text__content .notion-semantic-string span strong .notion-link,
