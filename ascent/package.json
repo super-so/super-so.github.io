@@ -4,11 +4,12 @@
   "description": "",
   "main": "main.scss",
   "scripts": {
-    "scss": "node-sass --watch scss -o css"
+    "scss": "sass --watch scss:css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^7.0.1"
+    "dart-sass": "^1.25.0",
+    "sass": "^1.87.0"
   }
 }

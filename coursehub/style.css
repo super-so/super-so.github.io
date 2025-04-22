@@ -168,7 +168,6 @@ img[src*=".svg"] {
  gap: 32px!important;
 }
 
-
 .super-navbar__theme-toggle, .super-footer__icons a {
   display: flex!important;
   justify-content: center!important;
@@ -181,6 +180,9 @@ img[src*=".svg"] {
   background: var(--navbar-background-color)!important;
 }
 
+.super-navbar__menu {
+  background: var(--color-bg-default)!important;
+}
 
 /* Header */
 
