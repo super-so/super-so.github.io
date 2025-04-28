@@ -15,6 +15,14 @@
     display: none!important;
 }
 
+#page-index .notion-root.max-width {
+    max-width: 1400px!important;
+}
+
+.super-content:not(#page-index) .notion-root.max-width {
+    max-width: 960px!important;
+}
+
 .super-footer {
   padding: 80px var(--padding-right) 80px var(--padding-left);
 }
