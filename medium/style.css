@@ -81,9 +81,11 @@
   flex-direction: row !important;
   position: relative !important;
   box-shadow: none !important;
+  background: transparent!important;
   display: flex !important;
   border: none !important;
   transition: opacity .2s ease-in-out !important;
+  border-radius: 0!important;
 }
 
 .notion-collection-card img {
