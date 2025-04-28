@@ -49,6 +49,12 @@
   font-weight: 500 !important;
 }
 
+/* Remove background & decrease margin for iframes */
+.notion-embed__container > iframe {
+  background: none !important;
+  margin: -20px 0 !important;
+}
+
 /* Increase default line height for titles */
 .notion-header__title {
   line-height: 1.4 !important;
@@ -75,7 +81,6 @@
   flex-direction: row !important;
   position: relative !important;
   box-shadow: none !important;
-  background: transparent!important;
   display: flex !important;
   border: none !important;
   transition: opacity .2s ease-in-out !important;

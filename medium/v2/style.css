@@ -11,6 +11,10 @@
   color: var(--color-bg-default) !important;
 }
 
+#page-index .notion-header__title {
+    display: none!important;
+}
+
 .super-footer {
   padding: 80px var(--padding-right) 80px var(--padding-left);
 }
