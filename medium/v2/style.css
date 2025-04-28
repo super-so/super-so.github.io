@@ -4,7 +4,7 @@
   border: 1px solid var(--color-text-default) !important;
   color: var(--color-text-default) !important;
   transition: background .2s ease-in-out !important;
-}
+} 
 
 .super-navbar__cta:hover {
   background: var(--color-text-default) !important;
