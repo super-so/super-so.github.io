@@ -97,13 +97,13 @@
     border: none !important;
 }
 
-/* Change default height of gallery card covers */
+/* Change default height of gallery card covers
 .notion-collection-card__cover,
 .notion-collection-card__cover div,
 .notion-collection-card__cover img {
     max-height: 100% !important;
     height: 100% !important;
-}
+} */
 
 
 /* Make gallery cards opaque on hover */
