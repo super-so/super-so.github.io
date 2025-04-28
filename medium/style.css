@@ -49,12 +49,6 @@
   font-weight: 500 !important;
 }
 
-/* Remove background & decrease margin for iframes */
-.notion-embed__container > iframe {
-  background: none !important;
-  margin: -20px 0 !important;
-}
-
 /* Increase default line height for titles */
 .notion-header__title {
   line-height: 1.4 !important;
