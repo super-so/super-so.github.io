@@ -21,6 +21,10 @@
     color: var(--color-bg-default)!important;
 }
 
+.super-footer {
+    padding: 80px var(--padding-right) 80px var(--padding-left)
+}
+
 .super-root:not(#page-index) .notion-header {
   padding-top: 120px!important;
 }
@@ -95,6 +99,10 @@
     box-shadow: none !important;
     display: flex !important;
     border: none !important;
+}
+
+.notion-collection-card img {
+    border-radius: var(--collection-card-border-radii)!important;
 }
 
 /* Change default height of gallery card covers
