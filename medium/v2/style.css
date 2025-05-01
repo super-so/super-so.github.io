@@ -19,6 +19,15 @@
     max-width: 1400px!important;
 }
 
+.notion-header__content {
+  display: flex!important;
+  justify-content: center!important;
+}
+
+.notion-header__title-wrapper {
+  max-width: 900px!important;
+}
+
 .super-content:not(#page-index) .notion-root.max-width {
     max-width: 960px!important;
 }
