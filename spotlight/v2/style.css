@@ -160,7 +160,6 @@ p {
 }
 
 /* NAVBAR */
-
 .super-navbar__content {
   max-width: var(--layout-max-width) !important;
   margin: auto !important;
@@ -168,7 +167,6 @@ p {
 
 
 /* FOOTER */
-
 .super-footer {
   padding-top: 60px !important;
   padding-bottom: 60px !important;
