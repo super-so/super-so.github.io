@@ -1,0 +1,193 @@
+
+.notion-toggle.bg-brown {
+    display: none !important;
+}
+
+.notion-callout.bg-brown-light {
+  text-align: center!important;
+  background: transparent!important;
+  border: 0!important;
+  padding: 0px!important;
+  margin: 0!important;
+  justify-content: center!important;
+  
+  .notion-callout__content {
+    display: flex!important;
+    align-items: center!important;
+    margin: 0!important;
+  }
+}
+
+p + .notion-button {
+  margin-top: 16px!important;
+}
+
+body {
+    -webkit-animation: fadeIn 1s !important;
+    -moz-animation: fadeIn 1s !important;
+    animation: fadeIn 1s !important;
+}
+
+.notion-callout h1 {
+  margin-top: 0!important;
+}
+
+.notion-header__icon-wrapper.no-cover.has-icon-image {
+  top: -112px!important;
+}
+
+.notion-header__icon-wrapper img {
+  width: 90px!important;
+  height: 90px!important;
+}
+
+.notion-header__cover.no-cover {
+  height: 90px!important;
+  max-height: 90px!important;
+}
+
+@keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+@-moz-keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+@-webkit-keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+::selection { background: #eee !important; }
+
+#page-index .notion-header__title {
+    display: none !important;
+}
+
+.notion-quote.bg-gray span,
+.notion-quote.bg-gray .link {
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+    height: 100% !important;
+}
+
+.notion-quote.bg-gray .notion-semantic-string .link {
+    letter-spacing: -0.2px !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    padding: 0 20px !important;
+    line-height: 1 !important;
+}
+
+.notion-quote {
+    box-shadow: 0 20px 40px -20px rgba(0,0,0,0.08) !important;
+    background: var(--color-white) !important;
+    border-radius: 12px !important;
+    text-align: left !important;
+    font-weight: 300 !important;
+    font-size: 24px !important;
+    padding: 50px !important;
+    border: none !important;
+}
+
+@media (max-width: 900px) {
+    .notion-quote.bg-gray {
+        display: none !important;
+    }
+
+    .notion-quote {
+        font-size: 20px !important;
+        padding: 30px !important;
+    }
+}
+
+#page-index .notion-column {
+    justify-content: center !important;
+    text-align: left !important;
+}
+
+h1 {
+    letter-spacing: -1px !important;
+    font-weight: 700 !important;
+}
+
+h2 {
+    letter-spacing: -0.5px !important;
+    margin-bottom: 4px !important;
+    line-height: 1.5 !important;
+    font-weight: 600 !important;
+}
+
+h3 {
+    letter-spacing: -0.5px !important;
+    margin-bottom: 16px !important;
+    font-weight: 600 !important;
+}
+
+p {
+    line-height: 1.6 !important;
+}
+
+.notion-semantic-string .link {
+    transition: var(--transition) !important;
+    color: var(--color-text-gray) !important;
+    opacity: 1 !important;
+}
+
+.notion-semantic-string .link:hover {
+    color: var(--color-text-default) !important;
+}
+
+@media (max-width: 900px) {
+    h1 {
+        letter-spacing: -1px !important;
+        font-size: 42px !important;
+    }
+
+    h2 {
+        letter-spacing: -0.5px !important;
+        font-size: 32px !important;
+    }
+}
+
+/* BUTTON */
+
+.notion-button__content:hover {
+  opacity: .7!important;
+}
+
+.notion-button__content {
+  transition: opacity .2s ease-in-out!important;
+  padding: 10px 16px !important;
+  background: var(--navbar-button-background-color)!important;
+  color: var(--navbar-button-text-color)!important;
+  border-radius: var(--navbar-button-border-radii)!important;
+  border: 0!important;
+  box-shadow: none!important;
+}
+
+/* NAVBAR */
+
+.super-navbar__content {
+  max-width: var(--layout-max-width) !important;
+  margin: auto !important;
+}
+
+
+/* FOOTER */
+
+.super-footer {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+@media (min-width: 600px) {
+  .super-footer__content {
+    gap: 32px !important;
+    max-width: var(--layout-max-width) !important;
+    margin: auto !important;
+    padding-left: var(--padding-left) !important;
+    padding-right: var(--padding-right) !important;
+  }
+}
+
+.super-footer__list {
+  gap: 22px !important;
+}
+
+.super-footer__list-links {
+  gap: 12px !important;
+}
