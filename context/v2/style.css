@@ -52,9 +52,6 @@ h1, h2, h3, p, a {
     font-weight: 100 !important;
 }
 
-.notion-semantic-string .link { text-decoration: none !important; }
-
-
 .super-footer__logo-text {
   font-family: var(--primary-font)!important;
   font-size: 24px!important;
