@@ -39,7 +39,7 @@ h1, h2, h3,
 @-moz-keyframes fadeInUp { 0% { transform: translate3d(0,40px,0); } 100% { transform: translate3d(0,0,0); } }
 @-webkit-keyframes fadeInUp { 0% { transform: translate3d(0,40px,0); } 100% { transform: translate3d(0,0,0); } }
 
-.notion-toggle.bg-brown, {
+.notion-toggle.bg-brown {
     display: none !important;
 }
 
