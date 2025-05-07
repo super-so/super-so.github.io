@@ -1,3 +1,13 @@
+@keyframes fadeInUp { 0% { transform: translate3d(0,40px,0); } 100% { transform: translate3d(0,0,0); } }
+@-moz-keyframes fadeInUp { 0% { transform: translate3d(0,40px,0); } 100% { transform: translate3d(0,0,0); } }
+@-webkit-keyframes fadeInUp { 0% { transform: translate3d(0,40px,0); } 100% { transform: translate3d(0,0,0); } }
+
+h1:first-of-type {
+  -webkit-animation: fadeInUp 1s !important;
+  -moz-animation: fadeInUp 1s !important;
+  animation: fadeInUp 1s !important;
+}
+
 :root {
   --transition: all .2s ease-in-out !important;
   --container-md: 60% !important;
