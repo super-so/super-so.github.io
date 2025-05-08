@@ -47,6 +47,9 @@ body {
     -webkit-animation: fadeIn 1s !important;
     -moz-animation: fadeIn 1s !important;
     animation: fadeIn 1s !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
 }
 
 .notion-header__title-wrapper {

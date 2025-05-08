@@ -23,10 +23,6 @@
     display: none !important;
 }
 
-iframe {
-    background: none !important;
-}
-
 .max-width {
     max-width: 1000px !important;
 }
