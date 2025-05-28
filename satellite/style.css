@@ -318,6 +318,10 @@ p + h2 {
     font-size: 48px !important;
   }
 
+  .notion-page__title-properties {
+    gap: 16px!important;
+  }
+
   .notion-callout.bg-brown-light .notion-form {
     flex-direction: column !important;
     align-items: flex-start !important;
