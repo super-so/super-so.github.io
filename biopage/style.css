@@ -285,6 +285,7 @@ h3 {
   margin: auto;
   border-top: 0 !important;
   aspect-ratio: 16 / 11 !important;
+  display: block !important;
 }
 
 .notion-callout.bg-brown-light  .notion-collection-gallery .notion-collection-card.gallery.no-click {

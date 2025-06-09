@@ -1,3 +1,14 @@
+.notion-callout.bg-brown-light {
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+  border-radius: 0px !important;
+}
+
+ .notion-callout.bg-brown-light  .notion-callout__content {
+    margin: 0 !important;
+  }
+
 .notion-callout.bg-brown-light .notion-collection-gallery {
   position: relative;
   overflow: hidden;
@@ -5,6 +16,7 @@
   margin: auto;
   border-top: 0 !important;
   aspect-ratio: 16 / 11 !important;
+  display: block !important;
 }
 
 .notion-callout.bg-brown-light  .notion-collection-gallery .notion-collection-card.gallery.no-click {
@@ -30,6 +42,7 @@
 .notion-collection-card__cover img {
   min-height: 100% !important;
   height: 100% !important;
+  width: 100%!important;
   border-radius: 0px !important;
 }
 
