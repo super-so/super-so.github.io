@@ -28,6 +28,7 @@
   opacity: 0;
   pointer-events: none;
   z-index: 0;
+  box-shadow: none!important;
 }
 
 .notion-callout.bg-brown-light .notion-collection-gallery .notion-collection-card.gallery.no-click.active {
