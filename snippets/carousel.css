@@ -10,31 +10,31 @@
 }
 
 .notion-callout.bg-brown-light .notion-collection-gallery {
-  position: relative;
-  overflow: hidden;
+  position: relative!important;
+  overflow: hidden!important;
   width: 100% !important;
-  margin: auto;
+  margin: auto!important;
   border-top: 0 !important;
   aspect-ratio: 16 / 11 !important;
   display: block !important;
 }
 
 .notion-callout.bg-brown-light .notion-collection-gallery .notion-collection-card {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: opacity 0.4s ease;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 0;
+  position: absolute!important;
+  top: 0!important;
+  left: 0!important;
+  width: 100%!important;
+  transition: opacity 0.4s ease!important;
+  opacity: 0!important;
+  pointer-events: none!important;
+  z-index: 0!important;
   box-shadow: none!important;
 }
 
 .notion-callout.bg-brown-light .notion-collection-gallery .notion-collection-card.active {
-  opacity: 1;
-  pointer-events: auto;
-  z-index: 1;
+  opacity: 1!important;
+  pointer-events: auto!important;
+  z-index: 1!important;
   border-radius: 0px !important;
   border-radius: var(--image-border-radii) !important;
 }
@@ -65,18 +65,18 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(1, 1, 1, .4) !important;
-  backdrop-filter: blur(2px) !important;
-  color: white !important;
+  background: rgba(1, 1, 1, .4);
+  backdrop-filter: blur(2px);
+  color: white;
   border: none;
   cursor: pointer;
   z-index: 10;
-  border-radius: 200px !important;
-  width: 32px !important;
-  height: 32px !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+  border-radius: 200px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-button.left {
@@ -95,20 +95,20 @@
   display: flex;
   gap: 6px;
   z-index: 10;
-  background: rgba(1, 1, 1, .4) !important;
-  backdrop-filter: blur(2px) !important;
-  padding: 6px !important;
-  border-radius: 60px !important;
+  background: rgba(1, 1, 1, .4);
+  backdrop-filter: blur(2px);
+  padding: 6px;
+  border-radius: 60px;
 }
 
 .carousel-indicators span {
   width: 8px;
   height: 8px;
-  background: rgba(255, 255, 255, .6) !important;
+  background: rgba(255, 255, 255, .6);
   border-radius: 50%;
   display: inline-block;
 }
 
 .carousel-indicators span.active {
-  background: #fff !important;
+  background: #fff;
 }
