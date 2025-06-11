@@ -72,7 +72,7 @@
             goToNext();
         });
 
-        // Unified swipe/drag logic
+        // Drag/swipe support
         let startX = 0;
         let isDragging = false;
 
@@ -81,30 +81,41 @@
             isDragging = true;
         };
 
+        const onMove = (x) => {
+            if (!isDragging) return;
+        };
+
         const onEnd = (x) => {
             if (!isDragging) return;
             isDragging = false;
             const diff = x - startX;
             if (Math.abs(diff) > 30) {
-                if (diff > 0) {
-                    goToPrev();
-                } else {
-                    goToNext();
-                }
+                diff > 0 ? goToPrev() : goToNext();
             }
         };
 
         // Touch events (mobile)
-        gallery.addEventListener('touchstart', (e) => onStart(e.touches[0].clientX));
+        gallery.addEventListener('touchstart', (e) => onStart(e.touches[0].clientX), { passive: true });
+        gallery.addEventListener('touchmove', (e) => onMove(e.touches[0].clientX), { passive: true });
         gallery.addEventListener('touchend', (e) => onEnd(e.changedTouches[0].clientX));
 
         // Mouse events (desktop)
-        gallery.addEventListener('mousedown', (e) => onStart(e.clientX));
-        gallery.addEventListener('mouseup', (e) => onEnd(e.clientX));
+        gallery.addEventListener('mousedown', (e) => {
+            e.preventDefault();
+            onStart(e.clientX);
+        });
 
-        // Optional: prevent click during drag to avoid accidental interactions
         gallery.addEventListener('mousemove', (e) => {
             if (isDragging) e.preventDefault();
+        });
+
+        gallery.addEventListener('mouseup', (e) => {
+            onEnd(e.clientX);
+        });
+
+        // Prevent browser drag behavior on images
+        cards.forEach(card => {
+            card.setAttribute('draggable', 'false');
         });
     };
 
