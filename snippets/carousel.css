@@ -29,6 +29,7 @@
   pointer-events: none!important;
   z-index: 0!important;
   box-shadow: none!important;
+  border: 0!important;
 }
 
 .notion-callout.bg-brown-light .notion-collection-gallery .notion-collection-card.active {
