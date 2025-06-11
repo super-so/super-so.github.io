@@ -1,9 +1,7 @@
-
 (function () {
     const initCarousel = (gallery) => {
         if (!gallery || gallery.dataset.carouselInitialized === "true") return;
 
-        // Check if gallery is inside a .notion-callout.bg-brown-light container
         let parent = gallery.closest('.notion-callout.bg-brown-light');
         if (!parent) return;
 
@@ -14,14 +12,12 @@
 
         let currentIndex = 0;
 
-        // Hide all cards except the first one
         cards.forEach((card, i) => {
             card.classList.remove('active');
             card.style.display = i === 0 ? '' : 'none';
         });
         cards[0].classList.add('active');
 
-        // Create navigation buttons
         const leftBtn = document.createElement('button');
         leftBtn.className = 'carousel-button left';
         leftBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="14 6 8 12 14 18" /></svg>`;
@@ -33,7 +29,6 @@
         gallery.appendChild(leftBtn);
         gallery.appendChild(rightBtn);
 
-        // Create indicators
         const indicators = document.createElement('div');
         indicators.className = 'carousel-indicators';
         cards.forEach((_, i) => {
@@ -55,18 +50,61 @@
             });
         };
 
+        const goToPrev = () => {
+            currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+            updateCarousel();
+        };
+
+        const goToNext = () => {
+            currentIndex = (currentIndex + 1) % cards.length;
+            updateCarousel();
+        };
+
         leftBtn.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
-            currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-            updateCarousel();
+            goToPrev();
         });
 
         rightBtn.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
-            currentIndex = (currentIndex + 1) % cards.length;
-            updateCarousel();
+            goToNext();
+        });
+
+        // Unified swipe/drag logic
+        let startX = 0;
+        let isDragging = false;
+
+        const onStart = (x) => {
+            startX = x;
+            isDragging = true;
+        };
+
+        const onEnd = (x) => {
+            if (!isDragging) return;
+            isDragging = false;
+            const diff = x - startX;
+            if (Math.abs(diff) > 30) {
+                if (diff > 0) {
+                    goToPrev();
+                } else {
+                    goToNext();
+                }
+            }
+        };
+
+        // Touch events (mobile)
+        gallery.addEventListener('touchstart', (e) => onStart(e.touches[0].clientX));
+        gallery.addEventListener('touchend', (e) => onEnd(e.changedTouches[0].clientX));
+
+        // Mouse events (desktop)
+        gallery.addEventListener('mousedown', (e) => onStart(e.clientX));
+        gallery.addEventListener('mouseup', (e) => onEnd(e.clientX));
+
+        // Optional: prevent click during drag to avoid accidental interactions
+        gallery.addEventListener('mousemove', (e) => {
+            if (isDragging) e.preventDefault();
         });
     };
 
@@ -89,6 +127,5 @@
 
     observer.observe(document.body, { childList: true, subtree: true });
 
-    // Run once for any galleries already in the DOM
     initializeAllGalleries();
 })();
