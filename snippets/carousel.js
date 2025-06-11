@@ -7,7 +7,7 @@
         let parent = gallery.closest('.notion-callout.bg-brown-light');
         if (!parent) return;
 
-        const cards = Array.from(gallery.querySelectorAll('.notion-collection-card.gallery'));
+        const cards = Array.from(gallery.querySelectorAll('.notion-collection-card'));
         if (cards.length === 0) return;
 
         gallery.dataset.carouselInitialized = "true";
