@@ -35,3 +35,19 @@ body, .super-content {
         padding-right: var(--padding-right-mobile) !important;
     }
 }
+
+
+/* #block-20fa50d5f2cc804bb25eca31dd93b2c5 {
+  padding: 0!important;
+  margin: 0!important;
+  width: calc(100vw - var(--sidebar-width) - var(--scrollbar-width))!important;
+  position: relative!important;
+  /*border-radius: 0px!important;*/
+  
+  .notion-callout__content {
+    margin: 0 auto!important;
+    padding-left: var(--padding-left)!important;
+    padding-right: var(--padding-right)!important;
+    max-width: var(--layout-max-width)!important;
+  }
+} */
