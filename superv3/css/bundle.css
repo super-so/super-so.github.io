@@ -169,6 +169,11 @@
   font-size: 1rem !important;
 }
 
+.notion-pill {
+  padding: 3px 8px !important;
+  border-radius: 30px !important;
+}
+
 .super-root .super-content #block-1efa808dfcce4ebaae1f7d5c21cc5bf6 {
   padding: 0px !important;
   margin: 0px !important;
@@ -642,6 +647,7 @@ main:not(#page-index, #page-pricing, #page-pricing-annual, #page-super-analytics
 #page-create .notion-header__title,
 #page-report .notion-header__title,
 #page-builder .notion-header__title,
+#page-status .notion-header__title,
 #page-faqs .notion-header__title {
   color: var(--gray-300) !important;
   letter-spacing: -1px !important;
@@ -663,6 +669,7 @@ main:not(#page-index, #page-pricing, #page-pricing-annual, #page-super-analytics
   #page-create .notion-header__title,
   #page-report .notion-header__title,
   #page-builder .notion-header__title,
+  #page-status .notion-header__title,
   #page-faqs .notion-header__title {
     top: 86px !important;
   }
