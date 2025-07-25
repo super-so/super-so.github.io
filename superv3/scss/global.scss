@@ -335,8 +335,18 @@ main:not(#page-index, #page-pricing, #page-pricing-annual, #page-super-analytics
     }
 }
 
+.parent-page__templates .notion-header__cover.no-cover {
+    display: none!important;
+}
+
+.parent-page__templates .notion-header__content.no-cover {
+    padding-top: 80px !important;
+    padding-bottom: 40px !important;
+}
+
 .parent-page__guides,
 .parent-page__blog,
+.parent-page__templates,
 .parent-page__case-studies,
 .parent-page__create,
 .parent-page__faqs {
@@ -380,13 +390,15 @@ main:not(#page-index, #page-pricing, #page-pricing-annual, #page-super-analytics
     }
 
     h2.notion-heading:not(.notion-callout, h2.notion-heading),
-    .parent-page__blog h2.notion-heading:not(.notion-callout, h2.notion-heading) {
+    .parent-page__blog h2.notion-heading:not(.notion-callout, h2.notion-heading),
+     .parent-page__templates h2.notion-heading:not(.notion-callout, h2.notion-heading) {
         margin-top: 3rem !important;
     }
 
 
     h3.notion-heading:not(.notion-callout, h3.notion-heading),
-    .parent-page__blog h3.notion-heading:not(.notion-callout, h3.notion-heading) {
+    .parent-page__blog h3.notion-heading:not(.notion-callout, h3.notion-heading),
+    .parent-page__templates h3.notion-heading:not(.notion-callout, h3.notion-heading) {
         margin-top: 2.2rem !important;
     }
 
@@ -569,7 +581,7 @@ main:not(#page-index, #page-pricing, #page-pricing-annual, #page-super-analytics
     max-width: 550px !important;
 }
 
-.parent-page__blog {
+.parent-page__blog, .parent-page__templates {
     --header-cover-height: 24vh !important;
 
     .notion-table-of-contents {
@@ -646,7 +658,7 @@ main:not(#page-index, #page-pricing, #page-pricing-annual, #page-super-analytics
     article>.notion-column-list:first-child:has(.notion-column:nth-child(3))>.notion-column:not(:nth-child(2)) {
         // article > .notion-column-list > .notion-column:not(:nth-child(2)) {
         height: 700px !important;
-        overflow: scroll !important;
+        overflow: auto !important;
         position: sticky !important;
         top: 100px !important;
         min-width: 212px !important;
