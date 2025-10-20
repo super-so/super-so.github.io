@@ -1,3 +1,13 @@
-.super-content-wrapper {
-    flex-direction: row-reverse!important;
+@media (min-width: 1021px) {
+  .super-footer,
+  .super-navbar,
+  .super-content {
+    margin-right: 50vw !important;
+    margin-left: 0!important;
+  }
+}
+
+.notion-header {
+  left: auto!important;
+  right: 0 !important;
 }
