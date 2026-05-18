@@ -1,0 +1,346 @@
+/* -----------------------------------------------
+   Floating Auto TOC for Super
+   Independent from Notion's Table of Contents block
+   ----------------------------------------------- */
+
+:root {
+  /* Main position */
+  --floating-toc-right: clamp(16px, 3.5vw, 64px);
+  --floating-toc-top: var(--floating-toc-auto-top, clamp(220px, 34vh, 320px));
+  --floating-toc-z-index: 100;
+
+  /* Auto-position controls */
+  --floating-toc-title-offset: 0px;
+  --floating-toc-sticky-min-top: 220px;
+  --floating-toc-sticky-max-top: 320px;
+  --floating-toc-sticky-vh: 34;
+  --floating-toc-before-content-buffer: 40px;
+
+  /* Trigger lines */
+  --floating-toc-trigger-width: 38px;
+  --floating-toc-trigger-height: 112px;
+  --floating-toc-line-height: 2px;
+  --floating-toc-line-gap: 7px;
+  --floating-toc-line-color: rgba(55, 53, 47, 0.16);
+  --floating-toc-line-active-color: rgba(55, 53, 47, 0.88);
+
+  /* Floating panel */
+  --floating-toc-panel-width: clamp(220px, 20vw, 292px);
+  --floating-toc-panel-max-height: min(64vh, 460px);
+  --floating-toc-panel-padding: 16px 18px;
+  --floating-toc-panel-bg: #ffffff;
+  --floating-toc-panel-border: rgba(55, 53, 47, 0.12);
+  --floating-toc-panel-radius: 14px;
+  --floating-toc-panel-shadow: 0 16px 38px rgba(15, 15, 15, 0.11);
+
+  /* Typography */
+  --floating-toc-font-family: inherit;
+  --floating-toc-font-size: 14px;
+  --floating-toc-line-height-text: 1.35;
+  --floating-toc-text-color: rgba(55, 53, 47, 0.68);
+  --floating-toc-text-hover-color: rgba(55, 53, 47, 0.96);
+  --floating-toc-active-color: #2f7de1;
+
+  /* Items */
+  --floating-toc-item-radius: 5px;
+  --floating-toc-item-padding: 4px 7px;
+  --floating-toc-item-hover-bg: rgba(55, 53, 47, 0.08);
+  --floating-toc-active-bg: rgba(55, 53, 47, 0.08);
+
+  /* Canvas heading highlight */
+  --floating-toc-heading-highlight-bg: rgba(47, 125, 225, 0.14);
+  --floating-toc-heading-highlight-radius: 6px;
+
+  /* Scroll offset after clicking an item */
+  --floating-toc-scroll-offset: 96px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.super-floating-toc,
+.super-floating-toc * {
+  box-sizing: border-box;
+}
+
+.super-floating-toc {
+  position: fixed;
+  top: var(--floating-toc-top);
+  right: var(--floating-toc-right);
+  z-index: var(--floating-toc-z-index);
+  width: var(--floating-toc-trigger-width);
+  min-height: var(--floating-toc-trigger-height);
+  font-family: var(--floating-toc-font-family);
+  opacity: 1;
+  transform: translateY(-50%);
+  transition:
+    opacity 180ms ease,
+    visibility 180ms ease;
+}
+
+/* Hide the floating TOC before the page title/content area is reached */
+.super-floating-toc.is-before-content {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Collapsed line state */
+.super-floating-toc__button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: var(--floating-toc-line-gap);
+  width: var(--floating-toc-trigger-width);
+  min-height: var(--floating-toc-trigger-height);
+  padding: 10px 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.super-floating-toc__line {
+  display: block;
+  width: var(--line-width, 20px);
+  height: var(--floating-toc-line-height);
+  border-radius: 999px;
+  background: var(--floating-toc-line-color);
+  transition:
+    width 180ms ease,
+    background 180ms ease,
+    opacity 180ms ease;
+}
+
+.super-floating-toc__line.is-active {
+  width: calc(var(--line-width, 20px) + 4px);
+  background: var(--floating-toc-line-active-color);
+}
+
+.super-floating-toc:hover .super-floating-toc__line,
+.super-floating-toc:focus-within .super-floating-toc__line,
+.super-floating-toc.is-open .super-floating-toc__line {
+  background: var(--floating-toc-line-active-color);
+}
+
+/* Floating panel */
+.super-floating-toc__panel {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: var(--floating-toc-panel-width);
+  max-height: var(--floating-toc-panel-max-height);
+  padding: var(--floating-toc-panel-padding);
+  overflow-y: auto;
+  border: 1px solid var(--floating-toc-panel-border);
+  border-radius: var(--floating-toc-panel-radius);
+  background: var(--floating-toc-panel-bg);
+  box-shadow: var(--floating-toc-panel-shadow);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-50%) translateX(12px) scale(0.98);
+  transition:
+    opacity 180ms ease,
+    visibility 180ms ease,
+    transform 180ms ease;
+}
+
+.super-floating-toc:hover .super-floating-toc__panel,
+.super-floating-toc:focus-within .super-floating-toc__panel,
+.super-floating-toc.is-open .super-floating-toc__panel {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(-50%) translateX(0) scale(1);
+}
+
+.super-floating-toc:hover .super-floating-toc__button,
+.super-floating-toc:focus-within .super-floating-toc__button,
+.super-floating-toc.is-open .super-floating-toc__button {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.super-floating-toc__list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.super-floating-toc__item {
+  display: block;
+  margin-left: var(--toc-indent, 0);
+  padding: var(--floating-toc-item-padding);
+  border-radius: var(--floating-toc-item-radius);
+  color: var(--floating-toc-text-color);
+  font-size: var(--floating-toc-font-size);
+  line-height: var(--floating-toc-line-height-text);
+  text-decoration: none;
+  transition:
+    color 160ms ease,
+    background 160ms ease;
+}
+
+.super-floating-toc__item:hover {
+  color: var(--floating-toc-text-hover-color);
+  background: var(--floating-toc-item-hover-bg);
+}
+
+.super-floating-toc__item.is-active {
+  color: var(--floating-toc-active-color);
+  background: var(--floating-toc-active-bg);
+}
+
+.super-floating-toc-target {
+  scroll-margin-top: var(--floating-toc-scroll-offset);
+}
+
+/* Optional: hide an existing Notion TOC block if the page still has one */
+/*
+.notion-table-of-contents {
+  display: none !important;
+}
+*/
+
+/* Dark mode support */
+html.theme-dark {
+  --floating-toc-panel-bg: #191919;
+  --floating-toc-panel-border: rgba(255, 255, 255, 0.12);
+  --floating-toc-panel-shadow: 0 16px 38px rgba(0, 0, 0, 0.35);
+
+  --floating-toc-line-color: rgba(255, 255, 255, 0.18);
+  --floating-toc-line-active-color: rgba(255, 255, 255, 0.88);
+
+  --floating-toc-text-color: rgba(255, 255, 255, 0.64);
+  --floating-toc-text-hover-color: rgba(255, 255, 255, 0.95);
+  --floating-toc-active-color: #6da8ff;
+
+  --floating-toc-item-hover-bg: rgba(255, 255, 255, 0.08);
+  --floating-toc-active-bg: rgba(255, 255, 255, 0.08);
+
+  --floating-toc-heading-highlight-bg: rgba(109, 168, 255, 0.16);
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  :root {
+    --floating-toc-right: 22px;
+    --floating-toc-panel-width: 260px;
+    --floating-toc-panel-padding: 15px 16px;
+    --floating-toc-font-size: 13.5px;
+  }
+}
+
+/* Mobile: tap to open instead of relying on hover */
+@media (max-width: 768px) {
+  .super-floating-toc {
+    top: auto;
+    right: 14px;
+    bottom: 14px;
+    width: 40px;
+    min-height: 40px;
+    transform: none;
+  }
+
+  .super-floating-toc.is-before-content {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .super-floating-toc__button {
+    position: relative;
+    top: auto;
+    right: auto;
+    align-items: center;
+    width: 40px;
+    min-height: 40px;
+    padding: 8px;
+    border: 1px solid var(--floating-toc-panel-border);
+    border-radius: 11px;
+    background: var(--floating-toc-panel-bg);
+    box-shadow: 0 10px 26px rgba(15, 15, 15, 0.12);
+    transform: none;
+  }
+
+  .super-floating-toc__panel {
+    top: auto;
+    right: 0;
+    bottom: 52px;
+    width: min(300px, calc(100vw - 28px));
+    max-height: 52vh;
+    padding: 15px;
+    transform: translateY(10px) scale(0.98);
+  }
+
+  .super-floating-toc:hover .super-floating-toc__panel,
+  .super-floating-toc:focus-within .super-floating-toc__panel,
+  .super-floating-toc.is-open .super-floating-toc__panel {
+    transform: translateY(0) scale(1);
+  }
+}
+
+* Force the TOC to close after the mouse leaves */
+@media (hover: hover) and (pointer: fine) {
+  .super-floating-toc.is-pointer-out .super-floating-toc__panel {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transform: translateY(-50%) translateX(12px) scale(0.98) !important;
+  }
+
+  .super-floating-toc.is-pointer-out .super-floating-toc__button {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+}
+
+/* Mobile-only TOC refinement */
+@media (max-width: 768px) {
+  .super-floating-toc__panel {
+    width: min(230px, calc(100vw - 28px)) !important;
+    max-height: 46vh !important;
+    padding: 12px 13px !important;
+  }
+
+  .super-floating-toc__list {
+    gap: 2px !important;
+  }
+
+  .super-floating-toc__item {
+    margin-left: calc(var(--toc-indent, 0px) * 0.58) !important;
+    padding: 4px 6px !important;
+    font-size: 12.75px !important;
+    line-height: 1.3 !important;
+  }
+
+  .super-floating-toc:not(.is-open) .super-floating-toc__panel {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transform: translateY(10px) scale(0.98) !important;
+  }
+
+  .super-floating-toc.is-open .super-floating-toc__panel {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: translateY(0) scale(1) !important;
+  }
+
+  .super-floating-toc:not(.is-open) .super-floating-toc__button {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  .super-floating-toc.is-open .super-floating-toc__button {
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+}
