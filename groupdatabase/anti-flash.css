@@ -1,0 +1,8 @@
+html.super-groups-preparing .notion-collection-group__section.open {
+  opacity: 0;
+}
+
+html.super-groups-ready .notion-collection-group__section {
+  opacity: 1;
+  transition: opacity 160ms ease;
+}
