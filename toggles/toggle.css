@@ -1,0 +1,9 @@
+.notion-toggle.closed .notion-toggle__trigger_icon span {
+  transform: rotate(90deg) !important;
+  display: inline-block;
+}
+
+.notion-toggle.open .notion-toggle__trigger_icon span {
+  transform: rotate(0deg) !important;
+  display: inline-block;
+}
