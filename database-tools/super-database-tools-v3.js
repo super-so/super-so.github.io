@@ -1,4 +1,3 @@
-
 (() => {
   const DB_SELECTOR = ".notion-collection-table";
   const READY_KEY = "superDbToolsReady";
@@ -440,8 +439,8 @@
         return originalOrder;
       }
 
-      const aValue = getCellText(a, columnIndex);
-      const bValue = getCellText(b, columnIndex);
+      const aValue = getSortableText(getCell(a, columnIndex));
+      const bValue = getSortableText(getCell(b, columnIndex));
       const result = compareValues(aValue, bValue);
 
       if (result !== 0) {
@@ -562,7 +561,7 @@
 
     if (row.querySelector("th, [role='columnheader']")) return false;
 
-    const text = getText(row).toLowerCase();
+    const text = getReadableText(row).toLowerCase();
 
     if (
       text === "new" ||
@@ -582,7 +581,7 @@
     if (headerCells.length) {
       return headerCells.map((node, index) => ({
         index,
-        label: cleanHeader(getText(node)) || `Column ${index + 1}`,
+        label: cleanHeader(getReadableText(node)) || `Column ${index + 1}`,
         type: getColumnType(table, index, node)
       }));
     }
@@ -616,10 +615,6 @@
     const cells = getCells(row);
 
     return cells[index] || row;
-  }
-
-  function getCellText(row, index) {
-    return getText(getCell(row, index));
   }
 
   function rowMatchesSmartFilter(row, filterValue) {
@@ -693,9 +688,7 @@
       return "unchecked false no 0 off empty blank";
     }
 
-    return cleanText(
-      typeof cellOrValue === "string" ? cellOrValue : getText(cellOrValue)
-    ).toLowerCase();
+    return getReadableText(cellOrValue).toLowerCase();
   }
 
   function normalizeCheckboxFilterValue(value) {
@@ -964,7 +957,7 @@
         return checkboxState === false;
       }
 
-      return getText(cell) === "";
+      return getReadableText(cell) === "";
     });
   }
 
@@ -1098,10 +1091,114 @@
     }
 
     if (isNumberSearch(searchText)) {
-      return getCells(row).some(cell => matchesExactNumber(getText(cell), searchText));
+      return getCells(row).some(cell =>
+        matchesExactNumber(getReadableText(cell), searchText)
+      );
     }
 
-    return getText(row).toLowerCase().includes(searchText);
+    return getReadableText(row).toLowerCase().includes(searchText);
+  }
+
+  function getSortableText(cellOrValue) {
+    const checkboxState = readCheckboxState(cellOrValue);
+
+    if (checkboxState === true) return "checked";
+    if (checkboxState === false) return "unchecked";
+
+    return getReadableText(cellOrValue);
+  }
+
+  function getReadableText(elementOrValue) {
+    if (!elementOrValue) return "";
+
+    if (typeof elementOrValue === "string") {
+      return cleanText(elementOrValue);
+    }
+
+    if (!(elementOrValue instanceof Element)) {
+      return cleanText(String(elementOrValue));
+    }
+
+    const parts = [
+      elementOrValue.innerText || "",
+      elementOrValue.textContent || ""
+    ];
+
+    const readableAttributes = [
+      "aria-label",
+      "title",
+      "alt",
+      "value",
+      "data-value",
+      "data-label",
+      "data-name",
+      "data-title",
+      "data-content",
+      "data-text",
+      "data-tag",
+      "data-tags",
+      "data-option",
+      "data-select",
+      "data-multi-select",
+      "data-property-value"
+    ];
+
+    const nodes = [elementOrValue, ...elementOrValue.querySelectorAll("*")];
+
+    nodes.forEach(node => {
+      readableAttributes.forEach(attribute => {
+        const value = node.getAttribute?.(attribute);
+
+        if (value) {
+          parts.push(value);
+        }
+      });
+
+      if (node.matches?.("select")) {
+        const selectedOption = node.options?.[node.selectedIndex];
+
+        if (selectedOption) {
+          parts.push(selectedOption.textContent || selectedOption.value || "");
+        }
+      }
+
+      if (node.matches?.("input, textarea")) {
+        parts.push(node.value || node.getAttribute("value") || "");
+      }
+
+      parts.push(getGeneratedContentText(node));
+    });
+
+    return cleanText(
+      [...new Set(parts.map(part => cleanText(part)).filter(Boolean))]
+        .join(" ")
+    );
+  }
+
+  function getGeneratedContentText(element) {
+    if (!element || !(element instanceof Element)) return "";
+
+    try {
+      return cleanText(
+        ["::before", "::after"]
+          .map(pseudo => {
+            const content = window
+              .getComputedStyle(element, pseudo)
+              .getPropertyValue("content");
+
+            if (!content || content === "none" || content === "normal") {
+              return "";
+            }
+
+            return content
+              .replace(/^["']|["']$/g, "")
+              .replace(/\\A/g, " ");
+          })
+          .join(" ")
+      );
+    } catch (error) {
+      return "";
+    }
   }
 
   function matchesExactNumber(cellValue, searchValue) {
@@ -1153,7 +1250,7 @@
       .replace(/[$,%]/g, "")
       .replace(/,/g, "");
 
-    if (!/^-?\d+(\.\d+)?$/.test(cleaned)) {
+    if (!/^-?\d+(\.\d)?\d*$/.test(cleaned)) {
       return null;
     }
 
@@ -1229,7 +1326,7 @@
     return [...parent.children].find(child => {
       if (rowSet.has(child)) return false;
 
-      const text = getText(child).toLowerCase();
+      const text = getReadableText(child).toLowerCase();
 
       return (
         child.matches(".notion-collection-table__row--add") ||
@@ -1245,10 +1342,6 @@
         row.dataset.superOriginalIndex = String(index);
       }
     });
-  }
-
-  function getText(element) {
-    return cleanText(element?.innerText || element?.textContent || "");
   }
 
   function cleanText(text) {
