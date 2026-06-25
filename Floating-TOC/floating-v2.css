@@ -286,7 +286,7 @@ html.theme-dark {
   }
 }
 
-* Force the TOC to close after the mouse leaves */
+/* Force the TOC to close after the mouse leaves */
 @media (hover: hover) and (pointer: fine) {
   .super-floating-toc.is-pointer-out .super-floating-toc__panel {
     opacity: 0 !important;
