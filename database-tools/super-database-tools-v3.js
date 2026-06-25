@@ -1,7 +1,21 @@
 (() => {
   const DB_SELECTOR = ".notion-collection-table";
   const READY_KEY = "superDbToolsReady";
+  const OWNER_KEY = "superDbToolsOwner";
   const HIDDEN_ROW_CLASS = "super-db-row-hidden";
+  const HIGHLIGHT_CLASS = "super-db-tools__highlight";
+  const REGISTRY_KEY = "__superDbToolsInstance";
+  const CSS_MARKER = "--super-db-tools-enabled";
+
+  const INSTANCE_ID = `super-db-tools-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+
+  let observer = null;
+  let queued = false;
+  let destroyed = false;
+
+  const tables = new Set();
+  const toolbars = new Set();
+  const tableState = new WeakMap();
 
   const SKIPPED_CONTROL_COLUMN_TYPES = new Set([
     "relation",
@@ -60,25 +74,115 @@
     `
   };
 
-  const tableState = new WeakMap();
+  if (window[REGISTRY_KEY]?.destroy) {
+    window[REGISTRY_KEY].destroy();
+  }
 
-  function initAllTables() {
-    injectBaseStyles();
+  window[REGISTRY_KEY] = {
+    id: INSTANCE_ID,
+    destroy
+  };
+
+  function isEnabledByCss() {
+    return window
+      .getComputedStyle(document.documentElement)
+      .getPropertyValue(CSS_MARKER)
+      .trim() === "1";
+  }
+
+  function destroy() {
+    if (destroyed) return;
+
+    destroyed = true;
+
+    if (observer) {
+      observer.disconnect();
+      observer = null;
+    }
+
+    document.removeEventListener("click", handleDocumentClick);
+    cleanupOwnedTables();
+
+    if (window[REGISTRY_KEY]?.id === INSTANCE_ID) {
+      delete window[REGISTRY_KEY];
+    }
+  }
+
+  function cleanupOwnedTables() {
+    toolbars.forEach(toolbar => toolbar.remove());
+
+    tables.forEach(table => {
+      restoreOriginalOrder(table);
+
+      getRows(table).forEach(row => {
+        row.classList.remove(HIDDEN_ROW_CLASS);
+        clearSearchHighlights(row);
+      });
+
+      if (table.dataset[OWNER_KEY] === INSTANCE_ID) {
+        delete table.dataset[READY_KEY];
+        delete table.dataset[OWNER_KEY];
+      }
+    });
+
+    toolbars.clear();
+    tables.clear();
+  }
+
+  function cleanupOldUnownedToolbars() {
+    document.querySelectorAll(".super-db-tools").forEach(toolbar => {
+      if (toolbar.dataset.superDbToolsOwner !== INSTANCE_ID) {
+        toolbar.remove();
+      }
+    });
+
+    document.querySelectorAll(`${DB_SELECTOR}[data-super-db-tools-ready="true"]`).forEach(table => {
+      if (table.dataset[OWNER_KEY] !== INSTANCE_ID) {
+        delete table.dataset[READY_KEY];
+        delete table.dataset[OWNER_KEY];
+      }
+    });
+  }
+
+  function queueRefresh() {
+    if (destroyed || queued) return;
+
+    queued = true;
+
+    window.requestAnimationFrame(() => {
+      queued = false;
+      refresh();
+    });
+  }
+
+  function refresh() {
+    if (destroyed) return;
+
+    if (!isEnabledByCss()) {
+      cleanupOwnedTables();
+      cleanupOldUnownedToolbars();
+      return;
+    }
+
+    cleanupOldUnownedToolbars();
     document.querySelectorAll(DB_SELECTOR).forEach(initTable);
   }
 
   function initTable(table) {
+    if (!table || !table.isConnected || !table.parentNode) return;
     if (table.dataset[READY_KEY] === "true") return;
 
     const rows = getRows(table);
     if (!rows.length) return;
 
-    table.dataset[READY_KEY] = "true";
-
     setOriginalIndexes(rows);
 
     const headers = getHeaders(table, rows[0]);
     const toolbar = createToolbar(headers);
+
+    table.dataset[READY_KEY] = "true";
+    table.dataset[OWNER_KEY] = INSTANCE_ID;
+    toolbar.dataset.superDbToolsOwner = INSTANCE_ID;
 
     table.parentNode.insertBefore(toolbar, table);
 
@@ -94,8 +198,15 @@
     };
 
     tableState.set(table, state);
+    tables.add(table);
+    toolbars.add(toolbar);
 
     toolbar.addEventListener("input", event => {
+      if (!isEnabledByCss()) {
+        cleanupOwnedTables();
+        return;
+      }
+
       const target = event.target;
 
       if (target.matches("[data-super-db-search]")) {
@@ -111,6 +222,11 @@
     });
 
     toolbar.addEventListener("change", event => {
+      if (!isEnabledByCss()) {
+        cleanupOwnedTables();
+        return;
+      }
+
       const target = event.target;
 
       if (target.matches("[data-super-db-filter-column]")) {
@@ -142,6 +258,11 @@
     });
 
     toolbar.addEventListener("click", event => {
+      if (!isEnabledByCss()) {
+        cleanupOwnedTables();
+        return;
+      }
+
       const panelButton = event.target.closest("[data-super-db-panel]");
       const directionButton = event.target.closest("[data-super-db-sort-direction]");
       const clearButton = event.target.closest("[data-super-db-clear]");
@@ -171,7 +292,7 @@
   }
 
   function createToolbar(headers) {
-    const controlHeaders = getControlHeaders(headers);
+    const controlHeaders = headers.filter(header => !shouldSkipControlColumn(header));
 
     const filterOptions = `
       <option value="all">All columns</option>
@@ -254,10 +375,6 @@
     return toolbar;
   }
 
-  function getControlHeaders(headers) {
-    return headers.filter(header => !shouldSkipControlColumn(header));
-  }
-
   function shouldSkipControlColumn(header) {
     const label = normalizeControlColumnLabel(header.label);
     const type = normalizeControlColumnLabel(header.type);
@@ -320,7 +437,35 @@
     ).toLowerCase();
   }
 
+  function getElementSignature(element) {
+    if (!element) return "";
+
+    const className =
+      typeof element.className === "string"
+        ? element.className
+        : element.getAttribute?.("class") || "";
+
+    return cleanText(`
+      ${className}
+      ${element.getAttribute?.("aria-label") || ""}
+      ${element.getAttribute?.("title") || ""}
+      ${element.getAttribute?.("alt") || ""}
+      ${element.getAttribute?.("role") || ""}
+      ${element.getAttribute?.("data-type") || ""}
+      ${element.getAttribute?.("data-property-type") || ""}
+      ${element.getAttribute?.("data-property") || ""}
+      ${element.getAttribute?.("data-state") || ""}
+      ${element.getAttribute?.("data-checked") || ""}
+      ${element.getAttribute?.("data-value-type") || ""}
+    `).toLowerCase();
+  }
+
   function updateTable(table) {
+    if (!isEnabledByCss()) {
+      cleanupOwnedTables();
+      return;
+    }
+
     const state = tableState.get(table);
     if (!state) return;
 
@@ -335,7 +480,7 @@
 
     let visibleCount = 0;
 
-    rows.forEach(row => {
+    getRows(table).forEach(row => {
       const matchesSearch = matchesSmartSearch(row, state.search);
       let matchesFilter = true;
 
@@ -455,6 +600,18 @@
     sortedRows.forEach(row => {
       parent.insertBefore(row, insertBeforeNode || null);
     });
+  }
+
+  function restoreOriginalOrder(table) {
+    const rows = getRows(table);
+    const parent = rows[0]?.parentElement;
+    if (!parent) return;
+
+    [...rows]
+      .sort((a, b) => {
+        return Number(a.dataset.superOriginalIndex || 0) - Number(b.dataset.superOriginalIndex || 0);
+      })
+      .forEach(row => parent.appendChild(row));
   }
 
   function resetToolbar(table) {
@@ -974,7 +1131,7 @@
   }
 
   function clearSearchHighlights(row) {
-    row.querySelectorAll("mark.super-db-tools__highlight").forEach(mark => {
+    row.querySelectorAll(`mark.${HIGHLIGHT_CLASS}`).forEach(mark => {
       const parent = mark.parentNode;
 
       if (!parent) return;
@@ -998,7 +1155,7 @@
           if (!parent) return NodeFilter.FILTER_REJECT;
 
           if (
-            parent.closest("mark.super-db-tools__highlight") ||
+            parent.closest(`mark.${HIGHLIGHT_CLASS}`) ||
             parent.closest("script, style, textarea, input, select, svg")
           ) {
             return NodeFilter.FILTER_REJECT;
@@ -1039,7 +1196,7 @@
       }
 
       const mark = document.createElement("mark");
-      mark.className = "super-db-tools__highlight";
+      mark.className = HIGHLIGHT_CLASS;
       mark.textContent = text.slice(range.start, range.end);
 
       fragment.appendChild(mark);
@@ -1298,28 +1455,6 @@
     return cleanText(element.getAttribute(attribute) || "").toLowerCase();
   }
 
-  function getElementSignature(element) {
-    if (!element) return "";
-
-    const className =
-      typeof element.className === "string"
-        ? element.className
-        : element.getAttribute?.("class") || "";
-
-    return cleanText(`
-      ${className}
-      ${element.getAttribute?.("aria-label") || ""}
-      ${element.getAttribute?.("title") || ""}
-      ${element.getAttribute?.("alt") || ""}
-      ${element.getAttribute?.("role") || ""}
-      ${element.getAttribute?.("data-type") || ""}
-      ${element.getAttribute?.("data-property-type") || ""}
-      ${element.getAttribute?.("data-property") || ""}
-      ${element.getAttribute?.("data-state") || ""}
-      ${element.getAttribute?.("data-checked") || ""}
-    `).toLowerCase();
-  }
-
   function getInsertBeforeNode(parent, rows) {
     const rowSet = new Set(rows);
 
@@ -1380,52 +1515,31 @@
     return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   }
 
-  function injectBaseStyles() {
-    if (document.getElementById("super-db-tools-base-style")) return;
+  function handleDocumentClick(event) {
+    if (!isEnabledByCss()) {
+      cleanupOwnedTables();
+      return;
+    }
 
-    const style = document.createElement("style");
-    style.id = "super-db-tools-base-style";
-    style.textContent = `
-      .${HIDDEN_ROW_CLASS} {
-        display: none !important;
-      }
+    if (event.target.closest(".super-db-tools")) return;
 
-      .super-db-tools__highlight {
-        border-radius: 3px;
-        padding: 0 2px;
-        background: color-mix(in srgb, currentColor 18%, transparent);
-        color: inherit;
-      }
-    `;
+    document.querySelectorAll(`.super-db-tools[data-super-db-tools-owner="${INSTANCE_ID}"]`).forEach(toolbar => {
+      toolbar.querySelectorAll("[data-super-db-panel-content]").forEach(panel => {
+        panel.hidden = true;
+      });
 
-    document.head.appendChild(style);
-  }
-
-  if (!window.superDbToolsOutsideClickReady) {
-    window.superDbToolsOutsideClickReady = true;
-
-    document.addEventListener("click", event => {
-      if (event.target.closest(".super-db-tools")) return;
-
-      document.querySelectorAll(".super-db-tools").forEach(toolbar => {
-        toolbar.querySelectorAll("[data-super-db-panel-content]").forEach(panel => {
-          panel.hidden = true;
-        });
-
-        toolbar.querySelectorAll("[data-super-db-panel]").forEach(button => {
-          button.classList.remove("is-active");
-        });
+      toolbar.querySelectorAll("[data-super-db-panel]").forEach(button => {
+        button.classList.remove("is-active");
       });
     });
   }
 
-  initAllTables();
+  document.addEventListener("click", handleDocumentClick);
 
-  const observer = new MutationObserver(() => {
-    window.requestAnimationFrame(initAllTables);
-  });
+  refresh();
 
-  observer.observe(document.body, {
+  observer = new MutationObserver(queueRefresh);
+  observer.observe(document.documentElement, {
     childList: true,
     subtree: true
   });
