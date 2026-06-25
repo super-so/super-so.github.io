@@ -1,4 +1,17 @@
+<script>
 (function () {
+  const SCRIPT_NODE = document.currentScript;
+  const TOC_MOUNT = document.createElement('div');
+
+  TOC_MOUNT.className = 'super-floating-toc-mount';
+  TOC_MOUNT.style.display = 'none';
+
+  if (SCRIPT_NODE && SCRIPT_NODE.parentNode) {
+    SCRIPT_NODE.parentNode.insertBefore(TOC_MOUNT, SCRIPT_NODE.nextSibling);
+  } else {
+    document.body.appendChild(TOC_MOUNT);
+  }
+
   if (window.SuperFloatingAutoToc && window.SuperFloatingAutoToc.destroy) {
     window.SuperFloatingAutoToc.destroy();
   }
@@ -7,6 +20,7 @@
     headingSelector: '.notion-heading',
     minHeadings: 2,
     buildDelay: 250,
+    routeBuildDelay: 500,
     activeScrollDelay: 1800,
     headingHighlightDuration: 1400,
 
@@ -41,15 +55,36 @@
 
   let currentToc = null;
   let buildTimer = null;
+  let routeTimer = null;
   let positionFrame = null;
   let activeScrollFrame = null;
   let mutationObserver = null;
   let currentSignature = '';
   let trackedHeadings = [];
-
   let clickedActiveId = '';
   let clickedActiveTimer = null;
   let headingHighlightTimer = null;
+  let isDestroyed = false;
+
+  function isCodeStillMounted() {
+    return document.documentElement.contains(TOC_MOUNT);
+  }
+
+  function isTocCssReady() {
+    const test = document.createElement('nav');
+
+    test.className = 'super-floating-toc';
+    test.style.visibility = 'hidden';
+    test.style.pointerEvents = 'none';
+
+    TOC_MOUNT.appendChild(test);
+
+    const isReady = window.getComputedStyle(test).position === 'fixed';
+
+    test.remove();
+
+    return isReady;
+  }
 
   function cleanText(value) {
     return (value || '').replace(/\s+/g, ' ').trim();
@@ -117,7 +152,9 @@
   }
 
   function shouldExcludeHeading(element) {
-    return CONFIG.excludeClosest.some((selector) => element.closest(selector));
+    return CONFIG.excludeClosest.some(function (selector) {
+      return element.closest(selector);
+    });
   }
 
   function getHeadingLevel(element) {
@@ -143,12 +180,12 @@
   function ensureHeadingId(element, text, index) {
     if (element.id) return element.id;
 
-    const baseSlug = slugify(text) || `section-${index + 1}`;
-    let id = `super-toc-${baseSlug}`;
+    const baseSlug = slugify(text) || 'section-' + (index + 1);
+    let id = 'super-toc-' + baseSlug;
     let count = 2;
 
     while (document.getElementById(id)) {
-      id = `super-toc-${baseSlug}-${count}`;
+      id = 'super-toc-' + baseSlug + '-' + count;
       count += 1;
     }
 
@@ -163,7 +200,7 @@
     const seen = new Set();
 
     return headings
-      .map((heading, index) => {
+      .map(function (heading, index) {
         const text = cleanText(heading.textContent);
 
         if (!text || shouldExcludeHeading(heading) || !isVisible(heading)) {
@@ -172,15 +209,15 @@
 
         const id = ensureHeadingId(heading, text, index);
         const level = getHeadingLevel(heading);
-        const key = `${id}|${text}`;
+        const key = id + '|' + text;
 
         if (seen.has(key)) return null;
         seen.add(key);
 
         return {
-          id,
-          text,
-          level,
+          id: id,
+          text: text,
+          level: level,
           element: heading
         };
       })
@@ -197,8 +234,8 @@
   function getCoverBottom() {
     const candidates = [];
 
-    CONFIG.coverSelectors.forEach((selector) => {
-      document.querySelectorAll(selector).forEach((element) => {
+    CONFIG.coverSelectors.forEach(function (selector) {
+      document.querySelectorAll(selector).forEach(function (element) {
         if (!isVisible(element) || isNavigationLike(element)) return;
 
         const rect = element.getBoundingClientRect();
@@ -220,11 +257,10 @@
     const firstHeadingElement = headings[0] ? headings[0].element : null;
     const firstHeadingTop = firstHeadingElement ? getDocumentTop(firstHeadingElement) : Infinity;
     const coverBottom = getCoverBottom();
-
     const candidates = [];
 
-    CONFIG.titleSelectors.forEach((selector) => {
-      document.querySelectorAll(selector).forEach((element) => {
+    CONFIG.titleSelectors.forEach(function (selector) {
+      document.querySelectorAll(selector).forEach(function (element) {
         const text = cleanText(element.textContent);
 
         if (!text || !isVisible(element) || isNavigationLike(element)) return;
@@ -235,19 +271,17 @@
         if (firstHeadingTop !== Infinity && top > firstHeadingTop + 120) return;
 
         candidates.push({
-          element,
-          top
+          element: element,
+          top: top
         });
       });
     });
 
-    candidates.sort((a, b) => a.top - b.top);
+    candidates.sort(function (a, b) {
+      return a.top - b.top;
+    });
 
-    if (candidates[0]) {
-      return candidates[0].element;
-    }
-
-    return firstHeadingElement || null;
+    return candidates[0] ? candidates[0].element : firstHeadingElement;
   }
 
   function getStickyTop() {
@@ -338,28 +372,20 @@
     toc.classList.remove('is-open');
     toc.classList.add('is-mobile-force-closed');
     blurActiveTocElement(toc);
-
-    window.setTimeout(function () {
-      toc.classList.remove('is-open');
-      toc.classList.add('is-mobile-force-closed');
-      blurActiveTocElement(toc);
-    }, 60);
-
-    window.setTimeout(function () {
-      toc.classList.remove('is-open');
-      toc.classList.add('is-mobile-force-closed');
-      blurActiveTocElement(toc);
-    }, 180);
   }
 
   function prepareToOpenToc(toc) {
     if (!toc) return;
-
     toc.classList.remove('is-mobile-force-closed');
   }
 
   function updateFloatingTocPosition() {
     if (!currentToc) return;
+
+    if (!isCodeStillMounted()) {
+      destroy();
+      return;
+    }
 
     if (isMobileToc()) {
       document.documentElement.style.removeProperty('--floating-toc-auto-top');
@@ -383,18 +409,14 @@
 
     const anchorCenter = rect.top + Math.min(rect.height / 2, 36);
     const isBeforeContent = anchorCenter > window.innerHeight - beforeContentBuffer;
-
-    let finalTop;
-
-    if (anchorCenter > stickyTop) {
-      finalTop = anchorCenter + customOffset;
-    } else {
-      finalTop = stickyTop + customOffset;
-    }
+    const finalTop =
+      anchorCenter > stickyTop
+        ? anchorCenter + customOffset
+        : stickyTop + customOffset;
 
     document.documentElement.style.setProperty(
       '--floating-toc-auto-top',
-      `${Math.round(finalTop)}px`
+      Math.round(finalTop) + 'px'
     );
 
     currentToc.classList.toggle('is-before-content', isBeforeContent);
@@ -431,11 +453,11 @@
   function setActiveItem(id) {
     if (!currentToc || !id) return;
 
-    currentToc.querySelectorAll('.super-floating-toc__item').forEach((item) => {
+    currentToc.querySelectorAll('.super-floating-toc__item').forEach(function (item) {
       item.classList.toggle('is-active', item.dataset.targetId === id);
     });
 
-    currentToc.querySelectorAll('.super-floating-toc__line').forEach((line) => {
+    currentToc.querySelectorAll('.super-floating-toc__line').forEach(function (line) {
       line.classList.toggle('is-active', line.dataset.targetId === id);
     });
   }
@@ -444,11 +466,10 @@
     if (!trackedHeadings.length) return '';
 
     const activationLine = readCssNumber('--floating-toc-scroll-offset', 96) + 8;
-
     let activeId = trackedHeadings[0].id;
     let bestScore = Infinity;
 
-    trackedHeadings.forEach((heading) => {
+    trackedHeadings.forEach(function (heading) {
       const element = document.getElementById(heading.id);
 
       if (!element) return;
@@ -535,7 +556,7 @@
   function removeHeadingHighlights() {
     document
       .querySelectorAll('.super-floating-toc-highlight-surface')
-      .forEach((heading) => {
+      .forEach(function (heading) {
         heading.classList.remove('super-floating-toc-highlight-surface');
       });
   }
@@ -590,6 +611,20 @@
   }
 
   function buildFloatingToc() {
+    if (!isCodeStillMounted()) {
+      destroy();
+      return;
+    }
+
+    if (!isTocCssReady()) {
+      removeCurrentToc();
+      currentSignature = '';
+      window.setTimeout(scheduleBuild, 150);
+      return;
+    }
+
+    TOC_MOUNT.style.display = 'contents';
+
     const headings = getHeadings();
 
     if (headings.length < CONFIG.minHeadings) {
@@ -599,9 +634,14 @@
       return;
     }
 
-    const signature = `${window.location.pathname}|${headings
-      .map((heading) => `${heading.id}:${heading.text}:${heading.level}`)
-      .join('|')}`;
+    const signature =
+      window.location.pathname +
+      '|' +
+      headings
+        .map(function (heading) {
+          return heading.id + ':' + heading.text + ':' + heading.level;
+        })
+        .join('|');
 
     if (signature === currentSignature && currentToc) {
       schedulePositionUpdate();
@@ -628,7 +668,7 @@
     const list = document.createElement('div');
     list.className = 'super-floating-toc__list';
 
-    headings.forEach((heading) => {
+    headings.forEach(function (heading) {
       const line = document.createElement('span');
       line.className = 'super-floating-toc__line';
       line.dataset.targetId = heading.id;
@@ -637,10 +677,10 @@
 
       const item = document.createElement('a');
       item.className = 'super-floating-toc__item';
-      item.href = `#${heading.id}`;
+      item.href = '#' + heading.id;
       item.textContent = heading.text;
       item.dataset.targetId = heading.id;
-      item.style.setProperty('--toc-indent', `${heading.level * 14}px`);
+      item.style.setProperty('--toc-indent', heading.level * 14 + 'px');
 
       item.addEventListener('click', function (event) {
         event.preventDefault();
@@ -676,7 +716,7 @@
     panel.appendChild(list);
     toc.appendChild(button);
     toc.appendChild(panel);
-    document.body.appendChild(toc);
+    TOC_MOUNT.appendChild(toc);
 
     currentToc = toc;
 
@@ -685,8 +725,18 @@
   }
 
   function scheduleBuild() {
+    if (isDestroyed) return;
+
     window.clearTimeout(buildTimer);
-    buildTimer = window.setTimeout(buildFloatingToc, CONFIG.buildDelay);
+
+    buildTimer = window.setTimeout(function () {
+      if (!isCodeStillMounted()) {
+        destroy();
+        return;
+      }
+
+      buildFloatingToc();
+    }, CONFIG.buildDelay);
   }
 
   function handleScroll() {
@@ -708,14 +758,71 @@
     }
   }
 
+  function isInternalPageLink(link) {
+    if (!link || !link.href) return false;
+
+    let url;
+
+    try {
+      url = new URL(link.href, window.location.href);
+    } catch (error) {
+      return false;
+    }
+
+    if (url.origin !== window.location.origin) return false;
+
+    const isSamePageAnchor =
+      url.pathname === window.location.pathname &&
+      url.search === window.location.search &&
+      url.hash;
+
+    return !isSamePageAnchor;
+  }
+
+  function handleInternalLinkClick(event) {
+    const target = event.target;
+
+    if (!target || typeof target.closest !== 'function') return;
+
+    const link = target.closest('a[href]');
+
+    if (!isInternalPageLink(link)) return;
+
+    removeCurrentToc();
+    removeHeadingHighlights();
+    document.documentElement.style.removeProperty('--floating-toc-auto-top');
+  }
+
   function handleRouteChange() {
     currentSignature = '';
     clickedActiveId = '';
 
     window.clearTimeout(clickedActiveTimer);
+    window.clearTimeout(routeTimer);
+
+    removeCurrentToc();
+    removeHeadingHighlights();
     document.documentElement.style.removeProperty('--floating-toc-auto-top');
 
-    window.setTimeout(scheduleBuild, 500);
+    TOC_MOUNT.style.display = 'none';
+
+    routeTimer = window.setTimeout(function () {
+      if (!isCodeStillMounted()) {
+        destroy();
+        return;
+      }
+
+      scheduleBuild();
+    }, CONFIG.routeBuildDelay);
+  }
+
+  function handleMutation() {
+    if (!isCodeStillMounted()) {
+      destroy();
+      return;
+    }
+
+    scheduleBuild();
   }
 
   function patchHistoryMethod(methodName) {
@@ -735,7 +842,12 @@
   }
 
   function destroy() {
+    if (isDestroyed) return;
+
+    isDestroyed = true;
+
     window.clearTimeout(buildTimer);
+    window.clearTimeout(routeTimer);
     window.clearTimeout(clickedActiveTimer);
     window.clearTimeout(headingHighlightTimer);
 
@@ -775,6 +887,7 @@
     document.documentElement.style.removeProperty('--floating-toc-auto-top');
 
     document.removeEventListener('click', handleDocumentClick, true);
+    document.removeEventListener('click', handleInternalLinkClick, true);
     document.removeEventListener('keydown', handleKeydown);
 
     window.removeEventListener('load', scheduleBuild);
@@ -782,9 +895,18 @@
     window.removeEventListener('scroll', handleScroll);
     window.removeEventListener('popstate', handleRouteChange);
     window.removeEventListener('super-floating-toc-route-change', handleRouteChange);
+
+    if (TOC_MOUNT.parentNode) {
+      TOC_MOUNT.parentNode.removeChild(TOC_MOUNT);
+    }
+
+    if (window.SuperFloatingAutoToc === api) {
+      window.SuperFloatingAutoToc = null;
+    }
   }
 
   document.addEventListener('click', handleDocumentClick, true);
+  document.addEventListener('click', handleInternalLinkClick, true);
   document.addEventListener('keydown', handleKeydown);
 
   window.addEventListener('load', scheduleBuild);
@@ -796,18 +918,22 @@
   patchHistoryMethod('pushState');
   patchHistoryMethod('replaceState');
 
-  mutationObserver = new MutationObserver(scheduleBuild);
+  mutationObserver = new MutationObserver(handleMutation);
 
   mutationObserver.observe(document.documentElement, {
     childList: true,
     subtree: true
   });
 
-  window.SuperFloatingAutoToc = {
+  const api = {
     rebuild: scheduleBuild,
     updatePosition: schedulePositionUpdate,
-    destroy
+    destroy: destroy
   };
+
+  window.SuperFloatingAutoToc = api;
 
   scheduleBuild();
 })();
+</script>
+
