@@ -1,4 +1,3 @@
-
 (function () {
   const SCRIPT_NODE = document.currentScript;
   const TOC_MOUNT = document.createElement('div');
@@ -935,5 +934,3 @@
 
   scheduleBuild();
 })();
-
-
