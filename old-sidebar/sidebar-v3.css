@@ -1,0 +1,327 @@
+/* Sidebar icon color system */
+:root,
+.super-sidebar {
+  --sidebar-icon-bg: var(--color-primary, #c7b9cc);
+  --sidebar-icon-active-bg: var(--color-primary, #8b00d8);
+  --sidebar-icon-hover-bg: #0240e6;
+  --sidebar-icon-color: #ffffff;
+
+  --sidebar-current-bg: #efedeb;
+  --sidebar-current-text: #222222;
+}
+
+/* Sidebar spacing */
+.super-sidebar__content {
+  padding: 24px 20px !important;
+}
+
+.super-sidebar__heading {
+  margin-bottom: 12px !important;
+}
+
+/* Navigation groups */
+.super-sidebar .super-navigation-menu__items {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+.super-sidebar .super-navigation-menu__list,
+.super-sidebar .super-navigation-menu__list.closed,
+.super-sidebar .super-navigation-menu__list[data-state="closed"] {
+  height: auto !important;
+  max-height: none !important;
+  margin: 0 !important;
+  overflow: visible !important;
+}
+
+/* Main list title */
+.super-sidebar .super-navigation-menu__list-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  min-height: auto !important;
+  padding: 0 0 0 18px !important;
+  margin: 0 0 8px !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  cursor: default !important;
+  pointer-events: none !important;
+}
+
+.super-sidebar .super-navigation-menu__chevron {
+  display: none !important;
+}
+
+.super-sidebar .super-navigation-menu__list-header .super-navigation-menu__item-title {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+  color: #aaa4a4 !important;
+}
+
+.super-sidebar .super-navigation-menu__list-header > .super-navigation-menu__item-content {
+  display: flex !important;
+  align-items: center !important;
+  min-width: 0 !important;
+}
+
+/* Remove native close/open animation */
+.super-sidebar .super-navigation-menu__list,
+.super-sidebar .super-navigation-menu__list-header,
+.super-sidebar .super-navigation-menu__list-items {
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Keep sidebar lists visually open */
+.super-sidebar .super-navigation-menu__list-items,
+.super-sidebar .super-navigation-menu__list-items[hidden],
+.super-sidebar .super-navigation-menu__list-items[aria-hidden="true"],
+.super-sidebar .super-navigation-menu__list.closed .super-navigation-menu__list-items,
+.super-sidebar .super-navigation-menu__list[data-state="closed"] .super-navigation-menu__list-items {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-left: 0 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  overflow: visible !important;
+  transform: none !important;
+  clip-path: none !important;
+}
+
+/* Page links */
+.super-sidebar .super-navigation-menu__list-items .super-navigation-menu__item {
+  display: flex !important;
+  align-items: center !important;
+  min-height: 44px !important;
+  padding: 0 14px 0 18px !important;
+  border-radius: 12px !important;
+  background: transparent !important;
+  color: #3f3f3f !important;
+  text-decoration: none !important;
+  transition: background-color 0.2s ease, color 0.2s ease !important;
+}
+
+.super-sidebar .super-navigation-menu__list-items .super-navigation-menu__item-content {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.super-sidebar .super-navigation-menu__list-items .super-navigation-menu__item-title {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.3 !important;
+  color: inherit !important;
+}
+
+/* Light mode hover state */
+.super-sidebar .super-navigation-menu__list-items .super-navigation-menu__item:hover {
+  background: #efedeb !important;
+  color: #2b2b2b !important;
+}
+
+/* Light mode active state */
+.super-sidebar .super-navigation-menu__list-items .super-navigation-menu__item:is(
+  [aria-current="page"],
+  [data-active="true"],
+  [data-current="true"],
+  .active,
+  .is-active
+) {
+  background: var(--sidebar-current-bg) !important;
+  color: var(--sidebar-current-text) !important;
+}
+
+/* List menu icons */
+.super-sidebar .super-navigation-menu__list-items .super-navigation-menu__item svg:not(.super-navigation-menu__chevron),
+.super-sidebar .super-navigation-menu__list-header > svg:not(.super-navigation-menu__chevron),
+.super-sidebar .super-navigation-menu__list-header > img {
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px !important;
+  padding: 5px !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  border-radius: 7px !important;
+  background: var(--sidebar-icon-bg) !important;
+}
+
+.super-sidebar .super-navigation-menu__list-items .super-navigation-menu__item svg:not(.super-navigation-menu__chevron),
+.super-sidebar .super-navigation-menu__list-header > svg:not(.super-navigation-menu__chevron) {
+  color: var(--sidebar-icon-color) !important;
+  stroke: currentColor !important;
+  stroke-width: 2.4 !important;
+}
+
+.super-sidebar .super-navigation-menu__list-header > img {
+  object-fit: contain !important;
+}
+
+/* Non-list page menu icons */
+.super-sidebar .super-navigation-menu__items-viewport .super-navigation-menu__items > a.notion-link.super-navigation-menu__item > svg.lucide:not(.super-navigation-menu__chevron) {
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px !important;
+  padding: 5px !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  border-radius: 7px !important;
+  background: var(--sidebar-icon-bg) !important;
+  color: var(--sidebar-icon-color) !important;
+  stroke: currentColor !important;
+  stroke-width: 2.4 !important;
+}
+
+/* Hover icon */
+.super-sidebar .super-navigation-menu__list-items .super-navigation-menu__item:hover svg:not(.super-navigation-menu__chevron),
+.super-sidebar .super-navigation-menu__items-viewport .super-navigation-menu__items > a.notion-link.super-navigation-menu__item:hover > svg.lucide:not(.super-navigation-menu__chevron) {
+  background: var(--sidebar-icon-hover-bg) !important;
+  color: var(--sidebar-icon-color) !important;
+}
+
+/* Active icon */
+.super-sidebar .super-navigation-menu__list-items .super-navigation-menu__item:is(
+  [aria-current="page"],
+  [data-active="true"],
+  [data-current="true"],
+  .active,
+  .is-active
+) svg:not(.super-navigation-menu__chevron),
+.super-sidebar .super-navigation-menu__items-viewport .super-navigation-menu__items > a.notion-link.super-navigation-menu__item:is(
+  [aria-current="page"],
+  [data-active="true"],
+  [data-current="true"],
+  .active,
+  .is-active
+) > svg.lucide:not(.super-navigation-menu__chevron) {
+  background: var(--sidebar-icon-active-bg) !important;
+  color: var(--sidebar-icon-color) !important;
+}
+
+/* Standalone sidebar menu spacing */
+.super-sidebar .super-navigation-menu__items > .super-navigation-menu__item + .super-navigation-menu__item {
+  margin-top: -12px !important;
+}
+
+/* Search spacing */
+.super-search-input {
+  margin-top: -20px;
+}
+
+/* Dark mode */
+html.theme-dark,
+html.theme-dark .super-sidebar {
+  --sidebar-text-color: #f1f1f1;
+  --sidebar-muted-text-color: #bdb6bd;
+  --sidebar-hover-text-color: #ffffff;
+  --sidebar-current-text-color: #ffffff;
+  --sidebar-hover-bg-dark: rgba(255, 255, 255, 0.08);
+  --sidebar-current-bg-dark: rgba(255, 255, 255, 0.12);
+
+  --sidebar-icon-bg: #1ca0f1;
+  --sidebar-icon-active-bg: #1ca0f1;
+  --sidebar-icon-hover-bg: #0240e6;
+  --sidebar-icon-color: #ffffff;
+}
+
+html.theme-dark .super-sidebar .super-navigation-menu__list-header .super-navigation-menu__item-title {
+  color: var(--sidebar-muted-text-color) !important;
+}
+
+html.theme-dark .super-sidebar .super-navigation-menu__item {
+  color: var(--sidebar-text-color) !important;
+}
+
+html.theme-dark .super-sidebar .super-navigation-menu__item-title {
+  color: inherit !important;
+}
+
+html.theme-dark .super-sidebar .super-navigation-menu__item:hover {
+  background: var(--sidebar-hover-bg-dark) !important;
+  color: var(--sidebar-hover-text-color) !important;
+}
+
+html.theme-dark .super-sidebar .super-navigation-menu__item:is(
+  [aria-current="page"],
+  [data-active="true"],
+  [data-current="true"],
+  .active,
+  .is-active
+) {
+  background: var(--sidebar-current-bg-dark) !important;
+  color: var(--sidebar-current-text-color) !important;
+}
+
+html.theme-dark .super-sidebar .super-navigation-menu__item:is(
+  [aria-current="page"],
+  [data-active="true"],
+  [data-current="true"],
+  .active,
+  .is-active
+) svg:not(.super-navigation-menu__chevron) {
+  background: var(--sidebar-icon-active-bg) !important;
+  color: var(--sidebar-icon-color) !important;
+}
+
+/* Mobile icon color customization */
+@media screen and (max-width: 764px) {
+  .super-navigation-menu__list-items > a.notion-link.super-navigation-menu__item > svg.lucide:not(.super-navigation-menu__chevron),
+  .super-navigation-menu__items > a.notion-link.super-navigation-menu__item > svg.lucide:not(.super-navigation-menu__chevron),
+  .super-navigation-menu__items-viewport .super-navigation-menu__items > a.notion-link.super-navigation-menu__item > svg.lucide:not(.super-navigation-menu__chevron) {
+    display: inline-flex !important;
+    width: 24px !important;
+    height: 24px !important;
+    min-width: 24px !important;
+    flex: 0 0 24px !important;
+    padding: 5px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    border-radius: 7px !important;
+    background: var(--mobile-sidebar-icon-bg, var(--sidebar-icon-bg)) !important;
+    color: var(--mobile-sidebar-icon-color, var(--sidebar-icon-color)) !important;
+    stroke: currentColor !important;
+    stroke-width: 2.4 !important;
+  }
+
+  .super-navigation-menu__list-items > a.notion-link.super-navigation-menu__item:hover > svg.lucide:not(.super-navigation-menu__chevron),
+  .super-navigation-menu__items > a.notion-link.super-navigation-menu__item:hover > svg.lucide:not(.super-navigation-menu__chevron),
+  .super-navigation-menu__items-viewport .super-navigation-menu__items > a.notion-link.super-navigation-menu__item:hover > svg.lucide:not(.super-navigation-menu__chevron) {
+    background: var(--mobile-sidebar-icon-hover-bg, var(--sidebar-icon-hover-bg)) !important;
+    color: var(--mobile-sidebar-icon-color, var(--sidebar-icon-color)) !important;
+  }
+
+  .super-navigation-menu__list-items > a.notion-link.super-navigation-menu__item:is(
+    [aria-current="page"],
+    [data-active="true"],
+    [data-current="true"],
+    .active,
+    .is-active
+  ) > svg.lucide:not(.super-navigation-menu__chevron),
+  .super-navigation-menu__items > a.notion-link.super-navigation-menu__item:is(
+    [aria-current="page"],
+    [data-active="true"],
+    [data-current="true"],
+    .active,
+    .is-active
+  ) > svg.lucide:not(.super-navigation-menu__chevron),
+  .super-navigation-menu__items-viewport .super-navigation-menu__items > a.notion-link.super-navigation-menu__item:is(
+    [aria-current="page"],
+    [data-active="true"],
+    [data-current="true"],
+    .active,
+    .is-active
+  ) > svg.lucide:not(.super-navigation-menu__chevron) {
+    background: var(--mobile-sidebar-icon-active-bg, var(--sidebar-icon-active-bg)) !important;
+    color: var(--mobile-sidebar-icon-color, var(--sidebar-icon-color)) !important;
+  }
+}
