@@ -1,0 +1,90 @@
+/* All heading toggles */
+.notion-toggle[class*="notion-toggle-heading-"] {
+  --toggle-accent: #256df2;
+  margin: 0 !important;
+  border-bottom: 1px solid #e5edf8 !important;
+}
+
+/* Toggle row */
+.notion-toggle[class*="notion-toggle-heading-"]
+  .notion-toggle__summary {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  min-height: 30px !important;
+  padding: 20px 42px 20px 0 !important;
+  cursor: pointer !important;
+}
+
+/* Question */
+.notion-toggle[class*="notion-toggle-heading-"]
+  .notion-heading {
+  margin: 0 !important;
+  font-size: 18px !important;
+  line-height: 1.4 !important;
+  font-weight: 600 !important;
+}
+
+/* Move the control to the right */
+.notion-toggle[class*="notion-toggle-heading-"]
+  .notion-toggle__trigger {
+  position: absolute !important;
+  top: 50% !important;
+  right: 0 !important;
+  width: 22px !important;
+  height: 22px !important;
+  margin: 0 !important;
+  transform: translateY(-50%) !important;
+}
+
+/* Circular blue control */
+.notion-toggle[class*="notion-toggle-heading-"]
+  .notion-toggle__trigger_icon {
+  display: grid !important;
+  place-items: center !important;
+  width: 22px !important;
+  height: 22px !important;
+  color: #ffffff !important;
+  background: var(--toggle-accent) !important;
+  border-radius: 50% !important;
+}
+
+/* Hide the original chevron */
+.notion-toggle[class*="notion-toggle-heading-"]
+  .notion-toggle__trigger_icon > span {
+  display: none !important;
+}
+
+/* Closed state: plus */
+.notion-toggle[class*="notion-toggle-heading-"]
+  .notion-toggle__trigger_icon::before {
+  content: "+" !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+}
+
+/* Open state: minus */
+.notion-toggle[class*="notion-toggle-heading-"]:not(.closed)
+  .notion-toggle__trigger_icon::before {
+  content: "−" !important;
+}
+
+/* Answer */
+.notion-toggle[class*="notion-toggle-heading-"]
+  .notion-toggle__content {
+  padding: 0 42px 20px 0 !important;
+  margin: 0 !important;
+}
+
+.notion-toggle[class*="notion-toggle-heading-"]
+  .notion-toggle__content p {
+  margin: 0 !important;
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+}
+
+/* Gap between the FAQ section and footer */
+.super-footer {
+  margin-top: 60px !important;
+}
