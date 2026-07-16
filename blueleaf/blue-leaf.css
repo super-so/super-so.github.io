@@ -302,6 +302,8 @@
   box-shadow: none !important;
 }
 
+
+
 /* Icon circle */
 .notion-callout.bg-brown-light.border .notion-callout__icon {
   width: 68px !important;
@@ -568,6 +570,19 @@ html.theme-dark .notion-callout.bg-brown-light.border .notion-form__input-field 
 
 html.theme-dark .notion-callout.bg-brown-light.border .notion-form__input-field::placeholder {
   color: #94a3b8 !important;
+}
+
+/* Keep newsletter content in the correct desktop column */
+@media (min-width: 1091px) {
+  .notion-callout.bg-brown-light.border
+    > .notion-callout__icon {
+    grid-column: 1 !important;
+  }
+
+  .notion-callout.bg-brown-light.border
+    > .notion-callout__content {
+    grid-column: 2 !important;
+  }
 }
 
 /* Gallery Large */
