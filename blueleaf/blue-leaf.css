@@ -839,7 +839,12 @@ html.theme-dark .notion-callout.bg-brown-light.border .notion-form__input-field:
     color: inherit !important;
   }
 }
-
+/*******Hard coded container width*************/
+.notion-root.max-width {
+  width: 100% !important;
+  max-width: 1100px !important;
+  margin-inline: auto !important;
+}
 
 /***************Email addresss mobile*********/
 
