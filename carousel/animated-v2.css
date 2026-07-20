@@ -1,0 +1,361 @@
+@keyframes curved-carousel-fallback {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Prevent the original gallery from flashing */
+.notion-collection-gallery.large:not(.curved-carousel) {
+  opacity: 0;
+  animation: curved-carousel-fallback 1ms 2s forwards;
+}
+
+/* Carousel stage */
+.notion-collection-gallery.large.curved-carousel {
+  --card-size: clamp(320px, 25vw, 480px);
+  --curve-size: clamp(250px, 22vw, 320px);
+  --hover-height: 40px;
+  --hover-offset: 30px;
+  --carousel-background: var(--color-bg-default, #fff);
+
+  position: relative !important;
+  isolation: isolate;
+  display: block !important;
+
+  width: 100vw !important;
+  max-width: none !important;
+  height: calc(var(--card-size) + var(--hover-height)) !important;
+  min-height: 0 !important;
+
+  margin: 0 0 0 calc(50% - 50vw) !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+
+  background: var(--carousel-background) !important;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+
+  opacity: 0;
+  animation: none;
+
+  -webkit-mask: none !important;
+  -webkit-mask-image: none !important;
+  mask: none !important;
+  mask-image: none !important;
+}
+
+/* Keep the full-width stage inside Super's desktop sidebar layout */
+@media (min-width: 765px) {
+  .super-content-wrapper.has-sidebar
+    .notion-collection-gallery.large.curved-carousel {
+    width: var(
+      --carousel-stage-width,
+      calc(100vw - var(--sidebar-width) - var(--scrollbar-width, 0px))
+    ) !important;
+    margin-left: var(
+      --carousel-stage-margin-left,
+      calc(
+        50% - 50vw + var(--sidebar-width) / 2 +
+          var(--scrollbar-width, 0px) / 2
+      )
+    ) !important;
+  }
+}
+
+.notion-collection-gallery.large.curved-carousel.is-ready {
+  opacity: 1;
+  transition: opacity 240ms ease;
+}
+
+.notion-collection-gallery.large.curved-carousel.is-dragging {
+  cursor: grabbing;
+}
+
+/* Circular top and bottom */
+.notion-collection-gallery.large.curved-carousel::before,
+.notion-collection-gallery.large.curved-carousel::after {
+  content: "";
+  position: absolute;
+  z-index: 20;
+
+  height: var(--curve-size);
+
+  border-radius: 50%;
+  background: var(--carousel-background) !important;
+  pointer-events: none;
+}
+
+.notion-collection-gallery.large.curved-carousel::before {
+  top: 0;
+  left: -40% !important;
+
+  width: 180% !important;
+
+  transform: translateY(-75%);
+}
+
+.notion-collection-gallery.large.curved-carousel::after {
+  bottom: 0;
+  left: -15% !important;
+
+  width: 130% !important;
+
+  transform: translateY(75%);
+}
+
+/* 1:1 gallery cards */
+.notion-collection-gallery.large.curved-carousel
+  > .notion-collection-card.gallery {
+  position: absolute !important;
+  top: var(--hover-offset) !important;
+  left: 0 !important;
+  z-index: 1 !important;
+
+  width: var(--card-size) !important;
+  height: var(--card-size) !important;
+  aspect-ratio: 1 / 1 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+
+  transform-origin: center;
+  backface-visibility: hidden;
+  will-change: transform;
+
+  transition:
+    height 500ms cubic-bezier(0.22, 1, 0.36, 1),
+    top 500ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 450ms ease !important;
+}
+
+/* Gradient behind the visible properties */
+.notion-collection-gallery.large.curved-carousel
+  > .notion-collection-card.gallery::after {
+  content: "" !important;
+  position: absolute;
+  inset: 35% 0 0;
+  z-index: 2;
+
+  display: block !important;
+  border-radius: 0 !important;
+  background: linear-gradient(
+    to bottom,
+    transparent 30%,
+    rgba(0, 0, 0, 0.12) 48%,
+    rgba(0, 0, 0, 0.76) 100%
+  ) !important;
+
+  pointer-events: none;
+}
+
+/* Card cover */
+.notion-collection-gallery.large.curved-carousel
+  .notion-collection-card__cover {
+  position: absolute !important;
+  inset: -2px !important;
+
+  width: calc(100% + 4px) !important;
+  max-width: none !important;
+  height: calc(100% + 4px) !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+  outline: 0 !important;
+  object-fit: cover !important;
+
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+  pointer-events: none;
+}
+
+/* Restore properties enabled in the gallery settings */
+.notion-collection-gallery.large.curved-carousel
+  .notion-collection-card__content {
+  position: absolute !important;
+  right: 0 !important;
+  bottom: clamp(76px, 5vw, 96px) !important;
+  left: 0 !important;
+  z-index: 3 !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+
+  padding: 20px 22px !important;
+  color: #fff !important;
+  background: transparent !important;
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.35),
+    0 3px 12px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+
+/* Title */
+.notion-collection-gallery.large.curved-carousel
+  .notion-property__title {
+  color: #fff !important;
+  font-size: clamp(16px, 1.2vw, 19px) !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+}
+
+/* Other enabled properties */
+.notion-collection-gallery.large.curved-carousel
+  .notion-collection-card__property:not(.title) {
+  color: rgba(255, 255, 255, 0.88) !important;
+  font-size: 11px !important;
+  line-height: 1.3 !important;
+}
+
+/* Notion text labels */
+.notion-collection-gallery.large.curved-carousel
+  .highlighted-color {
+  display: inline-flex !important;
+  width: fit-content !important;
+
+  padding: 3px 7px !important;
+  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+  border-radius: 999px !important;
+
+  color: #fff !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+
+  font-size: 10px !important;
+  line-height: 1 !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Preserve card links */
+.notion-collection-gallery.large.curved-carousel
+  .notion-collection-card__anchor {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 5 !important;
+
+  color: transparent !important;
+  font-size: 0 !important;
+}
+
+/* Remove the old generated instruction */
+.curved-carousel__hint {
+  display: none !important;
+}
+
+/* Preserve the drag cursor while cards are unclickable */
+.notion-collection-gallery.large.curved-carousel
+  > .notion-collection-card.gallery,
+.notion-collection-gallery.large.curved-carousel
+  > .notion-collection-card.gallery * {
+  cursor: grab !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.notion-collection-gallery.large.curved-carousel.is-dragging
+  > .notion-collection-card.gallery,
+.notion-collection-gallery.large.curved-carousel.is-dragging
+  > .notion-collection-card.gallery * {
+  cursor: grabbing !important;
+}
+
+/* Desktop hover effect */
+@media (min-width: 765px) and (hover: hover) and (pointer: fine) {
+  .notion-collection-gallery.large.curved-carousel
+    .notion-collection-card__cover {
+    transition:
+      transform 650ms cubic-bezier(0.22, 1, 0.36, 1),
+      filter 650ms ease !important;
+  }
+
+  .notion-collection-gallery.large.curved-carousel
+    > .notion-collection-card.gallery::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+
+    background: linear-gradient(
+      115deg,
+      transparent 25%,
+      rgba(255, 255, 255, 0.06) 40%,
+      rgba(255, 255, 255, 0.32) 50%,
+      rgba(255, 255, 255, 0.06) 60%,
+      transparent 75%
+    );
+
+    transform: translateX(-120%) skewX(-12deg);
+    transition: transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
+    pointer-events: none;
+  }
+
+  .notion-collection-gallery.large.curved-carousel
+    .notion-collection-card__content {
+    transition:
+      transform 500ms cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 400ms ease !important;
+  }
+
+  .notion-collection-gallery.large.curved-carousel
+    > .notion-collection-card.gallery:hover {
+    top: 5px !important;
+    z-index: 30 !important;
+
+    width: var(--card-size) !important;
+    height: calc(var(--card-size) + 30px) !important;
+
+    box-shadow: 0 24px 55px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .notion-collection-gallery.large.curved-carousel
+    > .notion-collection-card.gallery:hover
+    .notion-collection-card__cover {
+    filter: saturate(1.08) contrast(1.04);
+    transform: scale(1) !important;
+  }
+
+  .notion-collection-gallery.large.curved-carousel
+    > .notion-collection-card.gallery:hover::before {
+    transform: translateX(120%) skewX(-12deg);
+  }
+
+  .notion-collection-gallery.large.curved-carousel
+    > .notion-collection-card.gallery:hover
+    .notion-collection-card__content {
+    transform: translateY(-7px);
+  }
+}
+
+/* Mobile */
+@media (max-width: 764px) {
+  .notion-collection-gallery.large.curved-carousel {
+    --card-size: min(82vw, 360px);
+    --curve-size: 190px;
+  }
+
+  .notion-collection-gallery.large.curved-carousel
+    .notion-collection-card__content {
+    bottom: 58px !important;
+    padding: 16px 18px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .notion-collection-gallery.large.curved-carousel {
+    scroll-behavior: auto;
+  }
+}
+
+/* Animated carousel borders */
+.notion-collection-gallery.large.curved-carousel {
+  box-sizing: border-box !important;
+  border-top: 1px solid #dbdbd9 !important;
+  border-bottom: 1px solid #dbdbd9 !important;
+}
