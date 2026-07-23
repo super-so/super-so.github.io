@@ -1,0 +1,668 @@
+/* Super language menu — Version 2.3 */
+:root {
+  --language-control-width:86px;
+  --language-control-height: 24px;
+  --language-control-gap: 4px;
+  --language-control-padding: 0 4px;
+  --language-code-size: 14px;
+  --language-flag-width: 18px;
+  --language-flag-height: 14px;
+  --language-flag-margin: 0px;
+ --language-chevron-size: 10px;
+  --language-chevron-right: -4px;
+  --language-chevron-bottom: -3px;
+  --language-surface: #ffffff;
+  --language-menu-width: 136px;
+  --language-menu-radius: 8px;
+  --language-menu-visible-height: 368px;
+  --language-text: #241f20;
+  --language-border: transparent;
+  --language-hover: #f7f5f5;
+  --language-selected: color-mix(
+    in srgb,
+    var(--language-text) 14%,
+    var(--language-surface)
+  );
+  --language-selected-text: var(--language-text);
+  --language-radius: 12px;
+  --language-menu-offset-y: 6px;
+
+
+}
+
+
+.super-navbar__language-dropdown {
+  box-sizing: border-box !important;
+  width: var(--language-control-width) !important;
+  min-width: var(--language-control-width) !important;
+  max-width: var(--language-control-width) !important;
+}
+
+/* Keep Super's original globe visible until the real flag image is ready. */
+.super-language-preparing > .super-language-code,
+.super-language-preparing > .super-language-flag,
+.super-language-preparing > .super-language-label,
+.super-language-preparing > .super-language-chevron {
+  display: none !important;
+}
+
+.super-language-trigger {
+  appearance: none !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: var(--language-radius) !important;
+  background: transparent !important;
+  overflow: visible !important;
+}
+
+/* Main rounded language control. */
+.super-navbar__language-dropdown.super-language-control {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+ justify-content: flex-end !important;
+  direction: ltr !important;
+  gap: var(--language-control-gap) !important;
+  width: var(--language-control-width) !important;
+  min-width: var(--language-control-width) !important;
+  max-width: var(--language-control-width) !important;
+  height: var(--language-control-height) !important;
+  padding: var(--language-control-padding) !important;
+  color: inherit !important;
+  border-color: var(--language-border) !important;
+  border-radius: var(--language-radius) !important;
+  background: transparent !important;
+  box-shadow: 0 5px 16px rgba(27, 23, 23, 0.08) !important;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease !important;
+}
+
+/* Hide only Super's original globe after the replacement flag is ready. */
+.super-language-control > svg:not(.super-language-chevron) {
+  display: none !important;
+}
+
+.super-language-trigger:focus-visible {
+  outline: none !important;
+}
+
+.super-language-trigger[aria-expanded="true"] .super-language-control,
+.super-language-trigger[data-state="open"] .super-language-control {
+  box-shadow: 0 8px 22px rgba(27, 23, 23, 0.12) !important;
+}
+
+.super-language-flag {
+  position: relative;
+  display: inline-grid;
+  flex: 0 0 18px;
+  width: 18px;
+  min-width: 18px;
+  height: 14px;
+  margin-right: 0;
+  place-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 1px;
+ background: transparent;
+border: 1px solid rgba(20, 20, 20, 0.12);
+box-shadow: none;
+}
+
+.super-language-flag svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Real country flag image used by JavaScript v4.9. */
+.super-language-flag > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.super-language-flag > img[hidden],
+.super-language-flag > .super-language-flag-code[hidden] {
+  display: none !important;
+}
+
+.super-language-flag-code {
+  color: #494445;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+/* Hidden until the compact control styles below are applied. */
+.super-language-code {
+  display: none;
+}
+
+.super-language-control > .super-language-code {
+  display: inline-block !important;
+  flex: 0 0 auto;
+  order: 2;
+  color: inherit !important;
+  transform: translateY(1px) !important;
+  font-size: var(--language-code-size) !important;
+  font-weight: 650;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+ 
+}
+
+.super-language-label {
+  min-width: 0;
+  overflow: hidden;
+  color: inherit;
+  font: inherit;
+  font-size: 14px !important;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.super-language-label::after {
+  content: none;
+}
+
+.super-language-control > .super-language-label {
+  display: none !important;
+}
+
+.super-language-control > .super-language-flag {
+  display: inline-grid !important;
+  flex: 0 0 var(--language-flag-width) !important;
+  order: 1;
+  width: var(--language-flag-width) !important;
+  height: var(--language-flag-height) !important;
+  margin-right: var(--language-flag-margin) !important;
+}
+
+.super-language-chevron {
+  display: block;
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.super-language-control > .super-language-chevron {
+  position: static !important;
+  order: 3;
+  display: block !important;
+  flex: 0 0 var(--language-chevron-size) !important;
+  width: var(--language-chevron-size) !important;
+  min-width: var(--language-chevron-size) !important;
+  height: var(--language-chevron-size) !important;
+  margin: 0 !important;
+  transform-origin: center;
+}
+
+.super-language-trigger[aria-expanded="true"] .super-language-chevron,
+.super-language-trigger[data-state="open"] .super-language-chevron {
+  transform: rotate(180deg);
+}
+
+/* Dropdown panel: same white card, width and stacked rows as the GIF. */
+.super-language-menu {
+  z-index: 2147483000 !important;
+  box-sizing: border-box !important;
+  width: min(var(--language-menu-width), calc(100vw - 24px)) !important;
+  min-width: min(var(--language-menu-width), calc(100vw - 24px)) !important;
+  max-width: calc(100vw - 24px) !important;
+  max-height: min(
+    560px,
+    var(
+      --super-language-menu-max-height,
+      var(--radix-dropdown-menu-content-available-height, calc(100dvh - 24px))
+    )
+  ) !important;
+  padding: 3px 0 !important;
+  color: var(--language-text) !important;
+
+  /* Neutral frosted surface. */
+  border: 1px solid rgba(255, 255, 255, 0.72) !important;
+  border-radius: var(--language-menu-radius) !important;
+  background: rgba(248, 248, 248, 0.97) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(72%);
+  backdrop-filter: blur(16px) saturate(72%);
+ box-shadow:
+  0 9px 20px rgba(20, 20, 20, 0.11),
+  inset 0 1px 0 rgba(255, 255, 255, 0.72) !important;
+  overflow: hidden auto !important;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+  transform-origin: var(
+    --radix-dropdown-menu-content-transform-origin,
+    top right
+  );
+  animation: superLanguageMenuOpen 300ms cubic-bezier(0.22, 1, 0.36, 1) both !important;
+}
+
+.super-language-menu[data-side="bottom"] {
+  margin-top: -5px !important;
+}
+
+/* Follow the customer-controlled desktop navbar height. */
+@media (min-width: 768px) {
+  html:has(.super-navbar:not(.hidden))
+    .super-language-menu[data-side="bottom"] {
+    margin-top: max(
+      -2px,
+      calc(var(--navbar-height, 70px) / 2 - 37px)
+    ) !important;
+    top: var(--super-language-menu-offset-y, 0px) !important;
+  }
+}
+
+.super-language-menu[data-side="top"] {
+  margin-bottom: 8px !important;
+}
+
+.super-language-menu[data-state="closed"] {
+  pointer-events: none;
+  animation: superLanguageMenuClose 170ms ease both !important;
+}
+
+  .super-language-option {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: 36px !important;
+  min-height: 36px !important;
+  margin: 0 !important;
+  padding: 0 10px !important;
+  color: var(--language-text) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: inset 0 -1px var(--language-border);
+  font: inherit !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 1.3 !important;
+  text-align: left !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+  outline: none !important;
+  opacity: 0;
+  animation: superLanguageItemOpen 300ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: calc(var(--language-index, 0) * 30ms);
+  transition:
+    color 150ms ease,
+    background-color 150ms ease,
+    padding-left 150ms ease !important;
+}
+
+.super-language-option:last-child {
+  box-shadow: none;
+}
+
+.super-language-option > svg {
+  display: none !important;
+}
+
+.super-language-option:hover,
+.super-language-option:focus-visible,
+.super-language-option[data-highlighted] {
+  color: var(--language-text) !important;
+  background: var(--language-hover) !important;
+}
+
+/* Prevent Super's navbar hover color from reaching the option's inner label. */
+.super-language-option:hover
+  > :not(.super-language-flag):not(.super-language-check),
+.super-language-option:focus-visible
+  > :not(.super-language-flag):not(.super-language-check),
+.super-language-option[data-highlighted]
+  > :not(.super-language-flag):not(.super-language-check) {
+  color: inherit !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.super-language-option[data-language-current="true"] {
+  color: var(--language-selected-text) !important;
+  background: transparent !important;
+  font-weight: 600 !important;
+  isolation: isolate;
+}
+
+.super-language-option[data-language-current="true"]::before {
+  content: "";
+  position: absolute;
+  inset: 3px 4px;
+  z-index: 0;
+  border-radius: 7px;
+  background: rgba(36, 31, 32, 0.06);
+  pointer-events: none;
+}
+
+.super-language-option[data-language-current="true"] > * {
+  position: relative;
+  z-index: 1;
+}
+.super-language-check {
+  position: relative;
+  right: auto !important;
+  display: inline-grid;
+  flex: 0 0 14px;
+  width: 14px;
+  min-width: 14px;
+  height: 14px;
+  margin-left: auto;
+  margin-right: 4px !important;
+  place-items: center;
+  color: var(--language-selected-text);
+  font-size: 11px;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+@keyframes superLanguageMenuOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scaleY(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+@keyframes superLanguageMenuClose {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-5px) scale(0.98);
+  }
+}
+
+@keyframes superLanguageItemOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-7px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Let the menu use the available mobile viewport height. */
+@media (max-width: 767px) {
+  :root {
+    --language-control-width: 82px;
+    --language-control-height: 40px;
+    --language-code-size: 12px;
+    --language-flag-width: 18px;
+    --language-flag-height: 14px;
+    --language-flag-margin: 0px;
+    --language-chevron-size: 10px;
+    --language-chevron-right: 0px;
+    --language-chevron-bottom: 4px;
+  }
+  
+.super-language-option {
+  gap: 8px !important;
+  height: 36px !important;
+  min-height: 36px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.super-language-check {
+  flex-basis: 14px;
+  width: 14px;
+  min-width: 14px;
+  margin-left: auto;
+}
+
+.super-language-option[data-language-current="true"]::before {
+  inset: 3px 4px;
+}
+
+
+  .super-language-menu {
+    max-height: min(
+      calc(100dvh - 24px),
+      var(
+        --super-language-menu-max-height,
+        var(--radix-dropdown-menu-content-available-height, calc(100dvh - 24px))
+      )
+    ) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .super-language-control,
+  .super-language-chevron,
+  .super-language-menu,
+  .super-language-option {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+  }
+}
+
+/* Keep the language control visually identical in every interaction state. */
+.super-language-trigger:hover .super-language-control,
+.super-language-trigger:focus .super-language-control,
+.super-language-trigger:focus-visible .super-language-control,
+.super-language-trigger:focus-within .super-language-control,
+.super-language-trigger:active .super-language-control,
+.super-language-trigger[aria-expanded="true"] .super-language-control,
+.super-language-trigger[data-state="open"] .super-language-control {
+  border-color: var(--language-border) !important;
+  background: transparent !important;
+  color: inherit !important;
+}
+
+/* Prevent navbar opacity from affecting the language control. */
+.super-language-trigger,
+.super-language-trigger:hover,
+.super-language-trigger:focus,
+.super-language-trigger:focus-visible,
+.super-language-trigger:focus-within,
+.super-language-trigger:active,
+.super-language-trigger[aria-expanded="true"],
+.super-language-trigger[data-state="open"],
+.super-language-trigger .super-language-control {
+  opacity: 1 !important;
+}
+
+/* Hidden Super navbar: use the special control on desktop only. */
+@media (min-width: 768px) {
+  html:has(.super-navbar.hidden) {
+    --language-control-width: 108px;
+    --language-control-height: 44px;
+    --language-control-gap: 4px;
+    --language-control-padding: 0 12px 0 9px;
+    --language-code-size: 12px;
+    --language-flag-width: 18px;
+    --language-flag-height: 14px;
+    --language-flag-margin: 0px;
+    --language-chevron-size: 10px;
+    --language-chevron-right: 23px;
+    --language-chevron-bottom: 11px;
+  }
+
+  html:has(.super-navbar.hidden) .super-language-trigger {
+    direction: ltr !important;
+    transform: translateX(-15px) !important;
+  }
+
+  html:has(.super-navbar.hidden)
+    .super-navbar__language-dropdown.super-language-control {
+    overflow: hidden !important;
+  }
+
+  /* Keep the opened menu inside the hidden-navbar sidebar. */
+  html:has(.super-navbar.hidden) .super-language-menu {
+    direction: ltr !important;
+    width: min(var(--language-menu-width), calc(100vw - 24px)) !important;
+    min-width: min(var(--language-menu-width), calc(100vw - 24px)) !important;
+    max-width: calc(100vw - 24px) !important;
+    max-height: min(
+      var(--language-menu-visible-height),
+      var(--super-language-menu-max-height, calc(100dvh - 24px))
+    ) !important;
+  }
+}
+
+/* Minimal scrollbar styling across desktop and mobile. */
+.super-language-menu {
+  scrollbar-color: color-mix(in srgb, var(--language-text) 22%, transparent)
+    transparent;
+}
+
+.super-language-menu::-webkit-scrollbar {
+  width: 3px !important;
+}
+
+.super-language-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.super-language-menu::-webkit-scrollbar-thumb {
+  min-height: 32px;
+  background: color-mix(in srgb, var(--language-text) 22%, transparent);
+  border-radius: 999px;
+}
+
+.super-language-menu::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--language-text) 30%, transparent);
+}
+
+.super-language-menu::-webkit-scrollbar-button,
+.super-language-menu::-webkit-scrollbar-button:single-button {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  -webkit-appearance: none;
+  background: transparent !important;
+}
+
+.super-language-option > p {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.015em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Move only the desktop language menu to the right. */
+
+@media (min-width: 768px) {
+  html:has(.super-navbar:not(.hidden))
+    .super-language-menu-wrapper {
+    translate: 0 2px !important;
+  }
+
+  /* Preserve the existing position for the hidden navbar. */
+  html:has(.super-navbar.hidden)
+    .super-language-menu-wrapper {
+    translate: -13px 2px !important;
+  }
+}
+
+/* Hidden navbar with a visible desktop sidebar. */
+@media (min-width: 861px) {
+  html:has(.super-navbar.hidden):has(.super-content-wrapper.has-sidebar)
+    .super-language-menu-wrapper {
+    translate: 120px -18px !important;
+  }
+
+  html:has(.super-navbar.hidden):has(.super-content-wrapper.has-sidebar)
+    .super-language-menu {
+    box-sizing: border-box !important;
+    width: var(--language-menu-width) !important;
+    min-width: var(--language-menu-width) !important;
+    max-width: var(--language-menu-width) !important;
+    max-height: min(
+      var(--language-menu-visible-height),
+      var(--super-language-menu-max-height, calc(100dvh - 24px))
+    ) !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in srgb, var(--language-text) 30%, transparent)
+      transparent;
+  }
+
+  /* RTL alignment. */
+  html[dir="rtl"]:has(.super-navbar.hidden):has(
+      .super-content-wrapper.has-sidebar
+    )
+    .super-language-menu-wrapper {
+    translate: -95px -18px !important;
+  }
+
+html:has(.super-navbar.hidden):has(.super-content-wrapper.has-sidebar)
+  .super-language-option {
+  box-sizing: border-box !important;
+  gap: 8px !important;
+  height: 36px !important;
+  min-height: 36px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+html:has(.super-navbar.hidden):has(.super-content-wrapper.has-sidebar)
+  .super-language-option
+  > p {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+  html:has(.super-navbar.hidden):has(.super-content-wrapper.has-sidebar)
+    .super-language-menu::-webkit-scrollbar-thumb:hover {
+    background: color-mix(in srgb, var(--language-text) 28%, transparent);
+  }
+}
+
+
+
+/* Seven 36px rows + 6px panel padding + 2px border. */
+@media (min-width: 768px) {
+  .super-language-menu {
+    max-height: min(
+      var(--language-menu-visible-height),
+      var(--super-language-menu-max-height, calc(100dvh - 24px))
+    ) !important;
+    overflow-y: auto !important;
+  }
+}
+
+
+
+.super-language-menu {
+  translate: 0 var(--language-menu-offset-y) !important;
+}
