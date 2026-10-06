@@ -288,6 +288,10 @@
 	display: none!important;
 }
 
+.no-cover .notion-header__title-wrapper {
+	flex-grow: 1!important;
+}
+
 .no-cover .notion-header__title {
 	width: 75%!important;
 
