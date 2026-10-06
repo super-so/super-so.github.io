@@ -1,0 +1,654 @@
+/* GENERAL BLOCKS SETTINGS */
+
+/* Hidden blocks */
+.notion-toggle.bg-brown {
+  display: none !important;
+}
+/* End of the hidden blocks */
+
+/* Hidden page title - ONLY IF red callout is present on page */
+body:has(.notion-callout.bg-red-light) h1.notion-header__title {
+  display: none !important;
+}
+/* End of hidden page title */
+
+/* Centering blocks in the brown callout */
+.notion-callout.bg-brown-light {
+    background: 0 !important;
+    border: 0 !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    justify-content: center !important;
+}
+/* End of centering blocks in the brown callout */
+
+/* END OF GENERAL BLOCK SETTINGS */
+
+/* GENERAL PAGE COVER SETTINGS */
+/* 1. Only expand cover height if it contains an actual image */
+body:has(.notion-header__cover img) .notion-header__cover {
+  height: 100vh !important;
+  max-height: 100vh !important;
+  position: relative;
+}
+
+/* 2. Only transform the red callout if page has a cover image */
+body:has(.notion-header__cover img) .notion-callout.bg-red-light {
+  --callout-default-color: #ffffff; /* Main text & headings */
+  --callout-gray-color: #ececec;    /* Gray text color */
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 100vh !important;
+  z-index: 15;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  padding-bottom: 15vh !important; /* Desktop vertical position */
+}
+
+/* 3. Text colors - only if cover image is present */
+body:has(.notion-header__cover img) .notion-callout.bg-red-light .notion-callout__content,
+body:has(.notion-header__cover img) .notion-callout.bg-red-light .notion-callout__content *:not([class*="gray"]):not([class*="brown"]):not([class*="orange"]):not([class*="yellow"]):not([class*="green"]):not([class*="blue"]):not([class*="purple"]):not([class*="pink"]):not([class*="red"]) {
+  color: var(--callout-default-color) !important;
+  fill: var(--callout-default-color) !important;
+}
+
+/* 4. Gray text color - only if cover image is present */
+body:has(.notion-header__cover img) .notion-callout.bg-red-light .notion-callout__content [class*="gray"] {
+  color: var(--callout-gray-color) !important;
+  fill: var(--callout-gray-color) !important;
+  opacity: 1 !important;
+}
+
+/* 5. Buttons and UI elements - only if cover image is present */
+body:has(.notion-header__cover img) .notion-callout.bg-red-light .notion-button__content {
+  border-color: var(--callout-default-color) !important;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative;
+  background: transparent !important;
+}
+
+body:has(.notion-header__cover img) .notion-callout.bg-red-light .notion-button__content .notion-semantic-string {
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  word-break: normal !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Button hover effect */
+body:has(.notion-header__cover img) .notion-callout.bg-red-light .notion-button__content:hover {
+  background: var(--callout-default-color) !important;
+  border-color: var(--callout-default-color) !important;
+}
+
+/* Button text */
+body:has(.notion-header__cover img) .notion-callout.bg-red-light .notion-button__content:hover .notion-semantic-string {
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
+  word-break: normal !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+body:has(.notion-header__cover img) .notion-callout.bg-red-light .notion-callout__icon {
+  display: none !important;
+}
+
+body:has(.notion-header__cover img) .notion-callout.bg-red-light .notion-callout__content {
+  margin: 0 !important;
+  padding-left: var(--padding-left) !important;
+  padding-right: var(--padding-right) !important;
+  width: 100% !important;
+}
+
+/* 6. Dark overlay - HOMEPAGE: full dark overlay */
+body.notion-page-index:has(.notion-header__cover img) .notion-header__cover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Darker towards the bottom, where the hero text sits */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.5) 45%, rgba(0, 0, 0, 0.25) 100%);
+  z-index: 1;
+}
+
+/* 6b. Dark gradient - SUBPAGES: gradient from bottom */
+body:not(.notion-page-index):has(.notion-header__cover img) .notion-header__cover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+}
+
+body:has(.notion-header__cover img) .notion-header__cover img {
+  z-index: 0;
+}
+
+/* 7. Mobile responsive - only if cover image is present */
+@media (max-width: 768px) {
+  body:has(.notion-header__cover img) .notion-header__cover {
+    height: 100vh !important;
+  }
+  
+  body:has(.notion-header__cover img) .notion-callout.bg-red-light {
+    height: 100vh !important;
+    padding-bottom: 10vh !important; 
+  }
+  
+  body:has(.notion-header__cover img) .notion-callout.bg-red-light .notion-callout__content {
+    padding-left: var(--padding-left-mobile) !important;
+    padding-right: var(--padding-right-mobile) !important;
+  }
+}
+/* END OF GENERAL PAGE COVER SETTINGS */
+
+/* ========================================
+   SHARED GALLERY SETTINGS (ALL SIZES)
+   ======================================== */
+
+/* Remove gaps and 3-column grid for all galleries */
+.notion-collection-gallery.small,
+.notion-collection-gallery.medium,
+.notion-collection-gallery.large {
+  gap: 0 !important;
+  grid-template-columns: repeat(auto-fill, minmax(33.333%, 1fr)) !important;
+}
+
+/* Shared card styling */
+.notion-collection-gallery.small .notion-collection-card,
+.notion-collection-gallery.medium .notion-collection-card,
+.notion-collection-gallery.large .notion-collection-card {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Shared cover styling */
+.notion-collection-gallery.small .notion-collection-card__cover,
+.notion-collection-gallery.medium .notion-collection-card__cover,
+.notion-collection-gallery.large .notion-collection-card__cover {
+  position: relative;
+  overflow: hidden;
+  transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease !important;
+}
+
+.notion-collection-gallery.small .notion-collection-card__cover img,
+.notion-collection-gallery.medium .notion-collection-card__cover img,
+.notion-collection-gallery.large .notion-collection-card__cover img {
+  object-fit: cover;
+  transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease !important;
+  transform: scale(1.05);
+}
+
+/* Shared hover blur effect (small & medium use same values) */
+.notion-collection-gallery.small .notion-collection-card:hover .notion-collection-card__cover,
+.notion-collection-gallery.small .notion-collection-card:hover .notion-collection-card__cover img,
+.notion-collection-gallery.medium .notion-collection-card:hover .notion-collection-card__cover,
+.notion-collection-gallery.medium .notion-collection-card:hover .notion-collection-card__cover img {
+  filter: blur(12px) !important;
+  opacity: 0.5 !important;
+  transform: scale(1.15) !important;
+}
+
+/* Shared gradient background */
+.notion-collection-gallery.small .notion-collection-card::after,
+.notion-collection-gallery.medium .notion-collection-card::after,
+.notion-collection-gallery.large .notion-collection-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, 
+    rgba(0,0,0,0.8) 0%, 
+    rgba(0,0,0,0.65) 25%, 
+    rgba(0,0,0,0.45) 50%, 
+    rgba(0,0,0,0.25) 70%, 
+    rgba(0,0,0,0.1) 85%, 
+    transparent 100%) !important;
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* Shared title base styling (small & medium) */
+.notion-collection-gallery.small .notion-property__title,
+.notion-collection-gallery.medium .notion-property__title {
+  color: white !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 0.15rem !important;
+}
+
+/* Shared property wrapper */
+.notion-collection-gallery.small .notion-collection-card__property,
+.notion-collection-gallery.medium .notion-collection-card__property {
+  margin-top: 0 !important;
+}
+
+/* Shared pill styling */
+.notion-collection-gallery.small .notion-pill,
+.notion-collection-gallery.medium .notion-pill {
+  background: transparent !important;
+  border: 1px solid white !important;
+  color: white !important;
+  border-radius: 3px !important;
+  padding: 3px 8px 4px 8px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  display: inline-block !important;
+  max-width: 100% !important;
+  line-height: 1.2 !important;
+}
+
+/* Shared pill text color */
+.notion-collection-gallery.small .notion-pill .notion-semantic-string,
+.notion-collection-gallery.small .notion-pill *,
+.notion-collection-gallery.medium .notion-pill .notion-semantic-string,
+.notion-collection-gallery.medium .notion-pill * {
+  color: white !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+/* Shared content positioning (small & medium - bottom aligned) */
+.notion-collection-gallery.small .notion-collection-card__content,
+.notion-collection-gallery.medium .notion-collection-card__content {
+  position: absolute !important;
+  bottom: 0.75rem !important;
+  left: 1rem !important;
+  right: 1rem !important;
+  padding: 0 !important;
+  background: none !important;
+  z-index: 10;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+}
+
+/* Shared mobile responsive (all galleries -> 1 column) */
+@media (max-width: 768px) {
+  .notion-collection-gallery.small,
+  .notion-collection-gallery.medium,
+  .notion-collection-gallery.large {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ========================================
+   SMALL GALLERY SPECIFIC
+   ======================================== */
+
+.notion-collection-gallery.small .notion-collection-card__cover,
+.notion-collection-gallery.small .notion-collection-card__cover img {
+  height: 200px !important;
+  min-height: 200px !important;
+}
+
+@media (max-width: 768px) {
+  .notion-collection-gallery.small .notion-collection-card__cover,
+  .notion-collection-gallery.small .notion-collection-card__cover img {
+    height: 180px !important;
+    min-height: 180px !important;
+  }
+}
+
+/* ========================================
+   MEDIUM GALLERY SPECIFIC
+   ======================================== */
+
+.notion-collection-gallery.medium .notion-collection-card {
+  aspect-ratio: 1 / 1 !important;
+}
+
+.notion-collection-gallery.medium .notion-collection-card__cover,
+.notion-collection-gallery.medium .notion-collection-card__cover img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* ========================================
+   LARGE GALLERY SPECIFIC
+   ======================================== */
+
+.notion-collection-gallery.large .notion-collection-card__cover,
+.notion-collection-gallery.large .notion-collection-card__cover img {
+  height: 500px !important;
+  min-height: 500px !important;
+}
+
+/* Large gallery has lighter blur */
+.notion-collection-gallery.large .notion-collection-card:hover .notion-collection-card__cover,
+.notion-collection-gallery.large .notion-collection-card:hover .notion-collection-card__cover img {
+  filter: blur(12px) brightness(0.75) !important;
+  opacity: 1 !important;
+  transform: scale(1.15) !important;
+}
+
+/* Large gallery content is centered and hidden by default */
+.notion-collection-gallery.large .notion-collection-card__content {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  padding: 2rem !important;
+  background: none !important;
+  z-index: 10;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 0;
+  transition: opacity 0.3s ease !important;
+  text-align: center !important;
+  width: 80% !important;
+  max-width: 100% !important;
+}
+
+.notion-collection-gallery.large .notion-collection-card:hover .notion-collection-card__content {
+  opacity: 1;
+}
+
+/* Large gallery gradient hidden by default */
+.notion-collection-gallery.large .notion-collection-card::after {
+  opacity: 0;
+  transition: opacity 0.3s ease !important;
+}
+
+.notion-collection-gallery.large .notion-collection-card:hover::after {
+  opacity: 1;
+}
+
+/* Large gallery title styling */
+.notion-collection-gallery.large .notion-property__title {
+  color: white !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  text-shadow: none !important;
+  margin-bottom: 0 !important;
+  text-align: center !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  hyphens: none !important;
+  line-height: 1.4 !important;
+}
+
+/* Hide all properties in large gallery */
+.notion-collection-gallery.large .notion-collection-card__property:not(.notion-property__title) {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .notion-collection-gallery.large .notion-collection-card__cover,
+  .notion-collection-gallery.large .notion-collection-card__cover img {
+    height: 350px !important;
+    min-height: 350px !important;
+  }
+}
+
+/* END OF GALLERIES */
+
+/* ========================================
+   FIX: LINE-HEIGHT GALLERY
+   ======================================== */
+
+/* Reset line-height inside all galleries */
+.notion-collection-gallery,
+.notion-collection-gallery * {
+  line-height: normal !important;
+}
+
+/* Explicit title control */
+.notion-collection-gallery .notion-property__title {
+  line-height: 1.3 !important;
+}
+
+/* Prevent card height expanding from text */
+.notion-collection-gallery .notion-collection-card {
+  line-height: 0 !important;
+}
+
+/* Restore content line-height only for actual text */
+.notion-collection-gallery .notion-collection-card__content {
+  line-height: 1.3 !important;
+}
+/* END OF FIX: LINE-HEIGHT GALLERY */
+
+/* PILL-STYLED TEXT - Pink + Bold + Underline */
+strong u[class*="pink"],
+u strong[class*="pink"],
+.pink-text strong u,
+.pink-text u strong {
+  /* Pill styling */
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.9) !important;
+  color: #ffffff !important;
+  padding: 4px 12px !important;
+  border-radius: 4px !important;
+  font-size: 0.875rem !important;
+  font-weight: 400 !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  margin: 0 4px !important;
+  white-space: nowrap !important;
+}
+
+/* Alternative selector for Notion's class structure */
+[class*="color-pink"] strong u,
+[class*="color-pink"] u strong,
+strong[class*="color-pink"] u,
+u[class*="color-pink"] strong {
+  /* Pill styling */
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.9) !important;
+  color: #ffffff !important;
+  padding: 4px 12px !important;
+  border-radius: 4px !important;
+  font-size: 0.875rem !important;
+  font-weight: 400 !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  margin: 0 4px !important;
+  white-space: nowrap !important;
+}
+
+/* Remove any inherited pink color */
+strong u[class*="pink"],
+u strong[class*="pink"],
+[class*="color-pink"] strong u,
+[class*="color-pink"] u strong {
+  color: #ffffff !important;
+}
+
+/* LIST VIEW SPACE REMOVAL */
+/* Remove top gap from List view */
+.notion-collection-list {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  border-top: none !important;
+}
+
+/* Ensure the hidden header wrapper occupies zero vertical space */
+.notion-collection__header-wrapper {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Remove margin from the main collection block */
+.notion-collection {
+  margin-top: 0 !important;
+}
+
+/* Optional: adjust the first list item if needed */
+.notion-collection-list__item:first-child {
+  padding-top: 0 !important;
+}
+/* END OF LIST VIEW SPACE REMOVAL */
+
+/* LIST VIEW PILL SETTINGS */
+
+/* Matches the gallery pill shape and border but inherits page text color */
+.notion-collection-list .notion-pill {
+  background: transparent !important;
+  /* border: 1px solid matches the surrounding text color */
+  border: 1px solid currentColor !important;
+  color: inherit !important;
+  border-radius: 3px !important;
+  padding: 3px 8px 4px 8px !important;
+  font-size: 0.8rem !important;
+  line-height: 1.2 !important;
+  display: inline-block !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+/* Ensure nested text inside pills also inherits the default color */
+.notion-collection-list .notion-pill .notion-semantic-string,
+.notion-collection-list .notion-pill * {
+  color: inherit !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+/* Removes Notion's default background colors from list properties */
+.notion-collection-list .notion-collection-card__property {
+  background: transparent !important;
+}
+/* END OF LIST VIEW PILL SETTINGS */
+
+/* ===============================
+   TYPOGRAPHY
+   =============================== */
+
+/* GLOBAL TEXT */
+html,
+body,
+.notion-page,
+.notion-text,
+.notion-callout,
+.notion-quote,
+.notion-list,
+.notion-toggle,
+.notion-bulleted-list,
+.notion-numbered-list,
+.notion-collection-card__property,
+.notion-property,
+.notion-caption {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: 400;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* PAGE TITLE (HERO) */
+.notion-header__title,
+.notion-header__title *,
+.notion-header__title span {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.035em !important;
+  line-height: 1.05 !important;
+}
+
+
+/* ALL HEADINGS */
+.notion-heading,
+.notion-heading *,
+.notion-heading span {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+
+/* Heading Level 1 */
+.notion-heading[data-level="1"],
+.notion-heading[data-block-level="1"],
+.notion-heading[data-level="1"] *,
+.notion-heading[data-block-level="1"] * {
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1.15 !important;
+}
+
+
+/* Heading Level 2 */
+.notion-heading[data-level="2"],
+.notion-heading[data-block-level="2"],
+.notion-heading[data-level="2"] *,
+.notion-heading[data-block-level="2"] * {
+  font-weight: 600 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.25 !important;
+}
+
+
+/* Heading Level 3 */
+.notion-heading[data-level="3"],
+.notion-heading[data-block-level="3"],
+.notion-heading[data-level="3"] *,
+.notion-heading[data-block-level="3"] * {
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.3 !important;
+}
+
+/* LINKS / UI */
+a,
+.notion-link {
+  font-weight: 500;
+}
+
+/* SAFETY: FORCE OVERRIDE INLINE FONTS */
+[style*="font-family"] {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+/* END OF TYPOGRAPHY */
+
+/* GLOBAL BUTTON STYLES - Slightly rounded corners */
+
+/* Notion buttons */
+.notion-button__content {
+  border-radius: 4px !important;
+}
+
+/* Notion form buttons */
+.notion-form__submit-btn,
+.notion-form button,
+button[type="submit"] {
+  border-radius: 4px !important;
+}
+
+/* CTA buttons */
+.super-navbar__cta,
+.super-navbar__cta > a,
+.notion-navbar__cta,
+a[data-test="cta-button"] {
+  border-radius: 4px !important;
+}
+
+/* END OF BUTTONS */
