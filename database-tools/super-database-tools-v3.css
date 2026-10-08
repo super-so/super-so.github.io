@@ -1,3 +1,7 @@
+:root {
+  --super-db-tools-enabled: 1;
+}
+
 .super-db-tools {
   width: 100%;
   display: flex;
