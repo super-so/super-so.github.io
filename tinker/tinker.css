@@ -285,3 +285,4 @@ main.super-content[class*="parent-page__"] .notion-root > .notion-callout:has(> 
 .page__instructions .notion-root h3.notion-heading { margin: 32px 0 10px; }
 .page__instructions .notion-root .notion-code { border-radius: 12px; font-size: 14px; margin: 12px 0 20px; }
 .page__instructions .notion-root .notion-list li { margin: 0 0 8px; }
+.page__instructions .notion-root .notion-code pre, .page__instructions .notion-root .notion-code code { white-space: pre-wrap !important; word-break: break-all; }
