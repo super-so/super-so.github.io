@@ -233,6 +233,9 @@ main.super-content:not(.page__index):not(.page__instructions) .notion-root .noti
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) .notion-callout { height: auto; }
 }
 
+/* --- stacked cards in one column keep their natural height --- */
+.notion-root .notion-column:has(> .notion-callout + .notion-callout) > .notion-callout { height: auto !important; flex: 0 0 auto; }
+
 /* =====================================================================
    Template pages: the Instructions child page and its link block
    ===================================================================== */
