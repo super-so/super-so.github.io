@@ -203,6 +203,9 @@
 .notion-root > .notion-callout > .notion-callout__content > h2.notion-heading { font-size: min(clamp(44px, 2rem + 4vw, 96px), 15cqi); }
 /* The drawn hero artwork already has its margins, so it is shown whole instead of zoomed in. */
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:last-child .notion-image img { transform: none; }
+/* Links inside the dark closing band stay readable. */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-semantic-string .link,
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-semantic-string a { color: #fff; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
