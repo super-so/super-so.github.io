@@ -270,6 +270,11 @@
 .notion-root .notion-callout .notion-callout p.notion-text { overflow-wrap: normal; word-break: normal; hyphens: none; }
 /* A button row directly after the step cards sits a little lower. */
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) > .notion-callout__content > .notion-quote { margin-top: 36px; }
+/* The green note card in the hero gets a smaller text size on narrow desktop windows. */
+@media (max-width: 1024px) and (min-width: 821px) {
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:last-child > .notion-callout { padding: 32px 26px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:last-child > .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text + p.notion-text { font-size: 20px; }
+}
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
