@@ -217,8 +217,6 @@
 .notion-root h1.notion-heading, .notion-root h2.notion-heading, .notion-root h3.notion-heading { overflow-wrap: normal; word-break: keep-all; hyphens: none; }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: min(clamp(40px, 1.6rem + 3.6vw, 66px), 9cqi); }
 @media (max-width: 520px) { .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: min(38px, 11cqi); } }
-/* Latin words inside Arabic headings (the template name) keep their own direction. */
-.notion-root h1.notion-heading, .notion-root p.notion-text { unicode-bidi: plaintext; }
 
 /* Subpages: the title block is a page title, a little smaller than the home page. */
 main.super-content:not(.page__index):not(.page__instructions) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) { padding: 56px 0 64px !important; }
