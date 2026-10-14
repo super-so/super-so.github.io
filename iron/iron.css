@@ -342,6 +342,12 @@
   main.super-content:not(.page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(40px, 14vw, 72px); }
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { overflow-wrap: normal; word-break: keep-all; hyphens: none; }
 }
+/* Day cards: the title follows the card width, so a long word (CONDITIONING) shrinks instead of breaking mid-word. */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout > .notion-callout__content { container-type: inline-size; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) h3.notion-heading { font-size: min(24px, 15cqi); word-break: keep-all; overflow-wrap: normal; hyphens: none; }
+@media (max-width: 820px) {
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) h3.notion-heading { font-size: min(19px, 15cqi); }
+}
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
