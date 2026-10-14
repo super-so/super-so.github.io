@@ -204,6 +204,9 @@
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content { container-type: inline-size; }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: min(clamp(42px, 1.8rem + 3vw, 72px), 13cqi); overflow-wrap: normal; word-break: keep-all; hyphens: none; }
 .notion-root h2.notion-heading, .notion-root h3.notion-heading { overflow-wrap: normal; word-break: normal; hyphens: manual; }
+/* Card titles follow the card width, so one long word shrinks instead of breaking. */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout > .notion-callout__content { container-type: inline-size; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout h3.notion-heading { font-size: min(22px, 11cqi); word-break: keep-all; overflow-wrap: normal; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
