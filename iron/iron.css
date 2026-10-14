@@ -337,6 +337,11 @@
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) > .notion-callout__content > h2.notion-heading + p.notion-text + .notion-column-list .notion-column:nth-child(3) .notion-callout::after { width: calc((100% - 28px) * .62); }
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) > .notion-callout__content > h2.notion-heading + p.notion-text + .notion-column-list .notion-column:nth-child(4) .notion-callout::after { width: calc((100% - 28px) * .31); }
 }
+/* --- Iron overrides: long page titles (Workouts, Nutrition) must not break inside the word on a phone --- */
+@media (max-width: 820px) {
+  main.super-content:not(.page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(40px, 14vw, 72px); }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { overflow-wrap: normal; word-break: keep-all; hyphens: none; }
+}
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
