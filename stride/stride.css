@@ -206,6 +206,10 @@
 /* Links inside the dark closing band stay readable. */
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-semantic-string .link,
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-semantic-string a { color: #fff; }
+/* Phone: the square hero artwork keeps its square frame instead of a 16:9 crop. */
+@media (max-width: 820px) {
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:last-child .notion-image { aspect-ratio: 1 / 1; max-width: 420px; }
+}
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
