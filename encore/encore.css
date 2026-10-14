@@ -175,6 +175,10 @@
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) + .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) { margin-top: 72px; }
 /* Hero titles on subpages are a little smaller than the home page name. */
 main.super-content:not(.page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(72px, 3rem + 6vw, 150px); }
+/* Hero titles follow the width of their own column, not the window, so one long word (ENCORE) never breaks mid-word. */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content, .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:first-child { container-type: inline-size; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: min(clamp(84px, 3.4rem + 8vw, 188px), 34cqi); overflow-wrap: normal; word-break: keep-all; hyphens: none; }
+main.super-content:not(.page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: min(clamp(72px, 3rem + 6vw, 150px), 34cqi); }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
