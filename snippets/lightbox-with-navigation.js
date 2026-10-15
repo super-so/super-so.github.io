@@ -9,9 +9,15 @@
   dialog.setAttribute('aria-label', 'Image gallery');
   dialog.innerHTML = `
     <img class="sg-image" alt="" draggable="false">
-    <button class="sg-close" type="button" aria-label="Close image gallery">&#215;</button>
-    <button class="sg-prev" type="button" aria-label="Previous image">&#8249;</button>
-    <button class="sg-next" type="button" aria-label="Next image">&#8250;</button>
+    <button class="sg-close" type="button" aria-label="Close image gallery">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <button class="sg-prev" type="button" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 6l-6 6 6 6"/></svg>
+    </button>
+    <button class="sg-next" type="button" aria-label="Next image">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg>
+    </button>
     <p class="sg-counter" role="status" aria-live="polite" aria-atomic="true"></p>
   `;
   document.body.appendChild(dialog);

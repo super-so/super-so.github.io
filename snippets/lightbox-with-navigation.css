@@ -1,4 +1,4 @@
- .notion-image img { cursor: zoom-in; }
+.notion-image img { cursor: zoom-in; }
   #super-gallery-lightbox {
     position: fixed;
     inset: 0;
@@ -47,7 +47,7 @@
     border-radius: 50%;
     background: rgba(0, 0, 0, .6);
     color: white;
-    font: 28px/1 system-ui, sans-serif;
+    line-height: 0;
     cursor: pointer;
     z-index: 1;
     touch-action: manipulation;
@@ -57,6 +57,17 @@
     outline-offset: 4px;
   }
   #super-gallery-lightbox button[hidden] { display: none; }
+  #super-gallery-lightbox button svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+  }
   #super-gallery-lightbox .sg-close { top: 12px; right: 12px; }
   #super-gallery-lightbox .sg-prev { top: calc(50% - 22px); left: 12px; }
   #super-gallery-lightbox .sg-next { top: calc(50% - 22px); right: 12px; }
