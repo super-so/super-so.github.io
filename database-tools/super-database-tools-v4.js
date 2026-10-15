@@ -802,13 +802,27 @@
     return getCells(row).length > 0;
   }
 
+  function getHeaderLabel(header) {
+    const content =
+      header.querySelector(".notion-collection-table__head-cell-content")
+      || header;
+
+    const clone = content.cloneNode(true);
+
+    clone.querySelectorAll(
+      ".notion-collection-table__head-cell-icon-wrapper, img, svg"
+    ).forEach(icon => icon.remove());
+
+    return cleanHeader(clone.textContent || "");
+}
+
   function getHeaders(table, firstRow) {
     const headerCells = getHeaderCells(table);
 
     if (headerCells.length) {
       return headerCells.map((node, index) => ({
         index,
-        label: cleanHeader(getReadableText(node)) || `Column ${index + 1}`,
+        label: getHeaderLabel(node) || `Column ${index + 1}`,
         type: getColumnType(table, index, node)
       }));
     }
