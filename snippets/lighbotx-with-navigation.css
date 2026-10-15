@@ -1,0 +1,76 @@
+ .notion-image img { cursor: zoom-in; }
+  #super-gallery-lightbox {
+    position: fixed;
+    inset: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 64px 72px;
+    border: 0;
+    background: rgba(0, 0, 0, .88);
+    color: white;
+    overflow: hidden;
+    overscroll-behavior: contain;
+  }
+  #super-gallery-lightbox::backdrop {
+    background: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(10px);
+  }
+  #super-gallery-lightbox[open] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #super-gallery-lightbox .sg-image {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    touch-action: pan-y pinch-zoom;
+  }
+  #super-gallery-lightbox button {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, .4);
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .6);
+    color: white;
+    font: 28px/1 system-ui, sans-serif;
+    cursor: pointer;
+    z-index: 1;
+    touch-action: manipulation;
+  }
+  #super-gallery-lightbox button:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+  }
+  #super-gallery-lightbox button[hidden] { display: none; }
+  #super-gallery-lightbox .sg-close { top: 12px; right: 12px; }
+  #super-gallery-lightbox .sg-prev { top: calc(50% - 22px); left: 12px; }
+  #super-gallery-lightbox .sg-next { top: calc(50% - 22px); right: 12px; }
+  #super-gallery-lightbox .sg-counter {
+    position: absolute;
+    bottom: max(16px, env(safe-area-inset-bottom));
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    color: white;
+    font: 16px/1.5 system-ui, sans-serif;
+  }
+  @media (max-width: 600px) {
+    #super-gallery-lightbox { padding: 64px 8px 76px; }
+    #super-gallery-lightbox .sg-prev,
+    #super-gallery-lightbox .sg-next { top: auto; bottom: 12px; }
+  }
