@@ -278,6 +278,8 @@ main.super-content:not(.page__index) .notion-root > .notion-callout:has(> .notio
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) .notion-column .notion-quote { margin-top: 22px; }
 /* Navbar logo in the display face. */
 .super-navbar__logo-text, .super-navbar .super-navbar__logo { font-family: var(--reel-head); font-weight: 600; letter-spacing: .04em; }
+/* Play chips scale with their own width (cqi of the chip content), so a long label never breaks inside a word on tablets. */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:last-child > .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-size: min(22px, 11cqi); overflow-wrap: normal; word-break: keep-all; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
