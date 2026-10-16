@@ -214,6 +214,8 @@ body, .super-content, .notion-root { background: var(--cipher-bg); }
   .notion-root .notion-callout__content > .notion-column-list + .notion-column-list { margin-top: 14px; }
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:last-child .notion-image { max-width: 420px; }
 }
+/* Cover images run edge to edge in their card (the renderer caps images at 100% width). */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout .notion-image { max-width: none !important; min-width: calc(100% + 44px); }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
