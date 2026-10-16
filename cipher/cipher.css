@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap");
+/* =====================================================================
+   CIPHER - terminal-style engineer portfolio template for Super (cipher-template.super.site)
+   Sections = top-level callouts keyed by their Notion icon; nested callouts = cards;
+   quote blocks = button rows; the first line of a callout is its label.
+   Source and docs: https://github.com/super-so/super-so.github.io
+   The same section icons work on every page: home, write-up, Methodology, Resume.
+   ===================================================================== */
+:root {
+  --cipher-bg: #0c0e0d;
+  --cipher-panel: #121514;
+  --cipher-panel-2: #161a18;
+  --cipher-ink: #e6e9e7;
+  --cipher-muted: #8f9893;
+  --cipher-line: #262b28;
+  --cipher-accent: #6fbf8e;
+  --cipher-accent-soft: rgba(111, 191, 142, .12);
+  --cipher-sans: "Inter", system-ui, sans-serif;
+  --cipher-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+body, .super-content, .notion-root { background: var(--cipher-bg); }
+.notion-root { padding-top: 8px; }
+.notion-root .notion-heading { scroll-margin-top: 96px; }
+.notion-root > .notion-callout > .notion-callout__icon { display: none; }
+.notion-root > .notion-callout {
+  border: 0 !important; background: transparent !important; padding: 0 !important;
+  margin: 0; border-radius: 0; box-shadow: none;
+}
+.notion-root > .notion-callout > .notion-callout__content { padding: 0; margin: 0; width: 100%; max-width: none; }
+.notion-root > .notion-callout + .notion-callout { margin-top: 104px; }
+.notion-root > .notion-callout:last-of-type { margin-bottom: 56px; }
+.notion-root .notion-callout__content > span.notion-semantic-string:empty { display: none; }
+.notion-root figcaption { display: none; }
+.notion-root > a.notion-page { display: none; }
+.notion-root .notion-column { flex: 1 1 0 !important; width: auto !important; margin: 0 !important; min-width: 0; }
+.notion-root .notion-column-list { gap: 20px; }
+.notion-root .notion-image { margin: 0; }
+.notion-root .notion-image img { height: auto; display: block; }
+
+/* --- type --- */
+.notion-root h1.notion-heading,
+.notion-root h2.notion-heading,
+.notion-root h3.notion-heading { font-family: var(--cipher-sans); color: var(--cipher-ink); margin: 0; font-weight: 700; letter-spacing: -.02em; line-height: 1.1; }
+.notion-root h2.notion-heading { font-size: clamp(30px, 1.2rem + 2vw, 44px); margin: 0 0 14px; }
+.notion-root h3.notion-heading { font-size: 21px; letter-spacing: -.01em; }
+.notion-root p.notion-text { font-family: var(--cipher-sans); font-size: 17px; line-height: 1.7; color: var(--cipher-ink); margin: 0 0 14px; }
+.notion-root .notion-semantic-string .link { opacity: 1; color: var(--cipher-accent); text-decoration: underline; text-underline-offset: 3px; }
+.notion-root code, .notion-root pre { font-family: var(--cipher-mono); }
+
+/* --- section eyebrow: "// research" --- */
+.notion-root > .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text {
+  font-family: var(--cipher-mono); font-size: 13px; font-weight: 500; letter-spacing: .06em; text-transform: lowercase;
+  color: var(--cipher-accent); margin: 0 0 12px; line-height: 1;
+}
+.notion-root > .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text::before { content: "// "; color: var(--cipher-muted); }
+/* section intro line */
+.notion-root > .notion-callout > .notion-callout__content > h2.notion-heading + p.notion-text { color: var(--cipher-muted); max-width: 640px; margin-bottom: 32px; }
+
+/* --- buttons (quote blocks) --- */
+.notion-root .notion-quote {
+  border: 0; padding: 0; margin: 28px 0 0; background: transparent;
+  display: flex; flex-wrap: wrap; gap: 12px; align-items: center; font-style: normal;
+}
+.notion-root .notion-quote > .notion-semantic-string { display: contents; }
+.notion-root .notion-quote a.link, .notion-root .notion-quote a {
+  display: inline-flex; align-items: center;
+  padding: 13px 20px; border-radius: 2px;
+  border: 1px solid var(--cipher-line); background: transparent; color: var(--cipher-ink);
+  font-family: var(--cipher-mono); font-weight: 500; font-size: 14px; letter-spacing: .02em; line-height: 1;
+  text-decoration: none !important; opacity: 1;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+.notion-root .notion-quote a.link::after, .notion-root .notion-quote a::after { content: " →"; white-space: pre; }
+.notion-root .notion-quote a.link:hover, .notion-root .notion-quote a:hover { border-color: var(--cipher-accent); color: var(--cipher-accent); }
+.notion-root .notion-quote a.link:first-child, .notion-root .notion-quote a:first-child { background: var(--cipher-accent); border-color: var(--cipher-accent); color: var(--cipher-bg); font-weight: 700; }
+.notion-root .notion-quote a.link:first-child:hover, .notion-root .notion-quote a:first-child:hover { background: #8ad1a6; border-color: #8ad1a6; color: var(--cipher-bg); }
+
+/* --- HERO (rocket): text left, logo right --- */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) { padding: 56px 0 8px !important; border-bottom: 1px solid var(--cipher-line) !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content > .notion-column-list {
+  display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 56px; align-items: center; padding-bottom: 56px;
+}
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:first-child > p.notion-text:first-child {
+  font-family: var(--cipher-mono); font-size: 13px; color: var(--cipher-accent); margin: 0 0 20px; line-height: 1;
+}
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:first-child > p.notion-text:first-child::before { content: "$ whoami  "; white-space: pre; color: var(--cipher-muted); }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading {
+  font-size: clamp(44px, 1.8rem + 4.4vw, 84px); line-height: 1; letter-spacing: -.035em; margin: 0 0 24px; font-weight: 800;
+}
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading + p.notion-text { font-size: clamp(18px, 1rem + .4vw, 21px); line-height: 1.6; max-width: 600px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading + p.notion-text + p.notion-text { color: var(--cipher-muted); max-width: 600px; }
+/* tagline under the buttons */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:first-child > .notion-quote + p.notion-text {
+  font-family: var(--cipher-mono); font-size: 13px; color: var(--cipher-muted); margin: 28px 0 0;
+}
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:first-child > .notion-quote + p.notion-text::before { content: "# "; color: var(--cipher-accent); }
+/* hero image in a terminal window frame */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:last-child .notion-image {
+  width: 100% !important; border: 1px solid var(--cipher-line); background: var(--cipher-panel); padding: 34px 0 0; position: relative;
+}
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:last-child .notion-image::before {
+  content: "● ● ●"; position: absolute; top: 10px; left: 14px; font-size: 10px; letter-spacing: 3px; color: #3b423e;
+}
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:last-child .notion-image img {
+  width: 100% !important; max-width: none !important; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 0;
+}
+
+/* --- cards (nested callouts) --- */
+.notion-root .notion-callout .notion-callout {
+  background: var(--cipher-panel); border: 1px solid var(--cipher-line); border-radius: 2px;
+  padding: 26px; margin: 0; box-shadow: none; height: 100%;
+}
+.notion-root .notion-callout .notion-callout > .notion-callout__icon { display: none; }
+.notion-root .notion-callout .notion-callout > .notion-callout__content { padding: 0; margin: 0; width: 100%; display: flex; flex-direction: column; }
+.notion-root .notion-column > .notion-callout { flex: 1 1 auto; }
+.notion-root .notion-column { display: flex; flex-direction: column; }
+/* card label (first line), mono */
+.notion-root .notion-callout .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text {
+  font-family: var(--cipher-mono); font-size: 12px; letter-spacing: .04em; color: var(--cipher-muted); margin: 0 0 14px; line-height: 1.3;
+}
+.notion-root .notion-callout .notion-callout h3.notion-heading { margin: 0 0 10px; }
+.notion-root .notion-callout .notion-callout p.notion-text { font-size: 15px; line-height: 1.6; color: var(--cipher-muted); margin: 0 0 6px; }
+.notion-root .notion-callout .notion-callout .notion-quote { margin-top: auto; padding-top: 18px; }
+.notion-root .notion-callout .notion-callout .notion-quote a, .notion-root .notion-callout .notion-callout .notion-quote a.link { padding: 10px 14px; font-size: 13px; }
+/* text cards */
+.notion-root .notion-callout .notion-callout:not(:has(.notion-image)) { border-style: dashed; border-color: #343a37; background: transparent; }
+
+/* --- FINDINGS (star): table-like rows with an accent rail --- */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout { border-left: 3px solid var(--cipher-accent) !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { color: var(--cipher-accent); font-size: 14px; font-weight: 700; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-quote a:first-child { background: transparent; color: var(--cipher-accent); border-color: var(--cipher-accent); font-weight: 500; }
+
+/* --- WRITE-UPS (target): image cards, cover on top --- */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout { padding: 0; overflow: hidden; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout > .notion-callout__content { padding: 0 22px 22px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout .notion-image { order: -1; margin: 0 -22px 18px; width: calc(100% + 44px) !important; border-bottom: 1px solid var(--cipher-line); }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout .notion-image img { width: 100% !important; max-width: none !important; aspect-ratio: 16 / 9; object-fit: cover; object-position: center; border-radius: 0; transition: transform .35s ease; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout:hover .notion-image img { transform: scale(1.03); }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout:hover { border-color: var(--cipher-accent); }
+/* cards without an image get an empty cover frame */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout:not(:has(.notion-image)) > .notion-callout__content::before {
+  content: "cover image"; order: -1; display: flex; align-items: center; justify-content: center;
+  aspect-ratio: 16 / 9; margin: 0 -22px 18px; border-bottom: 1px dashed #343a37;
+  font-family: var(--cipher-mono); font-size: 12px; color: #59625d;
+  background: repeating-linear-gradient(135deg, transparent 0 10px, rgba(255,255,255,.015) 10px 20px);
+}
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { margin-top: 0; }
+
+/* --- TEXT SECTIONS (book, user): heading, then one text card --- */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) > .notion-callout__content > .notion-callout,
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) > .notion-callout__content > .notion-callout { max-width: 760px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) > .notion-callout__content > .notion-callout { min-height: 220px; justify-content: center; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) > .notion-callout__content > h2.notion-heading { margin-bottom: 28px; }
+
+/* --- CONTACT (megaphone): bordered band --- */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) {
+  background: var(--cipher-panel) !important; border: 1px solid var(--cipher-line) !important; border-top: 2px solid var(--cipher-accent) !important; padding: 56px 48px !important;
+}
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) h2.notion-heading { font-size: clamp(34px, 1.4rem + 2.4vw, 52px); }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) > .notion-callout__content > h2.notion-heading + p.notion-text { margin-bottom: 0; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) > .notion-callout__content > .notion-callout { max-width: 620px; margin-top: 32px; height: auto; }
+
+/* --- chrome --- */
+.super-navbar { background: rgba(12, 14, 13, .88) !important; backdrop-filter: blur(10px); border-bottom: 1px solid var(--cipher-line); }
+.super-navbar__logo, .super-navbar__logo-text, .super-navbar a[class*="logo"] { font-family: var(--cipher-mono) !important; color: var(--cipher-accent) !important; }
+.super-navbar__item, .super-navbar__menu a { font-family: var(--cipher-sans); font-size: 14px; color: var(--cipher-ink); }
+.super-navbar__cta { border-radius: 2px !important; font-family: var(--cipher-mono) !important; font-weight: 700 !important; background: var(--cipher-accent) !important; color: var(--cipher-bg) !important; }
+.super-footer { margin-top: 48px; border-top: 1px solid var(--cipher-line); font-family: var(--cipher-mono); font-size: 13px; color: var(--cipher-muted); }
+
+/* --- Responsive --- */
+@media (max-width: 820px) {
+  .notion-root > .notion-callout + .notion-callout { margin-top: 72px; }
+  .notion-root .notion-column-list { flex-wrap: wrap; gap: 14px; }
+  .notion-root .notion-column { flex: 1 1 100% !important; }
+  .notion-root .notion-callout .notion-callout { height: auto; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) { padding-top: 24px !important; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content > .notion-column-list { grid-template-columns: minmax(0, 1fr); gap: 36px; padding-bottom: 40px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:last-child .notion-image { max-width: 360px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) { padding: 40px 22px !important; }
+}
+@media (max-width: 520px) {
+  .super-navbar__logo-text { font-size: 13px !important; }
+  .super-navbar__content { gap: 8px; }
+  .super-navbar__actions { gap: 6px; flex-shrink: 0; }
+  .super-navbar__cta { padding: 8px 10px !important; font-size: 12px !important; white-space: nowrap; }
+  .notion-root p.notion-text { font-size: 16px; }
+  .notion-root .notion-quote a.link, .notion-root .notion-quote a { padding: 12px 16px; font-size: 13px; }
+}
+
+/* ---------- Cipher: template fixes ---------- */
+/* Display titles follow the width of their own column, so one long word never breaks mid-word. */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:first-child,
+.notion-root > .notion-callout > .notion-callout__content { container-type: inline-size; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: min(clamp(40px, 1.8rem + 4.4vw, 84px), 15cqi); overflow-wrap: normal; word-break: keep-all; hyphens: none; }
+.notion-root h2.notion-heading, .notion-root h3.notion-heading { overflow-wrap: normal; word-break: normal; hyphens: none; }
+.notion-root > .notion-callout > .notion-callout__content > h2.notion-heading { font-size: min(clamp(30px, 1.2rem + 2vw, 44px), 9cqi); }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) > .notion-callout__content > h2.notion-heading { font-size: min(clamp(34px, 1.4rem + 2.4vw, 52px), 10cqi); }
+/* Text cards are real content, so they get the solid panel instead of a dashed frame. */
+.notion-root .notion-callout .notion-callout:not(:has(.notion-image)) { border-style: solid; border-color: var(--cipher-line); background: var(--cipher-panel); }
+/* A section can hold more than one row of cards. */
+.notion-root .notion-callout__content > .notion-column-list + .notion-column-list { margin-top: 20px; }
+/* Section text before the cards (root cause paragraphs and the like). */
+.notion-root > .notion-callout > .notion-callout__content > h2.notion-heading + p.notion-text + p.notion-text { color: var(--cipher-muted); max-width: 640px; }
+.notion-root > .notion-callout > .notion-callout__content > p.notion-text + .notion-callout { margin-top: 8px; }
+/* Lines in a text card read as a list with a prompt marker. */
+.notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/book_"]), :has(> .notion-callout__icon img[src*="/user_"])) .notion-callout p.notion-text { padding-left: 18px; position: relative; color: var(--cipher-ink); opacity: .86; }
+.notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/book_"]), :has(> .notion-callout__icon img[src*="/user_"])) .notion-callout p.notion-text::before { content: ">"; position: absolute; left: 0; color: var(--cipher-accent); font-family: var(--cipher-mono); }
+.notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/book_"]), :has(> .notion-callout__icon img[src*="/user_"])) .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { padding-left: 0; opacity: 1; color: var(--cipher-muted); }
+.notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/book_"]), :has(> .notion-callout__icon img[src*="/user_"])) .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text::before { content: none; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) > .notion-callout__content > .notion-callout { min-height: 0; }
+/* The drawn hero artwork is shown whole. */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:last-child .notion-image img { object-fit: contain; }
+@media (max-width: 820px) {
+  .notion-root .notion-callout__content > .notion-column-list + .notion-column-list { margin-top: 14px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:last-child .notion-image { max-width: 420px; }
+}
+
+/* =====================================================================
+   Template pages: the Instructions child page and its link block
+   ===================================================================== */
+.notion-root > a.notion-page { display: none; }
+.page__instructions .notion-root { max-width: 760px; margin: 0 auto; padding-bottom: 64px; }
+.page__instructions .notion-root h1.notion-heading { font-size: clamp(34px, 1.8rem + 1.6vw, 48px); margin: 24px 0 16px; }
+.page__instructions .notion-root h2.notion-heading { margin: 48px 0 14px; }
+.page__instructions .notion-root h3.notion-heading { margin: 32px 0 10px; }
+.page__instructions .notion-root .notion-code { border-radius: 12px; font-size: 14px; margin: 12px 0 20px; }
+.page__instructions .notion-root .notion-list li { margin: 0 0 8px; }
+.page__instructions .notion-root .notion-code pre, .page__instructions .notion-root .notion-code code { white-space: pre-wrap !important; word-break: break-all; }
