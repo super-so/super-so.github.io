@@ -215,6 +215,10 @@ body, .super-root, .super-content { background: var(--bloc-lav); }
 }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/people_"]) .notion-column > p.notion-text strong { color: var(--bloc-orange); font-weight: 700; }
 
+/* Instructions page: readable headings */
+.page__instructions .notion-root h1.notion-heading { text-transform: none; }
+.page__instructions .notion-root h2.notion-heading { text-transform: none; font-size: clamp(24px, 1rem + 1.2vw, 32px); }
+
 /* navbar button */
 .super-navbar__cta, .super-navbar__cta a { padding-left: 18px !important; padding-right: 18px !important; }
 
@@ -227,6 +231,8 @@ body, .super-root, .super-content { background: var(--bloc-lav); }
   .notion-root > .notion-callout:not(:has(> .notion-callout__icon img[src*="/rocket_"])) .notion-column .notion-image img { max-width: 320px !important; margin: 0 auto; }
 }
 @media (max-width: 480px) {
+  /* three stat tiles: one per row instead of two plus one */
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column-list + .notion-column-list:has(> .notion-column:nth-child(3):last-child) .notion-column { flex: 1 1 100% !important; max-width: 100%; }
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/people_"]) .notion-column { flex: 1 1 100% !important; max-width: 100%; }
   .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: 72px; }
 }
