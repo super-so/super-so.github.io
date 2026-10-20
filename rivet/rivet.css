@@ -258,6 +258,8 @@ body, .super-content { background: var(--rivet-bg); }
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]):has(strong) > .notion-callout__content { display: block; }
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) h2.notion-heading { font-size: clamp(36px, 10vw, 48px); }
 }
+/* index cards: the arrow never wraps onto a line of its own */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) .notion-callout p.notion-text .link::after { content: "\00a0\2197"; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
