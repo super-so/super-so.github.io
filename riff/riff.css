@@ -232,6 +232,23 @@ main.super-content:not(.page__index):not(.page__instructions) .notion-root h1.no
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout > .notion-callout__content > p.notion-text:last-of-type { min-width: 0; }
 }
 
+/* --- tour rows: fixed status column so every row lines up --- */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout > .notion-callout__content { grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr) 190px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout > .notion-callout__content > p.notion-text:last-of-type { justify-self: stretch; }
+
+/* --- Instructions page: calmer headings for a reading column --- */
+.page__instructions .notion-root h1.notion-heading { font-size: clamp(40px, 1.6rem + 2.4vw, 60px); text-align: left; margin: 48px 0 24px; }
+.page__instructions .notion-root h2.notion-heading { font-size: clamp(26px, 1rem + 1.4vw, 34px); text-align: left; margin: 48px 0 14px; letter-spacing: -.03em; }
+.page__instructions .notion-root h3.notion-heading { font-size: 22px; text-align: left; margin: 36px 0 12px; letter-spacing: -.02em; }
+@media (max-width: 820px) {
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout > .notion-callout__content { grid-template-columns: minmax(0, 1fr); }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout > .notion-callout__content > p.notion-text:last-of-type { justify-self: start; }
+}
+@media (max-width: 480px) {
+  .page__instructions .notion-root h2.notion-heading { font-size: 26px; }
+  .page__instructions .notion-root h3.notion-heading { font-size: 20px; }
+}
+
 /* =====================================================================
    Template pages: the Instructions child page and its link block
    ===================================================================== */
