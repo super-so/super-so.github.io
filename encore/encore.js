@@ -4,13 +4,33 @@
    2. Smooth scrolling for #anchor links: #works scrolls to the heading "Works". */
 (function () {
   function slug(t) { return t.toLowerCase().replace(/['’]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
-  function go(hash) {
-    var id = (hash || "").slice(1); if (!id) return false;
+  function heading(hash) {
+    var id = (hash || "").slice(1); if (!id) return null;
     var hs = document.querySelectorAll(".notion-root .notion-heading");
     for (var i = 0; i < hs.length; i++) {
-      if (slug(hs[i].textContent) === id) { hs[i].scrollIntoView({ behavior: "smooth", block: "start" }); return true; }
+      if (slug(hs[i].textContent) === id) return hs[i];
     }
-    return false;
+    return null;
+  }
+  function go(hash) {
+    var h = heading(hash);
+    if (h) h.scrollIntoView({ behavior: "smooth", block: "start" });
+    return !!h;
+  }
+  /* A /#slug link on a subpage loads the home page in place, so retry until its heading is rendered. */
+  function goWhenReady(hash) {
+    var tries = 0;
+    var timer = setInterval(function () {
+      if (++tries > 40) return clearInterval(timer);
+      if (!go(hash)) return;
+      clearInterval(timer);
+      [900, 1800].forEach(function (ms) { setTimeout(function () { realign(hash); }, ms); });
+    }, 150);
+  }
+  /* Images and widgets above the heading can still push it down after the first scroll. */
+  function realign(hash) {
+    var h = heading(hash);
+    if (h && Math.abs(h.getBoundingClientRect().top) > 160) h.scrollIntoView({ block: "start" });
   }
   /* Gallery filter: one chip per work type, read from the first line of every card ("Stage · 2025"). */
   function gallery() {
@@ -54,7 +74,9 @@
     var a = e.target.closest && e.target.closest('a[href^="#"], a[href*="/#"]');
     if (!a) return;
     var href = a.getAttribute("href"); var hash = href.slice(href.indexOf("#"));
-    if (go(hash)) { e.preventDefault(); history.replaceState(null, "", hash); }
+    if (hash.indexOf("#block-") === 0) return;
+    if (go(hash)) { e.preventDefault(); history.replaceState(null, "", hash); return; }
+    goWhenReady(hash);
   });
-  if (location.hash) setTimeout(function () { go(location.hash); }, 400);
+  if (location.hash) goWhenReady(location.hash);
 })();
