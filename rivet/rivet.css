@@ -260,6 +260,8 @@ body, .super-content { background: var(--rivet-bg); }
 }
 /* index cards: the arrow never wraps onto a line of its own */
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) .notion-callout p.notion-text .link::after { content: "\00a0\2197"; }
+/* a chapter right after the hero (subpages): the hero's heavy rule is enough, no second rule */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) + .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) { border-top: 0 !important; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
