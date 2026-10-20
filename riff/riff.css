@@ -220,6 +220,18 @@ main.super-content:not(.page__index):not(.page__instructions) .notion-root h1.no
   .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: 76px; }
 }
 
+/* --- tour rows: place and status aligned --- */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout > .notion-callout__content > p.notion-text { text-align: left; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout > .notion-callout__content > p.notion-text:last-of-type { min-width: 170px; text-align: center; }
+
+/* --- a statement band (user section without columns) reads the same on every page --- */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]):not(:has(.notion-column-list)) > .notion-callout__content > p.notion-text:not(:first-of-type) {
+  max-width: 820px; margin: 0 auto; font-size: clamp(18px, 1rem + .5vw, 23px); line-height: 1.6; font-style: italic; text-align: center;
+}
+@media (max-width: 820px) {
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout > .notion-callout__content > p.notion-text:last-of-type { min-width: 0; }
+}
+
 /* =====================================================================
    Template pages: the Instructions child page and its link block
    ===================================================================== */
