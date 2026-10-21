@@ -235,8 +235,8 @@ body, .super-content { background: var(--tier-bg); }
 /* --- hero image: drawn square illustration, shown whole --- */
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column .notion-image img { object-position: center; }
 
-/* --- hero tiles: the figure never breaks --- */
-.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column-list + .notion-column-list .notion-callout p.notion-text::first-line { white-space: nowrap; }
+/* --- hero tiles: words wrap whole (no nowrap on ::first-line, WebKit then splits words of the next line) --- */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column-list + .notion-column-list .notion-callout p.notion-text { overflow-wrap: normal; word-break: normal; }
 
 /* --- three-card rows on narrow desktops and tablets: tighter cards --- */
 @media (min-width: 821px) and (max-width: 1100px) {
