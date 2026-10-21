@@ -263,6 +263,10 @@ body, .super-content { background: var(--rivet-bg); }
 /* a chapter right after the hero (subpages): the hero's heavy rule is enough, no second rule */
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) + .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) { border-top: 0 !important; }
 
+/* Instructions page: text links look like links (Charlene 2026-10-21, "Click this link" was invisible) */
+.page__instructions .notion-root .notion-semantic-string .link { color: var(--rivet-slate); font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.page__instructions .notion-root .notion-semantic-string .link:hover { color: var(--rivet-steel); }
+
 /* =====================================================================
    Template pages: the Instructions child page and its link block
    ===================================================================== */
