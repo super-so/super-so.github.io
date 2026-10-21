@@ -227,10 +227,10 @@ html, body, .super-root, .super-content { background: var(--grove-bg); }
   width: 100% !important; height: auto !important; border-radius: 22px; display: block;
 }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content > .notion-image * { max-width: 100%; }
-@media (min-width: 1000px) {
+@media (min-width: 1101px) {
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]):has(> .notion-callout__content > .notion-image) { padding: 56px 52px 52px 60px !important; }
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content:has(> .notion-image) {
-    display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 40%); column-gap: 40px; align-content: start; max-width: none;
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, 36%); column-gap: 40px; align-content: start; max-width: none;
   }
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content:has(> .notion-image) > * { grid-column: 1; }
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content > .notion-image {
