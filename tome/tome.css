@@ -185,8 +185,8 @@
   content: "Archive"; display: inline-flex; font-family: var(--tome-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--tome-saffron);
   border: 1px solid rgba(227, 168, 63, .45); border-radius: 999px; padding: 5px 12px; margin: 0 0 16px;
 }
-main.super-content[class*="parent-page__"]:has(.notion-root > .notion-image:first-child) .notion-header__title-wrapper::before { content: "Record"; }
-main.super-content[class*="parent-page__"] .notion-header__title-wrapper::before { content: "Entry"; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index):has(.notion-root > .notion-image:first-child) .notion-header__title-wrapper::before { content: "Record"; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-header__title-wrapper::before { content: "Entry"; }
 .super-content:not(.page__index) .notion-header__title { font-family: var(--tome-head); color: var(--tome-ink); font-weight: 600; font-size: clamp(32px, 1.3rem + 2vw, 50px); line-height: 1.06; letter-spacing: -.015em; margin: 0; }
 .super-content:not(.page__index) .notion-root { max-width: 780px; margin: 0 auto; padding: 34px 0 30px; }
 
@@ -219,8 +219,8 @@ main.super-content[class*="parent-page__"] .notion-header__title-wrapper::before
 /* images */
 .super-content:not(.page__index) .notion-root .notion-image { margin: 20px auto 26px; max-width: 100%; }
 .super-content:not(.page__index) .notion-root .notion-image img { height: auto !important; border-radius: 12px; border: 1px solid var(--tome-line); background: #f3ecdc; }
-main.super-content[class*="parent-page__"] .notion-root > .notion-image:first-child { width: 120px !important; margin: 0 0 22px !important; }
-main.super-content[class*="parent-page__"] .notion-root > .notion-image:first-child img { width: 120px !important; padding: 10px; box-sizing: border-box; border-radius: 18px; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-image:first-child { width: 120px !important; margin: 0 0 22px !important; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-image:first-child img { width: 120px !important; padding: 10px; box-sizing: border-box; border-radius: 18px; }
 
 /* code block = organisation diagram */
 .super-content:not(.page__index) .notion-root .notion-code { background: #0f1216 !important; border: 1px solid var(--tome-line); border-radius: 12px; margin: 10px 0 26px; }
