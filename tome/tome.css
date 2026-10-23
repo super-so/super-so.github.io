@@ -285,6 +285,10 @@ main.super-content:not(.page__index) .notion-root > a.notion-page { display: non
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-callout .notion-quote { justify-content: flex-start; }
 }
 
+/* table cells: keep words whole; the table grows to the longest word and the wrapper scrolls on phones */
+.super-content:not(.page__index) .notion-root table.notion-table .notion-table__cell,
+.super-content:not(.page__index) .notion-root table.notion-table .notion-table__cell * { overflow-wrap: normal !important; word-break: normal !important; hyphens: none; }
+
 /* =====================================================================
    Template pages: the Instructions child page and its link block
    ===================================================================== */
