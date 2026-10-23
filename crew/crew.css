@@ -317,6 +317,17 @@ body, .super-content, .notion-root { font-family: 'IBM Plex Sans', system-ui, sa
 .notion-root .notion-table tr:first-child td { background: var(--crew-ink) !important; color: #fff !important; }
 .notion-root .notion-table td { max-width: none !important; }
 @media (min-width: 641px) { .notion-root .notion-table { display: table; } }
+/* Medium screens: with the sidebar open the content column is narrow, so the hero stacks and
+   the stat tiles and the home step band go two by two. */
+@media (max-width: 1100px) {
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content > .notion-column-list { flex-wrap: wrap; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content > .notion-column-list:not(.notion-column-list + .notion-column-list) > .notion-column { flex: 1 1 100% !important; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content > .notion-column-list:not(.notion-column-list + .notion-column-list) > .notion-column:has(.notion-image) { max-width: 520px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column-list + .notion-column-list > .notion-column { flex: 1 1 calc(50% - 9px) !important; }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column-list { flex-wrap: wrap; }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column { flex: 1 1 calc(50% - 9px) !important; }
+}
+.notion-root p.notion-text, .notion-root li { overflow-wrap: normal; word-break: normal; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
