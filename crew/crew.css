@@ -306,6 +306,17 @@ body, .super-content, .notion-root { font-family: 'IBM Plex Sans', system-ui, sa
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content { padding: 26px 18px; }
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) > .notion-callout__content { padding: 24px 18px; }
 }
+/* Tip box: its first line is body text, not a section label. */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_"]) > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text {
+  text-transform: none; letter-spacing: normal; font-size: 15px; font-family: 'IBM Plex Sans', system-ui, sans-serif !important; font-weight: 400 !important; color: #5b4511 !important; padding: 0 !important; background: none; margin: 0; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_"]) > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text::before { content: none !important; }
+/* Stacked cards grow with their content instead of sharing one height. */
+.notion-root > .notion-callout > .notion-callout__content > .notion-callout { height: auto !important; }
+.notion-root .notion-column:has(> .notion-callout + .notion-callout) > .notion-callout { height: auto !important; }
+/* Tables: charcoal header row, cells share the full width. */
+.notion-root .notion-table tr:first-child td { background: var(--crew-ink) !important; color: #fff !important; }
+.notion-root .notion-table td { max-width: none !important; }
+@media (min-width: 641px) { .notion-root .notion-table { display: table; } }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
