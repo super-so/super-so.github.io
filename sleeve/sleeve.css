@@ -303,6 +303,8 @@ main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-head
   main.super-content.parent-page__index:not(.page__instructions) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(34px, 9.5vw, 52px); }
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) h2.notion-heading { font-size: clamp(30px, 8.5vw, 48px); }
 }
+/* card covers stay square on narrow cards (the theme sets a 200px minimum height) */
+.notion-root .notion-collection-card.gallery .notion-collection-card__cover { min-height: 0 !important; height: auto !important; aspect-ratio: 1 / 1; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
