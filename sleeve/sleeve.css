@@ -305,6 +305,8 @@ main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-head
 }
 /* card covers stay square on narrow cards (the theme sets a 200px minimum height) */
 .notion-root .notion-collection-card.gallery .notion-collection-card__cover { min-height: 0 !important; height: auto !important; aspect-ratio: 1 / 1; }
+/* text links in paragraphs and lists stay underlined so they read as links (buttons are quote blocks) */
+.notion-root p.notion-text .link, .notion-root .notion-list-item .link { text-decoration: underline; text-decoration-color: var(--sleeve-amber); text-underline-offset: 3px; text-decoration-thickness: 1px; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
