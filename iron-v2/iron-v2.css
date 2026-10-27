@@ -125,6 +125,7 @@
   display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 64px; align-items: start;
 }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) > .notion-callout__content > * { grid-column: 1; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) h2.notion-heading { font-size: clamp(40px, 1rem + 3.4vw, 72px); max-width: none; }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) > .notion-callout__content > .notion-callout { grid-column: 2; grid-row: 1 / span 20; align-self: stretch; }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-bulleted-list { list-style: none; padding: 0; margin: 8px 0 0; }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-list-item { list-style: none; position: relative; padding: 0 0 14px 32px; border: 0; }
