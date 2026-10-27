@@ -162,6 +162,9 @@
 .super-footer { background: var(--ground) !important; }
 .super-footer__footnote { font-family: var(--font); color: var(--muted); }
 
+/* --- subpage titles stay on two lines; the very large title is the home page's --- */
+main.super-content:not(.page__index) .notion-root h1.notion-heading { font-size: clamp(56px, 2rem + 5vw, 120px); }
+
 /* --- Instructions page: a reading column --- */
 .page__instructions .notion-root { max-width: 760px; margin: 0 auto; padding-bottom: 96px; }
 .page__instructions .notion-root h1.notion-heading { font-size: clamp(48px, 2rem + 3vw, 80px); margin: 24px 0 32px; }
