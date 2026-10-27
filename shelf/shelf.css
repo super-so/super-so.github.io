@@ -247,6 +247,9 @@ main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-page
 main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-header__title { overflow-wrap: normal; word-break: normal; hyphens: none; }
 main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-image img { border: 0; }
 
+/* card titles scale with the column so long model names stay on whole words */
+.notion-root .notion-collection-card .notion-property__title { font-size: clamp(19px, 2.1vw, 26px) !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-size: clamp(30px, 3.2vw, 40px); }
 /* headings never break inside a word: condensed capitals shrink on narrow screens instead */
 .notion-root h1.notion-heading, .notion-root h2.notion-heading, .super-content .notion-header__title, .notion-root .notion-collection-card .notion-property__title { overflow-wrap: normal !important; word-break: normal !important; hyphens: none !important; }
 @media (max-width: 600px) {
