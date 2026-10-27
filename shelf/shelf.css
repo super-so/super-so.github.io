@@ -214,8 +214,8 @@ main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-page
 
 /* subpages: the book section closes the page when no gallery follows it */
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]):not(:has(+ .notion-collection)) { padding-bottom: 120px !important; }
-.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) p.notion-text { color: var(--ink); max-width: 720px; }
-.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) > .notion-callout__content > h2.notion-heading + p.notion-text { color: var(--muted); }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) p.notion-text { max-width: 720px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) p.notion-text + p.notion-text { margin-top: 14px; }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) a { color: var(--ink) !important; }
 /* subpage hero: no counts row, so less air below */
 main.super-content:not(.page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) { padding-bottom: 88px !important; }
@@ -265,6 +265,9 @@ main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root
 }
 /* a paragraph added to an item page reads as text under the properties */
 main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > p.notion-text { grid-column: 1; grid-row: auto; aspect-ratio: auto; display: block; background: none; color: var(--ink); margin: 12px 0 0; }
+/* Instructions: code snippets on a dark panel so they read on the orange ground */
+.page__instructions .notion-root .notion-code { background: #161615 !important; border-radius: 0 !important; }
+.page__instructions .notion-root .notion-code, .page__instructions .notion-root .notion-code * { color: #f2f2f2 !important; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
