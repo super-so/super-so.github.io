@@ -245,6 +245,10 @@ main.super-content:not(.page__index):not(.page__instructions) .notion-root > .no
 @media (max-width: 600px) {
   .notion-root h1.notion-heading, .notion-root h2.notion-heading { overflow-wrap: break-word; }
 }
+/* project rows: the renderer puts height:auto inline on images; let the picture fill the whole row */
+@media (min-width: 901px) {
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout .notion-image img { height: 100% !important; }
+}
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
