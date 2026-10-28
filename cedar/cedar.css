@@ -263,6 +263,12 @@ body, .super-content { background: #0f1f10; }
 
 /* ---------- Cedar: Latin type ---------- */
 /* Two theme fonts: EB Garamond for text, Cormorant Garamond (a high-contrast display serif) for headings. */
+/* The navbar and footer sit outside .super-content, so the colours and fonts they use are defined on :root as well. */
+:root {
+  --cedar-accent: #c6f19d; --cedar-accent-ink: #0f1f10;
+  --cedar-font: "EB Garamond", Georgia, "Times New Roman", serif;
+  --cedar-display: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+}
 .super-content {
   --cedar-font: "EB Garamond", Georgia, "Times New Roman", serif;
   --cedar-display: "Cormorant Garamond", "EB Garamond", Georgia, serif;
@@ -350,7 +356,7 @@ body, .super-content { background: #0f1f10; }
 /* chrome */
 .super-navbar, .super-navbar a, .super-footer, .super-footer a { font-family: var(--cedar-font) !important; letter-spacing: .04em; }
 .super-navbar__logo-text, .super-navbar .super-navbar__logo { font-family: var(--cedar-display) !important; font-size: 26px !important; font-weight: 600 !important; letter-spacing: .02em; }
-.super-navbar__cta { font-size: 12.5px !important; letter-spacing: .14em; text-transform: uppercase; }
+.super-navbar__cta { font-size: 12.5px !important; letter-spacing: .14em; text-transform: uppercase; padding: 10px 18px !important; }
 
 /* closing field with fact tiles: on mid-size windows the tiles stack, so their words never get cut */
 @media (max-width: 1180px) and (min-width: 821px) {
