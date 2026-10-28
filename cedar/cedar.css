@@ -352,6 +352,11 @@ body, .super-content { background: #0f1f10; }
 .super-navbar__logo-text, .super-navbar .super-navbar__logo { font-family: var(--cedar-display) !important; font-size: 26px !important; font-weight: 600 !important; letter-spacing: .02em; }
 .super-navbar__cta { font-size: 12.5px !important; letter-spacing: .14em; text-transform: uppercase; }
 
+/* closing field with fact tiles: on mid-size windows the tiles stack, so their words never get cut */
+@media (max-width: 1180px) and (min-width: 821px) {
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-column-list .notion-column-list { flex-direction: column; gap: 6px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-column-list .notion-column-list > .notion-column { flex: 0 0 auto !important; width: 100% !important; }
+}
 @media (max-width: 820px) {
   .notion-root p.notion-text { font-size: 17px; }
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(36px, 9vw + 4px, 46px); }
