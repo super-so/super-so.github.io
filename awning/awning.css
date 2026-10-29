@@ -166,10 +166,8 @@ main.super-content:not(.page__index):not(.page__instructions) .notion-root > .no
 .notion-root > .notion-callout .notion-image img { display: block; width: 100% !important; height: auto !important; border-radius: 0 !important; }
 .notion-root > .notion-callout .notion-callout .notion-image { margin: 4px 0 0 !important; }
 
-/* download buttons show the title of the file block */
-.notion-root a.notion-file .notion-file__title { font-size: 15px !important; font-family: var(--awning-body); letter-spacing: 0.04em; color: var(--awning-cream) !important; white-space: normal; }
-.notion-root a.notion-file .notion-file__title::after { content: none; }
-.notion-root a.notion-file > div > div:last-child { white-space: normal; flex-wrap: wrap; }
+/* download buttons: the file name is replaced by one label, the size stays */
+.notion-root a.notion-file .notion-file__title::after { content: "Download the PDF"; }
 
 /* long words never break inside headings; caps headings shrink on narrow phones */
 .notion-root .notion-heading { overflow-wrap: normal; word-break: normal; hyphens: manual; }
@@ -185,6 +183,11 @@ main.super-content:not(.page__index):not(.page__instructions) .notion-root > .no
 .page__instructions .notion-root h2.notion-heading { font-size: 34px; line-height: 1.15; }
 .page__instructions .notion-root .notion-code { background: var(--awning-surface) !important; color: var(--awning-ink); }
 .page__instructions .notion-root a.notion-link { color: var(--awning-rose); }
+
+/* navbar button: square, cream on the wine-red bar */
+.super-navbar__cta { background: var(--awning-cream) !important; color: var(--awning-wine) !important; border-radius: 0 !important; font-family: var(--awning-body) !important; font-size: 15px !important; letter-spacing: 0.04em; padding: 10px 20px !important; border: 0 !important; box-shadow: none !important; }
+.super-navbar__cta * { color: inherit !important; font: inherit !important; }
+.super-navbar__cta:hover { background: var(--awning-rose) !important; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
