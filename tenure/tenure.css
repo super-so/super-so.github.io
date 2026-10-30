@@ -159,6 +159,10 @@ main.super-content:not(.page__index):not(.page__instructions) .notion-root > .no
 .page__instructions .notion-root p.notion-text, .page__instructions .notion-root li.notion-list-item { font-size: 18px; }
 .page__instructions .notion-root h1.notion-heading { line-height: 1.05; }
 .page__instructions .notion-root h2.notion-heading { font-size: 32px; line-height: 1.15; }
+.page__instructions .notion-root h1.notion-heading { margin: 24px 0 16px !important; }
+.page__instructions .notion-root h2.notion-heading { margin: 48px 0 14px !important; }
+.page__instructions .notion-root h3.notion-heading { font-size: 23px; margin: 32px 0 10px !important; }
+.page__instructions .notion-root p.notion-text { margin: 0 0 12px !important; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
