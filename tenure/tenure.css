@@ -151,6 +151,8 @@ main.super-content:not(.page__index):not(.page__instructions) .notion-root > .no
 .notion-root > .notion-callout > .notion-callout__content > h2.notion-heading + p.notion-text { max-width: 720px; }
 /* inner-page hero: a plain intro keeps a readable measure */
 .notion-root > .notion-callout:first-child > .notion-callout__content > p.notion-text { max-width: 720px; }
+/* list markers stay inside the column, a marker at the left edge of a band would be clipped */
+.notion-root ul.notion-bulleted-list { padding-left: 1.4em !important; }
 /* headings never break inside a word */
 .notion-root h1.notion-heading, .notion-root h2.notion-heading, .notion-root h3.notion-heading { overflow-wrap: normal; word-break: normal; hyphens: manual; }
 /* quiet Instructions page: no bands, plain Literata on the slate ground */
