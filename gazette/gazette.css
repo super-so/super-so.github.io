@@ -107,14 +107,17 @@
 .notion-root .notion-collection-card .notion-collection-card__cover { display: block !important; width: 100% !important; height: auto !important; min-height: 0 !important; max-height: none !important; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 0 !important; background: var(--gazette-surface); }
 .notion-root .notion-collection-card > a { display: flex; flex-direction: column; height: 100%; }
 .notion-root .notion-collection-card > a, .notion-root .notion-collection-card .notion-collection-card__cover-wrapper { border-radius: 0 !important; }
-/* row pages: a readable column under the cover */
-main.super-content[class*="parent-page__"] .notion-root { max-width: 760px; margin-left: auto; margin-right: auto; padding-top: 16px; }
-main.super-content[class*="parent-page__"] .notion-header__content { max-width: 760px; margin-left: auto; margin-right: auto; }
-main.super-content[class*="parent-page__"] .notion-header__title { font-size: clamp(36px, 1.2rem + 3vw, 60px); line-height: 1.04; letter-spacing: -.02em; }
-main.super-content[class*="parent-page__"] .notion-root h2.notion-heading { font-size: clamp(26px, 1rem + 1.4vw, 34px); line-height: 1.1; margin: 40px 0 12px; }
-main.super-content[class*="parent-page__"] .notion-root p.notion-text { margin: 0 0 16px; }
-main.super-content[class*="parent-page__"] .notion-root .notion-page__property-name { font-family: Jost, sans-serif; color: var(--gazette-muted); }
-main.super-content[class*="parent-page__"] .notion-root .notion-property { font-family: Jost, sans-serif; color: var(--gazette-ink); }
+/* row pages (they open with a properties block): a readable column, the page cover as a picture above the title */
+.notion-root:has(> .notion-page__properties) { max-width: 760px; margin-left: auto; margin-right: auto; padding-top: 16px; }
+.notion-root:has(> .notion-page__properties) h2.notion-heading { font-size: clamp(26px, 1rem + 1.4vw, 34px); line-height: 1.1; margin: 40px 0 12px; }
+.notion-root:has(> .notion-page__properties) p.notion-text { margin: 0 0 16px; }
+.notion-root .notion-page__property:has(.notion-property__file) { display: none; }
+.notion-root .notion-page__property-name { font-family: Jost, sans-serif; color: var(--gazette-muted); }
+.notion-root .notion-page__properties .notion-property { font-family: Jost, sans-serif; color: var(--gazette-ink); }
+.super-content:has(.notion-root > .notion-page__properties) .notion-header__content { max-width: 760px; margin-left: auto; margin-right: auto; }
+.super-content:has(.notion-root > .notion-page__properties) .notion-header__title { font-size: clamp(36px, 1.2rem + 3vw, 60px); line-height: 1.04; letter-spacing: -.02em; }
+.super-content:has(.notion-root > .notion-page__properties) .notion-header__cover.has-cover { position: relative; width: min(760px, calc(100% - 48px)); height: auto !important; aspect-ratio: 3 / 2; margin: 24px auto 0; }
+.super-content:has(.notion-root > .notion-page__properties) .notion-header__cover-image { object-position: center !important; }
 /* a long word in a narrow column breaks at a hyphen, never inside the word */
 .notion-root h1.notion-heading, .notion-root h2.notion-heading, .notion-header__title, .notion-root .notion-collection-card__property.title { overflow-wrap: normal; word-break: normal; hyphens: manual; }
 .notion-root h1.notion-heading, .notion-header__title { text-wrap: balance; }
