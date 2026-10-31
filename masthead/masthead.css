@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap");
+/* =====================================================================
+   MASTHEAD - editorial portfolio template for Super (masthead-template.super.site)
+   Sections = top-level callouts keyed by their Notion icon; nested callouts = cards;
+   quote blocks = button rows (the first link is the solid orange button); the first line of a card is its title.
+   Graphite ground, one orange bar, light field sections, huge uppercase Libre Franklin over Source Serif 4, square corners.
+   Icons: rocket hero - user about (light field) - star picture-left rows - book numbered process rows, on the
+   career and toolkit pages a light field - target languages (also marks the career page) - megaphone closing band.
+   Second-level pages are stories: a hero with two tiles, then a reading column with wide pictures.
+   Source and docs: https://github.com/super-so/super-so.github.io
+   ===================================================================== */
+:root, .super-content {
+  --masthead-bg: #18191b; --masthead-surface: #222427; --masthead-ink: #eff0f1; --masthead-muted: #9c9ea3; --masthead-accent: #ff4a1f; --masthead-accent-ink: #18191b;
+  --masthead-field: #eff0f1; --masthead-field-ink: #18191b;
+  --masthead-display: "Libre Franklin", system-ui, sans-serif; --masthead-text: "Source Serif 4", Georgia, serif; --masthead-ui: "Libre Franklin", system-ui, sans-serif;
+  --masthead-display-weight: 700; --masthead-title-weight: 700; --masthead-display-track: -0.035em; --masthead-display-lead: 0.92;
+  --masthead-h1: clamp(46px, 12.4vw, 176px); --masthead-gap: 152px; --masthead-col: 24px; --masthead-read: 720px; --masthead-wide: 1100px; --masthead-btn-radius: 0;
+}
+.notion-header { display: none; }
+body, .super-root, .super-content { background: var(--masthead-bg); }
+.notion-root { padding-top: 40px; padding-bottom: 0; color: var(--masthead-ink); }
+.notion-root > .notion-callout > .notion-callout__icon { display: none; }
+.notion-root > .notion-callout { border: 0 !important; background: transparent !important; padding: 0 !important; margin: 0; border-radius: 0 !important; box-shadow: none; }
+.notion-root > .notion-callout > .notion-callout__content { padding: 0; margin: 0; width: 100%; max-width: none; }
+.notion-root > .notion-callout + .notion-callout { margin-top: var(--masthead-gap); }
+.notion-root .notion-callout__content > span.notion-semantic-string:empty { display: none; }
+.notion-root figcaption { display: none; }
+.notion-root > a.notion-page, .notion-root > .notion-page { display: none !important; }
+.notion-root .notion-column { flex: 1 1 0 !important; width: auto !important; margin: 0 !important; min-width: 0; display: flex; flex-direction: column; }
+.notion-root .notion-column-list { gap: var(--masthead-col); margin: 0; }
+.notion-root .notion-callout, .notion-root .notion-column, .notion-root .notion-column-list, .notion-root .notion-callout__content { overflow: visible !important; }
+.notion-root hr, .notion-root .notion-divider { display: none; }
+.notion-root .notion-image { margin: 0; max-width: 100%; }
+.notion-root .notion-image img { width: 100%; height: auto; display: block; border-radius: 0; }
+.notion-root h1.notion-heading, .notion-root h2.notion-heading, .notion-root h3.notion-heading { color: var(--masthead-ink); margin: 0; width: 100%; }
+.notion-root h1.notion-heading { font-family: var(--masthead-display); font-weight: var(--masthead-display-weight); letter-spacing: var(--masthead-display-track); line-height: var(--masthead-display-lead); }
+.notion-root h2.notion-heading { font-family: var(--masthead-display); font-weight: var(--masthead-display-weight); letter-spacing: -0.03em; line-height: 1.02; font-size: clamp(36px, 1.6rem + 2.6vw, 68px); margin: 0 0 40px; }
+.notion-root h3.notion-heading { font-family: var(--masthead-display); font-weight: var(--masthead-display-weight); letter-spacing: -0.02em; line-height: 1.15; font-size: 28px; margin: 56px 0 16px; }
+.notion-root p.notion-text, .notion-root .notion-list-item { font-family: var(--masthead-text); font-size: 19px; line-height: 1.55; color: var(--masthead-ink); }
+.notion-root p.notion-text { margin: 0 0 16px; }
+.notion-root strong, .notion-root b { font-weight: 600; }
+.notion-root .notion-semantic-string .link, .notion-root a.notion-link { color: var(--masthead-ink); text-decoration: underline; text-decoration-color: var(--masthead-accent); text-underline-offset: 4px; opacity: 1; }
+.notion-root .notion-bulleted-list, .notion-root .notion-numbered-list { margin: 0 0 20px; padding-left: 22px; }
+.notion-root .notion-list-item { margin: 0 0 6px; padding-left: 4px; }
+.notion-root .notion-quote:has(a) { border: 0 !important; padding: 0 !important; margin: 32px 0 0; background: transparent !important; display: flex; flex-wrap: wrap; gap: 12px; font-style: normal; }
+.notion-root .notion-quote:has(a) > .notion-semantic-string { display: contents; }
+.notion-root .notion-quote:has(a) a {
+  display: inline-flex; align-items: center; padding: 15px 26px; border-radius: var(--masthead-btn-radius); border: 2px solid var(--masthead-ink); background: transparent;
+  color: var(--masthead-ink) !important; font-family: var(--masthead-ui); font-weight: 600; font-size: 16px; line-height: 1;
+  text-decoration: none !important; opacity: 1; transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.notion-root .notion-quote:has(a) a:hover { background: var(--masthead-ink); color: var(--masthead-bg) !important; }
+.notion-root .notion-quote:has(a) a:first-child { background: var(--masthead-accent); border-color: var(--masthead-accent); color: var(--masthead-accent-ink) !important; }
+.notion-root .notion-quote:has(a) a:first-child:hover { background: var(--masthead-ink); border-color: var(--masthead-ink); color: var(--masthead-bg) !important; }
+.notion-root .notion-callout .notion-callout, .notion-root > .notion-column-list .notion-callout {
+  background: var(--masthead-surface) !important; border: 0 !important; border-radius: 0 !important; padding: 32px !important; margin: 0; box-shadow: none;
+}
+.notion-root .notion-column > .notion-callout { flex: 1 1 auto; }
+.notion-root .notion-callout .notion-callout > .notion-callout__icon, .notion-root > .notion-column-list .notion-callout > .notion-callout__icon { display: none; }
+.notion-root .notion-callout .notion-callout > .notion-callout__content, .notion-root > .notion-column-list .notion-callout > .notion-callout__content { padding: 0; margin: 0; width: 100%; display: flex; flex-direction: column; }
+.notion-root .notion-callout .notion-callout p.notion-text:last-child, .notion-root .notion-callout .notion-callout .notion-bulleted-list:last-child { margin-bottom: 0; }
+.notion-root .notion-callout .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text,
+.notion-root > .notion-column-list .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text {
+  font-family: var(--masthead-display); font-size: 24px; font-weight: var(--masthead-title-weight); letter-spacing: -0.02em; line-height: 1.15; margin: 0 0 14px;
+}
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_"]) { background: var(--masthead-surface) !important; padding: 28px 32px !important; }
+.notion-root .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_"]) > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text, .notion-root .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_"]) p.notion-text { margin: 0; font-family: var(--masthead-text); font-size: 19px; font-weight: 400; letter-spacing: 0; line-height: 1.5; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: var(--masthead-h1); margin: 0 0 28px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading ~ p.notion-text { font-family: var(--masthead-ui); font-size: 24px; line-height: 1.3; margin: 0 0 4px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-size: 20px; margin-bottom: 10px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout:has(.notion-image) { background: transparent !important; padding: 0 !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout .notion-image { order: -1; margin: 0 0 24px; background: var(--masthead-surface); }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout .notion-image img { aspect-ratio: 16 / 9; object-fit: cover; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-size: 34px; margin-bottom: 12px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout p.notion-text { font-size: 18px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout:has(.notion-quote) > .notion-callout__content > p.notion-text:nth-last-of-type(1) { color: var(--masthead-muted); font-size: 16px; font-family: var(--masthead-ui); }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout .notion-quote { margin-top: auto; padding-top: 16px !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-callout__content > h2.notion-heading { margin-bottom: 20px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) p.notion-text { font-size: 22px; line-height: 1.4; max-width: 640px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-quote:has(a) ~ .notion-quote:has(a) { margin-top: 12px; }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root .notion-callout .notion-callout, main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root .notion-column > .notion-callout { flex: 0 0 auto; }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) .notion-callout { position: relative; }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) .notion-callout + .notion-callout { margin-top: 16px; }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) .notion-callout > .notion-callout__content > p.notion-text { max-width: var(--masthead-read); }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-size: 28px; max-width: calc(100% - 80px); }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text + p.notion-text { font-family: var(--masthead-ui); color: var(--masthead-muted); font-size: 17px; margin-bottom: 24px; }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) .notion-callout .notion-image { position: absolute; top: 32px; right: 32px; width: 56px !important; }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-column > p.notion-text { font-family: var(--masthead-ui); font-weight: 600; font-size: 19px; margin: 0 0 12px; }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-column { gap: 12px; }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout { background: var(--masthead-surface) !important; padding: 20px !important; }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout > .notion-callout__content { flex-direction: row; align-items: center; gap: 16px; }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout .notion-image { order: -1; flex: 0 0 48px; width: 48px !important; margin: 0; }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout .notion-image img { aspect-ratio: 1; object-fit: contain; }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-family: var(--masthead-text); font-size: 17px; font-weight: 400; letter-spacing: 0; line-height: 1.3; margin: 0; }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-callout .notion-callout p.notion-text:only-of-type { margin: 0; }
+main.super-content:not(.page__index):not(:has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"])):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/book_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-column-list + .notion-column-list { margin-top: var(--masthead-col); }
+main.super-content:not(.page__index):not(:has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"])):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/book_"]) .notion-root .notion-callout .notion-callout { background: var(--masthead-surface) !important; padding: 32px !important; }
+main.super-content:not(.page__index):not(:has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"])):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/book_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-size: 24px; }
+main.super-content:not(.page__index):not(:has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"])):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/book_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) > .notion-callout__content > p.notion-text { font-style: italic; }
+main.super-content:not(.page__index):not(:has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"])):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/book_"]) .notion-list-item { font-size: 18px; }
+main.super-content:not(.page__index):not(:has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"])):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/book_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-size: 21px; overflow-wrap: normal; }
+main.super-content:not(.page__index):not(:has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"])):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/book_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column-list { gap: 16px; }
+main.super-content:not(.page__index):not(:has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"])):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/book_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) > .notion-callout__content > .notion-callout { margin-top: var(--masthead-col); }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > :not(.notion-callout):not(.notion-column-list):not(.notion-image):not(.notion-video):not(.notion-page),
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_"]) { max-width: var(--masthead-read); margin-left: auto; margin-right: auto; box-sizing: border-box; width: 100%; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > p.notion-text { margin-bottom: 18px; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > h2.notion-heading { font-size: clamp(30px, 1.2rem + 1.8vw, 48px); margin-top: 112px; margin-bottom: 28px; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > h3.notion-heading { margin-top: 56px; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-image, main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-column-list, main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-video { max-width: var(--masthead-wide); width: 100%; margin: 48px auto; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_"]) { margin-top: 72px; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_"]) + * { margin-top: 72px; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-column-list .notion-image + .notion-image { margin-top: 24px; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-column-list .notion-image + p.notion-text { margin-top: 20px; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-column-list p.notion-text:last-child { margin-bottom: 0; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-column-list .notion-numbered-list { margin: 0; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root .notion-video video { width: 100%; height: auto; aspect-ratio: 16 / 9; background: var(--masthead-surface); display: block; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > p.notion-text:has(> em:only-child) { color: var(--masthead-muted); font-size: 16px; font-family: var(--masthead-ui); }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-column-list p.notion-text:has(> em:only-child) { color: var(--masthead-muted); font-size: 16px; font-family: var(--masthead-ui); margin-top: 12px; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-column-list .notion-callout { padding: 28px !important; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-column-list + .notion-column-list { margin-top: calc(var(--masthead-col) * -1 - 24px); }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-column-list .notion-callout > .notion-callout__content > p.notion-text:last-child { font-weight: 600; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-column-list .notion-callout .notion-bulleted-list { padding-left: 18px; margin: 0; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-column-list .notion-callout > .notion-callout__content > .notion-bulleted-list + * { margin-top: 0; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content > .notion-image { margin: 48px 0 0; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content > .notion-image img { max-height: 760px; object-fit: cover; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column-list { margin-top: 16px; gap: 16px; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-callout p.notion-text { font-size: 18px; margin-bottom: 0; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-family: var(--masthead-ui); font-weight: 600; font-size: 18px; letter-spacing: 0; margin-bottom: 8px; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading ~ p.notion-text { max-width: 900px; font-family: var(--masthead-text); line-height: 1.35; margin-bottom: 0; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) + * { margin-top: 96px; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > p.notion-text + .notion-callout, main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-text + .notion-callout { margin-top: var(--masthead-gap); }
+.super-navbar { background: var(--masthead-bg) !important; box-shadow: none !important; border-bottom: 0 !important; }
+.super-navbar, .super-navbar a, .super-navbar__item { font-family: var(--masthead-ui); color: var(--masthead-ink); }
+.super-footer { background: var(--masthead-bg) !important; border-top: 0 !important; font-family: var(--masthead-ui); }
+.notion-root > h1.notion-heading, .notion-root > h2.notion-heading, .notion-root > h3.notion-heading, .notion-root > p.notion-text, .notion-root > ul, .notion-root > ol { width: 100%; box-sizing: border-box; }
+@media (max-width: 900px) {
+  .notion-root .notion-column-list { flex-wrap: wrap; }
+  .notion-root .notion-column { flex: 1 1 100% !important; }
+  .notion-root > .notion-callout + .notion-callout { margin-top: 96px; }
+  main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > .notion-column-list + .notion-column-list { margin-top: -32px; }
+}
+@media (max-width: 600px) {
+  .notion-root { padding-top: 20px; }
+  .notion-root p.notion-text, .notion-root .notion-list-item { font-size: 18px; }
+  .notion-root h2.notion-heading { font-size: 36px; margin-bottom: 28px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading ~ p.notion-text { font-size: 20px; }
+  .notion-root .notion-callout .notion-callout, .notion-root > .notion-column-list .notion-callout { padding: 24px !important; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout:has(.notion-image) { padding: 0 !important; }
+  main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout { padding: 16px !important; }
+  main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) .notion-callout .notion-image { top: 24px; right: 24px; width: 44px !important; }
+  main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root > h2.notion-heading { margin-top: 80px; }
+  .notion-root .notion-quote:has(a) a { padding: 14px 20px; }
+}
+.super-navbar { border-top: 8px solid var(--masthead-accent) !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { text-transform: uppercase; }
+.super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content > span.notion-semantic-string:empty + .notion-column-list { display: block; position: relative; }
+.super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { margin-bottom: 40px; }
+.super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:last-child { position: absolute; right: 0; bottom: 0; width: 188px !important; background: var(--masthead-field); padding: 16px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]), main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]), main.super-content:not(.page__index):not(:has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"])):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/book_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) { background: var(--masthead-field) !important; padding: 88px 72px !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) h2.notion-heading, .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) > .notion-callout__content > .notion-column-list p.notion-text, .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) .notion-list-item,
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) h2.notion-heading, main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) p.notion-text,
+main.super-content:not(.page__index):not(:has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"])):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/book_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) h2.notion-heading, main.super-content:not(.page__index):not(:has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"])):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/book_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) p.notion-text, main.super-content:not(.page__index):not(:has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"])):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/book_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-list-item { color: var(--masthead-field-ink); }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) .notion-callout, main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-callout, main.super-content:not(.page__index):not(:has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"])):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/book_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-callout { background: #ffffff !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) > .notion-callout__content > span.notion-semantic-string:empty + .notion-column-list { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 72px; }
+.super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-family: var(--masthead-text); font-size: 19px; font-weight: 400; letter-spacing: 0; line-height: 1.55; margin: 0 0 16px; }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) { background: transparent !important; padding: 0 !important; }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) h2.notion-heading, main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) p.notion-text { color: var(--masthead-ink); }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) .notion-callout { background: var(--masthead-surface) !important; }
+.super-content .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) > .notion-callout__content > .notion-column-list:has(.notion-image) { display: flex; flex-direction: column; gap: 56px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-column:has(.notion-image) > .notion-callout > .notion-callout__content { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); column-gap: 48px; align-items: start; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-column:has(.notion-image) > .notion-callout > .notion-callout__content > * { grid-column: 2; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-column:has(.notion-image) > .notion-callout > .notion-callout__content > .notion-image { grid-column: 1; grid-row: 1 / span 12; margin: 0; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout .notion-quote { margin-top: 12px; }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-column:has(.notion-image) > .notion-callout > .notion-callout__content { display: flex; }
+main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) > .notion-callout__content > .notion-column-list:has(.notion-image) { flex-direction: row; gap: 24px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) > .notion-callout__content { counter-reset: step; }
+.super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) > .notion-callout__content { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); column-gap: 72px; }
+.super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) > .notion-callout__content > * { grid-column: 1; }
+.super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) > .notion-callout__content > .notion-column-list + .notion-column-list { grid-column: 2; grid-row: 1 / span 8; display: flex; flex-direction: column; gap: 0; }
+.super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) > .notion-callout__content > h2.notion-heading + .notion-column-list { display: block; }
+.super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column-list:first-of-type .notion-column > .notion-callout { background: transparent !important; padding: 0 !important; flex: 0 0 auto; }
+.super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column-list + .notion-column-list .notion-callout { background: var(--masthead-surface) !important; counter-increment: step; padding: 26px 32px !important; margin-bottom: 8px; }
+.super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column-list + .notion-column-list .notion-callout > .notion-callout__content { display: grid; grid-template-columns: 72px minmax(0, 170px) minmax(0, 1fr); column-gap: 16px; align-items: baseline; }
+.super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column-list + .notion-column-list .notion-callout > .notion-callout__content::before { content: counter(step, decimal-leading-zero); color: var(--masthead-accent); font-family: var(--masthead-display); font-size: 28px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column-list + .notion-column-list .notion-callout p.notion-text { margin: 0; font-size: 18px; line-height: 1.4; }
+.super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column-list + .notion-column-list .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-size: 22px; margin: 0; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) { background: var(--masthead-field) !important; padding: 88px 72px !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) h2.notion-heading, .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) p.notion-text { color: var(--masthead-field-ink); }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-quote:has(a) a { border-color: var(--masthead-field-ink); color: var(--masthead-field-ink) !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-quote:has(a) a:hover { background: var(--masthead-field-ink); border-color: var(--masthead-field-ink); color: var(--masthead-field) !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-quote:has(a) a:first-child { background: var(--masthead-accent); border-color: var(--masthead-accent); color: var(--masthead-accent-ink) !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-quote:has(a) a:first-child:hover { background: var(--masthead-field-ink); border-color: var(--masthead-field-ink); color: var(--masthead-field) !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-quote:has(a) ~ .notion-quote:has(a) a:first-child { background: transparent; border-color: var(--masthead-field-ink); color: var(--masthead-field-ink) !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-quote:has(a) ~ .notion-quote:has(a) a:first-child:hover { background: var(--masthead-field-ink); color: var(--masthead-field) !important; }
+@media (max-width: 900px) {
+  .super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:last-child { position: static; width: 160px !important; margin-top: 32px !important; padding: 12px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-column:has(.notion-image) > .notion-callout > .notion-callout__content > .notion-image { margin: 0 0 20px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) > .notion-callout__content > .notion-column-list:has(.notion-image), .super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column-list + .notion-column-list { flex-wrap: nowrap; }
+  .super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column-list + .notion-column-list .notion-column { flex: 0 0 auto !important; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) > .notion-callout__content > .notion-column-list:has(.notion-image) .notion-column { flex: 0 0 auto !important; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]), main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]), main.super-content:not(.page__index):not(:has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"])):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/book_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) { padding: 48px 24px !important; }
+  main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) { padding: 0 !important; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) > .notion-callout__content > span.notion-semantic-string:empty + .notion-column-list { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-column:has(.notion-image) > .notion-callout > .notion-callout__content { display: flex; flex-direction: column; }
+  main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-column:has(.notion-image) > .notion-callout > .notion-callout__content { flex-direction: row; }
+  main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notion-callout__icon img[src*="/target_"]) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) > .notion-callout__content > .notion-column-list:has(.notion-image) { flex-direction: column; }
+  .super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) > .notion-callout__content { display: block; }
+  .super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column-list + .notion-column-list { margin-top: 32px; }
+  .super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column-list + .notion-column-list .notion-callout > .notion-callout__content { grid-template-columns: 52px minmax(0, 1fr); }
+  .super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column-list + .notion-column-list .notion-callout > .notion-callout__content > p.notion-text:last-child { grid-column: 2; margin-top: 6px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) { padding: 56px 24px !important; }
+}
+
+/* =====================================================================
+   Masthead additions
+   ===================================================================== */
+/* headings never break inside a word */
+.notion-root h1.notion-heading, .notion-root h2.notion-heading, .notion-root h3.notion-heading { overflow-wrap: normal; word-break: normal; hyphens: manual; }
+/* quiet Instructions page */
+.page__instructions .notion-root { padding-top: 56px; }
+.page__instructions .notion-root h1.notion-heading { text-transform: none; }
+
+/* =====================================================================
+   Template pages: the Instructions child page and its link block
+   ===================================================================== */
+.notion-root > a.notion-page { display: none; }
+.page__instructions .notion-root { max-width: 760px; margin: 0 auto; padding-bottom: 64px; }
+.page__instructions .notion-root h1.notion-heading { font-size: clamp(34px, 1.8rem + 1.6vw, 48px); margin: 24px 0 16px; }
+.page__instructions .notion-root h2.notion-heading { margin: 48px 0 14px; }
+.page__instructions .notion-root h3.notion-heading { margin: 32px 0 10px; }
+.page__instructions .notion-root .notion-code { border-radius: 12px; font-size: 14px; margin: 12px 0 20px; }
+.page__instructions .notion-root .notion-list li { margin: 0 0 8px; }
+.page__instructions .notion-root .notion-code pre, .page__instructions .notion-root .notion-code code { white-space: pre-wrap !important; word-break: break-all; }
