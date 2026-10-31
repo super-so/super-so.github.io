@@ -181,6 +181,14 @@
   .notion-root .notion-collection-card .notion-property__date { text-align: left; }
 }
 
+/* details */
+/* the date column fits the longest month on one line */
+.notion-root .notion-property__date, .notion-root .notion-property__date * { white-space: nowrap; }
+@media (min-width: 821px) {
+  .notion-root .notion-collection-card__content { grid-template-columns: 190px minmax(0, 1fr) 170px; }
+  .page__blog .notion-collection-table tr { grid-template-columns: minmax(0, 1fr) 190px 170px; }
+}
+
 /* =====================================================================
    Template pages: the Instructions child page and its link block
    ===================================================================== */
