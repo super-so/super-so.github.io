@@ -219,6 +219,12 @@ main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notio
 /* quiet Instructions page */
 .page__instructions .notion-root { padding-top: 56px; }
 .page__instructions .notion-root h1.notion-heading { text-transform: none; }
+.page__instructions .notion-root h2.notion-heading { font-size: 32px; line-height: 1.15; }
+.page__instructions .notion-root h3.notion-heading { font-size: 23px; }
+/* the navbar button is square like every other button */
+.super-navbar__cta { border-radius: 0 !important; font-family: var(--masthead-ui); font-weight: 600; }
+/* cards of one row keep the same height in the light field of the career and toolkit pages */
+main.super-content:not(.page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column > .notion-callout { flex: 1 1 auto; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
