@@ -224,7 +224,14 @@ main.super-content:not(.page__index):has(.notion-root > .notion-callout > .notio
 /* the navbar button is square like every other button */
 .super-navbar__cta { border-radius: 0 !important; font-family: var(--masthead-ui); font-weight: 600; }
 /* cards of one row keep the same height in the light field of the career and toolkit pages */
-main.super-content:not(.page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column > .notion-callout { flex: 1 1 auto; }
+main.super-content:not(.page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column > .notion-callout { flex: 1 1 auto !important; }
+/* process rows: below 1200px the text moves under the title, three columns would break words */
+@media (max-width: 1200px) {
+  .super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column-list + .notion-column-list .notion-callout > .notion-callout__content { grid-template-columns: 52px minmax(0, 1fr); }
+  .super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column-list + .notion-column-list .notion-callout > .notion-callout__content > p.notion-text:last-child { grid-column: 2; margin-top: 6px; }
+}
+/* words in cards never break */
+.notion-root .notion-callout p.notion-text, .notion-root .notion-list-item { overflow-wrap: normal; word-break: normal; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
