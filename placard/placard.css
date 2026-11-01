@@ -123,6 +123,9 @@
 /* ---------- Placard: fixes and additions on top of the base ---------- */
 /* the name fills the band: nine letters fit on one line at every width */
 .super-root, .super-content, .super-footer { --placard-h1: min(23vw, 300px); }
+/* at this size L and A would touch */
+.notion-root h1.notion-heading { letter-spacing: .012em; }
+main.super-content.page__instructions .notion-root h1.notion-heading { letter-spacing: 0; }
 /* a long word in a narrow column moves to its own line, it never breaks inside the word */
 .notion-root h1.notion-heading, .notion-root h2.notion-heading, .notion-header__title, .notion-root .notion-collection-card__property.title { overflow-wrap: normal; word-break: normal; hyphens: manual; }
 
