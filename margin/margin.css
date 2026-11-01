@@ -201,6 +201,16 @@ main.super-content:not(.page__index):not(.page__instructions):has(.notion-root >
 .page__instructions .notion-root .notion-code { border-radius: 0; }
 /* the navbar button is square like every other button */
 .super-navbar__cta { border-radius: 0 !important; }
+/* the navbar button stays on phones: the phone menu does not list it */
+@media (max-width: 560px) { .super-navbar__cta { display: block; padding: 7px 12px; font-size: 14px; } }
+/* the footer lines up with the page content */
+.super-footer { padding-left: max(32px, calc(50vw - 568px)) !important; padding-right: max(32px, calc(50vw - 568px)) !important; }
+@media (max-width: 860px) { .super-footer { padding-left: 24px !important; padding-right: 24px !important; } }
+/* reading pages: pictures get air, and a sub-heading that opens a section lines up with its rail heading */
+main.super-content:not(.page__index):not(.page__instructions):has(.notion-root > h2.notion-heading) .notion-root > .notion-image { margin: 12px 0 24px; }
+@media (min-width: 861px) {
+  main.super-content:not(.page__index):not(.page__instructions):has(.notion-root > h2.notion-heading) .notion-root > h2.notion-heading + .notion-heading__anchor + h3.notion-heading { margin-top: 66px; }
+}
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
