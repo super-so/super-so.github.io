@@ -143,8 +143,12 @@ main.super-content.parent-page__index:not(.page__instructions) .notion-root > .n
 /* the numbers stay on one line in a row of four: long enough for a value with a unit */
 .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/sun_"]) .notion-column .notion-callout p.notion-text:first-of-type { font-size: clamp(34px, 4.3vw, 64px); }
 
+/* one number per row on a phone: full size again */
+@media (max-width: 860px) { .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/sun_"]) .notion-column .notion-callout p.notion-text:first-of-type { font-size: clamp(46px, 13vw, 64px); } }
+
 /* a card picture runs to the edges of the card */
-.notion-root .notion-callout:has(> .notion-callout__icon [src*="/checkmark_"]) .notion-image { width: calc(100% + 48px) !important; max-width: none; }
+.notion-root .notion-callout:has(> .notion-callout__icon [src*="/checkmark_"]) > .notion-callout__content { overflow: visible; }
+.notion-root .notion-callout:has(> .notion-callout__icon [src*="/checkmark_"]) .notion-image { width: calc(100% + 48px) !important; max-width: none; overflow: visible; }
 
 /* words in the running text that are links read as links; buttons and clickable card titles keep their look */
 .notion-root p.notion-text a.notion-link, .notion-root p.notion-text a.link, .notion-root .notion-list-item a.notion-link, .notion-root .notion-list-item a.link { color: var(--claret-ink); opacity: 1; text-decoration: underline; text-underline-offset: 3px; }
