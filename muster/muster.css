@@ -111,7 +111,8 @@
 /* the home title runs to two lines on a wide screen, so the banner shows above the fold */
 main.page__index .notion-root h1.notion-heading { font-size: clamp(64px, 10.1vw, 130px); }
 
-/* a second row of cards keeps the gap of the first */
+/* a second row of cards keeps the gap of the first, also where columns wrap on a phone */
+.notion-root .notion-column { padding-top: 0 !important; padding-bottom: 0 !important; }
 .notion-root .notion-callout .notion-column-list + .notion-column-list { margin-top: var(--muster-gap); }
 
 /* the entry section: one wide sand card, then the price tiles */
