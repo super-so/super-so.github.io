@@ -187,6 +187,9 @@ main.super-content:not(.page__index) .notion-root > .notion-callout:has(> .notio
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-column-list { gap: 36px; margin-top: 32px; }
 }
 
+/* links in cards and bands at full strength */
+.notion-root .notion-callout a.notion-link { opacity: 1; }
+
 /* =====================================================================
    Template pages: the Instructions child page and its link block
    ===================================================================== */
