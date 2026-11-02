@@ -108,6 +108,8 @@
 .notion-root h1.notion-heading, .notion-root h2.notion-heading, .notion-root h3.notion-heading { overflow-wrap: normal; word-break: normal; hyphens: manual; }
 .notion-root .notion-callout p.notion-text, .notion-root .notion-list-item { overflow-wrap: normal; word-break: normal; }
 .notion-root h1.notion-heading { text-wrap: balance; }
+/* the home title runs to two lines on a wide screen, so the banner shows above the fold */
+main.page__index .notion-root h1.notion-heading { font-size: clamp(64px, 10.1vw, 130px); }
 
 /* a second row of cards keeps the gap of the first */
 .notion-root .notion-callout .notion-column-list + .notion-column-list { margin-top: var(--muster-gap); }
@@ -125,6 +127,8 @@
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-column .notion-image img { aspect-ratio: 3 / 2; object-fit: cover; }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-column .notion-callout { box-sizing: border-box; }
 
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-column .notion-callout:has(.notion-image) p.notion-text:first-of-type { font-size: clamp(26px, 2.4vw, 32px); font-weight: 700; line-height: 1.1; letter-spacing: -.01em; margin-bottom: 16px; }
+
 /* a button at the foot of a card sits on one line with its neighbours */
 .notion-root .notion-callout .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) > .notion-callout__content { display: flex; flex-direction: column; height: 100%; }
 .notion-root .notion-callout .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) > .notion-callout__content > .notion-quote { margin-top: auto; padding-top: 20px; }
@@ -133,7 +137,8 @@
 .notion-root p.notion-text a.notion-link, .notion-root .notion-list-item a.notion-link { color: var(--muster-accent); opacity: 1; text-decoration: underline; text-underline-offset: 2px; }
 
 /* the navbar: square button, stays on phones because the phone menu does not list it */
-.super-navbar__logo, .super-navbar__logo * { font-family: Archivo, sans-serif; font-weight: 800; font-stretch: 62%; font-variation-settings: "wdth" 62; text-transform: uppercase; font-size: 22px; letter-spacing: 0; }
+.super-navbar__logo, .super-navbar__logo * { font-family: Archivo, sans-serif; font-weight: 800; font-stretch: 62%; font-variation-settings: "wdth" 62; text-transform: uppercase; letter-spacing: 0; }
+.super-navbar__logo-text { font-size: 24px !important; }
 @media (max-width: 560px) { .super-navbar__cta { display: block; padding: 7px 14px; font-size: 14px; } }
 
 /* quiet Instructions page */
