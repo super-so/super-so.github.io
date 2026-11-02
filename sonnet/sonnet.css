@@ -154,6 +154,10 @@
 /* the navbar button stays on phones because the phone menu does not list it */
 @media (max-width: 480px) { .super-navbar__cta { display: block; padding: 7px 14px; font-size: 14px; } }
 
+/* Bodoni at its display cut loses its hairlines, dashes included: keep a sturdier optical size on every large line */
+.notion-root h1.notion-heading, .notion-root h2.notion-heading, .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/book_"]) p.notion-text:first-of-type, .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/megaphone_"]) .notion-callout p.notion-text:first-of-type, .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/target_"]) .notion-list-item { font-optical-sizing: none; font-variation-settings: "opsz" 26; }
+.notion-root h3.notion-heading { font-optical-sizing: none; font-variation-settings: "opsz" 18; }
+
 /* quiet Instructions page */
 .page__instructions .notion-root { padding-top: 40px; }
 .page__instructions .notion-root h1.notion-heading { font-size: clamp(42px, 5vw, 64px); margin-bottom: 24px; }
