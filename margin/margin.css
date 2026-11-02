@@ -223,3 +223,5 @@ main.super-content:not(.page__index):not(.page__instructions):has(.notion-root >
 .page__instructions .notion-root .notion-code { border-radius: 12px; font-size: 14px; margin: 12px 0 20px; }
 .page__instructions .notion-root .notion-list li { margin: 0 0 8px; }
 .page__instructions .notion-root .notion-code pre, .page__instructions .notion-root .notion-code code { white-space: pre-wrap !important; word-break: break-all; }
+/* text links placed directly on a page stay underlined so they read as links (buttons are quote blocks, cards and rows keep their clean titles) */
+.notion-root > p.notion-text a.link, .notion-root > .notion-list a.link, .notion-root > ul a.link, .notion-root > ol a.link { text-decoration: underline; text-decoration-color: var(--margin-accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
