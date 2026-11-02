@@ -147,7 +147,7 @@
 .notion-root .notion-callout:has(> .notion-callout__icon [src*="/checkmark_"]), .notion-root .notion-column > .notion-callout:has(> .notion-callout__icon [src*="/sun_"]) { container-type: inline-size; }
 .notion-root .notion-callout:has(> .notion-callout__icon [src*="/checkmark_"]) p.notion-text:first-of-type { font-size: clamp(19px, 11cqw, 34px); }
 .notion-root .notion-column > .notion-callout:has(> .notion-callout__icon [src*="/sun_"]) p.notion-text:first-of-type { font-size: clamp(30px, 33cqw, 72px); }
-.notion-root .notion-column > .notion-callout:has(> .notion-callout__icon [src*="/sun_"]) p.notion-text:not(:first-of-type) { font-size: clamp(13px, 17cqw, 17px); }
+.notion-root .notion-column > .notion-callout:has(> .notion-callout__icon [src*="/sun_"]) p.notion-text:not(:first-of-type) { font-size: clamp(13px, 15.5cqw, 17px); }
 .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/people_"]) > .notion-callout__content > .notion-callout { container-type: normal; }
 
 /* the invisible heading anchors take no room */
@@ -166,6 +166,9 @@
 .page__instructions .notion-root h3.notion-heading { font-size: 24px; letter-spacing: -.03em; }
 .page__instructions .notion-root .notion-code { border-radius: 0; }
 
+@media (max-width: 1100px) {
+  .notion-root .notion-column > .notion-callout:has(> .notion-callout__icon [src*="/sun_"]) { padding: 16px !important; }
+}
 @media (max-width: 1000px) {
   .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/people_"]):has(> .notion-callout__content > .notion-callout) > .notion-callout__content { column-count: 2; }
 }
