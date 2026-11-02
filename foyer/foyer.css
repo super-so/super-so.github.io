@@ -131,7 +131,7 @@
 .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/target_"]) > .notion-callout__content > p.notion-text:last-child { margin-top: 24px; }
 
 /* a section of callouts in the people style is a wall of quotes */
-.notion-root > .notion-callout:has(> .notion-callout__icon [src*="/people_"]):has(> .notion-callout__content > .notion-callout) > .notion-callout__content { column-count: 3; column-gap: 24px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon [src*="/people_"]):has(> .notion-callout__content > .notion-callout) > .notion-callout__content { display: block; column-count: 3; column-gap: 24px; }
 .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/people_"]) > .notion-callout__content > .notion-callout { break-inside: avoid; margin: 0 0 24px; }
 .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/people_"]) > .notion-callout__content > .notion-callout:nth-of-type(4n+1) { background: var(--foyer-peri) !important; }
 .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/people_"]) > .notion-callout__content > .notion-callout:nth-of-type(4n+2) { background: var(--foyer-lime) !important; }
@@ -141,7 +141,11 @@
 .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/people_"]) > .notion-callout__content > .notion-callout p.notion-text:last-of-type { margin: 0; font-weight: 600; }
 .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/people_"]) > .notion-callout__content > .notion-callout { height: auto; }
 
-/* navbar and logo */
+/* the invisible heading anchors take no room */
+.notion-root .notion-heading__anchor { width: 0; height: 0; overflow: hidden; }
+
+/* navbar and logo: every link stays on the one row */
+.super-navbar__item-list { flex-wrap: nowrap; white-space: nowrap; }
 .super-navbar__logo-text { color: var(--foyer-accent, #d0106f); text-transform: lowercase; }
 .super-navbar__cta { padding: 7px 18px; }
 @media (max-width: 560px) { .super-navbar__cta { display: block; padding: 7px 14px; font-size: 14px; } }
