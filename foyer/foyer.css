@@ -141,6 +141,13 @@
 .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/people_"]) > .notion-callout__content > .notion-callout p.notion-text:last-of-type { margin: 0; font-weight: 600; }
 .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/people_"]) > .notion-callout__content > .notion-callout { height: auto; }
 
+/* long single words fit: page titles scale with the screen, door titles and numbers with their own tile */
+.notion-root h1.notion-heading { font-size: clamp(26px, 8.2vw, 118px); }
+.notion-root .notion-callout:has(> .notion-callout__icon [src*="/checkmark_"]), .notion-root .notion-column > .notion-callout:has(> .notion-callout__icon [src*="/sun_"]) { container-type: inline-size; }
+.notion-root .notion-callout:has(> .notion-callout__icon [src*="/checkmark_"]) p.notion-text:first-of-type { font-size: clamp(19px, 11cqw, 34px); }
+.notion-root .notion-column > .notion-callout:has(> .notion-callout__icon [src*="/sun_"]) p.notion-text:first-of-type { font-size: clamp(30px, 33cqw, 72px); }
+.notion-root > .notion-callout:has(> .notion-callout__icon [src*="/people_"]) > .notion-callout__content > .notion-callout { container-type: normal; }
+
 /* the invisible heading anchors take no room */
 .notion-root .notion-heading__anchor { width: 0; height: 0; overflow: hidden; }
 
