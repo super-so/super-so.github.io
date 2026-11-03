@@ -162,12 +162,12 @@ main.super-content:not(.page__index):not([class*="parent-page__"]):not(.page__in
 
 /* category tiles: the base rules nest :has() inside :has(), which browsers drop; these flat selectors do the job */
 @media (max-width: 860px) {
-  .notion-root .notion-column-list + .notion-column-list:has(> .notion-column > .notion-callout > .notion-callout__icon [src*="/target_"]) { gap: 10px; }
+  .notion-root .notion-column-list + .notion-column-list:has(> .notion-column > .notion-callout > .notion-callout__icon [src*="/target_"]) { gap: 10px !important; }
   .notion-root .notion-column:has(> .notion-callout > .notion-callout__icon [src*="/target_"]) { flex: 1 1 calc(50% - 5px) !important; }
 }
 /* tablets: the four category tiles go two by two before their titles get cramped */
 @media (min-width: 861px) and (max-width: 1100px) {
-  .notion-root .notion-column-list + .notion-column-list:has(> .notion-column > .notion-callout > .notion-callout__icon [src*="/target_"]) { flex-wrap: wrap; }
+  .notion-root .notion-column-list + .notion-column-list:has(> .notion-column > .notion-callout > .notion-callout__icon [src*="/target_"]) { flex-wrap: wrap; gap: 12px !important; }
   .notion-root .notion-column:has(> .notion-callout > .notion-callout__icon [src*="/target_"]) { flex: 1 1 calc(50% - 6px) !important; }
   .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/rocket_"]) { padding: 64px 44px !important; }
   .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/megaphone_"]) { padding: 64px 44px !important; }
