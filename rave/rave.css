@@ -185,6 +185,12 @@ main.super-content:not(.page__index):not(.page__instructions) .notion-root > .no
 .page__instructions .notion-root h3.notion-heading { font-size: 24px; margin: 32px 0 10px; }
 .page__instructions .notion-root .notion-code { border-radius: 0; background: var(--rave-surface) !important; }
 
+/* phones: the sentence H1 gets a little more line height so the lines never touch */
+@media (max-width: 720px) { .page__index .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/rocket_"]) h1.notion-heading { line-height: 1.02; } }
+
+/* footer: the round logo reads at badge size */
+.super-footer img { width: 76px !important; height: auto !important; max-width: none !important; }
+
 /* =====================================================================
    Template pages: the Instructions child page and its link block
    ===================================================================== */
