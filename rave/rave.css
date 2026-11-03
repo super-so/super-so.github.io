@@ -1,0 +1,198 @@
+/* =====================================================================
+   RAVE - reviews-first site template for makers and small studios for Super (rave-template.super.site)
+   Sections = top-level callouts keyed by their Notion icon; nested callouts = cards;
+   quote blocks = button rows (the first link is the solid chocolate button); the first line of a card is its title.
+   Cream ground, chocolate ink and round buttons, sage and sand fields, heavy Epilogue headings, square corners.
+   Icons: rocket hero - people review tiles (score, quote, name, date) - target leave-a-review band (home) or price and terms cards - book galleries and materials - checkmark numbered steps - sun number tiles - megaphone closing band.
+   Source and docs: https://github.com/super-so/super-so.github.io
+   ===================================================================== */
+:root, .super-content { --rave-ink: #3b1506; --rave-choc: #602000; --rave-sage: #80a878; --rave-mint: #d3e3c8; --rave-cream: #f8e8c8; --rave-surface: #f0d9ad; --rave-muted: #6b4630; --rave-gap: 24px; }
+.super-root { overflow-x: clip; }
+.super-content .notion-root { padding-top: 24px; padding-bottom: 96px; }
+.notion-root {
+  a.notion-page { display: none; }
+  .notion-callout__icon { display: none !important; }
+  .notion-callout { border: 0 !important; background: transparent !important; padding: 0 !important; margin: 0; box-shadow: none !important; border-radius: 0; display: block; }
+  .notion-callout__content { padding: 0; margin: 0; width: 100%; max-width: none; }
+  .notion-callout__content > span.notion-semantic-string:empty { display: none; }
+  .notion-heading__anchor { position: absolute; }
+  .notion-column { flex: 1 1 0 !important; width: auto !important; margin: 0 !important; min-width: 0; }
+  .notion-column:has(> .notion-callout) { display: flex; }
+  .notion-column-list { margin: 0; gap: var(--rave-gap); }
+  .notion-image { margin: 0; display: block; }
+  .notion-image span { display: block; }
+  .notion-image img { height: auto; width: 100%; display: block; margin: 0; border-radius: 0; }
+  figcaption { display: none; }
+  h1.notion-heading, h2.notion-heading, h3.notion-heading { color: var(--rave-ink); margin: 0; padding: 0; font-weight: 900; letter-spacing: -.04em; line-height: .92; }
+  h1.notion-heading { font-size: clamp(48px, 8vw, 128px); margin-bottom: 28px; }
+  h2.notion-heading { font-size: clamp(36px, 5vw, 72px); margin-bottom: 20px; }
+  p.notion-text, .notion-list-item { font-size: 19px; line-height: 1.5; color: var(--rave-ink); }
+  p.notion-text { margin: 0 0 14px; padding: 0; }
+  .notion-bulleted-list { margin: 0; padding-left: 0; }
+  .notion-list-item { margin: 0 0 8px; }
+  .notion-semantic-string a.link { opacity: 1; color: var(--rave-choc); text-decoration: underline; text-underline-offset: 3px; }
+  .notion-quote { border: 0 !important; padding: 0; margin: 24px 0 0; background: transparent; display: flex; flex-wrap: wrap; gap: 10px; font-style: normal; }
+  .notion-quote > .notion-semantic-string { display: contents; }
+  .notion-quote a.link { display: inline-flex; align-items: center; text-decoration: none !important; line-height: 1.1; padding: 15px 26px; border-radius: 999px; font-size: 17px; font-weight: 700; color: var(--rave-choc); background: transparent; box-shadow: inset 0 0 0 3px var(--rave-choc); }
+  .notion-quote a.link:first-child { background: var(--rave-choc); color: var(--rave-cream); }
+  .notion-quote a.link:hover { background: var(--rave-ink); color: var(--rave-cream); box-shadow: inset 0 0 0 3px var(--rave-ink); }
+  > .notion-callout + .notion-callout { margin-top: 104px; }
+
+  /* hero: a sage-mint field with the photo square at the right */
+  > .notion-callout:has(> .notion-callout__icon [src*="/rocket_"]) {
+    background: var(--rave-mint) !important; padding: 56px !important;
+    .notion-column-list { align-items: center; }
+    p.notion-text { font-size: 22px; line-height: 1.4; max-width: 640px; }
+    .notion-image img { aspect-ratio: 4 / 5; object-fit: cover; }
+  }
+  /* cards: tone step, no lines */
+  .notion-callout__content > .notion-callout:has(> .notion-callout__icon :is([src*="/checkmark_"], [src*="/star_"])),
+  .notion-column > .notion-callout:has(> .notion-callout__icon [src*="/checkmark_"]) {
+    background: var(--rave-surface) !important; padding: 28px !important; width: 100%; box-sizing: border-box;
+    > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-size: clamp(22px, 2vw, 28px); font-weight: 900; letter-spacing: -.03em; line-height: 1.05; margin-bottom: 14px; }
+    p.notion-text, .notion-list-item { font-size: 17px; line-height: 1.5; }
+    .notion-image { margin-top: 16px; }
+  }
+  > .notion-callout > .notion-callout__content > .notion-column-list { margin-top: 28px; }
+  /* section grids: cards side by side */
+  > .notion-callout:has(> .notion-callout__icon :is([src*="/people_"], [src*="/target_"], [src*="/checkmark_"])) > .notion-callout__content:has(> .notion-callout) {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--rave-gap); align-items: stretch;
+    > :not(.notion-callout) { grid-column: 1 / -1; }
+    > .notion-image { margin-top: 8px; }
+  }
+  /* closing band */
+  > .notion-callout:has(> .notion-callout__icon [src*="/megaphone_"]) {
+    background: var(--rave-sage) !important; padding: 56px !important;
+    h2.notion-heading { margin-bottom: 14px; }
+    p.notion-text { max-width: 820px; font-size: 21px; }
+  }
+  /* number tiles */
+  > .notion-callout:has(> .notion-callout__icon [src*="/sun_"]) .notion-column > .notion-callout {
+    background: var(--rave-mint) !important;
+    > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-size: clamp(36px, 4vw, 60px); }
+  }
+}
+/* home: reviews first */
+.page__index .notion-root {
+  > .notion-callout:has(> .notion-callout__icon [src*="/rocket_"]) h1.notion-heading { font-size: clamp(56px, 9vw, 150px); }
+  > .notion-callout:has(> .notion-callout__icon [src*="/people_"]) > .notion-callout__content {
+    > p.notion-text { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
+    > .notion-callout { background: var(--rave-surface) !important; padding: 32px !important; display: flex; flex-direction: column; }
+    > .notion-callout:nth-of-type(3n+2) { background: var(--rave-mint) !important; }
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    > .notion-callout:nth-of-type(1) { grid-column: span 2; }
+    > .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-size: clamp(48px, 5vw, 76px); font-weight: 900; letter-spacing: -.05em; line-height: 1; color: var(--rave-choc); margin-bottom: 18px; }
+    > .notion-callout p.notion-text:nth-of-type(2) { font-size: 24px; line-height: 1.3; font-weight: 700; letter-spacing: -.01em; margin-bottom: 24px; }
+    > .notion-callout p.notion-text:nth-of-type(3) { font-size: 17px; font-weight: 700; margin: auto 0 2px; }
+    > .notion-callout p.notion-text:nth-of-type(4) { font-size: 16px; color: var(--rave-muted); margin: 0; }
+  }
+  /* leave a review: chocolate field, the how-to card as a cream panel */
+  > .notion-callout:has(> .notion-callout__icon [src*="/target_"]) {
+    background: var(--rave-choc) !important; padding: 56px !important;
+    > .notion-callout__content { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 56px; align-items: start; grid-auto-flow: row dense; }
+    > .notion-callout__content:has(> .notion-callout) > :not(.notion-callout) { grid-column: 1; }
+    > .notion-callout__content > .notion-callout { grid-column: 2; grid-row: 1 / span 6; background: var(--rave-cream) !important; padding: 36px !important; }
+    h2.notion-heading, > .notion-callout__content > p.notion-text { color: var(--rave-cream); }
+    > .notion-callout__content > p.notion-text { font-size: 20px; }
+    .notion-callout p.notion-text { color: var(--rave-ink); font-size: 18px; }
+    .notion-callout p.notion-text:nth-of-type(1) { font-size: 26px; font-weight: 900; letter-spacing: -.03em; line-height: 1.1; margin-bottom: 18px; }
+    .notion-quote a.link { color: var(--rave-cream); box-shadow: inset 0 0 0 3px var(--rave-cream); }
+    .notion-quote a.link:first-child { background: var(--rave-cream); color: var(--rave-choc); }
+    .notion-quote a.link:hover { background: var(--rave-sage); color: var(--rave-ink); box-shadow: inset 0 0 0 3px var(--rave-sage); }
+  }
+  > .notion-callout:has(> .notion-callout__icon [src*="/book_"]) .notion-image img { aspect-ratio: 1; object-fit: cover; }
+}
+/* galleries: a book section on any page; images straight in columns are square tiles, images inside cards are 4:3 */
+main.super-content:not(.page__index):not(.page__instructions) .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/book_"]) {
+  .notion-column-list + .notion-column-list { margin-top: var(--rave-gap); }
+  > .notion-callout__content > .notion-column-list > .notion-column > .notion-image img { aspect-ratio: 1; object-fit: cover; }
+  .notion-callout .notion-image img { aspect-ratio: 4 / 3; object-fit: cover; }
+  > .notion-callout__content > p.notion-text { max-width: 760px; font-size: 21px; }
+}
+/* price and terms pages: target sections lay their cards out two by two */
+main.super-content:not(.page__index):not(.page__instructions) .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/target_"]) > .notion-callout__content:has(> .notion-callout) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+/* steps: a checkmark section numbers its cards */
+.notion-root > .notion-callout:has(> .notion-callout__icon [src*="/checkmark_"]) > .notion-callout__content {
+  counter-reset: step;
+  > .notion-callout { counter-increment: step; }
+  > .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text::before { content: counter(step); display: block; font-size: 64px; line-height: 1; color: var(--rave-choc); margin-bottom: 12px; letter-spacing: -.05em; }
+  .notion-image img { aspect-ratio: 4 / 3; object-fit: cover; }
+}
+/* chrome */
+.super-navbar { box-shadow: none !important; border: 0 !important; background: var(--rave-cream) !important; }
+.super-navbar__cta { background: var(--rave-choc) !important; color: var(--rave-cream) !important; border-radius: 999px !important; font-weight: 700; }
+.super-navbar__item { font-weight: 700; }
+.super-footer { border: 0 !important; background: var(--rave-ink) !important; color: var(--rave-cream); }
+.super-footer * { color: var(--rave-cream) !important; }
+@media (max-width: 960px) {
+  .notion-root > .notion-callout:has(> .notion-callout__icon :is([src*="/people_"], [src*="/target_"], [src*="/checkmark_"])) > .notion-callout__content:has(> .notion-callout) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 720px) {
+  .notion-root {
+    .notion-column-list { flex-wrap: wrap; gap: 16px; }
+    .notion-column { flex: 1 1 100% !important; }
+    > .notion-callout + .notion-callout { margin-top: 56px; }
+    > .notion-callout:has(> .notion-callout__icon :is([src*="/rocket_"], [src*="/megaphone_"])) { padding: 28px 22px !important; }
+    > .notion-callout:has(> .notion-callout__icon :is([src*="/people_"], [src*="/target_"], [src*="/checkmark_"])) > .notion-callout__content:has(> .notion-callout) { grid-template-columns: minmax(0, 1fr) !important; }
+    p.notion-text { font-size: 18px; }
+  }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/target_"]) {
+    padding: 28px 22px !important;
+    > .notion-callout__content { display: block; }
+    > .notion-callout__content > .notion-callout { margin: 20px 0; padding: 24px !important; }
+  }
+  main.super-content:not(.page__index):not(.page__instructions) .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/book_"]) > .notion-callout__content > .notion-column-list > .notion-column:has(> .notion-image) { flex: 1 1 calc(50% - 8px) !important; }
+}
+@media (max-width: 720px) { .page__index .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/people_"]) > .notion-callout__content > .notion-callout:nth-of-type(1) { grid-column: 1 / -1; } }
+.super-content:not(.page__index) .notion-root h1.notion-heading { font-size: clamp(40px, 5.2vw, 76px); overflow-wrap: normal; word-break: normal; hyphens: manual; }
+.notion-root > .notion-callout:has(> .notion-callout__icon [src*="/target_"]) > .notion-callout__content > .notion-image { max-width: 760px; }
+/* ---------- Rave: fixes and additions on top of the base ---------- */
+/* a long word moves to its own line, it never breaks inside the word */
+.notion-root h1.notion-heading, .notion-root h2.notion-heading, .notion-root h3.notion-heading { overflow-wrap: normal; word-break: normal; hyphens: manual; }
+.notion-root .notion-callout p.notion-text, .notion-root .notion-list-item { overflow-wrap: normal; word-break: normal; }
+
+/* the home hero H1 carries a whole sentence, so it is a step smaller than a one-word title */
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/rocket_"]) h1.notion-heading { font-size: clamp(44px, 5.6vw, 88px); line-height: .95; }
+
+/* leave-a-review card: the numbered steps read as a list with chocolate numbers */
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/target_"]) .notion-callout .notion-numbered-list { margin: 0 0 16px; padding-left: 1.4em; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/target_"]) .notion-callout .notion-list-item { color: var(--rave-ink); font-size: 18px; margin-bottom: 10px; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/target_"]) .notion-callout .notion-list-item::marker { color: var(--rave-choc); font-weight: 900; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/target_"]) .notion-callout p.notion-text:last-child { color: var(--rave-muted); font-size: 16px; margin-bottom: 0; }
+
+/* words in the running text that are links read as links; buttons keep their look */
+.notion-root p.notion-text a.link, .notion-root .notion-list-item a.link, .notion-root p.notion-text a.notion-link, .notion-root .notion-list-item a.notion-link {
+  color: var(--rave-choc); opacity: 1; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px;
+}
+
+/* navbar: the text logo in heavy type, the button round and chocolate */
+.super-navbar__logo-text, .super-footer__logo-text { font-weight: 900 !important; letter-spacing: -.03em; color: var(--rave-ink) !important; font-size: 24px !important; }
+.super-footer__logo-text { color: var(--rave-cream) !important; }
+.super-navbar a.super-navbar__cta:hover { background: var(--rave-ink) !important; }
+@media (max-width: 860px) { .super-navbar__cta { display: inline-flex !important; padding: 8px 14px !important; font-size: 14px !important; } }
+
+/* review tiles: two across on tablets so the quotes keep a readable width */
+@media (min-width: 721px) and (max-width: 1100px) {
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/people_"]) > .notion-callout__content { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/people_"]) > .notion-callout__content > .notion-callout:nth-of-type(1) { grid-column: 1 / -1; }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/target_"]) { padding: 40px !important; }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon [src*="/target_"]) > .notion-callout__content { column-gap: 32px; }
+}
+
+/* quiet Instructions page */
+.page__instructions .notion-root h1.notion-heading { font-size: clamp(40px, 5vw, 60px); }
+.page__instructions .notion-root h2.notion-heading { font-size: clamp(28px, 3vw, 36px); margin: 56px 0 16px; }
+.page__instructions .notion-root h3.notion-heading { font-size: 24px; margin: 32px 0 10px; }
+.page__instructions .notion-root .notion-code { border-radius: 0; background: var(--rave-surface) !important; }
+
+/* =====================================================================
+   Template pages: the Instructions child page and its link block
+   ===================================================================== */
+.notion-root > a.notion-page { display: none; }
+.page__instructions .notion-root { max-width: 760px; margin: 0 auto; padding-bottom: 64px; }
+.page__instructions .notion-root h1.notion-heading { font-size: clamp(34px, 1.8rem + 1.6vw, 48px); margin: 24px 0 16px; }
+.page__instructions .notion-root h2.notion-heading { margin: 48px 0 14px; }
+.page__instructions .notion-root h3.notion-heading { margin: 32px 0 10px; }
+.page__instructions .notion-root .notion-code { border-radius: 12px; font-size: 14px; margin: 12px 0 20px; }
+.page__instructions .notion-root .notion-list li { margin: 0 0 8px; }
+.page__instructions .notion-root .notion-code pre, .page__instructions .notion-root .notion-code code { white-space: pre-wrap !important; word-break: break-all; }
