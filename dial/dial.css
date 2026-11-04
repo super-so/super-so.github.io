@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap");
+/* =====================================================================
+   DIAL - dark directory template for Super (dial-template.super.site)
+   Sections = top-level callouts keyed by their Notion icon; quote blocks = round button rows (the first link is the solid gold button).
+   Gallery view = one row per listing with a big round call button; list view = grouped rows; view dropdown = a row of round tabs.
+   Warm black, gold accent, Barlow Condensed headings, Barlow text.
+   Icons: rocket hero - megaphone alert banner - light-bulb notes (blue = note, yellow = small print) - book legend grid.
+   Script (optional): https://sites.super.so/dial/dial.js makes phone numbers callable and colours open statuses.
+   Source and docs: https://github.com/super-so/super-so.github.io
+   ===================================================================== */
+.super-content, .super-navbar, .super-footer, body {
+  --dial-bg: #0c0a08;
+  --dial-ink: #ffffff;
+  --dial-soft: #e9e4dd;
+  --dial-muted: #a39d96;
+  --dial-surface: #181512;
+  --dial-raise: #26211b;
+  --dial-accent: #c9a45a;
+  --dial-accent-ink: #0c0a08;
+  --dial-taste-surface: #181512; --dial-taste-muted: #8f8a84;
+  --dial-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --dial-face: "Barlow", Helvetica, Arial, sans-serif;
+  --dial-statement: clamp(44px, 7vw, 104px);
+  --dial-gutter: clamp(16px, 4vw, 40px);
+}
+
+/* ---------- base ---------- */
+body, .super-content, .notion-root { font-family: var(--dial-face); color: var(--dial-soft); background: var(--dial-bg); }
+.notion-root { font-size: 18px; line-height: 1.5; }
+.notion-root .notion-heading, .notion-header__title { font-family: var(--dial-display); font-weight: 700; letter-spacing: -0.02em; line-height: 0.9; color: var(--dial-ink); }
+.notion-root > h2.notion-heading { font-size: var(--dial-statement); text-transform: uppercase; margin: 112px 0 28px; }
+.notion-root > a.notion-page { display: none !important; }
+.notion-root figcaption { display: none; }
+.notion-root .notion-callout__content > span.notion-semantic-string:empty { display: none; }
+
+/* ---------- top-level callouts become sections ---------- */
+.notion-root > .notion-callout > .notion-callout__icon { display: none; }
+.notion-root > .notion-callout { border: 0 !important; background: transparent !important; padding: 0 !important; margin: 0; box-shadow: none !important; border-radius: 0 !important; }
+.notion-root > .notion-callout > .notion-callout__content { padding: 0; margin: 0; width: 100%; max-width: none; }
+
+/* hero: type only, very large */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) { padding: clamp(48px, 8vw, 120px) 0 clamp(32px, 4vw, 56px) !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading {
+  font-size: clamp(46px, 8.6vw, 116px); text-transform: uppercase; margin: 0 0 32px;
+}
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) p.notion-text { font-size: clamp(18px, 1.6vw, 22px); max-width: 48ch; margin: 0 0 8px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading + p.notion-text { color: var(--dial-accent); font-weight: 500; }
+
+/* alert banner: lighter panel, road-sign type */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) {
+  background: var(--dial-raise) !important; padding: clamp(24px, 3.4vw, 44px) var(--dial-gutter) !important;
+}
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) p.notion-text {
+  font-family: var(--dial-display); font-size: clamp(26px, 3vw, 42px); line-height: 1.1; font-weight: 600; color: var(--dial-ink); margin: 0; max-width: 34ch;
+}
+a.dial-tel { color: var(--dial-accent) !important; text-decoration: none !important; white-space: nowrap; opacity: 1 !important; font-weight: 700; }
+
+/* notes: blue = note, yellow = small print */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_"]) { padding: 22px 0 0 !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_blue"]) p.notion-text { font-size: 20px; font-weight: 500; color: var(--dial-ink); max-width: 60ch; margin: 0; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_yellow"]) { padding-top: 10px !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_yellow"]) p.notion-text { font-size: 15px; color: var(--dial-muted); max-width: 70ch; margin: 0; }
+
+/* legend grid (book) */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) {
+  background: var(--dial-surface) !important; padding: clamp(32px, 5vw, 64px) var(--dial-gutter) !important; margin-top: 112px;
+}
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) h2.notion-heading { font-size: clamp(36px, 4.6vw, 64px); text-transform: uppercase; margin: 0 0 28px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-bulleted-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px 40px; padding: 0; margin: 0 0 32px; list-style: none; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-list-item { padding: 0; margin: 0; font-size: 16px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-list-item::before, .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-list-item::marker { content: none; display: none; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-list-item strong { display: block; font-family: var(--dial-display); font-weight: 700; font-size: 24px; color: var(--dial-ink); line-height: 1.1; margin-bottom: 4px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-bulleted-list + p.notion-text { color: var(--dial-muted); font-size: 15px; max-width: 70ch; }
+@media (max-width: 900px) { .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-bulleted-list { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- views: dropdown turned into a row of round tabs ---------- */
+.notion-root .notion-collection { margin: 0; width: 100%; max-width: none; }
+.notion-root .notion-collection__header-wrapper { margin: 0 0 24px; padding: 0; border: 0; }
+.notion-root .notion-collection__header-wrapper .notion-dropdown { width: 100%; position: static; }
+.notion-root .notion-dropdown__button, .notion-root .notion-dropdown__menu-header { display: none !important; }
+.notion-root .notion-dropdown__menu-wrapper { position: static !important; display: block !important; }
+.notion-root .notion-dropdown__menu, .notion-root .notion-dropdown__menu.close, .notion-root .notion-dropdown__menu.initial-state {
+  position: static !important; display: block !important; opacity: 1 !important; visibility: visible !important; transform: none !important;
+  pointer-events: auto !important; box-shadow: none !important; border: 0 !important; background: transparent !important; padding: 0 !important; width: auto !important; max-height: none !important; height: auto !important; animation: none !important;
+}
+.notion-root .notion-dropdown__option-list { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; max-height: none !important; overflow: visible !important; }
+.notion-root .notion-dropdown__option {
+  display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; margin: 0; border-radius: 999px; cursor: pointer;
+  background: var(--dial-surface); color: var(--dial-soft); font-family: var(--dial-display); font-size: 21px; font-weight: 600; letter-spacing: 0.01em; width: auto;
+}
+.notion-root .notion-dropdown__option p { margin: 0; color: inherit; font-size: inherit; white-space: nowrap; }
+.notion-root .notion-dropdown__option-icon { display: none; }
+.notion-root .notion-dropdown__option:hover { background: var(--dial-raise); }
+.notion-root .notion-dropdown__option.active { background: var(--dial-ink); color: var(--dial-bg); }
+@media (max-width: 720px) {
+  .notion-root .notion-dropdown__option-list { flex-wrap: nowrap; overflow-x: auto !important; margin: 0 calc(-1 * var(--dial-gutter)); padding: 0 var(--dial-gutter) 4px; scrollbar-width: none; }
+  .notion-root .notion-dropdown__option-list::-webkit-scrollbar { display: none; }
+  .notion-root .notion-dropdown__option { flex: 0 0 auto; }
+}
+
+/* ---------- gallery view: one row per listing ---------- */
+.notion-root .notion-collection-gallery { display: grid !important; grid-template-columns: minmax(0, 1fr); gap: 10px !important; }
+.notion-root .notion-collection-card {
+  background: var(--dial-surface) !important; border: 0 !important; box-shadow: none !important; border-radius: 0 !important; width: auto !important; max-width: none !important; height: auto !important; overflow: visible;
+}
+.notion-root .notion-collection-card__cover { display: none; }
+.notion-root .notion-collection-card__anchor { font-size: 0 !important; }
+.notion-root .notion-collection-card__content {
+  padding: 28px 32px !important; display: grid !important; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr) auto; grid-auto-flow: row dense; column-gap: 40px; row-gap: 6px; align-items: start;
+}
+.notion-root .notion-collection-card__property { margin: 0 !important; padding: 0 !important; font-size: 16px; line-height: 1.45; white-space: normal !important; color: var(--dial-soft); grid-column: 2; }
+.notion-root .notion-collection-card__property.title { grid-column: 1; grid-row: 1; font-family: var(--dial-display); font-size: 30px !important; font-weight: 700; line-height: 1; color: var(--dial-ink); letter-spacing: -0.01em; }
+.notion-root .notion-collection-card__property-list > p:nth-child(2) { grid-column: 1; grid-row: 2; font-family: var(--dial-display); font-size: 24px; font-weight: 600; color: var(--dial-muted); margin-top: 6px !important; }
+.notion-root .notion-collection-card__property.notion-property__date { grid-column: 1; grid-row: 3; font-size: 14px; color: var(--dial-muted); }
+.notion-root .notion-collection-card__property.notion-property__phone { grid-column: 3; grid-row: 1 / span 3; }
+.notion-root .notion-collection-card__property-list > p:last-child:not(:nth-child(2)) { color: var(--dial-muted); font-size: 15px; }
+.dial-open { color: var(--dial-accent) !important; }
+@media (max-width: 860px) {
+  .notion-root .notion-collection-card__content { display: flex !important; flex-direction: column; gap: 8px; padding: 22px 20px !important; }
+  .notion-root .notion-collection-card__property.title { order: 0; font-size: 28px !important; }
+  .notion-root .notion-collection-card__property-list > p:nth-child(2) { order: 1; margin: 0 !important; }
+  .notion-root .notion-collection-card__property.notion-property__date { order: 2; }
+  .notion-root .notion-collection-card__property.notion-property__phone { order: 3; margin: 6px 0 4px !important; }
+  .notion-root .notion-collection-card__property { order: 4; }
+}
+
+/* pills: round, warm tone, no colour noise */
+.notion-root .notion-pill { border-radius: 999px !important; background: var(--dial-raise) !important; color: var(--dial-soft) !important; font-size: 14px !important; padding: 3px 11px !important; margin: 0 6px 6px 0 !important; font-weight: 500; }
+
+/* phone numbers: round call buttons, gold number on a raised tone */
+.notion-root .notion-property__phone, .notion-page__properties .notion-property__phone {
+  display: inline-flex !important; align-items: center; justify-content: center; align-self: flex-start; justify-self: end;
+  min-height: 54px; padding: 0 26px !important; background: var(--dial-raise); color: var(--dial-accent) !important; border-radius: 999px;
+  font-family: var(--dial-display); font-size: 25px !important; font-weight: 700; letter-spacing: 0.01em; cursor: pointer; position: relative; z-index: 3; font-variant-numeric: tabular-nums; white-space: nowrap !important; width: auto !important;
+}
+.notion-root .notion-property__phone::before { content: "Call"; color: var(--dial-ink); font-weight: 600; margin-right: 10px; }
+.notion-root .notion-property__phone:hover { background: #312a22; }
+
+/* ---------- list view (grouped) ---------- */
+.notion-root .notion-collection-group__list { padding: 0; }
+.notion-root .notion-collection-group__section { margin: 0 0 48px; }
+.notion-root .notion-collection-group__section-header { padding: 0 0 12px; margin: 0; border: 0; }
+.notion-root .notion-collection-group__section-toggle { display: none; }
+.notion-root .notion-collection-group__section-header .notion-pill { background: transparent !important; font-family: var(--dial-display); text-transform: uppercase; color: var(--dial-accent) !important; font-size: clamp(24px, 2.4vw, 34px) !important; font-weight: 700; padding: 0 !important; letter-spacing: 0; }
+.notion-root .notion-collection-list { display: grid; gap: 6px; border: 0; }
+.notion-root .notion-collection-list__item {
+  position: relative; display: grid !important; grid-template-columns: minmax(0, 1.4fr) minmax(0, 2fr); align-items: center; column-gap: 32px;
+  background: var(--dial-surface); padding: 16px 24px !important; border: 0 !important; border-radius: 0 !important; min-height: 80px; margin: 0 !important;
+}
+.notion-root .notion-collection-list__item:hover { background: #1f1b17; }
+.notion-root .notion-collection-list__item-anchor { position: absolute; inset: 0; z-index: 1; }
+.notion-root .notion-collection-list__item > .notion-property__title { font-family: var(--dial-display); font-size: 24px; font-weight: 600; line-height: 1.1; color: var(--dial-ink); white-space: normal !important; }
+.notion-root .notion-collection-list__item-content { display: flex !important; flex-wrap: wrap; align-items: center; justify-content: flex-start !important; gap: 8px 18px; margin: 0 !important; }
+.notion-root .notion-collection-list__item-property { margin: 0 !important; font-size: 15px; color: var(--dial-soft); white-space: normal !important; }
+.notion-root .notion-collection-list__item-property:empty { display: none !important; }
+.notion-root .notion-collection-list__item .notion-property__phone { min-height: 48px; font-size: 22px !important; order: -1; }
+.notion-root .notion-collection-list__item .notion-pill { margin-bottom: 0 !important; }
+@media (max-width: 720px) {
+  .notion-root .notion-collection-list__item { grid-template-columns: minmax(0, 1fr); row-gap: 12px; padding: 18px !important; }
+}
+
+/* ---------- item page ---------- */
+.page__index .notion-header { display: none !important; }
+.notion-page__property:has(.notion-property__phone) { order: -1; }
+.notion-page__properties .notion-property__phone { justify-self: start; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-header__content { padding-top: 56px; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-header__title { font-size: clamp(40px, 6vw, 84px) !important; max-width: 18ch; }
+.notion-page__properties { display: grid !important; grid-template-columns: minmax(0, 1fr); gap: 4px; background: transparent; margin: 28px 0 40px; }
+.notion-page__property { display: grid !important; grid-template-columns: 200px minmax(0, 1fr); gap: 16px; background: var(--dial-surface); padding: 14px 22px; align-items: center; border: 0 !important; }
+.notion-page__property-name-wrapper { color: var(--dial-muted); font-size: 15px; }
+.notion-page__property-icon-wrapper { display: none !important; }
+.notion-page__property .notion-property { font-size: 17px; color: var(--dial-soft); white-space: normal !important; }
+@media (max-width: 640px) { .notion-page__property { grid-template-columns: minmax(0, 1fr); gap: 4px; } }
+
+/* ---------- chrome ---------- */
+.super-navbar { background: var(--dial-bg) !important; box-shadow: none !important; border: 0 !important; }
+.super-navbar .super-navbar__logo-text { font-family: var(--dial-display) !important; font-weight: 700 !important; text-transform: uppercase; font-size: 26px !important; letter-spacing: 0; color: var(--dial-ink) !important; }
+@media (max-width: 480px) { .super-navbar .super-navbar__cta { font-size: 17px !important; padding: 0 14px !important; } }
+.super-navbar__cta { background: var(--dial-accent) !important; color: var(--dial-accent-ink) !important; border-radius: 999px !important; border: 0 !important; font-family: var(--dial-display); font-size: 19px !important; font-weight: 700; min-height: 44px; padding: 0 20px !important; box-shadow: none !important; }
+.super-navbar .super-navbar__cta { display: inline-flex !important; align-items: center; justify-content: center; line-height: 1 !important; }
+.super-footer { background: var(--dial-bg) !important; border: 0 !important; }
+.super-footer, .super-footer * { font-family: var(--dial-face); color: var(--dial-muted); }
+
+/* ---------- template additions ---------- */
+/* page titles: every page starts with its own rocket hero, so the Notion header shows only on listing pages */
+main.super-content.parent-page__index .notion-header { display: none !important; }
+.super-navbar .super-navbar__item { font-family: var(--dial-display) !important; font-size: 19px !important; font-weight: 600 !important; color: var(--dial-soft) !important; letter-spacing: 0.01em; }
+.super-navbar .super-navbar__item:hover { color: var(--dial-accent) !important; }
+
+/* hero headline: the template name plus a line, so a little smaller than a one-word title; never split inside a word */
+.notion-root .notion-heading { overflow-wrap: normal; word-break: normal; hyphens: manual; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(44px, 7.4vw, 104px); max-width: 18ch; }
+@media (max-width: 480px) {
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: 40px; }
+  .notion-root > h2.notion-heading { font-size: 40px; }
+}
+
+/* buttons: links in a quote block become round buttons, the first one solid gold */
+.notion-root .notion-quote { border: 0 !important; padding: 0 !important; margin: 28px 0 0; background: transparent !important; display: flex; flex-wrap: wrap; gap: 10px; font-style: normal; }
+.notion-root .notion-quote > .notion-semantic-string { display: contents; }
+.notion-root .notion-quote a.link, .notion-root .notion-quote a {
+  display: inline-flex; align-items: center; min-height: 52px; padding: 0 26px; border-radius: 999px; text-decoration: none !important; opacity: 1 !important;
+  font-family: var(--dial-display); font-size: 21px; font-weight: 700; letter-spacing: 0.01em; line-height: 1;
+  color: var(--dial-ink) !important; background: var(--dial-raise); border: 0 !important;
+}
+.notion-root .notion-quote a.link:first-child, .notion-root .notion-quote a:first-child { background: var(--dial-accent); color: var(--dial-accent-ink) !important; }
+.notion-root .notion-quote a:hover { background: #312a22; color: var(--dial-ink) !important; }
+.notion-root .notion-quote a:first-child:hover { background: #dbb86d; color: var(--dial-accent-ink) !important; }
+
+/* banner numbers made clickable by dial.js */
+.notion-root a.dial-tel { color: var(--dial-accent) !important; text-decoration: none !important; white-space: nowrap; opacity: 1 !important; font-weight: 700; border: 0 !important; }
+
+/* subpages: plain text between the sections */
+.notion-root > p.notion-text { max-width: 64ch; font-size: 18px; color: var(--dial-soft); }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) { margin-top: 48px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_"]) + .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) { margin-top: 56px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) + .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_"]) { padding-top: 0 !important; }
+.notion-root > .notion-bulleted-list { max-width: 70ch; padding-left: 1.2em; }
+.notion-root > .notion-bulleted-list .notion-list-item { margin: 0 0 10px; color: var(--dial-soft); }
+.notion-root > .notion-bulleted-list .notion-list-item strong { color: var(--dial-ink); }
+.notion-root > h2.notion-heading:not(:first-child) { overflow-wrap: normal; }
+
+/* footer and text links */
+.super-footer a:hover { color: var(--dial-ink); }
+.page__instructions .notion-root a.notion-link, .page__instructions .notion-root a.link { color: var(--dial-accent) !important; text-decoration: underline !important; text-underline-offset: 3px; opacity: 1 !important; }
+.page__instructions .notion-root .notion-code { background: var(--dial-surface) !important; color: var(--dial-soft); }
+.page__instructions .notion-root .notion-code * { color: var(--dial-soft); }
+.page__instructions .notion-root h1.notion-heading, .page__instructions .notion-root h2.notion-heading, .page__instructions .notion-root h3.notion-heading { text-transform: none; line-height: 1.05; }
+.page__instructions .notion-root h2.notion-heading { font-size: clamp(30px, 3vw, 40px); }
+.page__instructions .notion-root h3.notion-heading { font-size: 26px; }
+.page__instructions .notion-root .notion-list-item strong, .page__instructions .notion-root p strong { color: var(--dial-ink); }
+
+/* =====================================================================
+   Template pages: the Instructions child page and its link block
+   ===================================================================== */
+.notion-root > a.notion-page { display: none; }
+.page__instructions .notion-root { max-width: 760px; margin: 0 auto; padding-bottom: 64px; }
+.page__instructions .notion-root h1.notion-heading { font-size: clamp(34px, 1.8rem + 1.6vw, 48px); margin: 24px 0 16px; }
+.page__instructions .notion-root h2.notion-heading { margin: 48px 0 14px; }
+.page__instructions .notion-root h3.notion-heading { margin: 32px 0 10px; }
+.page__instructions .notion-root .notion-code { border-radius: 12px; font-size: 14px; margin: 12px 0 20px; }
+.page__instructions .notion-root .notion-list li { margin: 0 0 8px; }
+.page__instructions .notion-root .notion-code pre, .page__instructions .notion-root .notion-code code { white-space: pre-wrap !important; word-break: break-all; }
