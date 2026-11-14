@@ -451,6 +451,8 @@ body, .super-content { background: var(--furrow-bg); }
 }
 /* board cards: the Change pills wrap instead of being cut at the card edge */
 .notion-root .notion-collection-board .notion-property:has(> .notion-pill) { flex-wrap: wrap; white-space: normal; row-gap: 2px; height: auto; }
+/* phase fact tiles: the value (e.g. Planned) shrinks with the tile instead of splitting inside the word */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column > .notion-callout .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-size: clamp(26px, 3.4vw, 36px); overflow-wrap: normal; word-break: normal; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
