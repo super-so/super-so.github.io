@@ -429,6 +429,28 @@ body, .super-content { background: var(--furrow-bg); }
 /* ---------- template additions ---------- */
 /* headings never split inside a word */
 .notion-root .notion-heading, .notion-header__title { overflow-wrap: normal; word-break: normal; hyphens: manual; }
+/* home hero: the H1 carries a whole sentence (template name + what it is), so it is set smaller than the source's short headline */
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(38px, 3.9vw, 58px); line-height: 1.02; }
+@media (max-width: 546px) { .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: 34px; } }
+/* full-page database tables fit the frame on desktop instead of cutting off the last column (they still scroll sideways below 1100 px) */
+@media (min-width: 1100px) {
+  .super-content:has(> .notion-root.notion-collection-page) .notion-collection-table { width: 100% !important; min-width: 0 !important; table-layout: auto !important; }
+  .super-content:has(> .notion-root.notion-collection-page) .notion-collection-table :is(th, td) { width: auto !important; min-width: 0 !important; max-width: none !important; }
+  .super-content:has(> .notion-root.notion-collection-page) .notion-collection-table :is(th, td).title { min-width: 220px !important; }
+}
+/* list rows stack on narrow screens: the title's 240px basis must not turn into height, and the facts start at the left */
+@media (max-width: 820px) {
+  .notion-root .notion-collection-list__item .notion-property__title { flex: 0 0 auto; }
+  .notion-root .notion-collection-list__item-content { justify-content: flex-start; gap: 4px 14px; margin-top: 6px; }
+  .notion-root .notion-collection-list__item-content > .notion-property { padding-left: 0; }
+}
+/* home phase strip: the year scales with the column, so 2026 never splits inside the solid "now" card (821-1280 px) */
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-callout .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { overflow-wrap: normal; word-break: normal; }
+@media (min-width: 821px) and (max-width: 1180px) {
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-callout .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-size: 3.4vw; }
+}
+/* board cards: the Change pills wrap instead of being cut at the card edge */
+.notion-root .notion-collection-board .notion-property:has(> .notion-pill) { flex-wrap: wrap; white-space: normal; row-gap: 2px; height: auto; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
