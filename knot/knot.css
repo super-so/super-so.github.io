@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&display=swap");
+/* =====================================================================
+   KNOT - link-in-bio template for cafés, studios and local shops for Super (knot-template.super.site)
+   Sections = top-level callouts keyed by their Notion icon; nested callouts = cards; quote blocks = button bars.
+   Shop window: bone ground, chocolate ink, one green; Literata; square corners. Every link of a quote block is a flat
+   chocolate bar with a small arrow. Hero in two columns (name, line, green door-sign band with the round stamp | buttons).
+   Icons: rocket top (logo, name, line, sun = stamp + today's hours, buttons) - target This week paper tickets -
+   book opening hours (the green block with the table) - megaphone Find us (map | address, Open in maps).
+   Below 820px everything stacks into one column.
+   Source and docs: https://github.com/super-so/super-so.github.io
+   ===================================================================== */
+:root, .super-content { --knot-bg: #e5e1d8; --knot-surface: #dad5ca; --knot-paper: #f2efe8; --knot-ink: #2a1d17; --knot-muted: #6b5b51; --knot-green: #456f3a; --knot-on-green: #ffffff; --knot-font: 'Literata', Georgia, serif; }
+html, body { background: var(--knot-bg); }
+.super-root { overflow-x: clip; }
+.super-content, .super-content .notion-root { font-family: var(--knot-font); color: var(--knot-ink); }
+.super-content .notion-root { padding-top: 40px; padding-bottom: 72px; }
+.notion-root {
+  a.notion-page { display: none !important; }
+  .notion-callout__icon { display: none !important; }
+  .notion-callout { border: 0 !important; background: transparent !important; padding: 0 !important; margin: 0; box-shadow: none !important; border-radius: 0 !important; display: block; width: 100%; }
+  .notion-callout__content { padding: 0; margin: 0; width: 100%; max-width: none; min-width: 0; }
+  .notion-callout__content > span.notion-semantic-string:empty { display: none; }
+  .notion-heading__anchor { display: none; }
+  figcaption { display: none; }
+  .notion-image { margin: 0; display: block; }
+  .notion-image span, .notion-image a { display: block; }
+  .notion-image img { width: 100%; height: auto; display: block; border-radius: 0 !important; }
+  h1.notion-heading, h2.notion-heading, h3.notion-heading { font-family: var(--knot-font); color: var(--knot-ink); font-weight: 500; letter-spacing: -.02em; line-height: 1.05; margin: 0; padding: 0; font-variation-settings: 'opsz' 72; word-break: normal; overflow-wrap: normal; hyphens: none; }
+  h2.notion-heading { font-size: clamp(30px, 5vw, 40px); margin-bottom: 14px; }
+  p.notion-text { font-size: 18px; line-height: 1.6; margin: 0 0 12px; padding: 0; color: var(--knot-ink); }
+  .notion-semantic-string a.link { color: var(--knot-ink); opacity: 1; text-decoration: underline; text-underline-offset: 3px; }
+
+  /* button bars: every link of a quote block is one flat chocolate bar with a small arrow */
+  .notion-quote { border: 0 !important; padding: 0 !important; margin: 0; background: transparent !important; font-style: normal; display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; font-size: inherit; }
+  .notion-quote > .notion-semantic-string { display: contents; }
+  .notion-quote a.link { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 58px; padding: 14px 22px; background: var(--knot-ink); color: var(--knot-bg) !important; text-decoration: none !important; font-size: 19px; font-weight: 500; line-height: 1.2; border-radius: 0; opacity: 1; transition: background .15s ease; }
+  .notion-quote a.link::after { content: '\2192'; font-size: 18px; flex: none; transition: transform .15s ease; }
+  .notion-quote a.link:hover { background: var(--knot-green); }
+  .notion-quote a.link:hover::after { transform: translateX(4px); }
+
+  > .notion-callout + .notion-callout { margin-top: 72px; }
+
+  /* top */
+  > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) {
+    > .notion-callout__content > .notion-image { width: 76px; margin: 0 0 22px; }
+    h1.notion-heading { font-size: clamp(44px, 9vw, 64px); margin: 0 0 12px; }
+    > .notion-callout__content > p.notion-text { font-size: 18px; color: var(--knot-muted); max-width: 34em; margin-bottom: 20px; }
+    /* sun: stamp + today's hours */
+    .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) > .notion-callout__content { display: flex; flex-direction: row; align-items: center; gap: 16px; margin: 0 0 24px; }
+    .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) .notion-image { width: 92px; flex: none; }
+    .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) p.notion-text { margin: 0; font-size: 22px; font-weight: 600; line-height: 1.25; font-variant-numeric: lining-nums tabular-nums; }
+  }
+
+  /* this week: paper tickets */
+  > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout {
+    background: var(--knot-paper) !important; position: relative;
+    -webkit-mask: radial-gradient(circle 11px at 0 var(--notch, 50%), #0000 97%, #000) left / 51% 100% no-repeat, radial-gradient(circle 11px at 100% var(--notch, 50%), #0000 97%, #000) right / 51% 100% no-repeat;
+            mask: radial-gradient(circle 11px at 0 var(--notch, 50%), #0000 97%, #000) left / 51% 100% no-repeat, radial-gradient(circle 11px at 100% var(--notch, 50%), #0000 97%, #000) right / 51% 100% no-repeat;
+  }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-size: 22px; font-weight: 500; line-height: 1.2; margin: 0 0 6px; letter-spacing: -.01em; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout .notion-image + p.notion-text { color: var(--knot-green); font-weight: 600; font-size: 16px; margin-bottom: 6px; font-variant-numeric: lining-nums; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text { font-size: 16px; line-height: 1.5; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text:last-child { margin-bottom: 0; }
+
+  /* opening hours */
+  > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) {
+    .notion-table__wrapper, .notion-table { width: 100% !important; max-width: 100%; margin: 8px 0 0; overflow: visible; } td { max-width: none !important; } .notion-table__cell, .notion-table__cell .notion-semantic-string { color: inherit !important; }
+    table { width: 100% !important; border-collapse: collapse; table-layout: fixed; border: 0 !important; }
+    tr, td { border: 0 !important; }
+    td, .notion-table__cell { padding: 13px 18px !important; font-size: 18px; line-height: 1.3; color: var(--knot-ink); background: transparent; width: auto !important; min-width: 0 !important; white-space: normal; font-variant-numeric: lining-nums tabular-nums; }
+    td:last-child { text-align: right; }
+    tr:nth-child(odd) td { background: var(--knot-surface); }
+  }
+
+  /* find us */
+  > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) {
+    .notion-image { margin: 0 0 20px; }
+    h2.notion-heading + .notion-image + p.notion-text, .notion-image + p.notion-text { font-size: 24px; font-weight: 600; line-height: 1.25; margin-bottom: 8px; }
+    .notion-quote { margin-top: 18px; }
+    .notion-quote a.link { background: var(--knot-green); }
+    .notion-quote a.link:hover { background: var(--knot-ink); }
+  }
+
+  /* get template */
+  > p.notion-text:last-of-type { margin-top: 56px; text-align: center; font-size: 16px; }
+  > p.notion-text:last-of-type a.link { color: var(--knot-muted); }
+}
+/* the instructions page reads as a plain document */
+.notion-root:not(:has(> .notion-callout:has(> .notion-callout__icon img[src*="/target_"]))) {
+  > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(36px, 7vw, 52px); }
+  .notion-list-item, ol li { font-size: 18px; line-height: 1.6; }
+  > .notion-callout .notion-quote { margin-top: 16px; }
+}
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout .notion-image { max-width: none !important; }
+.notion-root .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) p.notion-text { text-wrap: balance; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) td > .notion-table__cell.notion-table__cell { padding: 0 !important; white-space: nowrap; }
+/* ---------- v2 "Shop window": wider page, the stamp hangs on a green shop-front band, tickets in a row ---------- */
+.notion-root {
+  > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) { position: relative; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content {
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 56px; align-items: start; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content > * { grid-column: 1; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content > .notion-quote { grid-column: 2; grid-row: 1 / span 6; align-self: end; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(48px, 6vw, 76px); }
+  /* the door sign: green band with a big stamp */
+  > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) > .notion-callout__content {
+    background: var(--knot-green); color: var(--knot-on-green); padding: 18px 22px 18px 18px; margin: 4px 0 0; gap: 18px; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) .notion-image { width: 112px; margin: -34px 0 -34px -6px; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) .notion-image img { filter: brightness(0) invert(1); }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) p.notion-text { color: var(--knot-on-green); font-size: 24px; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-quote a.link { min-height: 64px; font-size: 20px; }
+
+  > .notion-callout + .notion-callout { margin-top: 88px; }
+  h2.notion-heading { font-size: clamp(32px, 5vw, 48px); }
+
+  /* tickets: three upright tickets, the tear line under the picture */
+  > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > h2.notion-heading { grid-column: 1 / -1; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout { --notch: 62%; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout > .notion-callout__content { display: flex; flex-direction: column; padding: 16px 20px 22px; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout .notion-image { order: -1; margin: -16px -20px 16px; width: calc(100% + 40px); }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout .notion-image img { aspect-ratio: 4 / 3; object-fit: cover; }
+
+  /* opening hours: the one large green block */
+  > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) { background: var(--knot-green) !important; padding: 48px !important; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) > .notion-callout__content { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); column-gap: 48px; align-items: start; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) > .notion-callout__content > * { grid-column: 1; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) > .notion-callout__content > .notion-table__wrapper { grid-column: 2; grid-row: 1 / span 4; margin: 0; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) h2.notion-heading,
+  > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) p.notion-text { color: var(--knot-on-green); }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) td { color: var(--knot-on-green) !important; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) tr:nth-child(odd) td { background: #3a5f31 !important; }
+
+  /* find us: map and address side by side */
+  > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) > .notion-callout__content { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); column-gap: 40px; align-items: start; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) > .notion-callout__content > * { grid-column: 2; }
+  > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) > .notion-callout__content > .notion-image { grid-column: 1; grid-row: 1 / span 6; margin: 0; }
+  > p.notion-text:last-of-type { text-align: left; }
+}
+@media (max-width: 820px) {
+  .notion-root > .notion-callout > .notion-callout__content { display: block !important; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-quote { margin-top: 28px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) .notion-image { width: 92px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) > .notion-callout__content { margin-top: 28px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout + .notion-callout { margin-top: 14px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) { padding: 28px 18px !important; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) td { padding: 12px 14px !important; font-size: 17px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-image { margin-bottom: 20px !important; }
+  .notion-root > .notion-callout + .notion-callout { margin-top: 64px; }
+}
+/* ---------- template fixes ---------- */
+/* the Get template line style belongs to the home page only; the Instructions page ends with a normal paragraph */
+.page__instructions .notion-root > p.notion-text:last-of-type { margin-top: 0; text-align: left; font-size: 18px; }
+.page__instructions .notion-root > p.notion-text:last-of-type a.link { color: var(--knot-ink); }
+/* text links on the Instructions page read as links: green, underlined */
+.page__instructions .notion-root .notion-semantic-string a.link { color: var(--knot-green); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.page__instructions .notion-root .notion-code { border-radius: 0; }
+.page__instructions .notion-root h2.notion-heading { font-size: clamp(26px, 4vw, 34px); }
+/* headings never break inside a word */
+.notion-root h1.notion-heading, .notion-root h2.notion-heading, .notion-root h3.notion-heading { word-break: normal; overflow-wrap: normal; hyphens: none; text-wrap: balance; }
+
+/* =====================================================================
+   Template pages: the Instructions child page and its link block
+   ===================================================================== */
+.notion-root > a.notion-page { display: none; }
+.page__instructions .notion-root { max-width: 760px; margin: 0 auto; padding-bottom: 64px; }
+.page__instructions .notion-root h1.notion-heading { font-size: clamp(34px, 1.8rem + 1.6vw, 48px); margin: 24px 0 16px; }
+.page__instructions .notion-root h2.notion-heading { margin: 48px 0 14px; }
+.page__instructions .notion-root h3.notion-heading { margin: 32px 0 10px; }
+.page__instructions .notion-root .notion-code { border-radius: 12px; font-size: 14px; margin: 12px 0 20px; }
+.page__instructions .notion-root .notion-list li { margin: 0 0 8px; }
+.page__instructions .notion-root .notion-code pre, .page__instructions .notion-root .notion-code code { white-space: pre-wrap !important; word-break: break-all; }
