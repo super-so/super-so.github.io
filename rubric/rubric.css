@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap");
+/* =====================================================================
+   RUBRIC - company handbook and wiki template for remote teams for Super (rubric-template.super.site)
+   Sections = top-level callouts keyed by their Notion icon; nested callouts = cards;
+   quote blocks = button rows (the first link is the solid button, the others underlined text links).
+   Blueprint: a blue sidebar field, every page head a blue drawing sheet with a fine grid and a rotated
+   'last reviewed' stamp (sun callout), section numbers hanging in the left margin, STIX Two Text, square corners.
+   Icons: rocket page head - sun stamp - target page lists (home: the chapter grid) - checkmark / book numbered steps -
+   star example box - light bulb tip - megaphone closing band.
+   Numbers: rubric.js numbers chapters and pages from the sidebar order (--ch, --n on main.super-content).
+   Script: https://sites.super.so/rubric/rubric.js
+   Source and docs: https://github.com/super-so/super-so.github.io
+   ===================================================================== */
+:root {
+  --rubric-bg: #dfdedb; --rubric-surface: #d3d2ce; --rubric-sheet: #e8e7e4; --rubric-ink: #26251e; --rubric-muted: #5f5d55;
+  --rubric-blue: #2456d6; --rubric-blue-ink: #ffffff;
+  --rubric-serif: 'STIX Two Text', 'Times New Roman', serif;
+}
+html, body { background: var(--rubric-bg); }
+body, .super-content, .notion-root, .super-sidebar, .notion-navbar { font-family: var(--rubric-serif) !important; }
+.notion-root { color: var(--rubric-ink); font-size: 18px; line-height: 1.55; word-break: normal; overflow-wrap: break-word; padding-bottom: 96px; }
+.notion-root h1, .notion-root h2, .notion-root h3 { font-family: var(--rubric-serif) !important; font-weight: 400 !important; color: var(--rubric-ink); overflow-wrap: normal; word-break: normal; hyphens: none; text-wrap: balance; }
+.notion-root a.notion-link.link, .notion-root p a, .notion-root li a { color: var(--rubric-blue); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; opacity: 1; }
+.notion-root strong, .notion-root b { font-weight: 600; }
+
+/* ---------- chapter and page numbers ---------- */
+/* chapter numbers (--ch) and page numbers (--n) are set on main.super-content by rubric.js from the sidebar order */
+
+/* ---------- resets: top-level callouts become sections ---------- */
+.notion-root > .notion-callout > .notion-callout__icon { display: none; }
+.notion-root > .notion-callout { border: 0 !important; background: transparent !important; padding: 0 !important; margin: 0; box-shadow: none !important; width: 100%; }
+.notion-root > .notion-callout > .notion-callout__content { padding: 0; margin: 0; width: 100%; max-width: none; }
+.notion-root .notion-callout__content > span.notion-semantic-string:empty { display: none; }
+.notion-root > .notion-callout + .notion-callout, .notion-root > .notion-callout + h2, .notion-root > .notion-collection { margin-top: 56px; }
+.notion-root > a.notion-page, .notion-root > .notion-page { display: none !important; }
+.notion-root figcaption { display: none; }
+.notion-root .notion-callout { border-radius: 0 !important; }
+.notion-header { display: none !important; }
+
+/* ---------- page head (rocket) ---------- */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(38px, 1.4rem + 2.6vw, 56px); line-height: 1.1; letter-spacing: -0.026em; margin: 0 0 18px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading::before { color: var(--rubric-blue); margin-right: .35em; }
+[class*="page__"] .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading::before { content: var(--n, var(--ch, none)); }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content > p.notion-text { font-size: 21px; line-height: 1.5; color: var(--rubric-muted); max-width: 40em; margin: 0 0 8px; }
+/* the "last reviewed" stamp (sun callout inside the head) */
+.notion-root .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) { border: 0 !important; background: transparent !important; box-shadow: none !important; padding: 0 !important; margin: 0 0 22px; width: auto; display: inline-flex; }
+.notion-root .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) > .notion-callout__icon { display: none; }
+.notion-root .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) > .notion-callout__content { padding: 0; margin: 0; }
+.notion-root .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) p.notion-text { margin: 0; font-size: 14px; line-height: 1.3; color: var(--rubric-blue); }
+/* chapter glyph in the head */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-image { margin: 28px 0 0; max-width: 420px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-image img { width: 100%; height: auto; display: block; }
+
+/* ---------- numbered h2 on content pages ---------- */
+.notion-root { counter-reset: h2; }
+[class*="page__"] .notion-root h2.notion-heading { counter-increment: h2; }
+.notion-root h2.notion-heading { font-size: 30px; line-height: 1.2; letter-spacing: -0.015em; margin: 56px 0 14px; }
+.notion-root h3.notion-heading { font-size: 22px; line-height: 1.25; margin: 32px 0 6px; }
+.notion-root h2.notion-heading::before { color: var(--rubric-blue); margin-right: .45em; font-variant-numeric: lining-nums tabular-nums; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root h2.notion-heading::before { content: var(--n) "." counter(h2); }
+/* the closing band heading is not a section of the text */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) h2.notion-heading { counter-increment: none; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) h2.notion-heading::before { content: none !important; }
+
+/* ---------- body text ---------- */
+.notion-root p.notion-text { margin: 0 0 12px; }
+.notion-root .notion-list-item, .notion-root li { margin: 4px 0; }
+.notion-root ol.notion-numbered-list, .notion-root ul.notion-bulleted-list { padding-left: 1.3em; }
+
+/* ---------- tables (in-page) ---------- */
+.notion-root .notion-table__wrapper { overflow-x: auto; margin: 18px 0 24px; }
+.notion-root table.notion-table { width: 100%; border-collapse: collapse; font-size: 16px; line-height: 1.4; border: 0 !important; }
+.notion-root .notion-table__cell, .notion-root table.notion-table td, .notion-root table.notion-table th { border: 0 !important; padding: 10px 14px !important; vertical-align: top; }
+.notion-root table.notion-table tr:first-child td { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--rubric-muted); }
+
+/* ---------- example box (star at top level) and tips ---------- */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) > .notion-callout__content { padding: 18px 24px; font-size: 17px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) { margin-top: 10px !important; }
+.notion-root .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_"]) { border: 0 !important; box-shadow: none !important; padding: 16px 22px !important; margin: 28px 0; }
+.notion-root .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_"]) > .notion-callout__icon { display: none; }
+.notion-root .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_"]) > .notion-callout__content { padding: 0; margin: 0; }
+.notion-root .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_"]) p.notion-text { margin: 0; font-size: 17px; }
+
+/* ---------- lists of pages (target) ---------- */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content { counter-reset: sub; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout { counter-increment: sub; border: 0 !important; box-shadow: none !important; margin: 0 0 10px; padding: 0 !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout > .notion-callout__icon { display: none; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout > .notion-callout__content { padding: 18px 22px; margin: 0; width: 100%; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text { margin: 0; color: var(--rubric-muted); font-size: 17px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text::first-line { color: var(--rubric-ink); font-size: 22px; line-height: 1.6; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text a { color: var(--rubric-ink); text-decoration: none; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text a:hover { color: var(--rubric-blue); }
+/* "1.2 Values" numbers before each row on chapter pages */
+main.super-content.parent-page__index:not(.page__instructions) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text:first-of-type::before { content: var(--ch) "." counter(sub); color: var(--rubric-blue); font-size: 22px; margin-right: .5em; }
+
+/* ---------- home: the five chapter cards ---------- */
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content { counter-reset: chap; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout { counter-increment: chap; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout > .notion-callout__content { display: grid; grid-template-columns: 200px minmax(0, 1fr); column-gap: 28px; align-items: start; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout .notion-image { grid-column: 1; grid-row: 1 / span 3; margin: 0 !important; width: 200px !important; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout .notion-image img { width: 100%; height: auto; display: block; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text { grid-column: 2; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text:first-of-type { font-size: 26px; line-height: 1.2; margin-bottom: 6px; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text:first-of-type::first-line { font-size: 26px; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text:first-of-type::before { content: counter(chap); color: var(--rubric-blue); margin-right: .45em; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text + p.notion-text::first-line { font-size: 17px; color: var(--rubric-muted); }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text + p.notion-text a { color: var(--rubric-blue); text-decoration: underline; font-size: 16px; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > p.notion-text { color: var(--rubric-muted); }
+/* "Last updated" line under the home lead */
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content > p.notion-text + p.notion-text { font-size: 15px; color: var(--rubric-blue); margin-top: 6px; }
+
+/* ---------- numbered steps (checkmark or book with star cards) ---------- */
+.notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/checkmark_"]), :has(> .notion-callout__icon img[src*="/book_"])) > .notion-callout__content { counter-reset: step; }
+.notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/checkmark_"]), :has(> .notion-callout__icon img[src*="/book_"])) > .notion-callout__content > .notion-callout { counter-increment: step; border: 0 !important; box-shadow: none !important; margin: 0 0 12px; padding: 0 !important; }
+.notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/checkmark_"]), :has(> .notion-callout__icon img[src*="/book_"])) > .notion-callout__content > .notion-callout > .notion-callout__icon { display: none; }
+.notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/checkmark_"]), :has(> .notion-callout__icon img[src*="/book_"])) > .notion-callout__content > .notion-callout > .notion-callout__content { position: relative; padding: 20px 24px 18px 84px; margin: 0; width: 100%; }
+.notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/checkmark_"]), :has(> .notion-callout__icon img[src*="/book_"])) > .notion-callout__content > .notion-callout > .notion-callout__content::before { content: counter(step); position: absolute; left: 24px; top: 14px; font-size: 38px; line-height: 1; color: var(--rubric-blue); font-variant-numeric: lining-nums; }
+.notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/checkmark_"]), :has(> .notion-callout__icon img[src*="/book_"])) .notion-callout p.notion-text { margin: 0 0 6px; }
+.notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/checkmark_"]), :has(> .notion-callout__icon img[src*="/book_"])) .notion-callout p.notion-text:first-of-type::first-line { font-size: 21px; font-weight: 600; line-height: 1.6; }
+.notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/checkmark_"]), :has(> .notion-callout__icon img[src*="/book_"])) .notion-callout ul { margin: 4px 0 0; }
+/* onboarding: checkmark list items as ticks */
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root .notion-callout .notion-callout ul { list-style: none; padding-left: 0; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root .notion-callout .notion-callout ul li { position: relative; padding-left: 1.6em; }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root .notion-callout .notion-callout ul li::before { content: ""; position: absolute; left: 0; top: .45em; width: .55em; height: .9em; border: solid var(--rubric-blue); border-width: 0 2px 2px 0; transform: rotate(40deg); }
+main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-root .notion-callout .notion-callout ul li::marker { content: none; }
+
+/* ---------- closing band (megaphone) ---------- */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) > .notion-callout__content { padding: 36px 40px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) h2.notion-heading { margin-top: 0; }
+
+/* ---------- buttons (quote blocks) ---------- */
+.notion-root blockquote, .notion-root .notion-quote { border: 0 !important; padding: 0 !important; margin: 20px 0 0 !important; background: transparent !important; display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; font-style: normal; font-size: 17px; }
+.notion-root .notion-quote > .notion-semantic-string { display: contents; }
+.notion-root .notion-quote a { display: inline-flex; align-items: center; padding: 12px 22px; border-radius: 0; text-decoration: none !important; opacity: 1 !important; line-height: 1.2; }
+.notion-root .notion-quote a:first-child { background: var(--rubric-blue); color: var(--rubric-blue-ink) !important; }
+.notion-root .notion-quote a:not(:first-child) { padding: 12px 0; color: var(--rubric-blue) !important; text-decoration: underline !important; text-underline-offset: 4px; }
+.notion-root .notion-quote a:hover { filter: brightness(1.1); }
+
+/* ---------- linked databases ---------- */
+.notion-root .notion-collection__header, .notion-root .notion-collection-header { display: none !important; }
+.notion-root .notion-collection-gallery { gap: 14px !important; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important; border: 0 !important; padding: 0 !important; }
+.notion-root .notion-collection-card.gallery { border: 0 !important; box-shadow: none !important; border-radius: 0 !important; background: var(--rubric-sheet) !important; overflow: hidden; }
+.notion-root .notion-collection-card__cover { aspect-ratio: 1 / 1; height: auto !important; width: 100% !important; object-fit: cover !important; border-radius: 0 !important; display: block; }
+.notion-root .notion-collection-card__content { padding: 12px 14px 14px !important; gap: 2px; }
+.notion-root .notion-collection-card .notion-property__title { font-size: 18px !important; font-weight: 400 !important; line-height: 1.25; white-space: normal; color: var(--rubric-ink); }
+.notion-root .notion-collection-card .notion-property__text { font-size: 15px !important; color: var(--rubric-muted); line-height: 1.3; white-space: normal !important; }
+.notion-root .notion-collection-card .notion-pill { background: transparent !important; padding: 0 !important; color: var(--rubric-muted) !important; font-size: 14px; }
+.notion-root .notion-collection-card .notion-property__select:last-child .notion-pill { color: var(--rubric-blue) !important; }
+.notion-root .notion-collection-table__wrapper { overflow-x: auto; }
+.notion-root table.notion-collection-table { width: 100% !important; border: 0 !important; font-size: 16px; }
+.notion-root .notion-collection-table th, .notion-root .notion-collection-table td { border: 0 !important; vertical-align: top; }
+.notion-root .notion-collection-table__head-cell { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--rubric-muted); font-weight: 400; }
+.notion-root .notion-collection-table__head-cell-icon-wrapper { display: none; }
+.notion-root .notion-collection-table__cell { padding: 12px 14px !important; white-space: normal !important; }
+.notion-root .notion-collection-table__cell.title .notion-property__title { font-size: 19px; color: var(--rubric-ink); }
+.notion-root .notion-property__relation a.notion-page { pointer-events: none; display: inline-flex; margin: 0 10px 2px 0; padding: 0; color: var(--rubric-blue); background: none; }
+.notion-root .notion-property__relation .notion-page__icon { display: none; }
+.notion-root .notion-property__relation .notion-page__title { border: 0; font-size: 15px; }
+
+/* ---------- navbar and breadcrumbs ---------- */
+.notion-navbar { background: var(--rubric-bg) !important; border: 0 !important; box-shadow: none !important; }
+.notion-breadcrumb__item, .notion-breadcrumb__title { font-family: var(--rubric-serif) !important; color: var(--rubric-muted) !important; font-size: 15px; }
+.notion-breadcrumb__item:first-child .notion-breadcrumb__icon { display: none; }
+.notion-breadcrumb__item:first-child .notion-breadcrumb__title { font-size: 0 !important; }
+.notion-breadcrumb__item:first-child .notion-breadcrumb__title::after { content: "Handbook"; font-size: 15px; }
+.rubric-cta { display: inline-flex; align-items: center; height: 34px; padding: 0 16px; margin-left: 8px; background: var(--rubric-blue); color: #fff !important; font-family: var(--rubric-serif); font-size: 15px; text-decoration: none !important; white-space: nowrap; }
+
+/* ---------- sidebar with chapter numbers ---------- */
+.super-sidebar { background: var(--rubric-surface) !important; border: 0 !important; box-shadow: none !important; }
+.super-sidebar__logo-text { font-family: var(--rubric-serif) !important; font-size: 24px !important; font-weight: 400 !important; letter-spacing: -0.02em; color: var(--rubric-ink); }
+.super-search-input { background: var(--rubric-bg) !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; font-family: var(--rubric-serif); }
+.super-navigation-menu__items { counter-reset: chapter; }
+.super-navigation-menu__items > .super-navigation-menu__list, .super-navigation-menu__items > a.super-navigation-menu__item { counter-increment: chapter; }
+.super-navigation-menu__item-title { font-family: var(--rubric-serif) !important; font-size: 16px !important; color: var(--rubric-ink) !important; }
+.super-navigation-menu__items > .super-navigation-menu__list > .super-navigation-menu__list-header .super-navigation-menu__item-title::before,
+.super-navigation-menu__items > a.super-navigation-menu__item > .super-navigation-menu__item-content .super-navigation-menu__item-title::before { content: counter(chapter); display: inline-block; width: 1.4em; color: var(--rubric-blue); }
+.super-navigation-menu__list-items { padding-left: 1.4em !important; }
+.super-navigation-menu__list-items .super-navigation-menu__item-title { font-size: 15px !important; color: var(--rubric-muted) !important; }
+.super-navigation-menu__item, .super-navigation-menu__list-header { border-radius: 0 !important; }
+.super-sidebar .super-navigation-menu__cta a { background: var(--rubric-blue) !important; color: #fff !important; border-radius: 0 !important; border: 0 !important; font-family: var(--rubric-serif); }
+
+/* ---------- floating table of contents ---------- */
+.super-floating-toc, .super-floating-toc * { font-family: var(--rubric-serif) !important; }
+main.super-content:is(.page__index, .parent-page__index):not(.page__instructions) .super-floating-toc { display: none !important; }
+
+/* ---------- password screen ---------- */
+.super-content input[type="password"] { border-radius: 0 !important; font-family: var(--rubric-serif); }
+.super-content button { border-radius: 0 !important; }
+
+/* ---------- phones ---------- */
+@media (max-width: 760px) {
+  .notion-root { font-size: 17px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content > p.notion-text { font-size: 19px; }
+  .notion-root h2.notion-heading { font-size: 26px; }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout > .notion-callout__content { grid-template-columns: minmax(0, 1fr); }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout .notion-image { grid-row: auto; width: 100% !important; max-width: 320px; margin-bottom: 12px !important; }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text { grid-column: 1; }
+  .notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/checkmark_"]), :has(> .notion-callout__icon img[src*="/book_"])) > .notion-callout__content > .notion-callout > .notion-callout__content { padding: 18px 18px 16px 62px; }
+  .notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/checkmark_"]), :has(> .notion-callout__icon img[src*="/book_"])) > .notion-callout__content > .notion-callout > .notion-callout__content::before { left: 18px; font-size: 30px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) > .notion-callout__content { padding: 26px 22px; }
+  .notion-root .notion-collection-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .rubric-cta { display: none; }
+}
+
+/* =====================================================================
+   v2 "Blueprint": the blue is printed as whole fields. Blue sidebar, every page head is a blue
+   drawing sheet with a fine grid and a rubber stamp; section numbers hang in the left margin.
+   ===================================================================== */
+/* sidebar as a blue field */
+.super-sidebar { background: var(--rubric-blue) !important; }
+.super-sidebar__logo-text { color: #fff !important; }
+.super-sidebar .super-search-input { background: rgba(255,255,255,.14) !important; color: #fff !important; }
+.super-sidebar .super-search-input p, .super-sidebar .super-search-input svg { color: #e9eefc !important; }
+.super-sidebar .super-navigation-menu__item-title { color: #fff !important; }
+.super-sidebar .super-navigation-menu__list-items .super-navigation-menu__item-title { color: #d6e0fb !important; }
+.super-sidebar .super-navigation-menu__chevron { color: #d6e0fb !important; }
+.super-sidebar .super-navigation-menu__items > .super-navigation-menu__list > .super-navigation-menu__list-header .super-navigation-menu__item-title::before,
+.super-sidebar .super-navigation-menu__items > a.super-navigation-menu__item > .super-navigation-menu__item-content .super-navigation-menu__item-title::before { color: var(--rubric-bg); }
+.super-sidebar .super-navigation-menu__item:hover, .super-sidebar .super-navigation-menu__list-header:hover { background: rgba(255,255,255,.12) !important; }
+.super-sidebar .super-navigation-menu__cta a { background: var(--rubric-bg) !important; color: var(--rubric-ink) !important; }
+
+/* page head as a blue drawing sheet */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content {
+  position: relative; background-color: var(--rubric-blue); color: #fff; padding: 56px 48px 44px;
+  background-image: linear-gradient(rgba(255,255,255,.09) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.09) 1px, transparent 1px);
+  background-size: 24px 24px; background-position: -1px -1px;
+}
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { color: #fff; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading::before { color: var(--rubric-bg); opacity: .75; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content > p.notion-text { color: #e9eefc !important; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content > p.notion-text + p.notion-text { color: #fff !important; font-style: italic; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-quote a:first-child { background: var(--rubric-bg); color: var(--rubric-ink) !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-quote a:not(:first-child) { color: #fff !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-image { max-width: 360px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-image img { mix-blend-mode: luminosity; filter: contrast(1.05); }
+/* the stamp: a rubber stamp in the sheet's top right corner */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) {
+  float: right; margin: -28px -20px 18px 24px; transform: rotate(-4deg); border: 2px solid #fff !important; padding: 8px 14px !important; max-width: 220px;
+}
+.notion-root .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) p.notion-text { color: #fff; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; line-height: 1.45; text-align: center; }
+/* hanging section numbers */
+.notion-root h2.notion-heading { position: relative; }
+.notion-root h2.notion-heading::before { position: absolute; right: 100%; top: .12em; margin-right: 22px; font-size: 22px; white-space: nowrap; }
+/* cards and bands */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout > .notion-callout__content,
+.notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/checkmark_"]), :has(> .notion-callout__icon img[src*="/book_"])) > .notion-callout__content > .notion-callout > .notion-callout__content,
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) > .notion-callout__content { background: var(--rubric-sheet); }
+.notion-root .notion-callout:has(> .notion-callout__icon img[src*="/light-bulb_"]) { background: var(--rubric-surface) !important; }
+.notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/checkmark_"]), :has(> .notion-callout__icon img[src*="/book_"])) > .notion-callout__content > .notion-callout > .notion-callout__content::before {
+  top: 20px; left: 22px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: var(--rubric-blue); color: #fff; font-size: 22px;
+}
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) > .notion-callout__content { background: var(--rubric-ink); color: var(--rubric-bg); }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) h2.notion-heading { color: #fff; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) p.notion-text { color: var(--rubric-bg); }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-quote a:not(:first-child) { color: #fff !important; }
+.notion-root table.notion-table tr:nth-child(even) td, .notion-root .notion-collection-table__body tr:nth-child(odd) td { background: var(--rubric-sheet); }
+/* home chapter cards as a two-column sheet grid */
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > :not(.notion-callout) { grid-column: 1 / -1; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout { margin: 0; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout > .notion-callout__content { display: block; height: 100%; padding: 0 0 20px; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout .notion-image { width: 100% !important; margin: 0 0 16px !important; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text { padding: 0 20px; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text:first-of-type { order: 2; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout > .notion-callout__content { display: flex; flex-direction: column; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout .notion-image { order: 1; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text + p.notion-text { order: 3; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout:last-child { grid-column: 1 / -1; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout:last-child .notion-image { max-width: 50%; }
+@media (max-width: 1180px) {
+  .notion-root h2.notion-heading::before { position: static; display: inline; margin-right: .45em; font-size: inherit; }
+}
+@media (max-width: 760px) {
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) > .notion-callout__content { padding: 40px 22px 32px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) { float: none; margin: 0 0 22px; transform: rotate(-2deg); }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content { grid-template-columns: minmax(0, 1fr); }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout:last-child .notion-image { max-width: 100%; }
+}
+
+/* ---------- fixes after the first look ---------- */
+.super-navigation-menu__list-items[data-state="open"] { height: auto !important; overflow: visible !important; animation: none !important; }
+.notion-root > .notion-callout, .notion-root > .notion-callout > .notion-callout__content { overflow: visible !important; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text:not(:first-of-type)::first-line { font-size: 17px; color: var(--rubric-muted); line-height: 1.55; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text:not(:first-of-type) a { color: var(--rubric-blue); text-decoration: underline; font-size: 16px; }
+body:has(main.super-content:is(.page__index, .parent-page__index):not(.page__instructions)) .super-floating-toc { display: none !important; }
+.super-sidebar__heading, .super-sidebar__content { background: transparent !important; }
+.super-navigation-menu__item.active, .super-navigation-menu__item[aria-current="page"], .super-navigation-menu__item.selected { background: var(--rubric-bg) !important; }
+.notion-root table.notion-collection-table { table-layout: fixed; }
+.notion-root .notion-collection-table__head-cell { width: auto !important; }
+.notion-root .notion-collection-table th:nth-child(1) { width: 26% !important; }
+.notion-root .notion-collection-table th:nth-child(2) { width: 46% !important; }
+.notion-root .notion-collection-table th:nth-child(3) { width: 28% !important; }
+.notion-root .notion-property__relation { display: flex; flex-wrap: wrap; }
+@media (max-width: 760px) {
+  .notion-root table.notion-collection-table { table-layout: auto; min-width: 560px; }
+}
+.super-sidebar .super-navigation-menu__item.active .super-navigation-menu__item-title { color: var(--rubric-ink) !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) { max-width: 270px; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text:not(:first-of-type) { order: 3; padding-top: 0; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-callout p.notion-text:first-of-type { margin-bottom: 4px; }
+.super-sidebar .super-navigation-menu__cta a *, .super-sidebar .super-navigation-menu__cta a { color: var(--rubric-ink) !important; }
+.notion-breadcrumb__item:first-child .notion-breadcrumb__title { overflow: visible !important; height: auto !important; line-height: 20px !important; }
+.notion-breadcrumb__item:first-child .notion-breadcrumb__title::after { display: inline-block; line-height: 20px; vertical-align: middle; }
+@media (max-width: 760px) {
+  .notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/checkmark_"]), :has(> .notion-callout__icon img[src*="/book_"])) > .notion-callout__content > .notion-callout > .notion-callout__content { padding-left: 78px; }
+  .notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/checkmark_"]), :has(> .notion-callout__icon img[src*="/book_"])) > .notion-callout__content > .notion-callout > .notion-callout__content::before { left: 20px; width: 38px; height: 38px; font-size: 20px; }
+}
+@media (max-width: 760px) {
+  .notion-root table.notion-collection-table, .notion-root .notion-collection-table tbody, .notion-root .notion-collection-table tr, .notion-root .notion-collection-table td { display: block; width: 100% !important; min-width: 0 !important; }
+  .notion-root .notion-collection-table thead { display: none; }
+  .notion-root .notion-collection-table td { padding: 4px 16px !important; }
+  .notion-root .notion-collection-table tr { padding: 12px 0; }
+}
+
+/* ---------- template fixes ---------- */
+/* home chapter grid: an odd last card spans both columns as a wide card (drawing left, text right),
+   an even last card stays in its column */
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout:last-child:nth-child(even of .notion-callout) { grid-column: auto; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout:last-child:nth-child(even of .notion-callout) .notion-image { max-width: 100%; }
+@media (min-width: 761px) {
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout:last-child:nth-child(odd of .notion-callout) > .notion-callout__content {
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: auto auto 1fr; column-gap: 0; align-content: start; padding: 0;
+  }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout:last-child:nth-child(odd of .notion-callout) .notion-image {
+    grid-column: 1; grid-row: 1 / span 3; max-width: none; width: 100% !important; margin: 0 !important; align-self: stretch;
+  }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout:last-child:nth-child(odd of .notion-callout) .notion-image img { height: 100%; object-fit: cover; }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout:last-child:nth-child(odd of .notion-callout) p.notion-text { grid-column: 2; padding: 0 24px; }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout:last-child:nth-child(odd of .notion-callout) p.notion-text:first-of-type { grid-row: 1; padding-top: 28px; }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) > .notion-callout__content > .notion-callout:last-child:nth-child(odd of .notion-callout) p.notion-text:not(:first-of-type) { grid-row: 2; padding-bottom: 24px; }
+}
+/* headings never break inside a word */
+.notion-root h1.notion-heading, .notion-root h2.notion-heading, .notion-root h3.notion-heading { overflow-wrap: normal !important; word-break: normal !important; hyphens: none !important; }
+/* the navbar button copied from the sidebar call to action by rubric.js */
+.rubric-cta:hover { filter: brightness(1.1); }
+
+/* =====================================================================
+   Template pages: the Instructions child page and its link block
+   ===================================================================== */
+.notion-root > a.notion-page { display: none; }
+.page__instructions .notion-root { max-width: 760px; margin: 0 auto; padding-bottom: 64px; }
+.page__instructions .notion-root h1.notion-heading { font-size: clamp(34px, 1.8rem + 1.6vw, 48px); margin: 24px 0 16px; }
+.page__instructions .notion-root h2.notion-heading { margin: 48px 0 14px; }
+.page__instructions .notion-root h3.notion-heading { margin: 32px 0 10px; }
+.page__instructions .notion-root .notion-code { border-radius: 12px; font-size: 14px; margin: 12px 0 20px; }
+.page__instructions .notion-root .notion-list li { margin: 0 0 8px; }
+.page__instructions .notion-root .notion-code pre, .page__instructions .notion-root .notion-code code { white-space: pre-wrap !important; word-break: break-all; }
