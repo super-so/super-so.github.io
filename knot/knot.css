@@ -158,6 +158,10 @@ html, body { background: var(--knot-bg); }
 .page__instructions .notion-root h2.notion-heading { font-size: clamp(26px, 4vw, 34px); }
 /* headings never break inside a word */
 .notion-root h1.notion-heading, .notion-root h2.notion-heading, .notion-root h3.notion-heading { word-break: normal; overflow-wrap: normal; hyphens: none; text-wrap: balance; }
+/* Instructions: lists and small headings at reading size, the preview image framed */
+.page__instructions .notion-root li, .page__instructions .notion-root .notion-list-item { font-size: 17px; line-height: 1.55; }
+.page__instructions .notion-root h3.notion-heading { font-size: 22px; }
+.page__instructions .notion-root .notion-image img { border: 1px solid #cfc8ba; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
