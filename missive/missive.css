@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,300..500&family=Albert+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+/* =====================================================================
+   MISSIVE - newsletter archive template for writers and personal letters for Super (missive-template.super.site)
+   Sections = top-level callouts keyed by their Notion icon; quote blocks = button rows (the first link is the solid button).
+   Kitchen ledger: a deep green masthead field, seasons as a sticky rail (a drawn sprig + the season name) beside tone-card
+   letter rows, a three-up recipe gallery, letters in a 680px reading column with a drop cap on a green square.
+   Icons: rocket hero - user about block - megaphone subscribe band - checkmark recipe card on a letter page.
+   Seasons: a Season select grouped in a list view; the pill colour picks the sprig and the order (orange autumn, yellow summer,
+   green spring, blue winter). Imbue + Albert Sans, rose-grey ground, round buttons.
+   Source and docs: https://github.com/super-so/super-so.github.io
+   ===================================================================== */
+:root {
+  --missive-paper: #ebe5e3; --missive-surf: #e1dad7; --missive-ink: #2b2622; --missive-muted: #6a615d; --missive-green: #0f7d45; --missive-green-ink: #ffffff;
+  --missive-tint: #d6e3d8; --missive-deep: #0b5c33;
+  --missive-disp: "Imbue", "Didot", Georgia, serif; --missive-text: "Albert Sans", system-ui, sans-serif;
+  --missive-sprig-spring: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120' fill='none' stroke='%230f7d45' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M28 112 Q40 50 92 14'/%3E%3Cpath d='M40.0 86.0 C38.2 73.5 29.2 68.3 17.5 73.0 C19.3 85.5 28.3 90.7 40.0 86.0Z' fill='%23d6e3d8'/%3E%3Cpath d='M40.0 86.0 L22.0 75.6' fill='none' stroke-width='1.5'/%3E%3Cpath d='M52.0 66.0 C61.9 72.1 70.9 68.8 74.6 57.8 C64.7 51.7 55.6 55.0 52.0 66.0Z' fill='%23d6e3d8'/%3E%3Cpath d='M52.0 66.0 L70.0 59.4' fill='none' stroke-width='1.5'/%3E%3Cpath d='M60.0 52.0 C56.7 41.9 48.4 38.9 39.3 44.5 C42.7 54.6 50.9 57.6 60.0 52.0Z' fill='%23d6e3d8'/%3E%3Cpath d='M60.0 52.0 L43.5 46.0' fill='none' stroke-width='1.5'/%3E%3Ccircle cx='99.0' cy='16.0' r='4.3' fill='%23f3d6dc'/%3E%3Ccircle cx='94.2' cy='22.7' r='4.3' fill='%23f3d6dc'/%3E%3Ccircle cx='86.3' cy='20.1' r='4.3' fill='%23f3d6dc'/%3E%3Ccircle cx='86.3' cy='11.9' r='4.3' fill='%23f3d6dc'/%3E%3Ccircle cx='94.2' cy='9.3' r='4.3' fill='%23f3d6dc'/%3E%3Ccircle cx='92' cy='16' r='2' fill='%23e8b04a' stroke='none'/%3E%3Ccircle cx='78.0' cy='34.0' r='3.7' fill='%23f3d6dc'/%3E%3Ccircle cx='73.9' cy='39.7' r='3.7' fill='%23f3d6dc'/%3E%3Ccircle cx='67.1' cy='37.5' r='3.7' fill='%23f3d6dc'/%3E%3Ccircle cx='67.1' cy='30.5' r='3.7' fill='%23f3d6dc'/%3E%3Ccircle cx='73.9' cy='28.3' r='3.7' fill='%23f3d6dc'/%3E%3Ccircle cx='72' cy='34' r='2' fill='%23e8b04a' stroke='none'/%3E%3Ccircle cx='53.0' cy='74.0' r='3.1' fill='%23f3d6dc'/%3E%3Ccircle cx='49.5' cy='78.8' r='3.1' fill='%23f3d6dc'/%3E%3Ccircle cx='44.0' cy='76.9' r='3.1' fill='%23f3d6dc'/%3E%3Ccircle cx='44.0' cy='71.1' r='3.1' fill='%23f3d6dc'/%3E%3Ccircle cx='49.5' cy='69.2' r='3.1' fill='%23f3d6dc'/%3E%3Ccircle cx='48' cy='74' r='2' fill='%23e8b04a' stroke='none'/%3E%3Ccircle cx='89.0' cy='52.0' r='3.1' fill='%23f3d6dc'/%3E%3Ccircle cx='85.5' cy='56.8' r='3.1' fill='%23f3d6dc'/%3E%3Ccircle cx='80.0' cy='54.9' r='3.1' fill='%23f3d6dc'/%3E%3Ccircle cx='80.0' cy='49.1' r='3.1' fill='%23f3d6dc'/%3E%3Ccircle cx='85.5' cy='47.2' r='3.1' fill='%23f3d6dc'/%3E%3Ccircle cx='84' cy='52' r='2' fill='%23e8b04a' stroke='none'/%3E%3C/svg%3E"); --missive-sprig-summer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120' fill='none' stroke='%230f7d45' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M60 114 Q56 60 64 20'/%3E%3Cellipse cx='67.0' cy='30' rx='5' ry='8' transform='rotate%2825 67.0 30%29' fill='%23efd58a'/%3E%3Cellipse cx='53.2' cy='38' rx='5' ry='8' transform='rotate%28-25 53.0 38%29' fill='%23efd58a'/%3E%3Cellipse cx='67.4' cy='46' rx='5' ry='8' transform='rotate%2825 67.0 46%29' fill='%23efd58a'/%3E%3Cellipse cx='53.6' cy='54' rx='5' ry='8' transform='rotate%28-25 53.0 54%29' fill='%23efd58a'/%3E%3Cellipse cx='67.8' cy='62' rx='5' ry='8' transform='rotate%2825 67.0 62%29' fill='%23efd58a'/%3E%3Cellipse cx='54.0' cy='70' rx='5' ry='8' transform='rotate%28-25 53.0 70%29' fill='%23efd58a'/%3E%3Cellipse cx='68.2' cy='78' rx='5' ry='8' transform='rotate%2825 67.0 78%29' fill='%23efd58a'/%3E%3Cpath d='M64 20 L66 4 M60 24 L52 8 M68 24 L78 10' stroke-width='1.5'/%3E%3Cpath d='M58.0 96.0 C58.4 81.5 49.2 73.8 35.0 76.7 C34.6 91.2 43.8 98.9 58.0 96.0Z' fill='%23d6e3d8'/%3E%3Cpath d='M58.0 96.0 L39.6 80.6' fill='none' stroke-width='1.5'/%3E%3Cpath d='M58.0 92.0 C71.3 94.8 79.9 87.6 79.4 74.0 C66.2 71.3 57.6 78.4 58.0 92.0Z' fill='%23d6e3d8'/%3E%3Cpath d='M58.0 92.0 L75.2 77.6' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");
+  --missive-sprig-autumn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120' fill='none' stroke='%230f7d45' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M30 112 Q44 60 86 24'/%3E%3Cpath d='M44.0 82.0 C42.3 64.5 30.5 57.7 14.6 65.0 C16.2 82.5 28.0 89.3 44.0 82.0Z' fill='%23f2c58f'/%3E%3Cpath d='M44.0 82.0 L20.4 68.4' fill='none' stroke-width='1.5'/%3E%3Cpath d='M56.0 58.0 C71.0 64.8 82.1 58.4 83.7 42.0 C68.7 35.2 57.6 41.6 56.0 58.0Z' fill='%23e8a24f'/%3E%3Cpath d='M56.0 58.0 L78.2 45.2' fill='none' stroke-width='1.5'/%3E%3Cpath d='M70.0 40.0 C71.1 25.6 62.5 18.4 48.6 22.0 C47.4 36.4 56.0 43.6 70.0 40.0Z' fill='%23f2c58f'/%3E%3Cpath d='M70.0 40.0 L52.8 25.6' fill='none' stroke-width='1.5'/%3E%3Ccircle cx='88' cy='22' r='5' fill='%23c75a3a'/%3E%3Ccircle cx='80' cy='30' r='5' fill='%23c75a3a'/%3E%3Ccircle cx='92' cy='32' r='5' fill='%23c75a3a'/%3E%3C/svg%3E"); --missive-sprig-winter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120' fill='none' stroke='%230f7d45' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M60 116 Q60 60 60 10'/%3E%3Cpath d='M60 96 L30 75.0 M60 96 L90 75.0' stroke-width='2'/%3E%3Cpath d='M60 84 L32 64.4 M60 84 L88 64.4' stroke-width='2'/%3E%3Cpath d='M60 72 L34 53.8 M60 72 L86 53.8' stroke-width='2'/%3E%3Cpath d='M60 60 L38 44.6 M60 60 L82 44.6' stroke-width='2'/%3E%3Cpath d='M60 48 L42 35.4 M60 48 L78 35.4' stroke-width='2'/%3E%3Cpath d='M60 36 L46 26.200000000000003 M60 36 L74 26.200000000000003' stroke-width='2'/%3E%3Cpath d='M60 24 L50 17.0 M60 24 L70 17.0' stroke-width='2'/%3E%3Ccircle cx='40' cy='100' r='4.5' fill='%23b8c9d8'/%3E%3Ccircle cx='48' cy='106' r='4.5' fill='%23b8c9d8'/%3E%3Ccircle cx='86' cy='92' r='4.5' fill='%23b8c9d8'/%3E%3C/svg%3E");
+}
+body, .super-content, .notion-root, .super-navbar, .super-footer { font-family: var(--missive-text) !important; }
+body { background: var(--missive-paper); color: var(--missive-ink); }
+.notion-root { font-size: 18px; line-height: 1.62; color: var(--missive-ink); }
+.notion-root p, .notion-root li { color: var(--missive-ink); }
+.notion-root a.notion-link { color: var(--missive-ink); text-decoration-color: var(--missive-green); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+
+/* chrome */
+.super-navbar { background: var(--missive-paper) !important; border: 0 !important; box-shadow: none !important; }
+.super-navbar__logo-text { font-family: var(--missive-disp) !important; text-transform: uppercase; font-size: 30px !important; letter-spacing: 0.01em; line-height: 1; color: var(--missive-ink); font-weight: 400; }
+.super-navbar__item { color: var(--missive-ink) !important; font-weight: 500; font-size: 16px; }
+.super-navbar__cta { background: var(--missive-green) !important; color: var(--missive-green-ink) !important; border-radius: 999px !important; border: 0 !important; font-weight: 600; box-shadow: none !important; }
+.super-footer { background: var(--missive-paper); border: 0 !important; }
+.super-footer, .super-footer * { color: var(--missive-muted); }
+
+/* headings: Imbue, uppercase display */
+.notion-root .notion-heading, .notion-header__title { font-family: var(--missive-disp) !important; font-weight: 400 !important; color: var(--missive-ink); font-optical-sizing: auto; }
+.notion-root h1.notion-heading { text-transform: uppercase; letter-spacing: -0.01em; line-height: 0.9; }
+.notion-root h2.notion-heading { text-transform: uppercase; letter-spacing: -0.005em; line-height: 0.95; font-size: clamp(38px, 5vw, 54px); margin: 0 0 18px; }
+.notion-root h3.notion-heading { font-size: 26px; line-height: 1.05; margin: 26px 0 8px; }
+
+/* callouts as sections */
+.notion-root > .notion-callout > .notion-callout__icon { display: none; }
+.notion-root > .notion-callout { border: 0 !important; background: transparent !important; padding: 0 !important; margin: 0; box-shadow: none !important; border-radius: 0 !important; }
+.notion-root > .notion-callout > .notion-callout__content { padding: 0; margin: 0; width: 100%; max-width: none; }
+.notion-root > .notion-callout + .notion-callout, .notion-root > .notion-collection + .notion-callout { margin-top: 96px; }
+.notion-root .notion-callout__content > span.notion-semantic-string:empty { display: none; }
+.notion-root figcaption { display: none; }
+.notion-root > a.notion-page, .notion-root > .notion-page, .notion-root > .notion-collection:not(.inline) { display: none !important; }
+
+/* page headers only on letters */
+.super-content:not(:has(> .notion-root > .notion-page__properties)) .notion-header { display: none !important; }
+
+/* columns */
+.notion-root .notion-column { flex: 1 1 0 !important; width: auto !important; margin: 0 !important; min-width: 0; }
+
+/* buttons from quote blocks: one solid, the rest tone, fully round */
+.notion-root .notion-quote { border: 0 !important; padding: 0 !important; background: transparent; display: flex; flex-wrap: wrap; gap: 12px; font-style: normal; margin-top: 28px; font-size: 17px; }
+.notion-root .notion-quote > .notion-semantic-string { display: contents; }
+.notion-root .notion-quote a { display: inline-flex; align-items: center; padding: 13px 26px; border-radius: 999px; background: var(--missive-surf); color: var(--missive-ink) !important; text-decoration: none !important; font-weight: 600; line-height: 1.2; opacity: 1; }
+.notion-root .notion-quote a:first-child { background: var(--missive-green); color: var(--missive-green-ink) !important; }
+.notion-root .notion-quote a:hover { filter: brightness(0.95); }
+.notion-root .notion-quote a * { color: inherit !important; }
+.notion-root .notion-quote .notion-page-mention__icon, .notion-root .notion-quote svg { display: none; }
+
+/* placeholder line after a button row */
+.notion-root .notion-quote + p.notion-text { margin-top: 22px; font-size: 14px; line-height: 1.45; color: var(--missive-muted); font-style: italic; }
+
+/* hero */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(56px, 11vw, 112px); margin: 0 0 22px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) p.notion-text { font-size: 21px; line-height: 1.5; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-image img { width: 100%; height: auto; object-fit: contain; }
+
+/* home: "The letters" intro */
+.page__index .notion-root > h2.notion-heading { margin-top: 104px; }
+.page__index .notion-root > h2.notion-heading + p.notion-text { color: var(--missive-muted); max-width: 34em; }
+
+/* the view switcher as tabs (By season / Recipes) */
+.notion-root .notion-collection { overflow: visible !important; margin-top: 28px; }
+.notion-root .notion-collection__header-wrapper { border: 0 !important; padding: 0 !important; margin: 0 0 12px; }
+.notion-root .notion-collection .notion-dropdown__button { display: none !important; }
+.notion-root .notion-collection .notion-dropdown__menu-wrapper { position: static !important; }
+.notion-root .notion-collection .notion-dropdown__menu, .notion-root .notion-collection .notion-dropdown__menu.close, .notion-root .notion-collection .notion-dropdown__menu.initial-state { display: block !important; position: static !important; opacity: 1 !important; visibility: visible !important; transform: none !important; pointer-events: auto !important; background: transparent !important; box-shadow: none !important; border: 0 !important; padding: 0 !important; min-width: 0 !important; width: auto !important; max-height: none !important; }
+.notion-root .notion-collection .notion-dropdown__menu-header, .notion-root .notion-collection .notion-dropdown__option-icon { display: none !important; }
+.notion-root .notion-collection .notion-dropdown__option-list { display: flex !important; flex-wrap: wrap; gap: 8px; padding: 0 !important; }
+.notion-root .notion-collection .notion-dropdown__option { display: inline-flex !important; align-items: center; margin: 0 !important; cursor: pointer; padding: 9px 20px !important; border-radius: 999px; background: var(--missive-surf) !important; }
+.notion-root .notion-collection .notion-dropdown__option.active { background: var(--missive-ink) !important; }
+.notion-root .notion-collection .notion-dropdown__option p { margin: 0; font-size: 15px; font-weight: 600; color: var(--missive-ink); }
+.notion-root .notion-collection .notion-dropdown__option.active p { color: var(--missive-paper); }
+
+/* season groups: newest season first (Autumn, Summer, Spring, Winter), a drawn sprig per group */
+.notion-root .notion-collection-group__list { display: flex; flex-direction: column; width: 100%; }
+.notion-root .notion-collection-group__header { display: none; }
+.notion-root .notion-collection-group__section { width: 100%; order: 5; }
+.notion-root .notion-collection-group__section:has(.pill-orange) { order: 1; --missive-sprig: var(--missive-sprig-autumn); }
+.notion-root .notion-collection-group__section:has(.pill-yellow) { order: 2; --missive-sprig: var(--missive-sprig-summer); }
+.notion-root .notion-collection-group__section:has(.pill-green) { order: 3; --missive-sprig: var(--missive-sprig-spring); }
+.notion-root .notion-collection-group__section:has(.pill-blue) { order: 4; --missive-sprig: var(--missive-sprig-winter); }
+.notion-root .notion-collection-group__section-toggle { display: none !important; }
+.notion-root .notion-collection-group__section-header { border: 0 !important; padding: 0 !important; margin: 0; display: flex; align-items: center; gap: 18px; }
+.notion-root .notion-collection-group__section-header::before { content: ""; flex: none; width: 76px; height: 76px; background: var(--missive-sprig) center / contain no-repeat; }
+.notion-root .notion-collection-group__section-header .notion-property { padding: 0 !important; height: auto; }
+.notion-root .notion-collection-group__section-header .notion-pill { background: transparent !important; color: var(--missive-ink) !important; font-family: var(--missive-disp); font-size: clamp(48px, 7vw, 72px) !important; line-height: 0.9; text-transform: uppercase; padding: 0 !important; margin: 0 !important; height: auto !important; font-weight: 400; letter-spacing: -0.005em; }
+
+/* letter rows */
+.notion-root .notion-collection-list { overflow: visible !important; border: 0 !important; padding: 0 !important; }
+.notion-root .notion-collection-list__item { display: grid !important; grid-template-columns: minmax(0, 1fr) auto; column-gap: 24px; align-items: baseline; padding: 22px 0 !important; margin: 0 !important; border: 0 !important; border-radius: 0 !important; background: transparent !important; overflow: visible; }
+.notion-root .notion-collection-list__item:hover { background: transparent !important; }
+.notion-root .notion-collection-list__item-content { display: contents !important; }
+.notion-root .notion-collection-list__item > .notion-property__title { grid-column: 1; grid-row: 1; min-width: 0 !important; max-width: none !important; overflow: visible !important; white-space: normal !important; font-family: var(--missive-disp); font-size: 34px; line-height: 1.02; color: var(--missive-ink); display: block; padding: 0 !important; }
+.notion-root .notion-collection-list__item > .notion-property__title .notion-property__title__icon-wrapper { display: none !important; }
+.notion-root .notion-collection-list__item:hover > .notion-property__title { color: var(--missive-green); }
+.notion-root .notion-collection-list__item-content > * { max-width: none !important; white-space: normal !important; margin: 0 !important; min-width: 0; padding: 0 !important; overflow: visible !important; text-overflow: clip !important; }
+.notion-root .notion-collection-list__item-content > .notion-property__text { grid-column: 1 / -1; grid-row: 2; font-size: 17px; line-height: 1.5; color: var(--missive-muted); margin-top: 8px !important; }
+.notion-root .notion-collection-list__item-content > .notion-property__date { grid-column: 2; grid-row: 1; font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--missive-green); white-space: nowrap !important; }
+
+/* recipe gallery (home tab and /recipes): drawing + recipe name, no title */
+.notion-root .notion-collection-gallery { display: grid !important; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 28px 24px !important; padding: 0 !important; border: 0 !important; }
+.notion-root .notion-collection-card { border: 0 !important; box-shadow: none !important; border-radius: 0 !important; background: transparent !important; overflow: visible !important; margin: 0 !important; width: auto !important; }
+.notion-root .notion-collection-card__cover { width: 100% !important; height: auto !important; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 0 !important; background: var(--missive-surf); }
+.notion-root .notion-collection-card__content { padding: 12px 0 0 !important; }
+.notion-root .notion-collection-card__property { font-family: var(--missive-disp); font-size: 25px !important; line-height: 1.05; color: var(--missive-ink) !important; white-space: normal !important; overflow: visible !important; }
+.notion-root .notion-collection-card:hover .notion-collection-card__property { color: var(--missive-green) !important; }
+
+/* letter pages */
+.super-content:has(> .notion-root > .notion-page__properties) .notion-header__title { font-size: clamp(46px, 8vw, 84px); line-height: 0.92; text-transform: uppercase; letter-spacing: -0.01em; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-page__properties { display: flex !important; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin: 0 0 40px !important; padding: 0 !important; border: 0 !important; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-page__property { display: flex; align-items: center; margin: 0 !important; padding: 0 !important; border: 0 !important; min-height: 0; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-page__property-name-wrapper, .super-content:has(> .notion-root > .notion-page__properties) .notion-page__properties > .notion-divider { display: none !important; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-page__property:has(.notion-property__text) { display: none !important; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-page__property .notion-property__date { font-size: 15px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--missive-green); padding: 0 !important; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-page__property .notion-pill { background: var(--missive-surf) !important; color: var(--missive-ink) !important; border-radius: 999px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 12px !important; height: auto !important; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-page__property:has(.notion-property__file) { order: 9; flex: 1 1 100%; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-property__file { width: 100%; padding: 0 !important; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-property__file a { display: block; width: 100%; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-property__file a > div { position: relative; width: 100% !important; height: auto !important; aspect-ratio: 4 / 3; margin: 0 !important; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-property__file img { object-fit: contain; }
+
+/* drop cap on the first paragraph of every letter */
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > p.notion-text:nth-child(1 of p.notion-text)::first-letter {
+  float: left; font-family: var(--missive-disp); font-size: 5.6em; line-height: 0.78; padding: 0.06em 0.1em 0 0; color: var(--missive-green); text-transform: uppercase; font-weight: 400; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > p.notion-text { font-size: 19px; line-height: 1.7; margin: 0 0 1.05em; }
+
+/* recipe card: set apart in a green tone step */
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) { margin: 56px 0 48px; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) > .notion-callout__content > p.notion-text:first-of-type { font-size: 16px; color: var(--missive-muted); margin: 0 0 6px; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) > .notion-callout__content > p.notion-text:first-of-type::first-line { font-family: var(--missive-disp); font-size: 40px; line-height: 1.25; color: var(--missive-ink); text-transform: uppercase; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) li { margin: 4px 0; font-size: 17px; line-height: 1.5; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) h3.notion-heading { text-transform: uppercase; font-size: 24px; }
+
+/* sign-off and previous / next */
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > p.notion-text:has(+ .notion-quote) { font-style: italic; font-size: 19px; margin-top: 28px; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-quote { justify-content: space-between; margin-top: 48px; }
+
+/* about and megaphone */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) h2.notion-heading:not(:first-of-type) { margin-top: 40px; }
+
+@media (max-width: 720px) {
+  .notion-root { font-size: 17px; }
+  .notion-root .notion-column-list { flex-wrap: wrap; }
+  .notion-root .notion-column { flex: 1 1 100% !important; }
+  .notion-root .notion-collection-group__section-header::before { width: 56px; height: 56px; }
+  .notion-root .notion-collection-list__item { grid-template-columns: minmax(0, 1fr); }
+  .notion-root .notion-collection-list__item-content > .notion-property__date { grid-column: 1; grid-row: 1; }
+  .notion-root .notion-collection-list__item > .notion-property__title { grid-row: 2; font-size: 29px; margin-top: 6px !important; }
+  .notion-root .notion-collection-list__item-content > .notion-property__text { grid-row: 3; }
+  .notion-root .notion-collection-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 14px !important; }
+  .notion-root .notion-collection-card__property { font-size: 20px !important; }
+  .super-content:has(> .notion-root > .notion-page__properties) .notion-root > p.notion-text { font-size: 18px; }
+  .super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-quote { justify-content: flex-start; }
+}
+
+/* ===== v2 "Kitchen ledger": a deep green masthead field, seasons as a sticky rail (sprig + name) beside tone-card
+   rows, three-up recipe drawings, letters in a 680 reading column with a solid green recipe card. Frame 960. ===== */
+
+/* hero on a full-bleed green field */
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) { background: var(--missive-green) !important; box-shadow: 0 0 0 100vmax var(--missive-green) !important; clip-path: inset(0 -100vmax); padding: 64px 0 72px !important; margin-top: -8px !important; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) * { color: var(--missive-paper) !important; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column-list { display: grid !important; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 56px; align-items: center; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-image { margin: 0 !important; background: var(--missive-paper); padding: 18px; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(56px, 8.4vw, 104px); }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-quote a { background: rgba(255,255,255,0.14); }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-quote a:first-child { background: var(--missive-paper); }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-quote a:first-child, .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-quote a:first-child * { color: var(--missive-ink) !important; }
+
+/* inner heroes on a tone field */
+main.super-content:not(.page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) { background: var(--missive-surf) !important; box-shadow: 0 0 0 100vmax var(--missive-surf) !important; clip-path: inset(0 -100vmax); padding: 56px 0 60px !important; margin-top: -8px !important; }
+main.super-content:not(.page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) p.notion-text { max-width: 32em; }
+main.super-content:not(.page__index) .notion-root > .notion-collection { margin-top: 64px; }
+.notion-root .notion-collection-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 28px !important; }
+.notion-root .notion-collection-card__cover { background: var(--missive-surf); padding: 10px; box-sizing: border-box; }
+
+/* seasons: sticky rail (sprig + name) beside the rows */
+.notion-root .notion-collection-group__section { display: grid; grid-template-columns: 220px minmax(0, 1fr); column-gap: 48px; align-items: start; margin-top: 56px; }
+.notion-root .notion-collection-group__section-header { grid-column: 1; flex-direction: column; align-items: flex-start; gap: 12px; position: sticky; top: 88px; }
+.notion-root .notion-collection-group__section-header::before { width: 110px; height: 110px; }
+.notion-root .notion-collection-group__section > .notion-collection-list { grid-column: 2; display: flex !important; flex-direction: column; gap: 8px; }
+.notion-root .notion-collection-list__item { background: var(--missive-surf) !important; padding: 26px 30px !important; }
+.notion-root .notion-collection-list__item:hover { background: var(--missive-tint) !important; }
+.notion-root .notion-collection-list__item:hover > .notion-property__title { color: var(--missive-ink); }
+
+/* about block and closing band */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) > .notion-callout__content { display: block; max-width: 680px; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) { background: var(--missive-surf) !important; box-shadow: 0 0 0 100vmax var(--missive-surf) !important; clip-path: inset(0 -100vmax); padding: 72px 0 !important; margin-top: 120px !important; margin-bottom: -80px !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) h2.notion-heading { color: var(--missive-green); }
+.super-footer { padding-top: 120px; }
+
+/* letters: a 680 reading column; drop cap on a green square; solid green recipe card */
+.super-content:has(> .notion-root > .notion-page__properties) .notion-header__content, .super-content:has(> .notion-root > .notion-page__properties) .notion-root { max-width: 680px !important; margin-left: auto !important; margin-right: auto !important; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > p.notion-text:nth-child(1 of p.notion-text)::first-letter { background: var(--missive-green); color: var(--missive-paper); font-size: 4.6em; line-height: 1; padding: 0.08em 0.14em 0.02em; margin: 0.08em 0.16em 0 0; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-property__file a > div { background: var(--missive-surf); }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) > .notion-callout__content { background: var(--missive-green); padding: 44px 48px 40px !important; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) * { color: #fff !important; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) > .notion-callout__content > p.notion-text:first-of-type { color: rgba(255,255,255,0.78) !important; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) > .notion-callout__content > p.notion-text:first-of-type::first-line { color: #fff; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) li::marker { color: var(--missive-tint); }
+
+@media (max-width: 820px) {
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column-list { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column:first-child { max-width: 260px; }
+  .notion-root .notion-collection-group__section { grid-template-columns: minmax(0, 1fr); }
+  .notion-root .notion-collection-group__section-header { position: static; flex-direction: row; align-items: center; margin-bottom: 16px; }
+  .notion-root .notion-collection-group__section-header::before { width: 64px; height: 64px; }
+  .notion-root .notion-collection-group__section > .notion-collection-list { grid-column: 1; }
+  .notion-root .notion-collection-list__item { padding: 22px 20px !important; }
+  .notion-root .notion-collection-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 14px !important; }
+  .super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) > .notion-callout__content { padding: 32px 22px !important; }
+}
+
+/* fixes after the first look */
+.notion-root .notion-quote a, .notion-root .notion-quote a *, .notion-root .notion-collection .notion-dropdown__option p, .super-navbar__cta { font-family: var(--missive-text) !important; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) > .notion-callout__content > p.notion-text:first-of-type::first-line { font-size: 30px; }
+.notion-root .notion-collection-card__cover { padding: 0 !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-quote a:not(:first-child) { background: var(--missive-paper); }
+/* ---------- template overrides ---------- */
+
+/* =====================================================================
+   Template pages: the Instructions child page and its link block
+   ===================================================================== */
+.notion-root > a.notion-page { display: none; }
+.page__instructions .notion-root { max-width: 760px; margin: 0 auto; padding-bottom: 64px; }
+.page__instructions .notion-root h1.notion-heading { font-size: clamp(34px, 1.8rem + 1.6vw, 48px); margin: 24px 0 16px; }
+.page__instructions .notion-root h2.notion-heading { margin: 48px 0 14px; }
+.page__instructions .notion-root h3.notion-heading { margin: 32px 0 10px; }
+.page__instructions .notion-root .notion-code { border-radius: 12px; font-size: 14px; margin: 12px 0 20px; }
+.page__instructions .notion-root .notion-list li { margin: 0 0 8px; }
+.page__instructions .notion-root .notion-code pre, .page__instructions .notion-root .notion-code code { white-space: pre-wrap !important; word-break: break-all; }
