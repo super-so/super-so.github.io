@@ -363,6 +363,12 @@ body, .super-content-wrapper, .super-navbar, .super-footer { background: #ff7a1f
 .page__instructions .notion-root .notion-code { background: #ffffff !important; color: var(--rider-ink); border-radius: 0 !important; }
 .page__instructions .notion-root .notion-code code, .page__instructions .notion-root .notion-code pre, .page__instructions .notion-root .notion-code span { color: var(--rider-ink) !important; background: transparent !important; }
 .page__instructions .notion-root code.notion-inline-code, .page__instructions .notion-root .notion-inline-code { background: #ffffff; color: var(--rider-ink); }
+/* two fields in a row: no orange gap between them (SSO-2352 check 2, defect 6) */
+.notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/people_"]), :has(> .notion-callout__icon img[src*="/book_"]), :has(> .notion-callout__icon img[src*="/user_"]), :has(> .notion-callout__icon img[src*="/megaphone_"]), :has(> .notion-callout__icon img[src*="/star_"]):has(.notion-file):not(:has(.notion-audio)))
++ .notion-callout:is(:has(> .notion-callout__icon img[src*="/people_"]), :has(> .notion-callout__icon img[src*="/book_"]), :has(> .notion-callout__icon img[src*="/user_"]), :has(> .notion-callout__icon img[src*="/megaphone_"]), :has(> .notion-callout__icon img[src*="/star_"]):has(.notion-file):not(:has(.notion-audio))) { margin-top: 0 !important; }
+/* two black fields in a row: a thin orange rule keeps them apart */
+.notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/megaphone_"]), :has(> .notion-callout__icon img[src*="/star_"]):has(.notion-file):not(:has(.notion-audio)))
++ .notion-callout:is(:has(> .notion-callout__icon img[src*="/megaphone_"]), :has(> .notion-callout__icon img[src*="/star_"]):has(.notion-file):not(:has(.notion-audio))) { border-top: 8px solid #ff7a1f !important; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
