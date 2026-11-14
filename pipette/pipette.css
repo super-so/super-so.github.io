@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Figtree:wght@400;600;700&display=swap");
 /* =====================================================================
    PIPETTE - podcast template for family, kids and education shows for Super (pipette-template.super.site)
    Sections = top-level callouts keyed by their Notion icon; nested callouts = cards;
@@ -355,6 +356,8 @@ html, body, .super-root, .super-content { background: var(--pipette-bg); }
 .page__instructions .notion-root .notion-code { background: #ffffff !important; color: var(--pipette-ink); border-radius: 16px; }
 .page__instructions .notion-root .notion-code code, .page__instructions .notion-root .notion-code pre, .page__instructions .notion-root .notion-code span { color: var(--pipette-ink) !important; background: transparent !important; }
 .page__instructions .notion-root code.notion-inline-code, .page__instructions .notion-root .notion-inline-code { background: #ffffff; color: var(--pipette-ink); }
+/* Instructions: headings in sentence case (product names keep their capitals) */
+.page__instructions .notion-root h1.notion-heading, .page__instructions .notion-root h2.notion-heading, .page__instructions .notion-root h3.notion-heading { text-transform: none; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
