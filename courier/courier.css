@@ -225,6 +225,9 @@ main.super-content.page__instructions .notion-root h3.notion-heading { font-size
   .notion-root .notion-collection-card.gallery { box-shadow: inset 0 0 0 2px var(--courier-ink) !important; }
   .notion-root .notion-collection-card__cover { padding: 2px 2px 0; box-sizing: border-box; }
 }
+/* footer social icons read on the bottle-green footer */
+.super-footer svg { color: #b9c4bd !important; fill: #b9c4bd !important; }
+.super-footer a:hover svg { color: var(--courier-y) !important; fill: var(--courier-y) !important; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
