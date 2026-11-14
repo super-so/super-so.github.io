@@ -193,6 +193,10 @@ main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-page
 /* footer social icons on the slate field */
 .super-footer .super-footer__icons a { color: var(--bench-field-muted) !important; opacity: 1; }
 .super-footer .super-footer__icons a:hover { color: var(--bench-field-ink) !important; }
+/* tablet widths (901-1120): rows of four cards go two by two, so card titles such as "Wednesdays" never break inside the word */
+@media (min-width: 901px) and (max-width: 1120px) {
+  .notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/target_"]), :has(> .notion-callout__icon img[src*="/book_"])) .notion-column-list:has(> .notion-column ~ .notion-column ~ .notion-column ~ .notion-column) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+}
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
