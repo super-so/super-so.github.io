@@ -495,6 +495,13 @@ body:has(.super-content:not([class*="parent-page__"]:not(.parent-page__index))) 
   .notion-root .notion-callout.lodestar-card:last-child:nth-of-type(odd) > .notion-callout__content > * { grid-column: 2; }
   .notion-root .notion-callout.lodestar-card:last-child:nth-of-type(odd) > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { grid-column: 1; grid-row: 1 / span 6; margin: 0; }
 }
+/* navbar Simple (2026-11-14): links inline on desktop, hamburger below 861px (Super's breakpoint).
+   Links in full white (Super dims them to 0.7), a lime underline marks hover; a little air before the button. */
+@media (min-width: 861px) {
+  .super-navbar__item { opacity: 1 !important; text-decoration: underline 3px transparent; text-underline-offset: 8px; transition: text-decoration-color 200ms ease; }
+  .super-navbar__item:hover, .super-navbar__item.active { text-decoration-color: var(--lodestar-accent); }
+  .super-navbar__actions { margin-left: 12px; }
+}
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block

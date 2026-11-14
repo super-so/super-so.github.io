@@ -250,6 +250,15 @@ main.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[
 /* hero subtitle and pitch wrap evenly, no orphan word */
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) p.notion-text { text-wrap: balance; }
 .page__instructions .notion-root .notion-code { border-radius: 0 !important; }
+/* navbar Simple (2026-11-14): links inline on desktop, hamburger below 861px (Super's breakpoint).
+   Links in full aubergine ink (Super dims them to 0.7), a hairline underline on hover like the text links;
+   the button gets the height of a link row instead of a thin bar. */
+.super-navbar__cta { padding: 7px 18px !important; line-height: 1.2; }
+@media (min-width: 861px) {
+  .super-navbar__item { opacity: 1 !important; text-decoration: underline 1px transparent; text-underline-offset: 5px; transition: text-decoration-color 200ms ease; }
+  .super-navbar__item:hover, .super-navbar__item.active { text-decoration-color: var(--byline-ink); }
+  .super-navbar__actions { margin-left: 12px; }
+}
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block

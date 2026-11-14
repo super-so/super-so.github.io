@@ -184,6 +184,13 @@ main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-page
 }
 /* text links on plain pages (Instructions, release notes) read as links */
 .notion-root p a.notion-link, .notion-root li a.notion-link, .notion-root p a.link, .notion-root li a.link { color: var(--notch-ink) !important; text-decoration: underline !important; text-decoration-thickness: 2px !important; text-underline-offset: 3px; opacity: 1; }
+/* navbar Simple (2026-11-14): links inline on desktop, hamburger below 861px (Super's breakpoint).
+   Links in full teal ink (Super dims them to 0.7), a teal underline marks hover; a little air before the button. */
+@media (min-width: 861px) {
+  .super-navbar__item { opacity: 1 !important; color: var(--notch-ink) !important; text-decoration: underline 2px transparent; text-underline-offset: 7px; transition: text-decoration-color 200ms ease; }
+  .super-navbar__item:hover, .super-navbar__item.active { text-decoration-color: var(--notch-ink); }
+  .super-navbar__actions { margin-left: 12px; }
+}
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block

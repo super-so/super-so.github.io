@@ -189,6 +189,13 @@ main.super-content[class*="parent-page__"]:not(.parent-page__index) ~ .super-foo
 main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-page__property:has(.notion-property__file) { display: none !important; }
 /* wide title-page headings and images may reach past the reading column (the band itself still clips at the viewport) */
 .notion-root > .notion-callout > .notion-callout__content { overflow: visible !important; }
+/* navbar Simple (2026-11-14): links inline on desktop, hamburger below 861px (Super's breakpoint).
+   Links in full ink (Super dims them to 0.7), a hairline underline on hover like the text links. */
+@media (min-width: 861px) {
+  .super-navbar__item { opacity: 1 !important; text-decoration: underline 1px transparent; text-underline-offset: 5px; transition: text-decoration-color 200ms ease; }
+  .super-navbar__item:hover, .super-navbar__item.active { text-decoration-color: var(--static-ink); }
+  .super-navbar__actions { margin-left: 12px; }
+}
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
