@@ -471,6 +471,8 @@ body:has(.super-content:not([class*="parent-page__"]:not(.parent-page__index))) 
 .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(42px, 0.9rem + 4.8vw, 84px); max-width: 17ch; }
 @media (max-width: 480px) {
   .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: 40px; }
+  /* item and RFC titles: long single words (DOCUMENTATION) fit a phone */
+  .super-content > .notion-header .notion-header__title { font-size: 34px; }
 }
 .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) { padding-top: 40px !important; }
 .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { margin-bottom: 22px; }
