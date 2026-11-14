@@ -230,6 +230,12 @@ main.super-content:not(.page__index) .notion-root > .notion-collection { margin-
 .notion-root .notion-collection-card__cover { padding: 0 !important; }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-quote a:not(:first-child) { background: var(--missive-paper); }
 /* ---------- template overrides ---------- */
+/* recipe card: a bold first line is the recipe name (it may wrap over two lines); the ::first-line style stays for cards without bold */
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) > .notion-callout__content > p.notion-text:first-of-type:has(strong)::first-line { font-family: inherit; font-size: inherit; line-height: inherit; text-transform: none; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) > .notion-callout__content > p.notion-text:first-of-type strong:first-child { display: block; margin: 0 0 10px; font-family: var(--missive-disp); font-size: clamp(26px, 5vw, 34px); font-weight: 400; line-height: 1.02; text-transform: uppercase; color: #fff !important; }
+.super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) > .notion-callout__content > p.notion-text:first-of-type strong:first-child + br { display: none; }
+/* Instructions: calmer step headings */
+.page__instructions .notion-root h2.notion-heading { font-size: clamp(30px, 4vw, 40px); line-height: 1; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
