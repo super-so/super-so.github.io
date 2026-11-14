@@ -234,6 +234,13 @@ body, .super-root, .super-content { background: var(--booth-bg); color: var(--bo
 .page__instructions .notion-root h2.notion-heading { font-size: clamp(22px, 3vw, 32px); }
 .page__instructions .notion-root h3.notion-heading { font-size: clamp(18px, 2.2vw, 24px); }
 .page__instructions .notion-root code.notion-inline-code, .page__instructions .notion-root .notion-inline-code { background: var(--booth-taste-surface); color: var(--booth-ink); }
+/* episode rows: the title never grows past its grid column (Super gives list titles a min width) */
+.notion-root .notion-collection-list__item .notion-property__title { min-width: 0 !important; max-width: 100%; width: auto !important; }
+.notion-root .notion-collection-list__item .notion-property__title > * { min-width: 0; }
+/* floating footer: inner padding so logo, socials and footnote sit inside the dark panel */
+.super-footer__content { padding: 28px 32px !important; }
+/* a text line right after a button row gets air */
+.notion-root .notion-quote + p.notion-text { margin-top: 20px; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
