@@ -197,6 +197,10 @@ main.super-content[class*="parent-page__"]:not(.parent-page__index) .notion-page
 @media (min-width: 901px) and (max-width: 1120px) {
   .notion-root > .notion-callout:is(:has(> .notion-callout__icon img[src*="/target_"]), :has(> .notion-callout__icon img[src*="/book_"])) .notion-column-list:has(> .notion-column ~ .notion-column ~ .notion-column ~ .notion-column) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 }
+/* Instructions page: reading-size headings in the narrow column */
+.page__instructions .notion-root h1.notion-heading { font-size: clamp(40px, 5vw, 56px); }
+.page__instructions .notion-root h2.notion-heading { font-size: clamp(28px, 3vw, 36px); line-height: 1.05; letter-spacing: -0.03em; }
+.page__instructions .notion-root h3.notion-heading { font-size: 22px; letter-spacing: -0.02em; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
