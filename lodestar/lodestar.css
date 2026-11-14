@@ -476,6 +476,21 @@ body:has(.super-content:not([class*="parent-page__"]:not(.parent-page__index))) 
 .notion-root p a.notion-link, .notion-root li a.notion-link, .notion-root p a.link, .notion-root li a.link { color: var(--lodestar-ink) !important; text-decoration: underline !important; text-decoration-color: var(--lodestar-accent) !important; text-decoration-thickness: 2px !important; text-underline-offset: 4px; opacity: 1; }
 /* Instructions page: the light reading column of the template */
 .page__instructions .notion-root h1.notion-heading { font-size: clamp(36px, 1.6rem + 2vw, 56px); }
+/* tablet widths (821-1120): long one-word card titles must not break inside the word */
+@media (min-width: 821px) and (max-width: 1120px) {
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column-list { flex-wrap: wrap; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-column { flex: 1 1 calc(50% - 12px) !important; }
+  .notion-root .notion-collection-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-column-list { gap: 12px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-column .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { font-size: 21px; }
+}
+/* milestone cards: an odd last card fills the row, number on the left, so the grid has no empty cell */
+@media (min-width: 821px) {
+  .notion-root .notion-callout.lodestar-card:last-child:nth-of-type(odd) { grid-column: 1 / -1; }
+  .notion-root .notion-callout.lodestar-card:last-child:nth-of-type(odd) > .notion-callout__content { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); column-gap: 48px; }
+  .notion-root .notion-callout.lodestar-card:last-child:nth-of-type(odd) > .notion-callout__content > * { grid-column: 2; }
+  .notion-root .notion-callout.lodestar-card:last-child:nth-of-type(odd) > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text { grid-column: 1; grid-row: 1 / span 6; margin: 0; }
+}
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
