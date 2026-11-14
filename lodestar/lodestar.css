@@ -468,10 +468,12 @@ body:has(.super-content:not([class*="parent-page__"]:not(.parent-page__index))) 
 /* headings never split inside a word */
 .notion-root .notion-heading, .notion-header__title { overflow-wrap: normal; word-break: normal; hyphens: manual; }
 /* home hero: the template name plus a line, so smaller than a three-word title */
-.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(42px, 0.9rem + 5.6vw, 104px); max-width: 14ch; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(42px, 0.9rem + 4.8vw, 84px); max-width: 17ch; }
 @media (max-width: 480px) {
   .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: 40px; }
 }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) { padding-top: 40px !important; }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { margin-bottom: 22px; }
 /* text links on plain pages (Instructions, item pages) read as links */
 .notion-root p a.notion-link, .notion-root li a.notion-link, .notion-root p a.link, .notion-root li a.link { color: var(--lodestar-ink) !important; text-decoration: underline !important; text-decoration-color: var(--lodestar-accent) !important; text-decoration-thickness: 2px !important; text-underline-offset: 4px; opacity: 1; }
 /* Instructions page: the light reading column of the template */
