@@ -119,6 +119,7 @@ display: inline-flex; align-items: center; min-height: 48px; color: var(--stub-i
 /* Instructions: square ink code blocks, poster capitals for the headings */
 .page__instructions .notion-root .notion-code { border-radius: 0 !important; background: var(--stub-ink) !important; }
 .page__instructions .notion-root .notion-code code, .page__instructions .notion-root .notion-code pre { color: var(--stub-lime) !important; background: transparent !important; }
+.page__instructions .notion-root .notion-code code span, .page__instructions .notion-root .notion-code pre span { color: inherit !important; }
 .page__instructions .notion-root h1.notion-heading { font-size: clamp(48px, 10vw, 64px); }
 .page__instructions .notion-root h3.notion-heading { font-family: var(--stub-font); font-size: 24px; }
 /* buttons that link to a page of the site: no underline on the page title inside the button */
