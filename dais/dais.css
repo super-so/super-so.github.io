@@ -295,6 +295,17 @@ main.super-content:has(> .notion-root > .notion-page__properties .notion-propert
   .notion-root h2.notion-heading { font-size: 32px; }
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) h2.notion-heading { font-size: 26px; }
 }
+/* ---------- template overrides ---------- */
+/* card titles (bold first line of a checkmark card) stay whole words when three cards share a narrow row on tablets and small laptops */
+@media (min-width: 821px) and (max-width: 1200px) {
+  .notion-root .notion-callout .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) { padding: 26px 22px 28px !important; }
+  .notion-root .notion-callout .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) p.notion-text > strong:first-child { font-size: 17px; font-stretch: 100%; }
+}
+/* page heroes on phones (first-level pages carry .parent-page__index): long words such as an event name keep to one line */
+@media (max-width: 600px) {
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: 32px !important; font-stretch: 112%; }
+  .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: 72px !important; font-stretch: 150%; }
+}
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
