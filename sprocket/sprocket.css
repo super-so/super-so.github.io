@@ -229,8 +229,10 @@ main.super-content:has(> .notion-root > .notion-page__properties .notion-propert
 .notion-root .notion-heading, .notion-header__title { overflow-wrap: normal; word-break: normal; hyphens: manual; }
 /* Instructions: the page H1 is the title, so the Notion header goes; text links read as links (buttons in quote blocks keep their look) */
 main.super-content.page__instructions > .notion-header { display: none !important; }
-main.super-content.page__instructions .notion-root a.notion-link:not(.notion-quote a) { text-decoration: underline !important; text-decoration-thickness: 2px; text-underline-offset: 4px; color: var(--sprocket-red) !important; }
+main.super-content.page__instructions .notion-root a.notion-link:not(.notion-quote a) { text-decoration: underline !important; text-decoration-thickness: 2px; text-underline-offset: 4px; color: var(--sprocket-red) !important; opacity: 1 !important; }
 main.super-content.page__instructions .notion-root .notion-code { border-radius: 0 !important; }
+/* home hero: the H1 carries the template name, so it is longer than a product headline; keep it to three or four lines */
+main.super-content.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(36px, 4.4vw, 58px); line-height: 1.04; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
