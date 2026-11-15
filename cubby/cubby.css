@@ -365,6 +365,27 @@ main.super-content.page__instructions .notion-root .notion-code, main.super-cont
 /* tables (invoices): numbers and headings never break inside a word; the first column gets room for an invoice number */
 .notion-root .notion-collection-table th, .notion-root .notion-collection-table :is(th, td):first-child { white-space: nowrap !important; }
 .notion-root .notion-collection-table :is(th, td):first-child { width: 160px !important; }
+/* cubbies stay square but grow when a long document name needs more room (aspect-ratio only grows with visible overflow) */
+.notion-root .notion-collection-card.gallery[data-cubby], .notion-root .notion-collection-card.gallery[data-cubby] .notion-collection-card__content { overflow: visible !important; }
+.notion-root .notion-collection-card.gallery[data-cubby] { display: flex !important; flex-direction: column; height: auto !important; min-height: auto !important; }
+.notion-root .notion-collection-card.gallery[data-cubby] > * { flex: 1 0 auto; }
+.notion-root .notion-collection-card.gallery[data-cubby] .notion-collection-card__content { height: auto !important; box-sizing: border-box; }
+/* phones: two cubbies across leave ~155px per cell; smaller title and tick so a long document name stays inside its cell */
+@media (max-width: 600px) {
+  .notion-root .notion-collection-card.gallery[data-cubby] .notion-property__title { font-size: 16px; line-height: 1.1; }
+  .notion-root .notion-collection-card.gallery[data-cubby] .notion-collection-card__content { padding: 12px !important; }
+  .notion-root .cubby-count b { font-size: 48px; }
+  .notion-root .cubby-count svg { width: 36px; height: 36px; }
+}
+/* tablets: four cubbies across at 600-1100px are small; the reason line moves to the document page so every cell stays square */
+@media (min-width: 601px) and (max-width: 1100px) {
+  .notion-root .notion-collection-card.gallery[data-cubby] .notion-property__text { display: none !important; }
+  .notion-root .notion-collection-card.gallery[data-cubby] .notion-property__title { font-size: 17px; }
+  .notion-root .notion-collection-card.gallery[data-cubby] .notion-collection-card__content { padding: 14px !important; }
+  .notion-root .cubby-count b { font-size: 46px; }
+  .notion-root .cubby-count span { font-size: 13px; }
+  .notion-root .notion-collection-card.gallery[data-cubby="missing"]::after { width: 18px; height: 18px; top: 12px; right: 12px; }
+}
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
