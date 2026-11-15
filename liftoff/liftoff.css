@@ -311,6 +311,10 @@ main.super-content.page__instructions .notion-root h2.notion-heading { font-size
 main.super-content.page__instructions .notion-root h3.notion-heading { font-size: 24px; line-height: 1.1; }
 main.super-content.page__instructions .notion-root .notion-semantic-string .link { color: var(--liftoff-white) !important; text-decoration: underline !important; text-decoration-color: var(--liftoff-yel) !important; text-decoration-thickness: 2px !important; text-underline-offset: 4px; }
 main.super-content.page__instructions .notion-root .notion-code { border-radius: 0; }
+/* docs page titles on phones: one long word (Authentication) stays on one line in WebKit too */
+@media (max-width: 480px) { .parent-page__docs .notion-root > h1.notion-heading { font-size: 40px; } }
+/* plan cards: every price on one line in a three-up row (EUR 249 / month was wrapping) */
+@media (min-width: 821px) { .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) .notion-column > .notion-callout h2.notion-heading { font-size: clamp(21px, 5vw - 21px, 44px); } }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
