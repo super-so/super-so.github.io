@@ -236,6 +236,13 @@ main.super-content:not(.page__index) .notion-root > .notion-collection { margin-
 .super-content:has(> .notion-root > .notion-page__properties) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) > .notion-callout__content > p.notion-text:first-of-type strong:first-child + br { display: none; }
 /* Instructions: calmer step headings */
 .page__instructions .notion-root h2.notion-heading { font-size: clamp(30px, 4vw, 40px); line-height: 1; }
+/* navbar Simple (2026-11-15, from missive-v2): links inline on desktop, menu button below 861px (Super's breakpoint).
+   Links in full ink (Super dims them to 0.7), a green underline on hover like the text links. */
+@media (min-width: 861px) {
+  .super-navbar__item { opacity: 1 !important; text-decoration: underline 2px transparent; text-underline-offset: 6px; transition: text-decoration-color 200ms ease; }
+  .super-navbar__item:hover, .super-navbar__item.active { text-decoration-color: var(--missive-green); }
+  .super-navbar__actions { margin-left: 12px; }
+}
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block

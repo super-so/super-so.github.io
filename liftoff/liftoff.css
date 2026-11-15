@@ -315,6 +315,18 @@ main.super-content.page__instructions .notion-root .notion-code { border-radius:
 @media (max-width: 480px) { .parent-page__docs .notion-root > h1.notion-heading { font-size: 40px; } }
 /* plan cards: every price on one line in a three-up row (EUR 249 / month was wrapping) */
 @media (min-width: 821px) { .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) .notion-column > .notion-callout h2.notion-heading { font-size: clamp(21px, 5vw - 21px, 44px); } }
+/* hero (2026-11-15): the headline keeps to the text column and the code panel starts at its top, so a longer title never runs into the panel */
+@media (min-width: 821px) {
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]):has(.notion-column-list) > .notion-callout__content { grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr) !important; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]):has(.notion-column-list) > .notion-callout__content > * { min-width: 0; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]):has(.notion-column-list) h1.notion-heading { grid-column: 1; max-width: none; font-size: clamp(48px, 3.4vw + 14px, 84px); overflow-wrap: normal; word-break: normal; hyphens: manual; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column-list { margin-top: 8px; }
+}
+/* 821-1100: a wider panel and smaller code, so the request URL is not split */
+@media (min-width: 821px) and (max-width: 1100px) {
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]):has(.notion-column-list) > .notion-callout__content { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr) !important; column-gap: 40px; }
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-code pre code { font-size: 11.5px !important; }
+}
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block

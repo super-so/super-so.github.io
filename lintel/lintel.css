@@ -252,6 +252,16 @@ main.super-content:has(> .notion-root > .notion-page__properties .notion-propert
 }
 .notion-root .notion-collection-calendar__item-wrapper > .notion-collection-calendar__item { padding: 0 4px !important; margin: 0 !important; width: 100% !important; box-sizing: border-box; }
 .notion-root .notion-collection-calendar__item-wrapper .notion-collection-card { width: 100% !important; box-sizing: border-box; }
+/* row pages without a date (the Staff database: /members/staff/<name>) show their title too, set like a news article title; top-level pages keep it hidden */
+main.super-content:has(> .notion-root > .notion-page__properties .notion-property):not(:has(> .notion-root > .notion-page__properties .notion-property__date)) > .notion-header { display: block !important; }
+main.super-content:has(> .notion-root > .notion-page__properties .notion-property):not(:has(> .notion-root > .notion-page__properties .notion-property__date)) .notion-header__content { max-width: 820px; margin: 0 auto; padding: 40px 32px 0 !important; }
+main.super-content:has(> .notion-root > .notion-page__properties .notion-property):not(:has(> .notion-root > .notion-page__properties .notion-property__date)) .notion-header__title, main.super-content:has(> .notion-root > .notion-page__properties .notion-property):not(:has(> .notion-root > .notion-page__properties .notion-property__date)) .notion-header h1 { font-family: var(--lintel-head) !important; font-weight: 300 !important; font-size: clamp(40px, 5vw, 64px) !important; letter-spacing: -0.025em; line-height: 1.05; }
+/* staff cards (People gallery, Staff only board) are not links (2026-11-15): a staff row page holds only its properties.
+   display:none takes the overlay anchor out of the click, tab and crawl paths (pointer-events alone keeps it focusable). */
+.page__people .notion-collection-gallery a.notion-collection-card__anchor,
+.page__members .notion-collection-board a.notion-collection-card__anchor { display: none !important; }
+.page__people .notion-collection-gallery .notion-collection-card,
+.page__members .notion-collection-board .notion-collection-card { cursor: default; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
