@@ -255,6 +255,8 @@ main.super-content.parent-page__index:not(.page__instructions) .notion-root > .n
 }
 @media (min-width: 561px) and (max-width: 900px) {
   main.super-content:not(.parent-page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/people_"]) > .notion-callout__content { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  /* an odd last card takes the whole row, so no empty cell is left */
+  main.super-content:not(.parent-page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/people_"]) > .notion-callout__content > .notion-callout:last-child:nth-child(odd) { grid-column: 1 / -1; }
 }
 @media (max-width: 560px) {
   main.super-content:not(.parent-page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/people_"]) > .notion-callout__content { grid-template-columns: minmax(0, 1fr); }
