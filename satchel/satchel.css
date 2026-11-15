@@ -259,6 +259,12 @@ main.super-content.parent-page__index:not(.page__instructions) .notion-root > .n
 @media (max-width: 560px) {
   main.super-content:not(.parent-page__index) .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/people_"]) > .notion-callout__content { grid-template-columns: minmax(0, 1fr); }
 }
+/* simple tables fit a phone screen instead of scrolling sideways (the renderer gives every cell 120px) */
+@media (max-width: 600px) {
+  .notion-root .notion-table { width: 100% !important; }
+  .notion-root .notion-table td, .notion-root .notion-table th { min-width: 0 !important; padding: 8px 6px !important; font-size: 13px !important; overflow-wrap: normal !important; word-break: normal !important; hyphens: none !important; }
+  .notion-root .notion-table td *, .notion-root .notion-table th * { overflow-wrap: normal !important; word-break: normal !important; }
+}
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
