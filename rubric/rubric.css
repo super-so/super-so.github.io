@@ -333,6 +333,9 @@ body:has(main.super-content:is(.page__index, .parent-page__index):not(.page__ins
 .notion-root h1.notion-heading, .notion-root h2.notion-heading, .notion-root h3.notion-heading { overflow-wrap: normal !important; word-break: normal !important; hyphens: none !important; }
 /* the navbar button copied from the sidebar call to action by rubric.js */
 .rubric-cta:hover { filter: brightness(1.1); }
+/* table cells never break inside a word (ENGINEERING): a table wider than the phone scrolls sideways inside its own box */
+.notion-root table.notion-table td, .notion-root table.notion-table td .notion-table__cell, .notion-root table.notion-table td .notion-semantic-string { word-break: normal !important; overflow-wrap: normal !important; hyphens: none !important; }
+@media (max-width: 600px) { .notion-root table.notion-table { font-size: 14px; } .notion-root table.notion-table td { padding: 8px 10px !important; } .notion-root table.notion-table tr:first-child td { font-size: 12px; letter-spacing: .04em; } }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block

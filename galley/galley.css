@@ -287,6 +287,9 @@ main.super-content.page__index .notion-root > .notion-callout:has(> .notion-call
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-column > .notion-callout { container-type: inline-size; }
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/target_"]) .notion-column .notion-callout .notion-image + p.notion-text { font-size: clamp(18px, calc((100cqi - 130px) / 6.6), 30px); }
 }
+/* table cells never break inside a word (Operations, Dunmarrow): a table wider than the phone scrolls sideways inside its own box */
+.notion-root .notion-table td, .notion-root .notion-table td .notion-table__cell, .notion-root .notion-table td .notion-semantic-string { word-break: normal !important; overflow-wrap: normal !important; hyphens: none !important; }
+@media (max-width: 600px) { .notion-root .notion-table:not(:has(tr:first-child > td:nth-child(8))) td { font-size: 15px; padding: 12px 12px !important; } }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
