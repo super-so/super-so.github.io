@@ -310,7 +310,7 @@ main.super-content:has(> .notion-root > .notion-page__properties .notion-propert
 @media (max-width: 600px) {
   .super-content > .notion-header .notion-header__title { font-size: 26px !important; font-stretch: 112%; }
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/user_"]) p.notion-text > strong:first-child { font-size: 19px; font-stretch: 112%; }
-  main.super-content:has(> .notion-root > .notion-page__properties) .notion-root > h2.notion-heading { font-size: 22px; }
+  main.super-content:has(> .notion-root > .notion-page__properties .notion-page__property) .notion-root > h2.notion-heading { font-size: 22px; }
 }
 
 /* =====================================================================
