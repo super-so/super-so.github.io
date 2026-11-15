@@ -360,7 +360,7 @@ main.super-content.page__instructions .notion-root h1.notion-heading { font-size
 main.super-content.page__instructions .notion-root h2.notion-heading { font-size: clamp(28px, 1.2rem + 1.4vw, 38px); line-height: 1.05; }
 main.super-content.page__instructions .notion-root h3.notion-heading { font-size: 24px; line-height: 1.1; }
 main.super-content.page__instructions .notion-root a.notion-link { text-decoration: underline; text-decoration-color: var(--cubby-sage); text-decoration-thickness: 2px; text-underline-offset: 4px; }
-main.super-content.page__instructions .notion-root .notion-code { border-radius: 0; background: var(--cubby-surf) !important; }
+main.super-content.page__instructions .notion-root .notion-code, main.super-content.page__instructions .notion-root .notion-code :is(pre, code) { border-radius: 0; background: var(--cubby-surf) !important; }
 main.super-content.page__instructions .notion-root .notion-code, main.super-content.page__instructions .notion-root .notion-code * { color: var(--cubby-ink) !important; }
 
 /* =====================================================================
