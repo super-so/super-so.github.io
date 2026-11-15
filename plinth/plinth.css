@@ -329,9 +329,9 @@ main.super-content.page__instructions .notion-root h3.notion-heading { font-size
   .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) + .notion-callout { margin-top: 88px; }
 }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]):not(:has(.notion-image)):not(:has(table)) > .notion-callout__content > p.notion-text { max-width: none; box-sizing: border-box; padding-right: max(0px, calc(100% - 36em)); }
-/* desktop: a section link (Notion link to a heading block) lands with the heading below the docked buy bar, not under it */
+/* desktop: a section link (Notion link to a heading block) lands with the heading below the navbar and the docked buy bar */
 @media (min-width: 821px) {
-  .notion-root > .notion-callout:not(:has(> .notion-callout__icon img[src*="/checkmark_"])):not(:has(> .notion-callout__icon img[src*="/megaphone_"])) > .notion-callout__content > h2.notion-heading { padding-top: 88px; margin-top: -88px; }
+  html { scroll-padding-top: 150px !important; }
 }
 
 /* =====================================================================
