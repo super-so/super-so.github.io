@@ -245,6 +245,10 @@ main.super-content:has(> .notion-root table) .notion-root > .notion-column-list 
 main.super-content.page__instructions .notion-root h1.notion-heading { font-size: clamp(56px, 2rem + 4vw, 96px); }
 main.super-content.page__instructions .notion-root h2.notion-heading { font-size: clamp(34px, 1.4rem + 2vw, 52px); line-height: .95; }
 main.super-content.page__instructions .notion-root h3.notion-heading { font-size: 28px; line-height: 1; }
+/* tablets and small laptops: four step cards go two by two, so the uppercase card titles keep whole words */
+@media (max-width: 1100px) and (min-width: 901px) {
+  .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) { --cols: 2; }
+}
 /* text links on plain pages stay underlined in the ink colour (buttons in quote blocks keep their look) */
 main.super-content.page__instructions .notion-root a.notion-link.link:not(.notion-quote a) { text-decoration: underline !important; text-decoration-thickness: 2px; text-underline-offset: 4px; color: var(--brace-ink) !important; }
 
