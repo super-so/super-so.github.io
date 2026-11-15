@@ -321,7 +321,7 @@ main.super-content.page__instructions .notion-root h1.notion-heading { font-size
 main.super-content.page__instructions .notion-root h2.notion-heading { font-size: clamp(32px, 1.4rem + 2vw, 48px); line-height: 1; }
 main.super-content.page__instructions .notion-root h3.notion-heading { font-size: 26px; line-height: 1.1; font-weight: 400; }
 /* text-only book cards (Care): a wrapping row, so two cards fill the width instead of leaving an empty third slot */
-.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]):not(:has(.notion-image)):not(:has(table)) > .notion-callout__content { display: flex !important; flex-wrap: wrap; align-items: stretch; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]):not(:has(.notion-image)):not(:has(table)) > .notion-callout__content { display: flex !important; flex-direction: row !important; flex-wrap: wrap; align-items: stretch; gap: 4px !important; }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]):not(:has(.notion-image)):not(:has(table)) > .notion-callout__content > :is(h2.notion-heading, p.notion-text) { flex: 0 0 100%; }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/book_"]):not(:has(.notion-image)):not(:has(table)) > .notion-callout__content > .notion-callout { flex: 1 1 280px; width: auto; }
 /* phones and tablets: the buy bar leaves the flow (fixed at the bottom), so the section after it keeps its distance from the hero */
