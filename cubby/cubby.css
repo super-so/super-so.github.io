@@ -362,6 +362,9 @@ main.super-content.page__instructions .notion-root h3.notion-heading { font-size
 main.super-content.page__instructions .notion-root a.notion-link { text-decoration: underline; text-decoration-color: var(--cubby-sage); text-decoration-thickness: 2px; text-underline-offset: 4px; }
 main.super-content.page__instructions .notion-root .notion-code, main.super-content.page__instructions .notion-root .notion-code :is(pre, code) { border-radius: 0; background: var(--cubby-surf) !important; }
 main.super-content.page__instructions .notion-root .notion-code, main.super-content.page__instructions .notion-root .notion-code * { color: var(--cubby-ink) !important; }
+/* tables (invoices): numbers and headings never break inside a word; the first column gets room for an invoice number */
+.notion-root .notion-collection-table th, .notion-root .notion-collection-table :is(th, td):first-child { white-space: nowrap !important; }
+.notion-root .notion-collection-table :is(th, td):first-child { width: 160px !important; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
