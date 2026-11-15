@@ -246,6 +246,8 @@ main.super-content.parent-page__index:not(.page__instructions) .notion-root > .n
 .page__instructions .notion-root h3.notion-heading { font-size: 26px !important; margin: 32px 0 10px !important; }
 .page__instructions .notion-root .notion-text a, .page__instructions .notion-root li a { color: var(--locker-ink) !important; text-decoration: underline !important; text-decoration-color: var(--locker-accent) !important; text-decoration-thickness: 2px !important; text-underline-offset: 3px; }
 .page__instructions .notion-root .notion-code { background: var(--locker-surface) !important; }
+/* a hero H1 beside an image (venue pages) sizes to its column, so a long one-word name never breaks */
+main.super-content:not(.page__index) .notion-root > .notion-callout .notion-column h1.notion-heading { font-size: clamp(56px, 6.6vw, 104px) !important; overflow-wrap: normal; word-break: keep-all; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
