@@ -262,6 +262,7 @@ main.super-content:has(> .notion-root > .notion-page__properties .notion-propert
 .page__members .notion-collection-board a.notion-collection-card__anchor { display: none !important; }
 .page__people .notion-collection-gallery .notion-collection-card,
 .page__members .notion-collection-board .notion-collection-card { cursor: default; }
+main.super-content:has(> .notion-root > .notion-page__properties .notion-property):not(:has(> .notion-root > .notion-page__properties .notion-property__date)) .notion-root { max-width: 820px; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block

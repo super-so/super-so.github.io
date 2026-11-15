@@ -190,19 +190,19 @@ main.super-content.parent-page__projects .notion-root > .notion-collection:nth-c
 .notion-root .notion-collection__header-wrapper:has(.notion-dropdown__option + .notion-dropdown__option) .notion-dropdown__option-icon { display: none; }
 .notion-root .notion-collection__header-wrapper:has(.notion-dropdown__option + .notion-dropdown__option) .notion-dropdown__option p { margin: 0; font-size: 15px; font-weight: 500; color: inherit; }
 
-/* item pages: selections, changes, diary */
-.super-content:not(.parent-page__selections, .parent-page__changes, .parent-page__diary) > .notion-header { display: none !important; }
-:is(.parent-page__selections, .parent-page__changes, .parent-page__diary) .notion-header__title { font-size: clamp(32px, 4.4vw, 60px) !important; color: var(--joist-ink) !important; }
-:is(.parent-page__selections, .parent-page__changes, .parent-page__diary) .notion-root { max-width: 920px; }
-:is(.parent-page__selections, .parent-page__changes, .parent-page__diary) .notion-header__content { max-width: 920px; margin: 0 auto; }
-:is(.parent-page__selections, .parent-page__changes, .parent-page__diary) .notion-header__cover, .notion-header__icon-wrapper { display: none; }
+/* item pages: selections, changes, diary (with comment threads) and stages, payments, files, project register (title + properties) */
+.super-content:not(.parent-page__selections, .parent-page__changes, .parent-page__diary, .parent-page__stages, .parent-page__payments, .parent-page__files, .parent-page__project-register) > .notion-header { display: none !important; }
+:is(.parent-page__selections, .parent-page__changes, .parent-page__diary, .parent-page__stages, .parent-page__payments, .parent-page__files, .parent-page__project-register) .notion-header__title { font-size: clamp(32px, 4.4vw, 60px) !important; color: var(--joist-ink) !important; }
+:is(.parent-page__selections, .parent-page__changes, .parent-page__diary, .parent-page__stages, .parent-page__payments, .parent-page__files, .parent-page__project-register) .notion-root { max-width: 920px; }
+:is(.parent-page__selections, .parent-page__changes, .parent-page__diary, .parent-page__stages, .parent-page__payments, .parent-page__files, .parent-page__project-register) .notion-header__content { max-width: 920px; margin: 0 auto; }
+:is(.parent-page__selections, .parent-page__changes, .parent-page__diary, .parent-page__stages, .parent-page__payments, .parent-page__files, .parent-page__project-register) .notion-header__cover, .notion-header__icon-wrapper { display: none; }
 .notion-page__properties { background: var(--joist-surface); padding: 18px 22px; margin-bottom: 28px; border: 0 !important; }
 .notion-page__property:has(.notion-property__relation), .notion-page__property:has(.notion-property__file), .notion-page__property:has(.property-placeholder) { display: none !important; }
 .notion-page__property-icon-wrapper { display: none; }
 .notion-page__property-name { color: var(--joist-ink); opacity: .75; }
 .notion-page__property .notion-property { color: var(--joist-ink); }
-:is(.parent-page__selections, .parent-page__changes, .parent-page__diary) .notion-root > .notion-image { margin: 0 0 24px; }
-:is(.parent-page__selections, .parent-page__changes, .parent-page__diary) .notion-root > p.notion-text { font-size: 18px; }
+:is(.parent-page__selections, .parent-page__changes, .parent-page__diary, .parent-page__stages, .parent-page__payments, .parent-page__files, .parent-page__project-register) .notion-root > .notion-image { margin: 0 0 24px; }
+:is(.parent-page__selections, .parent-page__changes, .parent-page__diary, .parent-page__stages, .parent-page__payments, .parent-page__files, .parent-page__project-register) .notion-root > p.notion-text { font-size: 18px; }
 
 /* comment thread */
 :is(.parent-page__selections, .parent-page__changes, .parent-page__diary) .notion-collection .notion-collection__header-wrapper { display: none; }
@@ -248,12 +248,12 @@ main.super-content.parent-page__projects .notion-root > .notion-collection:nth-c
 main.super-content[class*="parent-page__projects-"][class*="-diary"] .notion-collection-card.gallery .notion-property__number { font-family: var(--joist-text); font-size: 14px; font-weight: 500; order: -1; }
 main.super-content[class*="parent-page__projects-"][class*="-diary"] .notion-collection-card.gallery .notion-property__number::before { content: "Week "; }
 main.super-content[class*="parent-page__projects-"][class*="-diary"] .notion-collection-card.gallery .notion-collection-card__content { display: flex; flex-direction: column; gap: 6px; }
-:is(.parent-page__selections, .parent-page__changes, .parent-page__diary) .notion-root.max-width { max-width: 920px !important; }
-:is(.parent-page__selections, .parent-page__changes, .parent-page__diary) .notion-header { padding-top: 48px; }
-:is(.parent-page__selections, .parent-page__changes, .parent-page__diary) .notion-header__content { max-width: 920px !important; padding-left: 0 !important; padding-right: 0 !important; }
+:is(.parent-page__selections, .parent-page__changes, .parent-page__diary, .parent-page__stages, .parent-page__payments, .parent-page__files, .parent-page__project-register) .notion-root.max-width { max-width: 920px !important; }
+:is(.parent-page__selections, .parent-page__changes, .parent-page__diary, .parent-page__stages, .parent-page__payments, .parent-page__files, .parent-page__project-register) .notion-header { padding-top: 48px; }
+:is(.parent-page__selections, .parent-page__changes, .parent-page__diary, .parent-page__stages, .parent-page__payments, .parent-page__files, .parent-page__project-register) .notion-header__content { max-width: 920px !important; padding-left: 0 !important; padding-right: 0 !important; }
 .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(30px, 4.1vw, 56px); }
 .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column-list { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); }
-@media (max-width: 960px) { :is(.parent-page__selections, .parent-page__changes, .parent-page__diary) .notion-header__content { padding-left: 22px !important; padding-right: 22px !important; } }
+@media (max-width: 960px) { :is(.parent-page__selections, .parent-page__changes, .parent-page__diary, .parent-page__stages, .parent-page__payments, .parent-page__files, .parent-page__project-register) .notion-header__content { padding-left: 22px !important; padding-right: 22px !important; } }
 /* ---- v1 "Site hoarding": mustard field, black ink, black tape with mustard stations, uppercase Unbounded 800 ---- */
 .super-root {
   --joist-ground: #e1ac10; --joist-ink: #0b0b0b; --joist-surface: #cd9d0f; --joist-muted: #4d3d0a;
