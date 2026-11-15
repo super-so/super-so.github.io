@@ -257,6 +257,10 @@ main.super-content:has(> .notion-root > .notion-page__properties .notion-propert
 main.super-content:has(> .notion-root > .notion-page__properties .notion-property):not(:has(> .notion-root > .notion-page__properties .notion-property__date)) .notion-header__content { max-width: 820px; margin: 0 auto; padding: 40px 32px 0 !important; }
 main.super-content:has(> .notion-root > .notion-page__properties .notion-property):not(:has(> .notion-root > .notion-page__properties .notion-property__date)) .notion-header__title, main.super-content:has(> .notion-root > .notion-page__properties .notion-property):not(:has(> .notion-root > .notion-page__properties .notion-property__date)) .notion-header h1 { font-family: var(--lintel-head) !important; font-weight: 300 !important; font-size: clamp(40px, 5vw, 64px) !important; letter-spacing: -0.025em; line-height: 1.05; }
 main.super-content:has(> .notion-root > .notion-page__properties .notion-property):not(:has(> .notion-root > .notion-page__properties .notion-property__date)) .notion-root { max-width: 820px; }
+/* staff cards open their staff page (2026-11-15): the brief's gallery rule sets pointer-events none on gallery cards, and Super marks
+   property-only rows .no-click (cursor default) although it still renders the anchor; give the card its click and pointer back */
+.notion-root .notion-collection-card.gallery { pointer-events: auto; }
+.notion-root .notion-collection-card:has(> a.notion-collection-card__anchor[href]) { cursor: pointer; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
