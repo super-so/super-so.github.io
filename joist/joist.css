@@ -2,7 +2,7 @@
 /* =====================================================================
    JOIST - gated homeowner portal template for builders, renovation and interior design studios for Super (joist-template.super.site)
    Sections = top-level callouts keyed by their Notion icon; nested callouts = cards; quote blocks = button rows (the first link is solid).
-   Site hoarding: a mustard field, black ink, uppercase Unbounded 800 over Onest, hazard-stripe tape as the one ornament, square corners.
+   Site hoarding, light: a pale sky field, navy ink, uppercase Unbounded 800 over Onest, blue-and-white hazard-stripe tape as the one ornament, square corners.
    Icons: rocket hero - target cards - book numbered stages - star recent builds / this week on site - megaphone black closing band -
    sun portal tab row - light bulb note.
    Portal: a project page under /projects (main.super-content.parent-page__projects) shows its first linked database (Stages) as a
@@ -254,13 +254,13 @@ main.super-content[class*="parent-page__projects-"][class*="-diary"] .notion-col
 .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) h1.notion-heading { font-size: clamp(30px, 4.1vw, 56px); }
 .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-column-list { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); }
 @media (max-width: 960px) { :is(.parent-page__selections, .parent-page__changes, .parent-page__diary, .parent-page__stages, .parent-page__payments, .parent-page__files, .parent-page__project-register) .notion-header__content { padding-left: 22px !important; padding-right: 22px !important; } }
-/* ---- v1 "Site hoarding": mustard field, black ink, black tape with mustard stations, uppercase Unbounded 800 ---- */
+/* ---- v1 "Site hoarding", light palette C (2026-11-16): pale sky field, deep navy ink, light blue tape, blue-and-white hazard stripes (was mustard field, black ink, black tape with mustard stations), uppercase Unbounded 800 ---- */
 .super-root {
-  --joist-ground: #e1ac10; --joist-ink: #0b0b0b; --joist-surface: #cd9d0f; --joist-muted: #4d3d0a;
-  --joist-tape: #0b0b0b; --joist-tape-ink: #e1ac10; --joist-accent: #24338f; --joist-accent-ink: #ffffff;
-  --joist-stripe-a: #0b0b0b; --joist-stripe-b: #e1ac10;
+  --joist-ground: #f5fafc; --joist-ink: #0f2530; --joist-surface: #e2f2f7; --joist-muted: #55707c;
+  --joist-tape: #d6ecf4; --joist-tape-ink: #0f2530; --joist-accent: #0b7aa6; --joist-accent-ink: #ffffff;
+  --joist-stripe-a: #0b7aa6; --joist-stripe-b: #f5fafc;
   --joist-head-transform: uppercase; --joist-head-weight: 800;
-  --joist-bubble-studio: #cd9d0f; --joist-bubble-studio-ink: #0b0b0b; --joist-bubble-client: #0b0b0b; --joist-bubble-client-ink: #e1ac10;
+  --joist-bubble-studio: #e2f2f7; --joist-bubble-studio-ink: #0f2530; --joist-bubble-client: #0b7aa6; --joist-bubble-client-ink: #ffffff;
 }
 .notion-root.max-width, .super-navbar__content { max-width: 1360px !important; }
 .notion-root h1.notion-heading { font-size: clamp(32px, 4.6vw, 68px); }
@@ -324,6 +324,18 @@ main.super-content.parent-page__projects .notion-root > .notion-callout:has(> .n
 }
 /* hero drawing frame drawn inside the image, so no side of it is clipped */
 .page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-image img { box-shadow: none !important; outline: 6px solid var(--joist-ink); outline-offset: -6px; }
+/* light palette C (2026-11-16): closing band as a pale blue panel instead of a navy one */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) { background: var(--joist-surface) !important; color: var(--joist-ink) !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) * { color: var(--joist-ink); }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-quote a { box-shadow: inset 0 0 0 3px var(--joist-ink) !important; color: var(--joist-ink) !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-quote a:first-of-type { background: var(--joist-accent) !important; color: var(--joist-accent-ink) !important; box-shadow: none !important; }
+/* light palette C: hero drawing on a pale blue panel; the drawing's mustard ground is lifted to white and multiplied onto the panel */
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-image { background: var(--joist-tape); }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-image img { filter: grayscale(1) brightness(1.55) contrast(1.25); mix-blend-mode: multiply; }
+/* light palette C: numbered stage cards as pale blue tiles with navy type (were navy tiles) */
+.notion-root .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) { background: var(--joist-tape) !important; color: var(--joist-ink) !important; box-shadow: inset 0 4px 0 var(--joist-accent); }
+.notion-root .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"]) * { color: var(--joist-ink) !important; }
+.notion-root .notion-callout:has(> .notion-callout__icon img[src*="/book_"]) .notion-callout:has(> .notion-callout__icon img[src*="/checkmark_"])::before { color: var(--joist-accent) !important; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block

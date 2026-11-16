@@ -2,7 +2,7 @@
    HINGE - gated client portal template for agencies and studios for Super (hinge-template.super.site)
    Sections = top-level callouts keyed by their Notion icon; nested callouts = cards;
    quote blocks = button rows (the first link is the solid teal button); the first line of a card is its title.
-   Studio desk: putty ground, near-black type, teal only on actions; uppercase Libre Franklin headings over Source Serif 4, round buttons.
+   Studio desk, light: white ground, pale mint cards, dark teal type, teal on actions; uppercase Libre Franklin headings over Source Serif 4, round buttons.
    Icons: rocket hero - target / book card grids (checkmark = card) - megaphone closing band - sun portal tab row -
    star Waiting on you strip (portal) or the approval box (item page) - user This week - people contacts - light bulb note.
    Portal page = a page with a sun tab row and a star strip; its first linked view = Waiting on you, the third = Next deadlines.
@@ -212,13 +212,13 @@ main.super-content:has(> .notion-root > .notion-callout > .notion-callout__icon 
   .notion-root .notion-collection-list__item.h-comment { width: calc(100% - 48px) !important; box-sizing: border-box; align-self: flex-start; }
   .notion-root .notion-collection-list__item.h-comment.h-client { align-self: flex-end; }
 }
-/* ---- v1 "Studio desk": putty ground, black type, teal on actions and the waiting count; uppercase Franklin titles,
+/* ---- v1 "Studio desk", light palette A (2026-11-16): white ground, mint-teal cards, dark teal ink, teal on actions; was putty ground, black type, teal on actions and the waiting count; uppercase Franklin titles,
    tone-step cards, a teal-edged "Waiting on you" strip. ---- */
 .super-root {
-  --hinge-ground: #dedad3; --hinge-surface: #d3cec6; --hinge-card: #d3cec6; --hinge-paper: #ebe8e2; --hinge-ink: #0a0a0a; --hinge-muted: #5c5852; --hinge-teal: #256f82;
-  --hinge-pill: #c6c0b6; --hinge-pill-review: #256f82; --hinge-pill-review-ink: #ffffff; --hinge-pill-warn: #e3b9a6; --hinge-pill-ok: #b9cbb4; --hinge-pill-open: #e2d2a4;
-  --hinge-track: #c3bdb3; --hinge-bar: #0a0a0a; --hinge-bubble-studio: #d3cec6; --hinge-bubble-client: #ebe8e2;
-  --hinge-foot-bg: #0a0a0a; --hinge-foot-ink: #dedad3;
+  --hinge-ground: #ffffff; --hinge-surface: #eef6f5; --hinge-card: #eef6f5; --hinge-paper: #f6faf9; --hinge-ink: #16302e; --hinge-muted: #5d6f6d; --hinge-teal: #217a75;
+  --hinge-pill: #dcebe9; --hinge-pill-review: #217a75; --hinge-pill-review-ink: #ffffff; --hinge-pill-warn: #f6d9cc; --hinge-pill-ok: #d3ead8; --hinge-pill-open: #f5ebc7;
+  --hinge-track: #d6e6e4; --hinge-bar: #217a75; --hinge-bubble-studio: #eef6f5; --hinge-bubble-client: #e1efed;
+  --hinge-foot-bg: #e3f0ee; --hinge-foot-ink: #16302e;
   --hinge-gap: 12px; --hinge-gap-section: 104px; --hinge-tab-gap: 30px;
   --hinge-h1: clamp(46px, 7.4vw, 104px); --hinge-h1-case: uppercase;
 }
@@ -310,6 +310,13 @@ main.super-content:has(> .notion-root > .notion-callout > .notion-callout__icon 
 /* text links on a page read as links: underlined in ink (buttons in quote blocks and tab rows keep their own look) */
 .notion-root p.notion-text a.notion-link, .notion-root li a.notion-link { text-decoration: underline !important; text-decoration-color: var(--hinge-teal); text-decoration-thickness: 2px; text-underline-offset: 3px; }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/sun_"]) p.notion-text a.notion-link { text-decoration: none !important; }
+/* light palette A (2026-11-16): closing band as a pale mint panel instead of a black one */
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) { background: var(--hinge-surface) !important; color: var(--hinge-ink) !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-heading, .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) p.notion-text { color: var(--hinge-ink) !important; }
+.notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/megaphone_"]) .notion-quote a:not(:first-of-type) { color: var(--hinge-ink) !important; box-shadow: inset 0 0 0 2px var(--hinge-ink) !important; }
+/* light palette A: hero drawing on a mint panel; the drawing's own putty ground is lifted to white and multiplied onto the panel */
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-image { background: var(--hinge-surface); }
+.page__index .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/rocket_"]) .notion-image img { filter: grayscale(1) brightness(1.26) contrast(1.15); mix-blend-mode: multiply; }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
