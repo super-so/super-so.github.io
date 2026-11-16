@@ -2,11 +2,11 @@
 /* GATED DEMO BOX (shared source: _shared/gated-demo.js, copied into each gated template script by _shared/gen_gated_demo.py)
    On the template's own demo host only, a floating box on the pages that would sit behind a login on a real site:
    who is signed in (an invented member) and a Log out button, so the visitor sees at once that the page is private.
-   Colours come from the template's navbar (or sidebar) and its button. Closing it hides it for this browser tab.
+   Colours come from the template's navbar (or sidebar) and its button. The cross closes it for this visit only (nothing is stored; a reload shows it again).
    Your own site never shows it: delete this block or keep it, it checks the host name. */
 (function (C) {
   if (location.hostname !== C.host || window.__gatedDemo) return; window.__gatedDemo = 1;
-  var KEY = "gated-demo-closed";
+  var closed = false; /* the cross closes the box for this visit only: nothing is stored, a reload or the next visit shows it again */
   function gated(p) {
     p = p.replace(/\/+$/, "") || "/";
     if ((C.except || []).some(function (x) { return p === x || p.indexOf(x + "/") === 0; })) return false;
@@ -41,7 +41,7 @@
   var NOTE = "<b>Template demo.</b> On your site this box can look any way you like and sit anywhere: floating like here, in the header or in the footer.";
   function render() {
     var box = document.querySelector(".gx"), want = gated(location.pathname);
-    try { if (sessionStorage.getItem(KEY)) want = false; } catch (e) {}
+    if (closed) want = false;
     if (!want) { if (box) box.remove(); return; }
     if (box) return;
     var nav = document.querySelector(".super-navbar") || document.querySelector(".super-sidebar"); if (!nav) return;
@@ -51,7 +51,7 @@
     box.innerHTML = '<div class="gx-row"><span class="gx-lock">' + lock + C.area + '</span><button class="gx-x" type="button" aria-label="Close">&times;</button></div>' +
       '<div class="gx-row"><span class="gx-av">' + ini + '</span><span class="gx-who"><b>' + C.name + '</b><span>' + C.email + '</span></span>' +
       '<button class="gx-out" type="button">' + out + 'Log out</button></div><div class="gx-foot">' + NOTE + '</div>';
-    box.querySelector(".gx-x").onclick = function () { try { sessionStorage.setItem(KEY, "1"); } catch (e) {} box.remove(); };
+    box.querySelector(".gx-x").onclick = function () { closed = true; box.remove(); };
     box.querySelector(".gx-out").onclick = function () { box.querySelector(".gx-foot").innerHTML = "<b>Demo:</b> log out is switched off here. On your site Super signs the member out and shows the login page."; };
     document.body.appendChild(box);
   }
