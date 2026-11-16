@@ -86,6 +86,23 @@
     d.querySelector(".gx-go").onclick = function () { d.close(); location.assign(href); };
     d.showModal(); d.querySelector(".gx-go").focus();
   }
+  /* Whole-site gating (wiki, intranet, handbook): on a real site every page sits behind the login, so the same note opens at once on arrival.
+     Closing it counts for the whole visit (sessionStorage, ignored when blocked). */
+  function arrive() {
+    if (!C.whole) return;
+    try { if (sessionStorage.getItem("gx-arrived")) return; sessionStorage.setItem("gx-arrived", "1"); } catch (x) {}
+    if (!style()) { setTimeout(arrive, 300); return; }
+    var d = document.createElement("dialog"); d.className = "gx-dlg"; d.setAttribute("aria-labelledby", "gx-arr-t");
+    d.innerHTML = '<span class="gx-lock">' + lock + C.area + '</span><h2 id="gx-arr-t">We skip the login in this demo</h2>' +
+      '<p>On your own site this whole ' + C.whole + ' is private: your ' + C.who + ' sign in before they see any page. Super gives you two ways to do it:</p>' +
+      '<ul><li><b>Memberships</b>Each person signs in with their email; you can let in everyone with your company domain.</li>' +
+      '<li><b>Password</b>One password for the whole site, shared with the people who need it.</li></ul>' +
+      '<p>Here the login is switched off, so you can look around.</p>' +
+      '<div class="gx-acts"><button class="gx-go" type="button">Look around</button><a class="gx-how" href="/instructions">How to set it up</a></div>';
+    d.querySelector(".gx-go").onclick = function () { d.close(); };
+    d.addEventListener("click", function (e) { if (e.target === d) d.close(); });
+    document.body.appendChild(d); d.showModal(); d.querySelector(".gx-go").focus();
+  }
   document.addEventListener("click", function (e) {
     if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     var a = e.target.closest && e.target.closest("a[href]"); if (!a || a.closest(".gx-dlg")) return;
@@ -95,7 +112,8 @@
   }, true);
   var last = "";
   function tick() { if (location.pathname !== last || !document.querySelector(".gx") === gated(location.pathname)) { last = location.pathname; render(); } }
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", render); else render();
+  function start() { render(); if (location.pathname.replace(/\/+$/, "") !== "/instructions") arrive(); }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
   setInterval(tick, 400);
-})({"who": "staff", "place": "staff area", "name": "Amara Osei", "email": "amara@example.com", "area": "Staff area", "prefix": ["/members"], "host": "lintel-template.super.site"});
+})({"who": "staff", "place": "staff area", "name": "Amara Osei", "email": "amara@example.com", "area": "Staff area", "prefix": ["/members"], "whole": "intranet", "host": "lintel-template.super.site"});
 /* <<< GATED DEMO BOX <<< */
