@@ -228,6 +228,15 @@ main.super-content.page__instructions .notion-root h3.notion-heading { font-size
 /* footer social icons read on the bottle-green footer */
 .super-footer svg { color: #b9c4bd !important; fill: #b9c4bd !important; }
 .super-footer a:hover svg { color: var(--courier-y) !important; fill: var(--courier-y) !important; }
+/* tickets: the issue number is sized by the ticket stub, not by the window, and never wraps (a wide monitor or a
+   narrow page column used to break "112" into two lines); the date stays light on the bottle-green stub */
+.notion-root .notion-collection-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+.notion-root .notion-collection-card__content { container-type: inline-size; min-width: 0; }
+.notion-root .notion-collection-card .notion-property__number { display: block !important; font-size: 84px; font-size: clamp(40px, 50cqw, 108px); white-space: nowrap !important; word-break: normal !important; overflow-wrap: normal !important; }
+.notion-root .notion-collection-card .notion-property__number::before { white-space: nowrap; }
+.notion-root .notion-collection-card .notion-property__date, .notion-root .notion-collection-card .notion-property__date * { color: #b9c4bd !important; }
+.notion-root .notion-collection-card .notion-collection-card__property.title { overflow-wrap: break-word; }
+@media (max-width: 1000px) { .notion-root .notion-collection-gallery { grid-template-columns: minmax(0, 1fr) !important; } }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block

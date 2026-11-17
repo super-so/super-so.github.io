@@ -162,6 +162,10 @@ html, body { background: var(--knot-bg); }
 .page__instructions .notion-root li, .page__instructions .notion-root .notion-list-item { font-size: 17px; line-height: 1.55; }
 .page__instructions .notion-root h3.notion-heading { font-size: 22px; }
 .page__instructions .notion-root .notion-image img { border: 1px solid #cfc8ba; }
+/* Get template is a call to action: a quote block at the end of the home page = one compact green button */
+.notion-root > .notion-quote { margin-top: 56px; grid-template-columns: minmax(0, 340px); }
+.notion-root > .notion-quote a.link { background: var(--knot-green); }
+.notion-root > .notion-quote a.link:hover { background: var(--knot-ink); }
 
 /* =====================================================================
    Template pages: the Instructions child page and its link block
