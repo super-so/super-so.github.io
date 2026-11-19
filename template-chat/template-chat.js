@@ -3,8 +3,8 @@
    visitor's own site. Sending opens app.super.so/?ai=<prompt>, which starts the in-app chat with that
    prompt. Nothing is sent anywhere from this page.
    Usage (body slot): <script src="https://sites.super.so/template-chat/template-chat.js" data-name="Zine" data-get="/instructions" defer></script>
-   data-name = template name (default: the first part of the host name), data-get = page with the manual
-   instructions (optional), data-bottom = distance from the bottom edge in px when the template has its own
+   data-name = template name (default: the first part of the host name), data-get = page with the setup
+   instructions, put into every prompt (default: the home page), data-bottom = distance from the bottom edge in px when the template has its own
    bar there (optional), data-accent = colour of the pink in the template, used in one chip (optional). */
 (function () {
   if (window.__superTplChat) return;
@@ -13,19 +13,21 @@
   var ds = (me && me.dataset) || {};
   var host = location.hostname;
   var name = ds.name || host.split(".")[0].replace(/-template$/, "").replace(/^./, function (c) { return c.toUpperCase(); });
-  var url = host;
   var APP = "https://app.super.so/";
   var LOGO = '<svg class="stc-logo" width="20" height="20" viewBox="0 0 128 128" fill="none" aria-hidden="true"><path d="M0 64.0002C0 15.9999 15.9998 0 64 0C112 0 128 15.9999 128 64.0002C128 112 112 128 64 128C15.9998 128 0 112 0 64.0002Z" fill="#111111"/><path fill-rule="evenodd" clip-rule="evenodd" d="M64.7197 32.5686L40.2317 70.0172C39.4549 71.2052 40.3072 72.7809 41.7266 72.7809H54.3396H60.8434H64.1768L60.0179 95.4841C59.6667 97.4015 62.2029 98.4149 63.2697 96.7835L87.7577 59.3349C88.5345 58.1469 87.6822 56.5712 86.2628 56.5712H71.1568H67.146H63.8126L67.9715 33.868C68.3227 31.9506 65.7865 30.9372 64.7197 32.5686Z" fill="white"/></svg>';
   var SEND = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
   var X = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
   var SPARK = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>';
+  var guide = ds.get ? new URL(ds.get, location.origin).href : location.origin + "/";
+  /* Every prompt names the template's setup instructions, so the in-app chat knows how to launch it. */
+  var base = "Launch the " + name + " template (setup instructions: " + guide + ") as my own site";
   var CHIPS = [
-    ["Launch it as is", "Launch " + url + " as my own site."],
-    ["Use my brand colours", "Launch " + url + " as my own site and use my brand colours: #1E3A8A and #F59E0B."],
-    ["Dark & calmer", "Launch " + url + " as my own site in a dark version with a calmer font."],
-    ["Make it a shop", "Launch " + url + " as my own site, but make it a shop for my work."]
+    ["Launch it as is", base + "."],
+    ["Use my brand colours", base + " and use my brand colours: #1E3A8A and #F59E0B."],
+    ["Dark & calmer", base + " in a dark version with a calmer font."],
+    ["Make it a shop", base + ", but make it a shop for my work."]
   ];
-  var DEFAULT = "Launch " + url + " as my own site. Put in my name, swap the main colour for my brand colour and keep the layout.";
+  var DEFAULT = base + ". Put in my name, swap the main colour for my brand colour and keep the layout.";
   var CSS = '#stc{position:fixed;right:20px;bottom:20px;z-index:2147483000;display:flex;flex-direction:column;align-items:flex-end;gap:12px;font:14px/1.45 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:#171717;letter-spacing:0;text-transform:none;text-align:left}'
   + '#stc *{box-sizing:border-box;font-family:inherit;letter-spacing:inherit;text-transform:none}#stc button{cursor:pointer;margin:0}'
   + '#stc .stc-badge{display:flex;align-items:center;gap:8px;background:#111;color:#fff;border:0;border-radius:999px;padding:7px 7px 7px 11px;box-shadow:0 8px 24px rgba(0,0,0,.2);font-size:13px;font-weight:600;line-height:1}'
@@ -60,7 +62,7 @@
       + '<div class="stc-ph">' + LOGO + '<span>Super chat</span><span class="stc-dot"></span><button type="button" class="stc-x" aria-label="Close">' + X + "</button></div>"
       + '<div class="stc-msgs"><div class="stc-bot">Hi! You’re looking at <b>' + esc(name) + "</b>, a Super template. Our chat can launch it as your own site in about a minute, then restyle it with you.</div>"
       + '<div class="stc-hint">Try one of these or write your own:</div><div class="stc-chips">' + chips + "</div></div>"
-      + '<div class="stc-inp"><textarea rows="3" aria-label="Your prompt">' + esc(DEFAULT) + '</textarea><button type="button" class="stc-send" aria-label="Send to Super chat">' + SEND + "</button></div>"
+      + '<div class="stc-inp"><textarea rows="4" aria-label="Your prompt">' + esc(DEFAULT) + '</textarea><button type="button" class="stc-send" aria-label="Send to Super chat">' + SEND + "</button></div>"
       + '<div class="stc-foot"><span>Free to start · built on your Notion</span>' + get + "</div></div>"
       + '<button type="button" class="stc-badge" aria-expanded="false">' + LOGO + "<span>Made with Super</span><em>" + SPARK + " Get this site</em></button></div>");
     document.body.appendChild(w);
