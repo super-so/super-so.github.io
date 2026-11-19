@@ -1,0 +1,1 @@
+$(document).ready((function(){$("[id^=block-blog-]").addClass("blog-post")}));

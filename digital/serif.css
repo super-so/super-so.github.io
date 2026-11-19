@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Sentient Light';
+  src: url("https://sites.super.so/digital/fonts/Sentient-Light.woff2") format("woff2"), url("https://sites.super.so/digital/fonts/Sentient-Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Sentient Regular';
+  src: url("https://sites.super.so/digital/fonts/Sentient-Regular.woff2") format("woff2"), url("https://sites.super.so/digital/fonts/Sentient-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Sentient Bold';
+  src: url("https://sites.super.so/digital/fonts/Sentient-Bold.woff2") format("woff2"), url("https://sites.super.so/digital/fonts/Sentient-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal; }
+
+h1,
+h1.notion-heading {
+  font-family: "Sentient Light", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif !important; }
+
+h2,
+h2.notion-heading {
+  font-family: "Sentient Light", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif !important; }
+
+p,
+p.notion-text__content {
+  font-family: "Sentient Light", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif !important; }
+  p .notion-semantic-string a,
+  p.notion-text__content .notion-semantic-string a {
+    font-family: "Sentient Bold", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif !important; }
+
+.notion-column .notion-collection .notion-collection-table__wrapper .notion-collection-table {
+  border-top: none !important; }
+  .notion-column .notion-collection .notion-collection-table__wrapper .notion-collection-table .notion-collection-table__cell.title a {
+    font-family: "Sentient Bold", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif !important; }
+
+.super-content .notion-column-list .notion-collection .notion-collection-table__wrapper .notion-collection-table {
+  border-top: none !important; }
+  .super-content .notion-column-list .notion-collection .notion-collection-table__wrapper .notion-collection-table .notion-collection-table__cell.title a {
+    font-family: "Sentient Bold", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif !important; }
+
+.super-content .notion-column-list p {
+  margin-bottom: 2rem !important; }
+
+.super-content .notion-collection-gallery.medium .notion-collection-card .notion-property__title .notion-semantic-string {
+  font-family: "Sentient Regular", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif !important; }
+
+div.notion-collection-card__content > div > div > span {
+  font-family: "Sentient Light", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif !important; }
+
+.notion-callout .notion-callout__content .notion-collection .notion-collection-table__body tr a {
+  font-family: "Sentient Bold", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif !important; }
+
+.notion-callout .notion-callout__content .notion-collection .notion-collection-table__body .notion-collection-table__cell.text .color-green {
+  font-family: "Sentient Bold", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif !important; }
