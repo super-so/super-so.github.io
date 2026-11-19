@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="654px" height="530px" viewBox="0 0 654 530" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>highlight</title>
+    <defs>
+        <filter x="-33.3%" y="-33.3%" width="166.5%" height="166.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-36.7%" y="-42.1%" width="173.3%" height="184.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-36.3%" y="-42.1%" width="172.6%" height="184.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.25">
+        <g id="highlight" transform="translate(-136.000000, -141.000000)">
+            <circle id="pink" fill="#EC1B38" filter="url(#filter-1)" cx="225.5" cy="253.5" r="225.5"></circle>
+            <path d="M314,547 C412.306685,547 492,467.306685 492,369 C492,270.693315 412.306685,191 314,191 C215.693315,191 83,313.693315 83,412 C83,510.306685 215.693315,547 314,547 Z" id="purple" fill="#BD96FF" opacity="0.804943266" filter="url(#filter-2)"></path>
+            <path d="M436,356 C534.306685,356 671,239.306685 671,141 C671,42.6933145 534.306685,0 436,0 C337.693315,0 258,79.6933145 258,178 C258,276.306685 337.693315,356 436,356 Z" id="blue" fill="#95C4FF" filter="url(#filter-3)"></path>
+        </g>
+    </g>
+</svg>
