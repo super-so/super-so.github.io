@@ -4,7 +4,8 @@
    prompt. Nothing is sent anywhere from this page.
    Usage (body slot): <script src="https://sites.super.so/template-chat/template-chat.js" data-name="Zine" data-get="/instructions" defer></script>
    data-name = template name (default: the first part of the host name), data-get = page with the manual
-   instructions (optional), data-accent = colour of the pink in the template, used in one chip (optional). */
+   instructions (optional), data-bottom = distance from the bottom edge in px when the template has its own
+   bar there (optional), data-accent = colour of the pink in the template, used in one chip (optional). */
 (function () {
   if (window.__superTplChat) return;
   window.__superTplChat = true;
@@ -63,6 +64,7 @@
       + '<div class="stc-foot"><span>Free to start · built on your Notion</span>' + get + "</div></div>"
       + '<button type="button" class="stc-badge" aria-expanded="false">' + LOGO + "<span>Made with Super</span><em>" + SPARK + " Get this site</em></button></div>");
     document.body.appendChild(w);
+    if (ds.bottom && !isNaN(+ds.bottom)) w.style.bottom = +ds.bottom + "px";
     var badge = w.querySelector(".stc-badge"), ta = w.querySelector("textarea"), msgs = w.querySelector(".stc-msgs");
     function setOpen(o) { w.classList.toggle("open", o); badge.setAttribute("aria-expanded", o ? "true" : "false"); if (o) ta.focus(); }
     badge.addEventListener("click", function () { setOpen(!w.classList.contains("open")); });
