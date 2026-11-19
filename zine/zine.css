@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap");
 /* =====================================================================
    ZINE - photocopy zine portfolio template for Super (zine-template.super.site)
    Sections = top-level callouts keyed by their Notion icon; nested callouts = cards;
@@ -8,7 +8,7 @@
    ===================================================================== */
 :root {
   --zine-paper: #f3eee3; --zine-ink: #121212; --zine-pink: #ff3f8e; --zine-yellow: #ffe24a; --zine-muted: #57524a; --zine-card: #fffdf7;
-  --zine-head: "Archivo Black", "Archivo", Impact, sans-serif;
+  --zine-head: "Bricolage Grotesque", "Archivo Black", Impact, sans-serif;
   --zine-body: "Space Grotesk", "Inter", sans-serif;
   --zine-mono: "Space Mono", ui-monospace, Menlo, monospace;
 }
@@ -29,7 +29,7 @@
 .notion-root .notion-callout .notion-callout > .notion-callout__icon { display: none; }
 .notion-root .notion-callout .notion-callout > .notion-callout__content { padding: 0; margin: 0; width: 100%; max-width: none; }
 .notion-root > .notion-callout + .notion-callout { margin-top: 112px; }
-.notion-root h1.notion-heading, .notion-root h2.notion-heading { font-family: var(--zine-head); font-weight: 400; color: var(--zine-ink); text-transform: lowercase; margin: 0; }
+.notion-root h1.notion-heading, .notion-root h2.notion-heading { font-family: var(--zine-head); font-weight: 800; color: var(--zine-ink); text-transform: lowercase; margin: 0; }
 .notion-root h2.notion-heading { font-size: clamp(44px, 2rem + 4vw, 88px); line-height: .95; letter-spacing: -.02em; margin: 0 0 40px; }
 .notion-root p.notion-text { font-family: var(--zine-body); font-size: 18px; line-height: 1.6; color: var(--zine-ink); margin: 0 0 12px; }
 
@@ -71,7 +71,7 @@
 /* empty frame with the card number, only while the card has no image */
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout:not(:has(.notion-image)) > .notion-callout__content::before {
   content: counter(card, decimal-leading-zero); order: -3; display: flex; align-items: center; justify-content: center; aspect-ratio: 4 / 3; width: 100%;
-  font-family: var(--zine-head); font-size: clamp(64px, 8vw, 112px); line-height: 1; color: var(--zine-pink);
+  font-family: var(--zine-head); font-weight: 800; font-size: clamp(64px, 8vw, 112px); line-height: 1; color: var(--zine-pink);
   background: repeating-linear-gradient(45deg, transparent 0 11px, rgba(18, 18, 18, .09) 11px 12px), var(--zine-paper);
   border-bottom: 3px solid var(--zine-ink);
 }
@@ -79,7 +79,7 @@
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout .notion-image img { display: block; width: 100% !important; max-width: none !important; height: auto !important; object-fit: contain; border-radius: 0; }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout p.notion-text { padding: 0 22px; margin: 0 0 8px; font-size: 15.5px; color: var(--zine-muted); }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text {
-  order: -2; font-family: var(--zine-head); font-size: 25px; line-height: 1.1; letter-spacing: -.01em; text-transform: lowercase; color: var(--zine-ink); padding-top: 20px; margin: 0 0 10px;
+  order: -2; font-family: var(--zine-head); font-weight: 800; font-size: 25px; line-height: 1.1; letter-spacing: -.01em; text-transform: lowercase; color: var(--zine-ink); padding-top: 20px; margin: 0 0 10px;
 }
 .notion-root > .notion-callout:has(> .notion-callout__icon img[src*="/star_"]) .notion-callout > .notion-callout__content > span.notion-semantic-string:empty + p.notion-text::before { content: none; }
 /* "Coming soon" stamp: the line right after the title, pinned on the empty frame */
@@ -108,7 +108,7 @@
 
 /* chrome */
 .super-navbar { border-bottom: 3px solid var(--zine-ink); }
-.super-navbar__logo-text, .super-navbar__logo, .super-footer__logo-text { font-family: var(--zine-head); letter-spacing: -.01em; }
+.super-navbar__logo-text, .super-navbar__logo, .super-footer__logo-text { font-family: var(--zine-head); font-weight: 800; letter-spacing: -.01em; }
 .super-navbar__item, .super-navbar a { font-family: var(--zine-mono); }
 .super-footer { margin-top: 72px; font-family: var(--zine-mono); }
 
