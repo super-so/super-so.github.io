@@ -1,7 +1,7 @@
 /* Super template chat badge: a "Made with Super" pill in the bottom-right corner of a template demo.
    A click opens a small chat panel that offers ready-made prompts for launching the template as the
-   visitor's own site. Sending copies the prompt and opens app.super.so, where the visitor pastes it
-   into the in-app chat. Nothing is sent anywhere from this page.
+   visitor's own site. Sending opens app.super.so/?ai=<prompt>, which starts the in-app chat with that
+   prompt. Nothing is sent anywhere from this page.
    Usage (body slot): <script src="https://sites.super.so/template-chat/template-chat.js" data-name="Zine" data-get="/instructions" defer></script>
    data-name = template name (default: the first part of the host name), data-get = page with the manual
    instructions (optional), data-accent = colour of the pink in the template, used in one chip (optional). */
@@ -50,11 +50,6 @@
   + '@media print{#stc{display:none}}';
   function el(h) { var d = document.createElement("div"); d.innerHTML = h; return d.firstChild; }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
-  function copy(t) {
-    if (navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(t).catch(fallback);
-    fallback(); return Promise.resolve();
-    function fallback() { var a = document.createElement("textarea"); a.value = t; a.style.position = "fixed"; a.style.opacity = "0"; document.body.appendChild(a); a.select(); try { document.execCommand("copy"); } catch (e) {} a.remove(); }
-  }
   function build() {
     if (document.getElementById("stc")) return;
     var st = document.createElement("style"); st.id = "stc-css"; st.textContent = CSS; document.head.appendChild(st);
@@ -64,7 +59,7 @@
       + '<div class="stc-ph">' + LOGO + '<span>Super chat</span><span class="stc-dot"></span><button type="button" class="stc-x" aria-label="Close">' + X + "</button></div>"
       + '<div class="stc-msgs"><div class="stc-bot">Hi! You’re looking at <b>' + esc(name) + "</b>, a Super template. Our chat can launch it as your own site in about a minute, then restyle it with you.</div>"
       + '<div class="stc-hint">Try one of these or write your own:</div><div class="stc-chips">' + chips + "</div></div>"
-      + '<div class="stc-inp"><textarea rows="3" aria-label="Your prompt">' + esc(DEFAULT) + '</textarea><button type="button" class="stc-send" aria-label="Copy prompt and open Super">' + SEND + "</button></div>"
+      + '<div class="stc-inp"><textarea rows="3" aria-label="Your prompt">' + esc(DEFAULT) + '</textarea><button type="button" class="stc-send" aria-label="Send to Super chat">' + SEND + "</button></div>"
       + '<div class="stc-foot"><span>Free to start · built on your Notion</span>' + get + "</div></div>"
       + '<button type="button" class="stc-badge" aria-expanded="false">' + LOGO + "<span>Made with Super</span><em>" + SPARK + " Get this site</em></button></div>");
     document.body.appendChild(w);
@@ -81,10 +76,9 @@
     });
     w.querySelector(".stc-send").addEventListener("click", function () {
       var p = ta.value.trim() || DEFAULT;
-      copy(p);
-      window.open(APP, "_blank", "noopener");
+      window.open(APP + "?ai=" + encodeURIComponent(p), "_blank", "noopener");
       var old = msgs.querySelector(".stc-ok"); if (old) old.remove();
-      var m = el('<div class="stc-bot stc-ok">Prompt copied. Sign in to Super in the new tab, open the chat and paste it there.</div>');
+      var m = el('<div class="stc-bot stc-ok">Super opens in a new tab with your prompt in its chat.</div>');
       msgs.appendChild(m); msgs.scrollTop = msgs.scrollHeight;
     });
   }
