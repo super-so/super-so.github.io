@@ -6,14 +6,14 @@ URL: mattdowney.com
 /* Start of typography **********/
 @font-face {
     font-family: "Satoshi Variable";
-    src: url("https://mattdowney.github.io/primer/fonts/Satoshi-Variable.woff2") format("woff2"), url("https://mattdowney.github.io/primer/fonts/Satoshi-Variable.woff") format("woff");
+    src: url("https://sites.super.so/primer/fonts/Satoshi-Variable.woff2") format("woff2"), url("https://sites.super.so/primer/fonts/Satoshi-Variable.woff") format("woff");
     font-weight: 580;
     font-display: swap;
     font-style: normal;
   }
   @font-face {
     font-family: "Satoshi Regular";
-    src: url("https://mattdowney.github.io/primer/fonts/Satoshi-Regular.woff2") format("woff2"), url("https://mattdowney.github.io/primer/fonts/Satoshi-Regular.woff") format("woff");
+    src: url("https://sites.super.so/primer/fonts/Satoshi-Regular.woff2") format("woff2"), url("https://sites.super.so/primer/fonts/Satoshi-Regular.woff") format("woff");
     font-weight: 380;
     font-display: swap;
     font-style: normal;

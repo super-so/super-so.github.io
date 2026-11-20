@@ -3,14 +3,14 @@
 /* Start of typography **********/
 @font-face {
     font-family: "General Sans";
-    src: url("https://mattdowney.github.io/digital/fonts/GeneralSans-Variable.woff2") format("woff2"), url("https://mattdowney.github.io/digital/fonts/GeneralSans-Variable.woff") format("woff");
+    src: url("https://sites.super.so/digital/fonts/GeneralSans-Variable.woff2") format("woff2"), url("https://sites.super.so/digital/fonts/GeneralSans-Variable.woff") format("woff");
     font-weight: 200 700;
     font-display: swap;
     font-style: normal;
   }
   @font-face {
     font-family: "Clash Grotesk";
-    src: url("https://mattdowney.github.io/digital/fonts/ClashGrotesk-Variable.woff2") format("woff2"), url("https://mattdowney.github.io/digital/fonts/ClashGrotesk-Variable.woff") format("woff");
+    src: url("https://sites.super.so/digital/fonts/ClashGrotesk-Variable.woff2") format("woff2"), url("https://sites.super.so/digital/fonts/ClashGrotesk-Variable.woff") format("woff");
     font-weight: 200 700;
     font-display: swap;
     font-style: normal;
