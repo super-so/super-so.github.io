@@ -56,7 +56,13 @@
   + '#ssc textarea{flex:1;min-width:0;border:1px solid #e3e3df;border-radius:10px;padding:8px 10px;font-size:12.5px;line-height:1.4;color:#171717;background:#fff;resize:none;outline:none;margin:0}#ssc textarea:focus{border-color:#111}'
   + '#ssc .ssc-send{flex:none;border:0;background:#ffb400;color:#111;border-radius:10px;width:36px;height:36px;display:flex;align-items:center;justify-content:center}'
   + '#ssc .ssc-foot{font-size:11.5px;color:#888;padding:0 14px 11px}'
-  + '@media (max-width:480px){#ssc{right:10px;left:10px;bottom:10px}#ssc .ssc-panel{width:100%}}'
+  /* Phone: inputs at 16px (iOS zooms into smaller fields and the page slides sideways); the open panel is a sheet that
+     JS fits into the visual viewport, so the on-screen keyboard never covers it; the badge hides while it is open. */
+  + '@media (max-width:480px){#ssc{right:10px;left:10px;bottom:10px}#ssc .ssc-panel{width:100%}'
+  + '#ssc .ssc-url input,#ssc textarea{font-size:16px}#ssc textarea{height:76px}'
+  + '#ssc.open{top:10px}#ssc.open .ssc-badge{display:none}'
+  + '#ssc.open .ssc-panel{display:flex;flex-direction:column;flex:1;min-height:0;max-height:none;overflow:hidden}'
+  + '#ssc.open .ssc-ph,#ssc.open .ssc-inp,#ssc.open .ssc-foot{flex:none}#ssc.open .ssc-msgs{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain}}'
   + '@media print{#ssc{display:none}}';
   function el(h) { var d = document.createElement("div"); d.innerHTML = h; return d.firstChild; }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
@@ -77,7 +83,8 @@
       + '<div class="ssc-tease" role="button" tabindex="0">Have an old website? I\'ll rebuild it on Super.<button type="button" class="ssc-tx" aria-label="Dismiss">' + X + "</button></div>"
       + '<button type="button" class="ssc-badge" aria-expanded="false">' + LOGO + "<span>Ask Super AI</span><em>" + SPARK + " Build my site</em></button></div>");
     document.body.appendChild(w);
-    if (ds.bottom && !isNaN(+ds.bottom)) w.style.bottom = +ds.bottom + "px";
+    var base = ds.bottom && !isNaN(+ds.bottom) ? +ds.bottom + "px" : "";
+    w.style.bottom = base;
     var badge = w.querySelector(".ssc-badge"), ta = w.querySelector("textarea"), inp = w.querySelector(".ssc-url input"),
       msgs = w.querySelector(".ssc-msgs"), ctxBtn = w.querySelector('[data-k="ctx"]'), kind = "rebuild", edited = false;
     function text() {
@@ -88,8 +95,17 @@
     function refresh() { ctxBtn.textContent = ctx()[0]; if (!edited) ta.value = text(); }
     function setOpen(o) {
       w.classList.toggle("open", o); badge.setAttribute("aria-expanded", o ? "true" : "false");
-      if (o) { w.classList.remove("tease"); store("ssc-tease", "1"); refresh(); inp.focus(); track("open"); }
+      if (o) { w.classList.remove("tease"); store("ssc-tease", "1"); refresh(); if (!touch) inp.focus(); track("open"); }
+      fit();
     }
+    /* Phone: keep the open sheet inside the visible area above the keyboard. */
+    var phone = window.matchMedia ? matchMedia("(max-width:480px)") : null, vv = window.visualViewport,
+      touch = window.matchMedia && matchMedia("(pointer:coarse)").matches;
+    function fit() {
+      if (!vv || !phone || !phone.matches || !w.classList.contains("open")) { w.style.top = w.style.height = ""; w.style.bottom = base; return; }
+      w.style.top = (vv.offsetTop + 10) + "px"; w.style.bottom = "auto"; w.style.height = Math.max(200, vv.height - 20) + "px";
+    }
+    if (vv) { vv.addEventListener("resize", fit); vv.addEventListener("scroll", fit); }
     badge.addEventListener("click", function () { setOpen(!w.classList.contains("open")); });
     w.querySelector(".ssc-x").addEventListener("click", function () { setOpen(false); badge.focus(); });
     w.querySelector(".ssc-tease").addEventListener("click", function () { setOpen(true); });
