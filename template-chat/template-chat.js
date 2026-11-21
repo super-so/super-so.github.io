@@ -49,7 +49,12 @@
   + '#stc textarea{flex:1;min-width:0;border:1px solid #e3e3df;border-radius:10px;padding:8px 10px;font-size:13px;line-height:1.4;color:#171717;background:#fff;resize:none;outline:none}#stc textarea:focus{border-color:#111}'
   + '#stc .stc-send{flex:none;border:0;background:#ffb400;color:#111;border-radius:10px;width:36px;height:36px;display:flex;align-items:center;justify-content:center}'
   + '#stc .stc-foot{display:flex;justify-content:space-between;gap:8px;font-size:11.5px;color:#888;padding:0 14px 11px}#stc .stc-foot a{color:#555;text-decoration:underline}'
-  + '@media (max-width:480px){#stc{right:10px;left:10px;bottom:10px}#stc .stc-panel{width:100%}}'
+  /* Phone: textarea at 16px (iOS zooms into smaller fields and the page slides sideways); the open panel is a sheet that
+     JS fits into the visual viewport, so the on-screen keyboard never covers it; the badge hides while it is open. */
+  + '@media (max-width:480px){#stc{right:10px;left:10px;bottom:10px}#stc .stc-panel{width:100%}'
+  + '#stc textarea{font-size:16px;height:76px}#stc.open{top:10px}#stc.open .stc-badge{display:none}'
+  + '#stc.open .stc-panel{display:flex;flex-direction:column;flex:1;min-height:0;max-height:none;overflow:hidden}'
+  + '#stc.open .stc-ph,#stc.open .stc-inp,#stc.open .stc-foot{flex:none}#stc.open .stc-msgs{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain}}'
   + '@media print{#stc{display:none}}';
   function el(h) { var d = document.createElement("div"); d.innerHTML = h; return d.firstChild; }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
@@ -66,16 +71,25 @@
       + '<div class="stc-foot"><span>Free to start · built on your Notion</span>' + get + "</div></div>"
       + '<button type="button" class="stc-badge" aria-expanded="false">' + LOGO + "<span>Made with Super</span><em>" + SPARK + " Get this site</em></button></div>");
     document.body.appendChild(w);
-    if (ds.bottom && !isNaN(+ds.bottom)) w.style.bottom = +ds.bottom + "px";
+    var base = ds.bottom && !isNaN(+ds.bottom) ? +ds.bottom + "px" : "";
+    w.style.bottom = base;
     var badge = w.querySelector(".stc-badge"), ta = w.querySelector("textarea"), msgs = w.querySelector(".stc-msgs");
-    function setOpen(o) { w.classList.toggle("open", o); badge.setAttribute("aria-expanded", o ? "true" : "false"); if (o) ta.focus(); }
+    /* Phone: keep the open sheet inside the visible area above the keyboard; no auto-focus on touch (no keyboard jump). */
+    var phone = window.matchMedia ? matchMedia("(max-width:480px)") : null, vv = window.visualViewport,
+      touch = window.matchMedia && matchMedia("(pointer:coarse)").matches;
+    function fit() {
+      if (!vv || !phone || !phone.matches || !w.classList.contains("open")) { w.style.top = w.style.height = ""; w.style.bottom = base; return; }
+      w.style.top = (vv.offsetTop + 10) + "px"; w.style.bottom = "auto"; w.style.height = Math.max(200, vv.height - 20) + "px";
+    }
+    if (vv) { vv.addEventListener("resize", fit); vv.addEventListener("scroll", fit); }
+    function setOpen(o) { w.classList.toggle("open", o); badge.setAttribute("aria-expanded", o ? "true" : "false"); if (o && !touch) ta.focus(); fit(); }
     badge.addEventListener("click", function () { setOpen(!w.classList.contains("open")); });
     w.querySelector(".stc-x").addEventListener("click", function () { setOpen(false); badge.focus(); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && w.classList.contains("open")) setOpen(false); });
     w.querySelectorAll(".stc-chips button").forEach(function (c) {
       c.addEventListener("click", function () {
         w.querySelectorAll(".stc-chips button").forEach(function (x) { x.classList.toggle("on", x === c); });
-        ta.value = c.getAttribute("data-p"); ta.focus();
+        ta.value = c.getAttribute("data-p"); if (!touch) ta.focus();
       });
     });
     w.querySelector(".stc-send").addEventListener("click", function () {
